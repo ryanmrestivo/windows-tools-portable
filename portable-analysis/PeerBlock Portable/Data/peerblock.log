@@ -1,0 +1,152 @@
+
+
+--------------------------------------------------------------------------------
+
+Logging Started...
+[2/19/2017] [12:06:28.900] [00304]  PeerBlock Starting
+[2/19/2017] [12:06:28.901] [00304]  PeerBlock 1.2
+[2/19/2017] [12:06:28.901] [00304]  Flushed tracelog
+[2/19/2017] [12:06:28.901] [00304]  Running on OS: UNKNOWN OS 6.3 64-bit - Build:[9600], SP:[0.0]
+[2/19/2017] [12:06:28.901] [00304]  User running as Admin
+[2/19/2017] [12:06:28.901] [00304]  Created program mutex
+[2/19/2017] [12:06:28.904] [00304]  Initialized common controls
+[2/19/2017] [12:06:28.904] [00304]  Registered color picker
+[2/19/2017] [12:06:28.905] [00304]  Initialized winsock
+[2/19/2017] [12:06:28.905] [00304]  Successfully PreventSetUnhandledExceptionFilter()
+[2/19/2017] [12:06:28.905] [00304]  Creating main UI window
+[2/19/2017] [12:06:28.911] [00304]  [mainproc] [Main_OnInitDialog]  > Entering routine.
+[2/19/2017] [12:06:28.911] [00304]  [mainproc] [Main_OnInitDialog]    loading config
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [Load]  > Entering routine.
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [LoadFile]    loading file:[F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\peerblock.conf]
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [LoadFile]  * Error:  Can't open file
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [LoadFile]    - err:[2], desc:[The system cannot find the file specified.
+]
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [Load]    WARNING:  Unable to load configuration file [F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\peerblock.conf]
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [LoadFile]    loading file:[F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\peerblock.conf.bak]
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [LoadFile]  * Error:  Can't open file
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [LoadFile]    - err:[2], desc:[The system cannot find the file specified.
+]
+[2/19/2017] [12:06:28.912] [00304]  [Configuration] [Load]    WARNING:  Unable to load configuration file [F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\peerblock.conf.bak]
+[2/19/2017] [12:06:28.913] [00304]  [Configuration] [LoadFile]    loading file:[F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\pg2.conf]
+[2/19/2017] [12:06:28.913] [00304]  [Configuration] [LoadFile]  * Error:  Can't open file
+[2/19/2017] [12:06:28.913] [00304]  [Configuration] [LoadFile]    - err:[2], desc:[The system cannot find the file specified.
+]
+[2/19/2017] [12:06:28.913] [00304]  [Configuration] [Load]    WARNING:  Unable to load configuration file [F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\pg2.conf]
+[2/19/2017] [12:06:28.913] [00304]  [Configuration] [Load]    ERROR:  No configuration file loaded!
+[2/19/2017] [12:06:28.913] [00304]  [mainproc] [Main_OnInitDialog]    displaying first-time wizard
+[2/19/2017] [12:06:31.230] [00304]  [Configuration] [Save]  > Entering routine.
+[2/19/2017] [12:06:31.674] [00304]  [Configuration] [Save]  < Leaving routine.
+[2/19/2017] [12:06:31.674] [00304]  [mainproc] [Main_OnInitDialog]    resetting g_filter
+[2/19/2017] [12:06:31.675] [00304]  [driver] [load(2)]    preparing to load driver - name: [pbfilter], file: [\??\F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\pbfilter.sys]
+[2/19/2017] [12:06:31.675] [00304]  [driver] [load(3)]    loading driver - name: [pbfilter], file: [\??\F:\Portable Apps\PeerBlockPortable\App\PeerBlock\Modern64\pbfilter.sys], devfile: [\\.\pbfilter]
+[2/19/2017] [12:06:31.699] [00304]  [driver] [load(3)]    driver-service not running
+[2/19/2017] [12:06:31.699] [00304]  [driver] [load(3)]    - service state: [1]
+[2/19/2017] [12:06:31.700] [00304]  [driver] [start]    starting driver
+[2/19/2017] [12:06:31.710] [00304]  [driver] [start]    getting handle to driver - devfile: [\\.\pbfilter]
+[2/19/2017] [12:06:31.710] [00304]  [driver] [start]    started driver
+[2/19/2017] [12:06:31.769] [00304]  [pbfilter_base] [start_thread]    creating thread_thunk
+[2/19/2017] [12:06:31.773] [00304]  [mainproc] [Main_OnInitDialog]    g_filter reset.
+[2/19/2017] [12:06:31.773] [00304]  [mainproc] [Main_OnInitDialog]    setting block, forcing to Enabled
+[2/19/2017] [12:06:31.774] [00304]  [mainproc] [SetBlock]   setting PeerBlock blocking from [1] to [1]
+[2/19/2017] [12:06:31.774] [00304]  [pbfilter_base] [setblock]    acquiring lock
+[2/19/2017] [12:06:31.775] [00304]  [pbfilter_base] [setblock]    resetting m_block to: [true]
+[2/19/2017] [12:06:31.776] [00304]  [pbfilter_base] [setblock]    sending block request to driver...
+[2/19/2017] [12:06:31.776] [00304]  [pbfilter_base] [setblock]    ...block request sent
+[2/19/2017] [12:06:31.776] [00304]  [pbfilter_base] [setblock]    mutex leaving scope; releasing lock
+[2/19/2017] [12:06:31.778] [00304]  [pbfilter_base] [setdestinationports]  > Entering routine.
+[2/19/2017] [12:06:31.779] [00304]  [pbfilter_base] [setdestinationports]    finished parsing ports
+[2/19/2017] [12:06:31.779] [00304]  [pbfilter_base] [setdestinationports]  < Leaving Routine.
+[2/19/2017] [12:06:31.779] [00304]  [pbfilter_base] [setsourceports]  > Entering routine.
+[2/19/2017] [12:06:31.779] [00304]  [pbfilter_base] [setsourceports]    finished parsing ports
+[2/19/2017] [12:06:31.779] [00304]  [pbfilter_base] [setsourceports]  < Leaving Routine.
+[2/19/2017] [12:06:31.779] [00304]  [mainproc] [Main_OnInitDialog]    getting tabs
+[2/19/2017] [12:06:31.847] [00304]  [LogProc] [Log_OnInitDialog]    updating status
+[2/19/2017] [12:06:31.848] [00304]  [LogProc] [UpdateStatus]    g_config.LastUpdate: [false]
+[2/19/2017] [12:06:31.962] [00304]  [LogProc] [UpdateStatus]    g_config.LastUpdate: [false]
+[2/19/2017] [12:06:31.963] [00304]  [mainproc] [Main_OnInitDialog]    doing other stuff
+[2/19/2017] [12:06:32.001] [00304]  [Main_DlgProc]    received WM_MAIN_VISIBLE message
+[2/19/2017] [12:06:32.001] [00304]  [Main_OnVisible]  > Entering routine.
+[2/19/2017] [12:06:32.001] [00304]  [Main_OnVisible]    visible:[TRUE]
+[2/19/2017] [12:06:32.001] [00304]  [Main_OnVisible]    index != [-1], showing window based on tab
+[2/19/2017] [12:06:32.001] [00304]  [Main_OnVisible]    showing window (SH_SHOW)
+[2/19/2017] [12:06:32.003] [00304]  [Main_OnVisible]    checking for g_trayactive and g_config.StayHidden
+[2/19/2017] [12:06:32.003] [00304]  [Main_OnVisible]  < Leaving routine.
+[2/19/2017] [12:06:32.010] [00304]  [mainproc] [Main_OnInitDialog]    updating at startup
+[2/19/2017] [12:06:32.010] [00304]  [UpdateLists]  > Entering routine.
+[2/19/2017] [12:06:32.010] [00304]  [UpdateLists]    g_updater null, found parent, creating dialog-box
+[2/19/2017] [12:06:32.022] [00304]  [UpdateLists_OnInitDialog]  > Entering routine.
+[2/19/2017] [12:06:32.023] [00304]  [UpdateLists_OnInitDialog]    spawning updatethread
+[2/19/2017] [12:06:32.023] [00304]  [UpdateThread] [UpdateThread]    created thread class
+[2/19/2017] [12:06:32.023] [00304]  [UpdateThread] [UpdateThread]    destroyed thread class
+[2/19/2017] [12:06:32.024] [00304]  [UpdateLists_OnInitDialog]  < Leaving routine.
+[2/19/2017] [12:06:32.030] [01392]  [UpdateThread] [_Process]    updating peerblock
+[2/19/2017] [12:06:32.030] [01392]  [UpdateThread] [_Process]    update url:[http://update.peerblock.com/pb_update.php?build=41401140693]
+[2/19/2017] [12:06:32.030] [01392]  [UpdateThread] [_Process]    homepage url:[http://update.peerblock.com/latest-release]
+[2/19/2017] [12:06:32.030] [01392]  [UpdateThread] [_Process]    agent string:[PeerBlock/1.2.0.693]
+[2/19/2017] [12:06:32.038] [01392]  [UpdateThread] [_Process]    not updating dynamic list(s)
+[2/19/2017] [12:06:32.039] [01392]  [UpdateThread] [_Process]    performing updates
+[2/19/2017] [12:06:34.344] [01392]  [UpdateThread] [_Process]    response code: [200]
+[2/19/2017] [12:06:34.345] [01392]  [UpdateThread] [_Process]    successfully contacted URL; code:[200]
+[2/19/2017] [12:06:34.345] [01392]  [UpdateThread] [_Process]    found list var; no new program version found
+[2/19/2017] [12:06:34.345] [01392]  [UpdateThread] [_Process]    performing cleanup
+[2/19/2017] [12:06:34.345] [01392]  [UpdateThread] [_Process]    Done updating.
+[2/19/2017] [12:06:34.350] [01392]  [UpdateThread] [_Process]    finished downloading updates
+[2/19/2017] [12:06:34.350] [01392]  [UpdateThread] [_Process]    starting countdown, since UpdateCountdown > 0
+[2/19/2017] [12:06:35.340] [00304]  [UpdateLists_OnTimer]  > Entering routine.
+[2/19/2017] [12:06:35.344] [00304]  [UpdateLists_OnTimer]  < Leaving routine.
+[2/19/2017] [12:06:36.350] [00304]  [UpdateLists_OnTimer]  > Entering routine.
+[2/19/2017] [12:06:36.350] [00304]  [UpdateLists_OnTimer]  < Leaving routine.
+[2/19/2017] [12:06:36.556] [00304]  [UpdateLists_OnCommand]    IDC_CLOSE
+[2/19/2017] [12:06:36.559] [00304]  [UpdateLists_OnDestroy]  > Entering routine.
+[2/19/2017] [12:06:36.559] [00304]  [UpdateLists_OnDestroy]    loading lists
+[2/19/2017] [12:06:36.559] [00304]  [UpdateLists_OnDestroy]    resetting update-thread
+[2/19/2017] [12:06:36.559] [00304]  [UpdateLists_OnDestroy]    updating list columns
+[2/19/2017] [12:06:36.559] [00304]  [UpdateLists_OnDestroy]  < Leaving routine.
+[2/19/2017] [12:06:36.561] [00304]  [UpdateLists]    dialog box finished running
+[2/19/2017] [12:06:36.561] [00304]  [UpdateLists]    resetting LastUpdate time
+[2/19/2017] [12:06:36.561] [00304]  [UpdateLists]  < Leaving routine.
+[2/19/2017] [12:06:36.561] [00304]  [LoadLists]  > Entering routine.
+[2/19/2017] [12:06:36.561] [00304]  [LoadLists]    generating cache
+[2/19/2017] [12:06:36.561] [00304]  [GenCache]  > Entering routine.
+[2/19/2017] [12:06:36.562] [00304]  [GenCache]    cache not valid
+[2/19/2017] [12:06:36.562] [00304]  [GenCache]    no window, creating dialog box
+[2/19/2017] [12:06:36.564] [00304]  [Loading_DlgProc]    msg: WM_INITDIALOG.
+[2/19/2017] [12:06:36.564] [00304]  [Loading_OnInitDialog]  > Entering routine.
+[2/19/2017] [12:06:36.565] [00304]  [Loading_OnInitDialog]    spawning thread to handle loading
+[2/19/2017] [12:06:36.565] [00304]  [Loading_OnInitDialog]  < Leaving routine.
+[2/19/2017] [12:06:36.567] [04728]  [LoadingThread] [operator()]  > Entering routine.
+[2/19/2017] [12:06:36.568] [04728]  [GenCacheFuncs] [Init]  > Entering routine.
+[2/19/2017] [12:06:36.568] [04728]  [GenCacheFuncs] [Init]    num static lists: [0]
+[2/19/2017] [12:06:36.569] [04728]  [GenCacheFuncs] [Init]    num dynamic lists: [0]
+[2/19/2017] [12:06:36.569] [04728]  [GenCacheFuncs] [Init]  < Leaving routine.
+[2/19/2017] [12:06:36.569] [04728]  [GenCacheFuncs] [Process]  > Entering routine.
+[2/19/2017] [12:06:36.569] [04728]  [GenCacheFuncs] [Process]    opt
+[2/19/2017] [12:06:36.569] [04728]  [GenCacheFuncs] [Process]  < Leaving routine.
+[2/19/2017] [12:06:36.569] [04728]  [LoadingThread] [operator()]    updating progress
+[2/19/2017] [12:06:36.572] [04728]  [GenCacheFuncs] [Process]  > Entering routine.
+[2/19/2017] [12:06:36.572] [04728]  [GenCacheFuncs] [Process]    save
+[2/19/2017] [12:06:36.710] [04728]  [GenCacheFuncs] [Process]  < Leaving routine.
+[2/19/2017] [12:06:36.710] [04728]  [LoadingThread] [operator()]    updating progress
+[2/19/2017] [12:06:36.711] [04728]  [GenCacheFuncs] [Process]  > Entering routine.
+[2/19/2017] [12:06:36.711] [04728]  [GenCacheFuncs] [Process]    default
+[2/19/2017] [12:06:36.711] [04728]  [GenCacheFuncs] [Process]  < Leaving routine.
+[2/19/2017] [12:06:36.901] [04728]  [LoadingThread] [operator()]  < Leaving routine.
+[2/19/2017] [12:06:36.904] [00304]  [Loading_DlgProc]    msg: WM_DESTROY.
+[2/19/2017] [12:06:36.905] [00304]  [GenCache]  < Leaving routine (true).
+[2/19/2017] [12:06:36.905] [00304]  [LoadLists]    performing random setup
+[2/19/2017] [12:06:36.905] [00304]  [LoadLists]    setting up filter-driver ranges
+[2/19/2017] [12:06:36.905] [00304]  [LoadLists]    driver ranges set
+[2/19/2017] [12:06:36.909] [00304]  [LoadLists]  < Exiting routine.
+[2/19/2017] [12:06:36.910] [00304]  Created main UI window
+[2/19/2017] [12:06:36.910] [00304]  [Configuration] [Save]  > Entering routine.
+[2/19/2017] [12:06:37.349] [00304]  [Configuration] [Save]  < Leaving routine.
+[2/19/2017] [12:06:37.350] [00304]  Starting message-loop
+[2/19/2017] [12:06:41.230] [00304]  [Main_OnVisible]  > Entering routine.
+[2/19/2017] [12:06:41.230] [00304]  [Main_OnVisible]    visible:[FALSE]
+[2/19/2017] [12:06:41.230] [00304]  [Main_OnVisible]    index != [-1], hiding window based on tab
+[2/19/2017] [12:06:41.230] [00304]  [Main_OnVisible]    about to hide window
+[2/19/2017] [12:06:41.235] [00304]  [Main_OnVisible]    about to SetProcessWorkingSetSize
+[2/19/2017] [12:06:41.239] [00304]  [Main_OnVisible]  < Leaving routine.
+[2/19/2017] [12:06:42.209] [01040]  [LogFilterAction] [operator()]    Stopping default Allowed Packet logging
+[2/19/2017] [12:06:46.847] [00304]  checking _tstat64
+[2/19/2017] [12:06:46.848] [00304]  checking filesize against user

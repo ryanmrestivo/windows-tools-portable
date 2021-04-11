@@ -1,0 +1,12 @@
+virtualprotect
+protect
+samplePath
+event
+homedir
+doStringDump
+hpad
+CService
+EnumServices
+GetServiceByPid
+osinfo
+os

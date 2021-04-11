@@ -1,0 +1,44 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\system32\stdole2.tlb#OLE Automation
+Reference=*\G{DDC88AC2-2723-4C1B-9D61-C4F4D7CF5375}#2.7#0#..\..\..\..\libs\vbDevKit\vbDevKit.dll#Vb Developers Library From Sandsprite.com
+Form=Form1.frm
+Class=CMutexElem; CMutexElem.cls
+Class=CTaskElem; CTaskElem.cls
+Module=Module1; Module1.bas
+IconForm="Form1"
+Startup="Form1"
+HelpFile=""
+Title="Project1"
+ExeName32="test.exe"
+Command32=""
+Name="Project1"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="sandsprite"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=-1
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+DebugStartupOption=0
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[fastBuild]
+fullPath=D:\_code\iDef\SysAnalyzer\source\enumMutex_dll\test.exe

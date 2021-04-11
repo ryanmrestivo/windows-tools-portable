@@ -1,0 +1,63 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\system32\stdole2.tlb#OLE Automation
+Reference=*\G{DDC88AC2-2723-4C1B-9D61-C4F4D7CF5375}#2.4#0#..\..\..\..\libs\vbDevKit\vbDevKit.dll#Vb Developers Library From Sandsprite.com
+Reference=*\G{3F4DACA7-160D-11D2-A8E9-00104B365C9F}#1.0#0#C:\WINDOWS\system32\vbscript.dll\2#Microsoft VBScript Regular Expressions 1.0
+Object={831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0; MSCOMCTL.OCX
+Form=Form1.frm
+Class=CProcessInfo; ..\sysanalyzer\CProcessInfo.cls
+Class=CProcess; ..\sysanalyzer\CProcess.cls
+Class=CModule; ..\sysanalyzer\CModule.cls
+Form=..\sysanalyzer\frmReport.frm
+Class=CDumpFix; CDumpFix.cls
+Module=Module1; Module1.bas
+Module=FileProps; ..\sysanalyzer\FileVer.bas
+Class=CStrings; CStrings.cls
+Class=CExploitScanner; CExploitScanner.cls
+Class=Cx64; ..\sysanalyzer\Cx64.cls
+Form=..\sysanalyzer\frmListProcess.frm
+Form=..\sysanalyzer\frmDlls.frm
+Class=CMemory; ..\sysanalyzer\CMemory.cls
+Module=modZLIB; ..\sysanalyzer\modZLIB.bas
+Class=CPEEditor; ..\sysanalyzer\CPEEditor.cls
+Class=CSection; ..\sysanalyzer\CSection.cls
+Module=modUserAccounts; ..\sysanalyzer\modUserAccounts.bas
+Module=CmdOutput; ..\sysanalyzer\CmdOutput.bas
+IconForm="frmMain"
+Startup="frmMain"
+HelpFile=""
+Title="Project1"
+ExeName32="proc_analyzer.exe"
+Path32="..\.."
+Command32=""
+Name="Project1"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="blah.com"
+CondComp="standalone = 1"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+DebugStartupOption=0
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[fastBuild]
+fullPath=D:\_code\iDef\SysAnalyzer\proc_analyzer.exe

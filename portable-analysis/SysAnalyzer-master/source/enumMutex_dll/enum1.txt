@@ -1,0 +1,155 @@
+1236 \BaseNamedObjects\old1
+1236 \BaseNamedObjects\ShimCacheMutex
+1264 \BaseNamedObjects\userenv: machine policy mutex
+1264 \BaseNamedObjects\userenv: Machine Registry policy mutex
+1264 \BaseNamedObjects\userenv: user policy mutex
+1264 \BaseNamedObjects\userenv: User Registry policy mutex
+1264 \BaseNamedObjects\SingleSesMutex
+1264 \BaseNamedObjects\winlogon: Logon UserProfileMapping Mutex
+1264 \BaseNamedObjects\MidiMapper_modLongMessage_RefCnt
+1264 \BaseNamedObjects\ShimCacheMutex
+1264 \BaseNamedObjects\WPA_RT_MUTEX
+1264 \BaseNamedObjects\WPA_PR_MUTEX
+1264 \BaseNamedObjects\WPA_LT_MUTEX
+1264 \BaseNamedObjects\WPA_HWID_MUTEX
+1264 \BaseNamedObjects\WPA_LICSTORE_MUTEX
+1264 \BaseNamedObjects\MidiMapper_Configure
+1308 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+1308 \BaseNamedObjects\ShimCacheMutex
+1308 \BaseNamedObjects\PnP_Init_Mutex
+1320 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+1500 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+1500 \BaseNamedObjects\{A3BD3259-3E4F-428a-84C8-F0463A9D3EB5}
+1500 \BaseNamedObjects\746bbf3569adEncrypt
+1500 \BaseNamedObjects\ShimCacheMutex
+1572 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+1936 \BaseNamedObjects\INTEL_QOS_PROFILE_EVENT
+1936 \BaseNamedObjects\ShimCacheMutex
+1936 \BaseNamedObjects\S24SharedMemoryMutex0
+1936 \BaseNamedObjects\S24SharedMemoryMutex1
+1936 \BaseNamedObjects\S24SharedMemoryMutex2
+1936 \BaseNamedObjects\S24SharedMemoryMutex3
+1936 \BaseNamedObjects\S24SharedMemoryMutex4
+1936 \BaseNamedObjects\S24SharedMemoryMutex5
+1936 \BaseNamedObjects\S24SharedMemoryMutex6
+1936 \BaseNamedObjects\S24SharedMemoryMutex7
+1936 \BaseNamedObjects\S24SharedMemoryMutex8
+1936 \BaseNamedObjects\S24SharedMemoryMutex9
+1984 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+2012 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+2012 \BaseNamedObjects\OOC State Mutex
+2012 \BaseNamedObjects\ShimCacheMutex
+2012 \BaseNamedObjects\RasPbFile
+2012 \BaseNamedObjects\RAS_MO_02
+2012 \BaseNamedObjects\RAS_MO_01
+2012 \BaseNamedObjects\RasPbFile
+284 \BaseNamedObjects\ShimCacheMutex
+300 \BaseNamedObjects\ShimCacheMutex
+308 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+564 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+564 \BaseNamedObjects\_!MSFTHISTORY!_
+564 \BaseNamedObjects\c:!documents and settings!localservice!local settings!temporary internet files!content.ie5!
+564 \BaseNamedObjects\c:!documents and settings!localservice!cookies!
+564 \BaseNamedObjects\c:!documents and settings!localservice!local settings!history!history.ie5!
+564 \BaseNamedObjects\WininetStartupMutex
+564 \BaseNamedObjects\WininetProxyRegistryMutex
+952 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+1508 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+1508 \BaseNamedObjects\StiTraceMutexSti_Trace.log
+1508 \BaseNamedObjects\WiaDebugFileMut
+1508 \BaseNamedObjects\StiTraceMutexSti_Trace.log
+1652 \BaseNamedObjects\.NET CLR Data_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NET CLR Networking_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NET CLR Networking 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NET Data Provider for MySQL_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NET Data Provider for Oracle_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NET Data Provider for SqlServer_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NET Memory Cache 4.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\.NETFramework_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ASP_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ASP.NET_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ASP.NET_2.0.50727_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ASP.NET_4.0.30319_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\aspnet_state_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ContentFilter_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ContentIndex_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\InetInfo_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ISAPISearch_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\MSDTC_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\MSDTC Bridge 3.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\MSDTC Bridge 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\PerfDisk_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\PerfNet_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\PerfOS_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\PerfProc_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\PSched_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\RemoteAccess_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\RSVP_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ServiceModelEndpoint 3.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ServiceModelEndpoint 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ServiceModelOperation 3.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ServiceModelOperation 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ServiceModelService 3.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\ServiceModelService 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\SMSvcHost 3.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\SMSvcHost 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\Spooler_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\TapiSrv_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\Tcpip_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\TermService_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\VMware_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\W3SVC_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\Windows Workflow Foundation 3.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\Windows Workflow Foundation 4.0.0.0_Perf_Library_Lock_PID_674
+1652 \BaseNamedObjects\WmiApRpl_Perf_Library_Lock_PID_674
+740 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+740 \BaseNamedObjects\ExplorerIsShellMutex
+740 \BaseNamedObjects\ShimCacheMutex
+740 \BaseNamedObjects\ZoneAttributeCacheCounterMutex
+740 \BaseNamedObjects\ZonesCounterMutex
+740 \BaseNamedObjects\!IETld!Mutex
+740 \BaseNamedObjects\ZoneAttributeCacheCounterMutex
+740 \BaseNamedObjects\ZonesCacheCounterMutex
+740 \BaseNamedObjects\_SHuassist.mtx
+740 \BaseNamedObjects\ZonesLockedCacheCounterMutex
+740 \BaseNamedObjects\_!MSFTHISTORY!_
+740 \BaseNamedObjects\c:!documents and settings!david!local settings!temporary internet files!content.ie5!
+740 \BaseNamedObjects\c:!documents and settings!david!cookies!
+740 \BaseNamedObjects\c:!documents and settings!david!local settings!history!history.ie5!
+740 \BaseNamedObjects\MidiMapper_Configure
+740 \BaseNamedObjects\MidiMapper_modLongMessage_RefCnt
+740 \BaseNamedObjects\WininetStartupMutex
+740 \BaseNamedObjects\WininetConnectionMutex
+740 \BaseNamedObjects\WininetProxyRegistryMutex
+740 \BaseNamedObjects\_!SHMSFTHISTORY!_
+740 \BaseNamedObjects\c:!documents and settings!david!local settings!history!history.ie5!mshist012015111220151113!
+1032 \BaseNamedObjects\ShimCacheMutex
+1032 \BaseNamedObjects\ZonesCounterMutex
+1032 \BaseNamedObjects\!IETld!Mutex
+1032 \BaseNamedObjects\ZoneAttributeCacheCounterMutex
+1032 \BaseNamedObjects\ZonesCacheCounterMutex
+1032 \BaseNamedObjects\ZoneAttributeCacheCounterMutex
+1032 \BaseNamedObjects\ZonesLockedCacheCounterMutex
+1032 \BaseNamedObjects\6317835C-587D-417F-A987-54FD0B8EFC2F
+1032 \BaseNamedObjects\RzUpdateManagerc5900e5a-4f03-494e-a915-246e43df172c
+1032 \BaseNamedObjects\RasPbFile
+1032 \BaseNamedObjects\DDrawWindowListMutex
+1032 \BaseNamedObjects\__DDrawCheckExclMode__
+1032 \BaseNamedObjects\__DDrawExclMode__
+736 \BaseNamedObjects\ShimCacheMutex
+736 \BaseNamedObjects\_!MSFTHISTORY!_
+736 \BaseNamedObjects\c:!documents and settings!david!local settings!temporary internet files!content.ie5!
+736 \BaseNamedObjects\c:!documents and settings!david!cookies!
+736 \BaseNamedObjects\c:!documents and settings!david!local settings!history!history.ie5!
+736 \BaseNamedObjects\WininetStartupMutex
+736 \BaseNamedObjects\WininetConnectionMutex
+736 \BaseNamedObjects\WininetProxyRegistryMutex
+736 \BaseNamedObjects\DBWinMutex
+736 \BaseNamedObjects\!PrivacIE!SharedMemory!Mutex
+4068 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+4068 \BaseNamedObjects\ShimCacheMutex
+3564 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+3564 \BaseNamedObjects\ShimCacheMutex
+3020 \BaseNamedObjects\SHIMLIB_LOG_MUTEX
+3020 \BaseNamedObjects\ShimCacheMutex
+153 Named Mutexes found

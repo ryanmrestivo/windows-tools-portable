@@ -1,0 +1,17 @@
+frmMain = 25, 5, 821, 630, , 42, 1, 1034, 613, C
+CProcessInfo = 110, 110, 912, 515, 
+CProcess = 0, 0, 0, 0, C
+CModule = 0, 0, 0, 0, C
+CProcessPorts = 88, 88, 834, 493, 
+CProcessPort = 0, 0, 0, 0, C
+CMemory = 0, 0, 0, 0, C
+CApiDataManager = 110, 110, 783, 515, 
+CApiHandle = 132, 132, 805, 537, C
+Cx64 = 88, 88, 802, 542, 
+frmReport = 66, 66, 935, 300, , 110, 110, 824, 564, C
+FileProps = 44, 44, 758, 498, 
+frmDlls = 0, 0, 0, 0, C, 132, 132, 846, 586, C
+frmListProcess = 0, 0, 0, 0, C, 154, 154, 868, 608, C
+CmdOutput = 0, 0, 0, 0, C
+modZLIB = 0, 0, 0, 0, C
+modUserAccounts = 0, 0, 0, 0, C

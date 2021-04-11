@@ -1,0 +1,4 @@
+push
+m_pVTable
+m_VTable
+ m_CT

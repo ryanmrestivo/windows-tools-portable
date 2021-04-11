@@ -1,0 +1,12 @@
+Name = What is this? - Updater
+Author = chrisu
+Description = ProcDOT plugin to explain the current node (Updater)
+Version = 1.0
+Type = MainMenuItem
+Architecture = Windows64BitExe
+File = whatisthis.exe
+Priority = 9
+RunHidden = 0
+RunExclusively = 1
+CanOverrideOtherPlugins = 0
+CanOverrideProcDot = 0

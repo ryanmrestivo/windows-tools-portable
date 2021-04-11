@@ -1,0 +1,13 @@
+Name = Open Packets in Wireshark
+Author = Beercow
+Description = ProcDOT plugin to filter pcap
+Version = 1
+Type = ContextMenuItemForGraph
+Architecture = Windows32BitExe
+File = .\pcap_tools\pcap_tools.exe
+Priority = 1
+RunHidden = 1
+RunExclusively = 1
+CanOverrideOtherPlugins = 0
+CanOverrideProcdot = 0
+CanBeVerified = 1

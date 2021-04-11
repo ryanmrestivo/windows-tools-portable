@@ -1,0 +1,155 @@
+# #################################
+# Language file for EXIF Viewer 1.1
+# #################################
+
+*** Font / Charset for this language ***
+Charset=0
+FontName=Tahoma
+
+*** Language file infos ***
+Language|Language=English
+Language|LanguageFlag=English.gif
+Language|Author=Werner Rumpeltesz
+Language|AuthorWWW=http://www.gaijin.at/
+Language|AuthorEMail=info@gaijin.at
+
+*** Public strings (often used) ***
+Public|cmdOk=Ok
+Public|cmdSave=Save
+Public|cmdCancel=Cancel
+Public|lblWebsite=Website:
+Public|lblEMail=E-Mail:
+Public|FilterJPEG=JPEG files (*.jpe;*.jpg;*jpeg)
+Public|FilterAll=All files (*.*)
+
+*** Form Info ***
+Info|TitleAbout=About
+Info|Description=Displays EXIF information from JPEG images
+Info|lblVersion=Version $s1$
+Info|lblRights=All rights reserved.
+Info|fraLanguage=Language
+Info|lblAuthor=Author:
+Info|lblLanguageBy=English language file by:
+Info|ttVisitAuthor=Visit the homepage of the author
+Info|ttMailAuthor=Send an e-mail to the author
+Info|ttVisitTranslator=Visit the homepage of the translator
+Info|ttMailTranslator=Send an e-mail to the translator
+Info|msgNoStdMailTitle=No standard mail client found
+Info|msgNoStdMailText=Your standard mail client can't opened!
+Info|msgNoStdBrowserTitle=No standard webbrowser found
+Info|msgNoStdBrowserMailText=Your standard webbrowser can't opened!
+
+*** Form Settings ***
+Settings|Title=Settings
+Settings|fraProgSet=Program settings
+Settings|chkStyleXP=Activate XP-Styles (need a restart of the application)
+
+*** Form Main ***
+Main|mnuFile=&File
+Main|mnuFileOpen=&Open...
+Main|mnuFileExit=&Exit
+Main|mnuEdit=&Edit
+Main|mnuEditCopy=&Copy
+Main|mnuEditCopyAll=C&opy all
+Main|mnuEditSelectAll=Select &all
+Main|mnuExtras=E&xtras
+Main|mnuExtrasSettings=&Settings...
+'For english ("Language") add 2 Dollar-Chars for an empty string
+'Do not add a "&" for a unterline!
+Main|mnuExtrasLanguage=$$
+Main|mnuHelp=&Help
+Main|mnuHelpInfo=&About...
+Main|cmdExit=E&xit
+
+Main|dlgOpenTitle=Open JPEG file...
+
+Main|IFD0ResUnitNone=(no unit specified)
+Main|IFD0ResUnitDPC=dpc (dots per centimeter)
+Main|IFD0ResUnitDPI=dpi (dots per inch)
+Main|IFD0DateTime=$s2$/$s1$/$s3$, $s4$
+
+Main|IFD0ExpPrgAuto=Automatic control
+Main|IFD0ExpPrgMan=Manual control
+Main|IFD0ExpPrgNorm=Normal control
+Main|IFD0ExpPrgOPrior=Aperture priority
+Main|IFD0ExpPrgVPrior=Shutter priority
+Main|IFD0ExpPrgCreaSlow=Creative (slow)
+Main|IFD0ExpPrgMovFast=Action (high-speed)
+Main|IFD0ExpPrgPort=Portrait
+Main|IFD0ExpPrgLand=Landscape
+Main|IFD0ExpPrgUnknown=(unknown)
+
+Main|SubIFDFlashNotUsed=Not used
+Main|SubIFDFlashUsed=Used
+Main|SubIFDFlashUsedRel=Used and released
+Main|SubIFDFlashUsedNoRel=Used but not released
+Main|SubIFDFlashUnknown=(unknown)
+
+# >>> ADDED 1.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main|SubIFDMeteringAverage=Average
+Main|SubIFDMeteringCenter=Center
+Main|SubIFDMeteringSpot=Spot
+Main|SubIFDMeteringMultiSpot=Multi-Spot
+Main|SubIFDMeteringMultiSegment=Multi-Segment
+Main|SubIFDMeteringUnknown=(unknown)
+
+Main|SubIFDLightSourceAuto=Auto
+Main|SubIFDLightSourceDaylight=Daylight
+Main|SubIFDLightSourceFluorescent=Fluorescent
+Main|SubIFDLightSourceTungsten=Tungsten
+Main|SubIFDLightSourceFlash=Flash
+Main|SubIFDLightSourceUnknown=(unknown)
+# <<< ADDED 1.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main|OutNoData=  No data found.
+Main|OutNotReadable=The picture file is not readable.
+
+Main|OutFITitle=File information:
+Main|OutFILocFile =  Local path: $s1$
+Main|OutFIFileName=  File name:  $s1$
+Main|OutFIFileSize=  File size:  $s1$ Byte
+
+Main|OutErrSOI=Start of image (SOI) not recognized.
+Main|OutErrAPP1=EXIF application marker (APP1) not recognized.
+Main|OutErrExifId=EXIF identifier not recognized.
+Main|OutErrTiffBA=TIFF byte align not recognized.
+
+Main|OutPicInfoTitle=Image information:
+Main|OutPicInfoType       =  Image type:      $s1$
+Main|OutPicInfoNo         =  Image number:    $s1$
+Main|OutPicInfoSW         =  Software:        $s1$
+Main|OutPicInfoDTOrig     =  Created:         $s1$
+Main|OutPicInfoDTDig      =  Digitalized:     $s1$
+Main|OutPicInfoDTMod      =  Modified:        $s1$
+Main|OutPicInfoSize       =  Image size:      $s1$ x $s2$ Pixel
+Main|OutPicInfoResH       =  Horizontal res.: $s1$ $s2$
+Main|OutPicInfoResV       =  Vertical res.:   $s1$ $s2$
+Main|OutPicInfoCompr      =  Compression:     $s1$ Bits/Pixel
+Main|OutPicInfoDescr      =  Description:     $s1$
+Main|OutPicInfoCopy       =  Copyright:       $s1$
+Main|OutPicInfoExifVer    =  EXIF version:    $s1$
+Main|OutPicInfoFlashPixVer=  FlashPix ver.:   $s1$
+Main|OutPicInfoComment    =  Comment:         $s1$
+
+Main|OutCamInfoTitle=Camera information:
+Main|OutCamInfoManufact=  Manufacturer: $s1$
+Main|OutCamInfoModel   =  Model:        $s1$
+Main|OutCamInfoFirmware=  Firmware:     $s1$
+Main|OutCamInfoOwner   =  Owner:        $s1$
+Main|OutCamInfoSN      =  Serial no.:   $s1$
+
+Main|OutCamSetTitle=Camera settings:
+Main|OutCamSetFlash   =  Flash light:          $s1$
+Main|OutCamSetFNumber =  F-Nummer:             F $s1$
+Main|OutCamSetApVal   =  Aperature value:      F $s1$
+Main|OutCamSetMaxApVal=  Max. aperature value: F $s1$
+Main|OutCamSetExpTimer=  Exposure time:        $s1$ sec.
+Main|OutCamSetSSpeed  =  Shutter speed value:  $s1$ sec.
+Main|OutCamSetFocalLen=  Focusal length:       $s1$ mm
+Main|OutCamSetExpProg =  Exposure program:     $s1$
+Main|OutCamSetSubjDist=  Subject distance:     $s1$ m
+# >>> ADDED 1.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main|OutCamSetISOSpeed=  ISO speed rate:       ISO-$s1$
+Main|OutCamSetMetering=  Metering mode:        $s1$
+Main|OutCamSetLightSrc=  Light source:         $s1$
+# <<< ADDED 1.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

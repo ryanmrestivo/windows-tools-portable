@@ -1,0 +1,9 @@
+Working area :
+- matrix = there is a 7x7 matrix as input fields - in which you select the weight of each pixel, 
+- divisor = here you select the division ratio - which should equal to the sum of all weights in the matrix - if the effect is not to change the luminosity (brightness) of the pixel,
+- bias = this can change the final luminosity of the pixel.
+
+Principal :
+- it works in matrix style, the main pixel (the one being manipulated) is in the center, filter size is set by the needed cell-fields only around the main pixel, the minimum filter needed is 3x3,
+- for each color channel (red/green/blue) the matrix is evaluted by multiplying the channel value by the given number, then the result is divided by the Divisor & incremented by Bias,
+- You can use all integer numbers (negative too) including 0, if the Divisor is 0 - the output sum isn't divided (it gives the same result as there is number 1), Divisor 1 & Bias 0 does nothing.

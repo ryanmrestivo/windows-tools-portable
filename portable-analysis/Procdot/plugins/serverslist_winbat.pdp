@@ -1,0 +1,11 @@
+Name = Servers List
+Author = chrisu
+Version = 1.0
+Type = MainMenuItem
+Architecture = WindowsBatchScript
+File = serverslist_winbat.bat
+Priority = 9
+RunHidden = 1
+RunExclusively = 1
+CanOverrideOtherPlugins = 0
+CanOverrideProcDot = 0

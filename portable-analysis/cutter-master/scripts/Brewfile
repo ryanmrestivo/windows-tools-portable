@@ -1,0 +1,6 @@
+brew "p7zip"
+brew "ccache"
+brew "openssl"
+brew "xz"
+brew "llvm"
+brew "meson"
