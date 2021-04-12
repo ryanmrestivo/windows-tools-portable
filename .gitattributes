@@ -1,1 +1,2 @@
-*.pl linguist-detectable=true
+*.pl linguist-detectable=false
+*.perl linguist-detectable=false
