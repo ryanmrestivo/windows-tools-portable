@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAzCwAAMwsAABAAAAAQAAAAAAAAADMzMwAAAKoAAAD9ADFj/QBlZf8AMZb/AGLH/wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIAAAAAAAAAAAEREREREREYARmZmZmZmZwBGZmZmZmZnAEZmZmZmZmcAIzMzMzMzNQAjMzMzMzM1ACMzMzMzMzUAIzMzMzMzNQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQABERERERERAAAAAAAAAAAIiIiIiIiIiI
+Name=German
+LocalName=Deutsch
+Version=2.09
+VersionFormat=2.12
+Comments=Every war is a crime !
+Authors=Volker Schmidt     |chumbaba.schmidt@web.de
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Einfügen" Hint="Aufgabe hinzufügen|Fügt die ausgewählte Aufgabe zur Stapelverarbeitungsliste hinzu"/>
+    <ActionBatchOpen Caption="Öffnen" Hint="Öffnen|Öffnet eine Stapel-Datei"/>
+    <ActionBatchSaveAs Caption="Speichern als" Hint="Speichern als|Speichert Stapel in eine Datei"/>
+    <ActionBatchRemoveSel Caption="Auswahl löschen" Hint="Ausgewählte löschen|Entfernt ausgewählte Bearbeitung von der Stapel-Liste"/>
+    <ActionBatchClear Caption="Alle löschen" Hint="Alle löschen|Entfernt alle Aufgaben aus Stapelliste"/>
+    <ActionBatchNoRecent Caption="(kein neues File)"/>
+    <ActionAddFiles Caption="Einfügen" Hint="Datei hinzufügen|Fügt Dateien zur Liste hinzu"/>
+    <ActionAddFolders Caption="Einfügen" Hint="Ordner hinzufügen|Fügt Ordnerinhalt zur Liste hinzu"/>
+    <ActionRemoveSelected Caption="Auswahl löschen" Hint="Ausgewählte löschen|Löscht ausgewählte Dateien von der Liste"/>
+    <ActionRemoveAll Caption="Alle löschen" Hint="Alle löschen|Löscht alle Dateien von der Liste"/>
+    <ActionRemoveDead Caption="Ungültige löschen" Hint="Ungültige löschen|Entfernt ungültige Dateien von der Liste"/>
+    <ActionPreview Caption="Vorschau" Hint="Vorschau|Erneuert die Vorschau mit den geplanten Bearbeitungen"/>
+    <ActionFromListClear Caption="Löschen" Hint="Löscht Liste|Löscht die gesamte Liste"/>
+    <ActionFromListOpen Caption="Öffnen" Hint="Öffnen|Läd eine Liste aus einer Datei"/>
+    <ActionFromListSave Caption="Speichern" Hint="Speichern|Speichert die Liste in eine Datei"/>
+    <ActionMultistrReplClear Caption="Lösche Gitter" Hint="Gitterlinien entfernen"/>
+    <ActionMultistrReplSave Caption="Speichern" Hint="|Speichert Liste unter obigen Namen"/>
+    <ActionMultistrReplDelete Caption="Löschen" Hint="|Löscht ausgewählte Namen"/>
+    <ActionMoveUp Caption="Auf" Hint="Nach oben|Bewegt ausgewählte Dateien nach oben"/>
+    <ActionMoveDown Caption="Ab" Hint="Nach unten|Bewegt ausgewählte Dateien nach unten"/>
+    <ActionMoveTop Caption="Zum Anfang" Hint="Zum Anfang|Setzt ausgewählte Dateien an den Anfang der Liste"/>
+    <ActionMoveBottom Caption="Zum Ende" Hint="Zum Ende|Setzt ausgewählte Dateien an das Ende der Liste"/>
+    <ActionItemsUnsort Caption="Löschen" Hint="|Löscht die Aufgabenliste"/>
+    <ActionItemsSelectAll Caption="Wähle alle" Hint="Wähle alle|Wählt alles aus"/>
+    <ActionItemsSelectNone Caption="Wähle nichts" Hint="Wähle nichts|Setzt die Auswahl zurück"/>
+    <ActionItemsSelectInvert Caption="Invertiere Auswahl" Hint="Invertiere Auswahl|Kehrt die Auswahl um"/>
+    <ActionLogClear Caption="Löschen" Hint="Löschen|Logdatei wird gelöscht"/>
+    <ActionLogSave Caption="Speichern" Hint="Speichern|Speichert Log in ein Datei"/>
+    <ActionLogCopy Caption="Kopiere" Hint="Kopiere|Kopiert Logdatei ins Clipboard"/>
+    <ActionLogFilter Caption="Filter" Hint="Log-Filter|Filtert Logeinträge"/>
+    <ActionLogFilterOk Caption="Erfolge" Hint="Zeigt umbenannte Files|Show entries corresponding to successfully renamed files"/>
+    <ActionLogFilterError Caption="Fehler" Hint="Zeigt Fehler|Show entries corresponding to errors"/>
+    <ActionLogFilterNot Caption="Nicht umbenannt" Hint="Show skipped files|Show entries corresponding to files that were not renamed"/>
+    <ActionActionGo Caption="Start" Hint="Start|Startet die Umbenennung"/>
+    <ActionActionStop Caption="Stop" Hint="Stop|Stopt die Umbenennung"/>
+    <ActionOptions Caption="Optionen" Hint="Optionen|Zeigt die Programm-Optionen an"/>
+    <ActionActionUndo Caption="Undo" Hint="Rückgängig machen|Setzt letzte Umbenennung zurück"/>
+    <ActionHelpContents Caption="Hilfe" Hint="Hilfe|Öffnet die Hilfe-Datei"/>
+    <ActionHelpAbout Caption="Über" Hint="Über|Infos zum Programm"/>
+    <ActionExit Caption="Exit" Hint="Ende|Beende das Programm"/>
+    <ActionAlwaysOnTop Caption="On top" Hint="Immer vorn|Fenster bleibt immer im Vordergrund"/>
+    <ActionTabFiles Caption="Datei" Hint="Datei|Zeigt die Liste der Dateien an"/>
+    <ActionTabActions Caption="Bearbeiten" Hint="Bearbeiten|Zeigt die Auswahl der möglichen Bearbeitungen an"/>
+    <ActionTabLog Caption="Log" Hint="Log|Zeigt Log-Datei"/>
+    <lstFiles Hint="|Datei Liste - Mit der rechten Maustaste können oben per Klick die Spalten anpasst werden">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Ordner"/>
+          <Item Index="1" Text="Dateiname"/>
+          <Item Index="2" Text="Vollständiger Pfad"/>
+          <Item Index="3" Text="Ext."/>
+          <Item Index="4" Text="Vorschau"/>
+          <Item Index="5" Text="Größe"/>
+          <Item Index="6" Text="Datum erstellt"/>
+          <Item Index="7" Text="Datum verändert"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Vorschau "/>
+    <grpBatch Caption="       Ausgewählte Bearbeitungen "/>
+    <lstBatch Hint="|Ausgewählte Bearbeitungen"/>
+    <lblPreviewOld Caption="Alter Datei-Name:"/>
+    <lblPreviewNew Caption="Neuer Datei-Name:"/>
+    <lstActions Hint="|Bearbeitungs-Liste">
+      <Items>
+        <Item Index="0" Value="Suffix ändern"/>
+        <Item Index="1" Value="Zeichen austauschen"/>
+        <Item Index="2" Value="Mehrere Zeichen aust."/>
+        <Item Index="3" Value="Zeichen einfügen"/>
+        <Item Index="4" Value="Zeichen bewegen"/>
+        <Item Index="5" Value="Zeichen löschen"/>
+        <Item Index="6" Value="Nummerierung"/>
+        <Item Index="7" Value="mp3 tags"/>
+        <Item Index="8" Value="Datum &#38; Zeit"/>
+        <Item Index="9" Value="Zufallsnamen"/>
+        <Item Index="10" Value="Format ändern"/>
+        <Item Index="11" Value="Namen aus einer Liste"/>
+        <Item Index="12" Value="Regulärer Ausdruck"/>
+        <Item Index="13" Value="Benutze EXIF-Daten"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Suffix ändern in:"/>
+    <cbxChangeExtNoRepl Caption="Alte Dateinamen-Erweiterung behalten + neue zusätzlich anhängen"/>
+    <lblChangeExtNotes Caption="  Info:&lt;br&gt;- Punkt nicht eingeben&lt;br&gt;- Für eine fortlaufende Änderung, &lt;LINK&gt;Nummerierung&lt;/LINK&gt; verwenden"/>
+    <lblStrReplSearch Caption="Suche nach:"/>
+    <lblStrReplBy Caption="Ersetze durch:"/>
+    <cbxStrReplAll Caption="Ersetze alle"/>
+    <cbxStrReplCase Caption="Groß-Kleinschreibung berücksichtigen"/>
+    <cbxStrReplExt Caption="Während der Suche ändern"/>
+    <cbxStrReplOnlyExt Caption="Nur Dateinamen-Erweiterung suchen und ändern"/>
+    <lblMultstrSearch Caption="Suche nach:"/>
+    <lblMultstrReplBy Caption="Ersetze durch:"/>
+    <lblMultstrReplSet Caption="Vorgefertigte Liste:"/>
+    <cbxMultstrReplExt Caption="Dateinamen-Erweiterung in Suche einbeziehen"/>
+    <cbxMultstrReplCase Caption="Groß-Kleinschreibung berücksichtigen"/>
+    <lblMultstrReplNotes Caption="Beachte:&lt;BR&gt;- Drücke Ctrl+Plus (+) und Ctrl+Minus (-) zum Einfügen oder Löschen aller"/>
+    <lblStrInsStr Caption="Einzufügende Zeichenfolge:"/>
+    <lblStrInsPos Caption="Ab Position:"/>
+    <rbtStrInsBegin Caption="Vom Anfang"/>
+    <rbtStrInsEnd Caption="Vom Ende"/>
+    <cbxStrInsExt Caption="Nur Suffix ändern"/>
+    <lblStrInsNotes Caption="  Info:&lt;br&gt;- Soll ein Zeichen vorher oder nachher geändert werden, nutze &lt;LINK&gt;Zeichen austauschen&lt;/LINK&gt;&lt;br&gt;- %name% = Original-Datei-Name (ohne Suffix)&lt;BR&gt;- %ext%     = Original Suffix (einschließlich Punkt)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Dateiname&lt;BR&gt;- %% = % Zeichen&lt;BR&gt;&lt;LINK&gt;Hilfe&lt;/LINK&gt; für mehr Informationen"/>
+    <lblMoveStrFrom Caption="Von Position:"/>
+    <rbtMoveStrFromBegin Caption="Vom Anfang"/>
+    <rbtMoveStrFromEnd Caption="Vom Ende"/>
+    <lblMoveStrCount Caption="Anzahl zu bewegender Zeichen:"/>
+    <lblMoveStrTo Caption="Zur Position:"/>
+    <rbtMoveStrToBegin Caption="Vom Anfang"/>
+    <rbtMoveStrToEnd Caption="Vom Ende"/>
+    <lblMoveStrNotes Caption="Info:&lt;br&gt;- Soll ein Zeichen bewegt werden, das sich nicht immer an der selben Position befindet, dann verwende &lt;link&gt;Zeichen austauschen&lt;/link&gt; um es zu löschen, anschließend nutze &lt;link&gt;Zeichen einfügen&lt;/link&gt; , um es neu zu platzieren&lt;BR&gt;- &#34;Zur Position&#34; beinhaltet nicht das zu bewegende Zeichen (es ist, als ob sie bereits gelöscht sind)"/>
+    <lblCharDel Caption="Anzahl der zu löschenden Zeichen:"/>
+    <rbtCharDelPos Caption="Ab Position:"/>
+    <rbtCharDelBegin Caption="Vom Anfang"/>
+    <rbtCharDelEnd Caption="Vom Ende"/>
+    <rbtCharDelStr Caption="Nach der Zeichenfolge:"/>
+    <rbtCharDelStr2 Caption="Vor der Zeichenfolge:"/> 
+    <cbxCharDelExt Caption="Nur Suffix ändern"/>
+    <lblCharDelNotes Caption="  Info:&lt;br&gt;- Zum Löschen eines einzelnen Zeichens verwende &lt;LINK&gt;Zeichen austauschen&lt;/LINK&gt; "/>
+    <lblEnumMask Caption="Maske:"/>
+    <lblEnumStart Caption="Beginne ab:"/>
+    <lblEnumDigits Caption="Anzahl der Stellen:"/>
+    <lblEnumIncr Caption="Schrittweite:"/>
+    <cbxEnumRestart Caption="Zurück zum Anfangswert bei Ordnerwechsel"/>
+    <lblEnumNotes Caption="  Info:&lt;br&gt;- %name% = Original-Datei-Name (ohne Suffix)&lt;BR&gt;- %ext%     = Original Suffix (einschließlich Punkt)&lt;BR&gt;- %num%   = Nummer&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Dateiname&lt;BR&gt;- %% = % Zeichen&lt;BR&gt;&lt;LINK&gt;Hilfe&lt;/LINK&gt; für mehr Informationen"/>
+    <lblMP3Mask Caption="Maske:"/>
+    <cbxMP3TwoDigit Caption="Zweistellige Track-Nummer (füge eine '0' vorn ein)"/>
+    <cbxMP3Convert Caption="Ändere nicht zugelassene Zeichen  / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="  Info:&lt;br&gt;- %author% = Autor&lt;BR&gt;- %title%      = Titel&lt;BR&gt;- %album%  = Album&lt;BR&gt;- %year%     = Jahr&lt;BR&gt;- %genre%   = Genre&lt;BR&gt;- %comm%   = Kommentar&lt;BR&gt;- %track%    = Track Nummer (ID3V1.1)&lt;BR&gt;- %name%   = Original Filename (ohne Suffix)&lt;BR&gt;- %ext%       = Original Suffix (mit Punkt)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Dateiname&lt;BR&gt;- %% = % Zeichen&lt;BR&gt;- $if(Bedingung,richtiger Wert,falscher Wert)&lt;BR&gt;&lt;LINK&gt;Hilfe&lt;/LINK&gt; für mehr Informationen"/>
+    <lblDTMask Caption="Maske:"/>
+    <cbxDTSuffix Caption="Addiere Suffix bei mehr als einer Datei mit geichem//er Datum/Zeit"/>
+    <lblDTWhich Caption="Auswahl:"/>
+    <rbtDTWhichCreation Caption="Maske"/>
+    <rbtDTWhichModif Caption="Letzte Einstellung"/>
+    <lblDTNotes Caption="  Infos:"/>
+    <lblDTNotes2>
+      <Lines>
+           <![CDATA[f	Original Dateiname (ohne Suffix)
+e	Original extension (einschließlich Punkt)
+c	Datum und Zeit im Windows Standartformat
+d	Tag ohne führende Null (1-31)
+dd	Tag mit einer führenden Null (01-31)
+ddd	Tag, kurzer Name (Sun-Sat)
+dddd	Tag, voller Name (Sunday-Saturday)
+ddddd	Datum (kurze Windows-Form)
+dddddd	Datum (lange Windows-Form)
+m	Monat ohne führende Null (1-12)
+mm	Monat mit führender Null (01-12)
+mmm	Monat, kurzer Name (Jan-Dec)
+mmmm	Monat, voller Name (January-December)
+yy	Jahr, 2-stellig (00-99)
+yyyy	Jahr, 4-stellig (0000-9999)
+h	Stunde ohne führende Null (0-23)
+hh	Stunde mit führender Null (00-23)
+n	Minute ohne führende Null (0-59)
+nn	Minute mit führender Null (00-59)
+s	Sekunde ohne führende Null (0-59)
+ss	Sekunde mit führender Null (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	12-Stunden Uhr für h or hh
+a/p	12-Stunden Uhr für h or hh
+'xx'/"xx"	Anzahl einschließlichen nicht geänderter Zeichen
+
+Wenn m oder mm unmittelbar auf h oder hh folgt, dann wird Minute statt Monat benutzt.]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Maske:"/>
+    <lblRandomMethod Caption="Methode:"/>
+    <rbtRandomNumber Caption="Zufallszahl (8 stellig)"/>
+    <rbtRandomTick Caption="Windows Zähler"/>
+    <rbtRandomGUID Caption="Buchstaben-Zahlen-Reihe"/>
+    <lblRandomNotes Caption="  Info:&lt;br&gt;- %name% = Original Datei-Name (ohne Suffix)&lt;BR&gt;- %ext% = Original Suffix (einschließlich Punkt)&lt;BR&gt;- %random% = Zufallszeichen&lt;BR&gt;- %% = % Zeichen&lt;BR&gt;&lt;LINK&gt;Hilfe&lt;/LINK&gt; für mehr Informationen"/>
+    <rbtCaseWords Caption="Erster Buchstabe nach einem der folgenden Zeichen GROSS: &#34;%s&#34"/>
+    <rbtCaseFirst Caption="Erster Buchstabe des Dateinamens GROSS"/>
+    <rbtCaseUpper Caption="Großbuchstaben"/>
+    <rbtCaseLower Caption="Kleinbuchstaben"/>
+    <cbxCaseLocale Caption="Für die Änderung von Zeichen mit Akzent die Windows Länder-Einstellungen benutzen"/>
+    <cbxCaseIncludeExt Caption="Auch auf Dateinamen-Erweiterung anwenden"/>
+    <cbxCaseOnlyExt Caption="Nur Dateinamen-Erweiterung ändern"/>
+    <cbxFromListExt Caption="Original Dateinamen-Erweiterung hinzufügen"/>
+    <cbxFromListOnlyExt Caption="Nur Dateinamen-Erweiterung ändern"/>
+    <lblFromListNotes Caption="  Info:&lt;br&gt;- Jede Zeile der Liste wird als Datei-Name verwendet. Aufgaben werden nacheinander abgearbeitet.&lt;BR&gt;- Sind Zeilen leer oder nicht genügend vorhanden, werden die betreffenden Dateien nicht umbenannt."/>
+    <lblRegexp Caption="Ausdruck:"/>
+    <lblRegexpRepl Caption="Neuer Name:"/>
+    <lblRegexpNotes Caption="Erklärungen:&lt;BR&gt;- \ = ESC-Zeichen für bestimmte Zeichen (wie $ und andere), benutze z.B. \\ für einen einfachen \ im neuen Namen (wenn der neue Name in einem anderen Verzeichnis erscheinen soll)&lt;BR&gt;- Benutze ^ zur Markierung des Namens-Beginns und $ für das Namens-Ende&lt;BR&gt;- Der neue Name muß $1, $2 etc. enthalten, um zu kennzeichnen, wo gefundene Zeichen kommen&lt;BR&gt;siehe &lt;LINK&gt;Hilfe&lt;/LINK&gt; für weitere Informationen über Reguläre Ausdrücke"/>
+    <lblExifMask Caption="Maske:"/>
+    <lblExifNotes Caption="Erklärungen:&lt;BR&gt;- %name% = Original Dateiname (ohne Erweiterung)&lt;BR&gt;- %ext% = Original Erweiterung (einschließlich Punkt)&lt;BR&gt;- %datetimeoriginal% / %datetime% = Original Datum und Zeit des Bildes&lt;BR&gt;- %orientation% = Ausrichtung (hoch oder quer)&lt;BR&gt;- %flash% = mit oder ohne Blitz&lt;BR&gt;- %% = % character&lt;BR&gt;siehe &lt;LINK&gt;Hilfe&lt;/LINK&gt; für mehr Infos und komplette Liste der EXIF-tags"/>
+    <lstLog Hint="|Log"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Alle Dateien"/>
+      <Item Name="strfltTextFiles" Value="Text Datei"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer Stapel-Datei"/>
+      <Item Name="strmsgSelectFiles" Value="Ausgewählte Dateien"/>
+      <Item Name="strmsgSelectFolder" Value="Ausgewählte Ordner"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Hinzugefügte Dateien"/>
+      <Item Name="strmsgStatusRenaming" Value="Umbenannte Dateien"/>
+      <Item Name="strmsgFilesCount" Value="%d Dateien"/>
+      <Item Name="strmsgBusy" Value="Anwendung arbeitet: Umbenennung in Arbeit"/>
+      <Item Name="strmsgNothingToDo" Value="Nichts zu tun: Bitte Datei und Bearbeitung auswählen."/>
+      <Item Name="strlogStartRename" Value="Umbenennung startet"/>
+      <Item Name="strlogStartPreview" Value="Änderungs-Vorschau"/>
+      <Item Name="strlogStartRevert" Value="Vorheriger Name"/>
+      <Item Name="strlogEndRename" Value="Umbenennung beendet"/>
+      <Item Name="strlogEndPreview" Value="Vorschau beendet"/>
+      <Item Name="strlogEndRevert" Value="Rückkehrprozess beendet"/>
+      <Item Name="strlogStoppedByUser" Value="Arbeit wurde manuell unterbrochen"/>
+      <Item Name="stradUnknown" Value="Tu nichts"/>
+      <Item Name="stradInclExt" Value=", füge zur Aufgabe hinzu"/>
+      <Item Name="stradOnlyExt" Value=", nur Dateinamen-Erweiterung suchen und ändern"/>
+      <Item Name="stradChangeExt" Value="Ändere Erweiterungen in %s"/>
+      <Item Name="stradChangeExtRmv" Value="Erweiterungen zurücksetzen"/>
+      <Item Name="stradChangeExtNoRepl" Value="Dateinamen-Erweiterung hinzufügen %s"/>
+      <Item Name="stradStringRepl" Value="Ersetze %s durch %s"/>
+      <Item Name="stradStringReplAll" Value=", Ersetze alle"/>
+      <Item Name="stradStringReplCase" Value=", Groß-Kleinschreibung berücksichtigen"/>
+      <Item Name="stradMultstrRepl" Value="Zurücksetzen mit &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Füge %s ab Position %d ein"/>
+      <Item Name="stradMoveStr" Value="Verschiebe %d Zeichen von Position %d%s, nach Position %d%s"/>
+      <Item Name="stradCharDel" Value="Lösche %d Zeichen"/>
+      <Item Name="stradCharDelPos" Value=" ab Position %d"/>
+      <Item Name="stradCharDelStr" Value=" nach dem Zeichen %s"/>
+      <Item Name="stradEnum" Value="Erzeugt eine Aufzählung mit %s von %d bis %d Schrittweite %d"/>
+      <Item Name="stradMP3" Value="Erzeugt einen Namen im MP3 tag, mit der Maske %s"/>
+      <Item Name="stradMP3TwoDigit" Value=", füge '0' in Track-Nummer ein"/>
+      <Item Name="stradMP3Convert" Value=", konvertiere nicht zugelassene Zeichen"/>
+      <Item Name="stradFromBegin" Value=", vom Anfang"/>
+      <Item Name="stradFromEnd" Value=", vom Ende"/>
+      <Item Name="stradDateTime" Value="Generiere Namen ab Datei'' Datum und Zeit, nach der Maske %s"/>
+      <Item Name="stradDateTimeCreat" Value=" mit Erstellungs-Datum"/>
+      <Item Name="stradDateTimeModif" Value=" mit letztem Änderungs-Datum"/>
+      <Item Name="stradDateTimeSuffix" Value=", füge Dateinamen-Erweiterung hinzu wenn notwendig"/>
+      <Item Name="stradRandom" Value="Generiert Zufallsnamen mit Maske %s"/>
+      <Item Name="stradRandomNumbers" Value=", mit Zahlen"/>
+      <Item Name="stradRandomTick" Value=", mit Windows Schritt Zähler"/>
+      <Item Name="stradRandomGUID" Value=", mit GUIDs"/>
+      <Item Name="stradCase" Value="Ändere Argument:"/>
+      <Item Name="stradCaseWords" Value=" Erster Buchstabe nach einem der folgenden Zeichen GROSS: &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" Erster Buchstabe des Dateinamens GROSS"/>
+      <Item Name="stradCaseUpper" Value=" Alle in Großbuchstaben"/>
+      <Item Name="stradCaseLower" Value=" Alle in Kleinbuchstaben"/>
+      <Item Name="stradCaseLocale" Value=", Verwendet Windows Länder-Einstellungen"/>
+      <Item Name="stradFromList" Value="Umbenennen nach einer speziellen Liste"/>
+      <Item Name="stradFromListExt" Value=", verwende Originalerweiterung"/>
+      <Item Name="stradFromListOnlyExt" Value=", nur Dateinamen-Erweiterung ändern"/>
+      <Item Name="stradRegexp" Value="Umbenennen mittels regulärem Ausdruck"/>
+      <Item Name="stradExif" Value="Generiere Namen aus der EXIF Info, basierend auf der Maske &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Leere Zeile"/>
+      <Item Name="straeFromListEnd" Value="Ende der Liste"/>
+      <Item Name="strfsNotRenamed" Value="%s wurden nicht umbenannt : %s"/>
+      <Item Name="strfsRenamed" Value="%s umbenannt in %s"/>
+      <Item Name="strfsReverted" Value="%s zurück zum vorherigen Namen %s"/>
+      <Item Name="strfsRenError" Value="Konnte nicht umbenannt werden %s zu %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Keinen vorherigen Namen gefunden für %s um ihn zu verwenden."/>
+      <Item Name="strfs404" Value="Quell-File nicht gefunden"/>
+      <Item Name="strfsAlreadyExist" Value="Datei oder Ordner mit diesem Namen existiert bereits"/>
+      <Item Name="strfeIdentical" Value="Neuer Name entspricht dem alten Namen"/>
+      <Item Name="strhintNotAgain" Value="Diesen Hinweis nicht mehr anzeigen"/>
+      <Item Name="strhintShowPreview" Value="Vorschau ist nicht sichtbar. Zum Einschalten der Vorschau mit der rechten Maustaste auf Kopfzeile der Datei-Liste klicken."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="Über das Programm">
+    <btn1 Caption="Historie"/>
+    <btn2 Caption="Schließen"/>
+    <tshGeneral Caption="Allgemein"/>
+    <tshCredits Caption="Danksagungen"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Warnung"/>
+        <Item Index="1" Value="Fehler"/>
+        <Item Index="2" Value="Information"/>
+        <Item Index="3" Value="Bestätigung"/>
+        <Item Index="4" Value="&#38;Ja"/>
+        <Item Index="5" Value="&#38;Nein"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Abbrechen"/>
+        <Item Index="8" Value="&#38;Abbrechen"/>
+        <Item Index="9" Value="&#38;Wiederholen"/>
+        <Item Index="10" Value="&#38;Ignorieren"/>
+        <Item Index="11" Value="&#38;Alle"/>
+        <Item Index="12" Value="Nicht alle"/>
+        <Item Index="13" Value="Alle"/>
+        <Item Index="14" Value="&#38;Hilfe"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Einstellungen">
+    <btn1 Caption="Hilfe"/>
+    <btn2 Caption="Abbrechen"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Anzeige"/>
+    <tshAdding Caption="Dateien &#38;&#38; Ordner"/>
+    <tshProcessing Caption="Arbeits-Einstellungen"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Sprache"/>
+    <lbhLists Caption="Listen"/>
+    <cbxRealtimeUpdate Caption="Real-time update bei Datei-Umbenennung und erzeuge Log (langsamer)"/>
+    <cbxResizeColsFiles Caption="Spalten der Datei-Liste zurücksetzen"/>
+    <cbxFilesIcons Caption="Zeigt Icons in der Dateiliste"/>
+    <lbhFonts Caption="Fonts"/>
+    <cbxForceFont Caption="Font-Auswahl:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Aktueller Windows-Font"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Info: Arial Unicode MS ist als Font gut geeignet (falls vorhanden)"/>
+    <lbhDropdown Caption="Drop-down Felder"/>
+    <lblDropdownMax Caption="Anzahl von Einträgen in der Log-Datei:"/>
+    <cbxDropdownComplete Caption="Autovervollständigung beim Schreiben"/>
+    <lbhToolbars Caption="Werkzeugleisten"/>
+    <lblIconSet Caption="Icon set:"/>
+    <lblColorType Caption="Farb Typ:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatik"/>
+        <Item Index="1" Value="Grau, wenn inaktiv"/>
+        <Item Index="2" Value="Hell, wenn inaktiv (XP Stil)"/>
+        <Item Index="3" Value="Dunkel, wenn inaktiv"/>
+        <Item Index="4" Value="Immer farbig"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP style"/>
+    <lbhDragdrop Caption="Drag &#38; Drop"/>
+    <cbxDragdropNoAsk Caption="Verwende immer die folgenden Einstellungen:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Dateien zum aktiven Ordner hinzufügen"/>
+      <cbxFolders Caption="Ausgewählte Ordner hinzufügen"/>
+      <cbxRecursive Caption="Auch auf Unterverzeichnisse anwenden"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Verzeichnis Aktivität"/>
+    <cbxLaunchFile Caption="Ausführen durch Doppelklick"/>
+    <lbhRenaming Caption="File-Namen-Änderung"/>
+    <cbxCopy Caption="Kopiert anstelle der Namensänderung"/>
+    <cbxGenerLog Caption="Erzeuge Logdatei"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Erstellt Unterverzeichnisse, wenn &#34;\&#34; im Namen gefunden wurden"/>
+    <cbxDetectAbsdir Caption="Erlaube &#34;:\&#34; oder &#34;\\&#34; als absoluten Pfad (Dateien können beliebig bewegt werden)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Zeige die Ansicht:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Datei-Liste"/>
+        <Item Index="1" Value="Bearbeitung"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Lösche Logdatei"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Schalte zur:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Datei-Liste"/>
+        <Item Index="1" Value="Bearbeitung"/>
+        <Item Index="2" Value="Logdatei"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Lösche Datei Liste"/>
+    <cbxClearBatchList Caption="Lösche Bearbeitungs-Liste"/>
+    <cbxSaveLog Caption="Save Log in File:"/>
+    <btnSaveLog Hint="Browse..."/>
+    <cbxSaveLogAppend Caption="Anfügen"/>
+    <lbhLanguage Caption="Sprache"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Name"/>
+          <Column Index="1" Caption="Lokaler Name"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Version:"/>
+      <lblMadeby Caption="Made by:"/>
+      <lblComments Caption="Kommentar:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Ordner zum Hinzufügen auswählen">
+    <btn1 Caption="Help"/>
+    <btn2 Caption="Abbruch"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Netzwerk..."/>
+    <Options>
+      <cbxFiles Caption="Dateien zum ausgewählten Ordner hinzufügen"/>
+      <cbxFolders Caption="Ausgewählte Ordner hinzufügen"/>
+      <cbxRecursive Caption="Die beiden Optionen auch auf Unterordner anwenden"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Drag &#38; Drop Optionen">
+    <btn1 Caption="Help"/>
+    <btn2 Caption="Abbruch"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Drag und Drop Option zum Hinzufügen von Dateien:"/>
+    <Options>
+      <cbxFiles Caption="Dateien zum ausgewählten Ordner hinzufügen"/>
+      <cbxFolders Caption="Ausgewählte Ordner hinzufügen"/>
+      <cbxRecursive Caption="Die beiden Optionen auch auf Unterordner anwenden"/>
+    </Options>
+    <cbxNotAgain Caption="Dieses Fenster nicht mehr zeigen (Optionen beibehalten)"/>
+  </DragdropOptionsForm>
+</Application>

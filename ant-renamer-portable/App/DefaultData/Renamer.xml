@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AntRenamer Version="2.10.0" Date="12/18/2010">
+ <Forms>
+  <Main State="0" Width="730" Height="500" Left="595" Top="290" AlwaysOnTop="False" FilesSortOrder="True" FilesSortColumn="-1" ActionsListWidth="150" EnableBatch="False" EnableSample="True" LogFilterOk="True" LogFilterError="True" LogFilterNot="True">
+   <Toolbars>
+    <tbProgram Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="0" DockPos="-2" FloatLeft="0" FloatTop="0" FloatRightX="0"/>
+    <tbTabs Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="0" DockPos="-3" FloatLeft="0" FloatTop="0" FloatRightX="0"/>
+    <tbFiles Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="-1" FloatLeft="0" FloatTop="0" FloatRightX="0"/>
+    <tbActions Rev="2000" Visible="0" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="2" FloatLeft="0" FloatTop="0" FloatRightX="0"/>
+    <tbLog Rev="2000" Visible="0" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="3" FloatLeft="0" FloatTop="0" FloatRightX="0"/>
+    <tbMove Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="1" FloatLeft="0" FloatTop="0" FloatRightX="0"/>
+   </Toolbars>
+   <FilesListColumns>
+    <Column Nr="0" Position="0" Width="200" Visible="-1"/>
+    <Column Nr="1" Position="1" Width="400" Visible="-1"/>
+    <Column Nr="2" Position="2" Width="400" Visible="0"/>
+    <Column Nr="3" Position="3" Width="50" Visible="0"/>
+    <Column Nr="4" Position="4" Width="100" Visible="0"/>
+    <Column Nr="5" Position="5" Width="70" Visible="0"/>
+    <Column Nr="6" Position="6" Width="130" Visible="0"/>
+    <Column Nr="7" Position="7" Width="130" Visible="0"/>
+   </FilesListColumns>
+  </Main>
+  <SelectDirectory/>
+ </Forms>
+ <Options Language="English">
+  <Display ToolbarIconSet="">
+   <DragDropOptions/>
+  </Display>
+  <Processing/>
+ </Options>
+ <Folders>
+  <AddFiles/>
+  <AddFolder/>
+  <FromList/>
+  <Batch/>
+ </Folders>
+ <Hints/>
+ <LastValues>
+  <MRU/>
+  <ChangeExt NewExt="ext" NoReplace="False"/>
+  <StrRepl Search="old" Repl="new" AllOccurences="True" CaseSensitive="True" IncludeExt="False" OnlyExt="False"/>
+  <MultstrRepl LastSet="" IncludeExt="True">
+   <Sets/>
+   <CurrentList>
+    <![CDATA[]]>
+   </CurrentList>
+  </MultstrRepl>
+  <StrIns Str="new" Pos="0" FromBegin="True" Ext="False"/>
+  <MoveStr FromPos="0" FromBegin="True" Count="1" ToPos="0" ToBegin="True"/>
+  <CharDel Nb="1" AfterString="0" Pos="0" FromBegin="True" Str="str" Ext="False"/>
+  <Enum Mask="File %num%%ext%" Start="1" Digits="1" Incr="1" Restart="False"/>
+  <MP3 Mask="%author% - %title%%ext" TwoDigit="False"/>
+  <DateTime Mask="yyyy&#39;-&#39;mm&#39;-&#39;dde" AddSuffix="False" WhichDate="1"/>
+  <Random Mask="%random%%ext%" Method="0"/>
+  <ChangeCase Option="0" AfterChars="- .+(" UseLocale="True" IncludeExt="False" OnlyExt="False"/>
+  <FromList AppendExt="False" OnlyExt="False">
+   <ListContents>
+    <![CDATA[]]>
+   </ListContents>
+  </FromList>
+  <Regexp Expr="" Repl=""/>
+  <Exif Mask="%datetime%%ext%"/>
+ </LastValues>
+</AntRenamer>

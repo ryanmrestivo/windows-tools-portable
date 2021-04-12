@@ -1,0 +1,20 @@
+;© Copyright 2020 Mirinsoft - https://www.mirinsoft.com
+;Visit Debotnet's GitHub repository - https://github.com/mirinsoft/debotnet
+
+[Theme]
+AppBadge=000000
+AppBadgeFontColor=ffffff
+BackColor=012456
+FontColor=ffffff
+FontColorLight=dbff00
+NavTopFontColor=ffffff
+Search=012456
+SearchActive=ffffff
+SearchFontColor=FFFFFF
+NavLeftMenu=012456
+NavLeftMenuFontColor=ffffff
+NavMiddleMenu=012456
+SearchFontColor=000000
+DebugFontColor=dbff00
+FooterFontColor=ffffff
+Settings=EDEBE9

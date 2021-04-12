@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAK2trQDOzs4A7+/vAAAA/wD/AP8AMTH/AGNj/wD///8A////AP///wD///8A////AP///wD///8A////AFVVVVVVVVVVAAAAAAAAAAUBERERERESBQEiIiIiIiMFASIidnIiIwUBIiZERiIjBQEidEREciMFASJkRERiIwUBInRERHIjBQEiJkRGIiMFASIidnIiIwUBIiIiIiIjBQIzMzMzMzMFAAAAAAAAAAVVVVVVVVVVVVVVVVVVVVVV
+Name=Japanese
+LocalName=日本語
+Version=2.09
+VersionFormat=2.12
+Comments=ウィンドウ サイズが小さいと表示が途切れることが|あります。サイズを調整してください。
+Authors=Asabukuro (麻袋)|fistechen@gmail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="バッチに追加" Hint="バッチに追加|選択操作をバッチ（一括処理）に追加"/>
+    <ActionBatchOpen Caption="開く..." Hint="開く|バッチ ファイルを開く"/>
+    <ActionBatchSaveAs Caption="保存..." Hint="保存|このバッチ（一括処理）をファイルに保存"/>
+    <ActionBatchRemoveSel Caption="選択操作を削除" Hint="選択操作を削除|バッチ（一括処理）から選択操作を削除"/>
+    <ActionBatchClear Caption="クリア" Hint="バッチのクリア|全ての操作をバッチ（一括処理）から削除"/>
+    <ActionBatchNoRecent Caption="(なし)"/>
+    <ActionAddFiles Caption="ファイルの追加..." Hint="ファイルの追加|リストにファイルを追加"/>
+    <ActionAddFolders Caption="フォルダの追加..." Hint="フォルダの追加|フォルダおよびフォルダ内のファイルをリストに追加"/>
+    <ActionRemoveSelected Caption="選択ファイルを除去." Hint="選択ファイルを除去|リストから選択ファイルを除去"/>
+    <ActionRemoveAll Caption="全ファイルを除去" Hint="全ファイルを除去|リストから全ファイルを除去"/>
+    <ActionRemoveDead Caption="無効アイテムを除去" Hint="リストから実在しないアイテムを除去"/>
+    <ActionPreview Caption="プレビュー" Hint="プレビューの更新|指定操作のプレビューをプレビューカラムに表示"/>
+    <ActionFromListClear Caption="クリア" Hint="リストのクリア|リストの全アイテムを消去"/>
+    <ActionFromListOpen Caption="開く..." Hint="開く|ファイルに保存されたリストを開く"/>
+    <ActionFromListSave Caption="保存..." Hint="保存|リストをファイルに保存"/>
+    <ActionMultistrReplClear Caption="枠線消去" Hint=" 枠線を消去"/>
+    <ActionMultistrReplSave Caption="保存" Hint="|上記の名称でこの設定を保存"/>
+    <ActionMultistrReplDelete Caption="削除" Hint="|選択された設定を消去"/>
+    <ActionMoveUp Caption="上へ" Hint="上へ移動|選択アイテムを上へ移動"/>
+    <ActionMoveDown Caption="下へ" Hint="下へ移動|選択アイテムを下へ移動"/>
+    <ActionMoveTop Caption="先頭へ" Hint="先頭へ移動|選択アイテムをリストの先頭へ移動"/>
+    <ActionMoveBottom Caption="末尾へ" Hint="末尾へ移動|選択アイテムをリストの末尾へ移動"/>
+    <ActionItemsUnsort Caption="ソートをクリア" Hint="|現在のソートオーダーを削除"/>
+    <ActionItemsSelectAll Caption="全て選択" Hint="全て選択|全てのアイテムを選択"/>
+    <ActionItemsSelectNone Caption="選択解除" Hint="選択解除|全てのアイテム選択を解除"/>
+    <ActionItemsSelectInvert Caption="選択を反転" Hint="アイテムの選択状態を反転"/>
+    <ActionLogClear Caption="クリア" Hint="クリア|ログを消去"/>
+    <ActionLogSave Caption="保存..." Hint="保存|ログをファイルに保存"/>
+    <ActionLogCopy Caption="コピー" Hint="コピー|ログをクリップボードにコピー"/>
+    <ActionLogFilter Caption="フィルタ" Hint="フィルタ|ログ表示エントリーのフィルタ"/>
+    <ActionLogFilterOk Caption="成功" Hint="成功を表示|リネームを正しく完了したアイテムを表示"/>
+    <ActionLogFilterError Caption="エラー" Hint="エラーを表示|リネームに失敗したアイテムを表示"/>
+    <ActionLogFilterNot Caption="スキップ" Hint="スキップを表示|リネーム対象以外のアイテムを表示"/>
+    <ActionActionGo Caption="実行" Hint="実行|リネーム作業を開始"/>
+    <ActionActionStop Caption="停止" Hint="停止|リネーム作業を停止"/>
+    <ActionOptions Caption="オプション..." Hint="オプション|プログラムの設定を変更"/>
+    <ActionActionUndo Caption="アンドウ" Hint="アンドウ|最後の処理を元に戻す"/>
+    <ActionHelpContents Caption="ヘルプ" Hint="ヘルプ|ヘルプの内容を表示"/>
+    <ActionHelpAbout Caption="情報..." Hint="情報|Ant Renamer 2 について"/>
+    <ActionExit Caption="終了" Hint="終了|このプログラムを終了"/>
+    <ActionAlwaysOnTop Caption="常に最前面" Hint="常に最前面|非アクティブ時もウィンドウを最前面表示"/>
+    <ActionTabFiles Caption=" ファイル " Hint="ファイル リスト|ファイル リストの表示"/>
+    <ActionTabActions Caption=" アクション " Hint="操作画面|操作画面の表示"/>
+    <ActionTabLog Caption=" ログ " Hint="ログ画面|ログ画面の表示"/>
+    <lstFiles Hint="|ファイル リスト - カラム ヘッダの右クリックから表示項目選択">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="フォルダ"/>
+          <Item Index="1" Text="ファイル名"/>
+          <Item Index="2" Text="フル パス"/>
+          <Item Index="3" Text="拡張子"/>
+          <Item Index="4" Text="プレビュー"/>
+          <Item Index="5" Text="サイズ"/>
+          <Item Index="6" Text="作成日時"/>
+          <Item Index="7" Text="更新日時"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       選択ファイルのプレビュー "/>
+    <grpBatch Caption="       バッチ（一括処理）内容"/>
+    <lstBatch Hint="|バッチ（一括処理）内容"/>
+    <lblPreviewOld Caption="現名称:"/>
+    <lblPreviewNew Caption="新名称:"/>
+    <lstActions Hint="|操作リスト">
+      <Items>
+        <Item Index="0" Value="拡張子変更"/>
+        <Item Index="1" Value="文字列置換"/>
+        <Item Index="2" Value="複数文字列置換"/>
+        <Item Index="3" Value="文字列挿入"/>
+        <Item Index="4" Value="文字列移動"/>
+        <Item Index="5" Value="文字列削除"/>
+        <Item Index="6" Value="連番付加"/>
+        <Item Index="7" Value="MP3タグから取得"/>
+        <Item Index="8" Value="日時から取得"/>
+        <Item Index="9" Value="ランダム名称"/>
+        <Item Index="10" Value="大・小文字変換"/>
+        <Item Index="11" Value="リストから名称を取得"/>
+        <Item Index="12" Value="正規表現"/>
+        <Item Index="13" Value="EXIF情報から取得"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="変更後の拡張子名:"/>
+    <cbxChangeExtNoRepl Caption="拡張子を末尾に追加"/>
+    <lblChangeExtNotes Caption="注意:&lt;br&gt;- 拡張子名にドットは不要です&lt;br&gt;- 連番を付加したい場合は&lt;LINK&gt;[連番付加]&lt;/LINK&gt;を使用してください"/>
+    <lblStrReplSearch Caption="検索文字列:"/>
+    <lblStrReplBy Caption="置換文字列:"/>
+    <cbxStrReplAll Caption="該当する箇所は全て置換"/>
+    <cbxStrReplCase Caption="大文字と小文字を区別"/>
+    <cbxStrReplExt Caption="拡張子も対象に含める"/>
+    <cbxStrReplOnlyExt Caption="拡張子のみを対象に"/>
+    <lblMultstrSearch Caption="検索文字列:"/>
+    <lblMultstrReplBy Caption="置換文字列:"/>
+    <lblMultstrReplSet Caption="プリセット:"/>
+    <cbxMultstrReplExt Caption="拡張子も検索対象に"/>
+    <cbxMultstrReplCase Caption="大文字と小文字を区別"/>
+    <lblMultstrReplNotes Caption="注意:&lt;BR&gt; Ctrl を押下しながらテンキーの「+」「-」を使用して&lt;BR&gt;現在の位置への行の挿入と削除を行います"/>
+    <lblStrInsStr Caption="文字列挿入:"/>
+    <lblStrInsPos Caption="挿入位置:"/>
+    <rbtStrInsBegin Caption="先頭から。"/>
+    <rbtStrInsEnd Caption="末尾から"/>
+    <cbxStrInsExt Caption="拡張子のみを対象に"/>
+    <lblStrInsNotes Caption="注意:&lt;br&gt;- - 特定文字列の前後への文字列挿入は &lt;LINK&gt;[文字列置換]&lt;/LINK&gt;を使用してください&lt;br&gt;- %name% = 元のファイル名（拡張子ぬき）&lt;BR&gt;- %ext% = 元の拡張子（ドットも含める）&lt;BR&gt;- %folder&lt;b&gt;N&lt;/b&gt;% = フォルダ名（&lt;b&gt;N&lt;/b&gt; は階層、1=親フォルダ名、2=2階層上のフォルダ名等）&lt;BR&gt;- %% = %（パーセント）を名称中に使用するとき&lt;BR&gt;・詳しい情報は&lt;LINK&gt;[ヘルプ]&lt;/LINK&gt;をご覧ください"/>
+    <lblMoveStrFrom Caption="移動元:"/>
+    <rbtMoveStrFromBegin Caption="先頭から"/>
+    <rbtMoveStrFromEnd Caption="末尾から"/>
+    <lblMoveStrCount Caption="移動文字数:"/>
+    <lblMoveStrTo Caption="移動先:"/>
+    <rbtMoveStrToBegin Caption="先頭から"/>
+    <rbtMoveStrToEnd Caption="末尾から"/>
+    <lblMoveStrNotes Caption="注意:&lt;br&gt;- 位置が不定な特定文字列の移動には、&lt;br&gt;　まず&lt;link&gt;[文字列置換]&lt;/link&gt;で削除の後、希望位置に&lt;link&gt;[文字列挿入]&lt;/link&gt;を行ってください&lt;BR&gt;- - &#34;移動先&#34;の値に移動される文字数は含まれません（文字は既に削除されているものとして扱います）"/>
+    <lblCharDel Caption="削除する文字数:"/>
+    <rbtCharDelPos Caption="起点:"/>
+    <rbtCharDelBegin Caption="先頭から"/>
+    <rbtCharDelEnd Caption="末尾から"/>
+    <rbtCharDelStr Caption="文字列の前を:"/>
+    <rbtCharDelStr2 Caption="文字列の後を:"/>
+    <cbxCharDelExt Caption="拡張子のみを対象に"/>
+    <lblCharDelNotes Caption="注意:&lt;BR&gt;- 特定文字列の削除は&lt;LINK&gt;[文字列置換]&lt;/LINK&gt;を使用して、置換文字列は空欄（未入力）のままで置換してください"/>
+    <lblEnumMask Caption="マスク:"/>
+    <lblEnumStart Caption="開始値:"/>
+    <lblEnumDigits Caption="桁数:"/>
+    <lblEnumIncr Caption="増加:"/>
+    <cbxEnumRestart Caption="別のフォルダへ移行時は開始値に戻る"/>
+    <lblEnumNotes Caption="注意:&lt;BR&gt;- %name% = 元のファイル名（拡張子ぬき） &lt;BR&gt;- %ext% = 元の拡張子（ドットを含む）&lt;BR&gt;- %num% = 連番&lt;BR&gt;- %folder&lt;b&gt;N&lt;/b&gt;% = フォルダ名（&lt;b&gt;N&lt;/b&gt; は階層、1=親フォルダ名、2=2階層上のフォルダ名、等）&lt;BR&gt;- %% = %（パーセント）を名称中に使用するとき&lt;BR&gt;・詳しい情報は&lt;LINK&gt;[ヘルプ]&lt;/LINK&gt;をご覧ください"/>
+    <lblMP3Mask Caption="マスク:"/>
+    <cbxMP3TwoDigit Caption="トラック番号を二桁に（必要なら'0'を接頭する）"/>
+    <cbxMP3Convert Caption=" ? / \ : &lt; &gt; | brvbar * などの特殊文字を変換"/>
+    <lblMP3Notes Caption="注意:&lt;BR&gt;- %author% = アーティスト&lt;BR&gt;- %title% = タイトル&lt;BR&gt;- %album% = アルバム&lt;BR&gt;- %year% = 年次&lt;BR&gt;- %genre% = ジャンル&lt;BR&gt;- %comm% = コメント&lt;BR&gt;- %track% = トラック番号 (ID3V1.1)&lt;BR&gt;- %name% = 元のファイル名（拡張子抜き）&lt;BR&gt;- %ext% = 元の拡張子（ドットを含む）&lt;BR&gt;- %folder&lt;b&gt;N&lt;/b&gt;% = フォルダ名（&lt;b&gt;N&lt;/b&gt; は階層、1=親フォルダ名、2=2階層上のフォルダ名等）&lt;BR&gt;- %% = % を名称に使用するとき&lt;BR&gt;- $if(condition,true-value,false-value) = タグの値の有無によってマスクの適用をコントロール&lt;BR&gt;　・詳しい情報は&lt;LINK&gt;[ヘルプ]&lt;/LINK&gt;をご覧ください"/>
+    <lblDTMask Caption="マスク:"/>
+    <cbxDTSuffix Caption="同じ日時のファイルが存在するとき接尾辞を付加"/>
+    <lblDTWhich Caption="使用する日時:"/>
+    <rbtDTWhichCreation Caption="作成日時"/>
+    <rbtDTWhichModif Caption="更新日時"/>
+    <lblDTNotes Caption="注意:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	元のファイル名（拡張子除外）
+e	元の拡張子名（ドットを含む）
+c	Windows 標準の日付と時間フォーマットを使用
+d	日付： 0 の接頭なし (1-31)
+dd	日付： 0 の接頭あり (01-31)
+ddd	曜日：省略 (日、月、火...)
+dddd	曜日；省略なし (日曜日...)
+ddddd	Windows の短い日付形式
+dddddd	日本語の年、月、日を使用
+m	月： 0 の接頭なし (1-12)	
+mm	月： 0 の接頭あり (01-12)
+mmm	m と同じく
+mmmm	日本語の月を付与
+yy	年次の下二桁を使用 (00-99)
+yyyy	年次を四桁で (0000-9999)
+h	時： 0 の接頭なし (0-23)
+hh	時： 0 の接頭あり  (00-23)
+n	分： 0 の接頭なし (0-59)
+nn	分： 0 の接頭あり (00-59)
+s	秒： 0 の接頭なし (0-59)
+ss	秒： 0 の接頭あり (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	時刻を 12 時間表記（h, hh に優先）し、午前/午後を am/pm で表記
+a/p	時刻を 12 時間表記（h, hh に優先）し、午前/午後を a/p で表記
+・「'xx'」「"xx"」のようにシングル、ダブルクォートでくくられた文字は変更に関与せず、そのまま名称中使用されます
+・「hmm」「hh'-'m」など h、hh の直後に続く m、mm は「月」ではなく「分」を指定していると解釈されます
+]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="マスク:"/>
+    <lblRandomMethod Caption="メソッド:"/>
+    <rbtRandomNumber Caption="ランダム数値（8 桁）"/>
+    <rbtRandomTick Caption="Windows のシステム起動後の経過時間（ミリ秒）"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="注意:&lt;BR&gt;- %name% = 元のファイル名（拡張子ぬき）&lt;BR&gt;- %ext% = 元の拡張子（ドットを含む）&lt;BR&gt;- %random% = ランダム生成&lt;BR&gt;- %% = %（パーセント）を名称中に使用するとき&lt;BR&gt;・詳しい情報は&lt;LINK&gt;[ヘルプ]&lt;/LINK&gt;をご覧ください"/>
+    <rbtCaseWords Caption="リスト中の文字の次の文字を大文字に変換:"/>
+    <rbtCaseFirst Caption="ファイル名の先頭の文字を大文字に変換"/>
+    <rbtCaseUpper Caption="すべての小文字を大文字に変換"/>
+    <rbtCaseLower Caption="すべての大文字を小文字に変換"/>
+    <cbxCaseLocale Caption="アクセント記号の変更に Windows のローカル設定を使用"/>
+    <cbxCaseIncludeExt Caption="拡張子も含めて適用"/>
+    <cbxCaseOnlyExt Caption="拡張子のみを対象に"/>
+    <cbxFromListExt Caption="ファイルに元の拡張子を追加する"/>
+    <cbxFromListOnlyExt Caption="拡張子だけを対象にする"/>
+    <lblFromListNotes Caption="注意:リストの順次に従ってファイルに名称が適用されます。空行や行数を超えた順次のファイルは変更されません。"/>
+    <lblRegexp Caption="正規表現式:"/>
+    <lblRegexpRepl Caption="新規名称:"/>
+    <lblRegexpNotes Caption="注意:&lt;BR&gt;- \ をエスケープ文字として使用できます（$ 等と同様）。別のフォルダを作成する場合など、新規名称中に \ を使用しなければならないときは \\ と入力&lt;BR&gt;- キャレット ^ は名称の先頭、ダラー $ は末尾を示します&lt;BR&gt;- 新規名称に $1、$2...等を含ませて、正規表現式の () で括られた項の順次を指定します&lt;BR&gt;・詳しい情報は&lt;LINK&gt;[ヘルプ]&lt;/LINK&gt;の Regular expressions をご覧ください"/>
+    <lblExifMask Caption="マスク:"/>
+    <lblExifNotes Caption="注意:&lt;BR&gt;- %name% = 元のファイル名（拡張子ぬき）&lt;BR&gt;- %ext% = 元の拡張子（ドットを含む）&lt;BR&gt;- %datetimeoriginal% / %datetime% = 画像の元のタイムスタンプ&lt;BR&gt;- %orientation% = 画像の向き&lt;BR&gt;- %flash% = フラッシュの発光、未発光&lt;BR&gt;- %% = %（パーセント）を名称中に使用するとき&lt;BR&gt;・詳しい情報は&lt;LINK&gt;[ヘルプ]&lt;/LINK&gt;の EXIF Tags をご覧ください"/>
+    <lstLog Hint="|ログ"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="全てのファイル"/>
+      <Item Name="strfltTextFiles" Value="テキスト ファイル"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer バッチ ファイル"/>
+      <Item Name="strmsgSelectFiles" Value="ファイルの選択"/>
+      <Item Name="strmsgSelectFolder" Value="フォルダの選択"/>
+      <Item Name="strmsgStatusAddingFiles" Value="ファイルの追加中"/>
+      <Item Name="strmsgStatusRenaming" Value="ファイルのリネーム中"/>
+      <Item Name="strmsgFilesCount" Value="%d ファイル"/>
+      <Item Name="strmsgBusy" Value="ビジー状態: リネーム作業の進行中です。"/>
+      <Item Name="strmsgNothingToDo" Value="実行できません: 一つ以上のアイテムを選択し、操作を指定してください。"/>
+      <Item Name="strlogStartRename" Value="リネーム作業開始"/>
+      <Item Name="strlogStartPreview" Value="プレビューの再読み込み"/>
+      <Item Name="strlogStartRevert" Value="名称を元に戻す"/>
+      <Item Name="strlogEndRename" Value="リネーム作業完了"/>
+      <Item Name="strlogEndPreview" Value="プレビュー処理完了"/>
+      <Item Name="strlogEndRevert" Value="名称の復旧作業完了"/>
+      <Item Name="strlogStoppedByUser" Value="ユーザーによる処理の停止"/>
+      <Item Name="stradUnknown" Value="何もしない"/>
+      <Item Name="stradInclExt" Value=", 拡張子にも適用"/>
+      <Item Name="stradOnlyExt" Value=",  拡張子のみを対象に"/>
+      <Item Name="stradChangeExt" Value="拡張子を変更 &#34;%s&#34;"/>
+      <Item Name="stradChangeExtRmv" Value="拡張子の削除"/>
+      <Item Name="stradChangeExtNoRepl" Value="拡張子の追加 &#34;%s&#34;"/>
+      <Item Name="stradStringRepl" Value="&#34;%s&#34; を &#34;%s&#34; に置換"/>
+      <Item Name="stradStringReplAll" Value=", 該当する箇所は全て置換"/>
+      <Item Name="stradStringReplCase" Value=", 大/小文字を区別"/>
+      <Item Name="stradMultstrRepl" Value="複数文字列置換の設定 &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="&#34;%s&#34; を「位置 %d に挿入"/>
+      <Item Name="stradMoveStr" Value="%d 文字を「位置 %d%s より「位置 %d%s へ移動"/>
+      <Item Name="stradCharDel" Value="%d 文字を削除"/>
+      <Item Name="stradCharDelPos" Value="「位置 %d "/>
+      <Item Name="stradCharDelStr" Value=" 文字列 &#34;%s&#34; のあとに"/>
+      <Item Name="stradEnum" Value=" &#34;%s&#34; に使用する連番を開始値 %d, 桁数 %d, 増分 %d, で生成"/>
+      <Item Name="stradMP3" Value="マスク &#34;%s&#34; で MP3 タグより名称を生成 "/>
+      <Item Name="stradMP3TwoDigit" Value=", 一桁のトラック番号に '0' を接頭"/>
+      <Item Name="stradMP3Convert" Value=", 規格外の文字を変換"/>
+      <Item Name="stradFromBegin" Value=", 先頭から」"/>
+      <Item Name="stradFromEnd" Value=", 末尾から」"/>
+      <Item Name="stradDateTime" Value="マスク &#34;%s&#34; でタイムスタンプより名称を生成"/>
+      <Item Name="stradDateTimeCreat" Value=" 作成日時"/>
+      <Item Name="stradDateTimeModif" Value=" 更新日時"/>
+      <Item Name="stradDateTimeSuffix" Value=", 必要なら接尾辞を付加"/>
+      <Item Name="stradRandom" Value="マスク &#34;%s&#34; でランダムな名称を生成"/>
+      <Item Name="stradRandomNumbers" Value=", 番号付加"/>
+      <Item Name="stradRandomTick" Value=", Windows のティック カウンタを使用"/>
+      <Item Name="stradRandomGUID" Value=", GUID を使用"/>
+      <Item Name="stradCase" Value="大/小文字変換:"/>
+      <Item Name="stradCaseWords" Value=" &#34;%s&#34; のあとにある最初の大文字"/>
+      <Item Name="stradCaseFirst" Value=" 名称の最初の文字を大文字に"/>
+      <Item Name="stradCaseUpper" Value=" 全て大文字"/>
+      <Item Name="stradCaseLower" Value=" 全て小文字"/>
+      <Item Name="stradCaseLocale" Value=", Windows のローカル設定を使用"/>
+      <Item Name="stradFromList" Value="リストを使用してファイルをリネーム"/>
+      <Item Name="stradFromListExt" Value=", 元の拡張子に追加"/>
+      <Item Name="stradFromListOnlyExt" Value=", 拡張子をリネーム対象に"/>
+      <Item Name="stradRegexp" Value="正規表現によるファイルのリネーム"/>
+      <Item Name="stradExif" Value="&#34;%s&#34; をマスクとして EXIF 情報より名称を生成"/>
+      <Item Name="straeFromListEmpty" Value="空の行"/>
+      <Item Name="straeFromListEnd" Value="リストの終わり"/>
+      <Item Name="strfsNotRenamed" Value=" %s はリネームされませんでした: %s "/>
+      <Item Name="strfsRenamed" Value="%s は %s にリネームされました"/>
+      <Item Name="strfsReverted" Value="%s は元の名称に戻されました %s "/>
+      <Item Name="strfsRenError" Value="%s は %s にリネームできません: %s"/>
+      <Item Name="strfsNoOldName" Value="旧名が保存されておらず %s を元に戻せません"/>
+      <Item Name="strfs404" Value="対象ファイルが見つかりません"/>
+      <Item Name="strfsAlreadyExist" Value="同名のファイル、フォルダが既に存在します"/>
+      <Item Name="strfeIdentical" Value="新、現同一名称"/>
+      <Item Name="strhintNotAgain" Value="以降は表示しない"/>
+      <Item Name="strhintShowPreview" Value="プレビュー項目が表示中です。カラム ヘッダの右クリック メニューでチェックをはずせば隠せます。"/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="このプログラムについて">
+    <btn1 Caption="履歴"/>
+    <btn2 Caption="閉じる"/>
+    <tshGeneral Caption="一般"/>
+    <tshCredits Caption="クレジット"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="警告"/>
+        <Item Index="1" Value="エラー"/>
+        <Item Index="2" Value="情報"/>
+        <Item Index="3" Value="確認"/>
+        <Item Index="4" Value="&#38;はい"/>
+        <Item Index="5" Value="&#38;いいえ"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;キャンセル"/>
+        <Item Index="8" Value="&#38;取り消し"/>
+        <Item Index="9" Value="&#38;再試行"/>
+        <Item Index="10" Value="&#38;無視"/>
+        <Item Index="11" Value="&#38;全て"/>
+        <Item Index="12" Value="全ていいえ"/>
+        <Item Index="13" Value="全てはい"/>
+        <Item Index="14" Value="&#38;ヘルプ"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="オプション">
+    <btn1 Caption="ヘルプ"/>
+    <btn2 Caption="キャンセル"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="表示"/>
+    <tshAdding Caption="ファイル &#38;&#38; フォルダ"/>
+    <tshProcessing Caption="操作"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="表示言語"/>
+    <lbhLists Caption="リスト"/>
+    <cbxRealtimeUpdate Caption="リネーム作業時にリアルタイムで更新"/>
+    <cbxResizeColsFiles Caption="ファイル リストの項目表示幅を自動調整"/>
+    <cbxFilesIcons Caption="リストにファイルの拡張子別のアイコンを表示"/>
+    <lbhFonts Caption="フォント"/>
+    <cbxForceFont Caption="特殊文字の表示コントロールに次のフォントを強制的に使用:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Windows の既定のフォント"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="注意: 可能な限り「Arial Unicode MS」を使用してください。"/>
+    <lbhDropdown Caption="ドロップ ダウン リスト"/>
+    <lblDropdownMax Caption="履歴の最大保存数:"/>
+    <cbxDropdownComplete Caption="入力時に履歴の内容から自動補完する"/>
+    <lbhToolbars Caption="ツールバー"/>
+    <lblIconSet Caption="アイコン:"/>
+    <lblColorType Caption="色調:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="自動"/>
+        <Item Index="1" Value="非アクティブをグレーに"/>
+        <Item Index="2" Value="非アクティブを明るく(XP スタイル)"/>
+        <Item Index="3" Value="非アクティブを暗く"/>
+        <Item Index="4" Value="常にカラー表示"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP スタイル"/>
+    <lbhDragdrop Caption="ドラッグ &#38; ドロップ"/>
+    <cbxDragdropNoAsk Caption="確認なしで以下の選択を常に適用する:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="フォルダ内のファイルのみ追加"/>
+      <cbxFolders Caption="フォルダのみ追加"/>
+      <cbxRecursive Caption="上記の選択をサブフォルダにも適用"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="リストの操作"/>
+    <cbxLaunchFile Caption="ダブルクリックでファイルを開く"/>
+    <lbhRenaming Caption="ファイルのリネーム時の処理"/>
+    <cbxCopy Caption="リネームに代えてコピーする"/>
+    <cbxGenerLog Caption="ログの作成"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="強制的に階層化（名称に &#34;\&#34; を含むときフォルダを作成）"/>
+    <cbxDetectAbsdir Caption="&#34;:\&#34; や &#34;\\&#34; を含むとき絶対パスと解釈（ファイルの移動を許可）"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="表示画面:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="ファイル リスト"/>
+        <Item Index="1" Value="操作画面"/>
+        <Item Index="2" Value="ログ画面"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="ログを消去"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="次を表示:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="ファイル リスト"/>
+        <Item Index="1" Value="操作画面"/>
+        <Item Index="2" Value="ログ画面"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="ファイル リストをクリア"/>
+    <cbxClearBatchList Caption="パッチ リストをクリア"/>
+    <cbxSaveLog Caption="ログを保存:"/>
+    <btnSaveLog Hint="参照..."/>
+    <cbxSaveLogAppend Caption="既存のファイルに追加"/>
+    <lbhLanguage Caption="表示言語"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="名称"/>
+          <Column Index="1" Caption="ローカル名"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="バージョン:"/>
+      <lblMadeby Caption="製作:"/>
+      <lblComments Caption="コメント:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="追加フォルダの選択">
+    <btn1 Caption="ヘルプ"/>
+    <btn2 Caption="キャンセル"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="ネットワーク"/>
+    <Options>
+      <cbxFiles Caption="フォルダ内のファイルのみ追加"/>
+      <cbxFolders Caption="フォルダのみ追加"/>
+      <cbxRecursive Caption="上記の選択をサブフォルダにも適用"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="ドラッグ &#38; ドロップのオプション">
+    <btn1 Caption="ヘルプ"/>
+    <btn2 Caption="中止"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="ファイル追加のオプション:"/>
+    <Options>
+      <cbxFiles Caption="フォルダ内のファイルのみ追加"/>
+      <cbxFolders Caption="フォルダのみ追加"/>
+      <cbxRecursive Caption="上記の選択をサブフォルダにも適用"/>
+    </Options>
+    <cbxNotAgain Caption="以降は確認しない（次回から、この選択を適用）"/>
+  </DragdropOptionsForm>
+</Application>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAADCHgAAwh4AAAAAAAAAAAAAAAAAAGMAAACcAAAA/2NjAAAArQCtra0Azs7OAO/v7wAAAP8A/wD/AJyc/wD///8A////AP///wD///8A////AJmZmZmZmZmZmZmZmZmZmZkAAAAAAAAAAARERERERESABIiIiIiIiKAEiIiIiIiIoAEiIiIiIiIwASIiIiIiIjABIjMiIiIiMAEoZoIiIiIwBWgjhmZmZnAFaCOGZmZmcAZ3d3d3d3dwAAAAAAAAAACZmZmZmZmZmZmZmZmZmZmZ
+Name=Slovak
+LocalName=Slovenčina
+Version=2.09
+VersionFormat=2.12
+Comments=Preložil Sepp Winkler
+Authors=Sepp Winkler|sepp.winkler@gmail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Pridať k dávke" Hint="Pridať k dávke|Pridá vybranú akciu a jej nastavenie do dávky"/>
+    <ActionBatchOpen Caption="Otvoriť..." Hint="Otvoriť|Otvorí súbor s dávkou"/>
+    <ActionBatchSaveAs Caption="Uložiť ako..." Hint="Uložiť ako|Uloží túto dávku do súboru"/>
+    <ActionBatchRemoveSel Caption="Odstrániť vybrané" Hint="Odstrániť vybrané|Odstráni vybrané akcie z dávky"/>
+    <ActionBatchClear Caption="Vymazať" Hint="Vymazať dávku|Odstráni všetky akcie z dávky"/>
+    <ActionBatchNoRecent Caption="(žiadny naposledy použitý súbor)"/>
+    <ActionAddFiles Caption="Pridať súbory..." Hint="Pridať súbory|Pridá súbory do zoznamu"/>
+    <ActionAddFolders Caption="Pridať priečinky..." Hint="Pridať priečinky|Pridá obsah priečinku(ov) do zoznamu"/>
+    <ActionRemoveSelected Caption="Odstrániť vybrané" Hint="Odstrániť vybrané|Odstráni vybrané súbory zo zoznamu"/>
+    <ActionRemoveAll Caption="Odstrániť všetko" Hint="Odstrániť všetko|Odstráni všetky súbory zo zoznamu"/>
+    <ActionRemoveDead Caption="Odstrániť mŕtve" Hint="Odstrániť mŕtve|Odstráni mŕtve súbory zo zoznamu"/>
+    <ActionPreview Caption="Náhľad" Hint="Obnoviť náhľad|Obnoví stĺpec náhľadu spolu naplánovanými akciami"/>
+    <ActionFromListClear Caption="Vymazať" Hint="Vymazať zoznam|Vymaže zoznam"/>
+    <ActionFromListOpen Caption="Otvoriť..." Hint="Otvoriť|Načíta zoznam zo súboru"/>
+    <ActionFromListSave Caption="Uložiť..." Hint="Uložiť|Uloží zoznam do súboru"/>
+    <ActionMultistrReplClear Caption="Nezobraziť mriežku" Hint="Nezobrazí mriežku"/>
+    <ActionMultistrReplSave Caption="Uložiť" Hint="|Uloží súčasné nastavenie so zadaným menom"/>
+    <ActionMultistrReplDelete Caption="Vymazať" Hint="|Vymaže aktuálne vybrané meno nastavenia"/>
+    <ActionMoveUp Caption="Hore" Hint="Presunúť hore|Presunie vybrané položky hore"/>
+    <ActionMoveDown Caption="Dole" Hint="Presunúť dole|Presunie vybrané položky dole"/>
+    <ActionMoveTop Caption="Začiatok" Hint="Presunúť na začiatok|Presunie vybrané položky na začiatok zoznamu"/>
+    <ActionMoveBottom Caption="Koniec" Hint="Presunúť na koniec|Presunie vybrané položky na koniec zoznamu"/>
+    <ActionItemsUnsort Caption="Odstrániť radenie" Hint="|Odstráni aktuálne radenie zoznamu"/>
+    <ActionItemsSelectAll Caption="Vybrať všetko" Hint="Vybrať všetko|Vyberie všetky položky"/>
+    <ActionItemsSelectNone Caption="Zrušiť výber" Hint="Zrušiť výber|Zruší výber položiek"/>
+    <ActionItemsSelectInvert Caption="Opačný výber" Hint="Opačný výber|Obráti výber položiek"/>
+    <ActionLogClear Caption="Vymazať" Hint="Vymazať|Vymaže denník"/>
+    <ActionLogSave Caption="Uložiť..." Hint="Uložiť|Uloží denník do súboru"/>
+    <ActionLogCopy Caption="Kopírovať" Hint="Kopírovať|Skopíruje denník do schránky"/>
+    <ActionLogFilter Caption="Filter" Hint="Filtrovať denník|Filtruje záznamy"/>
+    <ActionLogFilterOk Caption="Úspešné" Hint="Zobraziť premenované súbory|Zobrazí záznamy, které zodpovedajú úspěšne premenovaným súborom"/>
+    <ActionLogFilterError Caption="Chyby" Hint="Zobraziť chyby|Zobrazí záznamy o chybách"/>
+    <ActionLogFilterNot Caption="Nepremenované" Hint="Zobraziť nepremenované súbory|Zobrazí záznamy, vzťahujúce sa k súborom, ktoré neboli premenované"/>
+    <ActionActionGo Caption="Štart" Hint="Štart|Spustí premenovávanie"/>
+    <ActionActionStop Caption="Stop" Hint="Stop|Zastaví premenovávanie"/>
+    <ActionOptions Caption="Možnosti..." Hint="Možnosti|Možnosti nastavenia programu"/>
+    <ActionActionUndo Caption="Späť" Hint="Späť|Vráti späť posledné premenovanie"/>
+    <ActionHelpContents Caption="Pomocník" Hint="Obsah pomocníka|Zobrazí obsah pomocníka"/>
+    <ActionHelpAbout Caption="O programe..." Hint="O programe|Zobrazí informáciu o programe"/>
+    <ActionExit Caption="Koniec" Hint="Koniec|Ukončí program"/>
+    <ActionAlwaysOnTop Caption="V popredí" Hint="Vždy v popredí|Nastaví okno, aby bylo vždy nad ostatnými oknami"/>
+    <ActionTabFiles Caption="Súbory" Hint="Súbory|Zobrazí súbory"/>
+    <ActionTabActions Caption="Akcie" Hint="Akcie|Zobrazí akcie"/>
+    <ActionTabLog Caption="Denník" Hint="Denník|Zobrazí denník"/>
+    <lstFiles Hint="|Zoznam súborov - Pre úpravu stĺpcov kliknite pravým tlačidlom myši na hlavičku.">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Priečinok"/>
+          <Item Index="1" Text="Názov súboru"/>
+          <Item Index="2" Text="Plná cesta"/>
+          <Item Index="3" Text="Prípona"/>
+          <Item Index="4" Text="Náhľad"/>
+          <Item Index="5" Text="Veľkosť"/>
+          <Item Index="6" Text="Dátum vytvorenia"/>
+          <Item Index="7" Text="Dátum poslednej úpravy"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Náhľad vybraného súboru "/>
+    <grpBatch Caption="       Obsah dávky (plánované akcie) "/>
+    <lstBatch Hint="|Obsah dávky (plánované akcie)"/>
+    <lblPreviewOld Caption="Súčasný názov:"/>
+    <lblPreviewNew Caption="Nový názov:"/>
+    <lstActions Hint="|Zoznam akcií">
+      <Items>
+        <Item Index="0" Value="Zmeniť príponu"/>
+        <Item Index="1" Value="Nahradiť reťazec"/>
+        <Item Index="2" Value="Nahradiť viacnásobný reťazec"/>
+        <Item Index="3" Value="Vložiť reťazec"/>
+        <Item Index="4" Value="Presunúť reťazec"/>
+        <Item Index="5" Value="Odstrániť znaky"/>
+        <Item Index="6" Value="Číslovanie"/>
+        <Item Index="7" Value="Použiť info tagu MP3"/>
+        <Item Index="8" Value="Použiť dátum a čas"/>
+        <Item Index="9" Value="Náhodné názvy"/>
+        <Item Index="10" Value="Zmeniť veľkosť písmen"/>
+        <Item Index="11" Value="Použiť názvy zo zoznamu"/>
+        <Item Index="12" Value="Regulárny výraz"/>
+        <Item Index="13" Value="Použiť EXIF"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Nahradiť príponou:"/>
+    <cbxChangeExtNoRepl Caption="Nenahradzovať príponu, pridať ju do názvu"/>
+    <lblChangeExtNotes Caption="Poznámky:&lt;br&gt;- Nezadávajte bodku, len vložte novú príponu&lt;br&gt;- Ak chcete vytvoriť číslovanú príponu, použite akciu &lt;LINK&gt;Vypočítať&lt;/LINK&gt;"/>
+    <lblStrReplSearch Caption="Hľadať:"/>
+    <lblStrReplBy Caption="Nahradiť týmto:"/>
+    <cbxStrReplAll Caption="Nahradiť všetky výskyty"/>
+    <cbxStrReplCase Caption="Rozlišovať veľké a malé písmená"/>
+    <cbxStrReplExt Caption="Aj s príponou"/>
+    <cbxStrReplOnlyExt Caption="Použiť na príponu namiesto na názov"/>
+    <lblMultstrSearch Caption="Hľadať:"/>
+    <lblMultstrReplBy Caption="Nahradiť:"/>
+    <lblMultstrReplSet Caption="Preddefinované sady:"/>
+    <cbxMultstrReplExt Caption="Zahrnúť príponu do vyhľadávania"/>
+    <cbxMultstrReplCase Caption="Rozlišovať veľké a malé písmená"/>
+    <lblMultstrReplNotes Caption="Poznámky:&lt;BR&gt;- Použite Ctrl+plus (+) a Ctrl+mínus (-) pre vloženie alebo zmazanie riadku na aktuálnej pozícii"/>
+    <lblStrInsStr Caption="Reťazec na vloženie:"/>
+    <lblStrInsPos Caption="Na pozícii:"/>
+    <rbtStrInsBegin Caption="Od začiatku"/>
+    <rbtStrInsEnd Caption="Od konca"/>
+    <cbxStrInsExt Caption="Použiť na príponu namiesto na názov"/>
+    <lblStrInsNotes Caption="Poznámky:&lt;br&gt;- %name% = Pôvodný názov súboru (bez prípony)&lt;BR&gt;- %ext% = Pôvodná prípona (aj s bodkou)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Názov priečinku&lt;BR&gt;- %% = % Znak&lt;BR&gt;pozrite se do &lt;LINK&gt;Pomocníka&lt;/LINK&gt; pre viac informácií"/>
+    <lblMoveStrFrom Caption="Od pozície:"/>
+    <rbtMoveStrFromBegin Caption="Od začiatku"/>
+    <rbtMoveStrFromEnd Caption="Od konca"/>
+    <lblMoveStrCount Caption="Počet znakov na presunutie:"/>
+    <lblMoveStrTo Caption="Do pozície:"/>
+    <rbtMoveStrToBegin Caption="Od začiatku"/>
+    <rbtMoveStrToEnd Caption="Od konca"/>
+    <lblMoveStrNotes Caption="Poznámky:&lt;br&gt;- Pokiaľ chcete presunúť špecifický reťazec, ale ten nie je vždy na rovnakom mieste, použite funkciu &lt;link&gt;Nahradiť reťazec&lt;/link&gt; pre jeho odstránenie a potom použite &lt;link&gt;Vložiť reťazec&lt;/link&gt; pre jeho vloženie na nové miesto&lt;BR&gt;- Hodnota &#34;Do pozície&#34; neobsahuje presunuté znaky (je to rovnaké, ako by boli odstránené)"/>
+    <lblCharDel Caption="Počet znakov na odstránenie:"/>
+    <rbtCharDelPos Caption="Od pozície:"/>
+    <rbtCharDelBegin Caption="Od začiatku"/>
+    <rbtCharDelEnd Caption="Od konca"/>
+    <rbtCharDelStr Caption="Po reťazci:"/>
+    <rbtCharDelStr2 Caption="Pred reťazcom:"/>
+    <cbxCharDelExt Caption="Použiť na príponu namiesto na názov"/>
+    <lblCharDelNotes Caption="Poznámky:&lt;BR&gt;- Na odstránenie špecifického reťazca použite akciu &lt;LINK&gt;Nahradiť reťazec&lt;/LINK&gt; a nahraďte reťazec prázdnym"/>
+    <lblEnumMask Caption="Maska:"/>
+    <lblEnumStart Caption="Začať na:"/>
+    <lblEnumDigits Caption="Počet číslic:"/>
+    <lblEnumIncr Caption="Zvyšovať o:"/>
+    <cbxEnumRestart Caption="Vrátiť späť na začiatočnú hodnotu pri zmene priečinka"/>
+    <lblEnumNotes Caption="Poznámky:&lt;BR&gt;- %name% = Pôvodný názov súboru (bez prípony)&lt;BR&gt;- %ext% = Pôvodná prípona (aj s bodkou)&lt;BR&gt;- %num% = Číslo&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Názov priečinku&lt;BR&gt;- %% = % Znak&lt;BR&gt;pozrite sa do &lt;LINK&gt;Pomocníka&lt;/LINK&gt; pre viac informácií"/>
+    <lblMP3Mask Caption="Maska:"/>
+    <cbxMP3TwoDigit Caption="Dvojciferné číslo stopy (ak je treba, vloží '0' pred číslicu)"/>
+    <cbxMP3Convert Caption="Konvertovať zakázané znaky ako ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Poznámky:&lt;BR&gt;- %author% = Autor&lt;BR&gt;- %title% = Názov&lt;BR&gt;- %album% = Album&lt;BR&gt;- %year% = Rok&lt;BR&gt;- %genre% = Žáner&lt;BR&gt;- %comm% = Poznámka&lt;BR&gt;- %track% = Číslo stopy (ID3V1.1)&lt;BR&gt;- %name% = Pôvodný názov súboru (bez prípony)&lt;BR&gt;- %ext% = Pôvodná prípona (aj s bodkou)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Názov priečinku&lt;BR&gt;- %% = % Znak&lt;BR&gt;pozrite sa do &lt;LINK&gt;Pomocníka&lt;/LINK&gt; pre viac informácií"/>
+    <lblDTMask Caption="Maska:"/>
+    <cbxDTSuffix Caption="Pridať príponu ak je viac ako jeden súbor s rovnakým dátumom/časom"/>
+    <lblDTWhich Caption="Dátum:"/>
+    <rbtDTWhichCreation Caption="Vytvorenia"/>
+    <rbtDTWhichModif Caption="Poslednej zmeny"/>
+    <lblDTNotes Caption="Poznámky:"/>
+    <lblDTNotes2>
+      <Lines>
+          <![CDATA[f	Pôvodný názov súboru (bez prípony)
+e	Pôvodná prípona (aj s bodkou)
+c	Dátum a čas, vo formáte Windows
+d	Deň bez nuly na začiatku (1-31)
+dd	Deň s nulou na začiatku (01-31)
+ddd	Deň, skratka (Po-Ne)
+dddd	Deň, celý názov (Pondelok-Nedeľa)
+ddddd	Dátum, používaný vo Windows ako krátky
+dddddd	Dátum, používaný vo Windows ako dlhý
+m	Mesiac bez nuly na začiatku (1-12)
+mm	Mesiac s nulou na začiatku (01-12)
+mmm	Mesiac, skratka (Jan-Dec)
+mmmm	Mesiac, celý názov (Január-December)
+yy	Rok, dve číslice (00-99)
+yyyy	Rok, štyri číslice (0000-9999)
+h	Hodina bez nuly na začiatku (0-23)
+hh	Hodina s nulou na začiatku (00-23)
+n	Minúta bez nuly na začiatku (0-59)
+nn	Minúta s nulou na začiatku (00-59)
+s	Sekunda bez nuly na začiatku (0-59)
+ss	Sekunda s nulou na začiatku (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	12 hodinový formát pred h nebo hh
+a/p	12 hodinový formát pred h nebo hh
+'xx'/"xx"	Znaky zatvorené do uvodzoviek zostanú bez zmeny
+
+Ak hneď po h alebo hh nasleduje m alebo mm, sú prednostne použité mínúty, nie mesiac]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Maska:"/>
+    <lblRandomMethod Caption="Metóda:"/>
+    <rbtRandomNumber Caption="Náhodné číslo (8 číslic)"/>
+    <rbtRandomTick Caption="Počítanie Windows"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="Poznámky:&lt;BR&gt;- %name% = Pôvodný názov súboru (bez prípony)&lt;BR&gt;- %ext% = Pôvodná prípona (aj s bodkou)&lt;BR&gt;- %random% = Náhodne generovaný reťazec&lt;BR&gt;- %% = % Znak&lt;BR&gt;pozrite sa do &lt;LINK&gt;Pomocníka&lt;/LINK&gt; pre viac informácií"/>
+    <rbtCaseWords Caption="Prvé písmeno veľké po akomkoľvek z týchto znakov:"/>
+    <rbtCaseFirst Caption="Prvé písmeno súboru veľké"/>
+    <rbtCaseUpper Caption="Všetky veľké"/>
+    <rbtCaseLower Caption="Všetky malé"/>
+    <cbxCaseLocale Caption="Použiť miestne nastavenie Windows pre vyznačené znaky"/>
+    <cbxCaseIncludeExt Caption="Použiť tiež na príponu"/>
+    <cbxCaseOnlyExt Caption="Použiť na príponu namiesto na názov"/>
+    <cbxFromListExt Caption="Pridať pôvodnú príponu súboru"/>
+    <cbxFromListOnlyExt Caption="Použiť položky ako prípony namiesto názvov"/>
+    <lblFromListNotes Caption="Poznámky:&lt;BR&gt;- Každý riadok tohto zoznamu bude použitý ako názov pre súbor. Položky sú použité vo svojom poradí.&lt;BR&gt;- Ak sú riadky prázdne alebo ich nie je dosť, prináležiace súbory nebudú premenované."/>
+    <lblRegexp Caption="Výraz:"/>
+    <lblRegexpRepl Caption="Nový názov:"/>
+    <lblRegexpNotes Caption="Poznámky:&lt;BR&gt;- Znak '\' môže byť použitý pre špeciálne znaky (ako $ a ďalšie), použite \\ pre jeden znak \ v novom názve (pokiaľ chcete mať názov v inom priečinku)&lt;BR&gt;- Použite '^' na identifikáciu začiatku názvu a '$' pre koniec názvu&lt;BR&gt;- Nový názov musí obsahovať $1, $2... pre určenie, kam budú vložené nahradené znaky&lt;BR&gt;pozrite se do &lt;LINK&gt;Pomocníka&lt;/LINK&gt; pre viac informácií"/>
+    <lblExifMask Caption="Maska:"/>
+    <lblExifNotes Caption="Poznámky:&lt;BR&gt;- %name% = Pôvodný názov súboru (bez prípony)&lt;BR&gt;- %ext% = Pôvodná prípona (aj s bodkou)&lt;BR&gt;- %datetimeoriginal% / %datetime% = Pôvodný dátum a čas obrázku&lt;BR&gt;- %orientation% = Orientácia obrázku&lt;BR&gt;- %flash% = Zapnutý nebo vypnutý blesk&lt;BR&gt;- %% = Znak '%'&lt;BR&gt;pozrite sa do &lt;LINK&gt;Pomocníka&lt;/LINK&gt; pre viac informácií"/>
+    <lstLog Hint="|Denník"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Všetky súbory"/>
+      <Item Name="strfltTextFiles" Value="Textové súbory"/>
+      <Item Name="strfltBatchFiles" Value="Dávkové súbory Ant Renameru"/>
+      <Item Name="strmsgSelectFiles" Value="Vybrať súbory"/>
+      <Item Name="strmsgSelectFolder" Value="Vybrať priečinok"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Pridávanie súborov"/>
+      <Item Name="strmsgStatusRenaming" Value="Premenovávanie súborov"/>
+      <Item Name="strmsgFilesCount" Value="%d súborov"/>
+      <Item Name="strmsgBusy" Value="Program je zaneprázdnený: Prebieha premenovávanie."/>
+      <Item Name="strmsgNothingToDo" Value="Nie je vybraný žiadny súbor: vyberte aspoň jeden súbor a akciu pre vykonanie."/>
+      <Item Name="strlogStartRename" Value="Premenovávanie spustené"/>
+      <Item Name="strlogStartPreview" Value="Obnovovanie náhľadu"/>
+      <Item Name="strlogStartRevert" Value="Návrat k predchádzajúcim názvom"/>
+      <Item Name="strlogEndRename" Value="Premenovávanie dokončené"/>
+      <Item Name="strlogEndPreview" Value="Náhľad dokončený"/>
+      <Item Name="strlogEndRevert" Value="Spätný proces dokončený"/>
+      <Item Name="strlogStoppedByUser" Value="Operácia zastavená používateľom"/>
+      <Item Name="stradUnknown" Value="Nespraviť nič"/>
+      <Item Name="stradInclExt" Value=", použiť tiež na príponu"/>
+      <Item Name="stradOnlyExt" Value=", použiť na príponu namiesto na názov"/>
+      <Item Name="stradChangeExt" Value="Zmeniť príponu na %s"/>
+      <Item Name="stradChangeExtRmv" Value="Odstrániť príponu"/>
+      <Item Name="stradChangeExtNoRepl" Value="Pridať príponu %s"/>
+      <Item Name="stradStringRepl" Value="Nahradiť %s týmto: %s"/>
+      <Item Name="stradStringReplAll" Value=", nahradiť všetky výskyty"/>
+      <Item Name="stradStringReplCase" Value=", rozlišovať veľké a malé písmená"/>
+      <Item Name="stradMultstrRepl" Value="Nahradiť viacnásobné reťazce použitím sady &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Vložiť %s na pozíciu %d"/>
+      <Item Name="stradMoveStr" Value="Presunúť %d znakov z pozície %d%s na pozíciu %d%s"/>
+      <Item Name="stradCharDel" Value="Odstrániť %d znakov"/>
+      <Item Name="stradCharDelPos" Value=" od pozície %d"/>
+      <Item Name="stradCharDelStr" Value=" po reťazci %s"/>
+      <Item Name="stradEnum" Value="Vypočítať súbor %s od %d do %d, zvyšovať po: %d"/>
+      <Item Name="stradMP3" Value="Generovať názvy z MP3 tagu podľa masky %s"/>
+      <Item Name="stradMP3TwoDigit" Value=", vložiť '0' do čísla stopy, ak je vyžadované"/>
+      <Item Name="stradMP3Convert" Value=", konvertovať nepovolené znaky"/>
+      <Item Name="stradFromBegin" Value=" od začiatku"/>
+      <Item Name="stradFromEnd" Value=" od konca"/>
+      <Item Name="stradDateTime" Value="Generovať názvy zo súborov, dátum a čas podľa masky %s"/>
+      <Item Name="stradDateTimeCreat" Value=" použitím dátumu vytvorenia"/>
+      <Item Name="stradDateTimeModif" Value=" použitím dátumu poslednej zmeny"/>
+      <Item Name="stradDateTimeSuffix" Value=", pridať príponu, ak je vyžadovaná"/>
+      <Item Name="stradRandom" Value="Generovať náhodné názvy podľa masky %s"/>
+      <Item Name="stradRandomNumbers" Value=", s číslicami"/>
+      <Item Name="stradRandomTick" Value=" použitím počítania Windows"/>
+      <Item Name="stradRandomGUID" Value=" použitím GUID"/>
+      <Item Name="stradCase" Value="Zmeniť veľkosť,"/>
+      <Item Name="stradCaseWords" Value=" Prvé písmeno veľké po ktoromkoľvek z týchto znakov &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" Prvé písmeno názvu veľké"/>
+      <Item Name="stradCaseUpper" Value=" všetky veľké"/>
+      <Item Name="stradCaseLower" Value=" všetky malé"/>
+      <Item Name="stradCaseLocale" Value=", použitím miestneho nastavenia Windows"/>
+      <Item Name="stradFromList" Value="Prejmenovať súbory na základe špecifikovaného zoznamu"/>
+      <Item Name="stradFromListExt" Value=", pridať pôvodnú príponu"/>
+      <Item Name="stradFromListOnlyExt" Value=", použiť položky ako prípony namiesto názvov"/>
+      <Item Name="stradRegexp" Value="Premenovať súbory použitím regulárneho výrazu"/>
+      <Item Name="stradExif" Value="Generovať názvy z EXIF podľa masky &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Prázdny riadok"/>
+      <Item Name="straeFromListEnd" Value="Koniec zoznamu"/>
+      <Item Name="strfsNotRenamed" Value="%s nebol premenovaný: %s"/>
+      <Item Name="strfsRenamed" Value="%s premenovaný na %s"/>
+      <Item Name="strfsReverted" Value="%s obnovený predchádzajúci názov %s"/>
+      <Item Name="strfsRenError" Value="Nie je možné premenovať %s na %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Žiadny predchádzajúci názov nie je uložený %s na vrátenie"/>
+      <Item Name="strfs404" Value="Zdrojový súbor nebol nájdený"/>
+      <Item Name="strfsAlreadyExist" Value="Súbor alebo priečinok s týmto názvom už existuje"/>
+      <Item Name="strfeIdentical" Value="nový názov je rovnaký, ako pôvodný"/>
+      <Item Name="strhintNotAgain" Value="Nabudúce nezobrazovať"/>
+      <Item Name="strhintShowPreview" Value="Stĺpec náhľadu je teraz zobrazený. Ak ho chcete skryť, kliknite pravým tlačidlom myši na hlavičku stĺpca zoznamu súborov."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="O programe Ant Renamer, preklad: sepp.winkler@gmail.com">
+    <btn1 Caption="História"/>
+    <btn2 Caption="Zatvoriť"/>
+    <tshGeneral Caption="Všeobecné"/>
+    <tshCredits Caption="Poďakovanie"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Upozornenie"/>
+        <Item Index="1" Value="Chyba"/>
+        <Item Index="2" Value="Informácia"/>
+        <Item Index="3" Value="Potvrdenie"/>
+        <Item Index="4" Value="&#38;Áno"/>
+        <Item Index="5" Value="&#38;Nie"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Zrušiť"/>
+        <Item Index="8" Value="&#38;Zrušiť"/>
+        <Item Index="9" Value="Zo&#38;pakovať"/>
+        <Item Index="10" Value="&#38;Ignorovať"/>
+        <Item Index="11" Value="&#38;Všetko"/>
+        <Item Index="12" Value="Nie všetkým"/>
+        <Item Index="13" Value="Áno všetkým"/>
+        <Item Index="14" Value="Po&#38;mocník"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Možnosti">
+    <btn1 Caption="Pomocník"/>
+    <btn2 Caption="Zrušiť"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Zobrazenie"/>
+    <tshAdding Caption="Súborov a priečinkov"/>
+    <tshProcessing Caption="Spracovanie"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Jazyk"/>
+    <lbhLists Caption="Zoznamy"/>
+    <cbxRealtimeUpdate Caption="Okamžité aktualizovanie pri premen. súborov a gener. denníka (pomalšie)"/>
+    <cbxResizeColsFiles Caption="Automaticky zmeniť šírku stĺpcov zoznamu súborov"/>
+    <cbxFilesIcons Caption="Zobraziť ikony v zozname súborov podľa prípony"/>
+    <lbhFonts Caption="Písma"/>
+    <cbxForceFont Caption="Použiť následujúce písmo na zobrazenie špeciálnych znakov:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Predvolené písmo Windows"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Poznámka: Ak je dostupné, je doporučené písmo Arial Unicode MS"/>
+    <lbhDropdown Caption="Roletový zoznam"/>
+    <lblDropdownMax Caption="Počet hodnôt v pamäti:"/>
+    <cbxDropdownComplete Caption="Automaticky dokončiť históriu hodnôt pri písaní"/>
+    <lbhToolbars Caption="Panely nástrojov"/>
+    <lblIconSet Caption="Voľby ikon:"/>
+    <lblColorType Caption="Typ farby:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatická"/>
+        <Item Index="1" Value="Sivá pri neaktívnom"/>
+        <Item Index="2" Value="Svetlá pri neaktívnom (štýl XP)"/>
+        <Item Index="3" Value="Tmavá pri neaktívnom"/>
+        <Item Index="4" Value="Vždy sfarbená"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Štýl Office XP"/>
+    <lbhDragdrop Caption="Ťahaj a pusti"/>
+    <cbxDragdropNoAsk Caption="Nepýtať sa a vždy použiť nasledujúce voľby:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Pridať súbory vybraných priečinkov"/>
+      <cbxFolders Caption="Pridať vybrané priečinky"/>
+      <cbxRecursive Caption="Použiť tieto dve voľby aj na vnorené priečinky"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Správanie zoznamu"/>
+    <cbxLaunchFile Caption="Pri dvojkliku spustiť súbor"/>
+    <lbhRenaming Caption="Premenovanie súboru"/>
+    <cbxCopy Caption="Kopírovať namiesto premenovania"/>
+    <cbxGenerLog Caption="Generovať denník"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="V priečinkoch (povolí vytvorenie priečinkov, ak je &#34;\&#34; prítomný v názvoch)"/>
+    <cbxDetectAbsdir Caption="Detekovať &#34;:\&#34; alebo &#34;\\&#34; ako pevnú cestu (povolí kamkoľvek presunúť súbory)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Prepnúť do:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Zoznamu súborov"/>
+        <Item Index="1" Value="Akcií"/>
+        <Item Index="2" Value="Denníka"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Vymazať denník"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Prepnúť do:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Zoznamu súborov"/>
+        <Item Index="1" Value="Akcií"/>
+        <Item Index="2" Value="Denníka"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Vymazať zoznam súborov"/>
+    <cbxClearBatchList Caption="Vymazať zoznam dávky"/>
+    <cbxSaveLog Caption="Uložiť denník do súboru:"/>
+    <btnSaveLog Hint="Prechádzať..."/>
+    <cbxSaveLogAppend Caption="Pridať k súčasnému súboru"/>
+    <lbhLanguage Caption="Jazyk"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Jazyk"/>
+          <Column Index="1" Caption="V miestnom jazyku"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Verzia:"/>
+      <lblMadeby Caption="Vytvoril:"/>
+      <lblComments Caption="Poznámky:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Vyberte priečinky na pridanie">
+    <btn1 Caption="Pomocník"/>
+    <btn2 Caption="Zrušiť"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Sieť..."/>
+    <Options>
+      <cbxFiles Caption="Pridať súbory vybraného priečinka"/>
+      <cbxFolders Caption="Pridať vybrané priečinky"/>
+      <cbxRecursive Caption="Použiť tieto dve voľby aj na vnorené priečinky"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Voľby ťahaj a pusti">
+    <btn1 Caption="Pomocník"/>
+    <btn2 Caption="Zrušiť"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Použiť túto voľbu pre pridanie súborov, ktoré boli pustené:"/>
+    <Options>
+      <cbxFiles Caption="Pridať súbory vybraných priečinkov"/>
+      <cbxFolders Caption="Pridať vybrané priečinky"/>
+      <cbxRecursive Caption="Použiť tieto dve voľby aj na vnorené priečinky"/>
+    </Options>
+    <cbxNotAgain Caption="Toto okno nabudúce nezobrazovať (uložiť vybrané voľby pre budúcu prácu)"/>
+  </DragdropOptionsForm>
+</Application>

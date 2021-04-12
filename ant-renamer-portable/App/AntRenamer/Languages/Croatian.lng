@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAKoAAAD9AAAAAACqAAAA/QAzM/8A/5kzAKqqqgAAy/0AzMzMAO7u7gD///8AAwAAAAAAAAABAAAAAQAAALu7u7u7u7u7u7u7u7u7u7sAAAAAAAAAAAEREREREREgASIiIiIiImABIiInQiIiYAeZmXR0mZmgB5mZR0eZmaAHmZl0dJmZoAeZmUdHmZmgA0RACIAERFADRERABEREUARVVVVVVVVQAAAAAAAAAAC7u7u7u7u7u7u7u7u7u7u7
+Name=Croatian
+LocalName=Hrvatski
+Version=2.10
+VersionFormat=2.12
+Comments=Sve moguće greške, nedostatke, prigovore ili sugestije na prijevod, molim, napišite na damir13@windowslive.com
+Authors=Damir13|damir13@windowslive.com
+-->
+<Application>
+  <MainForm>
+    <tbTabs Caption="Stranice"/>
+    <tbProgram Caption="Program"/>
+    <tbFiles Caption="Datoteke"/>
+    <tbMove Caption="Pomakni stavke"/>
+    <tbActions Caption="Akcije"/>
+    <tbLog Caption="Zapisnik"/>
+    <ActionBatchAddAction Caption="Dodaj u serijsku akciju" Hint="Dodavanje serijske akcije|Dodavanje izabrane akcije i njenih postavki u serijsku akciju"/>
+    <ActionBatchOpen Caption="Otvori..." Hint="Otvoranje|Otvoranje datoteke serijske akcije"/>
+    <ActionBatchSaveAs Caption="Spremi..." Hint="Spremanje|Spremanje ove serijske akcije u datoteku"/>
+    <ActionBatchRemoveSel Caption="Ukloni izabrano" Hint="Uklanjanje izabranog|Uklanjanje izabrane serijske akcije"/>
+    <ActionBatchClear Caption="Očisti" Hint="Očisti serijsku akciju|Ukloni sve serijske akcije"/>
+    <ActionBatchNoRecent Caption="(nema nedavne datoteke)"/>
+    <ActionAddFiles Caption="Dodaj datoteke..." Hint="Dodavanje datoteke|Dodavanje datoteke na listu"/>
+    <ActionAddFolders Caption="Dodaj mape..." Hint="Dodavanje mape|Dodavanje mape ili sadržaja mape na listu"/>
+    <ActionRemoveSelected Caption="Ukloni izabrano" Hint="Uklanjanje izabranog|Uklanjanje izabranih datoteka s liste"/>
+    <ActionRemoveAll Caption="Ukloni sve" Hint="Uklanjanje svega|Uklanjanje svih datoteka s liste"/>
+    <ActionRemoveDead Caption="Ukloni nepostojeće" Hint="Uklanjanje nepostojećih|Uklanjanje nepostojećih datoteka s liste"/>
+    <ActionPreview Caption="Pregled" Hint="Osvježavanje pregleda|Osvježavanje kolone pregleda s trenutno planiranom akcijom"/>
+    <ActionFromListClear Caption="Očisti" Hint="Čišćenje liste|Čišćenje liste"/>
+    <ActionFromListOpen Caption="Otvori..." Hint="Otvaranje|Učitavanje liste iz datoteke"/>
+    <ActionFromListSave Caption="Spremi..." Hint="Spremanje|Spremanje liste u datoteku"/>
+    <ActionMultistrReplClear Caption="Očisti mrežu" Hint="Očisti mrežu niza znakova"/>
+    <ActionMultistrReplSave Caption="Spremi" Hint="|Spremanje trenutne postavke pod nazivom napisanim iznad"/>
+    <ActionMultistrReplDelete Caption="Obriši" Hint="|Brisanje trenutnih postavki naslova"/>
+    <ActionMoveUp Caption="Gore" Hint="Pomicanje gore|Pomicanje izabrane stavke gore"/>
+    <ActionMoveDown Caption="Dolje" Hint="Pomicanje dolje|Pomicanje izabrane stavke dolje"/>
+    <ActionMoveTop Caption="Vrh" Hint="Pomicanje na vrh|Pomicanje izabrane stavke na vrh liste"/>
+    <ActionMoveBottom Caption="Dno" Hint="Pomicanje na dno|Pomicanje izabrane stavke na dno liste"/>
+    <ActionItemsUnsort Caption="Nerazvrstane stavke" Hint="|Uklanja trenutni redoslijed razvrstavanja"/>
+    <ActionItemsSelectAll Caption="Izaberi sve" Hint="Izbor svega|Izbor svih stavki"/>
+    <ActionItemsSelectNone Caption="Izbaberi ništa" Hint="Izbor niti jedne stavke|Niti jedna stavka nije izabrana"/>
+    <ActionItemsSelectInvert Caption="Okreni izbor" Hint="Okretanje izbora|Okretanje izbora stavki"/>
+    <ActionLogClear Caption="Očisti" Hint="Čišćenje|Čišćenje zapisnika"/>
+    <ActionLogSave Caption="Spremi..." Hint="Spremanje|Spremanje zapisnika u datoteku"/>
+    <ActionLogCopy Caption="Kopiraj" Hint="Kopiranje|Kopiranje zapisnika u međuspremnik"/>
+    <ActionLogFilter Caption="Filter" Hint="Filtriranje|Filtriranje unosa u zapisnik"/>
+    <ActionLogFilterOk Caption="Uspješno" Hint="Prikaz preimenovanih datoteka|Prikaz unosa koji odgovaraju uspješno preimenovanim datotekama"/>
+    <ActionLogFilterError Caption="Greške" Hint="Prikaz grešaka|Prikaz unosa koji odgovaraju greškama"/>
+    <ActionLogFilterNot Caption="Nije preimenovano" Hint="Prikaz preskočenih datoteka|Prikaz unosa koji odgovaraju datotekama koje nisu preimenovane"/>
+    <ActionActionGo Caption="Idi" Hint="Idi|Pokretanje postupka preimenovanja"/>
+    <ActionActionStop Caption="Stop" Hint="Stop|Zaustavljanje postupka preimenovanja"/>
+    <ActionOptions Caption="Opcije..." Hint="Opcije|Promjena opcija programa"/>
+    <ActionActionUndo Caption="Poništi" Hint="Poništavanje|Poništavanje zadnjeg preimenovanja"/>
+    <ActionHelpContents Caption="Pomoć" Hint="Sadržaj pomoći|Otvaranje sadržaja pomoći"/>
+    <ActionHelpAbout Caption="O programu..." Hint="O..|O ovom programu"/>
+    <ActionExit Caption="Izlaz" Hint="Izlaz|Zatvori program"/>
+    <ActionAlwaysOnTop Caption="Na vrhu" Hint="Uvijek na vrhu|Postavljanje prozora uvijek iznad svih"/>
+    <ActionTabFiles Caption="Datoteke" Hint="Datoteke|Prikaz datoteka"/>
+    <ActionTabActions Caption="Akcije" Hint="Akcije|Prikaz akcija"/>
+    <ActionTabLog Caption="Zapisnik" Hint="Zapisnik|Prikaz zapisnika"/>
+    <lstFiles Hint="|Spisak datoteka - desnom tipkom miša kliknite na zaglavlje da bi prilagodili stupce">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Mapa"/>
+          <Item Index="1" Text="Ime datoteke"/>
+          <Item Index="2" Text="Putanja"/>
+          <Item Index="3" Text="Datotečni nastavak"/>
+          <Item Index="4" Text="Pregled"/>
+          <Item Index="5" Text="Veličina"/>
+          <Item Index="6" Text="Datum stvaranja"/>
+          <Item Index="7" Text="Datum promjene"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Pregled izabrane datoteke "/>
+    <grpBatch Caption="    Sadržaj serijske akcije (planirane akcije) "/>
+    <lstBatch Hint="|Sadržaj serijske akcije (planirane akcije)"/>
+    <lblPreviewOld Caption="Trenutno ime:"/>
+    <lblPreviewNew Caption="Uzorak novog imena:"/>
+    <lstActions Hint="|Spisak akcija">
+      <Items>
+        <Item Index="0" Value="Promjena datotečnog nastavka"/>
+        <Item Index="1" Value="Zamjena niza znakova"/>
+        <Item Index="2" Value="Višestruka zamjena niza znakova"/>
+        <Item Index="3" Value="Ubacivanje niza znakova"/>
+        <Item Index="4" Value="Pomicanje niza znakova"/>
+        <Item Index="5" Value="Brisanje znakova"/>
+        <Item Index="6" Value="Brojčani naziv"/>
+        <Item Index="7" Value="Koristi mp3 info oznake"/>
+        <Item Index="8" Value="Koristi datum &#38; vrijeme"/>
+        <Item Index="9" Value="Nasumični nazivi"/>
+        <Item Index="10" Value="Promjena slučaja"/>
+        <Item Index="11" Value="Uzmi nazive sa spiska"/>
+        <Item Index="12" Value="Regularni izrazi"/>
+        <Item Index="13" Value="Koristi EXIF info"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Zamijeni datotečni nastavak s:"/>
+    <cbxChangeExtNoRepl Caption="Nemoj zamijeniti datotečni nastavak, dodaj ga u trenutni puni naziv"/>
+    <lblChangeExtNotes Caption="Napomena:&lt;br&gt;- Nemoj uključiti točku, samo unesi novi datotečni nastavak &lt;br&gt;- Ako želite napraviti prošireni datotečni nastavak, koristite akciju &lt;LINK&gt;Brojčani naziv&lt;/LINK&gt;"/>
+    <lblStrReplSearch Caption="Traži:"/>
+    <lblStrReplBy Caption="Zamijeni:"/>
+    <cbxStrReplAll Caption="Zamijeni sva pojavljivanja"/>
+    <cbxStrReplCase Caption="Razlikuj velika i mala slova"/>
+    <cbxStrReplExt Caption="Uključi datotečni nastavak u pretragu"/>
+    <cbxStrReplOnlyExt Caption="Prihvati datotečni nastavak u naziv"/>
+    <lblMultstrSearch Caption="Traži:"/>
+    <lblMultstrReplBy Caption="Zamijeni:"/>
+    <lblMultstrReplSet Caption="Predefinirane postavke:"/>
+    <cbxMultstrReplExt Caption="Uključi datotečni nastavak u pretragu"/>
+    <cbxMultstrReplCase Caption="Razlikuj velika i mala slova"/>
+    <lblMultstrReplNotes Caption="Napomena:&lt;BR&gt;- Koristite Ctrl+ Plus (+) i Ctrl+ Minus (-) za umetanje ili brisanje crte na trenutnom mjestu"/>
+    <lblStrInsStr Caption="Niz znakova za umetnuti:"/>
+    <lblStrInsPos Caption="Na mjesto:"/>
+    <rbtStrInsBegin Caption="Od početka"/>
+    <rbtStrInsEnd Caption="Od kraja"/>
+    <cbxStrInsExt Caption="Prihvati datotečni nastavak u naziv"/>
+    <lblStrInsNotes Caption="Napomena:&lt;br&gt;- Ako hoćete ubaciti niz znakova poslije ili prije nekog drugog, koristite akciju &lt;LINK&gt;Zamjena niza znakova&lt;/LINK&gt;&lt;BR&gt;- %name% = Izvorni naziv datoteke (bez dat.nastavka)&lt;BR&gt;- %ext% = Izvorni dat.nastavak (uključujući točku)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Ime mape&lt;BR&gt;- %% = % znak&lt;BR&gt;pogledajte &lt;LINK&gt;Pomoć&lt;/LINK&gt; za više informacija"/>
+    <lblMoveStrFrom Caption="S mjesta:"/>
+    <rbtMoveStrFromBegin Caption="Od početka"/>
+    <rbtMoveStrFromEnd Caption="Od kraja"/>
+    <lblMoveStrCount Caption="Broj znakova za pomaknuti:"/>
+    <lblMoveStrTo Caption="Na mjesto:"/>
+    <rbtMoveStrToBegin Caption="Od početka"/>
+    <rbtMoveStrToEnd Caption="Od kraja"/>
+    <lblMoveStrNotes Caption="Napomena:&lt;br&gt;- Ako želite pomaknuti određeni niz znakova ali on nije uvijek na istom mjestu, koristite &lt;link&gt;Zamjena niza znakova&lt;/link&gt; da ih obrišete, iza toga &lt;link&gt;Ubacivanje niza znakova&lt;/link&gt; da bi ih umetnuli na novo mjesto&lt;BR&gt;- &#34;Na mjesto&#34; ne uključuje pomaknute znakove (kao da su već obrisani)"/>
+    <lblCharDel Caption="Broj znakova za obrisati:"/>
+    <rbtCharDelPos Caption="S mjesta:"/>
+    <rbtCharDelBegin Caption="Od početka"/>
+    <rbtCharDelEnd Caption="Od kraja"/>
+    <rbtCharDelStr Caption="Poslije niza znakova:"/>
+    <rbtCharDelStr2 Caption="Prije niza znakova:"/>
+    <cbxCharDelExt Caption="Prihvati datotečni nastavak u naziv"/>
+    <lblCharDelNotes Caption="Napomena:&lt;BR&gt;- Za brisanje određenog niza znakova, koristite akciju &lt;LINK&gt;Zamjena niza znakova&lt;/LINK&gt; i zamijenite ih ostavljajući prazno"/>
+    <lblEnumMask Caption="Oblik naziva:"/>
+    <lblEnumStart Caption="Počni s:"/>
+    <lblEnumDigits Caption="Broj brojki:"/>
+    <lblEnumIncr Caption="Povećanje za:"/>
+    <cbxEnumRestart Caption="Vrati se na početnu vrijednost kod zamjene mape"/>
+    <lblEnumNotes Caption="Napomena:&lt;BR&gt;- %name% = Izvorni naziv datoteke (bez dat.nastavka)&lt;BR&gt;- %ext% = Izvorni dat.nastavak (uključujući točku)&lt;BR&gt;- %num% = Broj&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Naziv mape&lt;BR&gt;- %% = % znak&lt;BR&gt;pogledajte &lt;LINK&gt;Pomoć&lt;/LINK&gt; za više informacija"/>
+    <lblMP3Mask Caption="Oblik naziva:"/>
+    <cbxMP3TwoDigit Caption="Dvoznamenkasti broj zapisa (ako je potrebno ubacite '0' ispred broja)"/>
+    <cbxMP3Convert Caption="Promijeni nedozvoljene znakove poput ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Napomena:&lt;BR&gt;- %author% = Autor&lt;BR&gt;- %title% = Naslov&lt;BR&gt;- %album% = Album&lt;BR&gt;- %year% = Godina&lt;BR&gt;- %genre% = Žanr&lt;BR&gt;- %comm% = Komentar&lt;BR&gt;- %track% = Broj zapisa (ID3V1.1)&lt;BR&gt;- %name% = Izvorni naziv datoteke (bez dat.nastavka)&lt;BR&gt;- %ext% = Izvorni dat.nastavak (uključujući točku)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Ime mape&lt;BR&gt;- %% = % znak&lt;BR&gt;- $if(stanje,točno,ne točno)&lt;BR&gt;pogledajte &lt;LINK&gt;Pomoć&lt;/LINK&gt; za više informacija"/>
+    <lblDTMask Caption="Oblik naziva:"/>
+    <cbxDTSuffix Caption="Dodaj sufiks ako više od jedne datoteke sadrže isti datum/vrijeme"/>
+    <lblDTWhich Caption="Koristi datum:"/>
+    <rbtDTWhichCreation Caption="Izrada"/>
+    <rbtDTWhichModif Caption="Zadnja promjena"/>
+    <lblDTNotes Caption="Napomena:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	Izvorni naziv datoteke (bez dat.nastavka)
+e	Izvorni dat.nastavak (uključujući točku)
+c	Datum i vrijeme u Windows standardnom formatu
+d	Dan bez nule na početku (1-31)
+dd	Dan s nulom na početku (01-31)
+ddd	Dan, kratko ime (Pon-Pet)
+dddd	Dan, puno ime (Nedjelja-Utorak)
+ddddd	Datum u Windows' kratkom formatu
+dddddd	Datum u Windows' dugom formatu
+m	Mjesec bez nule na početku (1-12)
+mm	Mjesec s nulom na početku (01-12)
+mmm	Mjesec, kratko ime (Tra-Ruj)
+mmmm	Mjesec, puno ime (Svibanj-Prosinac)
+yy	Godina, 2-znamenkasti broj (00-99)
+yyyy	Godina, 4-znamenkasti broj (0000-9999)
+h	Sat bez nule na početku (0-23)
+hh	Sat s nulom na početku (00-23)
+n	Minute bez nule na početku (0-59)
+nn	Minute s nulom na početku (00-59)
+s	Sekunde bez nule na početku (0-59)
+ss	Sekunde s nulom na početku (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	Koristi 12-satni sat za h ili hh
+a/p	Koristi 12-satni sat za h ili hh
+'xx'/"xx"	Znakovi unutar jednostrukih ili dvostrukih navodnika ostaju nepromijenjeni
+
+Ako se m ili mm odmah nastavljaju na h ili hh, koristi minute, a ne mjesec]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Oblik naziva:"/>
+    <lblRandomMethod Caption="Metoda:"/>
+    <rbtRandomNumber Caption="Slučajan broj (8 znamenaka)"/>
+    <rbtRandomTick Caption="Windows nasumični brojač"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="Napomena:&lt;BR&gt;- %name% = Izvorni naziv datoteke (bez dat.nastavka)&lt;BR&gt;- %ext% = Izvorni dat.nastavak (uključujući točku)&lt;BR&gt;- %random% = Slučajno generirani niz&lt;BR&gt;- %% = % znak&lt;BR&gt;pogledaj &lt;LINK&gt;Pomoć&lt;/LINK&gt; za više informacija"/>
+    <rbtCaseWords Caption="Prvo slovo veliko nakon bilo kojeg od ovih znakova:"/>
+    <rbtCaseFirst Caption="Naziv datoteke velikim slovom"/>
+    <rbtCaseUpper Caption="Velika slova"/>
+    <rbtCaseLower Caption="Mala slova"/>
+    <cbxCaseLocale Caption="Koristi Windows' lokalne postavke za promjenu posebnih znakova"/>
+    <cbxCaseIncludeExt Caption="Uključi datotečni nastavak"/>
+    <cbxCaseOnlyExt Caption="Uključi datotečni nastavak u naziv"/>
+    <cbxFromListExt Caption="Dodaj izvorni nastavak datoteke"/>
+    <cbxFromListOnlyExt Caption="Koristi stavke kao datotečne nastavke umjesto imena"/>
+    <lblFromListNotes Caption="Napomena:&lt;BR&gt;- Svaki red ovog spiska će se koristiti kao naziv datoteke. Stavke se koriste redom&lt;BR&gt;- Ako je red prazan ili ako nema dovoljno redova, odgovarajuće datoteke neće biti preimenovane"/>
+    <lblRegexp Caption="Izraz:"/>
+    <lblRegexpRepl Caption="Novo ime:"/>
+    <lblRegexpNotes Caption="Napomena:&lt;BR&gt;- \ znak se može koristiti za izbjegavanje posebnih znakova (kao $ i drugi), koristite \\ za jedan \ u novom imenu (ako želite smjestiti novo ime na drugu mapu)&lt;BR&gt;- Koristite ^ za određivanje početka imena i $ za kraj imena&lt;BR&gt;- Novo ime mora sadržavati $1, $2, itd. da bi odredili gdje će doći pronađeni znakovi&lt;BR&gt;pogledajte &lt;LINK&gt;Pomoć&lt;/LINK&gt; za više informacija o regularnim izrazima"/>
+    <lblExifMask Caption="Oblik naziva:"/>
+    <lblExifNotes Caption="Napomena:&lt;BR&gt;- %name% = Izvorni naziv datoteke (bez dat.nastavka)&lt;BR&gt;- %ext% = Izvorni dat.nastavak (uključujući točku)&lt;BR&gt;- %datetimeoriginal% / %datetime% = Izvorni datum i vrijeme slike&lt;BR&gt;- %orientation% = Orijentacija slike&lt;BR&gt;- %flash% = Bljeskalica uključena ili isključena&lt;BR&gt;- %% = % znak&lt;BR&gt;pogledajte &lt;LINK&gt;Pomoć&lt;/LINK&gt; za više informacija i cjelokupni spisak EXIF oznaka"/>
+    <lstLog Hint="|Log"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Sve datoteke"/>
+      <Item Name="strfltTextFiles" Value="Tekst datoteke"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer datoteke serije"/>
+      <Item Name="strmsgSelectFiles" Value="Odaberite datoteku"/>
+      <Item Name="strmsgSelectFolder" Value="Odaberite mapu"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Dodavanje datoteka"/>
+      <Item Name="strmsgStatusRenaming" Value="Preimenovanje datoteka"/>
+      <Item Name="strmsgFilesCount" Value="%d datoteka"/>
+      <Item Name="strmsgBusy" Value="Program je zauzet: Postupak preimenovanja u napretku."/>
+      <Item Name="strmsgNothingToDo" Value="Ništa za napraviti: molimo izaberite najmanje jednu datoteku i akciju za obavljanje."/>
+      <Item Name="strlogStartRename" Value="Pokrenut postupak preimenovanja"/>
+      <Item Name="strlogStartPreview" Value="Osvježavanje pregleda"/>
+      <Item Name="strlogStartRevert" Value="Vraćanje na prethodna imena"/>
+      <Item Name="strlogEndRename" Value="Postupak preimenovanja završen"/>
+      <Item Name="strlogEndPreview" Value="Postupak pregleda završen"/>
+      <Item Name="strlogEndRevert" Value="Postupak vraćanja završen"/>
+      <Item Name="strlogStoppedByUser" Value="Korisnik je prekinuo postupak"/>
+      <Item Name="stradUnknown" Value="Nemoj napraviti ništa"/>
+      <Item Name="stradInclExt" Value=", primijeni i na dat.nastavke"/>
+      <Item Name="stradOnlyExt" Value=", primijeni i na dat.nastavke umjesto imena"/>
+      <Item Name="stradChangeExt" Value="Promijeni dat.nastavak na &#34;%s&#34;"/>
+      <Item Name="stradChangeExtRmv" Value="Ukloni dat.nastavak"/>
+      <Item Name="stradChangeExtNoRepl" Value="Dodavanje nastavka &#34;%s&#34;"/>
+      <Item Name="stradStringRepl" Value="Zamijeni &#34;%s&#34; s &#34;%s&#34;"/>
+      <Item Name="stradStringReplAll" Value=", zamijenit sva pojavljivanja"/>
+      <Item Name="stradStringReplCase" Value=", Razl.velika i mala slova"/>
+      <Item Name="stradMultstrRepl" Value="Zamijeni višestruke nizove znakova koristeći &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Umetni &#34;%s&#34; na mjesto %d"/>
+      <Item Name="stradMoveStr" Value="Pomakni %d znakova s mjesta %d%s, na mjesto %d%s"/>
+      <Item Name="stradCharDel" Value="Obriši %d znaka/ova"/>
+      <Item Name="stradCharDelPos" Value=" na mjesto %d"/>
+      <Item Name="stradCharDelStr" Value=" iza niza znakova &#34;%s&#34;"/>
+      <Item Name="stradEnum" Value="Generiraj brojčani naziv &#34;%s&#34; iz %d na %d s %d"/>
+      <Item Name="stradMP3" Value="Generiraj imena s MP3 oznaka, na temelju oblik naziva &#34;%s&#34;"/>
+      <Item Name="stradMP3TwoDigit" Value=", ako treba umetni '0' u broj zapisa"/>
+      <Item Name="stradMP3Convert" Value=", promijeni nedozvoljene znakove"/>
+      <Item Name="stradFromBegin" Value=", od početka"/>
+      <Item Name="stradFromEnd" Value=", od kraja"/>
+      <Item Name="stradDateTime" Value="Generiraj nazive iz datoteka' datum i vrijeme, na temelju oblik naziva &#34;%s&#34;"/>
+      <Item Name="stradDateTimeCreat" Value=" koristeći datum izrade"/>
+      <Item Name="stradDateTimeModif" Value=" koristeći zadnji datum promijene"/>
+      <Item Name="stradDateTimeSuffix" Value=", ako je potrebno dodaj sufiks"/>
+      <Item Name="stradRandom" Value="Generiraj slučajno ime koristeći oblik naziva &#34;%s&#34;"/>
+      <Item Name="stradRandomNumbers" Value=", s brojevima"/>
+      <Item Name="stradRandomTick" Value=", koristeći Windows' nasumični brojač"/>
+      <Item Name="stradRandomGUID" Value=", koristeći GUIDs"/>
+      <Item Name="stradCase" Value="Promjena slova:"/>
+      <Item Name="stradCaseWords" Value=" Prvo slovo veliko nakon bilo kojeg od ovih znakova &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" Ime s prvim velikim slovom"/>
+      <Item Name="stradCaseUpper" Value=" sve velikim slovima"/>
+      <Item Name="stradCaseLower" Value=" sve malim slovima"/>
+      <Item Name="stradCaseLocale" Value=", koristeći Windows' lokalne postavke"/>
+      <Item Name="stradFromList" Value="Preimenuj datoteke koristeći definiranu listu"/>
+      <Item Name="stradFromListExt" Value=", dodaj izvorni datotečni nastavak"/>
+      <Item Name="stradFromListOnlyExt" Value=", koristi stavke kao nastavke umjesto imena"/>
+      <Item Name="stradRegexp" Value="Preimenuj datoteke koristeći pravilne izraze"/>
+      <Item Name="stradExif" Value="Generiraj imena iz EXIF info, na temelju oblik naziva &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Prazan red"/>
+      <Item Name="straeFromListEnd" Value="Kraj liste"/>
+      <Item Name="strfsNotRenamed" Value="%s nije preimenovano : %s"/>
+      <Item Name="strfsRenamed" Value="%s preimenovano u %s"/>
+      <Item Name="strfsReverted" Value="%s vraćeno na prethodno ime %s"/>
+      <Item Name="strfsRenError" Value="Ne mogu preimenovati %s u %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Nema spremljenog prethodnog imana za %s za vraćanje starog imena"/>
+      <Item Name="strfs404" Value="Nije pronađena izvorna datoteka"/>
+      <Item Name="strfsAlreadyExist" Value="Datoteka ili mapa s ovim imenom već postoji"/>
+      <Item Name="strfeIdentical" Value="Novo ime je isto kao i staro ime"/>
+      <Item Name="strhintNotAgain" Value="Ne prikazuj opet ovaj savjet"/>
+      <Item Name="strhintShowPreview" Value="Prikaz stupca je sada vidljiv. Ako ga želite sakriti, kliknite desnom tipkom miša na zaglavlje stupca popisa datoteka."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="O ovom programu">
+    <btn1 Caption="Povijest"/>
+    <btn2 Caption="Zatvori"/>
+    <tshGeneral Caption="Osnovno"/>
+    <tshCredits Caption="Zasluge"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Upozorenje"/>
+        <Item Index="1" Value="Greška"/>
+        <Item Index="2" Value="Informacija"/>
+        <Item Index="3" Value="Potvrda"/>
+        <Item Index="4" Value="&#38;Da"/>
+        <Item Index="5" Value="&#38;Ne"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Otkaži"/>
+        <Item Index="8" Value="&#38;Prekini"/>
+        <Item Index="9" Value="&#38;Ponovi"/>
+        <Item Index="10" Value="&#38;Zanemari"/>
+        <Item Index="11" Value="&#38;Sve"/>
+        <Item Index="12" Value="Ne za sve"/>
+        <Item Index="13" Value="Da za sve"/>
+        <Item Index="14" Value="&#38;Pomoć"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Opcije">
+    <btn1 Caption="Pomoć"/>
+    <btn2 Caption="Otkaži"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Prikaz"/>
+    <tshAdding Caption="Datoteke &#38;&#38; Mape"/>
+    <tshProcessing Caption="Obrada"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Jezik"/>
+    <lbhLists Caption="Liste"/>
+    <cbxRealtimeUpdate Caption="Ažuriranje u stvarnom vremenu kod preimenovanja "/>
+    <cbxResizeColsFiles Caption="Auto-promjena veličine stupaca datoteke popisa"/>
+    <cbxFilesIcons Caption="Prikaži ikone na popisu datoteka, zasnovane na datotečnom nastavku"/>
+    <lbhFonts Caption="Fontovi"/>
+    <cbxForceFont Caption="Koristi slijedeći font za prikaz posebnih znakova:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Zadani Windows font"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Napomena: Arial Unicode MS je strogo preporučen ako je dostupan"/>
+    <lbhDropdown Caption="Povijest"/>
+    <lblDropdownMax Caption="Broj vrijednosti za držanje u povijesti:"/>
+    <cbxDropdownComplete Caption="Samodovršetak s povijesnim vrijednostima, dok tipkate"/>
+    <lbhToolbars Caption="Alatne trake"/>
+    <lblIconSet Caption="Postavke ikona:"/>
+    <lblColorType Caption="Vrsta boja:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatski"/>
+        <Item Index="1" Value="Sivo kada je neaktivan"/>
+        <Item Index="2" Value="Svjetlije kada je neaktivan (XP stil)"/>
+        <Item Index="3" Value="Tamnije kada je neaktivan"/>
+        <Item Index="4" Value="Uvijek u boji"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP stil"/>
+    <lbhDragdrop Caption="Povuci &#38; Ispusti"/>
+    <cbxDragdropNoAsk Caption="Nemoj pitati što napraviti, uvijek koristiti sljedeće opcije:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Dodaj datoteke izabrane mape"/>
+      <cbxFolders Caption="Dodaj izabrane mape"/>
+      <cbxRecursive Caption="Primijeni ove dvije opcije i na podmape"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Način ponašanja"/>
+    <cbxLaunchFile Caption="Pokreni datoteku dvostrukim klikom"/>
+    <lbhRenaming Caption="Preimenovanje datoteke"/>
+    <cbxCopy Caption="Kopiraj umjesto preimenovanja"/>
+    <cbxGenerLog Caption="Generiraj zapisnik"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Prisilni direktorij (omogućava izradu mape s &#34;\&#34; znakovima u nazivu)"/>
+    <cbxDetectAbsdir Caption="Otkriveno &#34;:\&#34; ili &#34;\\&#34; kao apsolutna putanja (moguće micanje dat. bilo gdje)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Prebaci na:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Popis datoteka"/>
+        <Item Index="1" Value="Akcije"/>
+        <Item Index="2" Value="Zapisnik"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Očisti zapisnik"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Prebaci na:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Popis datoteka"/>
+        <Item Index="1" Value="Akcije"/>
+        <Item Index="2" Value="Zapisnik"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Očisti spisak datoteka"/>
+    <cbxClearBatchList Caption="Očisti spisak serijske akcije"/>
+    <cbxSaveLog Caption="Spremi zapisnik u dat.:"/>
+    <btnSaveLog Hint="Pregledaj..."/>
+    <cbxSaveLogAppend Caption="Dodaj u trenutnu datoteku"/>
+    <lbhLanguage Caption="Jezik"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Naziv"/>
+          <Column Index="1" Caption="Lokalni naziv"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Verzija:"/>
+      <lblMadeby Caption="Prijevod:"/>
+      <lblComments Caption="Komentar:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Izaberi mape za dodavanje">
+    <btn1 Caption="Pomoć"/>
+    <btn2 Caption="Otkaži"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Mreža..."/>
+    <Options>
+      <cbxFiles Caption="Dodaj datoteke izabranih mapa"/>
+      <cbxFolders Caption="Dodaj izabrane mape"/>
+      <cbxRecursive Caption="Primijeni ove dvije opcije i na podmape"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Prevuci &#38; Ispusti opcije">
+    <btn1 Caption="Pomoć"/>
+    <btn2 Caption="Otkaži"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Opcije koristiti za dodavanje datoteke koje su ispuštene:"/>
+    <Options>
+      <cbxFiles Caption="Dodaj datoteke izabranih mapa"/>
+      <cbxFolders Caption="Dodaj izabrane mape"/>
+      <cbxRecursive Caption="Primijeni ove dvije opcije i na podmape"/>
+    </Options>
+    <cbxNotAgain Caption="Ne prikazuj ponovno (sačuvaj izabrane opcije za idući puta)"/>
+  </DragdropOptionsForm>
+</Application>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAzCwAAMwsAABAAAAAQAAAAAAAAAAAQAACYMgAAAACYAAAAqgAAZZgAZWWYAAAA/QBlZf8AAJnMAADL/QCZmZkA////AAAAAAAAAAAAAAAAAMzMzMzMzMzMAAAAAAAAAAAEREREREREcAR3d3d3d3eABHd3d3d3d4AZqmaqqqqqoBmiUyqqqqqgCaY7aqqqqqAJplVqqqqqoAmqZqqqqqqgCaqqqqqqqqAEd3d3d3d3gAR3d3d3d3eAB4iIiIiIiIAAAAAAAAAAAMzMzMzMzMzM
+Name=Spanish (Spain)
+LocalName=Español
+Version=2.09
+VersionFormat=2.12
+Comments=
+Authors=Vico//Koby|vicokoby@gmail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Añadir al batch" Hint="Añadir al batch|Añade la acción seleccionada y su configuración al batch"/>
+    <ActionBatchOpen Caption="Abrir..." Hint="Abrir|Abre un archivo batch"/>
+    <ActionBatchSaveAs Caption="Guardar..." Hint="Guardar|Guarda este batch en un archivo"/>
+    <ActionBatchRemoveSel Caption="Remover selección" Hint="Remover selección|Remueve las acciones seleccionadas del batch"/>
+    <ActionBatchClear Caption="Limpiar" Hint="Limpiar batch|Remueve todas las acciones del batch"/>
+    <ActionBatchNoRecent Caption="(no hay archivos recientes)"/>
+    <ActionAddFiles Caption="Añadir archivos..." Hint="Añadir archivos|Añade archivos a la lista"/>
+    <ActionAddFolders Caption="Añadir carpetas..." Hint="Añadir carpetas|Añade carpetas o el contenido de una carpeta a la lista"/>
+    <ActionRemoveSelected Caption="Remover selección" Hint="Remover seleccionados|Remove selected files from the list"/>
+    <ActionRemoveAll Caption="Remover todo" Hint="Remover todo|Remueve todo los los archivos de la lista"/>
+    <ActionRemoveDead Caption="Remover muertos" Hint="Remover muertos|Remueve los archivos muertos de la lista"/>
+    <ActionPreview Caption="Vista previa" Hint="Refrescar la vista previa|Refresca la columna con las actuales acciones planeadas"/>
+    <ActionFromListClear Caption="Limpiar" Hint="Limpiar lista|Limpia la lista"/>
+    <ActionFromListOpen Caption="Abrir..." Hint="Abrir|Carga una lista de un archivo"/>
+    <ActionFromListSave Caption="Guardar..." Hint="Guardar|Guarda la lista en un archivo"/>
+    <ActionMultistrReplClear Caption="Limpiar cuadros" Hint="Limpia los cuadros de las cadenas"/>
+    <ActionMultistrReplSave Caption="Guardar" Hint="|Guarda el juego actual debajo del nombre escrito arriba"/>
+    <ActionMultistrReplDelete Caption="Eliminar" Hint="|Eliminar el nombre del actual juego seleccionado"/>
+    <ActionMoveUp Caption="Arriba" Hint="Subir|Mueve los elementos seleccionados hacia arriba"/>
+    <ActionMoveDown Caption="Abajo" Hint="Bajar|Mueve los elementos seleccionados hacia abajo"/>
+    <ActionMoveTop Caption="Cima" Hint="Mover a la cima|Mueve los elementos seleccionados a la cima de la lista"/>
+    <ActionMoveBottom Caption="Fondo" Hint="Mover al fondo|Mueve los elementos seleccionados al fondo de la lista"/>
+    <ActionItemsUnsort Caption="Desordenar elementos" Hint="|Remueve el actual orden"/>
+    <ActionItemsSelectAll Caption="Seleccionar todo" Hint="Seleccionar todo|Selecciona todos los elementos"/>
+    <ActionItemsSelectNone Caption="Deseleccionar todo" Hint="Deseleccionar todo|Deselecciona todos los elementos"/>
+    <ActionItemsSelectInvert Caption="Invertir selección" Hint="Invertir selección|Invierte la selección de los elementos"/>
+    <ActionLogClear Caption="Limpiar" Hint="Limpiar|Limpia el log"/>
+    <ActionLogSave Caption="Guardar..." Hint="Guardar|Guarda el log en un archivo"/>
+    <ActionLogCopy Caption="Copiar" Hint="Copiar|Copia el log al portapapeles"/>
+    <ActionLogFilter Caption="Filtro" Hint="Filtro|Entradas del filtro del log"/>
+    <ActionLogFilterOk Caption="Resultados" Hint="Muestra los archivos renombrados|Muestra las entradas correspondientes a los archivos renombrados"/>
+    <ActionLogFilterError Caption="Errores" Hint="Mostrar errores|Muestra las entradas correspondientes a los errores"/>
+    <ActionLogFilterNot Caption="No renombrados" Hint="Muestra los archivos omitidos|Muestra las entradas correspondientes a los archivos que no fueron renombrados"/>
+    <ActionActionGo Caption="Iniciar" Hint="Iniciar|Inicia el proceaso de renombrado"/>
+    <ActionActionStop Caption="Detener" Hint="Detener|Detiene el proceso de renombrado"/>
+    <ActionOptions Caption="Opciones..." Hint="Opciones|Cambia las opciones del programa"/>
+    <ActionActionUndo Caption="Deshacer" Hint="Deshacer|Deshace el último renombrado"/>
+    <ActionHelpContents Caption="Ayuda" Hint="Contenido de la ayuda|Abre el contenido de la ayuda"/>
+    <ActionHelpAbout Caption="Acerca de..." Hint="Acerca de|Acerca de este programa"/>
+    <ActionExit Caption="Salir" Hint="Salir|Cierra el programa"/>
+    <ActionAlwaysOnTop Caption="Siempre visible" Hint="Siempre visible|Mantiene siempre la ventana visible"/>
+    <ActionTabFiles Caption="Archivos" Hint="Archivos|Mostrar archivos"/>
+    <ActionTabActions Caption="Acciones" Hint="Acciones|Muestra las acciones"/>
+    <ActionTabLog Caption="Log" Hint="Log|Muestra el log"/>
+    <lstFiles Hint="|Lista de archivos - Haga clic derecho en las cabeceras para personalizar las columnas">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Carpeta"/>
+          <Item Index="1" Text="Nombre del archivo"/>
+          <Item Index="2" Text="Ruta completa"/>
+          <Item Index="3" Text="Extensión"/>
+          <Item Index="4" Text="Vista previa"/>
+          <Item Index="5" Text="Tamaño"/>
+          <Item Index="6" Text="Fecha de creación"/>
+          <Item Index="7" Text="Fecha de modificación"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="Vista previa del archivo seleccionado "/>
+    <grpBatch Caption="Contenido batch (acciones planeadas) "/>
+    <lstBatch Hint="|Contenido batch (acciones planeadas)"/>
+    <lblPreviewOld Caption="Nombre actual:"/>
+    <lblPreviewNew Caption="Nuevo nombre:"/>
+    <lstActions Hint="|Lista de acciones">
+      <Items>
+        <Item Index="0" Value="Cambiar extensión"/>
+        <Item Index="1" Value="Reemplazar cadena"/>
+        <Item Index="2" Value="Reemplazar múltiples cadenas"/>
+        <Item Index="3" Value="Insertar cadena"/>
+        <Item Index="4" Value="Mover cadena"/>
+        <Item Index="5" Value="Eliminar caracteres"/>
+        <Item Index="6" Value="Enumeración"/>
+        <Item Index="7" Value="Usar información de tag mp3"/>
+        <Item Index="8" Value="Usar fecha y hora"/>
+        <Item Index="9" Value="Nombres aleatorios"/>
+        <Item Index="10" Value="Cambiar MAY/min"/>
+        <Item Index="11" Value="Tomar nombres de la lista"/>
+<n/>        <Item Index="12" Value="Expresión regular"/>
+<n/>        <Item Index="13" Value="Usar información EXIF"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Reemplazar extensión por:"/>
+    <cbxChangeExtNoRepl Caption="No reemplazar la extensión, añadirla al nombre completo actual"/>
+    <lblChangeExtNotes Caption="Notas:&lt;br&gt;- No incluir el punto, sólo introducir la nueva extensión&lt;br&gt;- Si quiere crear una extensión incrementada, use la acción &lt;LINK&gt;Enumeración&lt;/LINK&gt;"/>
+    <lblStrReplSearch Caption="Buscar:"/>
+    <lblStrReplBy Caption="Reemplazar por:"/>
+    <cbxStrReplAll Caption="Reemplazar todas las ocurrencias"/>
+    <cbxStrReplCase Caption="Sensible a MAY/min"/>
+    <cbxStrReplExt Caption="Incluir extensión en la búsqueda"/>
+    <cbxStrReplOnlyExt Caption="Aplicar a la extensión en lugar del nombre"/>
+    <lblMultstrSearch Caption="Buscar:"/>
+    <lblMultstrReplBy Caption="Reemplazar por:"/>
+    <lblMultstrReplSet Caption="Juegos predefinidos:"/>
+    <cbxMultstrReplExt Caption="Incluir extensión en la búsqueda"/>
+    <cbxMultstrReplCase Caption="Sensible a MAY/min"/>
+    <lblMultstrReplNotes Caption="Notas:&lt;BR&gt;- Use Ctrl+Más (+) y Ctrl+Menos (-) para insertar o eliminar una línea en la posición actual"/>
+    <lblStrInsStr Caption="Cadena a buscar:"/>
+    <lblStrInsPos Caption="En la posición:"/>
+    <rbtStrInsBegin Caption="Desde el inicio"/>
+    <rbtStrInsEnd Caption="Desde el final"/>
+    <cbxStrInsExt Caption="Aplicar a la extensión en lugar del nombre"/>
+    <lblStrInsNotes Caption="Notas:&lt;br&gt;- Si quiere insertar una cadena después o antes de otra, use la acción &lt;LINK&gt;Reemplazar cadena&lt;/LINK&gt;&lt;br&gt;- %name% = Nombre original del archivo (sin la extensión)&lt;BR&gt;- %ext% = Extensión original (incluyendo el punto)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Nombre de la carpeta&lt;BR&gt;- %% = caracter %&lt;BR&gt;vea la &lt;LINK&gt;Ayuda&lt;/LINK&gt; para obtener más información"/>
+    <lblMoveStrFrom Caption="Desde la posición:"/>
+    <rbtMoveStrFromBegin Caption="Dsde el inicio"/>
+    <rbtMoveStrFromEnd Caption="Desde el final"/>
+    <lblMoveStrCount Caption="Número de caracteres a mover:"/>
+    <lblMoveStrTo Caption="Hasta la posición:"/>
+    <rbtMoveStrToBegin Caption="Desde el inicio"/>
+    <rbtMoveStrToEnd Caption="Desde el final"/>
+    <lblMoveStrNotes Caption="Notas:&lt;br&gt;- Si quiere mover una cadena especificada pero ella no siempre está en el mismo lugar, use la acción &lt;link&gt;Reemplazar cadena&lt;/link&gt; para eliminarla, y luego en &lt;link&gt;Insertar cadena&lt;/link&gt; para insertarla en el nuevo lugar&lt;BR&gt;- Los valores de &#34;Hasta la posición&#34; no incluyen los caracteres movidos (ej. parecido a los que tienen ya eliminados)"/>
+    <lblCharDel Caption="Número de caracteres a eliminar:"/>
+    <rbtCharDelPos Caption="Desde la posición:"/>
+    <rbtCharDelBegin Caption="Desde el inicio"/>
+    <rbtCharDelEnd Caption="Desde el final"/>
+    <rbtCharDelStr Caption="Después de la cadena:"/>
+    <rbtCharDelStr2 Caption="Antes de la cadena:"/>
+    <cbxCharDelExt Caption="Aplicar a la extensión en lugar del nombre"/>
+    <lblCharDelNotes Caption="Notas:&lt;BR&gt;- Para eliminar una cadena especificada, use la acción &lt;LINK&gt;Reemplazar cadena&lt;/LINK&gt; y reemplace la cadena por una vacía"/>
+    <lblEnumMask Caption="Máscara:"/>
+    <lblEnumStart Caption="Iniciar en:"/>
+    <lblEnumDigits Caption="Número de dígitos:"/>
+    <lblEnumIncr Caption="Incrementar en:"/>
+    <cbxEnumRestart Caption="Regresar al valor inicial al cambiar la carpeta"/>
+    <lblEnumNotes Caption="Notas:&lt;BR&gt;- %name% = Nombre original del archivo (sin la extensión)&lt;BR&gt;- %ext% = Extensión original (incluyendo el punto)&lt;BR&gt;- %num% = Número&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Nombre de la carpeta&lt;BR&gt;- %% = caracter %&lt;BR&gt;vea la &lt;LINK&gt;Ayuda&lt;/LINK&gt; para obtener más información"/>
+    <lblMP3Mask Caption="Máscara:"/>
+    <cbxMP3TwoDigit Caption="Número de pista de dos dígitos (inserte un '0' delante del número si es necesario)"/>
+    <cbxMP3Convert Caption="Convertir caracteres no autorizados como ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Notas:&lt;BR&gt;- %author% = Autor&lt;BR&gt;- %title% = Título&lt;BR&gt;- %album% = Álbum&lt;BR&gt;- %year% = Año&lt;BR&gt;- %genre% = Género&lt;BR&gt;- %comm% = Comentario&lt;BR&gt;- %track% = Número de pista (ID3V1.1)&lt;BR&gt;- %name% = Nombre original del archivo (sin la extensión)&lt;BR&gt;- %ext% = Extensión original (incluyendo el punto)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Nombre de la carpeta&lt;BR&gt;- %% = caracter %&lt;BR&gt;- $if(condición,valor-verdadero,valor-falso)&lt;BR&gt;vea la &lt;LINK&gt;Ayuda&lt;/LINK&gt; para obtener más información"/>
+    <lblDTMask Caption="Máscara:"/>
+    <cbxDTSuffix Caption="Añada un sufijo si hay más de un archivo con la misma fecha/hora"/>
+    <lblDTWhich Caption="Fecha a usar:"/>
+    <rbtDTWhichCreation Caption="Creación"/>
+    <rbtDTWhichModif Caption="Ultima modificación"/>
+    <lblDTNotes Caption="Notas:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	Nombre original del archivo (sin la extensión)
+e	Extensión original (incluyendo el punto)
+c	Fecha y hora usando el formato estándar en Windows
+d	Día sin un cero al lado (1-31)
+dd	Día con un cero al lado (01-31)
+ddd	Día, nombre corto (Dom-Sáb)
+dddd	Día, nombre completo (Domingo-Sábado)
+ddddd	Fecha usada en Windows' formato corto de fecha
+dddddd	Fecha usada en Windows' Formato largo de fecha
+m	Mes sin un cero al lado (1-12)
+mm	Mes con un cero al lado (01-12)
+mmm	Mes, nombre corto (Ene-Dic)
+mmmm	Mes, nombre completo (Enero-Diciembre)
+yy	Año, número de 2 dígitos (00-99)
+yyyy	Año, número de 4 dígitos (0000-9999)
+h	Hora sin un cero al lado (0-23)
+hh	Hora con un cero al lado (00-23)
+n	Minuto sin un cero al lado (0-59)
+nn	Minuto con un cero al lado (00-59)
+s	Segundo sin un cero al lado (0-59)
+ss	Segundo con un cero al lado (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	Usar reloj de 12 horas precedentes a h o hh
+a/p	Usar reloj de 12 horas precedentes a h o  hh
+'xx'/"xx"	Caracteres encerrados entre comillas simples o dobles permanecen sin cambios
+
+Si m o mm están inmediatamente después de h o hh, el minuto es usado en vez del mes]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Máscara:"/>
+    <lblRandomMethod Caption="Método:"/>
+    <rbtRandomNumber Caption="Número aleatorio (8 dígitos)"/>
+    <rbtRandomTick Caption="Contador tick de Windows"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="Notas:&lt;BR&gt;- %name% = Nombre original del archivo (sin la extensión)&lt;BR&gt;- %ext% = Extensión original (incluyendo el punto)&lt;BR&gt;- %random% = Cadena aleatoriamente generada&lt;BR&gt;- %% = caracter %&lt;BR&gt;vea la &lt;LINK&gt;Ayuda&lt;/LINK&gt; para obtener más información"/>
+    <rbtCaseWords Caption="Primera letra mayúscula que continúe a cualquiera de estos caracteres:"/>
+    <rbtCaseFirst Caption="Mayúscula la primera letra del nombre del archivo"/>
+    <rbtCaseUpper Caption="Mayúscula"/>
+    <rbtCaseLower Caption="Minúscula"/>
+    <cbxCaseLocale Caption="Usar configuración local de Windows' para cambiar los caracteres acentuados"/>
+    <cbxCaseIncludeExt Caption="También aplicar a la extensión"/>
+    <cbxCaseOnlyExt Caption="Aplicar a la extensión en lugar del nombre"/>
+    <cbxFromListExt Caption="Adicionar extensión original del archivo"/>
+    <cbxFromListOnlyExt Caption="Usar ítems como extensiones en lugar de los nombres"/>
+    <lblFromListNotes Caption="Notas:&lt;BR&gt;- Cada línea de esta lista será usada como un nombre para un archivo. Los ítems son usados secuencialmente&lt;BR&gt;- Si las líneas están vacías o si no hay suficientes líneas, los archivos correspondientes no serán renombrados"/>
+<n/>    <lblRegexp Caption="Expresión:"/>
+<n/>    <lblRegexpRepl Caption="Nuevo nombre:"/>
+<n/>    <lblRegexpNotes Caption="Notas:&lt;BR&gt;- \ puede usar caracteres especiales de escape (como $ y otros), use un \\ para uno simple \ en el nuevo nombre (si quiere destinar el nuevo nombre a otra carpeta)&lt;BR&gt;- Use ^ para indicar el inicio del nombre y $ para el final del nombre&lt;BR&gt;- El nuevo nombre debe contener $1, $2, etc. para especificar donde encontrar los caracteres a tomar&lt;BR&gt;vea la &lt;LINK&gt;Ayuda&lt;/LINK&gt; para obtener más información sobre expresiones regulares"/>
+<n/>    <lblExifMask Caption="Máscara:"/>
+<n/>    <lblExifNotes Caption="Notas:&lt;BR&gt;- %name% = Nombre original del archivo (sin extensión)&lt;BR&gt;- %ext% = Extensión original (incluyendo el punto)&lt;BR&gt;- %datetimeoriginal% / %datetime% = Fecha y hora original de la imagen&lt;BR&gt;- %orientation% = Orientación de la imagen&lt;BR&gt;- %flash% = Flash habilitado/deshabilitado&lt;BR&gt;- %% = caracter %&lt;BR&gt;vea la &lt;LINK&gt;Ayuda&lt;/LINK&gt; Para obtener más información y para completar la lista de tags EXIF"/>
+    <lstLog Hint="|Log"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Todos los archivos"/>
+      <Item Name="strfltTextFiles" Value="Archivos de texto"/>
+      <Item Name="strfltBatchFiles" Value="Archivos batch de Ant Renamer"/>
+      <Item Name="strmsgSelectFiles" Value="Seleccionar archivos"/>
+      <Item Name="strmsgSelectFolder" Value="Seleccionar carpeta	"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Adición de archivos"/>
+      <Item Name="strmsgStatusRenaming" Value="Renombrado de archivos"/>
+      <Item Name="strmsgFilesCount" Value="%d archivos"/>
+      <Item Name="strmsgBusy" Value="Aplicación ocupada: Operación de renombrado en progreso."/>
+      <Item Name="strmsgNothingToDo" Value="Nada para hacer: por favor seleccione al menos un archivo y una acción a realizar."/>
+      <Item Name="strlogStartRename" Value="Proceso de renombrado iniciado"/>
+      <Item Name="strlogStartPreview" Value="Refrescando vista previa"/>
+      <Item Name="strlogStartRevert" Value="Revertir a nombres anteriores"/>
+      <Item Name="strlogEndRename" Value="Proceso de renombrado finalizado"/>
+      <Item Name="strlogEndPreview" Value="Proceso de vista previa finalizado"/>
+      <Item Name="strlogEndRevert" Value="Proceso de revertido finalizado"/>
+      <Item Name="strlogStoppedByUser" Value="Operación detenida por el usuario"/>
+      <Item Name="stradUnknown" Value="No hacer nada"/>
+      <Item Name="stradInclExt" Value=", también aplicar a la extensión"/>
+      <Item Name="stradOnlyExt" Value=", aplicar a la extensión en vez del nombre"/>
+      <Item Name="stradChangeExt" Value="Cambiar extensión a &#34;%s&#34;"/>
+      <Item Name="stradChangeExtRmv" Value="Remover extensión"/>
+      <Item Name="stradChangeExtNoRepl" Value="Adicionar extensión &#34;%s&#34;"/>
+      <Item Name="stradStringRepl" Value="Reemplazar &#34;%s&#34; por &#34;%s&#34;"/>
+      <Item Name="stradStringReplAll" Value=", reemplazar todas las ocurrencias"/>
+      <Item Name="stradStringReplCase" Value=", sensible a MAy/min"/>
+      <Item Name="stradMultstrRepl" Value="Reemplazar múltiples cadenas usando el juego &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Insertar &#34;%s&#34; en la posición %d"/>
+<n/>      <Item Name="stradMoveStr" Value="Mover %d caracteres de la posición %d%s, a la posición %d%s"/>
+      <Item Name="stradCharDel" Value="Eliminar %d caracteres"/>
+      <Item Name="stradCharDelPos" Value=" en la posición %d"/>
+      <Item Name="stradCharDelStr" Value=" después de la cadena &#34;%s&#34;"/>
+      <Item Name="stradEnum" Value="Generar una enumeración con &#34;%s&#34; desde %d hasta %d por %d"/>
+      <Item Name="stradMP3" Value="Generar nombres con tags MP3, basados en la máscara &#34;%s&#34;"/>
+      <Item Name="stradMP3TwoDigit" Value=", insertar '0' en el número de pista si es necesario"/>
+      <Item Name="stradMP3Convert" Value=", convertir caracteres no autorizados"/>
+      <Item Name="stradFromBegin" Value=", desde el inicio"/>
+      <Item Name="stradFromEnd" Value=", desde el final"/>
+      <Item Name="stradDateTime" Value="Generar nombres desde archivos' fecha y hora, basados en la máscara &#34;%s&#34;"/>
+<n/>      <Item Name="stradDateTimeCreat" Value=" usar fecha de creación"/>
+<n/>      <Item Name="stradDateTimeModif" Value=" usar última fecha de modificación"/>
+      <Item Name="stradDateTimeSuffix" Value=", añadir un sufijo si es necesario"/>
+      <Item Name="stradRandom" Value="Generar nombres aleatorios usando máscara &#34;%s&#34;"/>
+      <Item Name="stradRandomNumbers" Value=", con números"/>
+      <Item Name="stradRandomTick" Value=", usar contador tick de Windows"/>
+      <Item Name="stradRandomGUID" Value=", usar GUIDs"/>
+      <Item Name="stradCase" Value="Cambiar MAAY/min:"/>
+      <Item Name="stradCaseWords" Value=" mayúscula primera letra continúe a cualquiera de los caracteres &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" mayúscula primera letra del nombre"/>
+      <Item Name="stradCaseUpper" Value=" todo en mayúsculas"/>
+      <Item Name="stradCaseLower" Value=" todo en minúsculas"/>
+      <Item Name="stradCaseLocale" Value=", usar configuración local de Windows"/>
+      <Item Name="stradFromList" Value="Renombrar archivos usando una lista específica"/>
+      <Item Name="stradFromListExt" Value=", adicionar extensión original"/>
+      <Item Name="stradFromListOnlyExt" Value=", usar ítems como extensiones en vez de los nombres"/>
+<n/>      <Item Name="stradRegexp" Value="Renombrar archivos usando una expresión regular"/>
+<n/>      <Item Name="stradExif" Value="Generar nombres con información EXIF, basados en la máscara &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Línea vacía"/>
+      <Item Name="straeFromListEnd" Value="Final de la lista"/>
+      <Item Name="strfsNotRenamed" Value="%s no fue renombrado: %s"/>
+      <Item Name="strfsRenamed" Value="%s renombrado a %s"/>
+      <Item Name="strfsReverted" Value="%s revertido al nombre anterior %s"/>
+      <Item Name="strfsRenError" Value="No se podría renombrar %s a %s: %s"/>
+      <Item Name="strfsNoOldName" Value="No hay un nombre anterior almacenado para revertir el nombre de %s"/>
+      <Item Name="strfs404" Value="Archivo de origen no encontrado"/>
+      <Item Name="strfsAlreadyExist" Value="Un archivo o una carpeta con el mismo nombre ya existe"/>
+      <Item Name="strfeIdentical" Value="el nuevo nombre es igual al nombre antiguo"/>
+      <Item Name="strhintNotAgain" Value="No mostrar este consejo de nuevo"/>
+      <Item Name="strhintShowPreview" Value="La columna de la vista previa está visible. si quiere ocultarla, haga clic con el botón derecho del ratón en la columna cabeceras de la lista de archivos."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="Acerca de este programa">
+    <btn1 Caption="Historial"/>
+    <btn2 Caption="Cerrar"/>
+    <tshGeneral Caption="General"/>
+    <tshCredits Caption="Créditos"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Advertencia"/>
+        <Item Index="1" Value="Error"/>
+        <Item Index="2" Value="Información"/>
+        <Item Index="3" Value="Confirmación"/>
+        <Item Index="4" Value="&#38;Sí"/>
+        <Item Index="5" Value="&#38;No"/>
+        <Item Index="6" Value="&#38;Aceptar"/>
+        <Item Index="7" Value="&#38;Cancelar"/>
+        <Item Index="8" Value="&#38;Abortar"/>
+        <Item Index="9" Value="&#38;Reintentar"/>
+        <Item Index="10" Value="&#38;Ignorar"/>
+        <Item Index="11" Value="&#38;Todo"/>
+        <Item Index="12" Value="No a todo"/>
+        <Item Index="13" Value="Sí a todo"/>
+        <Item Index="14" Value="&#38;Ayuda"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Opciones">
+    <btn1 Caption="Ayuda"/>
+    <btn2 Caption="Cancelar"/>
+    <btn3 Caption="Aceptar"/>
+    <tshDisplay Caption="Visualización"/>
+    <tshAdding Caption="Archivos y carpetas"/>
+    <tshProcessing Caption="Procesado"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Idioma"/>
+    <lbhLists Caption="Lists"/>
+    <cbxRealtimeUpdate Caption="Actualizar renombrado de archivos en tiempo real"/>
+    <cbxResizeColsFiles Caption=" utoredimensionar columnas de la lista de archivos"/>
+    <cbxFilesIcons Caption="Mostrar iconos en la lista de archivos, basados en la extensión del archivo"/>
+    <lbhFonts Caption="Fuentes"/>
+    <cbxForceFont Caption="Forzar la siguiente fuente en controles que muestren caracteres especiales:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Fuente predeterminada de Windows"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Nota: Arial Unicode MS es fuertemente recomendada si está disponible"/>
+    <lbhDropdown Caption="Campos desplegables"/>
+    <lblDropdownMax Caption="Número de valores a mantener en el historial:"/>
+    <cbxDropdownComplete Caption="Autocompletar con valores del historial mientras se escribe"/>
+    <lbhToolbars Caption="Barras de herramientas"/>
+    <lblIconSet Caption="Juego iconos:"/>
+    <lblColorType Caption="Tipo de color:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automático"/>
+        <Item Index="1" Value="Grises cuando estén inactivos"/>
+        <Item Index="2" Value="Luminosos cuando estén inactivos (estilo XP)"/>
+        <Item Index="3" Value="Oscuros cuando estén inactivos"/>
+        <Item Index="4" Value="Siempre coloreados"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Estilo de Office XP"/>
+    <lbhDragdrop Caption="Arrastrar y soltar"/>
+    <cbxDragdropNoAsk Caption="No preguntar que hacer, siempre usar las siguientes opciones:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Añadir los archivos de las carpetas seleccionadas"/>
+      <cbxFolders Caption="Añadir las carpetas seleccionadas"/>
+      <cbxRecursive Caption="Aplicar estas dos opciones también a las subcarpetas"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Comportamiento de la lista"/>
+    <cbxLaunchFile Caption="Lanzar archivo con doble clic"/>
+    <lbhRenaming Caption="Renombrado de archivo"/>
+    <cbxCopy Caption="Copiar en vez de renombrar"/>
+    <cbxGenerLog Caption="Generar log"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Forzar directorios (permitir crear carpetas si &#34;\&#34; se encuentra en los nombres)"/>
+    <cbxDetectAbsdir Caption="Detectar un &#34;:\&#34; o &#34;\\&#34; como rutas absolutas (permitir mover los archivos)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Cambiar a:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Lista de archivos"/>
+        <Item Index="1" Value="Acciones"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Limpiar log"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Cambiar a:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Lista de archivos"/>
+        <Item Index="1" Value="Acciones"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Limpiar lista de archivos"/>
+    <cbxClearBatchList Caption="Limpiar lista batch"/>
+    <cbxSaveLog Caption="Guardar log en archivo:"/>
+    <btnSaveLog Hint="Examinar..."/>
+    <cbxSaveLogAppend Caption="Adicionar al archivo actual"/>
+    <lbhLanguage Caption="Idioma"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Nombre"/>
+          <Column Index="1" Caption="Nombre local"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Versión:"/>
+      <lblMadeby Caption="Hecho por:"/>
+      <lblComments Caption="Comentarios:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Seleccione las carpetas a añadir">
+    <btn1 Caption="Ayuda"/>
+    <btn2 Caption="Cancelar"/>
+    <btn3 Caption="Aceptar"/>
+    <btn4 Caption="Red..."/>
+    <Options>
+      <cbxFiles Caption="Añadir archivos a las carpetas seleccionadas"/>
+      <cbxFolders Caption="Añadir carpetas seleccionadas"/>
+      <cbxRecursive Caption="Aplicar estas dos opciones también a las subcarpetas"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Arrastrar y soltar">
+    <btn1 Caption="Ayuda"/>
+    <btn2 Caption="Cancelar"/>
+    <btn3 Caption="Aceptar"/>
+    <lblOptions Caption="Opciones a usar para añadir archivos que tengan que ser descartados:"/>
+    <Options>
+      <cbxFiles Caption="Añadir archivos de las carpetas seleccionadas"/>
+      <cbxFolders Caption="Añadir carpetas seleccionadas"/>
+      <cbxRecursive Caption="Aplicar estas dos opciones también a los subdirectorios"/>
+    </Options>
+    <cbxNotAgain Caption="No mostrar esta ventana de nuevo (mantener las opciones seleccionadas para la próxima vez)"/>
+  </DragdropOptionsForm>
+</Application>

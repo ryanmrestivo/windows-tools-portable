@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="big5"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAATCwAAEwsAAAAAAAAAAAAAAAAAAKoAAADuAAAA/WUAAP+ZMwAAAKoAAAD9AGVl/wDd3d0A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmZmZmZmZmZmZmZmZkAAAAAAAAAAAVVVVVVVVVgBWZmZmZmZnAFZmZmZmZmcAVmZmZmZmZwBWZmZmZmZnABIoIiZmZmcAEoSCJmZmZwAYSEgmZmZnABKEgiZmZmcAIzkzN3d3dwAAAAAAAAAACZmZmZmZmZmZmZmZmZmZmZ
+Name=Chinese (Traditional)
+LocalName=正體中文
+Version=2.08
+VersionFormat=2.12
+Comments=The Traditional Chinese language pack. If you wanna use Chinese, use the original one!
+Authors=Jim Liu|Jim.Inspirit@Gmail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="新增到批次處理" Hint="加入批次處理|新增選擇的動作和設定到批次處理"/>
+    <ActionBatchOpen Caption="開啟批次" Hint="開此|開啟批次檔"/>
+    <ActionBatchSaveAs Caption="儲存批次" Hint="儲存|儲存批次檔"/>
+    <ActionBatchRemoveSel Caption="移除" Hint="移除選擇的動作|從批次處理中移除選擇的動作"/>
+    <ActionBatchClear Caption="清除" Hint="清除批次處理|從批此處理中移除所有動作"/>
+    <ActionBatchNoRecent Caption="(沒有最近的檔案)"/>
+    <ActionAddFiles Caption="新增檔案..." Hint="新增檔案|新增檔案到清單中"/>
+    <ActionAddFolders Caption="新增資料夾..." Hint="新增資料夾|新增資料夾到清單中"/>
+    <ActionRemoveSelected Caption="移除選擇的檔案" Hint="移除選擇的檔案|將選擇的檔案自清單中移除"/>
+    <ActionRemoveAll Caption="全部移除" Hint="移除所有檔案|將所有檔案自清單中移除"/>
+    <ActionRemoveDead Caption="移除無效的檔案" Hint="移除無效的檔案|將無效的檔案自清單中移除"/>
+    <ActionPreview Caption="預覽" Hint="預覽|預覽目前的動作"/>
+    <ActionFromListClear Caption="清除" Hint="清除清單|清除清單"/>
+    <ActionFromListOpen Caption="開啟清單" Hint="開啟|自檔案開啟清單"/>
+    <ActionFromListSave Caption="儲存清單" Hint="Save|儲存清單到檔案"/>
+    <ActionMultistrReplClear Caption="清除格線" Hint="清除格線"/>
+    <ActionMultistrReplSave Caption="儲存" Hint="|儲存目前的設定名稱"/>
+    <ActionMultistrReplDelete Caption="刪除" Hint="|刪除選擇的設定名稱"/>
+    <ActionMoveUp Caption="上" Hint="上移|將選擇的物件上移"/>
+    <ActionMoveDown Caption="下" Hint="下移|將選擇的物件下移"/>
+    <ActionMoveTop Caption="最上" Hint="移到最上|將選擇的物件移到清單上方"/>
+    <ActionMoveBottom Caption="最下" Hint="移到最下|將選擇的物件移到清單下方"/>
+    <ActionItemsUnsort Caption="無排序" Hint="|移除目前的排序"/>
+    <ActionItemsSelectAll Caption="全選" Hint="全選|選擇全部物件"/>
+    <ActionItemsSelectNone Caption="取消選擇" Hint="取消選擇|取消選擇全部物件"/>
+    <ActionItemsSelectInvert Caption="反向選擇" Hint="反向選擇|選擇未選的物件"/>
+    <ActionLogClear Caption="清除" Hint="清除|清除記錄"/>
+    <ActionLogSave Caption="儲存" Hint="儲存|儲存記錄到檔案"/>
+    <ActionLogCopy Caption="複製" Hint="複製|複製記錄到剪貼簿"/>
+    <ActionLogFilter Caption="篩選" Hint="篩選|篩選記錄"/>
+    <ActionLogFilterOk Caption="成功" Hint="顯示重新命名的檔案|顯示重新命名的檔案"/>
+    <ActionLogFilterError Caption="錯誤" Hint="顯示錯誤|顯示出現錯誤的檔案"/>
+    <ActionLogFilterNot Caption="未重新命名" Hint="顯示略過的檔案|顯示被略過的檔案"/>
+    <ActionActionGo Caption="執行" Hint="執行|開始重新命名"/>
+    <ActionActionStop Caption="停止" Hint="停止|停止重新命名"/>
+    <ActionOptions Caption="選項..." Hint="選項|變更設定"/>
+    <ActionActionUndo Caption="復原" Hint="復原|復原上一步"/>
+    <ActionHelpContents Caption="說明" Hint="說明內容|開啟說明內容"/>
+    <ActionHelpAbout Caption="關於..." Hint="關於|關於 Ant Renamer"/>
+    <ActionExit Caption="關閉" Hint="關閉|結束 Ant Renamer"/>
+    <ActionAlwaysOnTop Caption="最上層顯示" Hint="最上層顯示|將視窗保持在最上層"/>
+    <ActionTabFiles Caption="檔案" Hint="檔案|顯示檔案"/>
+    <ActionTabActions Caption="動作" Hint="動作|顯示動作"/>
+    <ActionTabLog Caption="記錄" Hint="記錄|顯示記錄"/>
+    <lstFiles Hint="|檔案清單 - 按下右鍵已自訂欄">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="資料夾"/>
+          <Item Index="1" Text="名稱"/>
+          <Item Index="2" Text="完整路徑"/>
+          <Item Index="3" Text="副檔名"/>
+          <Item Index="4" Text="預覽"/>
+          <Item Index="5" Text="大小"/>
+          <Item Index="6" Text="建立日期"/>
+          <Item Index="7" Text="修改日期"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       預覽選擇的檔案 "/>
+    <grpBatch Caption="       批次處理內容 "/>
+    <lstBatch Hint="|批次處理內容"/>
+    <lblPreviewOld Caption="目前名稱:"/>
+    <lblPreviewNew Caption="重新命名後名稱:"/>
+    <lstActions Hint="|動作清單">
+      <Items>
+        <Item Index="0" Value="變更副檔名"/>
+        <Item Index="1" Value="取代字串"/>
+        <Item Index="2" Value="取代多重字串"/>
+        <Item Index="3" Value="插入字串"/>
+        <Item Index="4" Value="移動字串"/>
+        <Item Index="5" Value="刪除字元"/>
+        <Item Index="6" Value="列舉"/>
+        <Item Index="7" Value="匯入MP3標籤(ID3)"/>
+        <Item Index="8" Value="匯入日期"/>
+        <Item Index="9" Value="隨機命名"/>
+        <Item Index="10" Value="變更大小寫"/>
+        <Item Index="11" Value="匯入清單"/>
+<n/>        <Item Index="12" Value="Regular expression"/>
+<n/>        <Item Index="13" Value="Use EXIF info"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="將副檔名變更為:"/>
+    <cbxChangeExtNoRepl Caption="不變更副檔名, 僅併入名稱中"/>
+    <lblChangeExtNotes Caption="附註:&lt;br&gt;- 僅輸入不包含的副檔名&lt;br&gt;- 若您要產生遞增的, 請使用&lt;LINK&gt;列舉&lt;/LINK&gt;動作"/>
+    <lblStrReplSearch Caption="尋找:"/>
+    <lblStrReplBy Caption="取代為:"/>
+    <cbxStrReplAll Caption="全部取代"/>
+    <cbxStrReplCase Caption="區分大小寫"/>
+    <cbxStrReplExt Caption="尋找(包含副檔名)"/>
+    <cbxStrReplOnlyExt Caption="套用到副檔名而非名稱"/>
+    <lblMultstrSearch Caption="尋找:"/>
+    <lblMultstrReplBy Caption="取代:"/>
+    <lblMultstrReplSet Caption="預設:"/>
+    <cbxMultstrReplExt Caption="尋找(包含副檔名)"/>
+    <cbxMultstrReplCase Caption="區分大小寫"/>
+    <lblMultstrReplNotes Caption="附註:&lt;BR&gt;- 使用Ctrl+Plus (+)及Ctrl+Minus (-)在目前的位置新增或刪除一行"/>
+    <lblStrInsStr Caption="新增的字串:"/>
+    <lblStrInsPos Caption="插入的位置:"/>
+    <rbtStrInsBegin Caption="從頭"/>
+    <rbtStrInsEnd Caption="從尾"/>
+    <cbxStrInsExt Caption="套用到副檔名而非名稱"/>
+    <lblStrInsNotes Caption="附註:&lt;br&gt;- 若您要在字串前後插入另一字串, 請使用&lt;LINK&gt;取代字串&lt;/LINK&gt;動作&lt;br&gt;- %name% = 原始名稱(不含副檔名)&lt;BR&gt;- %ext% = 原始副檔名(包含.)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = 資料夾名稱&lt;BR&gt;- %% = 百分比符號(%)&lt;BR&gt;參閱&lt;LINK&gt;說明&lt;/LINK&gt;以獲得更多訊息"/>
+    <lblMoveStrFrom Caption="原始位置:"/>
+    <rbtMoveStrFromBegin Caption="從頭"/>
+    <rbtMoveStrFromEnd Caption="從尾"/>
+    <lblMoveStrCount Caption="移動的字元數:"/>
+    <lblMoveStrTo Caption="新的位置:"/>
+    <rbtMoveStrToBegin Caption="從頭"/>
+    <rbtMoveStrToEnd Caption="從尾"/>
+    <lblMoveStrNotes Caption="附註:&lt;br&gt;- 若您要移動不定位置的字串, 請先使用&lt;link&gt;取代字串&lt;/link&gt;刪除原字串, 再使用&lt;link&gt;插入字串&lt;/link&gt;將新字串到特定位置&lt;BR&gt;- 指定&#34;新的位置&#34;不包含需要移動的字串"/>
+    <lblCharDel Caption="刪除的字元數:"/>
+    <rbtCharDelPos Caption="位置:"/>
+    <rbtCharDelBegin Caption="從頭"/>
+    <rbtCharDelEnd Caption="從尾"/>
+    <rbtCharDelStr Caption="在字串之後:"/>
+    <rbtCharDelStr2 Caption="Before the string:"/>
+    <cbxCharDelExt Caption="套用到副檔名而非名稱"/>
+    <lblCharDelNotes Caption="附註:&lt;BR&gt;- 若您要刪除特定的字串, 請使用&lt;LINK&gt;取代字串&lt;/LINK&gt;動作將要刪除的字串以空字串取代"/>
+    <lblEnumMask Caption="格式:"/>
+    <lblEnumStart Caption="起始值:"/>
+    <lblEnumDigits Caption="數目:"/>
+    <lblEnumIncr Caption="遞增量:"/>
+    <cbxEnumRestart Caption="更換目錄後將起始值歸零"/>
+    <lblEnumNotes Caption="附註:&lt;BR&gt;- %name% = 原始名稱(不含副檔名)&lt;BR&gt;- %ext% = 原始副檔名(包含.)&lt;BR&gt;- %num% = 數目&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = 資料夾名稱&lt;BR&gt;- %% = 百分比符號(%)&lt;BR&gt;參閱&lt;LINK&gt;說明&lt;/LINK&gt;以獲得更多訊息"/>
+    <lblMP3Mask Caption="格式:"/>
+    <cbxMP3TwoDigit Caption="強制兩位數 (需要時在數目前增加0)"/>
+    <cbxMP3Convert Caption="轉換無效的名稱如: ? / \ : &lt; &gt; | | *"/>
+    <lblMP3Notes Caption="附註:&lt;BR&gt;- %author% = 作者&lt;BR&gt;- %title% = 曲名&lt;BR&gt;- %album% = 專輯&lt;BR&gt;- %year% = 年份&lt;BR&gt;- %genre% = 風格&lt;BR&gt;- %comm% = 附註&lt;BR&gt;- %track% = 曲號(ID3V1.1)&lt;BR&gt;- %name% = 原始名稱(不含副檔名)&lt;BR&gt;- %ext% = 原始副檔名(包含.)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = 資料夾名稱&lt;BR&gt;- %% = 百分比符號(%)&lt;BR&gt;- $if(條件,真值,偽值)&lt;BR&gt;參閱&lt;LINK&gt;說明&lt;/LINK&gt;以獲得更多訊息"/>
+    <lblDTMask Caption="格式:"/>
+    <cbxDTSuffix Caption="新增後標(若多個檔案有同樣的日期)"/>
+    <lblDTWhich Caption="使用:"/>
+    <rbtDTWhichCreation Caption="建立日期"/>
+    <rbtDTWhichModif Caption="修改日期"/>
+    <lblDTNotes Caption="附註:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	原始名稱(不含副檔名)
+e	原始副檔名(包含.)
+c	日期時間(Windows格式)
+d	日期(1-31)
+dd	日期(01-31)
+ddd	星期(Sun-Sat)
+dddd	星期(Sunday-Saturday)
+ddddd	日期(Windows簡短格式)
+dddddd	日期(Windows完整格式)
+m	月份(1-12)
+mm	月份(01-12)
+mmm	月份(Jan-Dec)
+mmmm	月份(January-December)
+yy	年份(00-99)
+yyyy	年份(0000-9999)
+h	時(0-23)
+hh	時(00-23)
+n	分(0-59)
+nn	分(00-59)
+s	秒(0-59)
+ss	秒(00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	使用12時制
+a/p	使用12時制
+'xx'/"xx"	引號及雙引號中的字串保持不變
+
+若m或mm緊接在h或hh後出現, 則表示分鐘而非月份]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="格式:"/>
+    <lblRandomMethod Caption="亂數演算法:"/>
+    <rbtRandomNumber Caption="亂數種子(8位數)"/>
+    <rbtRandomTick Caption="系統時間"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="附註:&lt;BR&gt;- %name% = 原始名稱(不含副檔名)&lt;BR&gt;- %ext% = 原始副檔名(包含.)&lt;BR&gt;- %random% = 隨機字串&lt;BR&gt;- %% = 百分比符號(%)&lt;BR&gt;參閱&lt;LINK&gt;Help&lt;/LINK&gt;以獲得更多訊息"/>
+    <rbtCaseWords Caption="以下字元後的首字大寫:"/>
+    <rbtCaseFirst Caption="名稱的首字大寫"/>
+    <rbtCaseUpper Caption="全部大寫"/>
+    <rbtCaseLower Caption="全部小寫"/>
+    <cbxCaseLocale Caption="使用Windows的地區設定"/>
+    <cbxCaseIncludeExt Caption="套用到名稱及副檔名"/>
+    <cbxCaseOnlyExt Caption="僅套用到副檔名"/>
+    <cbxFromListExt Caption="在名稱結尾加入原始副檔名"/>
+    <cbxFromListOnlyExt Caption="將物件視為副檔名"/>
+    <lblFromListNotes Caption="附註:&lt;BR&gt;- 清單中的每一行依序代表每一個檔案名稱.&lt;BR&gt;- 若為行的內容空白或是行數不足, 對應的檔案將不會被重新命名"/>
+<n/>    <lblRegexp Caption="Expression:"/>
+<n/>    <lblRegexpRepl Caption="New name:"/>
+<n/>    <lblRegexpNotes Caption="Notes:&lt;BR&gt;- \ character can be used to escape special characters (like $ and others), use a \\ for a simple \ in new name (if you want to target the new name to another folder)&lt;BR&gt;- Use ^ to indicate the beginning of the name and $ for the end of name&lt;BR&gt;- The new name must contain $1, $2, etc. to specify where found characters will come&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information on regular expressions"/>
+<n/>    <lblExifMask Caption="Mask:"/>
+<n/>    <lblExifNotes Caption="Notes:&lt;BR&gt;- %name% = Original file name (without extension)&lt;BR&gt;- %ext% = Original extension (including the dot)&lt;BR&gt;- %datetimeoriginal% / %datetime% = Original date and time of the picture&lt;BR&gt;- %orientation% = Picture orientation&lt;BR&gt;- %flash% = Flash was on or off&lt;BR&gt;- %% = % character&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information and for complete list of EXIF tags"/>
+    <lstLog Hint="|記錄"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="所有檔案"/>
+      <Item Name="strfltTextFiles" Value="文字檔案"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer 批次檔"/>
+      <Item Name="strmsgSelectFiles" Value="選擇檔案"/>
+      <Item Name="strmsgSelectFolder" Value="選擇資料夾"/>
+      <Item Name="strmsgStatusAddingFiles" Value="新增檔案"/>
+      <Item Name="strmsgStatusRenaming" Value="更改檔案名稱"/>
+      <Item Name="strmsgFilesCount" Value="%d個檔案"/>
+      <Item Name="strmsgBusy" Value="重新命名中...."/>
+      <Item Name="strmsgNothingToDo" Value="請選擇至少一個檔案及一個動作來執行."/>
+      <Item Name="strlogStartRename" Value="重新命名開始"/>
+      <Item Name="strlogStartPreview" Value="重新整理"/>
+      <Item Name="strlogStartRevert" Value="復原"/>
+      <Item Name="strlogEndRename" Value="重新命名完成"/>
+      <Item Name="strlogEndPreview" Value="預覽完成"/>
+      <Item Name="strlogEndRevert" Value="復原"/>
+      <Item Name="strlogStoppedByUser" Value="使用者中止重新命名"/>
+      <Item Name="stradUnknown" Value="無命令"/>
+      <Item Name="stradInclExt" Value=", 同時套用到副檔名"/>
+      <Item Name="stradOnlyExt" Value=", 僅套用到副檔名"/>
+      <Item Name="stradChangeExt" Value="將副檔名重新命名為%s"/>
+      <Item Name="stradChangeExtRmv" Value="移除副檔名"/>
+      <Item Name="stradChangeExtNoRepl" Value="新增副檔名%s"/>
+      <Item Name="stradStringRepl" Value="將%s取代為%s"/>
+      <Item Name="stradStringReplAll" Value=", 全部取代"/>
+      <Item Name="stradStringReplCase" Value=", 區分大小寫"/>
+      <Item Name="stradMultstrRepl" Value="使用設定&#34;%s&#34;取代多個字串"/>
+      <Item Name="stradStringIns" Value="插入%s到%d"/>
+<n/>      <Item Name="stradMoveStr" Value="Move %d characters from position %d%s, to position %d%s"/>
+      <Item Name="stradCharDel" Value="刪除%d個字元"/>
+      <Item Name="stradCharDelPos" Value=" 在%d"/>
+      <Item Name="stradCharDelStr" Value=" 在字串%s之後"/>
+      <Item Name="stradEnum" Value="使用格式%s建立從%d到%d增加量為%d的一覽表"/>
+      <Item Name="stradMP3" Value="使用格式%s以MP3標籤(ID3)重新命名"/>
+      <Item Name="stradMP3TwoDigit" Value=", 插入'0'到曲目編號(如需要)"/>
+      <Item Name="stradMP3Convert" Value=", 轉換無效的字元"/>
+      <Item Name="stradFromBegin" Value=", 從頭"/>
+      <Item Name="stradFromEnd" Value=", 從尾"/>
+      <Item Name="stradDateTime" Value="使用%s格式以檔案日期重新命名"/>
+<n/>      <Item Name="stradDateTimeCreat" Value=" using creation date"/>
+<n/>      <Item Name="stradDateTimeModif" Value=" using last modification date"/>
+      <Item Name="stradDateTimeSuffix" Value=", 加入後標(若需要)"/>
+      <Item Name="stradRandom" Value="以%s格式亂數重新命名"/>
+      <Item Name="stradRandomNumbers" Value=", 使用亂數種子"/>
+      <Item Name="stradRandomTick" Value=", 使用系統時間"/>
+      <Item Name="stradRandomGUID" Value=", 使用GUID"/>
+      <Item Name="stradCase" Value="更改大小寫:"/>
+      <Item Name="stradCaseWords" Value=" 以下字元後的首字大寫&#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" 名稱的首字大寫"/>
+      <Item Name="stradCaseUpper" Value=" 全部大寫"/>
+      <Item Name="stradCaseLower" Value=" 全部小寫"/>
+      <Item Name="stradCaseLocale" Value=", 使用Windows地區設定"/>
+      <Item Name="stradFromList" Value="使用清單來重新命名"/>
+      <Item Name="stradFromListExt" Value=", 加入原始副檔名"/>
+      <Item Name="stradFromListOnlyExt" Value=", 將物件視為副檔名"/>
+<n/>      <Item Name="stradRegexp" Value="Rename files using a regular expression"/>
+<n/>      <Item Name="stradExif" Value="Generate namees with EXIF info, based on the mask &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="空白行"/>
+      <Item Name="straeFromListEnd" Value="清單結尾"/>
+      <Item Name="strfsNotRenamed" Value="%s未重新命名: %s"/>
+      <Item Name="strfsRenamed" Value="%s重新命名為%s"/>
+      <Item Name="strfsReverted" Value="%s復原為%s"/>
+      <Item Name="strfsRenError" Value="無法將%s重新命名為%s: %s"/>
+      <Item Name="strfsNoOldName" Value="找不到%s, 無法復原"/>
+      <Item Name="strfs404" Value="找不到來源檔案"/>
+      <Item Name="strfsAlreadyExist" Value="相同名稱的檔案或資料夾已存在"/>
+      <Item Name="strfeIdentical" Value="新名稱與舊名稱相同"/>
+      <Item Name="strhintNotAgain" Value="不再顯示這個提示"/>
+      <Item Name="strhintShowPreview" Value="預覽欄現在為可見. 若您要隱藏, 請在欄位上按一下滑鼠右鍵."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="關於 Ant Renamer">
+    <btn1 Caption="歷史"/>
+    <btn2 Caption="關閉"/>
+    <tshGeneral Caption="一般"/>
+    <tshCredits Caption="版權宣告"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="警告"/>
+        <Item Index="1" Value="錯誤"/>
+        <Item Index="2" Value="資訊"/>
+        <Item Index="3" Value="確認"/>
+        <Item Index="4" Value="&#38;是"/>
+        <Item Index="5" Value="&#38;否"/>
+        <Item Index="6" Value="&#38;確認"/>
+        <Item Index="7" Value="&#38;取消"/>
+        <Item Index="8" Value="&#38;終止"/>
+        <Item Index="9" Value="&#38;重試"/>
+        <Item Index="10" Value="&#38;忽略"/>
+        <Item Index="11" Value="&#38;全部"/>
+        <Item Index="12" Value="全部皆否"/>
+        <Item Index="13" Value="全部皆是"/>
+        <Item Index="14" Value="&#38;說明"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="選項">
+    <btn1 Caption="說明"/>
+    <btn2 Caption="取消"/>
+    <btn3 Caption="確認"/>
+    <tshDisplay Caption="顯示"/>
+    <tshAdding Caption="檔案及資料夾"/>
+    <tshProcessing Caption="處理中"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="語言"/>
+    <lbhLists Caption="清單"/>
+    <cbxRealtimeUpdate Caption="重新命名時即時更新"/>
+    <cbxResizeColsFiles Caption="自動欄寬"/>
+    <cbxFilesIcons Caption="在檔案清單顯示檔案類型圖示"/>
+    <lbhFonts Caption="字型"/>
+    <cbxForceFont Caption="強制以這個字型顯示特殊字元:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="預設字型"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="附註: 建議使用Arial Unicode MS"/>
+    <lbhDropdown Caption="下拉清單"/>
+    <lblDropdownMax Caption="歷史記錄數目:"/>
+    <cbxDropdownComplete Caption="自動完成"/>
+    <lbhToolbars Caption="工具列"/>
+    <lblIconSet Caption="圖示集:"/>
+    <lblColorType Caption="顏色:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="自動"/>
+        <Item Index="1" Value="閒置時以灰階顯示"/>
+        <Item Index="2" Value="閒置時以亮色顯示 (Windows XP樣式)"/>
+        <Item Index="3" Value="閒置時以暗色顯示"/>
+        <Item Index="4" Value="永遠以彩色顯示"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP樣式"/>
+    <lbhDragdrop Caption="Drag &#38; Drop"/>
+    <cbxDragdropNoAsk Caption="永遠使用這些設定:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="新增選擇的目錄中的檔案"/>
+      <cbxFolders Caption="新增選擇的目錄"/>
+      <cbxRecursive Caption="套用以上兩個設定到子目錄"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="清單行為"/>
+    <cbxLaunchFile Caption="連按兩下時開啟檔案"/>
+    <lbhRenaming Caption="重新命名"/>
+    <cbxCopy Caption="以新名稱複製原始檔案"/>
+    <cbxGenerLog Caption="產生記錄"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="強制新增資料夾(若名稱中出現&#34;\&#34;)"/>
+    <cbxDetectAbsdir Caption="偵測到&#34;:\&#34;或&#34;\\&#34;則是為絕對路徑(允許移動檔案到任何位置)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="切換至:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="檔案清單"/>
+        <Item Index="1" Value="動作"/>
+        <Item Index="2" Value="記錄"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="清除記錄"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="切換至:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="檔案清單"/>
+        <Item Index="1" Value="動作"/>
+        <Item Index="2" Value="記錄"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="清除檔案清單"/>
+    <cbxClearBatchList Caption="清除批次處理清單"/>
+    <cbxSaveLog Caption="儲存記錄到檔案:"/>
+    <btnSaveLog Hint="瀏覽..."/>
+    <cbxSaveLogAppend Caption="加入到目前的檔案名稱結尾"/>
+    <lbhLanguage Caption="語言"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="名稱"/>
+          <Column Index="1" Caption="當地名稱"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="版本:"/>
+      <lblMadeby Caption="作者:"/>
+      <lblComments Caption="說明:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="選擇要加入的資料夾">
+    <btn1 Caption="說明"/>
+    <btn2 Caption="取消"/>
+    <btn3 Caption="確認"/>
+    <btn4 Caption="網路..."/>
+    <Options>
+      <cbxFiles Caption="新增選擇的目錄中的檔案"/>
+      <cbxFolders Caption="新增選擇的目錄"/>
+      <cbxRecursive Caption="套用以上兩個設定到子目錄"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Drag &#38; Drop選項">
+    <btn1 Caption="說明"/>
+    <btn2 Caption="取消"/>
+    <btn3 Caption="確認"/>
+    <lblOptions Caption="新增拖曳檔案選項:"/>
+    <Options>
+      <cbxFiles Caption="新增選擇的目錄中的檔案"/>
+      <cbxFolders Caption="新增選擇的目錄"/>
+      <cbxRecursive Caption="套用以上兩個設定到子目錄"/>
+    </Options>
+    <cbxNotAgain Caption="不再顯示這個視窗(維持現在的設定)"/>
+  </DragdropOptionsForm>
+</Application>

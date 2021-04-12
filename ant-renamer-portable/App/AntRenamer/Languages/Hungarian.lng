@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAjCwAAIwsAABAAAAAQAAAAAAAAABM1EwAAVAAAAJkAAAAAqgAAAP0AZWX/AKqqqgDMzMwA7u7uAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAKqqqqqqqqqqAAAAAAAAAAABERERERERIAEiIiIiIiIwASIiIiIiIjABIiIiIiIiMAeIiIiIiIiQB4iIiIiIiJAHiIiIiIiIkAeIiIiIiIiQBFVVVVVVVWAEVVVVVVVVYARVVVVVVVVgBWZmZmZmZmAAAAAAAAAAAKqqqqqqqqqq
+Name=Hungarian
+LocalName=Magyar
+Version=2.08
+VersionFormat=2.12
+Comments= Köszönet a szerzőnek
+Authors=Zoltán Danhauser|danhauser.zoltan@ghibli.hu
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Hozzáadás a kötegel munkához" Hint="Hozzávétel a köteghez|Kijelölt műveletek és beállítások hozzávétele a köteghez"/>
+    <ActionBatchOpen Caption="Megnyitás..." Hint="Megnyitás|Kötegfájl megnyitása"/>
+    <ActionBatchSaveAs Caption="Save..." Hint="Mentés|Kötegfájl mentése más néven"/>
+    <ActionBatchRemoveSel Caption="Remove sel." Hint="Kijelöltek törlése|Kijelölt műveletek törlése a kötegből"/>
+    <ActionBatchClear Caption="Töröl" Hint="Köteg törlése|Minden művelet törlése a kötegből"/>
+    <ActionBatchNoRecent Caption="(nincs ilyen fájl)"/>
+    <ActionAddFiles Caption="Fájlok hozzáadása..." Hint="Fájlok hozzáadása|Fájlok hozzáadása a listához"/>
+    <ActionAddFolders Caption="Mappák hozzáadása..." Hint="Mappák hozzáadása|Mappák hozzáadása a listához"/>
+    <ActionRemoveSelected Caption="Kijelöltek törl." Hint="Kijelöltek törlése|Kijelölt fájlok eltávolítása a listáról"/>
+    <ActionRemoveAll Caption="Mindet töröl" Hint="Mindent töröl|Minden fájl törlése a listáról"/>
+    <ActionRemoveDead Caption="Nem elérhetőek eltávolítása" Hint="Döglöttek eltávolítása|Döglött fájlok eltávolítása a listáról"/>
+    <ActionPreview Caption="Előnézet" Hint="Előnézet frissítése|Előnézet frissítése a tervezett műveletek tükrében"/>
+    <ActionFromListClear Caption="Eltávolít" Hint="Lista törlése|Lista törlése"/>
+    <ActionFromListOpen Caption="Megnyitás..." Hint="Megnyitás|Lista betöltése fájlból"/>
+    <ActionFromListSave Caption="Mentés..." Hint="Mentés|Lista mentése fájlba"/>
+    <ActionMultistrReplClear Caption="Mátrix törlése" Hint="Törli a bejegyzéseket a rácsból"/>
+    <ActionMultistrReplSave Caption="Mentés" Hint="|Jelenlegi beállítások mentése más néven"/>
+    <ActionMultistrReplDelete Caption="Töröl" Hint="|Beállítás törlése"/>
+    <ActionMoveUp Caption="Fel" Hint="Felfelé|Kijelölt elemek felfelé mozgatása"/>
+    <ActionMoveDown Caption="Le" Hint="Lefelé|Kijelölt elemek lefelé mozgatása"/>
+    <ActionMoveTop Caption="Legfelül" Hint="Legfelül|Kijelölt elemek legfelülre mozgatása"/>
+    <ActionMoveBottom Caption="Legalul" Hint="Legalul|Kijelölt elemek legalulra mozgatása"/>
+    <ActionItemsUnsort Caption="Nincs rendezés" Hint="|Rendezési feltételek kikapcsolása"/>
+    <ActionItemsSelectAll Caption="Mindet kijelöl" Hint="Mindet kijelöl|Minden elem kijelölése"/>
+    <ActionItemsSelectNone Caption="Jelölés visszavonása" Hint="Jelölés visszavonása|Minden kijelölés törlése"/>
+    <ActionItemsSelectInvert Caption="Kijelölés megfordítása" Hint="Kijelölés megfordítása|Kijelölés megfordítása"/>
+    <ActionLogClear Caption="Töröl" Hint="Töröl|Napló törlése"/>
+    <ActionLogSave Caption="Mentés..." Hint="Mentés|Napló mentése egy fájlba"/>
+    <ActionLogCopy Caption="Másolás" Hint="Másolás|Napló vágólapra másolása"/>
+    <ActionLogFilter Caption="Szűrés" Hint="Szűrő|Naplóbejegyzések szűrése"/>
+    <ActionLogFilterOk Caption="Sikerült" Hint="Átnevezett fájlok megjelenítése|A hibátlanul átnevezett fájlok megjelenítése"/>
+    <ActionLogFilterError Caption="Hibák" Hint="hibák mutatása|Hibák megjelenítése"/>
+    <ActionLogFilterNot Caption="Nincs átnevezve" Hint="Megmutatja a kihagyott fájlokat|Mely fájlok nem lettek átnevezve a művelet során"/>
+    <ActionActionGo Caption="Indít" Hint="Indít|Az átnevezés indítása"/>
+    <ActionActionStop Caption="Leállít" Hint="Állj|Az átnevezés leállítása"/>
+    <ActionOptions Caption="Beállítások..." Hint="Beállítások|Program jellemzőinek megváltoztatása"/>
+    <ActionActionUndo Caption="Vissza" Hint="Vissza|Visszavonás"/>
+    <ActionHelpContents Caption="Súgó" Hint="Súgó tartalom|Súgó tartalmának megnyitása"/>
+    <ActionHelpAbout Caption="Névjegy..." Hint="Névjegy|A program készítőinek névjegye"/>
+    <ActionExit Caption="Kilépés" Hint="Kilépés|Kilépés a programból"/>
+    <ActionAlwaysOnTop Caption="Mindíg felül" Hint="Mindíg felül|Az ablak mindíg felül van"/>
+    <ActionTabFiles Caption="Fájlok" Hint="Fájlok|Fájlok megjelenítése"/>
+    <ActionTabActions Caption="Műveletek" Hint="Műveletek|Műveletek megjelenítése"/>
+    <ActionTabLog Caption="Napló" Hint="Napló|Napló megjelenítése"/>
+    <lstFiles Hint="|Fájl lista - Jobb egérgombbal testreszabható az oszlopok megjelenítése">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Mappa"/>
+          <Item Index="1" Text="Fájlnév"/>
+          <Item Index="2" Text="Teljes Útvonal"/>
+          <Item Index="3" Text="Kiterjesztés."/>
+          <Item Index="4" Text="Előnézet"/>
+          <Item Index="5" Text="Méret"/>
+          <Item Index="6" Text="Létrehozás Dátuma"/>
+          <Item Index="7" Text="Módosítás Dátuma"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Kijelöltek megjelenítése "/>
+    <grpBatch Caption="       Köteg tartalma (tervezett műveletek) "/>
+    <lstBatch Hint="|Köteg tartalma (tervezett műveletek)"/>
+    <lblPreviewOld Caption="Jelenlegi neve:"/>
+    <lblPreviewNew Caption="Tervezett (minta):"/>
+    <lstActions Hint="|Műveletek listája">
+      <Items>
+        <Item Index="0" Value="Kiterjesztés megváltoztatása"/>
+        <Item Index="1" Value="Karakter csere"/>
+        <Item Index="2" Value="Több karakter cseréje"/>
+        <Item Index="3" Value="Szöveg beillesztése"/>
+        <Item Index="4" Value="Karakter mozgatása"/>
+        <Item Index="5" Value="Karakterek törlése"/>
+        <Item Index="6" Value="Felsorolás"/>
+        <Item Index="7" Value="Mp3 tag infó használata"/>
+        <Item Index="8" Value="Dátum és idő"/>
+        <Item Index="9" Value="Véletlenszerű nevek"/>
+        <Item Index="10" Value="Karakterek kiemelése"/>
+        <Item Index="11" Value="Nevek egy listáról"/>
+<n/>        <Item Index="12" Value="Regular expression"/>
+<n/>        <Item Index="13" Value="Use EXIF info"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Kiterjesztés cseréje erre:"/>
+    <cbxChangeExtNoRepl Caption="Ne cserélje a kiterjesztést, adja hozzá a teljes fájlnévhez"/>
+    <lblChangeExtNotes Caption="Megjegyzés:&lt;br&gt;- Ne tartalmazzon pontot, csak add meg az új kiterjeztést&lt;br&gt;- A növekményes kiterjesztés készítéséhez, használd a  &lt;LINK&gt;Felsorolás&lt;/LINK&gt; műveletet"/>
+    <lblStrReplSearch Caption="Eztcseréli:"/>
+    <lblStrReplBy Caption="Erre:"/>
+    <cbxStrReplAll Caption="Minden előfordulás cseréje"/>
+    <cbxStrReplCase Caption="Betű érzékeny"/>
+    <cbxStrReplExt Caption="Kiterjesztés hozzávétele a kereséshez"/>
+    <cbxStrReplOnlyExt Caption="Alkalmazza a névre a kiterjesztés helyett"/>
+    <lblMultstrSearch Caption="Ezt cseréli:"/>
+    <lblMultstrReplBy Caption="Erre:"/>
+    <lblMultstrReplSet Caption="Beállítás mentése:"/>
+    <cbxMultstrReplExt Caption="Beleértve a fájlkiterjesztéseket is"/>
+    <cbxMultstrReplCase Caption="Betű érzékeny"/>
+    <lblMultstrReplNotes Caption="Megjegyzés:&lt;BR&gt;- Használd a Ctrl+Plusz-t (+) és a  Ctrl+Minusz-t (-) hogy beillessz vagy törölj sorokat az aktuális poziciónál"/>
+    <lblStrInsStr Caption="Szöveg:"/>
+    <lblStrInsPos Caption="Helyzete:"/>
+    <rbtStrInsBegin Caption="Elejétől"/>
+    <rbtStrInsEnd Caption="Végétől"/>
+    <cbxStrInsExt Caption="Alkalmazás a kiterjesztésre a név helyett"/>
+    <lblStrInsNotes Caption="Megjegyzés:&lt;br&gt;- Ha be akarsz illeszteni egy karaktersorozatot egy adott karaktersor elé vagy mögé, használd a  &lt;LINK&gt;Karakter csere&lt;/LINK&gt; műveletet&lt;br&gt;- %name% = Eredeti fájlnév (kiterjesztés nélkül)&lt;BR&gt;- %ext% = Eredeti kiterjesztés (ponttal)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mappa név&lt;BR&gt;- %% = % karakter&lt;BR&gt;nézd meg a &lt;LINK&gt;Help&lt;/LINK&gt; -et további információért"/>
+    <lblMoveStrFrom Caption="Poziciótól:"/>
+    <rbtMoveStrFromBegin Caption="Elejétől"/>
+    <rbtMoveStrFromEnd Caption="Végétől"/>
+    <lblMoveStrCount Caption="Hány karaktert mozgasson:"/>
+    <lblMoveStrTo Caption="Pozicióig:"/>
+    <rbtMoveStrToBegin Caption="Elejétől"/>
+    <rbtMoveStrToEnd Caption="Végétől"/>
+    <lblMoveStrNotes Caption="Megjegyzés:&lt;br&gt;- Ha el akarsz mozgatni egy karaktersorozatot de az nem mindíg ugyanabban a pozicióban van, használd a &lt;link&gt;Karakter cserét&lt;/link&gt; hogy töröld azután a &lt;link&gt;Szöveg beillesztése&lt;/link&gt; műveletet hogy új helyre illeszd be&lt;BR&gt;- A &#34;Poziciótól&#34; beállítás ne tartalmazza a mozgatott karakter értékét "/>
+    <lblCharDel Caption="Hány karatert töröljön:"/>
+    <rbtCharDelPos Caption="Poziciótól:"/>
+    <rbtCharDelBegin Caption="Elejétől"/>
+    <rbtCharDelEnd Caption="Végétől"/>
+    <rbtCharDelStr Caption="Eddig a szóig:"/>
+    <rbtCharDelStr2 Caption="Before the string:"/>
+    <cbxCharDelExt Caption="Kiterjesztés hozzávétele"/>
+    <lblCharDelNotes Caption="Megjegyzés:&lt;BR&gt;- Hogy törölj egy karaktersorozatot, használd a &lt;LINK&gt;Karakter csere&lt;/LINK&gt; műveletet és cserélj ki egy sorozatot akár egy üres mezőre is"/>
+    <lblEnumMask Caption="Maszk:"/>
+    <lblEnumStart Caption="Kezdődik:"/>
+    <lblEnumDigits Caption="Ennyi számjegy:"/>
+    <lblEnumIncr Caption="Lépték:"/>
+    <cbxEnumRestart Caption="Kezdő érték alaphelyzetbe ha változik a mappa"/>
+    <lblEnumNotes Caption="Megjegyzés:&lt;BR&gt;- %name% = Eredeti fájlnév (kiterjesztés nélkül)&lt;BR&gt;- %ext% = Eredeti kiterjesztés (ponttal)&lt;BR&gt;- %num% = Szám&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mappa név&lt;BR&gt;- %% = % karakter&lt;BR&gt;nézd meg a &lt;LINK&gt;Help&lt;/LINK&gt; -et további információért"/>
+    <lblMP3Mask Caption="Maszk:"/>
+    <cbxMP3TwoDigit Caption="Kétszámjegyű sáv száma (beilleszt egy '0'-t a szám elejére ha szükséges)"/>
+    <cbxMP3Convert Caption="Helytelen karakterek konvertálása ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Megjegyzés:&lt;BR&gt;- %author% = Előadó&lt;BR&gt;- %title% = Cím&lt;BR&gt;- %album% = Album&lt;BR&gt;- %year% = Megjelenés&lt;BR&gt;- %genre% = Műfaj&lt;BR&gt;- %comm% = Megjegyzés&lt;BR&gt;- %track% = Sáv száma (ID3V1.1)&lt;BR&gt;- %name% = Eredeti fájlnév (kiterjesztés nélkül)&lt;BR&gt;- %ext% = Eredeti kiterjesztés (ponttal)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mappa neve&lt;BR&gt;- %% = % karakter&lt;BR&gt;- $if(feltételek,igaz-érték,hamis-érték)&lt;BR&gt;nézd meg a &lt;LINK&gt;Help&lt;/LINK&gt; -et a további információért"/>
+    <lblDTMask Caption="Maszk:"/>
+    <cbxDTSuffix Caption="Utótag hozzáírása ha egy vagy több fájl dátuma/ideje megegyezik"/>
+    <lblDTWhich Caption="Dátum használata:"/>
+    <rbtDTWhichCreation Caption="Létrehozás"/>
+    <rbtDTWhichModif Caption="Utolsó módosítása"/>
+    <lblDTNotes Caption="Megyjegyzés:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	Eredeti fájlnév (kiterjesztés nélkül)
+e	Eredeti kiterjesztés (ponttal együtt)
+c	Idő és dátum standard windows formátumban
+d	Napok nulla nélkül (1-31)
+dd	Napok nullával (01-31)
+ddd	Napok rövid névvel (Vas-Szo)
+dddd	Napok teljes névvel (Vasárnap-Szombat)
+ddddd	Dátum rövid windows formátumban
+dddddd	Dátum hosszú windows formátumban
+m	Hónapok nulla nélkül (1-12)
+mm	Hónapok nullával (01-12)
+mmm	Hónap rövid névvel (Jan-Dec)
+mmmm	Hónap teljes névvel (Január-December)
+yy	Év 2 számjeggyel (00-99)
+yyyy	Év 4 számjeggyel (0000-9999)
+h	Óra nulla nélkül (0-23)
+hh	Óra nullával (00-23)
+n	Perc nulla nélkül (0-59)
+nn	Perc nulla nélkül (00-59)
+s	Másodperc nulla nélkül (0-59)
+ss	Másodperc nullával (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	12 órás formátum használata ó vagy óó
+a/p	12 órás formátum használata ó vagy óó
+'xx'/"xx"	A szimpla és dupla idézőjelben lévő karakterek változatlanul hagyása
+
+Ha m vagy mm közvetlenül h vagy hh után következik, hónap helyett percként értelemzi]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Maszk:"/>
+    <lblRandomMethod Caption="Eljárás:"/>
+    <rbtRandomNumber Caption="Véletlen számok (8 számjegy)"/>
+    <rbtRandomTick Caption="Windows tick számlálója"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="Megjegyzés:&lt;BR&gt;- %name% = Eredeti fájlnév (kiterjesztés nélkül)&lt;BR&gt;- %ext% = Eredeti kiterjesztés (ponttal)&lt;BR&gt;- %random% = Véletlenszerűen generált karaktersorozat&lt;BR&gt;- %% = % karakter&lt;BR&gt;nézd meg a &lt;LINK&gt;Help&lt;/LINK&gt; -et további információért"/>
+    <rbtCaseWords Caption="Első karakter kiemelése ha bármelyik az alábbiakból:"/>
+    <rbtCaseFirst Caption="A fájlnév első karakterének kiemelése"/>
+    <rbtCaseUpper Caption="Kiemelés"/>
+    <rbtCaseLower Caption="Kicsinyítés"/>
+    <cbxCaseLocale Caption="Windows Régionális beállítások használata az ékezetes karakterekhez"/>
+    <cbxCaseIncludeExt Caption="Kiterjesztések hozzávétele"/>
+    <cbxCaseOnlyExt Caption="Alkalmazza a kiterjesztésekre a név helyett"/>
+    <cbxFromListExt Caption="Eredeti kiterjesztés hozzávétele a fájlnévhez"/>
+    <cbxFromListOnlyExt Caption="Kiterjesztések használata a nevek helyett"/>
+    <lblFromListNotes Caption="Megjegyzés:&lt;BR&gt;- Minden sor a listáról egy fájl neve kiterjesztés nélkül. Az elemek egymás után használják a sorokat&lt;BR&gt;- Ha egy sor üres vagy nincs elegendő sor, a lemaradó fájlok nem lesznek átnevezve"/>
+<n/>    <lblRegexp Caption="Expression:"/>
+<n/>    <lblRegexpRepl Caption="New name:"/>
+<n/>    <lblRegexpNotes Caption="Notes:&lt;BR&gt;- \ character can be used to escape special characters (like $ and others), use a \\ for a simple \ in new name (if you want to target the new name to another folder)&lt;BR&gt;- Use ^ to indicate the beginning of the name and $ for the end of name&lt;BR&gt;- The new name must contain $1, $2, etc. to specify where found characters will come&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information on regular expressions"/>
+<n/>    <lblExifMask Caption="Mask:"/>
+<n/>    <lblExifNotes Caption="Notes:&lt;BR&gt;- %name% = Original file name (without extension)&lt;BR&gt;- %ext% = Original extension (including the dot)&lt;BR&gt;- %datetimeoriginal% or %datetime% = Original date and time of the picture&lt;BR&gt;- %orientation% = Picture orientation&lt;BR&gt;- %flash% = Flash was on or off&lt;BR&gt;- %% = % character&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information and for complete list of EXIF tags"/>
+    <lstLog Hint="|Log"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Minden fájl"/>
+      <Item Name="strfltTextFiles" Value="Szöveg fájlok"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer kötegfájlok"/>
+      <Item Name="strmsgSelectFiles" Value="Fájl kijelölés"/>
+      <Item Name="strmsgSelectFolder" Value="Mappa kijelölés"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Fájlok hozzáadása"/>
+      <Item Name="strmsgStatusRenaming" Value="Fájlok átnevezése"/>
+      <Item Name="strmsgFilesCount" Value="%d fájlok"/>
+      <Item Name="strmsgBusy" Value="Az alkalmazás foglalt: Átnevezés folyamatban."/>
+      <Item Name="strmsgNothingToDo" Value="Nincs mit elindítani: jelölj ki legalább egy fájlt és egy műveletet."/>
+      <Item Name="strlogStartRename" Value="Az átnevezés elkezdődött"/>
+      <Item Name="strlogStartPreview" Value="Nézet frissítése"/>
+      <Item Name="strlogStartRevert" Value="Előző nevek visszaállítása"/>
+      <Item Name="strlogEndRename" Value="Átnevezés befejeződött"/>
+      <Item Name="strlogEndPreview" Value="Nézet befejeződött"/>
+      <Item Name="strlogEndRevert" Value="Visszaállítás befejeződött"/>
+      <Item Name="strlogStoppedByUser" Value="Felhasználói megszakítás"/>
+      <Item Name="stradUnknown" Value="Nincs mit"/>
+      <Item Name="stradInclExt" Value=", alapján"/>
+      <Item Name="stradOnlyExt" Value=", alkalmazás a kiterjesztésre a név helyett"/>
+      <Item Name="stradChangeExt" Value="Kiterjesztések átírása %s"/>
+      <Item Name="stradChangeExtRmv" Value="Kiterjesztése eltávolítása"/>
+      <Item Name="stradChangeExtNoRepl" Value="Hozzáfűzés a kiterjesztéshez %s"/>
+      <Item Name="stradStringRepl" Value="%s cseréje erre %s"/>
+      <Item Name="stradStringReplAll" Value=", minden előfordulás cseréje"/>
+      <Item Name="stradStringReplCase" Value=", betű érzékeny"/>
+      <Item Name="stradMultstrRepl" Value="Több karakter cseréje &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Beillesztés %s pozicióhoz %d"/>
+<n/>      <Item Name="stradMoveStr" Value="Move %d characters from position %d%s, to position %d%s"/>
+      <Item Name="stradCharDel" Value=" %d Karakterek törlése"/>
+      <Item Name="stradCharDelPos" Value=" %d pozicióig"/>
+      <Item Name="stradCharDelStr" Value=" %s karaktersorozat után"/>
+      <Item Name="stradEnum" Value="Fájlok számozásának létrehozása a következő séma szerint %s  %d tó(ő)l %d ig %d tó(ő)lkezdődően"/>
+      <Item Name="stradMP3" Value="Fájlnév készítése MP3 tag-ból, %s maszk alapján"/>
+      <Item Name="stradMP3TwoDigit" Value=", beilleszt egy '0'-át a sáv számhoz ha szükséges"/>
+      <Item Name="stradMP3Convert" Value=", helytelen karakterek konvertálása"/>
+      <Item Name="stradFromBegin" Value=", az elejétől"/>
+      <Item Name="stradFromEnd" Value=", a végétől"/>
+      <Item Name="stradDateTime" Value="Fájlnevek készítése'' dátum és idő, %s maszk alapján"/>
+<n/>      <Item Name="stradDateTimeCreat" Value=" using creation date"/>
+<n/>      <Item Name="stradDateTimeModif" Value=" using last modification date"/>
+      <Item Name="stradDateTimeSuffix" Value=", utótag hozzáadása ha szükséges"/>
+      <Item Name="stradRandom" Value="Véletlen szerű nevek készítése %s alapján"/>
+      <Item Name="stradRandomNumbers" Value=", számoktól"/>
+      <Item Name="stradRandomTick" Value=", Windows tick'' számláló használata"/>
+      <Item Name="stradRandomGUID" Value=", GUID használata"/>
+      <Item Name="stradCase" Value="Karakterek kiemelése:"/>
+      <Item Name="stradCaseWords" Value=" első karakter kiemelése ha megegyezik a következőkkel &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" név első karakterének kiemelése"/>
+      <Item Name="stradCaseUpper" Value=" mindet nagybetű"/>
+      <Item Name="stradCaseLower" Value=" mind kisbetű"/>
+      <Item Name="stradCaseLocale" Value=", Windows régionális'' beállítások használata"/>
+      <Item Name="stradFromList" Value="Fájlok átnevezése lista használatával"/>
+      <Item Name="stradFromListExt" Value=", eredeti kiterjesztés hozzávétele"/>
+      <Item Name="stradFromListOnlyExt" Value=", használata név helyett kiterjesztésként"/>
+<n/>      <Item Name="stradRegexp" Value="Rename files using a regular expression"/>
+<n/>      <Item Name="stradExif" Value="Generate namees with EXIF info, based on the mask &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Üres sor"/>
+      <Item Name="straeFromListEnd" Value="Lista vége"/>
+      <Item Name="strfsNotRenamed" Value="%s nem lett átnevezve : %s"/>
+      <Item Name="strfsRenamed" Value="%s átnevezve %s"/>
+      <Item Name="strfsReverted" Value="%s neve visszaállítva %s"/>
+      <Item Name="strfsRenError" Value="Nem nevezhető át %s to %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Az előző név nem volt tárolva %s visszaállításhoz"/>
+      <Item Name="strfs404" Value="A forrás fájl nem található"/>
+      <Item Name="strfsAlreadyExist" Value="Ez a fájl vagy mappa név már létezik"/>
+      <Item Name="strfeIdentical" Value="a módosítás megegyezne a régi névvel ezért nem kell átnevezni"/>
+      <Item Name="strhintNotAgain" Value="Ez a tipp nem jeleníthető meg újra"/>
+      <Item Name="strhintShowPreview" Value="Az előnézeti oszlop látható. Ha el akarod rejteni, kattints jobb egérgombbal az oszlop fejlécére."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="A programról">
+    <btn1 Caption="Előzmények"/>
+    <btn2 Caption="Bezár"/>
+    <tshGeneral Caption="Általános"/>
+    <tshCredits Caption="Készítők"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Figyelem"/>
+        <Item Index="1" Value="Hiba"/>
+        <Item Index="2" Value="Információ"/>
+        <Item Index="3" Value="Megerősítés"/>
+        <Item Index="4" Value="&#38;Igen"/>
+        <Item Index="5" Value="&#38;Nem"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Mégsem"/>
+        <Item Index="8" Value="&#38;Megszakítás"/>
+        <Item Index="9" Value="&#38;Ismét"/>
+        <Item Index="10" Value="&#38;Kihagy"/>
+        <Item Index="11" Value="&#38;Mind"/>
+        <Item Index="12" Value="Egyiket sem"/>
+        <Item Index="13" Value="Mindegyiket"/>
+        <Item Index="14" Value="&#38;Súgó"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Options">
+    <btn1 Caption="Súgó"/>
+    <btn2 Caption="Mégsem"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Megjelenítés"/>
+    <tshAdding Caption="Fájlok &#38;&#38; Mappák"/>
+    <tshProcessing Caption="Feldolgozás"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Nyelv"/>
+    <lbhLists Caption="Listák"/>
+    <cbxRealtimeUpdate Caption="Valós idejű frissítés átnevezés közben"/>
+    <cbxResizeColsFiles Caption="Oszlopok automatikus átméretezése"/>
+    <cbxFilesIcons Caption="Fájl listák mutatása kiterjesztés alapján"/>
+    <lbhFonts Caption="Fontok"/>
+    <cbxForceFont Caption="Mindenképp használja a következő fontot a speciális karakterek megjelenítéséhez:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Alapértelmezett Windows font"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Megjegyzés: Arial Unicode erősen ajánlott ha elérhető"/>
+    <lbhDropdown Caption="Előzmények"/>
+    <lblDropdownMax Caption="Előzmények megőrzése eddig (esemény):"/>
+    <cbxDropdownComplete Caption="Automatikus kiegészítés beírás közben"/>
+    <lbhToolbars Caption="Eszköztárak"/>
+    <lblIconSet Caption="Ikon készlet:"/>
+    <lblColorType Caption="Szín típus:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatikus"/>
+        <Item Index="1" Value="Beszürkít ha nem aktív"/>
+        <Item Index="2" Value="Kivilágosít ha nem aktív (XP stílus)"/>
+        <Item Index="3" Value="Besötétít ha nem aktív"/>
+        <Item Index="4" Value="Mindíg színes"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP stílus"/>
+    <lbhDragdrop Caption="Fogd &#38; Húzd"/>
+    <cbxDragdropNoAsk Caption="Ne kérdezze, mindíg használja a következő beállításokat:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Kijelölés tartalmazza a kiválasztott mappa fájljait"/>
+      <cbxFolders Caption="Kijelölt mappák hozzáadása"/>
+      <cbxRecursive Caption="Mindkét beállítás alkalmazása az almappákra"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Listák működése"/>
+    <cbxLaunchFile Caption="Fájl indítása dupla kattintással"/>
+    <lbhRenaming Caption="Fájl átnevezés"/>
+    <cbxCopy Caption="Átnevezés helyett másolás"/>
+    <cbxGenerLog Caption="Napló készítése"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Mappák létrehozásának engedélyezése"/>
+    <cbxDetectAbsdir Caption="&#34;:\&#34; vagy &#34;\\&#34; jel automatikus értelmezése az elérési útvonalban"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Váltás:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Fájl lista"/>
+        <Item Index="1" Value="Műveletek"/>
+        <Item Index="2" Value="Napló"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Napló törlése"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Váltás:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Fájl lista"/>
+        <Item Index="1" Value="Műveletek"/>
+        <Item Index="2" Value="Napló"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Fájlok törlése a listáról"/>
+    <cbxClearBatchList Caption="Köteg törlése"/>
+    <cbxSaveLog Caption="Napló fájlba mentése:"/>
+    <btnSaveLog Hint="Tallózás..."/>
+    <cbxSaveLogAppend Caption="Hozzáfűzés a jelenlegi fájlhoz"/>
+    <lbhLanguage Caption="Nyelv"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Név"/>
+          <Column Index="1" Caption="Helyi név"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Verzió:"/>
+      <lblMadeby Caption="Készítette:"/>
+      <lblComments Caption="Megjegyzések:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Átnevezendő mappák hozzáadása">
+    <btn1 Caption="Súgó"/>
+    <btn2 Caption="Mégsem"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Hálózatok..."/>
+    <Options>
+      <cbxFiles Caption="Fájlok a mappán belül"/>
+      <cbxFolders Caption="Kijelölt mappák"/>
+      <cbxRecursive Caption="Mindkét beállítás alkalmazása az almappákra"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Fogd &#38; Húzd Beállítások">
+    <btn1 Caption="Súgó"/>
+    <btn2 Caption="Mégsem"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Beállítások használata fájlok hozzáadásakor:"/>
+    <Options>
+      <cbxFiles Caption="Fájlok a mappán belül"/>
+      <cbxFolders Caption="Kijelölt mappák"/>
+      <cbxRecursive Caption="Mindkét beállítás alkalmazása az almappákra"/>
+    </Options>
+    <cbxNotAgain Caption="Nem mutassa ezt az ablakot legközelebb (a kiválasztott beállítások megtartása))"/>
+  </DragdropOptionsForm>
+</Application>

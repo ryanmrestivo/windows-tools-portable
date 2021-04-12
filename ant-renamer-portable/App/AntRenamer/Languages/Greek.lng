@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1253"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAATCwAAEwsAAAAAAAAAAAAAEAAAACIAAACIAAAA3AAAAP9lZQDMzMwA+vr6AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHd3d3d3d3d3d3d3d3d3d3cQEAAAAQAAEBIiIiIiIiIxFVVVVVVVVWESMzMzMzMzQRVVVVVVVVVhEjUzMzMzM0ESNTNVVVVVYRVVVTMzMzNBEjUzVVVVVWETRkREREREQRERERERERERd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3
+Name=Greek
+LocalName=Ελληνικα
+Version=2.08
+VersionFormat=2.12
+Comments=
+Authors=Wasilis Mandratzis - Walz |wasilis@operamail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Ενσωματωση" Hint="Ενσωματωση θεματος|Ενσωματωνη το μαρκαρισμενο θεμα"/>
+    <ActionBatchOpen Caption="Ανοιξε" Hint="Ανοιξε|Ανοιγει ενα αρχειο"/>
+    <ActionBatchSaveAs Caption="Αποθηκευση σαν" Hint="Αποθηκευση σαν|Αποθηκευση αρχειου"/>
+    <ActionBatchRemoveSel Caption="Διωξε τα στοιχεια" Hint="Διωξε τα στοιχεια|Διωχνει τα μαρκαρισμενα στοιχεια"/>
+    <ActionBatchClear Caption="Διωξε τα παντα" Hint="Διωξε τα παντα|Διχνει ολα τα θεματα"/>
+    <ActionBatchNoRecent Caption="(κανενα νεο αρχειο)"/>
+    <ActionAddFiles Caption="Ενσωματωση αρχειου" Hint="Ενσωματωση αρχειου|Ενσωματωνη αρχεια"/>
+    <ActionAddFolders Caption="Ενσωματωση χωρον αποθηκευσης" Hint="Ενσωματωση χωρον αποθηκευσης|Ενσωματωνη χωρους αποθηκευσης"/>
+    <ActionRemoveSelected Caption="Διωξε τα μαρκαρισμενα" Hint="Διωξε τα μαρκαριμενα|Διωχνει τα μαρκαρισμενα αρχεια"/>
+    <ActionRemoveAll Caption="Διωξε τα παντα" Hint="Διωξε τα παντα|Διωχνει ολα τα αρχεια"/>
+    <ActionRemoveDead Caption="Διωξε τα λανθασμενα αρχεια" Hint="Διωξε τα λανθασμενα αρχεια|Διωνει λανθασμενα αρχεια"/>
+    <ActionPreview Caption="Εμφανιση" Hint="Εμφανιση|Εμφανιζη το αρχειο με ολες τις αλλαγες"/>
+    <ActionFromListClear Caption="Διωξε την λιστα επεξεργασιας" Hint="Διωξε την λιστα επεξεργασιας|Διωχνει την λιστα επεξεργασιας"/>
+    <ActionFromListOpen Caption="Ανοιξε" Hint="Ανοιξε|Ανοιγη ενα αρχειο"/>
+    <ActionFromListSave Caption="Αποθηκευση" Hint="Αποθηκευση|Αποθηκευση αρχειου"/>
+    <ActionMultistrReplClear Caption="Διωξε τα συμπλεγματα" Hint="Διωξε τα συμπλεγματα"/>
+    <ActionMultistrReplSave Caption="Αποθηκευση" Hint="|Αποθηκευση με ονομα"/>
+    <ActionMultistrReplDelete Caption="Διωξε" Hint="|Διωχνει τα μαρκαρισμενα ονοματα"/>
+    <ActionMoveUp Caption="Προς τα πανω" Hint="Προς τα πανω|Μετακινηση αρχειων προς τα πανω"/>
+    <ActionMoveDown Caption="Προς τα κατω" Hint="Προς τα κατω|Μετακινηση αρχειων προς τα κατω"/>
+    <ActionMoveTop Caption="Στην αρχη" Hint="Στην αρχη|Μετακινηση αρχειων στην αρχη"/>
+    <ActionMoveBottom Caption="Στο τελος" Hint="Στο τελος|Μετακινηση αρχειων προς το τελος"/>
+    <ActionItemsUnsort Caption="Διωξε την λιστα θεματων" Hint="|Διωχνει την λιστα θεματων"/>
+    <ActionItemsSelectAll Caption="Μαρκαρε τα παντα" Hint="Μαρκαρε τα παντα|Μαρκαρη τα παντα"/>
+    <ActionItemsSelectNone Caption="Μην μαρκαρης τιποτα" Hint="Μην μαρκαρης τιποτα|Δεν μαρκαρη τιποτα"/>
+    <ActionItemsSelectInvert Caption="Αντιμαρκαρισμα" Hint="Αντιμαρκαρισμα|Αντιμαρκαρη τα μαρκαρισμενα στοιχεια"/>
+    <ActionLogClear Caption="Διωξε" Hint="Διωξε|Διωχνει το αρχειο παρακολουθησης"/>
+    <ActionLogSave Caption="Αποθηκευση" Hint="Αποθηκευση|Αποθηκευη το αρχειο παρακολουθησης"/>
+    <ActionLogCopy Caption="Αντιγραφη" Hint="Αντιγραφη|Αντιγραφη του αρχειου παρακολουθησης"/>
+    <ActionLogFilter Caption="Φιλτρο" Hint="Φιλτρο|Φιλτραρη την παρακολουθηση"/>
+    <ActionLogFilterOk Caption="Δειξε τα μετονομασμενα αρχεια" Hint="|Δειχνει τα αρχεια που μετονομασθηκαν"/>
+    <ActionLogFilterError Caption="Fehler" Hint="Zeigt Fehler|Show entries corresponding to errors"/>
+    <ActionLogFilterNot Caption="Δειξε τα μη αλλαγμενα αρχεια" Hint="|ειχνει τα αρχεια που το ονομα τους δεν αλλαχθηκε"/>
+    <ActionActionGo Caption="Τρεξε" Hint="Τρεξε|Τρεχει την αλλαγη ονοματος"/>
+    <ActionActionStop Caption="Στοπ" Hint="Στοπ|Σταματα την αλλαγη ονοματος"/>
+    <ActionOptions Caption="Παραμετροι" Hint="Παραμετροι|Δειχνει τις παραμετρους του προγραμματος"/>
+    <ActionActionUndo Caption="Διωξε τις αλλαγες" Hint="Διωχνει τις αλλαγες|Διωχνει τις αλλαγες"/>
+    <ActionHelpContents Caption="Βοηθεια" Hint="Βοηθεια|Ανοιγει την βοηθεια"/>
+    <ActionHelpAbout Caption="Πληροφοριες" Hint="Πληροφοριες|Πληροφοριες για το προγραμμα"/>
+    <ActionExit Caption="Τελος" Hint="Τελος|Κλεινει το προγραμμα"/>
+    <ActionAlwaysOnTop Caption="Παντα μπροστα" Hint="Παντα μπροστα|Κρατα το παραθυρο παντα μπροστα"/>
+    <ActionTabFiles Caption="Δειξε τα αρχεια" Hint="Δειξε τα αρχεια|Δειχνει τα υπολοιπα αρχεια"/>
+    <ActionTabActions Caption="Επεξεργασια" Hint="Επεξεργασια|Επεξεργασια αρχειων"/>
+    <ActionTabLog Caption="Παρακολουθηση" Hint="Παρακολουθηση|Δειχνει το αρχειο παρακολουθησης"/>
+    <lstFiles Hint="|Λιστα αρχειων - Με το αριστερο πληκτρο του ποντικιου μπορειτε να αλλαξετε της γραμμες στην λιστα αρχειων">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Χωρος αποθηκευσης"/>
+          <Item Index="1" Text="Ονομα αρχειου"/>
+          <Item Index="2" Text="Ολοκληρομενος χωρος αποθηκευσης"/>
+          <Item Index="3" Text="Εξωτερικα"/>
+          <Item Index="4" Text="Εμφανιση"/>
+          <Item Index="5" Text="Μεγεθος"/>
+          <Item Index="6" Text="Δημιουργια ημερομηνιας"/>
+          <Item Index="7" Text="Η ημερομηνια αλλαχθηκε"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Εμφανιση "/>
+    <grpBatch Caption="       Μαρκαρισμενες επεξεργασιες "/>
+    <lstBatch Hint="|Μαρκαρισμενες επεξεργασιες"/>
+    <lblPreviewOld Caption="Παλιο ονομα αρχειου:"/>
+    <lblPreviewNew Caption="Καινουργιο ονομα αρχειου:"/>
+    <lstActions Hint="|Λιστα επεξεργασιας">
+      <Items>
+        <Item Index="0" Value="Αλλαγη σηματος"/>
+        <Item Index="1" Value="Αλλαγη στοιχειων"/>
+        <Item Index="2" Value="Αλλαγη πολλων στοιχειων"/>
+        <Item Index="3" Value="Ενσωματωση στοιχειων"/>
+        <Item Index="4" Value="Μετακινηση στοιχειου"/>
+        <Item Index="5" Value="Διωξε το στοιχειο"/>
+        <Item Index="6" Value="Εκδωση νουμερων"/>
+        <Item Index="7" Value="mp3 tags"/>
+        <Item Index="8" Value="Ημερομηνια &#38; Ωρα"/>
+        <Item Index="9" Value="Τυχαια ονοματα"/>
+        <Item Index="10" Value="Αλλαγη τυπου"/>
+        <Item Index="11" Value="Ονοματα απο λιστα"/>
+<n/>        <Item Index="12" Value="Regular expression"/>
+<n/>        <Item Index="13" Value="Use EXIF info"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Αλλαγη σηματων σε:"/>
+    <cbxChangeExtNoRepl Caption="Κρατηση του παλιου σηματος + ενσωματωση καινουργιου σηματος"/>
+    <lblChangeExtNotes Caption="  Πληροφοριες:&lt;br&gt;- Δεν υπαρχει τελεια&lt;br&gt;- Για δειρακεις αλαγες, &lt;LINK&gt;Εκδωση νουμερων&lt;/ΛΙΝΚ&gt; χρησιμοποιηση"/>
+    <lblStrReplSearch Caption="Ψαξε σε:"/>
+    <lblStrReplBy Caption="Αντικατασταση με:"/>
+    <cbxStrReplAll Caption="Αντικατασταση ολων"/>
+    <cbxStrReplCase Caption="Ευαισθησια"/>
+    <cbxStrReplExt Caption="Αλαγη στο ψαξιμο"/>
+    <cbxStrReplOnlyExt Caption="Ψαξιμο και αλλγη μονο του σηματος"/>
+    <lblMultstrSearch Caption="Ψαξε σε:"/>
+    <lblMultstrReplBy Caption="Αντικατασταση με:"/>
+    <lblMultstrReplSet Caption="Ετημη λιστα:"/>
+    <cbxMultstrReplExt Caption="Ενσωματωση σηματος στο ψαξιμο"/>
+    <cbxMultstrReplCase Caption="Ευαισθησια"/>
+    <lblMultstrReplNotes Caption="Προσοχη:&lt;BR&gt;- Η πατηση των πληκτρων Ctrl+Συν (+) και Ctrl+Μειον (-) οδηγει στην ενσωματωση η στο διωξιμο ολων"/>
+    <lblStrInsStr Caption="Σειρα στοιχειων:"/>
+    <lblStrInsPos Caption="Απο την θεση:"/>
+    <rbtStrInsBegin Caption="Απο την αρχη"/>
+    <rbtStrInsEnd Caption="Απο το τελος"/>
+    <cbxStrInsExt Caption="Αλλαγη μονο του σηματος"/>
+    <lblStrInsNotes Caption="Πληροφορια:&lt;br&gt;- Για την αλλαγη ενος σηματος, χρησιμοποιηστε το &lt;ΛΙΝΚ&gt;Αλλαγη σηματος&lt;/ΛΙΝΚ&gt;&lt;br&gt;- %ονομα% = Κανονικο ονομα (χωρις σηματα)&lt;BR&gt;- %ext% = Κανονικο σημα (μαυι με τελεια)&lt;BR&gt;- %χωροςαποθηκευσης&lt;i&gt;N&lt;/i&gt;% = Ονομα αρχειου&lt;BR&gt;- %% = % Σημα&lt;BR&gt;&lt;ΛΙΝΚ&gt;Βοηθεια&lt;/ΛΙΝΚ&gt; για περισσοτερες πληροφοριες"/>
+    <lblMoveStrFrom Caption="Απο την θεση:"/>
+    <rbtMoveStrFromBegin Caption="Απο την αρχη"/>
+    <rbtMoveStrFromEnd Caption="Απο το τελος"/>
+    <lblMoveStrCount Caption="Εκκινητα στοιχεια:"/>
+    <lblMoveStrTo Caption="Στην θεση:"/>
+    <rbtMoveStrToBegin Caption="Απο την αρχη"/>
+    <rbtMoveStrToEnd Caption="Απο το τελος"/>
+    <lblMoveStrNotes Caption="Πληροφοριες:&lt;br&gt;- Αν θελετε να κινηθη ενα στοιχειο, που δεν ειναι συνεχεια στην ιδια θεση, τοτε χρησιμοποιηστε &lt;λινκ&gt;Αλλαγη στοιχειου&lt;/λινκ&gt; για να το διωξετε&lt;λινκ&gt;Ενσωματωση σηματος&lt;/λινκ&gt; , για καινουργια θεση&lt;BR&gt;- &#34;Στην θεση&#34; δεν περιεχετε το κινουμενο σημα (ειναι, σαν να διωχθηκε)"/>
+    <lblCharDel Caption="Σηματα που θελετε να διωχθουν:"/>
+    <rbtCharDelPos Caption="Απο την θεση:"/>
+    <rbtCharDelBegin Caption="Απο την αρχη"/>
+    <rbtCharDelEnd Caption="Απο το τελος"/>
+    <rbtCharDelStr Caption="Μετα τα σηματα:"/>
+    <rbtCharDelStr2 Caption="Before the string:"/>
+    <cbxCharDelExt Caption="Αλλαγη μονο του στοιχειου"/>
+    <lblCharDelNotes Caption="Προσοχη:&lt;br&gt;- Για να διωξετε ενα μονο γραμμα χρησιμοποιηστε &lt;ΛΙΝΚ&gt;Ανταλλαγη γραμματων&lt;/ΛΙΝΚ&gt; "/>
+    <lblEnumMask Caption="Μασκα:"/>
+    <lblEnumStart Caption="Αρχη απο:"/>
+    <lblEnumDigits Caption="Θεσεις:"/>
+    <lblEnumIncr Caption="Μεγεθος:"/>
+    <cbxEnumRestart Caption="Γυρνα στην αρχικη αξια οταν αλλαζεις χωρο αποθηκευσης"/>
+    <lblEnumNotes Caption="Πληροφορια:&lt;br&gt;- %ονομα% = Αυθεντικο-Ονομα-Αρχειου &lt;BR&gt;- %ext% = Αυθεντικο σημα (με τελεια)&lt;BR&gt;- %num% = Νουμερο&lt;BR&gt;- %χωρος αποθηκευσης&lt;i&gt;N&lt;/i&gt;% = Ονομα αρχειου&lt;BR&gt;- %% = % Γραμμα&lt;BR&gt;&lt;ΛΙΝΚ&gt;Βοηθεια&lt;/ΛΙΝΚ&gt; για περισσοτερες πληροφοριες"/>
+    <lblMP3Mask Caption="Μασκα:"/>
+    <cbxMP3TwoDigit Caption="Διπλο νουμερο (ενσωματωση ενος '0' μπροστα)"/>
+    <cbxMP3Convert Caption="Αλλα μη επιτρεπομενα σηματα  / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Πληροφορια:&lt;br&gt;- %προγραμματιστης% = Προγραμματιστης&lt;BR&gt;- %τιτλος% =Τιτλος &lt;BR&gt;- %αλμπουμ% = Αλμπουμ&lt;BR&gt;- %χρονος% = ρονος&lt;BR&gt;- %Στιλμουσικης% = Στιλ μουσικης&lt;BR&gt;- %σχολιο% = Σχολιο&lt;BR&gt;- %νουμεροτραγουδι% = Νουμερο τραγουδιου (ID3V1.1)&lt;BR&gt;- %αυθεντικοονομααρχειου% = Αυθεντικο ονομα αρχειου&lt;BR&gt;- %σημα% = Κανονικο σημα (με τελεια)&lt;BR&gt;- %χωροςαποθηκευσης&lt;i&gt;N&lt;/i&gt;% = Ονομα αρχειου&lt;BR&gt;- %% = % Σημα&lt;BR&gt;- $if(Αναγκαιο,σωστη αξια,λαθος αξια)&lt;BR&gt;&lt;ΛΙΝΚ&gt;Βοηθεια&lt;/ΛΙΝΚ&gt; για περισσοτερες πληροφοριες"/>
+    <lblDTMask Caption="Μασκα:"/>
+    <cbxDTSuffix Caption="Βγαλε το σημα οταν υπαρχουν αρχεια με την ιδια//er Ημερομηνια/Ωρα"/>
+    <lblDTWhich Caption="Διαλεγμενα:"/>
+    <rbtDTWhichCreation Caption="Μασκα"/>
+    <rbtDTWhichModif Caption="Τελευταια παραμετρος"/>
+    <lblDTNotes Caption=" Πληροφοριες:"/>
+    <lblDTNotes2>
+      <Lines>
+           <![CDATA[f Αυθεντικο ονομα αρχειου (χωρις σημα)
+e	Κανονικο εργαλιο
+c	Ημερομηνια και Ωρα στον κανονικο τυπο του Windows 
+d	Ημερα χωρις μηδενικο (1-31)
+dd	Ημερα με μηδενικο (01-31)
+ddd	Μικρο, ονομα ημερας (Κυρ-Σαβ)
+dddd	Ολοκληρομενο ονομα ημερας (Κυριακη-Σαββατο)
+ddddd	Μικρη ημερομηνια οπως στο Windows
+dddddd	Μεγαλη ημερομηνια οπως στο Windows
+m	Μηνας χωρις μηδενικο (1-12)
+mm	Μηνας με μηδενικο (01-12)
+mmm	Μικρο, ονομα μηνα (Ιαν-Δεκ)
+mmmm	Ολοκλρομενο, ονομα μηνα (Ιανουαριος-Δεκεμβριος)
+yy	Χρονος, με δυο μηδενικα (00-99)
+yyyy	Χρονος, με τεσσερα μηδενικα (0000-9999)
+h	Ωρα χωρις μηδενικο (0-23)
+hh	Ωρα με μηδενικο (00-23)
+n	Λεπτο χωρις μηδενικο (0-59)
+nn	Λεπτο με μηδενικο (00-59)
+s	Δευτερολεπτο χωρις μηδενικο (0-59)
+ss	Δευτερολεπτο με μηδενικο (00-59)
+am/pm	Δειχνε 12-ωρες για h or hh
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+a/p Δειχνε 12-ωρες για h or hh	
+'xx'/"xx" Μη αλλαγμενα γραμματα
+
+If m or mm immediately follows h or hh, minute rather than month is used]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Μασκα:"/>
+    <lblRandomMethod Caption="Μεθοδος:"/>
+    <rbtRandomNumber Caption="Τυχαιος αριθμος"/>
+    <rbtRandomTick Caption="Windows μετρητης"/>
+    <rbtRandomGUID Caption="Σειρα-γραμματων-αριθμων"/>
+    <lblRandomNotes Caption=" Πληροφορια:&lt;br&gt;- %ονομα% = Κανονικο ονομα αρχειου (χωρις σημα)&lt;BR&gt;- %ext% = Αυθεντικο σημα (με τελεια)&lt;BR&gt;- %τυχαιασηματα% = Τυχαια σηματα&lt;BR&gt;- %% = % Σημα&lt;BR&gt;&lt;ΛΙΝΚ&gt;Βοηθεια&lt;/ΛΙΝΚ&gt; για περισσοτερες πληροφοριες"/>
+    <rbtCaseWords Caption="Πρωτο γραμμα, ακολουθουμενο απο αυτο:"/>
+    <rbtCaseFirst Caption="Πρωτο γραμμα του ονοματος αρχειου"/>
+    <rbtCaseUpper Caption="Ψηλοτερα"/>
+    <rbtCaseLower Caption="Χαμηλοτερα"/>
+    <cbxCaseLocale Caption="Χρησιμοποιηση παραμετρων, για αλλαγη χαρακτηρων"/>
+    <cbxCaseIncludeExt Caption="Αλλαγη σηματος"/>
+    <cbxCaseOnlyExt Caption="Μονο αλλαγη σηματος"/>
+    <cbxFromListExt Caption="Ενσωματωση αυθεντικου σηματος"/>
+    <cbxFromListOnlyExt Caption="Αλλαγη μονο του σηματος"/>
+    <lblFromListNotes Caption=" Πληροφορια:&lt;br&gt;- Καθε γραμμη αυτης της λιστας χρησιμοποιητε σαν ονομα αρχειου. &lt;BR&gt;- Ειναι αδειες η γραμμες η δεν υπαρχουν πολλες, δεν αλλαζει το ονομα των αρχειων."/>
+<n/>    <lblRegexp Caption="Expression:"/>
+<n/>    <lblRegexpRepl Caption="New name:"/>
+<n/>    <lblRegexpNotes Caption="Notes:&lt;BR&gt;- \ character can be used to escape special characters (like $ and others), use a \\ for a simple \ in new name (if you want to target the new name to another folder)&lt;BR&gt;- Use ^ to indicate the beginning of the name and $ for the end of name&lt;BR&gt;- The new name must contain $1, $2, etc. to specify where found characters will come&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information on regular expressions"/>
+<n/>    <lblExifMask Caption="Mask:"/>
+<n/>    <lblExifNotes Caption="Notes:&lt;BR&gt;- %name% = Original file name (without extension)&lt;BR&gt;- %ext% = Original extension (including the dot)&lt;BR&gt;- %datetimeoriginal% or %datetime% = Original date and time of the picture&lt;BR&gt;- %orientation% = Picture orientation&lt;BR&gt;- %flash% = Flash was on or off&lt;BR&gt;- %% = % character&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information and for complete list of EXIF tags"/>
+    <lstLog Hint="|Παρακολουθηση"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Ολα τα αρχεια"/>
+      <Item Name="strfltTextFiles" Value="TΑρχειο κειμενου"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer μαζικο αρχειο"/>
+      <Item Name="strmsgSelectFiles" Value="Μαρκαρισμενα αρχεια"/>
+      <Item Name="strmsgSelectFolder" Value="Μαρκαρισμενοι χωροι αποθηκευσης"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Ενσωματωμενα αρχεια"/>
+      <Item Name="strmsgStatusRenaming" Value="Αρχεια με αλλαγμενο ονομα"/>
+      <Item Name="strmsgFilesCount" Value="%d αρχεια"/>
+      <Item Name="strmsgBusy" Value="Το προγραμμα ειναι απασχολημενο: Το ονομα αλλαζεται"/>
+      <Item Name="strmsgNothingToDo" Value="Ηρεμη κατασταση: Διαλεξτε τυπο και επεξεργασια."/>
+      <Item Name="strlogStartRename" Value="Η αλλαγη ονοματος τρεχει"/>
+      <Item Name="strlogStartPreview" Value="Εμφανιση"/>
+      <Item Name="strlogStartRevert" Value="Προηγουμενο ονομα"/>
+      <Item Name="strlogEndRename" Value="Η αλλαγη ονοματος τελειωσε"/>
+      <Item Name="strlogEndPreview" Value="Η εμφανιση τελειωσε"/>
+      <Item Name="strlogEndRevert" Value="Διωξε τις αλλαγες"/>
+      <Item Name="strlogStoppedByUser" Value="Διακοψατε την αλλαγη ονοματος;"/>
+      <Item Name="stradUnknown" Value="Μην κανεις τιποτα"/>
+      <Item Name="stradInclExt" Value=", ενσωματωση στην ενεργεια"/>
+      <Item Name="stradOnlyExt" Value=", ψαξε και αλλαξε μονο το σημα"/>
+      <Item Name="stradChangeExt" Value="Αλλες αλλαγες σε%s"/>
+      <Item Name="stradChangeExtRmv" Value="Διωξε τις αλλαγες"/>
+      <Item Name="stradChangeExtNoRepl" Value="Ενσωματωση σηματος %s"/>
+      <Item Name="stradStringRepl" Value="Αντικατασταση %s με %s"/>
+      <Item Name="stradStringReplAll" Value=", Αντικατασταση ολων"/>
+      <Item Name="stradStringReplCase" Value=", Ευαισθησια"/>
+      <Item Name="stradMultstrRepl" Value="Διωξε τις αλλαγες με &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Ενσωματωση %s απο την θεση %d"/>
+<n/>      <Item Name="stradMoveStr" Value="Move %d characters from position %d%s, to position %d%s"/>
+      <Item Name="stradCharDel" Value="Διωξε το %d συμβολο"/>
+      <Item Name="stradCharDelPos" Value=" απο την θεση %d"/>
+      <Item Name="stradCharDelStr" Value=" μετα το συμβολο %s"/>
+      <Item Name="stradEnum" Value="Δημιουργια μετρησης %s απο %d μεχρι %d"/>
+      <Item Name="stradMP3" Value="Δημιουργια ονοματος σε MP3 tag, με τη μασκα %s"/>
+      <Item Name="stradMP3TwoDigit" Value=", ενσωματωση '0' στο νουμερο τραγουδιου"/>
+      <Item Name="stradMP3Convert" Value=", αλλαγη μη επιτρεπωμενων συμβολων"/>
+      <Item Name="stradFromBegin" Value=", απο την αρχη"/>
+      <Item Name="stradFromEnd" Value=", απο το τελος"/>
+      <Item Name="stradDateTime" Value="Δημιουργια ονοματος απο'' την ημερομηνια και την ωρα, συμφωνα με τη μασκα %s"/>
+<n/>      <Item Name="stradDateTimeCreat" Value=" using creation date"/>
+<n/>      <Item Name="stradDateTimeModif" Value=" using last modification date"/>
+      <Item Name="stradDateTimeSuffix" Value=", διωξε το σημα αν δεν χρειαζετε"/>
+      <Item Name="stradRandom" Value="Δημιουργια τυχαιων ονοματων με συμβολο%s"/>
+      <Item Name="stradRandomNumbers" Value=", με αριθμους"/>
+      <Item Name="stradRandomTick" Value=", με τον Windows'' δεικτη"/>
+      <Item Name="stradRandomGUID" Vale=", με την βοηθεια"/>
+      <Item Name="stradCase" Value="Δndere Σχολιο:"/>
+      <Item Name="stradCaseWords" Value=" Μετα το πρωτο γραμμα ακολουθουν τα συμβολα &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" Απο το πρωτο γραμμα της ενωσεως"/>
+      <Item Name="stradCaseUpper" Value=" Ολα τα γραμματα μεγαλα"/>
+      <Item Name="stradCaseLower" Value=" Ολα σε μικρα γραμματα"/>
+      <Item Name="stradCaseLocale" Value=", Χρησιμοποιηση των τοπικων Παραμετρων"/>
+      <Item Name="stradFromList" Value="Αλλαγη ονοματος συμφωνα με συγκεκριμενη λιστα"/>
+      <Item Name="stradFromListExt" Value=", χρησιμοποιηση αυθεντικου εργαλιου"/>
+      <Item Name="stradFromListOnlyExt" Value=", αλλαγη μονο του σηματος"/>
+<n/>      <Item Name="stradRegexp" Value="Rename files using a regular expression"/>
+<n/>      <Item Name="stradExif" Value="Generate namees with EXIF info, based on the mask &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Αδεια γραμη"/>
+      <Item Name="straeFromListEnd" Value="Τελος της λιστας"/>
+      <Item Name="strfsNotRenamed" Value="%s δεν αλλαξαν ονομα : %s"/>
+      <Item Name="strfsRenamed" Value="%s αλλαξαν ονομα μεχρι %s"/>
+      <Item Name="strfsReverted" Value="%s πισω στο προηγουμενο ονομα %s"/>
+      <Item Name="strfsRenError" Value="Το ονομα δεν μπορεσε να αλλχθει απο %s σε %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Δεν βρεθηκαν προηγουμενα ονοματα για να αντικαταστασθει αυτο %s."/>
+      <Item Name="strfs404" Value="Το αρχειο ποιγης δεν βρεθηκε"/>
+      <Item Name="strfsAlreadyExist" Value="Αρχειο η χωρος αποθηκευσης με το ιδιο ονομα υπαρχει ηδη"/>
+      <Item Name="strfeIdentical" Value="Το καινουργιο ονομα ειναι οπως το παλιο"/>
+      <Item Name="strhintNotAgain" Value="Μην δειχνεις ξανα αυτο το παραθυρο"/>
+      <Item Name="strhintShowPreview" Value="Το αρχειο δεν μπορει να εμφανιστει. Πατηστε το αριστερο πληκτρο του ποντικιου."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="Πληροφοριες για το προγραμμα">
+    <btn1 Caption="Ιστορικο"/>
+    <btn2 Caption="Κλεισιμο"/>
+    <tshGeneral Caption="Γενικα"/>
+    <tshCredits Caption="Πληροφοριες"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Προσοχη"/>
+        <Item Index="1" Value="Λαθος"/>
+        <Item Index="2" Value="Πληροφορια"/>
+        <Item Index="3" Value="Εγγραφη"/>
+        <Item Index="4" Value="&#38;Ναι"/>
+        <Item Index="5" Value="&#38;Οχι"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Διακοπη"/>
+        <Item Index="8" Value="&#38;Διακοπη"/>
+        <Item Index="9" Value="&#38;Επαναλυψη"/>
+        <Item Index="10" Value="&#38;Αγνοηση"/>
+        <Item Index="11" Value="&#38;Ολα"/>
+        <Item Index="12" Value="Οχι ολα"/>
+        <Item Index="13" Value="Ολα"/>
+        <Item Index="14" Value="&#38;Βοηθεια"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Παραμετροι">
+    <btn1 Caption="Βοηθεια"/>
+    <btn2 Caption="Διακοπη"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Εμφανιση"/>
+    <tshAdding Caption="Αρχεια &#38;&#38; Χωροι αποθηκευσης"/>
+    <tshProcessing Caption="Παραμετροι εργασιας"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Γλωσσα"/>
+    <lbhLists Caption="Λιστες"/>
+    <cbxRealtimeUpdate Caption="Αναβαθμιση σε αληθινο χρονο για αλλαγη ονοματος των αρχειων και για δημιουργια αρχειου παρακολουθησης"/>
+    <cbxResizeColsFiles Caption="Αλλαγη γραμμων στην λιστα αρχειων"/>
+    <cbxFilesIcons Caption="Εμφανιση εικονιδιων στην λιστα αρχειων"/>
+    <lbhFonts Caption="Γραμματοσειρες"/>
+    <cbxForceFont Caption="Γραμματοσειρα:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Τωρινη γραμματοσειρα των Windows"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Πληροφορια: Η Arial Unicode MS ειναι χρησιμη γραμματοσειρα (αν υπαρχει)"/>
+    <lbhDropdown Caption="Drop-down παραθυρο"/>
+    <lblDropdownMax Caption="Στοιχεια στο αρχειο παρακολουθησης:"/>
+    <cbxDropdownComplete Caption="Αυτοματη ολοκληρωση των γραμματων"/>
+    <lbhToolbars Caption="Εργαλια"/>
+    <lblIconSet Caption="Εικονιδια:"/>
+    <lblColorType Caption="Τυπος χρωματων:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Αυτοματα"/>
+        <Item Index="1" Value="Γκρι, αν ειναι απενεργοποιημενο"/>
+        <Item Index="2" Value="Φωτεινο, αν ειναι απενεργοποιημενο (XP Στιλ)"/>
+        <Item Index="3" Value="Σκοτεινο, αν ειναι απενεργοποιημενο"/>
+        <Item Index="4" Value="Συνεχεια χρωματιστο"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP στιλ"/>
+    <lbhDragdrop Caption="Drag &#38; Drop"/>
+    <cbxDragdropNoAsk Caption="Χρησιμοποιηση παντα των ακολουθων Παραμετρων:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Ενσωματωση αρχειων στον ενεργο χωρο αποθηκευσης"/>
+      <cbxFolders Caption="Ενσωματωση μαρκαρισμενων χωρον αποθηκευσης"/>
+      <cbxRecursive Caption="Ενσωματωση ολων των χωρον αποθηκευσης"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Ενεργοποιηση των χωρον αποθηκευσης"/>
+    <cbxLaunchFile Caption="Τρεξιμο με διπλο πατημα του ποντικιου"/>
+    <lbhRenaming Caption="Αλλαγη του ονοματος του αρχειου"/>
+    <cbxCopy Caption="Αντιγραφη αντι αλλαγη ονοματος"/>
+    <cbxGenerLog Caption="Δημιουργια αρχειου παρακολουθησης"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Δημιουργια χωρον αποθηκευσης, αν &#34;\&#34; βρεθηκαν στο ονομα"/>
+    <cbxDetectAbsdir Caption="Αδεια&#34;:\&#34; η &#34;\\&#34; για ολοκληρωμενο χωρο αποθηκευσης"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Εμφανιση:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Λιστα αρχειων"/>
+        <Item Index="1" Value="Επεξεργαζετε"/>
+        <Item Index="2" Value="Παρακολουθηση"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Διωξε το αρχειο παρακολουθησης"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Αλλαγη σε:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Λιστα αρχειων"/>
+        <Item Index="1" Value="Επεξεργαζετε"/>
+        <Item Index="2" Value="Αρχειο παρακολουθησης"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Διωξε την λιστα αρχειων"/>
+    <cbxClearBatchList Caption="Διωξε την λιστα επεξεργασιας"/>
+    <cbxSaveLog Caption="Αποθηκευση παρακολουθησης σε αρχειο:"/>
+    <btnSaveLog Hint="Ψαξε..."/>
+    <cbxSaveLogAppend Caption="Επικολληση"/>
+    <lbhLanguage Caption="Γλωσσα"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Ονομα"/>
+          <Column Index="1" Caption="Τοπικο ονομα"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Εκδωση:"/>
+      <lblMadeby Caption="Απο τον:"/>
+      <lblComments Caption="Σχολιο:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Διαλεξτε εναν χωρο αποθηκευσης για ενσωματωση">
+    <btn1 Caption="Βοηθεια"/>
+    <btn2 Caption="Διακοπη"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Δικτυο..."/>
+    <Options>
+      <cbxFiles Caption="Ενσωματωση αρχειων στον διαλεγμενο χωρο αποθηκευσης"/>
+      <cbxFolders Caption="Ενσωματωση διαλεγμενων χωρον αποθηκευσης"/>
+      <cbxRecursive Caption="Για ολους τους χωρους αποθηκευσης"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Drag &#38; Drop Παραμετροι">
+    <btn1 Caption="Βοηθεια"/>
+    <btn2 Caption="Διακοπη"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Drag και Drop για ενσωματωση αρχειων:"/>
+    <Options>
+      <cbxFiles Caption="Ενσωματωση αρχειων στον διαλεγμενο χωρο αποθηκευσης"/>
+      <cbxFolders Caption="Ενσωματωση διαλεγμενων χωρον αποθηκευσης"/>
+      <cbxRecursive Caption="Για ολους τους χωρους αποθηκευσης"/>
+    </Options>
+    <cbxNotAgain Caption="Μην ξανα δειξεις αυτο το παραθυρο (Κρατηση των παραμετρων)"/>
+  </DragdropOptionsForm>
+</Application>

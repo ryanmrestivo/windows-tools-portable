@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAAASCwAAEgsAAAAAAAAAAAAA////AAAAAAAAAP0AZWX/AAAAqgCqqqoAzMzMAO7u7gAiAAAAVAAAAP0AMgBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREYiIiIiIiIsRiZmZmZmZmhGJmZmZmZmaEYmZmZmZmZoRVmZmZmZmZxFWZmZmZmZnEVZmZmZmZmcRVmZmZmZmZxFCIiIiIiIjEUIiIiIiIiMRQiIiIiIiIxEjMzMzMzMzEREREREREREQAAAAAAAAAA
+Name=Dutch
+LocalName=Nederlands
+Version=2.10
+VersionFormat=2.12
+Comments=Redt een Argentijnse houtboer en print dit bericht.
+Authors=Ivo Blaauw|dramklukkelREMOVE@CAPSyahoo.com
+-->
+<Application>
+  <MainForm>
+    <tbTabs Caption="Pagina"/>
+    <tbProgram Caption="Programma"/>
+    <tbFiles Caption="Bestanden"/>
+    <tbMove Caption="Verplaats items"/>
+    <tbActions Caption="Acties"/>
+    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Toevoegen aan batch" Hint="Toevoegen aan batch|Voeg de geselecteerde acties en zijn instellingen toe"/>
+    <ActionBatchOpen Caption="Open..." Hint="Open|Open een batch bestand"/>
+    <ActionBatchSaveAs Caption="Opslaan..." Hint="Opslaan|Sla deze batch op naar een bestand"/>
+    <ActionBatchRemoveSel Caption="Weghalen sel." Hint="Weghalen geselecteerde|Haal geselecteerde acties weg van deze batch"/>
+    <ActionBatchClear Caption="Wis" Hint="Wis batch|Wis alle acties van de batch"/>
+    <ActionBatchNoRecent Caption="(geen recent bestand)"/>
+    <ActionAddFiles Caption="Bestanden toevoegen..." Hint="Bestand toevoegen|Voeg bestanden toe aan de lijst"/>
+    <ActionAddFolders Caption="Mappen toevoegen..." Hint="Mappen toevoegen|Voeg mappen of mapinhoud toe aan de lijst"/>
+    <ActionRemoveSelected Caption="Wis sel." Hint="Wis selectie|Wis geselecteerde bestanden uit de lijst"/>
+    <ActionRemoveAll Caption="Wis alles" Hint="Wis alles|Wis alle bestanden uit de lijst"/>
+    <ActionRemoveDead Caption="Wis ontbrekend" Hint="Wis ontbrekend|Wis ontbrekende bestanden van de lijst"/>
+    <ActionPreview Caption="Voorbeeld" Hint="Ververs voorbeeld|Ververs voorbeeldkolom met huidig geplande acties"/>
+    <ActionFromListClear Caption="Wis" Hint="Wis lijst|Wis lijst"/>
+    <ActionFromListOpen Caption="Openen..." Hint="Open|Laad een lijst van een bestand"/>
+    <ActionFromListSave Caption="Opslaan..." Hint="Opslaan|Sla de lijst op in een bestand"/>
+    <ActionMultistrReplClear Caption="Wis rooster" Hint="Wis tekenreeks rooster"/>
+    <ActionMultistrReplSave Caption="Opslaan" Hint="|Opslaan huidige verzameling met naam erboven"/>
+    <ActionMultistrReplDelete Caption="Verwijder" Hint="|Verwijder huidige geselcteerde verzameling"/>
+    <ActionMoveUp Caption="Omhoog" Hint="Verplaats omhoog|Verplaats geselecteerd items omhoog"/>
+    <ActionMoveDown Caption="Omlaag" Hint="Verplaats omlaag|Verplaats geselecteerde items omlaag"/>
+    <ActionMoveTop Caption="Bovenaan" Hint="Verplaats bovenaan|Verplaats geselecteerde items naar bovenaan lijst"/>
+    <ActionMoveBottom Caption="Onderaan" Hint="Move onderaan|Verplaats geselecteerde items naar onderaan lijst"/>
+    <ActionItemsUnsort Caption="Ongesorteerde items" Hint="|Wis sorteervolgorde"/>
+    <ActionItemsSelectAll Caption="Selecteer alles" Hint="Selecteer alles|Selecteer alle items"/>
+    <ActionItemsSelectNone Caption="Selecteer niets" Hint="Selecteer niets|Deselecteer alle items"/>
+    <ActionItemsSelectInvert Caption="Selectie omdraaien" Hint="Selectie omdraaien|Selectie omdraaien"/>
+    <ActionLogClear Caption="Wis" Hint="Wis|Wis log"/>
+    <ActionLogSave Caption="Opslaan..." Hint="Opslaan|Sla log op in bestand"/>
+    <ActionLogCopy Caption="Kopieer" Hint="Kopieer|Kopieer log naar klembord"/>
+    <ActionLogFilter Caption="Filter" Hint="Filter|Filter log items"/>
+    <ActionLogFilterOk Caption="Successen" Hint="Toon hernoemde bestanden|Toon vermeldingen succesvol hernoemde bestanden"/>
+    <ActionLogFilterError Caption="Fouten" Hint="Toon fouten|Toon vermeldingen van fouten"/>
+    <ActionLogFilterNot Caption="Niet hernoemd" Hint="Toon overgeslagen bestanden|Toon vermeldingen overgeslagen bestanden"/>
+    <ActionActionGo Caption="Ga" Hint="Ga|Start de hernoembewerking"/>
+    <ActionActionStop Caption="Stop" Hint="Stop|Stop de hernoembewerking"/>
+    <ActionOptions Caption="Opties..." Hint="Opties|Wijzig programma opties"/>
+    <ActionActionUndo Caption="Undo" Hint="Ongedaan maken|Ongedaan maken laatste hernoeming"/>
+    <ActionHelpContents Caption="Help" Hint="Help inhoud|Open help inhoud"/>
+    <ActionHelpAbout Caption="Over..." Hint="Over|Over dit programma"/>
+    <ActionExit Caption="Afsluiten" Hint="Afsluiten|Programma afsluiten"/>
+    <ActionAlwaysOnTop Caption="Bovenaan" Hint="Altijd bovenaan|Hou het programma altijd bovenaan"/>
+    <ActionTabFiles Caption="Bestanden" Hint="Bestanden|Toon bestanden"/>
+    <ActionTabActions Caption="Acties" Hint="Acties|Toon acties"/>
+    <ActionTabLog Caption="Log" Hint="Log|Toon log"/>
+    <lstFiles Hint="|Bestandslijst - Klik rechtermuisknop op kolomkoppen om aan te passen">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Map"/>
+          <Item Index="1" Text="Bestandsnaam"/>
+          <Item Index="2" Text="Volledig pad"/>
+          <Item Index="3" Text="Ext."/>
+          <Item Index="4" Text="Voorbeeld"/>
+          <Item Index="5" Text="grootte"/>
+          <Item Index="6" Text="Aanmaakdatum"/>
+          <Item Index="7" Text="Wijzigingsdatum"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Voorbeeld van geselecteerd bestand "/>
+    <grpBatch Caption="       Batch inhoud (geplande acties) "/>
+    <lstBatch Hint="|Batch inhoud (geplande acties)"/>
+    <lblPreviewOld Caption="Huidige naam:"/>
+    <lblPreviewNew Caption="Voorbeeld nieuw: "/>
+    <lstActions Hint="|Acties lijst">
+      <Items>
+        <Item Index="0" Value="Wijzig extentie"/>
+        <Item Index="1" Value="Tekenreeks vervanging"/>
+        <Item Index="2" Value="Meervoudig tekenreeks vervanging"/>
+        <Item Index="3" Value="Tekenreeks invoegen"/>
+        <Item Index="4" Value="Verplaats tekenreeks"/>
+        <Item Index="5" Value="Karakters verwijderen"/>
+        <Item Index="6" Value="Opsomming"/>
+        <Item Index="7" Value="Gebruik mp3 tag info"/>
+        <Item Index="8" Value="Gebruik datum &#38; tijd"/>
+        <Item Index="9" Value="Willekeurige namen"/>
+        <Item Index="10" Value="Hoofd- kleine letter"/>
+        <Item Index="11" Value="Gebruik namen uit lijst"/>
+        <Item Index="12" Value="Reguliere expressie"/>
+        <Item Index="13" Value="Gebruik EXIF info"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Vervang extensie met:"/>
+    <cbxChangeExtNoRepl Caption="Vervang extensie niet, voeg bij na huidige bestandsnaam"/>
+    <lblChangeExtNotes Caption="Let op:&lt;br&gt;- Gebruik geen punt, vul gewoon de extentie in&lt;br&gt;- Indien je een opvolgende extentie wilt maken, gebruik dan de &lt;LINK&gt;Opsomming&lt;/LINK&gt; actie"/>
+    <lblStrReplSearch Caption="Zoek op:"/>
+    <lblStrReplBy Caption="Vervang door:"/>
+    <cbxStrReplAll Caption="Vervang alle verschijningen"/>
+    <cbxStrReplCase Caption="Hoofdlettergevoelig"/>
+    <cbxStrReplExt Caption="Extenties in zoekopdracht meenemen"/>
+    <cbxStrReplOnlyExt Caption="Toepassen op extenties in plaats van naam"/>
+    <lblMultstrSearch Caption="Zoek naar:"/>
+    <lblMultstrReplBy Caption="Vervang door:"/>
+    <lblMultstrReplSet Caption="Voorgedefinieerde reeks:"/>
+    <cbxMultstrReplExt Caption="Extenties in zoekopdracht meenemen"/>
+    <cbxMultstrReplCase Caption="Hoofdlettergevoelig"/>
+    <lblMultstrReplNotes Caption="Let op:&lt;BR&gt;- Gebruik Ctrl+Plus (+) en Ctrl+Min (-) om een regel te wissen of toe te voegen op de huidige positie"/>
+    <lblStrInsStr Caption="Tekenreeks in te voegen:"/>
+    <lblStrInsPos Caption="Op positie:"/>
+    <rbtStrInsBegin Caption="Vanaf begin"/>
+    <rbtStrInsEnd Caption="Vanaf einde"/>
+    <cbxStrInsExt Caption="Toepassen op extenties in plaats van naam"/>
+    <lblStrInsNotes Caption="Let op:&lt;br&gt;- Indien je een tekenreeks wilt toevoegen voor of na een andere, gebruik dan &lt;LINK&gt;Tekenreeks vervanging&lt;/LINK&gt; actie&lt;br&gt;- %name% = Origineel bestandsnaam (zonder extentie)&lt;BR&gt;- %ext% = Origineel extentie (inclusief de punt)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Map naam&lt;BR&gt;- %% = % character&lt;BR&gt;zie &lt;LINK&gt;Help&lt;/LINK&gt; voor meer informatie"/>
+    <lblMoveStrFrom Caption="Vanaf positie:"/>
+    <rbtMoveStrFromBegin Caption="Vanaf begin"/>
+    <rbtMoveStrFromEnd Caption="Vanaf eind"/>
+    <lblMoveStrCount Caption="Aantal karakters te verplaatsen:"/>
+    <lblMoveStrTo Caption="Naar positie:"/>
+    <rbtMoveStrToBegin Caption="Vanaf begin"/>
+    <rbtMoveStrToEnd Caption="Vanaf eind"/>
+    <lblMoveStrNotes Caption="Let op:&lt;br&gt;- Indien je een speciefieke tekenreeks wilt verplaatsen, maar die zit niet altijd op dezelfde positie, gebruik dan  &lt;link&gt;Tekenreeks vervanging&lt;/link&gt; om het te verwijderen, vervolgens &lt;link&gt;Tekenreeks invoegen&lt;/link&gt; om het op de nieuwe plek in te voegen &lt;BR&gt;- De &#34;Naar positie&#34; waarde bevat niet de verplaatste karakters (d.w.z. het is alsof ze reeds verwijderd zijn)"/>
+    <lblCharDel Caption="Aantal karakters te verwijderen:"/>
+    <rbtCharDelPos Caption="Vanaf positie:"/>
+    <rbtCharDelBegin Caption="Vanaf begin"/>
+    <rbtCharDelEnd Caption="Vanaf eind"/>
+    <rbtCharDelStr Caption="Achter de tekenreeks:"/>
+    <rbtCharDelStr2 Caption="Voor de tekenreeks:"/>
+    <cbxCharDelExt Caption="Toepassen op extentie ipv op naam"/>
+    <lblCharDelNotes Caption="Let op:&lt;BR&gt;- Om een specifieke tekenreeks te verwijderen, gebruik dan &lt;LINK&gt;Tekenreeks vervanging&lt;/LINK&gt; actie en vervang de tekenreeks door een lege"/>
+    <lblEnumMask Caption="Masker:"/>
+    <lblEnumStart Caption="Start vanaf:"/>
+    <lblEnumDigits Caption="Aantal cijfers:"/>
+    <lblEnumIncr Caption="Toenemen met:"/>
+    <cbxEnumRestart Caption="Ga terug naar beginwaarden bij veranderen map"/>
+    <lblEnumNotes Caption="Let op:&lt;BR&gt;- %name% = Origineel bestandsnaam (zonder extentie)&lt;BR&gt;- %ext% = Orginele extentie (inclusief de punt)&lt;BR&gt;- %num% = Nummer&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mapnaam&lt;BR&gt;- %% = % character&lt;BR&gt;zie &lt;LINK&gt;Help&lt;/LINK&gt; voor meer informatie"/>
+    <lblMP3Mask Caption="Masker:"/>
+    <cbxMP3TwoDigit Caption="Twee-cijfer track nummer (voeg een '0' toe voor het nummer indien nodig)"/>
+    <cbxMP3Convert Caption="Converteer niet toegestane karakters zoals ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Let op:&lt;BR&gt;- %author% = Auteur&lt;BR&gt;- %title% = Titel&lt;BR&gt;- %album% = Album&lt;BR&gt;- %year% = Jaar&lt;BR&gt;- %genre% = Genre&lt;BR&gt;- %comm% = Commentaar&lt;BR&gt;- %track% = Track nummer (ID3V1.1)&lt;BR&gt;- %name% = Origineel bestandsnaam (zonder extentie)&lt;BR&gt;- %ext% = Orginele extentie (inclusief de punt)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mapnaam&lt;BR&gt;- %% = % character&lt;BR&gt;- $if(conditie,waar nietwaar)&lt;BR&gt;zie &lt;LINK&gt;Help&lt;/LINK&gt; voor meer informatie"/>
+    <lblDTMask Caption="Masker:"/>
+    <cbxDTSuffix Caption="Achtervoegsel indien meer dan een bestand met zelfde datum/tijd"/>
+    <lblDTWhich Caption="Gebuik datum:"/>
+    <rbtDTWhichCreation Caption="Aanmaak"/>
+    <rbtDTWhichModif Caption="Laatste wijziging"/>
+    <lblDTNotes Caption="Let op:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	Origineel bestandsnaam (zonder extentie)
+e	Orginele extentie (inclusief de punt)
+c	Datum en tijd met standaardindeling in Windows
+d	Dag zonder voorlopende nul (1-31)
+dd	Dag met voorlopende nul (01-31)
+ddd	Dag, korte naam (Zon-Zat)
+dddd	Dag, volledige naam (Zondag-Zaterdag)
+ddddd	Datum kort met standaardindeling in Windows
+dddddd	Datum lang met standaardindeling in Windows
+m	Maand zonder voorlopende nul (1-12)
+mm	Maand met voorlopende nul (01-12)
+mmm	Maand, korte naam (Jan-Dec)
+mmmm	Maand, volledige naam (Januari-December)
+yy	Jaar, 2-cijferig nummer (00-99)
+yyyy	Jaar, 4-cijferig nummer (0000-9999)
+h	Uur zonder voorlopende nul (0-23)
+hh	Uur met voorlopende nul (00-23)
+n	Minuut zonder voorlopende nul (0-59)
+nn	Minuut met voorlopende nul (00-59)
+s	Seconde zonder voorlopende nul (0-59)
+ss	Seconde met voorlopende nul (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	Gebruikt de 12-uursklok voor de voorafgaande h of hh
+a/p	Gebruikt de 12-uursklok voor de voorafgaande h of hh
+'xx'/"xx"	Karakters omvat met enkele of dubbele aanhalingstekens blijven ongewijzigd
+
+Indien m of mm onmiddellijk volgt op h of hh wordt minuut eerder gebruikt dan maand]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Masker: "/>
+    <lblRandomMethod Caption="Methode:"/>
+    <rbtRandomNumber Caption="Willekeurig nummer (8 cijfers)"/>
+    <rbtRandomTick Caption="Windows tick count"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="Let op:&lt;BR&gt;- %name% = Origineel bestandsnaam (zonder extentie)&lt;BR&gt;- %ext% = Orginele extentie (inclusief de punt)&lt;BR&gt;- %random% = Willekeurig gegenereerde tekenreeks&lt;BR&gt;- %% = % karakter&lt;BR&gt;zie &lt;LINK&gt;Help&lt;/LINK&gt; voor meer informatie"/>
+    <rbtCaseWords Caption="Hoofd de eerste letter na elke van deze karakters:"/>
+    <rbtCaseFirst Caption="Hoofd de eerste letter van het bestandsnaam"/>
+    <rbtCaseUpper Caption="Hoofd"/>
+    <rbtCaseLower Caption="Klein"/>
+    <cbxCaseLocale Caption="Gebruik Windows lokale instellingen om geaccentueerde tekens te wijzigen"/>
+    <cbxCaseIncludeExt Caption="Ook toepassen op extenties"/>
+    <cbxCaseOnlyExt Caption="Toepassen op extentie ipv op naam"/>
+    <cbxFromListExt Caption="Orginele extentie achtervoegen"/>
+    <cbxFromListOnlyExt Caption="Gebruik items als extenties in plaats van namen"/>
+    <lblFromListNotes Caption="Let op:&lt;BR&gt;- Elke regel van deze lijst zal gebruikt worden als naam voor een bestand. Items worden opvolgend gebruikt &lt;BR&gt;- Indien regels leeg zijn of indien er niet genoeg regels zijn, zullen de corresponderende bestanden niet hernoemd worden."/>
+    <lblRegexp Caption="Expressie:"/>
+    <lblRegexpRepl Caption="Nieuwe naam:"/>
+    <lblRegexpNotes Caption="Let op:&lt;BR&gt;- \ teken kan gebruikt worden  om speciale tekens te maskeren (zoals $ en anderen), gebruik een \\ voor een simpele \ in nieuwe naam (indien je de nieuwe naam naar een andere map wilt sturen)&lt;BR&gt;- Gebruik ^ om het begin van de naam aan te geven en $ voor het einde van de naam&lt;BR&gt;- De nieuwe naam moet $1, $2, etc. bevatten om aan te geven waar gevonden karakters zullen komen&lt;BR&gt;zie &lt;LINK&gt;Help&lt;/LINK&gt; voor meer informatie over regular expressions"/>
+    <lblExifMask Caption="Masker:"/>
+    <lblExifNotes Caption="Let op:&lt;BR&gt;- %name% = Origineel bestandsnaam (zonder extentie)&lt;BR&gt;- %ext% = Orginele extentie (inclusief de punt)&lt;BR&gt;- %datetimeoriginal% of %datetime% = Orginele datum en tijd van de afbeelding&lt;BR&gt;- %orientation% = Afbeelding orientatie&lt;BR&gt;- %flash% = Flits was aan of uit&lt;BR&gt;- %% = % character&lt;BR&gt;zie &lt;LINK&gt;Help&lt;/LINK&gt; voor meer informatie en voor complete lijst van EXIF tags"/>
+    <lstLog Hint="|Log"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Alle bestanden"/>
+      <Item Name="strfltTextFiles" Value="Tekst bestanden"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer batch bestanden"/>
+      <Item Name="strmsgSelectFiles" Value="Selecteer bestanden"/>
+      <Item Name="strmsgSelectFolder" Value="Selecteer map"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Bestanden toevoegen"/>
+      <Item Name="strmsgStatusRenaming" Value="Bestanden hernoemen"/>
+      <Item Name="strmsgFilesCount" Value="%d bestanden"/>
+      <Item Name="strmsgBusy" Value="Toepasssing is bezig: Hernoembewerking gaande."/>
+      <Item Name="strmsgNothingToDo" Value="Niets te doen: selecteer tenminste één bestand en een actie om uit te voeren."/>
+      <Item Name="strlogStartRename" Value="Hernoembewerking gestart"/>
+      <Item Name="strlogStartPreview" Value="Vernieuw voorbeeld"/>
+      <Item Name="strlogStartRevert" Value="Terugzetten naar vorige naam"/>
+      <Item Name="strlogEndRename" Value="Hernoembewerking afgerond"/>
+      <Item Name="strlogEndPreview" Value="Voorbeeld afgerond"/>
+      <Item Name="strlogEndRevert" Value="Terugzetbewerking afgerond"/>
+      <Item Name="strlogStoppedByUser" Value="Bewerking gestopt door gebruiker"/>
+      <Item Name="stradUnknown" Value="Doe niets"/>
+      <Item Name="stradInclExt" Value=", ook toepassen op extentie"/>
+      <Item Name="stradOnlyExt" Value=", Toepassen op extentie ipv op naam"/>
+      <Item Name="stradChangeExt" Value="Verander extentie naar &#34;%s&#34;"/>
+      <Item Name="stradChangeExtRmv" Value="Verwijder extentie"/>
+      <Item Name="stradChangeExtNoRepl" Value="Achtervoegen extentie &#34;%s&#34;"/>
+      <Item Name="stradStringRepl" Value="Vervang &#34;%s&#34; door &#34;%s&#34;"/>
+      <Item Name="stradStringReplAll" Value=", vervang alle voorvallen"/>
+      <Item Name="stradStringReplCase" Value=", hoofdlettergevoelig"/>
+      <Item Name="stradMultstrRepl" Value="Vervang meerdere reeksen met middels verzameling &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Voeg &#34;%s&#34; in op positie %d"/>
+      <Item Name="stradMoveStr" Value="Verplaats %d karakters van postie %d%s, naar positie %d%s"/>
+      <Item Name="stradCharDel" Value="Wis %d karakters"/>
+      <Item Name="stradCharDelPos" Value=" op positie %d"/>
+      <Item Name="stradCharDelStr" Value=" Achter de reeks &#34;%s&#34;"/>
+      <Item Name="stradEnum" Value="Genereer een opsomming met &#34;%s&#34; van %d tot %d met %d"/>
+      <Item Name="stradMP3" Value="Genereer namen met MP3 tags, gebaseerd op het masker &#34;%s&#34;"/>
+      <Item Name="stradMP3TwoDigit" Value=", voeg '0' in in track nummer indien nodig"/>
+      <Item Name="stradMP3Convert" Value=", converteer ongemachtigde karakters"/>
+      <Item Name="stradFromBegin" Value=", Vanaf begin"/>
+      <Item Name="stradFromEnd" Value=", Vanaf eind"/>
+      <Item Name="stradDateTime" Value="Genereer namen van bestandensdatum en -tijd, gebaseerd op het masker &#34;%s&#34;"/>
+      <Item Name="stradDateTimeCreat" Value=" gebruik aanmaakdatum"/>
+      <Item Name="stradDateTimeModif" Value=" gebruik laatste wijzigingsdatum"/>
+      <Item Name="stradDateTimeSuffix" Value=", achtervoegsel toevoegen indien nodig"/>
+      <Item Name="stradRandom" Value="Genereer willekeurige namen middels masker &#34;%s&#34;"/>
+      <Item Name="stradRandomNumbers" Value=", met nummers"/>
+      <Item Name="stradRandomTick" Value=", gebruik Windows' tick counter"/>
+      <Item Name="stradRandomGUID" Value=", gebruik GUIDs"/>
+      <Item Name="stradCase" Value="hoofd/kleine letter"/>
+      <Item Name="stradCaseWords" Value=" Hoofd eerste letter na een van de karakters &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" Hoofd eerste letter van de naam"/>
+      <Item Name="stradCaseUpper" Value=" alles in hoofdletters"/>
+      <Item Name="stradCaseLower" Value=" alles in kleine letters"/>
+      <Item Name="stradCaseLocale" Value=", gebruik Windows lokale instellingen"/>
+      <Item Name="stradFromList" Value="Hernoem bestanden middels gespecificeerde lijst"/>
+      <Item Name="stradFromListExt" Value=", achtervoegen Originele extentie"/>
+      <Item Name="stradFromListOnlyExt" Value=", gebruik items als extenties in plaats van namen"/>
+      <Item Name="stradRegexp" Value="Hernoem bestanden met behulp van reguliere expressie"/>
+      <Item Name="stradExif" Value="Genereer namen met EXIF info, gebaseerd op het masker &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Lege regels"/>
+      <Item Name="straeFromListEnd" Value="Einde van lijst"/>
+      <Item Name="strfsNotRenamed" Value="%s was niet hernoemd : %s"/>
+      <Item Name="strfsRenamed" Value="%s hernoemd naar %s"/>
+      <Item Name="strfsReverted" Value="%s teruggezet naar vorige naam %s"/>
+      <Item Name="strfsRenError" Value="Kon %s niet hernoemen naar %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Geen vorige naam opgeslagen voor %s om terug te zetten naar oude naam"/>
+      <Item Name="strfs404" Value="Bronbestand niet gevonden"/>
+      <Item Name="strfsAlreadyExist" Value="Een bestand of map met deze naam bestaat reeds"/>
+      <Item Name="strfeIdentical" Value="nieuwe naam is hetzelfde als oude naam"/>
+      <Item Name="strhintNotAgain" Value="Toon deze tip niet opnieuw"/>
+      <Item Name="strhintShowPreview" Value="Voorbeeld kolom is nu zichtbaar. Indien je het wilt verbergen, klik de rechtermuisknop op de kolomkop van de bestanden lijst."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="Over dit programma">
+    <btn1 Caption="Geschiedenis"/>
+    <btn2 Caption="Sluiten"/>
+    <tshGeneral Caption="Algemeen"/>
+    <tshCredits Caption="Credits"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Waarschuwing"/>
+        <Item Index="1" Value="Fout"/>
+        <Item Index="2" Value="Informatie"/>
+        <Item Index="3" Value="Bevestiging"/>
+        <Item Index="4" Value="&#38;Ja"/>
+        <Item Index="5" Value="&#38;Nee"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Annuleren"/>
+        <Item Index="8" Value="&#38;Afbreken"/>
+        <Item Index="9" Value="&#38;Opnieuw proberen"/>
+        <Item Index="10" Value="&#38;Negeren"/>
+        <Item Index="11" Value="&#38;Alles"/>
+        <Item Index="12" Value="Nee op alles"/>
+        <Item Index="13" Value="Ja op alles"/>
+        <Item Index="14" Value="&#38;Help"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Opties">
+    <btn1 Caption="Help"/>
+    <btn2 Caption="Annuleren"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Weergeven"/>
+    <tshAdding Caption="Bestanden &#38;&#38; Mappen"/>
+    <tshProcessing Caption="Verwerken"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Taal"/>
+    <lbhLists Caption="Lijsten"/>
+    <cbxRealtimeUpdate Caption="Real-time update tijdens hernoemen bestanden"/>
+    <cbxResizeColsFiles Caption="Auto-resize kolommen- of bestandenlijst"/>
+    <cbxFilesIcons Caption="Toon iconen in bestandenlijst, gebaseerd op bestandsextentie"/>
+    <lbhFonts Caption="Fonts"/>
+    <cbxForceFont Caption="Forceer het volgende font voor speciale karakters:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Standaard Windows font"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Let op: Arial Unicode MS wordt sterk aangeraden indien beschikbaar"/>
+    <lbhDropdown Caption="Drop-down velden"/>
+    <lblDropdownMax Caption="Aantal waarden in geschiedenis bewaren:"/>
+    <cbxDropdownComplete Caption="Autoaanvullen met geschiedenis tijdens typen"/>
+    <lbhToolbars Caption="Taakbalk"/>
+    <lblIconSet Caption="Pictogramreeks:"/>
+    <lblColorType Caption="Kleur soort:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatisch"/>
+        <Item Index="1" Value="Uitgegrijst wanneer inactief"/>
+        <Item Index="2" Value="Verbleekt wanneer inactief (XP stijl)"/>
+        <Item Index="3" Value="Verdonkerd wanneer inactief"/>
+        <Item Index="4" Value="Altijd gekleurd"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP stijl"/>
+    <lbhDragdrop Caption="Drag &#38; Drop"/>
+    <cbxDragdropNoAsk Caption="Niet vragen wat te doen, altijd de volgende opties gebruiken:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Toevoegen bestanden of geselecteerde map"/>
+      <cbxFolders Caption="Toevoegen geselecteerde mappen"/>
+      <cbxRecursive Caption="Deze twee opties ook op submappen toepassen"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Lijstgedrag"/>
+    <cbxLaunchFile Caption="Open bestand bij dubbelklik"/>
+    <lbhRenaming Caption="Bestandhernoeming"/>
+    <cbxCopy Caption="Kopieer in plaats van Hernoemen"/>
+    <cbxGenerLog Caption="Genereer log"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Forceer mappen (staat toe mappen te maken indien er &#34;\&#34; in namen zijn)"/>
+    <cbxDetectAbsdir Caption="Detecteer een &#34;:\&#34; of &#34;\\&#34; als absoluut pad (mag bestanden waar dan ook heen verplaatsen)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Schakel naar:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Bestanden lijst"/>
+        <Item Index="1" Value="Acties"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Wis log"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Schakel naar:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Bestanden lijst"/>
+        <Item Index="1" Value="Acties"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Wis bestanden lijst"/>
+    <cbxClearBatchList Caption="Wis batch lijst"/>
+    <cbxSaveLog Caption="Sla log op:"/>
+    <btnSaveLog Hint="Bladeren..."/>
+    <cbxSaveLogAppend Caption="Achterplakken aan huidig bestand"/>
+    <lbhLanguage Caption="Taal"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Naam"/>
+          <Column Index="1" Caption="Lokale naam"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Versie:"/>
+      <lblMadeby Caption="Gemaakt door:"/>
+      <lblComments Caption="Commentaar:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Selecteer toe te voegen mappen">
+    <btn1 Caption="Help"/>
+    <btn2 Caption="Annuleren"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Netwerk..."/>
+    <Options>
+      <cbxFiles Caption="Voeg bestanden of geselecteerde mappen"/>
+      <cbxFolders Caption="Voeg geselecteerde mappen toe"/>
+      <cbxRecursive Caption="Pas deze twee ook toe op submappen"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Drag &#38; Drop Opties">
+    <btn1 Caption="Help"/>
+    <btn2 Caption="Annuleren"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Opties gebruiken voor gedropte bestanden:"/>
+    <Options>
+      <cbxFiles Caption="Toevoegen bestanden of geselecteerde mappen"/>
+      <cbxFolders Caption="Toevoegen geselecteerde mappen"/>
+      <cbxRecursive Caption="Pas deze twee ook toe op submappen"/>
+    </Options>
+    <cbxNotAgain Caption="Venster niet nogmaals tonen (onthou geselecteerde opties)"/>
+  </DragdropOptionsForm>
+</Application>

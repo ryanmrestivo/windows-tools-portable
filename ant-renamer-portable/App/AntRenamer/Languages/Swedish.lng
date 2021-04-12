@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAzCwAAMwsAABAAAAAQAAAAAAAAAFAAAABmAAAAmAAAAK4AAACYMgAA/QAyAP9mMwAAAJgAAAC0AAAA/QBlZf8AmZmZAP//mQD//8sA////AP//////////AAAAAAAAAAAJUSLIjCIVkAHqQ+quNK1gAj6j6q4642ACM+rqrq4zYAzu7uqu7u7gCKqqqqqqqrAIqqqqqqqqsAzu7uqu7u7gAjTq6q6uM2ACPqPqrjrjYAHqQ+quM65gCXZm675mZrAAAAAAAAAAAP//////////
+Name=Swedish
+LocalName=Svenska
+Version=2.10
+VersionFormat=2.12
+Comments=Om du vill ändra något i den här språkfilen, öppnar du Swedish.lng i en vanlig textredigerare, som Anteckningar. Spara först en säkerhetskopia av originalfilen.
+Authors=Karin Andersson|karin@supportdata.net
+-->
+<Application>
+  <MainForm>
+    <tbTabs Caption="Sidor"/>
+    <tbProgram Caption="Program"/>
+    <tbFiles Caption="Arkiv"/>
+    <tbMove Caption="Flytta valda"/>
+    <tbActions Caption="Åtgärder"/>
+    <tbLog Caption="Logg"/>
+    <ActionBatchAddAction Caption="Lägg till i batchjobb" Hint="Lägg till i batchjobb|Lägg till den valda åtgärden och dess inställningar i batchjobbet"/>
+    <ActionBatchOpen Caption="Öppna..." Hint="Öppna|Öppna ett batchjobb"/>
+    <ActionBatchSaveAs Caption="Spara..." Hint="Spara|Spara detta batchjobb till en fil"/>
+    <ActionBatchRemoveSel Caption="Ta bort valda" Hint="Ta bort valda|Ta bort valda åtgärder ur batchjobbet"/>
+    <ActionBatchClear Caption="Töm" Hint="Töm batchjobbet|Ta bort alla åtgärder ur batchjobbet"/>
+    <ActionBatchNoRecent Caption="(ingen tidigare fil)"/>
+    <ActionAddFiles Caption="Lägg till filer..." Hint="Lägg till filer|Lägg till filer i listan"/>
+    <ActionAddFolders Caption="Lägg till mappar..." Hint="Lägg till mappar|Lägg till mappar eller mappinnehåll i listan"/>
+    <ActionRemoveSelected Caption="Ta bort valda" Hint="Ta bort valda|Ta bort valda filer från listan"/>
+    <ActionRemoveAll Caption="Ta bort alla" Hint="Ta bort alla|Ta bort alla filer från listan"/>
+    <ActionRemoveDead Caption="Ta bort ogiltiga" Hint="Ta bort ogiltiga|Ta bort ogiltiga filer från listan"/>
+    <ActionPreview Caption="Förgranska" Hint="Ladda om förgranskning|Ladda om förgranskningskolumnen med planerade åtgärder"/>
+    <ActionFromListClear Caption="Töm" Hint="Töm listan|Töm listan"/>
+    <ActionFromListOpen Caption="Öppna..." Hint="Öppna|Öppna en lista från en fil"/>
+    <ActionFromListSave Caption="Spara..." Hint="Spara|Spara listan till en fil"/>
+    <ActionMultistrReplClear Caption="Töm listan" Hint="Töm listan med textsträngar"/>
+    <ActionMultistrReplSave Caption="Spara" Hint="|Spara nuvarande urval under namnet som angetts ovan"/>
+    <ActionMultistrReplDelete Caption="Ta bort" Hint="|Ta bort valet ovan"/>
+    <ActionMoveUp Caption="Upp" Hint="Flytta upp|Flytta valda uppåt"/>
+    <ActionMoveDown Caption="Ned" Hint="Flytta ned|Flytta valda nedåt"/>
+    <ActionMoveTop Caption="Överst" Hint="Lägg överst|Lägg valda överst i listan"/>
+    <ActionMoveBottom Caption="Nederst" Hint="Lägg nederst|Lägg valda nederst i listan"/>
+    <ActionItemsUnsort Caption="Osorterat" Hint="|Ta bort nuvarande sorteringsordning"/>
+    <ActionItemsSelectAll Caption="Markera alla" Hint="Markera alla|Markera alla"/>
+    <ActionItemsSelectNone Caption="Avmarkera alla" Hint="Avmarkera alla|Avmarkera alla"/>
+    <ActionItemsSelectInvert Caption="Omvänd markering" Hint="Omvänd markering|Omvänd markering"/>
+    <ActionLogClear Caption="Töm" Hint="Töm|Töm loggen"/>
+    <ActionLogSave Caption="Spara..." Hint="Spara|Spara loggen till fil"/>
+    <ActionLogCopy Caption="Kopiera" Hint="Kopiera|Kopiera loggen till klipphanteraren"/>
+    <ActionLogFilter Caption="Filtrera" Hint="Filtrera|Filtrera logginnehållet"/>
+    <ActionLogFilterOk Caption="Utförda" Hint="Visa utförda|Visa utförda namnbyten"/>
+    <ActionLogFilterError Caption="Fel" Hint="Visa fel|Visa nambyten som på grund av fel inte har utförts"/>
+    <ActionLogFilterNot Caption="Ej nambyte" Hint="Visa överhoppade filer|Visa filer som inte har fått nytt namn"/>
+    <ActionActionGo Caption="Kör" Hint="Kör|Starta namnbytet"/>
+    <ActionActionStop Caption="Stopp" Hint="Stopp|Avbryt namnbytet"/>
+    <ActionOptions Caption="Inställningar..." Hint="Inställningar|Ändra programinställningar"/>
+    <ActionActionUndo Caption="Ångra" Hint="Ångra|Ångra senaste namnbytet"/>
+    <ActionHelpContents Caption="Hjälp" Hint="Hjälp|Öppna hjälpen"/>
+    <ActionHelpAbout Caption="Om..." Hint="Om|Om Ant Renamer"/>
+    <ActionExit Caption="Stäng" Hint="Stäng|Stäng Ant Renamer"/>
+    <ActionAlwaysOnTop Caption="Överst" Hint="Alltid överst|Behåll fönstret överst"/>
+    <ActionTabFiles Caption="Filer" Hint="Filer|Visa filer"/>
+    <ActionTabActions Caption="Åtgärder" Hint="Åtgärder|Visa åtgärder"/>
+    <ActionTabLog Caption="Logg" Hint="Logg|Visa logg"/>
+    <lstFiles Hint="|Fillista - högerklicka på rubriken för att ange vilka kolumner som skall visas">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Mapp"/>
+          <Item Index="1" Text="Filnamn"/>
+          <Item Index="2" Text="Sökväg"/>
+          <Item Index="3" Text="Filtillägg"/>
+          <Item Index="4" Text="Förgranska"/>
+          <Item Index="5" Text="Storlek"/>
+          <Item Index="6" Text="Skapad"/>
+          <Item Index="7" Text="Ändrad"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Förgranskning av vald fil "/>
+    <grpBatch Caption="       Batchjobbets innehåll (planerade åtgärder) "/>
+    <lstBatch Hint="|Batchjobbets innehåll (planerade åtgärder)"/>
+    <lblPreviewOld Caption="Nuvarande namn:"/>
+    <lblPreviewNew Caption="Nytt namn:"/>
+    <lstActions Hint="|Åtgärdslista">
+      <Items>
+        <Item Index="0" Value="Byt filtillägg"/>
+        <Item Index="1" Value="Ersätt textsträng"/>
+        <Item Index="2" Value="Ersätt flera textsträngar"/>
+        <Item Index="3" Value="Sätt in ny textsträng"/>
+        <Item Index="4" Value="Flytta textsträng"/>
+        <Item Index="5" Value="Ta bort tecken"/>
+        <Item Index="6" Value="Uppräkning"/>
+        <Item Index="7" Value="Använd mp3-tagginfo"/>
+        <Item Index="8" Value="Använd datum &#38; tid"/>
+        <Item Index="9" Value="Slumpa namn"/>
+        <Item Index="10" Value="Ändra skiftläge"/>
+        <Item Index="11" Value="Hämta namn från en lista"/>
+        <Item Index="12" Value="Reguljära uttryck"/>
+        <Item Index="13" Value="Använd EXIF-info"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Ersätt filtillägg med:"/>
+    <cbxChangeExtNoRepl Caption="Ändra inte filtillägg, utan lägg till det nya sist"/>
+    <lblChangeExtNotes Caption="Användning:&lt;br&gt;- Ta inte med punkten, utan bara det nya tillägget&lt;br&gt;- Om du vill ha ett inkrementerat tillägg använder du åtgärden &lt;LINK&gt;Uppräkning&lt;/LINK&gt;"/>
+    <lblStrReplSearch Caption="Sök efter:"/>
+    <lblStrReplBy Caption="Ersätt med:"/>
+    <cbxStrReplAll Caption="Ersätt alla förekomster"/>
+    <cbxStrReplCase Caption="Skiftlägeskänsligt"/>
+    <cbxStrReplExt Caption="Ta med filtillägget i sökningen"/>
+    <cbxStrReplOnlyExt Caption="Tillämpa på filtillägg i stället för på namn"/>
+    <lblMultstrSearch Caption="Sök efter:"/>
+    <lblMultstrReplBy Caption="Ersätt med:"/>
+    <lblMultstrReplSet Caption="Fördefinierat urval:"/>
+    <cbxMultstrReplExt Caption="Ta med filtillägget i sökningen"/>
+    <cbxMultstrReplCase Caption="Skiftlägeskänsligt"/>
+    <lblMultstrReplNotes Caption="Användning:&lt;BR&gt;- Använd Ctrl+plustecken (+) och Ctrl+minustecken (-) för att sätta in eller ta bort en rad på aktuell plats"/>
+    <lblStrInsStr Caption="Textsträng att sätta in:"/>
+    <lblStrInsPos Caption="På plats:"/>
+    <rbtStrInsBegin Caption="Räknat framifrån"/>
+    <rbtStrInsEnd Caption="Räknat bakifrån"/>
+    <cbxStrInsExt Caption="Tillämpa på filtillägg i stället för på namn"/>
+    <lblStrInsNotes Caption="Användning:&lt;br&gt;- Om du vill sätta in en ny textsträng före eller efter en annan, använder du åtgärden &lt;LINK&gt;Ersätt textsträng&lt;/LINK&gt; &lt;br&gt;- %name% = Originalfilens namn (utan filtillägg)&lt;BR&gt;- %ext% = Ursprungligt filtillägg (inklusive punkten)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mappnamn&lt;BR&gt;- %% = %-tecknet&lt;BR&gt;Se &lt;LINK&gt;Hjälp&lt;/LINK&gt; för mer information"/>
+    <lblMoveStrFrom Caption="Från plats:"/>
+    <rbtMoveStrFromBegin Caption="Räknat framifrån"/>
+    <rbtMoveStrFromEnd Caption="Räknat bakifrån"/>
+    <lblMoveStrCount Caption="Antal tecken att flytta:"/>
+    <lblMoveStrTo Caption="Till plats:"/>
+    <rbtMoveStrToBegin Caption="Räknat framifrån"/>
+    <rbtMoveStrToEnd Caption="Räknat bakifrån"/>
+    <lblMoveStrNotes Caption="Användning:&lt;br&gt;- Om du vill flytta en angiven textsträng, men denna kan finnas på olika positioner i filnamnen, använder du först &lt;link&gt;Ersätt textsträng&lt;/link&gt; för att ta bort den, och sedan &lt;link&gt;Sätt in ny textsträng&lt;/link&gt; för att sätta in den på sin nya plats&lt;BR&gt;- Värdet &#34;Till plats&#34; räknar inte in de flyttade tecknen (de hanteras alltså som om de redan vore borttagna)"/>
+    <lblCharDel Caption="Antal tecken att ta bort:"/>
+    <rbtCharDelPos Caption="Från plats:"/>
+    <rbtCharDelBegin Caption="Räknat framifrån"/>
+    <rbtCharDelEnd Caption="Räknat bakifrån"/>
+    <rbtCharDelStr Caption="Efter textsträngen:"/>
+    <rbtCharDelStr2 Caption="Före textsträngen:"/>
+    <cbxCharDelExt Caption="Tillämpa på filtillägg i stället för på namn"/>
+    <lblCharDelNotes Caption="Användning:&lt;BR&gt;- För att ta bort en angiven textsträng använder du åtgärden &lt;LINK&gt;Ersätt textsträng&lt;/LINK&gt; och ersätter textsträngen med en tom sträng"/>
+    <lblEnumMask Caption="Mask:"/>
+    <lblEnumStart Caption="Börja med:"/>
+    <lblEnumDigits Caption="Antal siffror:"/>
+    <lblEnumIncr Caption="Öka med:"/>
+    <cbxEnumRestart Caption="Återgå till startvärdet vid byte av mapp"/>
+    <lblEnumNotes Caption="Användning:&lt;BR&gt;- %name% = Ursprungligt filnamn (utan filtillägg)&lt;BR&gt;- %ext% = Ursprungligt filtillägg (inklusive punkten)&lt;BR&gt;- %num% = Nummer&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mappnamn&lt;BR&gt;- %% = %-tecknet&lt;BR&gt;Se &lt;LINK&gt;Hjälp&lt;/LINK&gt; för mer information"/>
+    <lblMP3Mask Caption="Mask:"/>
+    <cbxMP3TwoDigit Caption="Tvåsiffrigt spårnummer (inled med '0' om spårnumret är ensiffrigt)"/>
+    <cbxMP3Convert Caption="Konvertera otillåtna tecken som ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Användning:&lt;BR&gt;- %author% = Upphovsman&lt;BR&gt;- %title% = Titel&lt;BR&gt;- %album% = Album&lt;BR&gt;- %year% = År&lt;BR&gt;- %genre% = Genre&lt;BR&gt;- %comm% = Kommentar&lt;BR&gt;- %track% = Spårnummer (ID3V1.1)&lt;BR&gt;- %name% = Ursprungligt filnamn (utan filtillägg)&lt;BR&gt;- %ext% = Ursprungligt filtillägg (inklusiva punkten)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Mappnamn&lt;BR&gt;- %% = % Tecken&lt;BR&gt;- $if(villkor, sant värde, falskt värde)&lt;BR&gt;Se &lt;LINK&gt;Hjälp&lt;/LINK&gt; för mer information"/>
+    <lblDTMask Caption="Mask:"/>
+    <cbxDTSuffix Caption="Lägg till suffix om mer än en fil har samma datum/tid"/>
+    <lblDTWhich Caption="Använd datum:"/>
+    <rbtDTWhichCreation Caption="Skapad"/>
+    <rbtDTWhichModif Caption="Senast ändrad"/>
+    <lblDTNotes Caption="Användning:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	Ursprungligt filnamn (utan filtillägg)
+e	Ursprungligt filtillägg (inklusive punkten)
+c	Datum och tid i Windows standardformat 
+d	Dag utan inledande nolla (1-31)
+dd	Dag med inledande nolla (01-31)
+ddd	Veckodag avkortad (må-sö)
+dddd	Veckodag oavkortad (måndag-söndag)
+ddddd	Datum i Windows kortformat (2012-10-21)
+dddddd	Datum i Windows långa format (den 21 oktober 2012)
+m	Månad utan inledande nolla (1-12)
+mm	Månad med inledande nolla (01-12)
+mmm	Kort månadsnamn (jan-dec)
+mmmm	Långt månadsnamn (januari-december)
+yy	Årtal med 2 siffror (00-99)
+yyyy	Årtal med 4 siffror (0000-9999)
+h	Timme utan inledande nolla (0-23)
+hh	Timme med inledande nolla (00-23)
+n	Minut utan inledande nolla (0-59)
+nn	Minut med inledande nolla (00-59)
+s	Sekund utan inledande nolla (0-59)
+ss	Sekund med inledande nolla (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	Anger 12-timmarsvisning med am/pm efter h, hm, hh och hhmm (0152pm i stället för 1352)
+a/p	Anger 12-timmarsvisning med a/p efter h, hm, hh och hhmm (0152p i stället för 1352)
+'xx'/"xx"	Tecken inom enkla eller dubbla citationstecken ändras inte
+
+Om m eller mm skrivs direkt efter h eller hh, används minuter i stället för månad]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Mask:"/>
+    <lblRandomMethod Caption="Metod:"/>
+    <rbtRandomNumber Caption="Slumptal (8 siffror)"/>
+    <rbtRandomTick Caption="Windows' TickCount (antal millisekunder sedan datorn startades)"/>
+    <rbtRandomGUID Caption="GUID (globalt unik identifierare)"/>
+    <lblRandomNotes Caption="Användning:&lt;BR&gt;- %name% = Ursprungligt filnamn (utan filtillägg)&lt;BR&gt;- %ext% = Ursprungligt filtillägg (inklusive punkten)&lt;BR&gt;- %random% = Slumpad sträng&lt;BR&gt;- %% = %-tecknet&lt;BR&gt;Se &lt;LINK&gt;Hjälp&lt;/LINK&gt; för mer information"/>
+    <rbtCaseWords Caption="Första bokstaven efter följande tecken skall vara stor:"/>
+    <rbtCaseFirst Caption="Stor första bokstav i filnamnet"/>
+    <rbtCaseUpper Caption="Endast stora bokstäver"/>
+    <rbtCaseLower Caption="Endast små bokstäver"/>
+    <cbxCaseLocale Caption="Använd Windows' inställningar för att ändra accentuerade tecken"/>
+    <cbxCaseIncludeExt Caption="Hantera filtillägg på samma sätt"/>
+    <cbxCaseOnlyExt Caption="Tillämpa på filtillägg i stället för på filnamn"/>
+    <cbxFromListExt Caption="Lägg till filens ursprungliga filtillägg"/>
+    <cbxFromListOnlyExt Caption="Använd listans rader som filtillägg i stället för som filnamn"/>
+    <lblFromListNotes Caption="Användning:&lt;BR&gt;- Varje rad i listan blir namnet på en fil. Raderna används i tur och ordning.&lt;BR&gt;- Om raderna är tomma eller om det inte finns tillräckligt många rader, byts inte namnen på motsvarande filer."/>
+    <lblRegexp Caption="Uttryck:"/>
+    <lblRegexpRepl Caption="Nytt namn:"/>
+    <lblRegexpNotes Caption="Användning:&lt;BR&gt;- Tecknet \ kan användas för att undvika specialtecken (som $ med flera) - använd \\ för att få en enkel \ i det nya namnet (om du vill placera filen med det nya filnamnet i en annan mapp)&lt;BR&gt;- Använd ^ för att markera början på namnet och $ för att markera slutet &lt;BR&gt;- Det nya namnet måste innehålla $1, $2, osv för att ange var de funna tecknen skall placeras&lt;BR&gt;Se &lt;LINK&gt;Hjälp&lt;/LINK&gt; för mer information om reguljära uttryck"/>
+    <lblExifMask Caption="Mask:"/>
+    <lblExifNotes Caption="Användning:&lt;BR&gt;- %name% = Ursprungligt filnamn (utan filtillägg)&lt;BR&gt;- %ext% = Ursprungligt filtillägg (inklusive punkten)&lt;BR&gt;- %datetimeoriginal% / %datetime% = Bildens ursprungliga datum och tid&lt;BR&gt;- %orientation% = Bildens riktning&lt;BR&gt;- %flash% = Blixten på eller av&lt;BR&gt;- %% = %-tecknet&lt;BR&gt;Se &lt;LINK&gt;Hjälp&lt;/LINK&gt; för mer information och en komplett lista över EXIF-taggar"/>
+    <lstLog Hint="|Logg"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Alla filer"/>
+      <Item Name="strfltTextFiles" Value="Textfiler"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer batchfiler"/>
+      <Item Name="strmsgSelectFiles" Value="Välj filer"/>
+      <Item Name="strmsgSelectFolder" Value="Välj mapp"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Lägger till filer"/>
+      <Item Name="strmsgStatusRenaming" Value="Döper om filer"/>
+      <Item Name="strmsgFilesCount" Value="%d filer"/>
+      <Item Name="strmsgBusy" Value="Vänta: Namnbytet pågår."/>
+      <Item Name="strmsgNothingToDo" Value="Inga val gjorda: Välj minst en fil och en åtgärd som skall utföras."/>
+      <Item Name="strlogStartRename" Value="Namnbytet har startat"/>
+      <Item Name="strlogStartPreview" Value="Ladda om förgranskning"/>
+      <Item Name="strlogStartRevert" Value="Återgå till tidigare namn"/>
+      <Item Name="strlogEndRename" Value="Namnbytet har avslutats"/>
+      <Item Name="strlogEndPreview" Value="Förgranskningen är klar"/>
+      <Item Name="strlogEndRevert" Value="Återgången är klar"/>
+      <Item Name="strlogStoppedByUser" Value="Processen avbröts av användaren"/>
+      <Item Name="stradUnknown" Value="Gör ingenting"/>
+      <Item Name="stradInclExt" Value=", tillämpa även på filtillägg"/>
+      <Item Name="stradOnlyExt" Value=", tillämpa på filtillägg i stället för på filnamn"/>
+      <Item Name="stradChangeExt" Value="Ändra filtillägg till &#34;%s&#34;"/>
+      <Item Name="stradChangeExtRmv" Value="Ta bort filtillägg"/>
+      <Item Name="stradChangeExtNoRepl" Value="Lägg till filtillägget &#34;%s&#34;"/>
+      <Item Name="stradStringRepl" Value="Ersätt &#34;%s&#34; med &#34;%s&#34;"/>
+      <Item Name="stradStringReplAll" Value=", ersätt alla förekomster"/>
+      <Item Name="stradStringReplCase" Value=", skiftlägeskänsligt"/>
+      <Item Name="stradMultstrRepl" Value="Ersätt flera strängar med uppsättningen &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Sätt in &#34;%s&#34; på platsen %d"/>
+      <Item Name="stradMoveStr" Value="Flytta %d tecken från platsen %d%s till platsen %d%s"/>
+      <Item Name="stradCharDel" Value="Ta bort %d tecken"/>
+      <Item Name="stradCharDelPos" Value=" på platsen %d"/>
+      <Item Name="stradCharDelStr" Value=" efter strängen &#34;%s&#34;"/>
+      <Item Name="stradEnum" Value="Skapa en uppräkning utifrån masken &#34;%s&#34; från %d till %d med %d"/>
+      <Item Name="stradMP3" Value="Skapa namn med MP3-taggar, utifrån masken &#34;%s&#34;"/>
+      <Item Name="stradMP3TwoDigit" Value=", inled med '0' i ensiffriga spårnummer"/>
+      <Item Name="stradMP3Convert" Value=", omvandla ogiltiga tecken"/>
+      <Item Name="stradFromBegin" Value=", från början"/>
+      <Item Name="stradFromEnd" Value=", från slutet"/>
+      <Item Name="stradDateTime" Value="Skapa namn av filernas datum och tid, utifrån masken &#34;%s&#34;"/>
+      <Item Name="stradDateTimeCreat" Value=" använd filens skapandedatum"/>
+      <Item Name="stradDateTimeModif" Value=" använd datum för senast ändrad"/>
+      <Item Name="stradDateTimeSuffix" Value=", sätt om nödvändigt in ett suffix"/>
+      <Item Name="stradRandom" Value="Skapa slumpnamn utifrån masken &#34;%s&#34;"/>
+      <Item Name="stradRandomNumbers" Value=", med nummer"/>
+      <Item Name="stradRandomTick" Value=", med Windows' TickCount"/>
+      <Item Name="stradRandomGUID" Value=", med GUID"/>
+      <Item Name="stradCase" Value="Ändra skiftläge:"/>
+      <Item Name="stradCaseWords" Value=" första bokstaven stor efter vart och ett av tecknen &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" inled namnet med stor bokstav"/>
+      <Item Name="stradCaseUpper" Value=" bara stora bokstäver"/>
+      <Item Name="stradCaseLower" Value=" bara små bokstäver"/>
+      <Item Name="stradCaseLocale" Value=", använd Windows' inställningar"/>
+      <Item Name="stradFromList" Value="Byt filnamn utifrån angiven lista"/>
+      <Item Name="stradFromListExt" Value=", lägg till ursprungliga filtillägget"/>
+      <Item Name="stradFromListOnlyExt" Value=", använd listan som filtillägg i stället för som filnamn"/>
+      <Item Name="stradRegexp" Value="Byt filnamn med hjälp av ett reguljärt uttryck"/>
+      <Item Name="stradExif" Value="Skapa namn av EXIF-info, utifrån masken &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Tom rad"/>
+      <Item Name="straeFromListEnd" Value="Slut på listan"/>
+      <Item Name="strfsNotRenamed" Value="%s namnändrades inte : %s"/>
+      <Item Name="strfsRenamed" Value="%s namn ändrat till %s"/>
+      <Item Name="strfsReverted" Value="%s återgått till tidigare namn %s"/>
+      <Item Name="strfsRenError" Value="Kunde inte byta namnet %s till %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Inga tidigare namn lagrade för %s att återgå till"/>
+      <Item Name="strfs404" Value="Källfilen hittas inte"/>
+      <Item Name="strfsAlreadyExist" Value="En fil eller mapp med detta namn finns redan"/>
+      <Item Name="strfeIdentical" Value="det nya namnet är detsamma som det gamla"/>
+      <Item Name="strhintNotAgain" Value="Visa inte detta tips igen"/>
+      <Item Name="strhintShowPreview" Value="Förgranskningskolumnen är nu synlig. Om du vill dölja den, högerklickar du i fillistans kolumnrubrik och avmarkerar Förgranska."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="Om Ant Renamer">
+    <btn1 Caption="Bakgrund"/>
+    <btn2 Caption="Stäng"/>
+    <tshGeneral Caption="Allmänt"/>
+    <tshCredits Caption="Erkännanden"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Varning"/>
+        <Item Index="1" Value="Fel"/>
+        <Item Index="2" Value="Information"/>
+        <Item Index="3" Value="Bekräfta"/>
+        <Item Index="4" Value="&#38;Ja"/>
+        <Item Index="5" Value="&#38;Nej"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Avbryt"/>
+        <Item Index="8" Value="&#38;Avsluta"/>
+        <Item Index="9" Value="&#38;Försök igen"/>
+        <Item Index="10" Value="&#38;Ignorera"/>
+        <Item Index="11" Value="&#38;Alla"/>
+        <Item Index="12" Value="Nej till alla"/>
+        <Item Index="13" Value="Ja till alla"/>
+        <Item Index="14" Value="&#38;Hjälp"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Inställningar">
+    <btn1 Caption="Hjälp"/>
+    <btn2 Caption="Avbryt"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Visa"/>
+    <tshAdding Caption="Filer &#38;&#38; Mappar"/>
+    <tshProcessing Caption="Hantering"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Språk"/>
+    <lbhLists Caption="Listor"/>
+    <cbxRealtimeUpdate Caption="Uppdatera i realtid under namnbyte på filer"/>
+    <cbxResizeColsFiles Caption="Anpassa automatiskt kolumner i fillistan"/>
+    <cbxFilesIcons Caption="Visa ikoner i fillistan, beroende på filtillägget"/>
+    <lbhFonts Caption="Teckensnitt"/>
+    <cbxForceFont Caption="Använd följande teckensnitt i kontroller som kräver specialtecken:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Windows standardteckensnitt"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="OBS: Välj om möjligt Arial Unicode MS"/>
+    <lbhDropdown Caption="Rullgardinsfält"/>
+    <lblDropdownMax Caption="Antal värden som sparas i historien:"/>
+    <cbxDropdownComplete Caption="Komplettera automatiskt under inskrivning med värden från historien"/>
+    <lbhToolbars Caption="Verktygsrader"/>
+    <lblIconSet Caption="Ikonuppsättning:"/>
+    <lblColorType Caption="Färgval:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatisk"/>
+        <Item Index="1" Value="Gråfärga inaktiva"/>
+        <Item Index="2" Value="Ljus färg på inaktiva (XP-stil)"/>
+        <Item Index="3" Value="Mörk färg på inaktiva"/>
+        <Item Index="4" Value="Alltid färgad"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP-stil"/>
+    <lbhDragdrop Caption="Dra &#38; släpp"/>
+    <cbxDragdropNoAsk Caption="Fråga inte. Använd alltid följande val:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Lägg till filerna från valda mappar"/>
+      <cbxFolders Caption="Lägg till valda mappar"/>
+      <cbxRecursive Caption="Använd dessa båda val även på undermappar"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Listfunktioner"/>
+    <cbxLaunchFile Caption="Öppna filen vid dubbelklick"/>
+    <lbhRenaming Caption="Namnbyte på filer"/>
+    <cbxCopy Caption="Kopiera i stället för att byta namn"/>
+    <cbxGenerLog Caption="Skapa logg"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Skapa mappar (gör att nya mappar skapas när &#34;\&#34; finns i nya namnen)"/>
+    <cbxDetectAbsdir Caption="Hantera &#34;:\&#34; eller &#34;\\&#34; som absolut sökväg (filer kan flyttas till valfri plats)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Växla till:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Fillista"/>
+        <Item Index="1" Value="Åtgärder"/>
+        <Item Index="2" Value="Logg"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Rensa logg"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Växla till:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Fillista"/>
+        <Item Index="1" Value="Åtgärder"/>
+        <Item Index="2" Value="Logg"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Töm fillistan"/>
+    <cbxClearBatchList Caption="Töm batchjobblistan"/>
+    <cbxSaveLog Caption="Spara logg till fil:"/>
+    <btnSaveLog Hint="Bläddra..."/>
+    <cbxSaveLogAppend Caption="Lägg till i aktuell fil"/>
+    <lbhLanguage Caption="Språk"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Namn"/>
+          <Column Index="1" Caption="Lokalt namn"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Version:"/>
+      <lblMadeby Caption="Översättning:"/>
+      <lblComments Caption="Kommentarer:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Välj mappar att lägga till">
+    <btn1 Caption="Hjälp"/>
+    <btn2 Caption="Avbryt"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Nätverk..."/>
+    <Options>
+      <cbxFiles Caption="Lägg till filer från valda mappar"/>
+      <cbxFolders Caption="Lägg till valda mappar"/>
+      <cbxRecursive Caption="Använd dessa båda val även på undermappar"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Dra &#38; släpp-inställningar">
+    <btn1 Caption="Hjälp"/>
+    <btn2 Caption="Avbryt"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Ange hur släppta filer/mappar skall hanteras:"/>
+    <Options>
+      <cbxFiles Caption="Lägg till filer från valda mappar"/>
+      <cbxFolders Caption="Lägg till valda mappar"/>
+      <cbxRecursive Caption="Använd dessa båda val även på undermappar"/>
+    </Options>
+    <cbxNotAgain Caption="Visa inte detta fönster igen (använd dessa val i fortsättningen)"/>
+  </DragdropOptionsForm>
+</Application>

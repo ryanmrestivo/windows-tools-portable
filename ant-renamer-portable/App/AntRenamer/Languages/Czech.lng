@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAjCwAAIwsAABAAAAAQAAAAAAAAAGYAAACYAAAAAACqAAAA/QCZmf8AzMzMAO7u7gD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIAAAAAAAAAAABMzMzMzMzQAEkRERERERQASJERERERFABIiREREREUAEiIkRERERQASIiJmZmZnABIiJmZmZmcAEiJmZmZmZwASJmZmZmZnABJmZmZmZmcAJ3d3d3d3dwAAAAAAAAAACIiIiIiIiIiIiIiIiIiIiI
+Name=Czech
+LocalName=Česky
+Version=2.09
+VersionFormat=2.12
+Comments=Navštivte také moji stránku s překlady: <link>www.gvg.cz</link>
+Authors=GVG|cestiny@gvg.cz
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Přidat k dávce" Hint="Přidat k dávce|Přidá vybranou akci a její nastavení do dávky"/>
+    <ActionBatchOpen Caption="Otevřít..." Hint="Otevřít|Otevře soubor s dávkou"/>
+    <ActionBatchSaveAs Caption="Uložit jako..." Hint="Uložit jako|Uloží tuto dávku do souboru"/>
+    <ActionBatchRemoveSel Caption="Odebrat vybrané" Hint="Odebrat vybrané|Odebere vybrané akce z dávky"/>
+    <ActionBatchClear Caption="Vymazat" Hint="Vymazat dávku|Odebere všechny akce z dávky"/>
+    <ActionBatchNoRecent Caption="(žádný naposledy použitý soubor)"/>
+    <ActionAddFiles Caption="Přidat soubory..." Hint="Přidat soubory|Přidá soubory do seznamu"/>
+    <ActionAddFolders Caption="Přidat složky..." Hint="Přidat složky|Přidá obsah složky(žek) do seznamu"/>
+    <ActionRemoveSelected Caption="Odebrat vybrané" Hint="Odebrat vybrané|Odebere vybrané soubory ze seznamu"/>
+    <ActionRemoveAll Caption="Odebrat vše" Hint="Odebrat vše|Odebere všechny soubory ze seznamu"/>
+    <ActionRemoveDead Caption="Odebrat mrtvé" Hint="Odebrat mrtvé|Odebere mrtvé soubory ze seznamu"/>
+    <ActionPreview Caption="Náhled" Hint="Obnovit náhled|Obnoví sloupec náhledu současně naplánovanými akcemi"/>
+    <ActionFromListClear Caption="Vymazat" Hint="Vymazat seznam|Vymaže seznam"/>
+    <ActionFromListOpen Caption="Otevřít..." Hint="Otevřít|Načte seznam ze souboru"/>
+    <ActionFromListSave Caption="Uložit..." Hint="Uložit|Uloží seznam do souboru"/>
+    <ActionMultistrReplClear Caption="Vymazat mříž" Hint="Vymaže mřížku"/>
+    <ActionMultistrReplSave Caption="Uložit" Hint="|Uloží současné nastavení se zadaným jménem"/>
+    <ActionMultistrReplDelete Caption="Smazat" Hint="|Smaže současně vybrané jméno nastavení"/>
+    <ActionMoveUp Caption="Nahoru" Hint="Přesunout nahoru|Přesune nahoru vybrané položky"/>
+    <ActionMoveDown Caption="Dolů" Hint="Přesunout dolů|Přesune dolů vybrané položky"/>
+    <ActionMoveTop Caption="Začátek" Hint="Přesunout na začátek|Přesune vybrané položky na začátek seznamu"/>
+    <ActionMoveBottom Caption="Konec" Hint="Přesunout na konec|Přesune vybrané položky na konec seznamu"/>
+    <ActionItemsUnsort Caption="Neseřazené položky" Hint="|Odebere současné pořadí řazení"/>
+    <ActionItemsSelectAll Caption="Vybrat vše" Hint="Vybrat vše|Vybere všechny položky"/>
+    <ActionItemsSelectNone Caption="Zrušit vše" Hint="Zrušit vše|Zruší vybrání všech položek"/>
+    <ActionItemsSelectInvert Caption="Obrátit výběr" Hint="Obrátit výběr|Obrátí výběr položek"/>
+    <ActionLogClear Caption="Vymazat" Hint="Vymazat|Vymaže log"/>
+    <ActionLogSave Caption="Uložit..." Hint="Uložit|Uloží log do souboru"/>
+    <ActionLogCopy Caption="Kopírovat" Hint="Kopírovat|Zkopíruje log do schránky"/>
+    <ActionLogFilter Caption="Filtr" Hint="Filtrovat log|Filtruje záznamy"/>
+    <ActionLogFilterOk Caption="Úspěšné" Hint="Zobrazit přejmenované soubory|Zobrazí záznamy, které odpovídají úspěšně přejmenovaným souborům"/>
+    <ActionLogFilterError Caption="Chyby" Hint="Zobrazit chyby|Zobrazí chybové záznamy"/>
+    <ActionLogFilterNot Caption="Nepřejmenované" Hint="Zobrazit přeskočené soubory|Zobrazí záznamy, které odpovídají souborům, jež nebyly přejmenovány"/>
+    <ActionActionGo Caption="Spustit" Hint="Spustit|Spustí proces přejmenování"/>
+    <ActionActionStop Caption="Stop" Hint="Stop|Zastaví proces přejmenování"/>
+    <ActionOptions Caption="Možnosti..." Hint="Možnosti|Změní možnosti programu"/>
+    <ActionActionUndo Caption="Undo" Hint="Undo|Undo poslední přejmenování"/>
+    <ActionHelpContents Caption="Nápověda" Hint="Obsah nápovědy|Zobrazí obsah nápovědy"/>
+    <ActionHelpAbout Caption="O programu..." Hint="O programu|Zobrazí informaci o tomto programu"/>
+    <ActionExit Caption="Konec" Hint="Konec|Ukončí program"/>
+    <ActionAlwaysOnTop Caption="Na vrchu" Hint="Vždy na vrchu|Nastaví okno, aby bylo vždy na vrchu"/>
+    <ActionTabFiles Caption="Soubory" Hint="Soubory|Zobrazí soubory"/>
+    <ActionTabActions Caption="Akce" Hint="Akce|Zobrazí akce"/>
+    <ActionTabLog Caption="Log" Hint="Log|Zobrazí log"/>
+    <lstFiles Hint="|Seznam souborů - Klikněte pravým tlačítkem myši na záhlaví pro úpravu sloupců">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Složka"/>
+          <Item Index="1" Text="Jméno souboru"/>
+          <Item Index="2" Text="Plná cesta"/>
+          <Item Index="3" Text="Přípona"/>
+          <Item Index="4" Text="Náhled"/>
+          <Item Index="5" Text="Velikost"/>
+          <Item Index="6" Text="Datum vytvoření"/>
+          <Item Index="7" Text="Datum poslední úpravy"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Náhled vybraného souboru "/>
+    <grpBatch Caption="       Obsah dávky (plánované akce) "/>
+    <lstBatch Hint="|Obsah dávky (plánované akce)"/>
+    <lblPreviewOld Caption="Současné jméno:"/>
+    <lblPreviewNew Caption="Nové jméno:"/>
+    <lstActions Hint="|Seznam akcí">
+      <Items>
+        <Item Index="0" Value="Změnit příponu"/>
+        <Item Index="1" Value="Nahradit řetězec"/>
+        <Item Index="2" Value="Nahradit vícenásobný řetězec"/>
+        <Item Index="3" Value="Vložit řetězec"/>
+        <Item Index="4" Value="Přesunout řetězec"/>
+        <Item Index="5" Value="Smazat znaky"/>
+        <Item Index="6" Value="Vypočítat"/>
+        <Item Index="7" Value="Použít info tagu MP3"/>
+        <Item Index="8" Value="Použít datum a čas"/>
+        <Item Index="9" Value="Náhodná jména"/>
+        <Item Index="10" Value="Změnit velikost písmen"/>
+        <Item Index="11" Value="Vzít jména ze seznamu"/>
+        <Item Index="12" Value="Normální výraz"/>
+        <Item Index="13" Value="Použít EXIF"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Nahradit příponou:"/>
+    <cbxChangeExtNoRepl Caption="Nenahrazovat příponu, přidat ji do jména"/>
+    <lblChangeExtNotes Caption="Poznámky:&lt;br&gt;- Nevkládejte tečku, jen vložte novou příponu&lt;br&gt;- Pokud chcete vytvořit zvyšující se příponu, použijte akci &lt;LINK&gt;Vypočítat&lt;/LINK&gt;"/>
+    <lblStrReplSearch Caption="Hledat:"/>
+    <lblStrReplBy Caption="Nahradit tímto:"/>
+    <cbxStrReplAll Caption="Nahradit všechny výskyty"/>
+    <cbxStrReplCase Caption="Rozlišovat velká a malá písmena"/>
+    <cbxStrReplExt Caption="Včetně přípony"/>
+    <cbxStrReplOnlyExt Caption="Použít na příponu místo na jméno"/>
+    <lblMultstrSearch Caption="Hledat:"/>
+    <lblMultstrReplBy Caption="Nahradit:"/>
+    <lblMultstrReplSet Caption="Předdefinované sady:"/>
+    <cbxMultstrReplExt Caption="Včetně přípony při hledání"/>
+    <cbxMultstrReplCase Caption="Rozlišovat velká a malá písmena"/>
+    <lblMultstrReplNotes Caption="Poznámky:&lt;BR&gt;- Použijte Ctrl+plus (+) a Ctrl+mínus (-) pro vložení nebo smazání řádku na současné pozici"/>
+    <lblStrInsStr Caption="Řetězec k vložení:"/>
+    <lblStrInsPos Caption="Na pozici:"/>
+    <rbtStrInsBegin Caption="Od začátku"/>
+    <rbtStrInsEnd Caption="Od konce"/>
+    <cbxStrInsExt Caption="Použít na příponu místo na jméno"/>
+    <lblStrInsNotes Caption="Poznámky:&lt;br&gt;- %name% = Originální jméno souboru (bez přípony)&lt;BR&gt;- %ext% = Originální přípona (včetně tečky)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Jméno složky&lt;BR&gt;- %% = % znak&lt;BR&gt;podívejte se na &lt;LINK&gt;Nápovědu&lt;/LINK&gt; pro více informací"/>
+    <lblMoveStrFrom Caption="Od pozice:"/>
+    <rbtMoveStrFromBegin Caption="Od začátku"/>
+    <rbtMoveStrFromEnd Caption="Od konce"/>
+    <lblMoveStrCount Caption="Počet znaků k přesunutí:"/>
+    <lblMoveStrTo Caption="Do pozice:"/>
+    <rbtMoveStrToBegin Caption="Od začátku"/>
+    <rbtMoveStrToEnd Caption="Od konce"/>
+    <lblMoveStrNotes Caption="Poznámky:&lt;br&gt;- Pokud chcete přesunout specifický řetězec, ale ten není vždy ve stejném umístění, použijte funkci &lt;link&gt;Nahradit řetězec&lt;/link&gt; pro jeho smazání a pak použijte &lt;link&gt;Vložit řetězec&lt;/link&gt; pro jeho vložení do nového umístění&lt;BR&gt;- Hodnota &#34;Do pozice&#34; neobsahuje přesunuté znaky (je to stejné, jako by již byly smazány)"/>
+    <lblCharDel Caption="Počet znaků ke smazání:"/>
+    <rbtCharDelPos Caption="Od pozice:"/>
+    <rbtCharDelBegin Caption="Od začátku"/>
+    <rbtCharDelEnd Caption="Od konce"/>
+    <rbtCharDelStr Caption="Po řetězci:"/>
+    <rbtCharDelStr2 Caption="Before the string:"/>
+    <cbxCharDelExt Caption="Použít na příponu místo na jméno"/>
+    <lblCharDelNotes Caption="Poznámky:&lt;BR&gt;- Pro smazání specifického řetězce použijte akci &lt;LINK&gt;Nahradit řetězec&lt;/LINK&gt; a nahraďte řetězec prázdným"/>
+    <lblEnumMask Caption="Maska:"/>
+    <lblEnumStart Caption="Začít na:"/>
+    <lblEnumDigits Caption="Počet číslic:"/>
+    <lblEnumIncr Caption="Zvyšovat po:"/>
+    <cbxEnumRestart Caption="Vrátit zpět na začáteční hodnotu při změně složky"/>
+    <lblEnumNotes Caption="Poznámky:&lt;BR&gt;- %name% = Originální jméno souboru (bez přípony)&lt;BR&gt;- %ext% = Originální přípona (včetně tečky)&lt;BR&gt;- %num% = Číslo&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Jméno složky&lt;BR&gt;- %% = % znak&lt;BR&gt;podívejte se na &lt;LINK&gt;Nápovědu&lt;/LINK&gt; pro více informací"/>
+    <lblMP3Mask Caption="Maska:"/>
+    <cbxMP3TwoDigit Caption="Dvojciferné číslo stopy (vloží '0' před číslici, pokud je potřeba)"/>
+    <cbxMP3Convert Caption="Převést nelegální znaky jako ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Poznámky:&lt;BR&gt;- %author% = Autor&lt;BR&gt;- %title% = Název&lt;BR&gt;- %album% = Album&lt;BR&gt;- %year% = Rok&lt;BR&gt;- %genre% = Žánr&lt;BR&gt;- %comm% = Poznámka&lt;BR&gt;- %track% = Číslo stopy (ID3V1.1)&lt;BR&gt;- %name% = Originální jméno souboru (bez přípony)&lt;BR&gt;- %ext% = Originální přípona (včetně tečky)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Jméno složky&lt;BR&gt;- %% = % znak&lt;BR&gt;podívejte se na &lt;LINK&gt;Nápovědu&lt;/LINK&gt; pro více informací"/>
+    <lblDTMask Caption="Maska:"/>
+    <cbxDTSuffix Caption="Přidat příponu, pokud je více než jeden soubor se stejným datumem/časem"/>
+    <lblDTWhich Caption="Datum k použití:"/>
+    <rbtDTWhichCreation Caption="Vytvoření"/>
+    <rbtDTWhichModif Caption="Poslední úprava"/>
+    <lblDTNotes Caption="Poznámky:"/>
+    <lblDTNotes2>
+      <Lines>
+          <![CDATA[f	Originální jméno souboru (bez přípony)
+e	Originální přípona (včetně tečky)
+c	Datum a čas, používaný ve formátu Windows
+d	Den bez začáteční nuly (1-31)
+dd	Den se začáteční nulou (01-31)
+ddd	Den, krátké jméno (So-Ne)
+dddd	Den, plné jméno (Sobota-Neděle)
+ddddd	Datum, používaný ve Windows jako krátký
+dddddd	Datum, používaný ve Windows jako dlouhý
+m	Měsíc bez začáteční nuly (1-12)
+mm	Měsíc se začáteční nulou (01-12)
+mmm	Měsíc, krátké jméno (Led-Pros)
+mmmm	Měsíc, plné jméno (Leden-Prosinec)
+yy	Rok, dvě čísla (00-99)
+yyyy	Rok, čtyři čísla (0000-9999)
+h	Hodina bez začáteční nuly (0-23)
+hh	Hodina se začáteční nulou (00-23)
+n	Minuta bez začáteční nuly (0-59)
+nn	Minuta se začáteční nulou (00-59)
+s	Sekunda bez začáteční nuly (0-59)
+ss	Sekunda se začáteční nulou (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	Používá 12 hodinový formát před h nebo hh
+a/p	Používá 12 hodinový formát před h nebo hh
+'xx'/"xx"	Znaky zavřené do uvozovek zůstanou beze změny
+
+Pokud okamžitě po h nebo hh následuje m nebo mm, jsou použity raději minuty než měsíc]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Maska:"/>
+    <lblRandomMethod Caption="Metoda:"/>
+    <rbtRandomNumber Caption="Náhodné číslo (8 číslic)"/>
+    <rbtRandomTick Caption="Počítání Windows"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="Poznámky:&lt;BR&gt;- %name% = Originální jméno souboru (bez přípony)&lt;BR&gt;- %ext% = Originální přípona (včetně tečky)&lt;BR&gt;- %random% = Náhodně generovaný řetězec&lt;BR&gt;- %% = % znak&lt;BR&gt;podívejte se na &lt;LINK&gt;Nápovědu&lt;/LINK&gt; pro více informací"/>
+    <rbtCaseWords Caption="První písmeno velké po jakémkoli z těchto znaků:"/>
+    <rbtCaseFirst Caption="První písmeno souboru velké"/>
+    <rbtCaseUpper Caption="Všechna velká"/>
+    <rbtCaseLower Caption="Všechna malá"/>
+    <cbxCaseLocale Caption="Použít místní nastavení Windows pro vyznačené znaky"/>
+    <cbxCaseIncludeExt Caption="Použít také na příponu"/>
+    <cbxCaseOnlyExt Caption="Použít na příponu místo na jméno"/>
+    <cbxFromListExt Caption="Přidat originální příponu souboru"/>
+    <cbxFromListOnlyExt Caption="Použít položky jako přípony místo jmen"/>
+    <lblFromListNotes Caption="Poznámky:&lt;BR&gt;- Každý řádek tohoto seznamu bude použit jako jméno pro soubor. Položky jsou používány popořadě.&lt;BR&gt;- Pokud jsou řádky prázdné nebo není dostatek řádků, odpovídající soubory nebudou přejmenovány."/>
+    <lblRegexp Caption="Výraz:"/>
+    <lblRegexpRepl Caption="Nové jméno:"/>
+    <lblRegexpNotes Caption="Poznámky:&lt;BR&gt;- Znak '\' může být použit pro speciální znaky (jako $ a další), použijte \\ pro jeden znak \ v novém jméně (pokud chcete mít jméno v jiné složce)&lt;BR&gt;- Použijte '^' pro indikaci začátku jména a '$' pro konec jména&lt;BR&gt;- Nové jméno musí obsahovat $1, $2... pro specifikaci, kam budou vloženy nahrazené znaky&lt;BR&gt;podívejte se na &lt;LINK&gt;nápovědu&lt;/LINK&gt; pro více informací"/>
+    <lblExifMask Caption="Maska:"/>
+    <lblExifNotes Caption="Poznámky:&lt;BR&gt;- %name% = originální jméno souboru (bez přípony)&lt;BR&gt;- %ext% = originální přípona (včetně tečky)&lt;BR&gt;- %datetimeoriginal% / %datetime% = originální datum a čas obrázku&lt;BR&gt;- %orientation% = orientace obrázku&lt;BR&gt;- %flash% = zapnutý nebo vypnutý blesk&lt;BR&gt;- %% = znak '%'&lt;BR&gt;podívejte se na &lt;LINK&gt;nápovědu&lt;/LINK&gt; pro více informací"/>
+    <lstLog Hint="|Log"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Všechny soubory"/>
+      <Item Name="strfltTextFiles" Value="Textové soubory"/>
+      <Item Name="strfltBatchFiles" Value="Dávkové soubory Ant Renameru"/>
+      <Item Name="strmsgSelectFiles" Value="Vybrat soubory"/>
+      <Item Name="strmsgSelectFolder" Value="Vybrat složku"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Přidávání souborů"/>
+      <Item Name="strmsgStatusRenaming" Value="Přejmenovávání souborů"/>
+      <Item Name="strmsgFilesCount" Value="%d souborů"/>
+      <Item Name="strmsgBusy" Value="Aplikace je zaneprázdněna: Je prováděno přejmenovávání."/>
+      <Item Name="strmsgNothingToDo" Value="Nic k práci: prosím, vyberte minimálně jeden soubor a akci k vykonání."/>
+      <Item Name="strlogStartRename" Value="Přejmenování spuštěno"/>
+      <Item Name="strlogStartPreview" Value="Obnovování náhledu"/>
+      <Item Name="strlogStartRevert" Value="Návrat k předchozím jménům"/>
+      <Item Name="strlogEndRename" Value="Přejmenování dokončeno"/>
+      <Item Name="strlogEndPreview" Value="Náhled dokončen"/>
+      <Item Name="strlogEndRevert" Value="Zpětný proces dokončen"/>
+      <Item Name="strlogStoppedByUser" Value="Operace zastavena uživatelem"/>
+      <Item Name="stradUnknown" Value="Nedělat nic"/>
+      <Item Name="stradInclExt" Value=", použít také na příponu"/>
+      <Item Name="stradOnlyExt" Value=", použít na příponu místo na jméno"/>
+      <Item Name="stradChangeExt" Value="Změnit příponu na %s"/>
+      <Item Name="stradChangeExtRmv" Value="Odebrat příponu"/>
+      <Item Name="stradChangeExtNoRepl" Value="Přidat příponu %s"/>
+      <Item Name="stradStringRepl" Value="Nahradit %s tímto: %s"/>
+      <Item Name="stradStringReplAll" Value=", nahradit všechny výskyty"/>
+      <Item Name="stradStringReplCase" Value=", rozlišovat velká a malá písmena"/>
+      <Item Name="stradMultstrRepl" Value="Nahradit vícenásobné řetězce použitím sady &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Vložit %s na pozici %d"/>
+      <Item Name="stradMoveStr" Value="Přesunout %d znaků z pozice %d%s na pozici %d%s"/>
+      <Item Name="stradCharDel" Value="Smazat %d znaků"/>
+      <Item Name="stradCharDelPos" Value=" od pozice %d"/>
+      <Item Name="stradCharDelStr" Value=" po řetězci %s"/>
+      <Item Name="stradEnum" Value="Vypočítat soubor %s od %d do %d, zvyšovat po: %d"/>
+      <Item Name="stradMP3" Value="Generovat jméno pomocí MP3 tagu, založeno na masce %s"/>
+      <Item Name="stradMP3TwoDigit" Value=", vložit '0' do čísla stopy, pokud je vyžadováno"/>
+      <Item Name="stradMP3Convert" Value=", převést nelegální znaky"/>
+      <Item Name="stradFromBegin" Value=" od začátku"/>
+      <Item Name="stradFromEnd" Value=" od konce"/>
+      <Item Name="stradDateTime" Value="Generovat jména ze souborů, datum a čas založen na masce %s"/>
+      <Item Name="stradDateTimeCreat" Value=" použitím data vytvoření"/>
+      <Item Name="stradDateTimeModif" Value=" použitím data poslední úpravy"/>
+      <Item Name="stradDateTimeSuffix" Value=", přidat příponu, pokud je vyžadována"/>
+      <Item Name="stradRandom" Value="Generovat náhodná jména použitím masky %s"/>
+      <Item Name="stradRandomNumbers" Value=", s čísly"/>
+      <Item Name="stradRandomTick" Value=" použitím počítání Windows"/>
+      <Item Name="stradRandomGUID" Value=" použitím GUID"/>
+      <Item Name="stradCase" Value="Změnit velikost,"/>
+      <Item Name="stradCaseWords" Value=" zvětšit první písmeno po jakémkoli z těchto znaků &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" zvětšit první písmeno jména"/>
+      <Item Name="stradCaseUpper" Value=" všechna velká"/>
+      <Item Name="stradCaseLower" Value=" všechna malá"/>
+      <Item Name="stradCaseLocale" Value=", použitím místního nastavení Windows"/>
+      <Item Name="stradFromList" Value="Přejmenovat soubory použitím specifikovaného seznamu"/>
+      <Item Name="stradFromListExt" Value=", přidat originální příponu"/>
+      <Item Name="stradFromListOnlyExt" Value=", použít položky jako přípony místo jmen"/>
+      <Item Name="stradRegexp" Value="Přejmenovat soubory použitím normálního výrazu"/>
+      <Item Name="stradExif" Value="Generovat jména pomocí EXIF, založeno na masce &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Prázdný řádek"/>
+      <Item Name="straeFromListEnd" Value="Konec seznamu"/>
+      <Item Name="strfsNotRenamed" Value="%s nebyl přejmenován: %s"/>
+      <Item Name="strfsRenamed" Value="%s přejmenován na %s"/>
+      <Item Name="strfsReverted" Value="%s obnoven na předchozí jméno %s"/>
+      <Item Name="strfsRenError" Value="Nelze přejmenovat %s na %s: %s"/>
+      <Item Name="strfsNoOldName" Value="Žádné předchozí jméno není uloženo pro %s pro navrácení starého jména"/>
+      <Item Name="strfs404" Value="Zdrojový soubor nebyl nalezen"/>
+      <Item Name="strfsAlreadyExist" Value="Soubor nebo složka s tímto jménem již existuje"/>
+      <Item Name="strfeIdentical" Value="nové jméno je stejné, jako staré"/>
+      <Item Name="strhintNotAgain" Value="Příště nezobrazovat"/>
+      <Item Name="strhintShowPreview" Value="Sloupec náhledu je nyní viditelný. Pokud jej chcete skrýt, klikněte pravým tlačítkem na záhlaví sloupce seznamu souborů."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="O programu Ant Renamer, překlad: cestiny@gvg.cz">
+    <btn1 Caption="Historie"/>
+    <btn2 Caption="Zavřít"/>
+    <tshGeneral Caption="Obecné"/>
+    <tshCredits Caption="Poděkování"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Upozornění"/>
+        <Item Index="1" Value="Chyba"/>
+        <Item Index="2" Value="Informace"/>
+        <Item Index="3" Value="Potvrzení"/>
+        <Item Index="4" Value="&#38;Ano"/>
+        <Item Index="5" Value="&#38;Ne"/>
+        <Item Index="6" Value="&#38;OK"/>
+        <Item Index="7" Value="&#38;Storno"/>
+        <Item Index="8" Value="&#38;Zrušit"/>
+        <Item Index="9" Value="Zo&#38;pakovat"/>
+        <Item Index="10" Value="&#38;Ignorovat"/>
+        <Item Index="11" Value="&#38;Vše"/>
+        <Item Index="12" Value="Ne všem"/>
+        <Item Index="13" Value="Ano všem"/>
+        <Item Index="14" Value="Ná&#38;pověda"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Možnosti">
+    <btn1 Caption="Nápověda"/>
+    <btn2 Caption="Storno"/>
+    <btn3 Caption="OK"/>
+    <tshDisplay Caption="Zobrazení"/>
+    <tshAdding Caption="Souborů a složek"/>
+    <tshProcessing Caption="Zpracování"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Jazyk"/>
+    <lbhLists Caption="Seznamy"/>
+    <cbxRealtimeUpdate Caption="Okamžitá aktualizace při přejmenovávání souborů a generovat log (pomalejší)"/>
+    <cbxResizeColsFiles Caption="Automaticky změnit velikost sloupců seznamu souborů"/>
+    <cbxFilesIcons Caption="Zobrazit ikony v seznamu souborů na základě přípony"/>
+    <lbhFonts Caption="Fonty"/>
+    <cbxForceFont Caption="Použít následující font pro zobrazení speciálních znaků:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Defaultní font Windows"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Poznámka: Pokud je dostupný, je velmi doporučen font Arial Unicode MS"/>
+    <lbhDropdown Caption="Rozbalovací pole"/>
+    <lblDropdownMax Caption="Počet hodnot v paměti:"/>
+    <cbxDropdownComplete Caption="Automaticky dokončit historií hodnot při psaní"/>
+    <lbhToolbars Caption="Panely nástrojů"/>
+    <lblIconSet Caption="Nastavení ikony:"/>
+    <lblColorType Caption="Typ barvy:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automatická"/>
+        <Item Index="1" Value="Šedá při neaktivním"/>
+        <Item Index="2" Value="Světlá při neaktivním (styl XP)"/>
+        <Item Index="3" Value="Tmavá při neaktivním"/>
+        <Item Index="4" Value="Vždy zabarvená"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Styl Office XP"/>
+    <lbhDragdrop Caption="Uchopení a přetažení"/>
+    <cbxDragdropNoAsk Caption="Neptat se, co dělat, vždy použít následující volby:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Přidat soubory vybraných složek"/>
+      <cbxFolders Caption="Přidat vybrané složky"/>
+      <cbxRecursive Caption="Použít tyto dvě volby také na podsložky"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Chování seznamu"/>
+    <cbxLaunchFile Caption="Při dvojkliku spustit soubor"/>
+    <lbhRenaming Caption="Přejmenování souboru"/>
+    <cbxCopy Caption="Kopírovat místo přejmenování"/>
+    <cbxGenerLog Caption="Generovat log"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="V adresářích (povolí vytvoření složek, pokud je &#34;\&#34; nalezen ve jménech)"/>
+    <cbxDetectAbsdir Caption="Detekovat &#34;:\&#34; či &#34;\\&#34; jako pevnou cestu (povolí kamkoli přesunout soubory)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Přepnout do:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Seznamu souborů"/>
+        <Item Index="1" Value="Akce"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Vymazat log"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Přepnout do:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Seznamu souborů"/>
+        <Item Index="1" Value="Akce"/>
+        <Item Index="2" Value="Log"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Vymazat seznam souborů"/>
+    <cbxClearBatchList Caption="Vymazat seznam dávky"/>
+    <cbxSaveLog Caption="Uložit log do souboru:"/>
+    <btnSaveLog Hint="Procházet..."/>
+    <cbxSaveLogAppend Caption="Přidat k současnému souboru"/>
+    <lbhLanguage Caption="Jazyk"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Jméno"/>
+          <Column Index="1" Caption="Místní jméno"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Verze:"/>
+      <lblMadeby Caption="Vytvořil:"/>
+      <lblComments Caption="Poznámky:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Vyberte složky k přidání">
+    <btn1 Caption="Nápověda"/>
+    <btn2 Caption="Storno"/>
+    <btn3 Caption="OK"/>
+    <btn4 Caption="Síť..."/>
+    <Options>
+      <cbxFiles Caption="Přidat soubory vybrané složky"/>
+      <cbxFolders Caption="Přidat vybrané složky"/>
+      <cbxRecursive Caption="Použít tyto dvě volby také na podsložky"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Volby uchopení a přetažení">
+    <btn1 Caption="Nápověda"/>
+    <btn2 Caption="Storno"/>
+    <btn3 Caption="OK"/>
+    <lblOptions Caption="Použít tuto volbu pro přidání souborů, které byly puštěny:"/>
+    <Options>
+      <cbxFiles Caption="Přidat soubory vybraných složek"/>
+      <cbxFolders Caption="Přidat vybrané složky"/>
+      <cbxRecursive Caption="Použít tyto dvě volby také na podsložky"/>
+    </Options>
+    <cbxNotAgain Caption="Toto okno příště nezobrazovat (uložit vybrané volby pro příště)"/>
+  </DragdropOptionsForm>
+</Application>

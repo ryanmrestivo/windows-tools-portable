@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAzCwAAMwsAABAAAAAQAAAAAAAAABEREQBmAAAAzGZmAAAAzAAzM/8AiIiIALu7uwDd3d0A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmZmZmZmZAAAAAAAAAAAHd3d3d3d3gAeIGIiIgYiQB4FhiIgWGJAHFhiDOIFhkAeBiDIjiBiQB4iDIiI4iJAHiIVEIliIkAeBiFRFiBiQBxYYhViBYZAHgWGIiBYYkAeIGIiIgYiQCJmZmZmZmZAAAAAAAAAAAJmZmZmZmZmZ
+Name=Korean
+LocalName=한국어
+Version=2.09
+VersionFormat=2.12
+Comments=Ant Renamer 한글
+Authors=Seunghoe YANG|biangle@hotmail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="묶음 추가" Hint="묶음 추가|선택된 액션과 설정을 묶어서 추가합니다"/>
+    <ActionBatchOpen Caption="열기..." Hint="열기|묶음파일을 엽니다"/>
+    <ActionBatchSaveAs Caption="저장..." Hint="저장|이 묶음을 하나의 파일로 저장합니다"/>
+    <ActionBatchRemoveSel Caption="선택 제거" Hint="선택 제거|묶음에서 선택한 기능을 제거합니다"/>
+    <ActionBatchClear Caption="클리어" Hint="묶음 클리어|묶음에서 모든 액션을 제거합니다"/>
+    <ActionBatchNoRecent Caption="(최근 파일 없음)"/>
+    <ActionAddFiles Caption="파일 추가..." Hint="파일 추가|목록에 파일을 추가합니다"/>
+    <ActionAddFolders Caption="폴더 추가..." Hint="폴더 추가|목록에 폴더나 폴더 컨텐츠를 추가합니다"/>
+    <ActionRemoveSelected Caption="선택 제거" Hint="선택 제거|목록에서 선택한 파일을 제거합니다"/>
+    <ActionRemoveAll Caption="전부 제거" Hint="전부 제거|목록에서 모든 파일을 제거합니다"/>
+    <ActionRemoveDead Caption="죽은 파일 제거" Hint="죽은 파일 제거|목록에서 죽은 파일을 제거합니다"/>
+    <ActionPreview Caption="미리보기" Hint="미리보기 새로고침|현재 계획된 액션의 미리보기를 새로고칩니다"/>
+    <ActionFromListClear Caption="클리어" Hint="목록 클리어|목록을 클리어합니다"/>
+    <ActionFromListOpen Caption="열기..." Hint="열기|목록을 파일에서 엽니다"/>
+    <ActionFromListSave Caption="저장..." Hint="저장|목록을 파일로 저장합니다"/>
+    <ActionMultistrReplClear Caption="눈금 클리어" Hint="문자열 눈금을 클리어합니다"/>
+    <ActionMultistrReplSave Caption="저장" Hint="|위에 쓰여진 이름밑에 현재의 설정을 저장합니다"/>
+    <ActionMultistrReplDelete Caption="삭제" Hint="|현재 선택된 설정명을 삭제합니다"/>
+    <ActionMoveUp Caption="위로" Hint="위로 이동|선택한 항목을 위로 이동합니다"/>
+    <ActionMoveDown Caption="아래로" Hint="아래로 이동|선택한 항목을 아래로 이동합니다"/>
+    <ActionMoveTop Caption="맨 위로" Hint="맨 위로 이동|선택한 항목을 목록의 맨 위로 이동합니다"/>
+    <ActionMoveBottom Caption="맨 아래로" Hint="맨 아래로 이동|선택한 항목을 목록의 맨 아래로 이동합니다"/>
+    <ActionItemsUnsort Caption="무분류 항목" Hint="|현재의 분류 명령을 제거"/>
+    <ActionItemsSelectAll Caption="모두 선택" Hint="모두 선택|모든 항목을 선택"/>
+    <ActionItemsSelectNone Caption="선택 취소" Hint="선택 취소|모든 항목의 선택을 해제합니다"/>
+    <ActionItemsSelectInvert Caption="선택 반전" Hint="선택 반전|항목 선택을 반전합니다"/>
+    <ActionLogClear Caption="클리어" Hint="클리어|로그를 클리어합니다"/>
+    <ActionLogSave Caption="저장..." Hint="저장|로그를 파일에 저장합니다"/>
+    <ActionLogCopy Caption="복사" Hint="복사|로그를 클립보드에 복사합니다"/>
+    <ActionLogFilter Caption="필터" Hint="필터|로그 엔트리 필터"/>
+    <ActionLogFilterOk Caption="성공" Hint="이름이 바뀐 파일들을 본다|성공적으로 이름이 바뀐 파일의 엔트리를 보여줍니다"/>
+    <ActionLogFilterError Caption="에러" Hint="에러를 본다|에러의 엔트리를 보여줍니다"/>
+    <ActionLogFilterNot Caption="이름이 바뀌지 않음" Hint="뛰어넘은 파일을 본다|이름이 바뀌지 않은 파일의 엔트리를 보여줍니다"/>
+    <ActionActionGo Caption="시작" Hint="시작|이름 변경을 시작합니다"/>
+    <ActionActionStop Caption="정지" Hint="정지|이름 변경을 멈춥니다"/>
+    <ActionOptions Caption="옵션..." Hint="옵션|프로그램 옵션을 변경합니다"/>
+    <ActionActionUndo Caption="실행 취소" Hint="실행 취소|마지막 이름 변경을 취소합니다"/>
+    <ActionHelpContents Caption="도움말" Hint="도움말 항목|도움말 항목을 엽니다"/>
+    <ActionHelpAbout Caption="대하여..." Hint="대하여|이 프로그램에 대하여"/>
+    <ActionExit Caption="종료" Hint="종료|이 프로그램을 나갑니다"/>
+    <ActionAlwaysOnTop Caption="항상 위" Hint="항상 위|창을 항상 위에 표시합니다"/>
+    <ActionTabFiles Caption="파일" Hint="파일|파일을 표시합니다"/>
+    <ActionTabActions Caption="액션" Hint="액션|액션을 표시합니다"/>
+    <ActionTabLog Caption="로그" Hint="로그|로그를 표시합니다"/>
+    <lstFiles Hint="|파일 목록 - 단을 커스터마이즈하려면 헤더에서 오른쪽 마우스 버튼을 클릭하세요">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="폴더"/>
+          <Item Index="1" Text="파일명"/>
+          <Item Index="2" Text="풀 경로"/>
+          <Item Index="3" Text="확장자"/>
+          <Item Index="4" Text="미리보기"/>
+          <Item Index="5" Text="사이즈"/>
+          <Item Index="6" Text="날짜가 생성되었습니다"/>
+          <Item Index="7" Text="날짜가 수정되었습니다"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       선택된 파일의 미리보기 "/>
+    <grpBatch Caption="       묶음 내용 (계획된 액션) "/>
+    <lstBatch Hint="|묶음 내용 (계획된 액션)"/>
+    <lblPreviewOld Caption="현재 이름:"/>
+    <lblPreviewNew Caption="샘플 새 이름:"/>
+    <lstActions Hint="|액션 목록">
+      <Items>
+        <Item Index="0" Value="확장자 변환"/>
+        <Item Index="1" Value="문자열 치환"/>
+        <Item Index="2" Value="복수 문자열 치환"/>
+        <Item Index="3" Value="문자열 삽입"/>
+        <Item Index="4" Value="문자열 이동"/>
+        <Item Index="5" Value="문자 삭제"/>
+        <Item Index="6" Value="열거"/>
+        <Item Index="7" Value="mp3 테그 정보를 사용"/>
+        <Item Index="8" Value="날짜 &#38; 시간을 사용"/>
+        <Item Index="9" Value="랜덤 이름"/>
+        <Item Index="10" Value="경우 변환"/>
+        <Item Index="11" Value="목록에서 이름을 획득"/>
+<n/>        <Item Index="12" Value="규칙적인 표현"/>
+<n/>        <Item Index="13" Value="EXIF 정보를 사용"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="확장자 변환:"/>
+    <cbxChangeExtNoRepl Caption="확장자를 바꾸지 않고, 현재의 이름뒤에 덧붙임"/>
+    <lblChangeExtNotes Caption="노트:&lt;br&gt;- 점을 포함하지 않는 새 확장자를 입력합니다&lt;br&gt;- 만일 늘어난 확장자를 만들고 싶다면, &lt;LINK&gt;열거&lt;/LINK&gt; 액션을 사용하세요"/>
+    <lblStrReplSearch Caption="검색:"/>
+    <lblStrReplBy Caption="치환:"/>
+    <cbxStrReplAll Caption="일치하는 모든 부분에 치환"/>
+    <cbxStrReplCase Caption="일부 감지"/>
+    <cbxStrReplExt Caption="검색에 확장자를 포함함"/>
+    <cbxStrReplOnlyExt Caption="이름대신에 확장자에 적용"/>
+    <lblMultstrSearch Caption="검색:"/>
+    <lblMultstrReplBy Caption="치환:"/>
+    <lblMultstrReplSet Caption="사전 정의된 세트:"/>
+    <cbxMultstrReplExt Caption="검색에 확장자를 포함함"/>
+    <cbxMultstrReplCase Caption="일부 감지"/>
+    <lblMultstrReplNotes Caption="노트:&lt;BR&gt;- Ctrl+더하기 (+) 와 Ctrl+빼기 (-) 로 현재위치에서 줄의 첨가와 삭제합니다"/>
+    <lblStrInsStr Caption="삽입할 문자열:"/>
+    <lblStrInsPos Caption="삽입할 위치:"/>
+    <rbtStrInsBegin Caption="앞에서"/>
+    <rbtStrInsEnd Caption="뒤에서"/>
+    <cbxStrInsExt Caption="이름대신 확장자에 적용"/>
+    <lblStrInsNotes Caption="노트:&lt;br&gt;- 만일 다른 것의 앞이나 뒤에 문자열을 삽입하고 싶다면, &lt;LINK&gt;문자열 치환&lt;/LINK&gt; 액션을 사용하세요&lt;br&gt;- %name% = 원래 파일명 (확장자를 제외)&lt;BR&gt;- %ext% = 원래 확장자 (점을 포함)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = 폴더명&lt;BR&gt;- %% = 문자 % &lt;BR&gt;자세한 사항은 &lt;LINK&gt;도움말&lt;/LINK&gt;을 보세요"/>
+    <lblMoveStrFrom Caption="다음 위치에서:"/>
+    <rbtMoveStrFromBegin Caption="앞에서"/>
+    <rbtMoveStrFromEnd Caption="뒤에서"/>
+    <lblMoveStrCount Caption="이동시킬 문자수:"/>
+    <lblMoveStrTo Caption="다음 위치로:"/>
+    <rbtMoveStrToBegin Caption="앞에서"/>
+    <rbtMoveStrToEnd Caption="뒤에서"/>
+    <lblMoveStrNotes Caption="노트:&lt;br&gt;- 만일 특정 문자열을 이동시키고 싶은데 그것이 항상 같은 위치에 있지않다면, 문자열을 &lt;link&gt;문자열 치환&lt;/link&gt;으로 삭제하고, 문자열을 &lt;link&gt;문자열 삽입&lt;/link&gt;으로 새로운 위치에 삽입하세요&lt;BR&gt;- &#34;다음 위치로&#34; 의 값은 이동시킨 문자수는 포함하지 않습니다 (즉, 문자들이 이미 지워진것으로 간주합니다)"/>
+    <lblCharDel Caption="삭제할 문자수:"/>
+    <rbtCharDelPos Caption="다음 위치에서:"/>
+    <rbtCharDelBegin Caption="앞에서"/>
+    <rbtCharDelEnd Caption="뒤에서"/>
+    <rbtCharDelStr Caption="다음 문자열 뒤:"/>
+    <rbtCharDelStr2 Caption="다음 문자열 앞:"/>
+    <cbxCharDelExt Caption="이름대신 확장자에 적용"/>
+    <lblCharDelNotes Caption="노트:&lt;BR&gt;- 특정 문자열을 지우려면, &lt;LINK&gt;문자열 치환&lt;/LINK&gt; 액션에서 치환할 문자열을 비워서 사용하세요"/>
+    <lblEnumMask Caption="마스크:"/>
+    <lblEnumStart Caption="시작 번호:"/>
+    <lblEnumDigits Caption="자릿수:"/>
+    <lblEnumIncr Caption="증가량:"/>
+    <cbxEnumRestart Caption="폴더가 변했을 경우 시작 번호로 돌아옴"/>
+    <lblEnumNotes Caption="노트:&lt;BR&gt;- %name% = 원래 파일명 (확장자를 제외)&lt;BR&gt;- %ext% = 원래 확장자 (점을 포함)&lt;BR&gt;- %num% = 번호&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = 폴더명&lt;BR&gt;- %% = 문자 % &lt;BR&gt;자세한 사항은 &lt;LINK&gt;도움말&lt;/LINK&gt;을 보세요"/>
+    <lblMP3Mask Caption="마스크:"/>
+    <cbxMP3TwoDigit Caption="두자릿수 트랙 번호 (필요하면 번호의 앞에 '0'을 삽입)"/>
+    <cbxMP3Convert Caption="권한이 없는 특수문자 ? / \ : &lt; &gt; | ?* 를 변환합니다"/>
+    <lblMP3Notes Caption="노트:&lt;BR&gt;- %author% = 만든 이&lt;BR&gt;- %title% = 타이틀&lt;BR&gt;- %album% = 앨범&lt;BR&gt;- %year% = 년도&lt;BR&gt;- %genre% = 장르&lt;BR&gt;- %comm% = 코멘트&lt;BR&gt;- %track% = 트랙 번호 (ID3V1.1)&lt;BR&gt;- %name% = 원래 파일명 (확장자를 제외)&lt;BR&gt;- %ext% = 원래 확장자 (점을 포함)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = 폴더명&lt;BR&gt;- %% = 문자 % &lt;BR&gt;- $if(조건,참값,거짓값)&lt;BR&gt;자세한 사항은&lt;LINK&gt;도움말&lt;/LINK&gt;을 보세요"/>
+    <lblDTMask Caption="마스크:"/>
+    <cbxDTSuffix Caption="만일 같은 날짜/시간에 복수 존재하면 뒤에 첨자를 추가"/>
+    <lblDTWhich Caption="사용할 날짜:"/>
+    <rbtDTWhichCreation Caption="만든 날짜"/>
+    <rbtDTWhichModif Caption="수정된 날짜"/>
+    <lblDTNotes Caption="노트:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	원래 파일명 (확장자는 제외)
+e	원래 확장자 (점은 포함)
+c	Windows의 표준 형식을 사용한 날짜와 시간
+d	앞에 0이 없는 일자 (1-31)
+dd	앞에 0이 있는 일자 (01-31)
+ddd	요일, 약자 (Sun-Sat)
+dddd	요일 (Sunday-Saturday)
+ddddd	Windows의 짧은 날짜 형식을 사용한 날짜
+dddddd	Windows의 긴 날짜 형식을 사용한 날짜
+m	앞에 0이 없는 달 (1-12)
+mm	앞에 0이 있는 달 (01-12)
+mmm	달, 약자 (Jan-Dec)
+mmmm	달 (January-December)
+yy	년도, 2자리 (00-99)
+yyyy	년도, 4자리 (0000-9999)
+h	앞에 0이 없는 시간 (0-23)
+hh	앞에 0이 있는 시간 (00-23)
+n	앞에 0이 없는 분 (0-59)
+nn	앞에 0이 있는 분 (00-59)
+s	앞에 0이 없는 초 (0-59)
+ss	앞에 0이 있는 초 (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	h 나 hh를 12시간제로 표시
+a/p	h 나 hh를 12시간제로 표시
+'xx'/"xx"	따옴표 안의 문자를 변화없이 표시
+
+만일 m 나 mm 가 h 나 hh 의 바로 뒤에 쓰이면, 달이 아닌 분으로 사용됩니다]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="마스크:"/>
+    <lblRandomMethod Caption="방법:"/>
+    <rbtRandomNumber Caption="랜덤 번호 (8자릿수)"/>
+    <rbtRandomTick Caption="Windows tick 카운터"/>
+    <rbtRandomGUID Caption="GUID"/>
+    <lblRandomNotes Caption="노트:&lt;BR&gt;- %name% = 원래 파일명 (확장자를 제외)&lt;BR&gt;- %ext% = 원래 확장자 (점을 포함)&lt;BR&gt;- %random% = 랜덤으로 생성된 문자열&lt;BR&gt;- %% = 문자 % &lt;BR&gt;자세한 사항은 &lt;LINK&gt;도움말&lt;/LINK&gt;을 보세요"/>
+    <rbtCaseWords Caption="다음 문자를 포함해서 첫 문자를 상위에:"/>
+    <rbtCaseFirst Caption="파일명의 첫 문자를 상위에"/>
+    <rbtCaseUpper Caption="상위에"/>
+    <rbtCaseLower Caption="하위에"/>
+    <cbxCaseLocale Caption="특수문자 변화에는 Windows 로케일 설정을 사용"/>
+    <cbxCaseIncludeExt Caption="확장자에도 적용"/>
+    <cbxCaseOnlyExt Caption="이름대신 확장자에 적용"/>
+    <cbxFromListExt Caption="파일의 원래 확장자에 덧붙임"/>
+    <cbxFromListOnlyExt Caption="이름대신 확장자로 항목을 사용"/>
+    <lblFromListNotes Caption="노트:&lt;BR&gt;- 이 목록에서 각 줄은 파일의 이름으로 사용됩니다. 항목은 결과로서 사용됩니다&lt;BR&gt;- 만약 줄이 비거나 충분한 줄이 없을때는, 해당하는 파일의 이름은 바뀌지 않습니다"/>
+<n/>    <lblRegexp Caption="표현:"/>
+<n/>    <lblRegexpRepl Caption="새 이름:"/>
+<n/>    <lblRegexpNotes Caption="노트:&lt;BR&gt;- 문자 \ 는 $ 등과 같은 특수문자로 사용되는 것을 피할 수 있습니다, 새 이름에서 단순히 \를 쓰려면 \\를 사용하세요 (만일 다른 폴더에 새 이름을 지을경우)&lt;BR&gt;- 이름의 시작은 ^를, 이름의 끝에는 $를 써서 나타내세요&lt;BR&gt;- 새 이름은 문자를 어디에서 찾았는지 특정하기위해 $1, $2, 등을 포함해야만 합니다&lt;BR&gt;규칙적인 표현의 자세한 사항은 &lt;LINK&gt;도움말&lt;/LINK&gt;을 보세요"/>
+<n/>    <lblExifMask Caption="마스크:"/>
+<n/>    <lblExifNotes Caption="노트:&lt;BR&gt;- %name% = 원래 파일명 (확장자를 제외)&lt;BR&gt;- %ext% = 원래 확장자 (점을 포함)&lt;BR&gt;- %datetimeoriginal% / %datetime% = 사진의 원래 날짜와 시간&lt;BR&gt;- %orientation% = 사진 오리엔테이션&lt;BR&gt;- %flash% = 플래쉬의 on/off&lt;BR&gt;- %% = 문자 % &lt;BR&gt;EXIF 테크의 완성목록과 자세한 사항은 &lt;LINK&gt;도움말&lt;/LINK&gt;을 보세요"/>
+    <lstLog Hint="|로그"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="모든 파일"/>
+      <Item Name="strfltTextFiles" Value="텍스트 파일"/>
+      <Item Name="strfltBatchFiles" Value="Ant Renamer 묶음 파일"/>
+      <Item Name="strmsgSelectFiles" Value="파일을 고르세요"/>
+      <Item Name="strmsgSelectFolder" Value="폴더를 고르세요"/>
+      <Item Name="strmsgStatusAddingFiles" Value="파일을 추가중"/>
+      <Item Name="strmsgStatusRenaming" Value="파일의 이름 변경중"/>
+      <Item Name="strmsgFilesCount" Value="%d 파일"/>
+      <Item Name="strmsgBusy" Value="어플리케이션이 실행중입니다: 이름 변경 오퍼레이션중."/>
+      <Item Name="strmsgNothingToDo" Value="할 일이 없습니다: 최소한 하나의 파일과 액션을 선택하세요."/>
+      <Item Name="strlogStartRename" Value="이름 변경 작업이 시작되었습니다"/>
+      <Item Name="strlogStartPreview" Value="미리보기 새로고침중"/>
+      <Item Name="strlogStartRevert" Value="이전 이름으로 돌아가기"/>
+      <Item Name="strlogEndRename" Value="이름 변경 작업이 끝났습니다"/>
+      <Item Name="strlogEndPreview" Value="미리보기 작업이 끝났습니다"/>
+      <Item Name="strlogEndRevert" Value="돌아가기 작업이 끝났습니다"/>
+      <Item Name="strlogStoppedByUser" Value="사용자에의해 오퍼레이션이 중지되었습니다"/>
+      <Item Name="stradUnknown" Value="아무것도 하지 않는다"/>
+      <Item Name="stradInclExt" Value=", 역시 확장자에 적용"/>
+      <Item Name="stradOnlyExt" Value=", 이름대신 확장자에 적용"/>
+      <Item Name="stradChangeExt" Value="&#34;%s&#34; 로 확장자 변경"/>
+      <Item Name="stradChangeExtRmv" Value="확장자 제거"/>
+      <Item Name="stradChangeExtNoRepl" Value="확장자 &#34;%s&#34; 덧붙이기"/>
+      <Item Name="stradStringRepl" Value="&#34;%s&#34; 를 &#34;%s&#34;로 치환"/>
+      <Item Name="stradStringReplAll" Value=", 일치하는 모든 부분에 치환"/>
+      <Item Name="stradStringReplCase" Value=", 일부 감지"/>
+      <Item Name="stradMultstrRepl" Value="세트 &#34;%s&#34; 를 사용하여 복수 문자열 치환"/>
+      <Item Name="stradStringIns" Value="&#34;%s&#34; 를 위치 %d 에 삽입"/>
+<n/>      <Item Name="stradMoveStr" Value="%d 문자를, 위치 %d%s 에서 위치 %d%s 로 이동"/>
+      <Item Name="stradCharDel" Value="%d 문자를 삭제"/>
+      <Item Name="stradCharDelPos" Value=" 위치 %d"/>
+      <Item Name="stradCharDelStr" Value=" 문자열 &#34;%s&#34; 뒤"/>
+      <Item Name="stradEnum" Value="&#34;%s&#34; 에 %d 에서 %d 까지 %d 의 열거를 생성"/>
+      <Item Name="stradMP3" Value="MP3 테그로, 마스크 &#34;%s&#34; 를 기본으로 한 이름을 생성"/>
+      <Item Name="stradMP3TwoDigit" Value=", 필요하면 트렉 번호에 '0'을 삽입"/>
+      <Item Name="stradMP3Convert" Value=", 권한이 없는 특수문자를 변환"/>
+      <Item Name="stradFromBegin" Value=", 앞에서"/>
+      <Item Name="stradFromEnd" Value=", 끝에서"/>
+      <Item Name="stradDateTime" Value="파일의 날짜와 시간에서, 마스크 &#34;%s&#34; 를 기본으로 한 이름을 생성"/>
+<n/>      <Item Name="stradDateTimeCreat" Value=" 만든 날짜를 사용"/>
+<n/>      <Item Name="stradDateTimeModif" Value=" 수정된 날짜를 사용"/>
+      <Item Name="stradDateTimeSuffix" Value=", 필요하면 첨자를 추가"/>
+      <Item Name="stradRandom" Value="마스크 &#34;%s&#34; 를 써서 랜덤 이름을 생성"/>
+      <Item Name="stradRandomNumbers" Value=", 번호로"/>
+      <Item Name="stradRandomTick" Value=", Windows tick 카운터로"/>
+      <Item Name="stradRandomGUID" Value=", GUID로"/>
+      <Item Name="stradCase" Value="경우 변환:"/>
+      <Item Name="stradCaseWords" Value=" 문자 &#34;%s&#34; 를 포함해서 첫 문자를 상위에"/>
+      <Item Name="stradCaseFirst" Value=" 파일명의 첫 문자를 상위에"/>
+      <Item Name="stradCaseUpper" Value=" 모두 상위에"/>
+      <Item Name="stradCaseLower" Value=" 모두 하위에"/>
+      <Item Name="stradCaseLocale" Value=", Windows 로케일 설정을 사용"/>
+      <Item Name="stradFromList" Value="지정된 목록을 사용한 이름 변경 파일"/>
+      <Item Name="stradFromListExt" Value=", 원래 확장자에 덧붙임"/>
+      <Item Name="stradFromListOnlyExt" Value=", 이름대신 확장자로 항목을 사용"/>
+<n/>      <Item Name="stradRegexp" Value="규칙적인 표현을 사용한 이름 변경 파일"/>
+<n/>      <Item Name="stradExif" Value="EXIF 정보에, 마스크 &#34;%s&#34; 를 기본으로 한 이름을 생성"/>
+      <Item Name="straeFromListEmpty" Value="빈 줄"/>
+      <Item Name="straeFromListEnd" Value="목록의 끝"/>
+      <Item Name="strfsNotRenamed" Value="%s 는 이름 변경되지 않았습니다: %s"/>
+      <Item Name="strfsRenamed" Value="%s 는 %s 로 이름 변경되었습니다"/>
+      <Item Name="strfsReverted" Value="%s 는 이전의 이름 %s 로 되돌려졌습니다"/>
+      <Item Name="strfsRenError" Value="%s 를 %s 로 이름 변경할 수 없었ㅅ브니다: %s"/>
+      <Item Name="strfsNoOldName" Value="%s 가 돌아갈 이전 이름이 저장되어있지 않습니다"/>
+      <Item Name="strfs404" Value="소스 파일을 찾을 수 없습니다"/>
+      <Item Name="strfsAlreadyExist" Value="이 이름의 파일 또는 폴더가 이미 존재합니다"/>
+      <Item Name="strfeIdentical" Value="새 이름이 낡은 이름과 같습니다"/>
+      <Item Name="strhintNotAgain" Value="이 힌트는 더 이상 보지 않습니다"/>
+      <Item Name="strhintShowPreview" Value="이전 단을 볼 수 있습니다. 만일 이것을 숨기고 싶다면, 파일 목록의 헤더 단에서 마우스 오른쪽 버튼을 클릭하세요."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="이 프로그램에 대하여">
+    <btn1 Caption="이력"/>
+    <btn2 Caption="닫기"/>
+    <tshGeneral Caption="일반"/>
+    <tshCredits Caption="크레디트"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="경고"/>
+        <Item Index="1" Value="에러"/>
+        <Item Index="2" Value="정보"/>
+        <Item Index="3" Value="확인"/>
+        <Item Index="4" Value="예(&#38;Y)"/>
+        <Item Index="5" Value="아니오(&#38;N)"/>
+        <Item Index="6" Value="확인(&#38;O)"/>
+        <Item Index="7" Value="취소(&#38;C)"/>
+        <Item Index="8" Value="대하여(&#38;A)"/>
+        <Item Index="9" Value="재시도(&#38;R)"/>
+        <Item Index="10" Value="무시(&#38;I)"/>
+        <Item Index="11" Value="모두(&#38;A)"/>
+        <Item Index="12" Value="모두 아니오"/>
+        <Item Index="13" Value="모두 예"/>
+        <Item Index="14" Value="도움말 (&#38;H)"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="옵션">
+    <btn1 Caption="도움말"/>
+    <btn2 Caption="취소"/>
+    <btn3 Caption="확인"/>
+    <tshDisplay Caption="표시"/>
+    <tshAdding Caption="파일 &#38;&#38; 폴더"/>
+    <tshProcessing Caption="진행중"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="언어"/>
+    <lbhLists Caption="목록"/>
+    <cbxRealtimeUpdate Caption="이름 변경을 실시간 업데이트"/>
+    <cbxResizeColsFiles Caption="파일 목록의 단을 자동 리사이즈"/>
+    <cbxFilesIcons Caption="파일 확장자 기준으로, 파일 목록에서 아이콘을 표시"/>
+    <lbhFonts Caption="폰트"/>
+    <cbxForceFont Caption="특수문자를 표시하게하는 제어에 다음 폰트를 강요:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Default Windows font"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="노트: 가능하다면 Arial Unicode MS 를 강력 추천합니다"/>
+    <lbhDropdown Caption="드롭-다운 필드"/>
+    <lblDropdownMax Caption="이력에 남길 값의 수:"/>
+    <cbxDropdownComplete Caption="타이핑중에 이력 값을 자동 완성"/>
+    <lbhToolbars Caption="툴 바"/>
+    <lblIconSet Caption="아이콘 세트:"/>
+    <lblColorType Caption="컬러 타입:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="자동"/>
+        <Item Index="1" Value="비활성화시 회색화"/>
+        <Item Index="2" Value="비활성화시 블랜디드 라이트 (XP 스타일)"/>
+        <Item Index="3" Value="비활성화시 블랜디드 다크"/>
+        <Item Index="4" Value="항상 컬러"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Office XP 스타일"/>
+    <lbhDragdrop Caption="드래그 &#38; 드롭"/>
+    <cbxDragdropNoAsk Caption="다음 옵션을 항상 사용하여, 무엇을 할지 묻지 않음:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="선택한 폴더의 파일을 추가"/>
+      <cbxFolders Caption="선택된 폴더를 추가"/>
+      <cbxRecursive Caption="서브폴더에도 이 두 옵션을 적용"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="목록 행동"/>
+    <cbxLaunchFile Caption="더블 클릭에 파일을 기동"/>
+    <lbhRenaming Caption="파일 남김"/>
+    <cbxCopy Caption="이름 변경대신 복사"/>
+    <cbxGenerLog Caption="로그 생성"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="디렉토리 강제 (만일 &#34;\&#34; 가 이름에 있으면 폴더 생성을 허가)"/>
+    <cbxDetectAbsdir Caption="&#34;:\&#34; 나 &#34;\\&#34; 를 절대 경로로 검출 (어리로든 파일 이동을 허가)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="이동:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="파일 목록"/>
+        <Item Index="1" Value="액션"/>
+        <Item Index="2" Value="로그"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="로그 클리어"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="이동:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="파일 목록"/>
+        <Item Index="1" Value="액션"/>
+        <Item Index="2" Value="로그"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="파일 목록 클리어"/>
+    <cbxClearBatchList Caption="묶음 목록 클리어"/>
+    <cbxSaveLog Caption="파일에 로그 저장:"/>
+    <btnSaveLog Hint="찾아보기..."/>
+    <cbxSaveLogAppend Caption="현재 파일에 덧붙임"/>
+    <lbhLanguage Caption="언어"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="이름"/>
+          <Column Index="1" Caption="로컬명"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="버젼:"/>
+      <lblMadeby Caption="제작자:"/>
+      <lblComments Caption="코멘트:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="추가할 폴더 선택">
+    <btn1 Caption="도움말"/>
+    <btn2 Caption="취소"/>
+    <btn3 Caption="확인"/>
+    <btn4 Caption="네트워크..."/>
+    <Options>
+      <cbxFiles Caption="선택한 폴더의 파일을 추가"/>
+      <cbxFolders Caption="선택한 폴더를 추가"/>
+      <cbxRecursive Caption="서브폴더에도 이 두 옵션을 적용"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="드래그 &#38; 드롭 옵션">
+    <btn1 Caption="도움말"/>
+    <btn2 Caption="취소"/>
+    <btn3 Caption="확인"/>
+    <lblOptions Caption="드롭한 파일을 추가를 사용하기위한 옵션:"/>
+    <Options>
+      <cbxFiles Caption="선택한 폴더의 파일을 추가"/>
+      <cbxFolders Caption="선택한 폴더 추가"/>
+      <cbxRecursive Caption="서브폴더에도 이 두 옵션을 적용"/>
+    </Options>
+    <cbxNotAgain Caption="이 창을 다시 보지 않습니다 (다음번에 선택된 옵션을 유지)"/>
+  </DragdropOptionsForm>
+</Application>

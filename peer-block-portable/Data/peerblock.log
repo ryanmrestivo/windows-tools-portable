@@ -1,0 +1,55 @@
+
+
+--------------------------------------------------------------------------------
+
+Logging Started...
+[4/12/2021] [12:34:04.673] [08232]  [TraceLog] [StartLogging]    starting logging
+[4/12/2021] [12:34:04.673] [08232]  [mainproc] [Main_ProcessDb]    Deleted history.db and peerblock.log files
+[4/12/2021] [12:34:04.673] [08232]  [mainproc] [Main_ProcessDb]    done with 'delete' type cleanup
+[4/12/2021] [12:34:04.673] [08232]  [mainproc] [Main_ProcessDb]  < Leaving routine.
+[4/12/2021] [12:41:46.320] [12672]  [mainproc] [Main_OnCommand]    user clicked tray-icon right-click menu 'Exit' item
+[4/12/2021] [12:41:46.320] [12672]  [mainproc] [Main_OnCommand]    sufficient time has passed since last block, exiting program
+[4/12/2021] [12:41:46.323] [12672]  [mainproc] [Main_OnDestroy]    destroying main window
+[4/12/2021] [12:41:46.323] [12672]  [mainproc] [Main_OnDestroy]    writing config out to disk
+[4/12/2021] [12:41:46.323] [12672]  [Configuration] [Save]  > Entering routine.
+[4/12/2021] [12:41:46.326] [12672]  [Configuration] [Save]  < Leaving routine.
+[4/12/2021] [12:41:46.326] [12672]  [mainproc] [Main_OnDestroy]    finished saving config to peerblock.conf
+[4/12/2021] [12:41:46.333] [12672]  [mainproc] [Main_OnDestroy]    destroying main window tabs
+[4/12/2021] [12:41:46.333] [12672]  [mainproc] [Main_OnDestroy]    destroying tab: [Protection]
+[4/12/2021] [12:41:46.333] [12672]  [LogProc] [Log_OnDestroy]  > Entering routine.
+[4/12/2021] [12:41:46.333] [12672]  [LogProc] [Log_OnDestroy]    saving config
+[4/12/2021] [12:41:46.333] [12672]  [Configuration] [Save]  > Entering routine.
+[4/12/2021] [12:41:46.335] [12672]  [Configuration] [Save]  < Leaving routine.
+[4/12/2021] [12:41:46.335] [12672]  [LogProc] [Log_OnDestroy]    setting filter action-function to nothing
+[4/12/2021] [12:41:46.335] [12672]  [LogProc] [Log_OnInitDialog]    setting g_log to empty LogFilterAction
+[4/12/2021] [12:41:46.340] [12672]  [LogProc] [Log_OnDestroy]  < Leaving routine.
+[4/12/2021] [12:41:46.340] [12672]  [mainproc] [Main_OnDestroy]    tab [Protection] destroyed
+[4/12/2021] [12:41:46.340] [12672]  [mainproc] [Main_OnDestroy]    destroying tab: [Settings 1]
+[4/12/2021] [12:41:46.341] [12672]  [mainproc] [Main_OnDestroy]    tab [Settings 1] destroyed
+[4/12/2021] [12:41:46.342] [12672]  [mainproc] [Main_OnDestroy]    destroying tab: [Settings 2]
+[4/12/2021] [12:41:46.342] [12672]  [mainproc] [Main_OnDestroy]    tab [Settings 2] destroyed
+[4/12/2021] [12:41:46.342] [12672]  [mainproc] [Main_OnDestroy]    destroying tab: [Port Settings]
+[4/12/2021] [12:41:46.345] [12672]  [mainproc] [Main_OnDestroy]    tab [Port Settings] destroyed
+[4/12/2021] [12:41:46.345] [12672]  [mainproc] [Main_OnDestroy]    main window tabs destroyed
+[4/12/2021] [12:41:46.345] [12672]  [mainproc] [Main_OnDestroy]    Terminating program...
+[4/12/2021] [12:41:46.345] [12672]  [mainproc] [Main_OnDestroy]    post quit message
+[4/12/2021] [12:41:46.345] [12672]  Message loop ended, shutting down PeerBlock
+[4/12/2021] [12:41:46.345] [12672]  [mainproc] [Shutdown]    Shutting down PeerBlock.
+[4/12/2021] [12:41:46.345] [12672]  [mainproc] [Shutdown]    Resetting filter driver on exit
+[4/12/2021] [12:41:46.345] [15232]  [pbfilter_base] [thread_func]    thread terminating
+[4/12/2021] [12:41:46.348] [12672]  [driver] [close]  > Entering routine.
+[4/12/2021] [12:41:46.348] [12672]  [driver] [close]   closing driver - name: [pbfilter]
+[4/12/2021] [12:41:46.348] [12672]  [driver] [stop]  > Entering routine.
+[4/12/2021] [12:41:46.348] [12672]  [driver] [stop]    stopping driver
+[4/12/2021] [12:41:46.367] [12672]  [driver] [stop]    driver has been stopped
+[4/12/2021] [12:41:46.368] [12672]  [driver] [stop]  < Leaving routine.
+[4/12/2021] [12:41:46.368] [12672]  [driver] [close]    unloaded driver
+[4/12/2021] [12:41:46.368] [12672]  [driver] [close]  < Leaving routine.
+[4/12/2021] [12:41:46.368] [12672]  [driver] [close]  > Entering routine.
+[4/12/2021] [12:41:46.368] [12672]  [driver] [close]   closing driver - name: [pbfilter]
+[4/12/2021] [12:41:46.368] [12672]  [driver] [close]    Tried to close driver, but it wasn't loaded.
+[4/12/2021] [12:41:46.368] [12672]  [driver] [close]  < Leaving routine (without doing anything).
+[4/12/2021] [12:41:46.368] [12672]  [mainproc] [Shutdown]    Shutting down winsock
+[4/12/2021] [12:41:46.368] [12672]  [mainproc] [Shutdown]    Finished shutting down PeerBlock.
+[4/12/2021] [12:41:46.368] [12672]  PeerBlock is now exiting, due to user request.  Have a nice day!
+[4/12/2021] [12:41:46.368] [12672]  [UpdateThread] [UpdateThread]    destroyed thread class

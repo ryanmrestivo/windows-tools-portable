@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAATCwAAEwsAABAAAAAQAAAAAAEAAAMd6QAUP/IAJkT3ACBW8AAwVPcARmD5AFFz/QAPr9oAKcfzAAju4wAv6/kAMfLtAEb27wBa+fQA/P/+AP////////////////////8AAAAAAAAAAAmZiIiIiIiACd3czMzKqoAEZmVTMyIiEAnczMzMqqqABGZmVVMyIxAJu7u7u7u7gARmZmZVMyMQCe7u3czMzIAEd3d2ZmVFEAnu7u7u7d2ACZmZmZmZmYAAAAAAAAAAAP//////////
+Name=Catalan
+LocalName=Català
+Version=2.09
+VersionFormat=2.12
+Comments=Traducció d'AntRenamer al català
+Authors=Hiro5|groccat@gmail.com
+-->
+<Application>
+  <MainForm>
+<n/>    <tbTabs Caption="Pages"/>
+<n/>    <tbProgram Caption="Program"/>
+<n/>    <tbFiles Caption="Files"/>
+<n/>    <tbMove Caption="Move Items"/>
+<n/>    <tbActions Caption="Actions"/>
+<n/>    <tbLog Caption="Log"/>
+    <ActionBatchAddAction Caption="Afegeix al batch" Hint="Afegeix al batch|Afegeix l'acció seleccionada i els seus paràmetres al batch"/>
+    <ActionBatchOpen Caption="Obre..." Hint="Obre|Obre un fitxer batch"/>
+    <ActionBatchSaveAs Caption="Desa..." Hint="Desa|Desa aquest batch a un fitxer"/>
+    <ActionBatchRemoveSel Caption="Esborra la sel." Hint="Esborra la selecció|Esborra les accions seleccionades del batch"/>
+    <ActionBatchClear Caption="Neteja" Hint="Neteja el batch|Esborra totes les accions del batch"/>
+    <ActionBatchNoRecent Caption="(cap fitxer recent)"/>
+    <ActionAddFiles Caption="Afegeix fitxers..." Hint="Afegeix fitxers|Afegeix fitxers a la llista"/>
+    <ActionAddFolders Caption="Afegeix carpetes..." Hint="Afegeix carpetes|Afegeix carpetes o els seus continguts a la llista"/>
+    <ActionRemoveSelected Caption="Esborra la sel." Hint="Esborra la selecció|Esborra els fitxers seleccionats de la llista"/>
+    <ActionRemoveAll Caption="Esborra-ho tot" Hint="Esborra-ho tot|Esborra tots els fitxers de la llista"/>
+    <ActionRemoveDead Caption="Esborra morts" Hint="Esborra morts|Esborra fitxers morts de la llista"/>
+    <ActionPreview Caption="Previsualitza" Hint="Previsualitza|Actualitza la columna de previsualització amb les accions planejades actualment"/>
+    <ActionFromListClear Caption="Neteja" Hint="Neteja la llista|Neteja la llista"/>
+    <ActionFromListOpen Caption="Obre..." Hint="Obre|Carrega una llista d'un fitxer"/>
+    <ActionFromListSave Caption="Desa..." Hint="Desa|Desa la llista a un fitxer"/>
+    <ActionMultistrReplClear Caption="Neteja la graella" Hint="Neteja la graella de cadena"/>
+    <ActionMultistrReplSave Caption="Desa" Hint="|Desa el joc actual sota el nom escrit a dalt"/>
+    <ActionMultistrReplDelete Caption="Esborra" Hint="|Esborra el nom del joc actual seleccionat"/>
+    <ActionMoveUp Caption="Amunt" Hint="Mou amunt|Mou amunt els elements seleccionats"/>
+    <ActionMoveDown Caption="Avall" Hint="Mou avall|Mou avall els elements seleccionats"/>
+    <ActionMoveTop Caption="A dalt" Hint="Mou a dalt|Mou els elements seleccionats a dalt de tot de la llista"/>
+    <ActionMoveBottom Caption="A sota" Hint="Mou a sota|Mou els elements seleccionats a sota del tot de la llista"/>
+    <ActionItemsUnsort Caption="Elements desordenats" Hint="|Esborra l'ordre actual"/>
+    <ActionItemsSelectAll Caption="Selecciona-ho tot" Hint="Selecciona-ho tot|Selecciona tots els elements"/>
+    <ActionItemsSelectNone Caption="No seleccionis res" Hint="No seleccionis res|Desfà la selecció de tots els elements"/>
+    <ActionItemsSelectInvert Caption="Inverteix selecció" Hint="Inverteix selecció|Inverteix la selecció dels elements"/>
+    <ActionLogClear Caption="Neteja" Hint="Neteja|Neteja el registre"/>
+    <ActionLogSave Caption="Desa..." Hint="Desa|Desa el registre a un fitxer"/>
+    <ActionLogCopy Caption="Copia" Hint="Copia|Copia el registre al porta-retalls"/>
+    <ActionLogFilter Caption="Filtre" Hint="Filtre|Filtra entrades de registre"/>
+    <ActionLogFilterOk Caption="Canviats de nom" Hint="Mostra fitxers canviats de nom|Mostra entrades que corresponen als fitxers que han canviat de nom correctament"/>
+    <ActionLogFilterError Caption="Errors" Hint="Mostra errors|Mostra entrades que corresponen als errors"/>
+    <ActionLogFilterNot Caption="No canviats de nom" Hint="Mostra fitxers no canviats de nom|Mostra entrades que corresponen als fitxers que no s'han canviat de nom"/>
+    <ActionActionGo Caption="Som-hi" Hint="Som-hi|Inicia el procés de canviar noms"/>
+    <ActionActionStop Caption="Atura't" Hint="Atura't|Atura el procés de canviar noms"/>
+    <ActionOptions Caption="Opcions..." Hint="Opcions|Canvia les opcions del programa"/>
+    <ActionActionUndo Caption="Desfés" Hint="Desfés|Desfà l'últim canvi de noms"/>
+    <ActionHelpContents Caption="Ajuda" Hint="Contingut d'ajuda|Obre el contingut d'ajuda"/>
+    <ActionHelpAbout Caption="Quant a..." Hint="Quant a|Quant a aquest programa"/>
+    <ActionExit Caption="Surt" Hint="Surt|Tanca el programa"/>
+    <ActionAlwaysOnTop Caption="A sobre" Hint="Sempre a sobre|Manté la finestra sempre a sobre"/>
+    <ActionTabFiles Caption="Fitxers" Hint="Fitxers|Mostra els fitxers"/>
+    <ActionTabActions Caption="Accions" Hint="Accions|Mostra les accions"/>
+    <ActionTabLog Caption="Registre" Hint="Registre|Mostra el registre"/>
+    <lstFiles Hint="|Llista de fitxers - Feu clic dret a les capçaleres per personalitzar les columnes">
+      <Header>
+        <Columns>
+          <Item Index="0" Text="Carpeta"/>
+          <Item Index="1" Text="Nom de fitxer"/>
+          <Item Index="2" Text="Camí complet"/>
+          <Item Index="3" Text="Ext."/>
+          <Item Index="4" Text="Previsualització"/>
+          <Item Index="5" Text="Mida"/>
+          <Item Index="6" Text="Creat"/>
+          <Item Index="7" Text="Modificat"/>
+        </Columns>
+      </Header>
+    </lstFiles>
+    <grpPreview Caption="       Vista prèvia del fitxer seleccionat "/>
+    <grpBatch Caption="       Contingut del batch (accions planejades) "/>
+    <lstBatch Hint="|Contingut del batch (accions planejades)"/>
+    <lblPreviewOld Caption="Nom actual:"/>
+    <lblPreviewNew Caption="Mostra nou nom:"/>
+    <lstActions Hint="|Llista d'accions">
+      <Items>
+        <Item Index="0" Value="Canvia d'extensió"/>
+        <Item Index="1" Value="Reemplaça cadena"/>
+        <Item Index="2" Value="Reemplaça múltiples cadenes"/>
+        <Item Index="3" Value="Insereix cadena"/>
+        <Item Index="4" Value="Mou cadena"/>
+        <Item Index="5" Value="Elimina caràcters"/>
+        <Item Index="6" Value="Enumera"/>
+        <Item Index="7" Value="Usa informació d'mp3"/>
+        <Item Index="8" Value="Usa data i hora"/>
+        <Item Index="9" Value="Posa noms aleatoris"/>
+        <Item Index="10" Value="Canvia majúscules/min."/>
+        <Item Index="11" Value="Agafa noms de la llista"/>
+        <Item Index="12" Value="Expressió regular"/>
+        <Item Index="13" Value="Usa informació d'EXIF"/>
+      </Items>
+    </lstActions>
+    <lblChangeExt Caption="Reemplaça l'extensió per:"/>
+    <cbxChangeExtNoRepl Caption="No reemplacis l'extensió, afegeix-la al nom complet actual"/>
+    <lblChangeExtNotes Caption="Notes:&lt;br&gt;- No inclou el punt, només introduïu la nova extensió&lt;br&gt;- Si voleu fer una extensió incrementada, utilitzeu l'acció d'&lt;LINK&gt;Enumera&lt;/LINK&gt;"/>
+    <lblStrReplSearch Caption="Cerca:"/>
+    <lblStrReplBy Caption="Reemplaça amb:"/>
+    <cbxStrReplAll Caption="Reemplaça tota coincidència"/>
+    <cbxStrReplCase Caption="Diferencia majúscules"/>
+    <cbxStrReplExt Caption="Inclou l'extensió a la cerca"/>
+    <cbxStrReplOnlyExt Caption="Aplica a l'extensió en comptes del nom"/>
+    <lblMultstrSearch Caption="Cerca:"/>
+    <lblMultstrReplBy Caption="Reemplaça amb:"/>
+    <lblMultstrReplSet Caption="Jocs predefinits:"/>
+    <cbxMultstrReplExt Caption="Inclou l'extensió a la cerca"/>
+    <cbxMultstrReplCase Caption="Diferencia majúscules"/>
+    <lblMultstrReplNotes Caption="Notes:&lt;BR&gt;- Feu servir Ctrl+Més (+) i Ctrl+Menys (-) per inserir o esborrar una línia a la posició actual"/>
+    <lblStrInsStr Caption="Cadena a inserir:"/>
+    <lblStrInsPos Caption="A la posició:"/>
+    <rbtStrInsBegin Caption="Des del principi"/>
+    <rbtStrInsEnd Caption="Des del final"/>
+    <cbxStrInsExt Caption="Aplica a l'extensió en comptes del nom"/>
+    <lblStrInsNotes Caption="Notes:&lt;br&gt;- Si voleu afegir una cadena abans o després d'una altra, feu servir l'acció de &lt;LINK&gt;Reemplaça cadena&lt;/LINK&gt;&lt;br&gt;- %name% = Nom del fitxer original (sense extensió)&lt;BR&gt;- %ext% = Extensió original (amb el punt)&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Nom de la carpeta&lt;BR&gt;- %% = El caràcter %&lt;BR&gt;Consulteu l'&lt;LINK&gt;Ajuda&lt;/LINK&gt; per a més informació"/>
+    <lblMoveStrFrom Caption="Des de la posició:"/>
+    <rbtMoveStrFromBegin Caption="Des del principi"/>
+    <rbtMoveStrFromEnd Caption="Des del final"/>
+    <lblMoveStrCount Caption="Nombre de caràcters a moure:"/>
+    <lblMoveStrTo Caption="A la posició:"/>
+    <rbtMoveStrToBegin Caption="Des del principi"/>
+    <rbtMoveStrToEnd Caption="Des del final"/>
+    <lblMoveStrNotes Caption="Notes:&lt;br&gt;- Si voleu moure una cadena específica però no sempre es troba al mateix lloc, feu servir el &lt;link&gt;Reemplaça cadena&lt;/link&gt; per esborrar-la, i llavors la &lt;link&gt;Insereix cadena&lt;/link&gt; per afegir-la al nou lloc&lt;BR&gt;- El valor de &#34;A la posició&#34; no inclou els caràcters moguts (p.e. és com si ja haguessin estat esborrats)"/>
+    <lblCharDel Caption="Nombre de caràcters a esborrar:"/>
+    <rbtCharDelPos Caption="Des de la posició:"/>
+    <rbtCharDelBegin Caption="Des del principi"/>
+    <rbtCharDelEnd Caption="Des del final"/>
+    <rbtCharDelStr Caption="Després de la cadena:"/>
+    <rbtCharDelStr2 Caption="Abans de la cadena:"/>
+    <cbxCharDelExt Caption="Aplica a l'extensió en comptes del nom"/>
+    <lblCharDelNotes Caption="Notes:&lt;BR&gt;- Per esborrar una cadena específica, feu servir l'acció de &lt;LINK&gt;Reemplaça cadena&lt;/LINK&gt; i reemplaça la cadena per una altra en blanc"/>
+    <lblEnumMask Caption="Màscara:"/>
+    <lblEnumStart Caption="Inicia a:"/>
+    <lblEnumDigits Caption="Nombre de dígits:"/>
+    <lblEnumIncr Caption="Incrementa per:"/>
+    <cbxEnumRestart Caption="Torna al valor inicial en canviar de carpeta"/>
+    <lblEnumNotes Caption="Notes:&lt;BR&gt;- %name% = Nom del fitxer original (sense extensió)&lt;BR&gt;- %ext% = Extensió original (amb el punt)&lt;BR&gt;- %num% = Número&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Nom de carpeta&lt;BR&gt;- %% = El caràcter %&lt;BR&gt;Consulteu l'&lt;LINK&gt;Ajuda&lt;/LINK&gt; per a més informació"/>
+    <lblMP3Mask Caption="Màscara:"/>
+    <cbxMP3TwoDigit Caption="Número de la pista de dos dígits (afegeix '0' davant del nombre si és necessari)"/>
+    <cbxMP3Convert Caption="Converteix caràcters no permesos com ? / \ : &lt; &gt; | ¦ *"/>
+    <lblMP3Notes Caption="Notes:&lt;BR&gt;- %author% = Autor&lt;BR&gt;- %title% = Títol&lt;BR&gt;- %album% = Àlbum&lt;BR&gt;- %year% = Any&lt;BR&gt;- %genre% = Gènere&lt;BR&gt;- %comm% = Comentari&lt;BR&gt;- %track% = Número de pista (ID3V1.1)&lt;BR&gt;- %name% = Nom de fitxer original sense extensió&lt;BR&gt;- %ext% = Extensió original amb el punt&lt;BR&gt;- %folder&lt;i&gt;N&lt;/i&gt;% = Nom de carpeta&lt;BR&gt;- %% = El caràcter %&lt;BR&gt;- $if(condició,valor-vertader,valor-fals)&lt;BR&gt;Consulteu l'&lt;LINK&gt;Ajuda&lt;/LINK&gt; per a més informació"/>
+    <lblDTMask Caption="Màscara:"/>
+    <cbxDTSuffix Caption="Afegeix el sufix si hi ha més d'un fitxer amb la mateixa data/hora"/>
+    <lblDTWhich Caption="Data a fer servir:"/>
+    <rbtDTWhichCreation Caption="Creació"/>
+    <rbtDTWhichModif Caption="Última modificació"/>
+    <lblDTNotes Caption="Notes:"/>
+    <lblDTNotes2>
+      <Lines>
+        <![CDATA[f	Nom del fitxer original (sense extensió)
+e	Extensió original (amb el punt)
+c	Data i hora amb el format estàndard a Windows
+d	Dia sense el zero inicial (1-31)
+dd	Dia amb el zero inicial (01-31)
+ddd	Dia, nom curt (dl.-dm.)
+dddd	Dia, nom complet (dilluns-diumenge)
+ddddd	Data amb el format curt de Windows
+dddddd	Data amb el format llarg de Windows
+m	Mes sense zero inicial (1-12)
+mm	Mes amb zero inicial (01-12)
+mmm	Mes, nom curt (gen-des)
+mmmm	Mes, nom complet (gener-desembre)
+yy	Any, número de 2 dígits (00-99)
+yyyy	Any, número de 4 dígits (0000-9999)
+h	Hora sense zero inicial (0-23)
+hh	Hora amb zero inicial (00-23)
+n	Minuts sense zero inicial (0-59)
+nn	Minuts amb zero inicial (00-59)
+s	Segons sense zero inicial (0-59)
+ss	Segons amb zero inicial (00-59)
+z	Millisecond without a leading zero (0-999)
+zzz	Millisecond with a leading zero (000-999)
+am/pm	Fa servir el rellotge de 12 hores per al h o hh precedent
+a/p	Fa servir el rellotge de 12 hores per al h o hh precedent
+'xx'/"xx"	Els caràcters entre cometes senzilles o dobles es mantenen invariables
+
+Si després de h o hh li segueix immediatament m o mm,
+en comptes del mes es posarà els minuts]]>
+      </Lines>
+    </lblDTNotes2>
+    <lblRandomMask Caption="Màscara:"/>
+    <lblRandomMethod Caption="Mètode:"/>
+    <rbtRandomNumber Caption="Nombre aleatori (8 dígits)"/>
+    <rbtRandomTick Caption="Comptador de tics de Windows"/>
+    <rbtRandomGUID Caption="Identificador únic global (GUID)"/>
+    <lblRandomNotes Caption="Notes:&lt;BR&gt;- %name% = Nom del fitxer original sense extensió&lt;BR&gt;- %ext% = Extensió original amb el punt&lt;BR&gt;- %random% = Cadena generada aleatòria&lt;BR&gt;- %% = El caràcter %&lt;BR&gt;Consulteu l'&lt;LINK&gt;Ajuda&lt;/LINK&gt; per a més informació"/>
+    <rbtCaseWords Caption="Majúscules la primera lletra després de qualsevol d'aquests caràcters:"/>
+    <rbtCaseFirst Caption="Majúscules la primera lletra del nom del fitxer"/>
+    <rbtCaseUpper Caption="Majúscules"/>
+    <rbtCaseLower Caption="Minúscules"/>
+    <cbxCaseLocale Caption="Utilitza els paràmetres locals de Windows per canviar els caràcters accentuats"/>
+    <cbxCaseIncludeExt Caption="Aplica també a l'extensió"/>
+    <cbxCaseOnlyExt Caption="Aplica a l'extensió en comptes del nom"/>
+    <cbxFromListExt Caption="Afegeix al final l'extensió original del fitxer"/>
+    <cbxFromListOnlyExt Caption="Utilitza elements com a extensions en comptes de noms"/>
+    <lblFromListNotes Caption="Notes:&lt;BR&gt;- Cada línia d'aquesta llista s'utilitzarà com a nom per al fitxer. Els elements s'utilitzen seqüencialment&lt;BR&gt;- Si les línies són buides o si no hi ha prou línies, els fitxers corresponents no canviaran de nom"/>
+    <lblRegexp Caption="Expressió:"/>
+    <lblRegexpRepl Caption="Nou nom:"/>
+    <lblRegexpNotes Caption="Notes:&lt;BR&gt;- El caràcter \ es pot utilitzar per escapar caràcters especials (com $ i altres), utilitzeu un \\ per un \ simple al nom nou (si voleu posar el nou nom a una altra carpeta)&lt;BR&gt;- Utilitzeu ^ per indicar el començament del nom i $ pel final del nom&lt;BR&gt;- El nou nom ha de tindre $1, $2, etc. per indicar on aniran els caràcters trobats&lt;BR&gt;Consulteu l'&lt;LINK&gt;Ajuda&lt;/LINK&gt; per a més informació sobre expressions regulars"/>
+    <lblExifMask Caption="Màscara:"/>
+    <lblExifNotes Caption="Notes:&lt;BR&gt;- %name% = Nom del fitxer original sense extensió&lt;BR&gt;- %ext% = Extensió original amb el punt&lt;BR&gt;- %datetimeoriginal% / %datetime% = Data i temps original de la imatge&lt;BR&gt;- %orientation% = Orientació de la imatge&lt;BR&gt;- %flash% = El flash estava encès o apagat&lt;BR&gt;- %% = El caràcter %&lt;BR&gt;Consulteu l'&lt;LINK&gt;Ajuda&lt;/LINK&gt; per a més informació i per una llista completa d'etiquetes d'EXIF"/>
+    <lstLog Hint="|Registre"/>
+    <VarMessages>
+      <Item Name="strfltAllFiles" Value="Tots els fitxers"/>
+      <Item Name="strfltTextFiles" Value="Fitxers de text"/>
+      <Item Name="strfltBatchFiles" Value="Fitxers batch d'Ant Renamer"/>
+      <Item Name="strmsgSelectFiles" Value="Selecciona fitxers"/>
+      <Item Name="strmsgSelectFolder" Value="Selecciona carpetes"/>
+      <Item Name="strmsgStatusAddingFiles" Value="Afegint fitxers"/>
+      <Item Name="strmsgStatusRenaming" Value="Canviant el nom dels fitxers"/>
+      <Item Name="strmsgFilesCount" Value="%d fitxers"/>
+      <Item Name="strmsgBusy" Value="L'aplicació està ocupada: Operació de canvi de nom en progrés."/>
+      <Item Name="strmsgNothingToDo" Value="Res a fer: seleccioneu com a mínim un fitxer i una acció per fer."/>
+      <Item Name="strlogStartRename" Value="S'ha iniciat l'operació de canvi de nom"/>
+      <Item Name="strlogStartPreview" Value="Actualitzant la vista prèvia"/>
+      <Item Name="strlogStartRevert" Value="Reverteix als noms anteriors"/>
+      <Item Name="strlogEndRename" Value="Operació de canvi de nom finalitzat"/>
+      <Item Name="strlogEndPreview" Value="Operació de previsualització finalitzat"/>
+      <Item Name="strlogEndRevert" Value="Operació de revertir finalitzat"/>
+      <Item Name="strlogStoppedByUser" Value="Operació aturada per l'usuari"/>
+      <Item Name="stradUnknown" Value="No facis res"/>
+      <Item Name="stradInclExt" Value=", i aplica a l'extensió"/>
+      <Item Name="stradOnlyExt" Value=", aplica a l'extensió en comptes del nom"/>
+      <Item Name="stradChangeExt" Value="Canvia d'extensió a &#34;%s&#34;"/>
+      <Item Name="stradChangeExtRmv" Value="Esborra l'extensió"/>
+      <Item Name="stradChangeExtNoRepl" Value="Afegeix l'extensió &#34;%s&#34;"/>
+      <Item Name="stradStringRepl" Value="Reemplaça &#34;%s&#34; per &#34;%s&#34;"/>
+      <Item Name="stradStringReplAll" Value=", reemplaça totes les coincidències"/>
+      <Item Name="stradStringReplCase" Value=", distingeix majúscules"/>
+      <Item Name="stradMultstrRepl" Value="Reemplaça múltiples cadenes amb el joc &#34;%s&#34;"/>
+      <Item Name="stradStringIns" Value="Afegeix &#34;%s&#34; a la posició %d"/>
+      <Item Name="stradMoveStr" Value="Mou %d caràcters de la posició %d%s, a la posició %d%s"/>
+      <Item Name="stradCharDel" Value="Esborra %d caràcters"/>
+      <Item Name="stradCharDelPos" Value=" a la posició %d"/>
+      <Item Name="stradCharDelStr" Value=" després de la cadena &#34;%s&#34;"/>
+      <Item Name="stradEnum" Value="Genera numeració amb &#34;%s&#34; de %d a %d per %d"/>
+      <Item Name="stradMP3" Value="Genera noms amb l'informació d'MP3, segons la màscara &#34;%s&#34;"/>
+      <Item Name="stradMP3TwoDigit" Value=", afegeix el '0' al nombre de pista si és necessari"/>
+      <Item Name="stradMP3Convert" Value=", converteix caràcters no autoritzats"/>
+      <Item Name="stradFromBegin" Value=", Des del principi"/>
+      <Item Name="stradFromEnd" Value=", Des del final"/>
+      <Item Name="stradDateTime" Value="Genera noms amb les dates i hores dels fitxers, basat en la màscara &#34;%s&#34;"/>
+      <Item Name="stradDateTimeCreat" Value=" amb la data de creació"/>
+      <Item Name="stradDateTimeModif" Value=" amb la data de modificació"/>
+      <Item Name="stradDateTimeSuffix" Value=", afegeix sufix si és necessari"/>
+      <Item Name="stradRandom" Value="Genera noms aleatoris amb la màscara &#34;%s&#34;"/>
+      <Item Name="stradRandomNumbers" Value=", amb nombres"/>
+      <Item Name="stradRandomTick" Value=", amb el comptador de tics de Windows"/>
+      <Item Name="stradRandomGUID" Value=", amb el GUID"/>
+      <Item Name="stradCase" Value="Canvia majúscules/minúscules:"/>
+      <Item Name="stradCaseWords" Value=" primera lletra majúscula després de qualsevol dels caràcters &#34;%s&#34;"/>
+      <Item Name="stradCaseFirst" Value=" primera lletra majúscula del nom"/>
+      <Item Name="stradCaseUpper" Value=" tot en majúscules"/>
+      <Item Name="stradCaseLower" Value=" tot en minúscules"/>
+      <Item Name="stradCaseLocale" Value=", utilitzant els paràmetres locals de Windows"/>
+      <Item Name="stradFromList" Value="Canvia els noms dels fitxers utilitzant la llista especificada"/>
+      <Item Name="stradFromListExt" Value=", afegeix l'extensió original"/>
+      <Item Name="stradFromListOnlyExt" Value=", utilitza elements com extensions en comptes de noms"/>
+      <Item Name="stradRegexp" Value="Canvia els noms dels fitxers amb una expressió regular"/>
+      <Item Name="stradExif" Value="Genera noms amb informació d'EXIF, segons la màscara &#34;%s&#34;"/>
+      <Item Name="straeFromListEmpty" Value="Línia en blanc"/>
+      <Item Name="straeFromListEnd" Value="Fi de la llista"/>
+      <Item Name="strfsNotRenamed" Value="%s no s'ha canviat de nom : %s"/>
+      <Item Name="strfsRenamed" Value="%s s'ha canviat de nom a %s"/>
+      <Item Name="strfsReverted" Value="%s ha tornat al nom anterior %s"/>
+      <Item Name="strfsRenError" Value="No s'ha pogut canviar de nom de %s a %s: %s"/>
+      <Item Name="strfsNoOldName" Value="No s'ha desat cap nom antic de %s per tornar al nom anterior"/>
+      <Item Name="strfs404" Value="No s'ha trobat el fitxer font"/>
+      <Item Name="strfsAlreadyExist" Value="Ja existeix un nom o carpeta amb aquest nom"/>
+      <Item Name="strfeIdentical" Value="el nom nou és el mateix que l'antic"/>
+      <Item Name="strhintNotAgain" Value="No tornis a mostrar aquest consell"/>
+      <Item Name="strhintShowPreview" Value="La columna de previsualització està ara visible. Si la voleu amagar, feu clic dret del ratolí a les capçaleres de la columna de la llista de fitxers."/>
+    </VarMessages>
+  </MainForm>
+  <AboutForm Caption="Quant a aquest programa">
+    <btn1 Caption="Historial"/>
+    <btn2 Caption="Tanca"/>
+    <tshGeneral Caption="General"/>
+    <tshCredits Caption="Crèdits"/>
+  </AboutForm>
+  <MessageWin>
+    <Captions>
+      <Strings>
+        <Item Index="0" Value="Avís"/>
+        <Item Index="1" Value="Error"/>
+        <Item Index="2" Value="Informació"/>
+        <Item Index="3" Value="Confirmació"/>
+        <Item Index="4" Value="&#38;Sí"/>
+        <Item Index="5" Value="&#38;No"/>
+        <Item Index="6" Value="&#38;D'acord"/>
+        <Item Index="7" Value="&#38;Cancel·la"/>
+        <Item Index="8" Value="&#38;Interromp"/>
+        <Item Index="9" Value="&#38;Torna a provar"/>
+        <Item Index="10" Value="&#38;Ignora"/>
+        <Item Index="11" Value="&#38;Tot"/>
+        <Item Index="12" Value="No a tot"/>
+        <Item Index="13" Value="Sí a tot"/>
+        <Item Index="14" Value="&#38;Ajuda"/>
+      </Strings>
+    </Captions>
+  </MessageWin>
+  <OptionsForm Caption="Opcions">
+    <btn1 Caption="Ajuda"/>
+    <btn2 Caption="Cancel·la"/>
+    <btn3 Caption="D'acord"/>
+    <tshDisplay Caption="Visualització"/>
+    <tshAdding Caption="Fitxers i Carpetes"/>
+    <tshProcessing Caption="Processant"/>
+<n/>    <tshEvents Caption="Events"/>
+    <tshLanguage Caption="Idioma"/>
+    <lbhLists Caption="Llistes"/>
+    <cbxRealtimeUpdate Caption="Actualitza a temps real en canviar el nom dels fitxers"/>
+    <cbxResizeColsFiles Caption="Autoajusta la mida de les columnes de la llista de fitxers"/>
+    <cbxFilesIcons Caption="Mostra icones a la llista de fitxers, segons l'extensió de fitxer"/>
+    <lbhFonts Caption="Tipus de lletres"/>
+    <cbxForceFont Caption="Força la lletra següent pels controls que han de mostrar caràcters especials:"/>
+    <cmbForceFont>
+      <Items>
+        <Item Index="0" Value="Lletra de Windows per defecte"/>
+      </Items>
+    </cmbForceFont>
+    <lblForceFont Caption="Nota: És molt recomanable l'Arial Unicode MS si es troba disponible"/>
+    <lbhDropdown Caption="Camps emergents"/>
+    <lblDropdownMax Caption="Nombre de valors a conservar a l'historial:"/>
+    <cbxDropdownComplete Caption="Autocompleta amb els valors de l'historial mentre s'escriu"/>
+    <lbhToolbars Caption="Barres d'eines"/>
+    <lblIconSet Caption="Joc d'icones:"/>
+    <lblColorType Caption="Tipus de color:"/>
+    <cmbColorType>
+      <Items>
+        <Item Index="0" Value="Automàtic"/>
+        <Item Index="1" Value="En gris quan està inactiu"/>
+        <Item Index="2" Value="Llum barrejada quan està inactiu (estil d'XP)"/>
+        <Item Index="3" Value="Foscor barrejada quan està inactiu"/>
+        <Item Index="4" Value="Sempre colorat"/>
+      </Items>
+    </cmbColorType>
+    <cbxOfficeXP Caption="Estil d'Office XP"/>
+    <lbhDragdrop Caption="Arrossega i deixa anar"/>
+    <cbxDragdropNoAsk Caption="No preguntis què fer, sempre utilitza les següents opcions:"/>
+    <DragdropOptions>
+      <cbxFiles Caption="Afegeix fitxers de directoris seleccionats"/>
+      <cbxFolders Caption="Afegeix directoris seleccionats"/>
+      <cbxRecursive Caption="Aplica ambdues opcions també als subdirectoris"/>
+    </DragdropOptions>
+    <lbhBehaviour Caption="Comportament de la llista"/>
+    <cbxLaunchFile Caption="Executa el fitxer en fer doble clic"/>
+    <lbhRenaming Caption="Canvi de nom de fitxer"/>
+    <cbxCopy Caption="Copia en comptes de canviar el nom"/>
+    <cbxGenerLog Caption="Genera registre"/>
+<n/>    <lbhFoldersRules Caption="Folder rules"/>
+    <cbxForceDir Caption="Força els directoris (permet crear carpetes si es troben &#34;\&#34; als noms)"/>
+    <cbxDetectAbsdir Caption="Detecta &#34;:\&#34; o &#34;\\&#34; com a camí complet (permet moure els fitxers a qualsevol lloc)"/>
+<n/>    <cbxFolderExt Caption="Consider the last &#34;.&#34; in a folder name as extension delimiter, like for files"/>
+<n/>    <lbhWhenStarted Caption="When renaming starts"/>
+    <cbxStartSwitch Caption="Canvia a:"/>
+    <cmbStartSwitch>
+      <Items>
+        <Item Index="0" Value="Llista de fitxers"/>
+        <Item Index="1" Value="Accions"/>
+        <Item Index="2" Value="Registre"/>
+      </Items>
+    </cmbStartSwitch>
+    <cbxStartClearLog Caption="Neteja el registre"/>
+<n/>    <lbhWhenFinished Caption="When renaming ends"/>
+    <cbxFinishSwitch Caption="Canvia a:"/>
+    <cmbFinishSwitch>
+      <Items>
+        <Item Index="0" Value="Llista de fitxers"/>
+        <Item Index="1" Value="Accions"/>
+        <Item Index="2" Value="Registre"/>
+      </Items>
+    </cmbFinishSwitch>
+    <cbxClearFilesList Caption="Neteja la llista de fitxers"/>
+    <cbxClearBatchList Caption="Neteja la llista de batch"/>
+    <cbxSaveLog Caption="Desa el registre a:"/>
+    <btnSaveLog Hint="Navega..."/>
+    <cbxSaveLogAppend Caption="Afegeix a la cua del fitxer actual"/>
+    <lbhLanguage Caption="Idioma"/>
+    <LanguageFrame>
+      <lstLanguages>
+        <Columns>
+          <Column Index="0" Caption="Nom"/>
+          <Column Index="1" Caption="Nom local"/>
+        </Columns>
+      </lstLanguages>
+      <lblVersion Caption="Versió:"/>
+      <lblMadeby Caption="Fet per:"/>
+      <lblComments Caption="Comentaris:"/>
+    </LanguageFrame>
+  </OptionsForm>
+  <SelectDirectoryForm Caption="Seleccioneu carpetes per afegir">
+    <btn1 Caption="Ajuda"/>
+    <btn2 Caption="Cancel·la"/>
+    <btn3 Caption="D'acord"/>
+    <btn4 Caption="Xarxa..."/>
+    <Options>
+      <cbxFiles Caption="Afegeix fitxers dels directoris seleccionats"/>
+      <cbxFolders Caption="Afegeix els directoris seleccionats"/>
+      <cbxRecursive Caption="Aplica aquestes dues opcions als subdirectoris també"/>
+    </Options>
+  </SelectDirectoryForm>
+  <DragdropOptionsForm Caption="Opcions d'arrossega i deixa anar">
+    <btn1 Caption="Ajuda"/>
+    <btn2 Caption="Cancel·la"/>
+    <btn3 Caption="D'acord"/>
+    <lblOptions Caption="Opcions a usar per afegir fitxers que s'han deixat anar:"/>
+    <Options>
+      <cbxFiles Caption="Afegir fitxers de les carpetes seleccionades"/>
+      <cbxFolders Caption="Afegir carpetes seleccionades"/>
+      <cbxRecursive Caption="Aplica aquestes opcions també als subdirectoris"/>
+    </Options>
+    <cbxNotAgain Caption="No mostris aquesta finestra altre cop (manté les opcions seleccionades pels pròxims cops)"/>
+  </DragdropOptionsForm>
+</Application>
