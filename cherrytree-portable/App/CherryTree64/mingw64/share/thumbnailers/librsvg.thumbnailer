@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/mingw64/bin/gdk-pixbuf-thumbnailer
+Exec=/mingw64/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+MimeType=image/svg+xml;image/svg+xml-compressed;
