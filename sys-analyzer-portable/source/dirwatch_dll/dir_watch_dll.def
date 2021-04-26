@@ -1,6 +1,0 @@
-LIBRARY dir_watch
-      DESCRIPTION 'Directory Watcher DLL for VB'
-      EXPORTS
-		StartWatch @91
-		CloseWatch @22
-        
