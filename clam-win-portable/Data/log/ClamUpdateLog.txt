@@ -1,0 +1,19 @@
+--------------------------------------
+ClamAV update process started at Wed May 05 17:20:02 2021
+daily database available for download (remote version: 26161)
+Testing database: 'C:\Users\admin\Desktop\ClamWinPortable\Data\db\tmp.7ce2438673\clamav-fd990f029406e89ebf38be3b8682e19e.tmp-daily.cvd' ...
+Database test passed.
+daily.cvd updated (version: 26161, sigs: 3976729, f-level: 63, builder: raynman)
+main database available for download (remote version: 59)
+Testing database: 'C:\Users\admin\Desktop\ClamWinPortable\Data\db\tmp.7ce2438673\clamav-3c28e77838eb16dfa232def2106356f7.tmp-main.cvd' ...
+Database test passed.
+main.cvd updated (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+bytecode database available for download (remote version: 333)
+Testing database: 'C:\Users\admin\Desktop\ClamWinPortable\Data\db\tmp.7ce2438673\clamav-e5c444791945d08e5c5c6db91a627466.tmp-bytecode.cvd' ...
+Database test passed.
+bytecode.cvd updated (version: 333, sigs: 92, f-level: 63, builder: awillia2)
+--------------------------------------
+ClamAV update process started at Wed May 05 17:25:07 2021
+daily.cvd database is up to date (version: 26161, sigs: 3976729, f-level: 63, builder: raynman)
+main.cvd database is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+bytecode.cvd database is up to date (version: 333, sigs: 92, f-level: 63, builder: awillia2)
