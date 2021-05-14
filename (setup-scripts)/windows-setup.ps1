@@ -14,47 +14,83 @@
     choco config set --name="'cacheLocation'" --value="'C:\temp\chococache'"
     choco config set --name="'proxyBypassOnLocal'" --value="'true'"
     choco upgrade all
-    refreshenv
-
 
 refreshenv
 
-
-    Write-Host "Installing Browsers"
-    choco install googlechrome firefox chromium microsoft-edge tor-Browser
-
-    choco install putty winscp.install teamviewer sysinternals rufus.install veracrypt windirstat
-
-    choco install wireshark nmap tor
-
+    choco install googlechrome
+	choco install firefox
+	choco install chromium
+	choco install microsoft-edge
+	choco install tor-Browser
+	choco install nomacs
+    choco install putty winscp.install
+	choco install teamviewer
+	choco install sysinternals
+	choco install rufus.install
+	choco install veracrypt
+	choco install windirstat
+    choco install wireshark 
+	choco install nmap
+	choco install wget
+	choco install google-drive-file-stream
+	choco install zoom
+	choco install hosts.editor
+	choco install zap
+	choco install msiafterburner
+	choco install blackbird
+	choco install sudo
     choco install sysmon
-  
-    choco install powershell4 powershell powershellhere-elevated powershell.portable microsoft-windows-terminal
-
-    #choco install jdk11 javaruntime
-    choco install jre8 openjdk openjdk.portable
-  
-    choco install visualstudio2019enterprise visualstudio2017-powershelltools vscode-ruby 
-    choco install vscode vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity notepadplusplus.install python pip 
-
+    choco install powershell4
+	choco install powershellhere-elevated 
+	choco install powershell.portable 
+	choco install microsoft-windows-terminal
+	choco install jdk11 javaruntime
+    choco install jre8
+	choco install openjdk 
+	choco install openjdk.portable
+	choco install python
+	choco install python2
+	choco install python3
+	choco install hwinfo.install
+	choco install gpu-z
+	choco install speccy
+	choco install defraggler
+	choco install geforce-experience
+	choco install yumi
+	choco install apimonitor
+	choco install bleachbit.install
+	choco install notepadplusplus.install 
+	choco install pip
+	choco install nirlauncher
+	choco install lockhunter
+	choco install processhacker
     choco install postman
-	
-    choco install github-desktop gh git.install git-lfx openssh 
-
-    choco install dotnetfx vcredist-all 
-  
+	choco install qbittorrent
+	choco install procmon
+    choco install github-desktop
+	choco install gh
+	choco install git.install
+	choco insatall git-lfx
+    choco install dotnetfx
+	choco install vcredist-all
     choco install microsoft-visual-cpp-build-tools
-
-    choco install discord 
-
-    choco install steam 
-
+    choco install discord
+    choco install steam
     choco install vlc
-
     choco install greenshot
-	
-    choco install 7zip.install curl cpu-z.install
-  
+	choco install teamviewer.host
+    choco install 7zip.install
+	choco install curl
+	choco install cpu-z.install
+	choco install git-lfs.install
+	choco install mbsa
+	choco install etcher
+	choco install rufus
+    
+    choco install visualstudio2019enterprise
+	choco install visualstudio2017-powershelltools
+	choco install vscode
+    choco install vscode-ruby  vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity 
  
     #Fix high performance timers to get better performance from Windows 10.
     bcdedit /deletevalue useplatformclock
@@ -236,15 +272,6 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 
 # Show hidden files
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowSyncProviderNotifications" -Value 0
-
-# Fix the Mouse Acceleration curve
-# http://donewmouseaccel.blogspot.co.uk/2010/03/markc-windows-7-mouse-acceleration-fix.html
-Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseSensitivity" -Value "10"
-Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseSpeed" -Value "0"
-Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseThreshold1" -Value "0"
-Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseThreshold2" -Value "0"
-Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "SmoothMouseXCurve" -Value ([byte[]](0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0xC0, 0xCC, 0x0C, 0x00, 0x00, 0x00, 0x00, 0x00,0x80, 0x99, 0x19, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x66, 0x26, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x33, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00))
-Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "SmoothMouseYCurve" -Value ([byte[]](0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x38, 0x00, 0x00, 0x00, 0x00, 0x00,0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xA8, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0x00, 0x00))
 
 # Turn off Sleep Timeout 
 Start-Process powercfg.exe -ArgumentList "/change standby-timeout-ac 0" -NoNewWindow -Wait
@@ -1678,22 +1705,6 @@ Start-Job -Name "Enable Privacy and Security Settings" -ScriptBlock {
     New-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\Windows Error Reporting" -Name "Disabled" -Type "DWORD" -Value 1 -Force
     Get-ScheduledTask -TaskName "QueueReporting" | Disable-ScheduledTask
 
-    #Opt-out nVidia Telemetry
-    Set-ItemProperty -Path "HKLM:\Software\NVIDIA Corporation\Global\FTS" -Name EnableRID44231 -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\NVIDIA Corporation\Global\FTS" -Name EnableRID64640 -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\NVIDIA Corporation\Global\FTS" -Name EnableRID66610 -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\Software\NVIDIA Corporation\NvControlPanel2\Client" -Force
-    Set-ItemProperty -Path "HKLM:\Software\NVIDIA Corporation\NvControlPanel2\Client" -Name OptInOrOutPreference -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\services\NvTelemetryContainer" -Name Start -Type "DWORD" -Value 4 -Force
-    Set-ItemProperty -Path "HKLM:\Software\NVIDIA Corporation\Global\Startup\SendTelemetryData" -Name 0 -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\Startup" -Name "SendTelemetryData" -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\services\NvTelemetryContainer" -Name "Start" -Type "DWORD" -Value 4 -Force
-    Stop-Service NvTelemetryContainer
-    Set-Service NvTelemetryContainer -StartupType Disabled
-    #Delete NVIDIA residual telemetry files
-    Remove-Item -Recurse $env:systemdrive\System32\DriverStore\FileRepository\NvTelemetry*.dll
-    Remove-Item -Recurse "$env:ProgramFiles\NVIDIA Corporation\NvTelemetry" | Out-Null
-
     #Disable Razer Game Scanner service
     Stop-Service "Razer Game Scanner Service"
     Set-Service "Razer Game Scanner Service" -StartupType Disabled
@@ -2268,52 +2279,6 @@ Start-Job -Name "Image Cleanup" -ScriptBlock {
     #Clear regedit last key
     reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit" /va /f
     reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Regedit" /va /f
-}
-
-##Firefox Config Import
-#https://www.itsupportguides.com/knowledge-base/tech-tips-tricks/how-to-customise-firefox-installs-using-mozilla-cfg/
-#https://github.com/simeononsecurity/FireFox-STIG-Script
-Write-Host "Implementing FireFox STIG"
-$firefox64 = "C:\Program Files\Mozilla Firefox"
-$firefox32 = "C:\Program Files (x86)\Mozilla Firefox"
-If ((Test-Path -Path $firefox64) -eq $true) {
-    Copy-Item -Path .\Files\"FireFox Configuration Files"\* -Destination $firefox64 -Force -Recurse | Out-Null
-    Write-Host "Firefox 64-Bit Configurations Installed"
-}
-Else {
-    Write-Host "FireFox 64-Bit Is Not Installed"
-}
-If ((Test-Path -Path $firefox32) -eq $true) {
-    Copy-Item -Path .\Files\"FireFox Configuration Files"\* -Destination $firefox32 -Force -Recurse | Out-Null
-    Write-Host "Firefox 32-Bit Configurations Installed"
-}
-Else {
-    Write-Host "FireFox 32-Bit Is Not Installed"
-}
-
-#Java Config Import
-#https://gist.github.com/MyITGuy/9628895
-#http://stu.cbu.edu/java/docs/technotes/guides/deploy/properties.html
-#https://github.com/simeononsecurity/JAVA-STIG-Script
-Write-Host "Implementing Java JRE 8 STIG"
-If (Test-Path -Path "C:\Windows\Sun\Java\Deployment\deployment.config") {
-    Write-Host "Deployment Config Already Installed"
-}
-Else {
-    Write-Output "Installing Java Deployment Config...."
-    Mkdir "C:\Windows\Sun\Java\Deployment\"
-    Copy-Item -Path .\Files\"JAVA Configuration Files"\deployment.config -Destination "C:\Windows\Sun\Java\Deployment\" -Force | Out-Null
-    Write-Output "JAVA Configs Installed"
-}
-If (Test-Path -Path "C:\temp\JAVA\") {
-    Write-Host "Configs Already Deployed"
-}
-Else {
-    Write-Output "Installing Java Configurations...."
-    Mkdir "C:\temp\JAVA"
-    Copy-Item -Path .\Files\"JAVA Configuration Files"\deployment.properties -Destination "C:\temp\JAVA\" -Force | Out-Null
-    Copy-Item -Path .\Files\"JAVA Configuration Files"\exception.sites -Destination "C:\temp\JAVA\" -Force | Out-Null
-    Write-Output "JAVA Configs Installed"
 }
 
 ##########
