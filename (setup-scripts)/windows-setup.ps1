@@ -38,6 +38,7 @@
 	choco install hosts.editor
 	choco install zap
 	choco install msiafterburner
+	choco install msiafterburner
 	choco install blackbird
 	choco install sudo
 	choco install sysmon
@@ -45,7 +46,8 @@
 	choco install powershellhere-elevated 
 	choco install powershell.portable 
 	choco install microsoft-windows-terminal
-	choco install jdk11 javaruntime
+	choco install jdk11 
+	choco install javaruntime
 	choco install jre8
 	choco install openjdk 
 	choco install openjdk.portable
@@ -112,6 +114,39 @@
         "HKCR:\SystemFileAssociations\.png\Shell\3D Edit"
         "HKCR:\SystemFileAssociations\.tif\Shell\3D Edit"
         "HKCR:\SystemFileAssociations\.tiff\Shell\3D Edit"
+		
+	function remove3DObjectsFolder {
+  foreach ($path in @(
+      "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
+      "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
+    )) {
+    Remove-Item $path -Recurse -ea 0
+  }
+}
+
+function removeEditWithPaint3D {
+  $pathFA = "HKLM:\SOFTWARE\Classes\SystemFileAssociations"
+  foreach ($path in @(
+      "$pathFA\.3mf\Shell\3D Edit"
+      "$pathFA\.bmp\Shell\3D Edit"
+      "$pathFA\.gif\Shell\3D Edit"
+      "$pathFA\.glb\Shell\3D Edit"
+      "$pathFA\.fbx\Shell\3D Edit"
+      "$pathFA\.jfif\Shell\3D Edit"
+      "$pathFA\.jpe\Shell\3D Edit"
+      "$pathFA\.jpeg\Shell\3D Edit"
+      "$pathFA\.jpg\Shell\3D Edit"
+      "$pathFA\.obj\Shell\3D Edit"
+      "$pathFA\.ply\Shell\3D Edit"
+      "$pathFA\.png\Shell\3D Edit"
+      "$pathFA\.stl\Shell\3D Edit"
+      "$pathFA\.tif\Shell\3D Edit"
+      "$pathFA\.tiff\Shell\3D Edit"
+    )) {
+    Remove-Item $path -Recurse -ea 0
+  }
+}
+
 
 #Do not suggest ways I can finish setting up my device to get the most out of Windows
     New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" -Force
