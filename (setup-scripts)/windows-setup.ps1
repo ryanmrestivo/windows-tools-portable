@@ -24,7 +24,6 @@
 	choco install microsoft-edge
 	choco install tor-Browser
 	choco install nomacs
-	choco install teamviewer
 	choco install sysinternals
 	choco install rufus.install
 	choco install veracrypt
@@ -32,11 +31,9 @@
 	choco install wireshark 
 	choco install nmap
 	choco install wget
-	choco install googledrive
 	choco install zoom
 	choco install hosts.editor
 	choco install zap
-	choco install msiafterburner
 	choco install blackbird
 	choco install sudo
 	choco install sysmon
@@ -70,9 +67,8 @@
 	choco install github-desktop
 	choco install gh
 	choco install git.install
-	choco insatall git-lfx
+	choco install git-lfx
 	choco install dotnetfx
-	choco install vcredist-all
 	choco install microsoft-visual-cpp-build-tools
 	choco install discord
 	choco install steam
@@ -83,13 +79,12 @@
 	choco install curl
 	choco install cpu-z.install
 	choco install git-lfs.install
-	choco install mbsa
 	choco install etcher
 	choco install rufus
     choco install choco install visualstudio2019community
 	choco install visualstudio2017-powershelltools
 	choco install vscode
-	choco install vscode-ruby  vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity 
+	choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity 
  
 #Fix high performance timers to get better performance from Windows 10.
     bcdedit /deletevalue useplatformclock
@@ -146,7 +141,6 @@ function removeEditWithPaint3D {
     Remove-Item $path -Recurse -ea 0
   }
 }
-
 
 #Do not suggest ways I can finish setting up my device to get the most out of Windows
     New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" -Force
@@ -226,9 +220,6 @@ function removeEditWithPaint3D {
     New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization" | Out-Null
 	New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization" -Name "SystemSettingsDownloadMode" -PropertyType DWord -Value 3 | Out-Null
 
-# Disable Windows Update automatic restart
-	Set-ItemProperty -Path "HKLM:\Software\Microsoft\WindowsUpdate\UX\Settings" -Name "UxOption" -Value 1
-
 # Stop and disable Home Groups services
 	Stop-Service "HomeGroupListener"
 	Set-Service "HomeGroupListener" -StartupType Disabled
@@ -266,9 +257,9 @@ function removeEditWithPaint3D {
 	Start-Process powercfg.exe -ArgumentList "/change standby-timeout-ac 0" -NoNewWindow -Wait
 
 # Windows Update
-	Install-Module -Name PSWindowsUpdate
-	Get-WindowsUpdate
-	Install-WindowsUpdate
+#	choco Install PSWindowsUpdate
+#	Get-WindowsUpdate
+#	Install-WindowsUpdate
 	
 # refreshenv
 	refreshenv
@@ -300,7 +291,6 @@ Start-Job -Name "Mitigations" -ScriptBlock {
 # Block Untrusted Fonts
 #https://adsecurity.org/?p=3299
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\" -Name "MitigationOptions" -Type "QWORD" -Value "1000000000000" -Force
-
 
 # Disable Hibernate
     powercfg -h off
@@ -639,22 +629,12 @@ Start-Job -Name "SMB Optimizations and Hardening" -ScriptBlock {
     Stop-Process -Force -Force -Name "OneDrive.exe"
     Stop-Process -Force -Force -Name "explorer.exe"
 
-    Write-Output "Remove OneDrive"
-    if (Test-Path "$env:systemroot\System32\OneDriveSetup.exe") {
-        & "$env:systemroot\System32\OneDriveSetup.exe" /uninstall
-    }
-    if (Test-Path "$env:systemroot\SysWOW64\OneDriveSetup.exe") {
-        & "$env:systemroot\SysWOW64\OneDriveSetup.exe" /uninstall
-    }
-
     Write-Output "Removing OneDrive leftovers"
     Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:localappdata\Microsoft\OneDrive"
     Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:programdata\Microsoft OneDrive"
     Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:systemdrive\OneDriveTemp"
-    #check if directory is empty before removing:
-    If ((Get-ChildItem "$env:userprofile\OneDrive" -Recurse | Measure-Object).Count -eq 0) {
-        Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:userprofile\OneDrive"
-    }
+	
+    Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$env:userprofile\OneDrive"
 
     Write-Output "Disable OneDrive via Group Policies"
     Mkdir -Force  "HKLM:\Software\Wow6432Node\Policies\Microsoft\Windows\OneDrive"
@@ -680,59 +660,8 @@ Start-Job -Name "SMB Optimizations and Hardening" -ScriptBlock {
     Write-Output "Waiting for explorer to complete loading"
     Start-Sleep 10
 
-    Write-Output "Removing additional OneDrive leftovers"
-    foreach ($item in (Get-ChildItem "$env:WinDir\WinSxS\*onedrive*")) {
-        Takeown-Folder $item.FullName
-        Remove-Item -Recurse -Force $item.FullName
-    }
-}
 
 Start-Job -Name "Disable Telemetry and Services" -ScriptBlock {
-    #Disabling Telemetry and Services
-    Write-Host "Disabling Telemetry and Services"
-    Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name BingSearchEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name CortanaConsent -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Search" -Name BingSearchEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Search" -Name CortanaConsent -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\Windows Search" -Name AllowCortana -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\" -Name "Search" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Search" -Name BingSearchEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" -Name "{2765E0F4-2918-4A46-B9C9-43CDD8FCBA2B}" -Type "String" -Value  "BlockCortana|Action=Block|Active=TRUE|Dir=Out|App=C:\windows\systemapps\microsoft.windows.cortana_cw5n1h2txyewy\searchui.exe|Name=Search and Cortana application|AppPkgId=S-1-15-2-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742|" -Force
-    New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\" -Name "AU" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name NoAutoUpdate -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name AUOptions -Type "DWORD" -Value 2 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name ScheduledInstallDay -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name ScheduledInstallTime -Type "DWORD" -Value 3 -Force
-    New-Item -Path "HKLM:\Software\Microsoft\PolicyManager\current\device\" -Name "Update" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\current\device\Update" -Name ExcludeWUDriversInQualityUpdate -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\Update" -Name ExcludeWUDriversInQualityUpdate -Type "DWORD" -Value 1 -Force
-    New-Item -Path "HKLM:\Software\Microsoft\PolicyManager\default\Update\" -Name "ExcludeWUDriversInQualityUpdates" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdates" -Name Value -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\WindowsUpdate\UX\Settings" -Name ExcludeWUDriversInQualityUpdate -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate" -Name ExcludeWUDriversInQualityUpdate -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\WMDRM" -Name DisableOnline -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Edge" -Name BlockThirdPartyCookies -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Edge" -Name AutofillCreditCardEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Edge" -Name SyncDisabled -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\MicrosoftEdge\Main" -Name AllowPrelaunch -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\Software\Policies\Microsoft\MicrosoftEdge\" -Name "TabPreloader" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\MicrosoftEdge\TabPreloader" -Name AllowTabPreloading -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\" -Name "MicrosoftEdge.exe" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdge.exe" -Name Debugger -Type "String" -Value "%windir%\System32\taskkill.exe" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Edge" -Name BackgroundModeEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft" -Name DoNotUpdateToEdgeWithChromium -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\GameDVR" -Name AllowgameDVR -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name GameDVR_Enabled -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\System\" -Name "GameConfigStore" -Force
-    Set-ItemProperty -Path "HKLM:\System\GameConfigStore" -Name GameDVR_Enabled -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\Software\CurrentControlSet\" -Name "Control" -Force
-    Set-ItemProperty -Path "HKLM:\Software\CurrentControlSet\Control" -Name SvcHostSplitThresholdInKB -Type "DWORD" -Value 04000000 -Force
-    New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\" -Name "GameDVR" -Force
-    Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR" -Name AppCaptureEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR" -Name  HistoricalCaptureEnabled -Type "DWORD" -Value 0 -Force
-    New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\" -Name "GameDVR" -Force
-    Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\GameDVR" -Name AppCaptureEnabled -Type "DWORD" -Value 0 -Force
-    Set-ItemProperty -Path "HKLm:\Software\Microsoft\Windows\CurrentVersion\GameDVR" -Name  HistoricalCaptureEnabled -Type "DWORD" -Value 0 -Force
 
     #Disable Razer Game Scanner Service
     Stop-Service "Razer Game Scanner Service"
@@ -918,13 +847,6 @@ Start-Job -Name "Enable Privacy and Security Settings" -ScriptBlock {
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" -Name "LetAppsAccessRadios" -Type "DWORD" -Value 2 -Force
     #Deny app access to bluetooth devices
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync" -Name "Value" -Value "Deny" -Type "String" -Force
-    #Disable device metadata retrieval (breaks auto updates)
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" -Name "PreventDeviceMetadataFromNetwork" -Type "DWORD" -Value 1 -Force
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Device Metadata" -Name "PreventDeviceMetadataFromNetwork" -Type "DWORD" -Value 1 -Force
-    #Do not include drivers with Windows Updates
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "ExcludeWUDriversInQualityUpdate" -Type "DWORD" -Value 1 -Force
-    #Prevent Windows Update for device driver search
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching" -Name "SearchOrderConfig" -Type "DWORD" -Value 0 -Force
     #Disable Customer Experience Improvement (CEIP/SQM)
     Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\SQMClient\Windows" -Name "CEIPEnable" -Type "DWORD" -Value "0" -Force
     #Disable Application Impact Telemetry (AIT)
@@ -1195,9 +1117,6 @@ Start-Job -Name "Enable Privacy and Security Settings" -ScriptBlock {
     #Change TTL for ISP throttling workaround
     int ipv4 set glob defaultcurhoplimit=65
     int ipv6 set glob defaultcurhoplimit=65
-    #Auto Cert Update
-    Write-Output "Auto Cert Update"
-    Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\SystemCertificates\AuthRoot" -Name DisableRootAutoUpdate -Type "DWORD" -Value 0 -Force
     #Turn off Let websites provide locally relevant content by accessing my language list
     Write-Output "Turn off Let websites provide locally relevant content by accessing my language list"
     Set-ItemProperty -Path "HKCU:\Control Panel\International\User Profile" -Name HttpAcceptLanguageOptOut -Type "DWORD" -Value 1 -Force
@@ -1811,6 +1730,12 @@ Start-Job -Name "Image Cleanup" -ScriptBlock {
     reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Regedit" /va /f
 }
 
+
+# Windows Update
+#	choco Install PSWindowsUpdate
+#	Get-WindowsUpdate
+#	Install-WindowsUpdate
+
 ##########
 # Restart
 ##########
@@ -1820,4 +1745,3 @@ Write-Host "Press any key to restart your system..." -ForegroundColor Black -Bac
 $key = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 Write-Host "Restarting..."
 Restart-Computer
-)
