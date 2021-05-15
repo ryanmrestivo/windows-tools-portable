@@ -87,7 +87,7 @@ refreshenv
 	choco install etcher
 	choco install rufus
     
-    choco install visualstudio2019enterprise
+    choco install choco install visualstudio2019community
 	choco install visualstudio2017-powershelltools
 	choco install vscode
     choco install vscode-ruby  vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity 
