@@ -1,51 +1,52 @@
-####Start-Job -Name "Installing Optional Windows Features" -ScriptBlock {#####
-#}#
+#
 	
-	# Setting up directories for values
-    Set-ExecutionPolicy Bypass -Scope Process -Force
+# Setting up directories for values
+	Set-ExecutionPolicy Bypass -Scope Process -Force
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 	
-	#Choco
-    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-    choco feature enable -n=allowGlobalConfirmation
-    choco feature enable -n=useFipsCompliantChecksums
-    choco feature enable -n=useEnhancedExitCodes
-    choco config set commandExecutionTimeoutSeconds 14400
-    choco config set --name="'cacheLocation'" --value="'C:\temp\chococache'"
-    choco config set --name="'proxyBypassOnLocal'" --value="'true'"
-    choco upgrade all
+#Choco
+	Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+	choco feature enable -n=allowGlobalConfirmation
+	choco feature enable -n=useFipsCompliantChecksums
+	choco feature enable -n=useEnhancedExitCodes
+	choco config set commandExecutionTimeoutSeconds 14400
+	choco config set --name="'cacheLocation'" --value="'C:\temp\chococache'"
+	choco config set --name="'proxyBypassOnLocal'" --value="'true'"
+	choco upgrade all
 
-refreshenv
+# refreshenv
+	refreshenv
 
-    choco install googlechrome
+#Choco Applications
+	choco install googlechrome
 	choco install firefox
 	choco install chromium
 	choco install microsoft-edge
 	choco install tor-Browser
 	choco install nomacs
-    choco install putty winscp.install
+	choco install putty winscp.install
 	choco install teamviewer
 	choco install sysinternals
 	choco install rufus.install
 	choco install veracrypt
 	choco install windirstat
-    choco install wireshark 
+	choco install wireshark 
 	choco install nmap
 	choco install wget
-	choco install google-drive-file-stream
+	choco install googledrive
 	choco install zoom
 	choco install hosts.editor
 	choco install zap
 	choco install msiafterburner
 	choco install blackbird
 	choco install sudo
-    choco install sysmon
-    choco install powershell4
+	choco install sysmon
+	choco install powershell4
 	choco install powershellhere-elevated 
 	choco install powershell.portable 
 	choco install microsoft-windows-terminal
 	choco install jdk11 javaruntime
-    choco install jre8
+	choco install jre8
 	choco install openjdk 
 	choco install openjdk.portable
 	choco install python
@@ -64,42 +65,41 @@ refreshenv
 	choco install nirlauncher
 	choco install lockhunter
 	choco install processhacker
-    choco install postman
+	choco install postman
 	choco install qbittorrent
 	choco install procmon
-    choco install github-desktop
+	choco install github-desktop
 	choco install gh
 	choco install git.install
 	choco insatall git-lfx
-    choco install dotnetfx
+	choco install dotnetfx
 	choco install vcredist-all
-    choco install microsoft-visual-cpp-build-tools
-    choco install discord
-    choco install steam
-    choco install vlc
-    choco install greenshot
+	choco install microsoft-visual-cpp-build-tools
+	choco install discord
+	choco install steam
+	choco install vlc
+	choco install greenshot
 	choco install teamviewer.host
-    choco install 7zip.install
+	choco install 7zip.install
 	choco install curl
 	choco install cpu-z.install
 	choco install git-lfs.install
 	choco install mbsa
 	choco install etcher
 	choco install rufus
-    
     choco install choco install visualstudio2019community
 	choco install visualstudio2017-powershelltools
 	choco install vscode
-    choco install vscode-ruby  vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity 
+	choco install vscode-ruby  vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity 
  
-    #Fix high performance timers to get better performance from Windows 10.
+#Fix high performance timers to get better performance from Windows 10.
     bcdedit /deletevalue useplatformclock
     bcdedit /set useplatformclock false
     bcdedit /set useplatformtick yes
     bcdedit /set disabledynamictick yes
     bcdedit /set tscsyncpolicy Enhanced
 
-    #Removes Paint3D stuff from context menu
+#Removes Paint3D stuff from context menu
     $Paint3Dstuff = @(
         "HKCR:\SystemFileAssociations\.3mf\Shell\3D Edit"
         "HKCR:\SystemFileAssociations\.bmp\Shell\3D Edit"
@@ -112,84 +112,72 @@ refreshenv
         "HKCR:\SystemFileAssociations\.png\Shell\3D Edit"
         "HKCR:\SystemFileAssociations\.tif\Shell\3D Edit"
         "HKCR:\SystemFileAssociations\.tiff\Shell\3D Edit"
-    
-    #Rename reg key to remove it, so it's revertible
-	    
-    New-Item -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Explorer" | Out-Null
-    
-    Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Explorer" -Name "DisableNotificationCenter" -Type "DWORD" -Value 1
-    Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications" -Name "ToastEnabled" -Type "DWORD" -Value 0
 
-    #Do not suggest ways I can finish setting up my device to get the most out of Windows
+#Do not suggest ways I can finish setting up my device to get the most out of Windows
     New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" -Force
-    
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" -Name "ScoobeSystemSettingEnabled" -PropertyType "DWORD" -Value "0" -Force
 
-    #Do not offer tailored experiences based on the diagnostic data setting
+#Do not offer tailored experiences based on the diagnostic data setting
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy" -Name "TailoredExperiencesWithDiagnosticDataEnabled" -PropertyType "DWORD" -Value "0" -Force
 
-    #Show hidden items in explorer
+#Show hidden items in explorer
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -PropertyType "DWORD" -Value "1" -Force
 
-    #Show file extentions in explorer
+#Show file extentions in explorer
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -PropertyType "DWORD" -Value "0" -Force
 
-    #Open to "this pc" in explorer
+#Open to "this pc" in explorer
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "LaunchTo" -PropertyType "DWORD" -Value "1" -Force
 
-    #Hide cortana taskbar button
+#Hide cortana taskbar button
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowCortanaButton" -PropertyType "DWORD" -Value "0" -Force
 
-    #Hide task view button in explorer
+#Hide task view button in explorer
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton" -PropertyType "DWORD" -Value "0" -Force
 
-    #Hide people button in taskbar
+#Hide people button in taskbar
     New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" -Force
-    
     New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" -Name"PeopleBand" -PropertyType "DWORD" -Value "0" -Force
 
-    #Hide "3D Objects" in explorer
+#Hide "3D Objects" in explorer
     New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{ 31C0DD25-9439-4F12-BF41-7FF4EDA38722 }\PropertyBag" -Force
-        
     New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{ 31C0DD25-9439-4F12-BF41-7FF4EDA38722 }\PropertyBag" -Name "ThisPCPolicy" -PropertyType "String" -Value "Hide" -Force
 
-    #Verbose BSoD
+#Verbose BSoD
     New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CrashControl" -Name "DisplayParameters" -PropertyType "DWORD" -Value "1"
 
 	
 # Disable Telemetry
-Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0
+	Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0
 
 # Disable Wi-Fi Sense
-Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots" -Name "Value" -Value 0
+	Set-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots" -Name "Value" -Value 0
 
-New-Item -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting" -Force | Out-Null
-New-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting" -Name "Value" -PropertyType DWord -Value 0
+	New-Item -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting" -Force | Out-Null
+	New-ItemProperty -Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting" -Name "Value" -PropertyType DWord -Value 0
 
 # Disable Wi-Fi network sharing
-Write-Host "Disabling Wi-Fi network sharing..."
-$user = New-Object System.Security.Principal.NTAccount($env:UserName)
-$sid = $user.Translate([System.Security.Principal.SecurityIdentifier]).value
-New-Item  -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid) -Force | Out-Null
-New-ItemProperty -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid) -Name "FeatureStates" -PropertyType DWord -Value 0x33c
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" -Name "WiFiSenseCredShared" -Value 0
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" -Name "WiFiSenseOpen" -Value 0
+	Write-Host "Disabling Wi-Fi network sharing..."
+	$user = New-Object System.Security.Principal.NTAccount($env:UserName)
+	$sid = $user.Translate([System.Security.Principal.SecurityIdentifier]).value
+	New-Item  -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid) -Force | Out-Null
+	New-ItemProperty -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid) -Name "FeatureStates" -PropertyType DWord -Value 0x33c
+	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" -Name "WiFiSenseCredShared" -Value 0
+	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" -Name "WiFiSenseOpen" -Value 0
 
 # Disable Bing Search in Start Menu
-Write-Host "Disabling Bing Search in Start Menu..."
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" -Value 0
+	Write-Host "Disabling Bing Search in Start Menu..."
+	Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" -Value 0
 
 # Disable Location Tracking
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Value 0
-Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\lfsvc\Service\Configuration" -Name "Status" -Value 0
+	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Value 0
+	Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\lfsvc\Service\Configuration" -Name "Status" -Value 0
 
 # Disable Feedback
-
 	New-Item -Path "HKCU:\Software\Microsoft\Siuf\Rules" -Force | Out-Null
     New-ItemProperty -Path "HKCU:\Software\Microsoft\Siuf\Rules" -Name "NumberOfSIUFInPeriod" -PropertyType DWord -Value 0
 
 # Disable Advertising ID
-
 	New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" -Force | Out-Null
     New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" -Name "Enabled" -PropertyType DWord -Value 0
 
@@ -197,19 +185,16 @@ Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\lfsvc\Service\Co
 
 
 # Disable Send Microsoft info about how ...
-
     New-Item -Path "HKCU:\Software\Microsoft\Input\TIPC" -Force | Out-Null
 	New-ItemProperty -Path "HKCU:\Software\Microsoft\Input\TIPC" -Name "Enabled" -PropertyType DWord -Value 0 -Force | Out-Null
 
 # Disable Let website provide
-
     New-Item -Path "HKCU:\Control Panel\International\User Profile" -Force | Out-Null
 	New-ItemProperty -Path "HKCU:\Control Panel\International\User Profile" -Name "HttpAcceptLanguageOptOut" -PropertyType DWord -Value 0 -Force | Out-Null
 
     Set-ItemProperty -Path "HKCU:\Control Panel\International\User Profile" -Name "HttpAcceptLanguageOptOut" -Value 0
 
 # Disable Windows Search features
-
     New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\Windows Search" -Force | Out-Null
     New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search\" -Name "AllowCortana" -PropertyType DWord -Value 0 | Out-Null
     New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search\" -Name "DisableWebSearch" -PropertyType DWord -Value 1 | Out-Null
@@ -217,115 +202,117 @@ Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\lfsvc\Service\Co
     New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search\" -Name "ConnectedSearchUseWeb" -PropertyType DWord -Value 0 | Out-Null
 
 # Restrict Windows Update P2P only to local network
-
-Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" -Name "DODownloadMode" -Value 1
+	Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" -Name "DODownloadMode" -Value 1
 
     New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization" | Out-Null
 	New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization" -Name "SystemSettingsDownloadMode" -PropertyType DWord -Value 3 | Out-Null
 
 # Remove AutoLogger file and restrict directory
-
-$autoLoggerDir = "$env:PROGRAMDATA\Microsoft\Diagnosis\ETLLogs\AutoLogger"
-
-icacls $autoLoggerDir /deny SYSTEM:`(OI`)`(CI`)F | Out-Null
+	$autoLoggerDir = "$env:PROGRAMDATA\Microsoft\Diagnosis\ETLLogs\AutoLogger"
+	icacls $autoLoggerDir /deny SYSTEM:`(OI`)`(CI`)F | Out-Null
 
 # Stop and disable Diagnostics Tracking Service
-Stop-Service "DiagTrack"
-Set-Service "DiagTrack" -StartupType Disabled
+	Stop-Service "DiagTrack"
+	Set-Service "DiagTrack" -StartupType Disabled
 
 # Stop and disable WAP Push Service
-Stop-Service "dmwappushservice"
-Set-Service "dmwappushservice" -StartupType Disabled
+	Stop-Service "dmwappushservice"
+	Set-Service "dmwappushservice" -StartupType Disabled
 
 # Disable Windows Update automatic restart
-Set-ItemProperty -Path "HKLM:\Software\Microsoft\WindowsUpdate\UX\Settings" -Name "UxOption" -Value 1
+	Set-ItemProperty -Path "HKLM:\Software\Microsoft\WindowsUpdate\UX\Settings" -Name "UxOption" -Value 1
 
 # Stop and disable Home Groups services
-Stop-Service "HomeGroupListener"
-Set-Service "HomeGroupListener" -StartupType Disabled
-Stop-Service "HomeGroupProvider"
-Set-Service "HomeGroupProvider" -StartupType Disabled
+	Stop-Service "HomeGroupListener"
+	Set-Service "HomeGroupListener" -StartupType Disabled
+	Stop-Service "HomeGroupProvider"
+	Set-Service "HomeGroupProvider" -StartupType Disabled
 
 # Disable Sticky keys prompt
-Write-Host "Disabling Sticky keys prompt..."
-Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Value "506"
+	Write-Host "Disabling Sticky keys prompt..."
+	Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Value "506"
 
 # Change default Explorer view to "Computer"
-Write-Host "Changing default Explorer view to `"Computer`"..."
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "LaunchTo" -Value 1
+	Write-Host "Changing default Explorer view to `"Computer`"..."
+	Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "LaunchTo" -Value 1
 
 # Disable Autoplay
-Write-Host "Disabling Autoplay..."
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" -Name "DisableAutoplay" -Value 1
+	Write-Host "Disabling Autoplay..."
+	Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" -Name "DisableAutoplay" -Value 1
 
 # Disable Autorun for all drives
-Write-Host "Disabling Autorun for all drives..."
-New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" | Out-Null
-New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoDriveTypeAutoRun" -PropertyType DWord -Value 255 | Out-Null
+	Write-Host "Disabling Autorun for all drives..."
+	New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" | Out-Null
+	New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoDriveTypeAutoRun" -PropertyType DWord -Value 255 | Out-Null
 
 # Show known file extensions
-Write-Host "Showing known file extensions..."
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Value 0
+	Write-Host "Showing known file extensions..."
+	Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Value 0
 
 # Show hidden files
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -Value 1
+	Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -Value 1
 
 # Show hidden files
-Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowSyncProviderNotifications" -Value 0
+	Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowSyncProviderNotifications" -Value 0
 
 # Turn off Sleep Timeout 
-Start-Process powercfg.exe -ArgumentList "/change standby-timeout-ac 0" -NoNewWindow -Wait
+	Start-Process powercfg.exe -ArgumentList "/change standby-timeout-ac 0" -NoNewWindow -Wait
 
-Install-Module -Name PSWindowsUpdate
-Get-WindowsUpdate
-Install-WindowsUpdate
+# Windows Update
+	Install-Module -Name PSWindowsUpdate
+	Get-WindowsUpdate
+	Install-WindowsUpdate
+	
+# refreshenv
+	refreshenv
 
 Start-Job -Name "Mitigations" -ScriptBlock {
-    #####SPECTURE MELTDOWN#####
-    #https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in
+# SPECTURE MELTDOWN
+#https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name FeatureSettingsOverride -Type "DWORD" -Value 72 -Force
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name FeatureSettingsOverrideMask -Type "DWORD" -Value 3 -Force
     Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Virtualization" -Name MinVmVersionForCpuBasedMitigations -Type "String" -Value "1.0" -Force
 
-    #Disable LLMNR
-    #https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
+# Disable LLMNR
+#https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
     New-Item -Path "HKLM:\Software\policies\Microsoft\Windows NT\" -Name "DNSClient" -Force
     Set-ItemProperty -Path "HKLM:\Software\policies\Microsoft\Windows NT\DNSClient" -Name "EnableMulticast" -Type "DWORD" -Value 0 -Force
 
-    #Disable TCP Timestamps
+# Disable TCP Timestamps
     netsh int tcp set global timestamps=disabled
 
-    #Enable LSA Protection/Auditing
-    #https://adsecurity.org/?p=3299
+# Enable LSA Protection/Auditing
+#https://adsecurity.org/?p=3299
     New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\" -Name "LSASS.exe" -Force
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\LSASS.exe" -Name "AuditLevel" -Type "DWORD" -Value 8 -Force
 
-    #Disable Windows Script Host
-    #https://adsecurity.org/?p=3299
+# Disable Windows Script Host
+#https://adsecurity.org/?p=3299
     New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows Script Host\" -Name "Settings" -Force
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows Script Host\Settings" -Name "Enabled" -Type "DWORD" -Value 0 -Force
     
-    #Disable WDigest
-    #https://adsecurity.org/?p=3299
+# Disable WDigest
+#https://adsecurity.org/?p=3299
     Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\SecurityProviders\Wdigest" -Name "UseLogonCredential" -Type "DWORD" -Value 0 -Force
 
-    #Block Untrusted Fonts
-    #https://adsecurity.org/?p=3299
+# Block Untrusted Fonts
+#https://adsecurity.org/?p=3299
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\" -Name "MitigationOptions" -Type "QWORD" -Value "1000000000000" -Force
     
 
-    #Disable Hibernate
+# Disable Hibernate
     powercfg -h off
 }
 
 Start-Job -Name "PowerShell Hardening" -ScriptBlock {
-    #Disable Powershell v2
+# Disable Powershell v2
     Disable-WindowsOptionalFeature -Online -FeatureName "MicrosoftWindowsPowerShellV2Root" -NoRestart
     Disable-WindowsOptionalFeature -Online -FeatureName "MicrosoftWindowsPowerShellV2" -NoRestart
 
-    #Enable PowerShell Logging
-    #https://www.digitalshadows.com/blog-and-research/powershell-security-best-practices/
-    #https://www.cyber.gov.au/acsc/view-all-content/publications/securing-powershell-enterprise
+# Enable PowerShell Logging
+#https://www.digitalshadows.com/blog-and-research/powershell-security-best-practices/
+#https://www.cyber.gov.au/acsc/view-all-content/publications/securing-powershell-enterprise
+# You can change the directory from C:\PowershellLogs
     New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\" -Name "Transcription" -Force
     New-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Transcription" -Name "OutputDirectory" -Type "STRING" -Value "C:\PowershellLogs" -Force
     New-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging\" -Name "EnableScriptBlockLogging" -Type "DWORD" -Value "1" -Force
@@ -336,10 +323,10 @@ Start-Job -Name "PowerShell Hardening" -ScriptBlock {
     Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Transcription\" -Name "EnableTranscripting" -Type "DWORD" -Value "1" -Force
     Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\Transcription\" -Name "EnableInvocationHeader" -Type "DWORD" -Value "1" -Force
 
-    #Prevent WinRM from using Basic Authentication
+#Prevent WinRM from using Basic Authentication
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client" -Name "AllowBasic" -Type "DWORD" -Value 0 -Force
 
-    #WinRM Hardening
+# WinRM Hardening
     #https://4sysops.com/archives/powershell-remoting-over-https-with-a-self-signed-ssl-certificate/
     #$Cert = New-SelfSignedCertificate -CertstoreLocation Cert:\LocalMachine\My -DnsName (cmd /c hostname) 
     #Export-Certificate -Cert $Cert -FilePath C:\temp\cert
@@ -356,12 +343,12 @@ Start-Job -Name "PowerShell Hardening" -ScriptBlock {
     #Enable-PSRemoting -SkipNetworkProfileCheck -Force
 }
 
-#Windows Defender Configuration Files
-New-Item -Path "C:\" -Name "Temp" -ItemType "directory" -Force | Out-Null; New-Item -Path "C:\temp\" -Name "Windows Defender" -ItemType "directory" -Force | Out-Null; Copy-Item -Path .\Files\"Windows Defender Configuration Files"\* -Destination "C:\temp\Windows Defender\" -Force -Recurse -ErrorAction SilentlyContinue | Out-Null
+# Windows Defender Configuration Files
+	New-Item -Path "C:\" -Name "Temp" -ItemType "directory" -Force | Out-Null; New-Item -Path "C:\temp\" -Name "Windows Defender" -ItemType "directory" -Force | Out-Null; Copy-Item -Path .\Files\"Windows Defender Configuration Files"\* -Destination "C:\temp\Windows Defender\" -Force -Recurse -ErrorAction SilentlyContinue | Out-Null
 
-#Debloating Scripts
+# Debloating Scripts
 
-#Creates a PSDrive to be able to access the 'HKCR' tree
+# Creates a PSDrive to be able to access the 'HKCR' tree
 New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 Start-Job -Name "Start-Debloat" -ScriptBlock {
     
