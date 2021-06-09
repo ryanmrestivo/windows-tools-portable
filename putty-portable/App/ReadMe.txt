@@ -1,0 +1,1 @@
+This directory contains files used by PuTTY Portable.  They do not normally need to be accessed directly.
