@@ -1,0 +1,36 @@
+<scriptlet>
+
+<implements type="Automation">
+	<method name="ExecFilterCommand"/>
+	<property name="ShowConsole"/>
+</implements>
+
+<script language="VBS">
+' Adapted from Takashi's fork
+
+Option Explicit
+
+Const ShowConsole = 0
+
+Function ExecFilterCommand(Text)
+	Dim cmd, wsh, fso, exe, path
+
+	cmd = InputBox("Command:")
+	If cmd = "" Then Exit Function
+
+	Set wsh = CreateObject("WScript.Shell")
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	path = wsh.ExpandEnvironmentStrings("%TEMP%\_winmerge_addin_temp_.txt")
+
+	With wsh.Exec("cmd /c " & cmd & " > " & path & " 2>&1")
+		.StdIn.Write Text
+		.StdIn.Close
+		Do While .Status = 0
+		Loop
+	End With
+
+	ExecFilterCommand = fso.OpenTextFile(path, 1, False).ReadAll
+	fso.DeleteFile path
+End Function
+</script>
+</scriptlet>

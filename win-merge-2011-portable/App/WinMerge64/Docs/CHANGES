@@ -1,0 +1,682 @@
+0.2011.211.110
+Changes since preceding release (not necessarily complete):
+• EditLib: Colorize some Markdown (unindented headings, comments, HTML islands)
+• EditLib: Adopt AutoIt parser from 2.16
+• Upgrade to ReoGrid 2.3.0.0-datadiode-180 for new LCS alignment feature
+• Upgrade to WinIMerge 1.0.25 and support some new features including OCR
+• Reflect transition to AGPL (which is due to use of iTextSharp) in About box
+• File transform scriptlet to pipe documents through ToxyExtract.exe
+• File transform scriptlet to pipe documents through pandoc.exe
+• Missed to sync pane title bars when swapping panes while working with archives
+• PropLexers: Expose some HTML syntax highlighting options through DropList GUI
+• MergeEditView: Add "Reload file" checkbox to codepage selection combobox
+• setup.hta: Create version number from git describe
+• CSettingStore: Set %PortableRoot% to program folder (seems more convenient)
+• Setup: Default to portable mode when the .cpl file is unpacked with 7-Zip
+• LocationView: Mere click is no reason to move the caret (sf.net bug #2237)
+• Merge.cpp: Set WinMergeRoot environment variable for use in scriptlets
+• ConfigLog.cpp: Spot pre-release version strings from GIT-VS-VERSION-GEN.bat
+• Merge.cpp: Make default supplement folder location sensitive to portable mode
+• CLanguageSelect::TranslateString(): Allow \u escaped Unicode character codes
+• CCrystalEditView: Missed to apply undo grouping when replacing with emptiness
+
+0.2011.211.031
+Changes since preceding release (not necessarily complete):
+• Upgrade to ReoGrid 2.3.0.0-datadiode-171
+• Add B2XTranslator to convert .xls to .xlsx for ReoGrid
+• Upgrade to WinIMerge 1.0.22.0 (new features yet to be supported)
+
+0.2011.210.481
+Changes since preceding release (not necessarily complete):
+• batch.cpp: Colorize TCC text blocks as strings rather than comments
+• ByteCompare.cpp: Fix pointer arithmetic when assuming UCS-2 or UCS-4 (#6)
+• ParseLineInnoSetup(): Pass [Code] sections on to ParseLinePascal() (like 2.16)
+• Adopt syntax highlighter based comment filtering from 2.16
+
+0.2011.210.466
+Changes since preceding release (not necessarily complete):
+• Support Excel .xlsx files through ReoGrid
+• Merge pull request #3 from Jonimoose/eastl_vs_std_fixes
+• CMergeEditView::ShowDiff(): Exclude top margin area from scrolling
+• Adopt DPI aware toolbar from winmerge-v2
+• Tweak Diffutils 3.6 ignore blank lines option for CRLF line endings
+
+0.2011.210.381
+Changes since preceding release (not necessarily complete):
+• Integrate SQLite Compare into WinMerge GUI
+• Add Bookmarks menu to binary comparison view
+• Backport and use scoped_ptr, scoped_array, rotate() from recent EASTL
+• OWindow::Subclass(): Throw an exception when HWND is NULL
+• EditorConfig: editorconfig_parse() with insane filename produced a memory leak
+• FileFilter::Load(): Fix surprising behavior when FileFilter.tmpl was missing
+• HexMergeFrm.cpp: Respond to "Copy and Advance" commands
+• Support table layout for delimiter-separated files (similar to 2.16)
+• LibXDiff: Drop XDF_IGNORE_CR_AT_EOL logic due to issues / Fix XDF_IGNORE_CASE
+• Optionally show rulers at top of text editor panes (ported from 2.16)
+• Make EditLib Lexer file type associations configurable in Options dialog
+• Adopt binary compare option for folder compare from winmerge-v2
+• Move splash screen artwork to AboutBox / Replace list of devs with ASCII art
+• Adopt image comparison view from winmerge-v2
+• ByteCompare: Unfold a loop and increase buffers to save some time
+• Port from winmerge-v2: Issue #367 Deadlock comparing encrypted 7z files
+• Setup: Upgrade to xdoc2txt 2.20
+• Add "Swap Panes" menu item to Folder Compare window (adopted from winmerge-v2)
+• GhostTextBuffer: Don't unexpectedly restore empty lines user wants to delete
+• EditLib: Fix https://github.com/WinMerge/winmerge/issues/202
+• EditLib: Tweak word-wise caret movmt across lines (adopted from winmerge-v2)
+• Add an option to DirCompProgressDlg to send an email when ready (#101)
+• Single-threaded folder compare missed to theApp.PreTranslateMessage()
+• ConfigLog.cpp: Add _MSC_FULL_VER and _MSC_BUILD to build config info
+• File transform scriptlet to decode Protobuf messages with protodec.exe
+• EditLib: Fix auto-indent when EOL-style is not CRLF (adopted from winmerge-v2)
+• ViewableWhitespace.h: Use less brassy graphic symbols to indicate line endings
+• EditLib: Have line selection mode stay until drag end / Detect triple-click
+• DiffWrapper.cpp: Fix an apparent bug in CDiffWrapper::FixLastDiffRange()
+• ByteCompare: Ignoring both whitespace & blank lines did not work consistently
+• Offer a choice between Diffutils and LibXDiff (based on Takashi's work)
+• json_writer.cpp: valueToQuotedString() was messing up some control characters
+• Misdetection of odd-length files as UCS-2 was leading to folder compare errors
+
+2011.009.217
+Changes since preceding release (not necessarily complete):
+• Upgrade to 7-Zip 19.00
+• Upgrade to xdoc2txt 2.19
+• Avoid inappropriate action when drag-dropping files onto binary editor (#172)
+• DirView: Copying items between sides was blanking out some meta information
+• WinMerge2011.nsi: Require Wine 3.0.4+ / Include sort.exe from UnxUtils
+• DirView: With colors enabled, date columns did not display correctly on XP
+• DecorateCmdLine(): Cope with some command line parsing inaccuracy in Wine
+• ConsoleWindow: Although of vanishing relevance, restore W2K compatibility
+• DiffContext.cpp: Must not CoUninitialize() when CoInitializeEx() failed
+• H2O2: Mess with disabled groupboxes refusing to gray out their labels
+
+2011.008.532
+Changes since preceding release (not necessarily complete):
+• MainFrm.cpp: Prefer Liberation Mono font when running under Wine
+• OpenDlg: Don't let the ComboBoxEx32 control truncate paths behind the scenes
+• OpenDlg: After OnBrowseButton(), kept showing filetype icon from previous file
+• OpenDlg: Support switching sides through drag & drop between filetype icons
+• ArchiveSupport: Upgrade to 7-Zip 18.05
+• LineFiltersDlg.cpp: Allow reordering of line filters through drag & drop
+• ccrystaltextbuffer.cpp: Associate .jspx filename extension with ParseLineAsp()
+• asp.cpp: Borrow part of razor logic to handle MWSL insde <style> or <script>
+• asp.cpp: Help JavasScript template strings recover from ASP inline expressions
+• Setup: Move xdoc2txt download option to config.html / Go for new xdoc2txt 2.17
+• DetermineEncoding(): Extend scope of CheckForInvalidUtf8() to the whole buffer	
+• Issue #168 Changing CTRL + TAB and CTRL + SHIFT + TAB behavior
+• Basic.wsc: Add a regex-driven Tokenize function
+• MergeEditView.cpp: Support arguments in EditorScript plugin monikers
+• EditLib: Adopt fix for https://github.com/WinMerge/winmerge-v2/issues/109	
+• diffutils/src/IO.C: Upgrade to Diffutils 3.6 left self-compare feature broken
+• Issue #165 Add translation into Lithuanian
+• Issue #163 Add options to command line to change "compare methods"
+• EditLib: Limiting context while in line wrap mode was causing a crash
+• GhostTextBuffer.cpp: 1234 (51d372dc04d9) broke moved block indicators
+• Option to dot-rather-than-cross-hatch deleted lines (may reduce visual jitter)
+• EditLib: Remember Find/Replace options in class rather than instance members
+• LineFilters: Allow early-applied line filters to substitute unicode literals
+• LocationView.cpp: Fix an off-by-one bug
+• Smooth scrolling to a distant diff (#161)
+
+0.2011.008.313
+Changes since preceding release (not necessarily complete):
+• Allow file filters to declare case sensitivity for filenames (related to #158)
+• An alternate syntax for early-applied line filters: */(foo|bar)/g=N (N <= 10)
+• Issue #159 demoGuessEncoding_po() could read beyond allocated memory
+• Make CMergeEditView scriptable, and Tabify.wsc aware of per-file tab size
+• EditLib: Figure tab size and expansion options from .editorconfig files
+• EditLib: Figure tab size and expansion options from Emacs/Kate/Vim modelines
+• SourceControl.cpp: Remember MultiCheckouts option in registry
+• Avoid some redundant drawing during replacements performed through Replace All
+• EditLib: Create an undo group for replacements performed through Replace All
+• Avoid some redundant drawing during undo/redo and copying of multiple diffs
+• OpenDlg.cpp: Don't prefill Right: from MRU when Left: was drag/dropped (#145)
+• PatchTool: Option to use generic paths, and optionally also omit timestamps
+• EditLib: Fix syntax highlighting glitches when using View > Context > ...
+• ChildFrm.cpp: Preserve currently selected diff across View > Context > ...
+• Don't let early-applied line filters mess up patches
+• Upgrade Diffutils to 3.6 / Make -E and -Z options accessible through UI
+• Upgrade WinMerge license to GPLv3
+• SelectFile(): Multi-pattern filters produced wrong default filename extensions
+• CChildFrame::OnToolsGenerateReport(): Remember last save path in registry
+
+0.2011.008.226
+Changes since preceding release (not necessarily complete):
+• EditLib: Beware of JavaScript regular expression and template string literals
+• EditLib: Add syntax highlighting parsers for CSHTML (Razor C#) and Lua
+• EditLib: Employ subordinate parsers to colorize HTML style and script elements
+• EditLib: Make ParseLineAsp() aware of Java and C# for use with JSP and ASP.NET
+• EditLib: Consolidate HTML parsing logic for HTML/PHP/ASP into ParseLineAsp()
+• EditLib: Filter Java and Basic keywords for native vs. script
+• EditLib: Acknowledge .json and .dtd filename extensions
+• EditLib: Fix issues with C style comments
+• EditLib: Fix issues around backslash escaping and multi-line string literals
+• EditLib: Fix keyword ordering / Add unit tests to verify keyword recognition
+• EditLib: Merge auto-indent fix from Takashi's fork
+• EditLib: Adopt new syntax highlighting parsers from Takashi's fork
+• csharp.cpp: Beware of C# verbatim string literals / Add missing keywords
+• siod.cpp: Allow in-line comments as per R6RS / Fix multi-line string literals
+• ruby.cpp: Support multi-line comments, being enclosed between =begin and =end
+• rexx.cpp: Respect the nestedness of in-line comments / Fix EOL comments
+• pascal.cpp, rexx.cpp: Apostrophes and quotation marks escape themselves
+• {basic|csharp|java}.cpp: Add async and await keywords
+• MainFrm.cpp: Default to Consolas font if available
+• MainFrm.cpp: Assign LOGFONT::lfHeight so it yields a default font size of 10pt
+• Adopt "GitHub/Bitbucket" file compare color scheme option from Takashi's fork
+• Control recreation of Supplement.ini [Parsers] section through version stamp
+• OptionsDef.h: Enable folder compare view coloring by default
+• Issue #152 Folder compare not refreshing sub nodes of selected node
+• DirCmpReport: Provide CF_UNICODETEXT format in addition to CF_TEXT and CF_HTML
+• H2O2.cpp: Scale dialogs for high-DPI displays
+• MovedBlocks.cpp: Did not consider blocks consisting of several identical lines
+• Slightly misspell the product registry key to not disturb WinMerge 2.x revival
+• Setup: Update SFX stub / Keep setup support files out of archive
+• SortLines.wsc: SortLinesAscendingNoCase(), SortLinesDescendingNoCase()
+• ExplorerDlg.cpp: Last path component got lost when invoked from SelectFolder()
+• File transform scriptlet to pipe JSON through https://github.com/stedolan/jq
+
+0.2011.007.444
+Changes since preceding release (not necessarily complete):
+• *.vcxproj: Enable Address Space Layout Randomization (ASLR)
+• codepage_detect.cpp: Avoid an occasional 1st chance exception in lstrcpynA()
+• DirView.cpp: Take some effort to auto-adapt to dark background themes
+• Fix some high contrast mode issues (#137)
+• Don't hide folders containing items which themselves qualify for showing (#11)
+• Adapt fix for https://bitbucket.org/sdottaka/winmerge-v2/issues/77
+• Issue #134 Opening a conflict file doesn't get marked as dirty
+• Issue #135 Command line parameter /dr doesn't work with conflict file
+
+0.2011.007.347
+Changes since preceding release (not necessarily complete):
+• DirView.cpp: Hide long path prefixes from Excel print headers/footers
+• HexMergeView: Support Undo/Redo (adopted from Takashi's fork)
+• EditLib: Edit/Save/Undo/Edit/Undo/Redo was leaving Save command disabled
+• Issue #130 equiv-{f|d} file filter rules were neglecting sort order
+• {WinMergeU.exe|7zsd.sfx}.manifest: Declare DPI awareness
+• Restore application window when receiving command line through IPC (#126)
+• DirView: Prevent multiple inclusion of files in zip when in tree mode (#125)
+• WinMerge2011.nsi: Move to SHA-256 for verifying 3rd party downloads
+• 7zCommon.cpp: Remember path to most recently created archive across sessions
+• WinMerge2011.nsi: Rework Wine launch script creation to support current Wine
+• Setup: Let .sfx from 7z SFX Builder fix .hta bitness / Assist with xdoc2txt
+• xdoc2txt.wsc: Assume xdoc2txt.exe to reside below WinMerge program folder
+• SourceControl.flt: Add rule to exclude .git folder (#123)
+• xdoc2txt.wsc: Opt for UTF-8 and set "Encoding" property accordingly
+• FileTransform.cpp: Add "Encoding" property and associated transcoding logic
+• msxml.wsc: HTML Tidy 5.4.0 has no --more-preformatted option, so get rid of it
+• MessageBoxDialog.cpp: Fix some layout glitches
+• WM_DRAWITEM handlers were returning 0 while MSDN says they should return TRUE
+• astyle.wsc: Save some overhead by using Artistic Style 3.0's --stdin option
+• DirView: Cleanup Date column alignment (inspired by Takashi's fork)
+• unicoder.cpp: maketstring() failed with codepages 50220+, 57002+, 65000, 42
+• Adopt character-sets.dll from PlainTextViewer project
+• stringdiffs: Adopt LCS algorithm from Takashi's fork
+• Allow to navigate through line diffs both forward (F4) and backward (Shift+F4)
+• PropEditor: Make line diff options more consistent with implemented semantics
+• Merge7zCommon.cpp: Cope with TFS temporary file name decorations
+• stringdiffs.cpp: wordLevelToByteLevel() was messing up deletion indicators
+• ExplorerDlg: Remember splitter position in registry
+• Offer long path aware replacements for Shell file/folder browse dialogs
+• Fix visual glitches involved in enforcement of old-school menu appearance
+• MergeDocLineDiffs.cpp: Ghost lines were causing bogus EOL diffs on other side
+
+0.2011.007.025
+Changes since preceding release (not necessarily complete):
+• File transform scriptlet to format source code using Artistic Style (astyle)
+• Issue #81 Highlight contents of added lines as in-line changes
+• Make print preview compatible with IE9+ (very outdated technology indeed)
+• MainFrm.cpp: Provide access to registered binary behaviors through CLSIDs
+• MergeDoc.cpp: Don't have long path prefixes show up in reports and printouts
+• ArchiveSupport: Upgrade to 7-Zip 16.04
+• paths.cpp: Beware that PathCompactPath() may occasionally grow a path
+• EditLib: Fix rendering of empty line at EOF when followed by ghost lines
+• Issue #102 The /x command line option misbehaves when used with folder compare
+• H2O2: Allow for subclassing dialog items through an owner-provided method
+• Support long paths for copy/move/delete by not using Shell file operations
+• DirView: Fix crash on deleting a unique nonempty folder in flat recursive view
+• Copy/Move to... was creating bogus folders when ignoring folder structure
+• Issue #96 Disable SelfCompare by default - wastes time for arguable benefit
+• CMainFrame::SetActiveMenu(): Allow window menu to not be in 2nd last position
+• DirCompProgressDlg: Filename fields did not update while awaiting first result
+• MessageBoxDialog: Make lengthy text scrollable / Support highlighted arguments
+• HexMergeFrm.cpp: A memory leak could occur when hekseditU.dll was not in place
+• Provide CLanguageSelect::FormatStrings() to defeat FormatMessage()'s 32K limit
+• ConfigLog: Win10's GetVersionEx() lies so rather read OS version from registry
+• New options to tweak shell extension behavior w/r/t recursive folder compare
+
+0.2011.005.427
+Changes since preceding release (not necessarily complete):
+• Add an option to maintain settings in a desktop specific location
+• Issue #93 Folder compare was filtering comments as side effect of other option
+• Portuguese (pt-PT) translation update by David Cunha
+• Translations/WinMerge/*.po: Restore some translations which got lost long ago
+• PropVss.cpp: Try to locate command line tools from traces found in registry
+• Fix issues around CMainFrame::CheckinToClearCase()
+• Add accelerators for options "Apply to all items" and "CheckIn after checkout"
+• Separate the "Settings/*Path" setting for different version control systems
+• MainFrm.cpp: Don't attempt to open a single drag-dropped folder as a file
+• OpenDlg: Allow filter masks with spaces by enclosing them in quotation marks
+• Add option for Copy/Move > Left/Right to... to Ignore folder structure
+• Edit > Find in conjunction with View > Wrap Lines missed to sync panes
+• Issue #82 Removed wrapped line not rendered correctly w/o cross-hatch option
+• Add context menu commands to Open > Containing Folder where applicable
+• Allow for passing line and column to external editor
+• Call ShellExecute() with long path prefix removed due to observed issues
+• Call OpenAs_RunDLL() with long path prefix removed due to observed issues
+• Fix &View > Refre&sh (F5) vs. &View > &Status Bar confusion in favor of F5
+
+0.2011.005.187
+Changes since preceding release (not necessarily complete):
+• Fix an imagelist leak caused by neglecting the truth about TVS_CHECKBOXES
+• msxml.wsc.FileTransform: No need to strip the \\?\ prefix (Issue #44)
+• CMainFrame: Fix crash when invoking CVssPrompt dialog
+• Remove /reghive option in favor of new /config option using JSON-like files
+• MainFrm.cpp: Backup filename was lacking a '.' when original filename had none
+• EditLib: Preserve DROPEFFECT_LINK when processing IDropTarget events
+• MergeCmdLine: Default Compare As selection neglected files passed on cmdline
+• PropVss: Path to external tool not saved when selected through Browse button
+• PropVss: 64-bit build failed to read ClearCase registry settings
+• ChildFrm.cpp: CChildFrame::UpdateResources() missed to update status texts
+• Allow for per-project JSON config files
+• setup.wsf: Mirror path to 64-bit WinMergeU.exe under \Software\Wow6432Node
+• ProjectFilePathsDlg: Add option to create project specific configuration file
+• MainFrm.cpp: ProjectFilePathsDlg did not localize correctly
+• Capture output from versioning system CLIs to deliver better error messages
+• FileTransform.cpp: Have UniPluginFile::ReadString() tolerate embedded NULLs
+• UniPluginFile: Add methods for saving back files
+• DiffTextBuffer: Use optional scriptlet-provided methods when saving back files
+• EditLib: Fix occasional incomplete drawing of lines with combining characters
+• File transform scriptlet to produce more meaningful results for GEDCOM files
+• EditLib: Have FindStringHelper() tolerate embedded NULLs
+• UniStdioFile: Set m_lastError upon failure of _tfopen() or fwrite()
+• Issue #61 Implement Identical Files message box for binary file compare view
+• CChildFrame::CopyMultipleList(): Disregarded OP_TRIVIAL for bottommost diff
+• CChildFrame::OpenDocs(): Set the document types _before_ Rescan()
+• CChildFrame::RefreshOptions(): Missed to tell detail views to RefreshOptions()
+• EditLib: Move "Separate combining characters" option to View menu
+• CChildFrame: Must call UpdateBookmarkUI() when focus moves between panes
+• Fix inaccurate update of menu items reflecting several per-document settings
+• Issue #79 Folder ignore broken due to regression from 765 (9fa8d1be8903)
+• Issue #70 Regexp search & replace with c-style escapes and submatch references
+• FileActionScript::Run(): Give some visual feedback while doing bulk checkouts
+• ShellFileOperations: Don't call SHFileOperation() when no AddSource() happened
+
+2011.004.525
+Changes since preceding release (not necessarily complete):
+• SettingStore: Fall back to read-only access to WinMergeU.dat when not elevated
+• Filters/*.flt: Minor updates and fixes
+• Filter by folder/file (http://forums.winmerge.org/viewtopic.php?f=4&t=1074)
+• Issue #62 Crash when en/disabling multiple compare windows for folders/files
+• PreferencesDlg.cpp: Fix improper parameters passed to SelectFile() (Issue #59)
+• FileFilter.cpp: Allow for auto-activating the SQL clause on either side
+• Issue #58 Include Subfolders not in tab order (Regression from 3bbe48d9e4c2)
+• SourceControl.cpp: Allow user to bypass the checkout step in case of error
+• Toolbar: Adopt Option icon's drop-down menu from Takashi's fork
+• PatchDlg: "Case sensitive" -> "Ignore case" (for consistency with Options UI)
+• Issue #44 Sort xml files doesn't work always (followup for Issue #31)
+• -wp option respects user's previous read-only setup when merging into 3rd file
+• Make Left/Right Read-only options mutexive when merging into 3rd file
+• Issue #52 Automatically choose Compare As method based on file extension
+• Issue #47 Better External Editor path default & handle environment variables
+• MainFrm.cpp: An empty "Recent Projects" menu never became populated 
+• Have tab bar show a hover close button as per Takashi's idea
+• Issue #51 Shell Context Menue for MergeEditView 
+• Offer "Semicolon-separated list" as additional folder compare report type
+• Issue #50 Always use UTF-8 for folder compare reports
+• TFS support: Allow for automatic checkout of r/o files before overwriting
+
+2011.004.185
+Changes since preceding release (not necessarily complete):
+• OpenDlg: Changing "Compare As" cancelled the effect of unchecking "By Default"
+• HexMergeView: Add asterisk (*) for unsaved files like MergeEditView does
+• Ease recovery from removal of file transform scriptlet that was set as default
+• Issue #43 Show Diff/Location pane at opposite side when Shift is depressed
+• Issue #31 File transform to sort XML files
+• MainFrm.cpp: Try OpenIcon() to help out with SetForegroundWindow() issues
+• Have tab bar show icons alongside with window captions as per Takashi's idea
+• DirView: Don't keep cached compare results of closed archives in memory
+• HexMergeView: OPT_AUTOMATIC_BPL was interfering with OPT_SCROLL_TO_FIRST
+• DirView: Moving out of an archive could mess up things in recursive mode
+• UniFile.cpp: NUL chars in UTF-8 files erroneously treated as line terminators
+• FileFilterHelper: Whitespace after colon in filter string could cause crash
+• DirCompProgressDlg: Show paths of most time-consuming one among current items
+• Issue #40 Project folder opens in parent
+• FileTransform.cpp: Allow plugin monikers to include URL-style arguments
+• CMainFrame::SetScriptMenu() could disregard default PluginMonikers/English.ini
+• Prevent accidental applying of CMainFrame::m_strSaveAsPath to another document
+• ShellFileOperations.cpp: Shorten paths longer than 259 chars
+• http://sf.net/p/winmerge/bugs/2156/: Allow saving merge file that is correct
+• DirCmpReport.cpp: Fix conversion of localized column names in HTML reports
+• MainFrm.cpp: Shorten paths longer than 259 chars when adding them to MRU list
+• FileOrFolderSelect.cpp: Returned paths unintentionally included a magic prefix
+• SuperComboBox.cpp: The dropdown list could grow wider than the screen
+
+2011.003.523
+Changes since preceding release (not necessarily complete):
+• http://sf.net/p/winmerge/bugs/2159/: Wrong encoding shown in status bar
+• Merge from https://bitbucket.org/sdottaka/winmerge-v2/commits/c152e96dde89
+• LanguageSelect.cpp: Debug build failed to switch between languages
+• ByteCompare.cpp: CompareFiles() failed at ignoring EOL differences
+
+0.2011.003.511
+Changes since preceding release (not necessarily complete):
+• paths.cpp: Fix paths_GetLongPath() for non-UNC paths lacking the drive letter
+• Merge7z: Fix inability to open NSIS installers
+• Create multiple compare threads to take advantage of multi-core machines
+• http://sf.net/p/winmerge/patches/2970/: Add asterisk (*) for unsaved files
+• EditLib: Have Alt+Insert create an in-place edit control to assist RTL editing
+• FilterList.cpp: Fix condition to trigger UTF-8 awareness / Fix buffer overrun
+• Fix border cases where WinMerge was unintentionally moving to background
+• Consistify behavior of Merge > Next Difference and Merge > Previous Difference
+• Make checkable menue items visually appear like checkboxes 
+• LoadSaveCodepageDlg: Adopt descriptive comboboxes from Takashi's fork
+• Adopt visual line difference deletion indicators from Takashi's fork
+• Adopt synchronization points UI from changeset 62013bce9c81 of Takashi's fork
+• ByteCompare: Prevent bogus character case conversions on DBCS trail bytes
+• DiffUtils: Prevent bogus character case conversions on DBCS trail bytes 
+• stringdiffs.cpp: Fix an off-by-1 bug in stringdiffs::BuildWordDiffList()
+
+0.2011.003.433
+Changes since preceding release (not necessarily complete):
+• Add Pause button as per http://sf.net/p/winmerge/feature-requests/1237
+• H2O2.cpp: Don't CenterWindow() owned popups upon activation if already visible
+• H2O.h: Work around an inaccuracy in Wine's implementation of LVM_INSERTITEM
+• CDirView::HandleMenuSelect() missed to check for "menu closed" condition
+• MergeCmdLineInfo.cpp: Allow for bypassing single instance logic with /s:no
+• Make wrapper script feature no longer rely on Windows Script Host
+• OpenDlg: Let user choose between template generated SQL and raw SQL input
+• OpenDlg: Let user combine wildcards with SQL filter found in FileFilter.tmpl
+• OpenDlg: Allow f:/d:/xf:/xd: prefixes as used in .flt files also for wildcards
+• Fix trailing whitespace part of http://sf.net/p/winmerge/feature-requests/1236
+
+0.2011.003.391
+Changes since preceding release (not necessarily complete):
+• Introduce SQL-based directory/file filters
+• Allow directory/file filters to combine both inclusion and exclusion rules
+• FileFilters: Don't reload all filters when only current filter is of interest
+• Merge.cpp: Synthesize ProgramFiles(x86) environment variable when in 32-bit OS
+• codepage_detect.cpp: Detect codepages of .po files like done for .rc/html/xml
+• Avoid opening same files from same DirView in same way to more than one window
+• HexMergeView: Auto-adjust the number of bytes per line, yet let user freeze it
+• HSuperComboBox::AutoCompleteFromLB(): Don't disturb editing in middle of text
+• EditLib: Enable OnMatchBrace() to optionally select text between braces
+• EditLib: Fix OnMatchBrace() so it can safely travel across ghost lines
+• Folder compare: Add option to cache compare results of visited folders
+• MergeDoc: Make WM_MOUSEWHEEL+Ctrl/Shift in detail views work as in edit views
+• MergeDoc: Add vertical scrollbars to detail views
+• MergeDoc: Fix misbehaviours when one side has more lines than the other
+• MergeDoc: Attempting to Edit > Copy while header bar has focus caused a crash
+• MergeDoc: Some UI elements did not enable/update as expected
+• Plugins added from %SupplementFolder%\PluginMonikers got wrong IDs
+• setup.wsf: Add option to install WinMerge to portable media
+• Automatically mount WinMergeU.dat reghive if present and writable
+• Add -reghive option to maintain registry settings in an external file
+• DirView: Header texts were lacking a \ when representing an archive subfolder
+• DirView: Fix AllowUpwardDirectory() logic for the case of unique folders
+• DirView: Don't require creation of pair folders when opening unique subfolders
+
+0.2011.003.311
+Changes since preceding release (not necessarily complete):
+• Support for wrapper scripts
+• Merge from https://bitbucket.org/sdottaka/winmerge-v2/commits/57264ee8cd53
+• EditLib: New option to cross-hatch deleted lines
+• EditLib: Fix misalignment of vertical scroll positions after font change etc.
+• EditLib: Fix border cases which allowed users to drag or copy empty text
+• MergeDoc: Silently ignore removal of files which were not opened for editing
+
+0.2011.003.247
+Changes since preceding release (not necessarily complete):
+• Folder compare: Failed to update item after edit when temp folder was involved
+• Single-instance logic: Communicate through COM rather than WM_COPYDATA
+• LocationView: Preserve active pane when user clicks outside bars
+• LocationView: Fix disabling of "Goto Line" context menu command
+• "Collect mode" adds items passed in through command line to existing DirView
+• Use a mutex to protect temp folder against deletion by other program instances
+• Allow to set up command line archive tools through ExternalArchiveFormat.ini
+• 7zCommon: Zip command from DirView context menu neglected files at root level
+• DirView: Enable "Compare As" context submenu also for the exceptional cases
+• UniFile.cpp: UniStdioFile::WriteBom() wrote UCS-2 BOMs regardless of m_bom
+• LineFiltersDlg: Fix test case match indication alignment & scrolling for Wine
+• LineFiltersDlg: Fix test case match indication when test case contains tabs
+• FolderCmp: Fix m_n(trivial)diffs when opting to not self-compare unique files
+• .mrgman compare: Filename extensions did not show up in DirView
+• ExcelExport: Make border style and color configurable through Supplement.ini
+• ExcelExport: Provide separate menu commands for including all/selected items
+• ExcelExport: Be aware of the configured list colors
+• DirCmpReport: Make HTML reports aware of the configured list colors
+• DirCmpReport: Indicate creation time of HTML reports as local time, not UTC
+
+0.2011.003.157
+Changes since preceding release (not necessarily complete):
+• Edit > Options > System: Have Supplement folder label appear and act as link
+• MergeEditView: Make location bar responsive during drag-drop editing
+• PatchTool: Default to unified patch format / Optionally apply line filters
+• Fix Edit > Undo after File > Convert Line Endings to > ...
+• DirView: Add customizable background colors to make differences more visible
+
+0.2011.003.154
+Changes since preceding release (not necessarily complete):
+• Editlib: Fix a minor selection margin misbehavior when Wrap Lines option is on
+• Editlib: Changing line indentation was erroneously affecting empty lines
+• Editlib: Option to separate combining characters (like HTML's <code> tag does)
+• Editlib: Overtyping of combined characters excluded combining characters
+• Editlib: Create a block-shaped caret to indicate overwrite mode
+• DirView: Open binary files in Frhed rather than claiming you can't open them
+• Enable WinMerge to open ClearCase .mrgman files to a folder compare window
+• LineFiltersDlg: Cope with Wine not sending TVN_KEYDOWN
+• Wine setup: After downloading SCR56EN.EXE, verify its MD5 hash
+• Wine setup: Missed to create target directory for Windows Script 5.6
+• Allow for collecting line filters in groups (maintained in LineFilters.ini)
+• RegExpItem: Add support for permutive filters
+• Fix occasional misalignment after merge
+• MergeEditView: Bring back support for editor scripts
+
+0.2011.003.117
+Changes since preceding release (not necessarily complete):
+• Wine setup: Change Windows Script 5.6 download link due to version issues
+• Switching UI language with any folder compare windows open was causing issues
+
+0.2011.003.115
+Changes since preceding release (not necessarily complete):
+• Make WinMerge 2011 work with Wine and create a supportive installer
+• DirView: Add option to ConfirmFolderCopyDlg to make target items writable
+• HexMergeView: Reflect modification state in filepath bar
+• HexMergeView: Fix a bogus warning about file having been changed from outside
+
+0.2011.003.093
+Changes since preceding release (not necessarily complete):
+• Utf8FileDetect: Fix http://sourceforge.net/p/winmerge/bugs/2129/
+• HexMerge window: "Scroll to first difference" option failed to take effect
+• HexMerge window: F3 key did not behave as it should
+• Editor: Skipped lines appeared in indicator margin as if having been edited
+• CChildFrame::SwapFiles() missed to swap the moved block mappings
+• Merge from https://bitbucket.org/sdottaka/winmerge-v2/commits/42376bf38ecc
+• DirCmpReportDlg: Make filename extension follow selected report style, & v.v.
+• OpenDlg: Add filename from other side to browse dialog's filter combobox
+• Issue #34 Default "Compare As" selection ignored when invoked through shell
+
+0.2011.003.071
+Changes since preceding release (not necessarily complete):
+• Create a distinct 64 bit version of WinMergeU.exe
+• OpenDlg: Add option to remember "Compare As" selection as default
+• Differences trivialized by prediffing were not being colorized as they should
+• Some commands wrongly kept their enable state when opening/closing a view
+
+0.2011.003.061
+Changes since preceding release (not necessarily complete):
+• Fix tab stop logic in CCrystalTextView::ClientToText()
+• Issue #22 Unicode ExtB+ Support (Add awareness of surrogate pairs)
+• DirViewColHandler: Sanity check OPT_DIRVIEW_SORT_COLUMN before applying
+• FileFilterMgr::ReloadFilterFromDisk() was insanely modifying m_filters vector
+• FilterCommentsManager: Reduce unintentional trivializations
+• codepage_detect: Recognize HTML5 encoding specifier
+
+0.2011.003.037
+Changes since preceding release (not necessarily complete):
+• An occasional extra newline added by DiffUtils was wrongly included in stats
+• Wrongly assumed UTF-8 w/o BOM prevented rc/html/xml encoding detection
+• Trying to sort DirView by encoding yielded surprising results
+• DirView Tools menu addition: Print with Excel Viewer
+• DirView Tools menu addition: Show in Excel Viewer
+• DirView Tools menu addition: Save to Excel spreadsheet
+• Issue #26 Make self-comparison of unique files optional
+• DirCompProgressDlg: Show paths of files being compared (lazily updated)
+• DirView: Make version column sort numerically rather than alphabetically
+• "Preserve file time in file compare" option was broken
+• Decorate backup file names with timestamp in basic date time ISO format
+• SetCurrentDirectory() with long path caused failure of ClearCase checkout
+• Issue #25 Apply syntax coloring as per file type assignments in Supplement.ini
+• Change directory comparison report encoding to UTF-8
+• Make Numpad +-* and Cursor left/right keys fully functional in TreeView mode
+• UI texts inside MDI child windows did not update when switching UI language
+• Remember last chosen directory comparison report style in registry
+• Entitify file paths in HTML & XML directory comparison reports
+• Entitify file paths in HTML file comparison report
+• File > Save As was broken by earlier efforts to support long path names
+• Issue #23 Copy text block without empty spacer lines
+• Keep enabling of navigation and merging commands in sync with caret movement
+• Address the most worrisome aspects of http://winmerge.org/support/3540610
+• Format dates as per regional settings (http://winmerge.org/support/3538659)
+• Center Goto dialog over avtive pane, and fix border cases
+• Center Find/Replace dialogs as per http://winmerge.org/support/1189076
+• Adopt patches 1/3/4 from www.winmerge.org/support/3036433
+
+0.2011.002.212
+Changes since preceding release (not necessarily complete):
+• Fix "Ignore blank lines" for quick compare (Issue #18)
+• Make "Compare As" logic accessible through command line
+• Issue #17 File header of active window is not readable
+• Issue #19 diff pane size not remembered
+
+0.2011.002.145
+Changes since preceding release (not necessarily complete):
+• Issue #4 Option to ignore folder structure when comparing recursively
+• http://winmerge.org/support/3405956 Support partial line filters
+• Fix ClearCase issue with "Allow only one instance to run" option disabled
+• Make FilterCommentsSet::FindCommentMarker() aware of escaped backslashes
+• Make Tools > Filters command accessible through toolbar
+• Fix issues as per http://winmerge.org/support/3512218
+
+2011.002.117
+Changes since preceding release (not necessarily complete):
+• Deletions involving ghost lines could cause crash or improper undo
+• Fix improper en/disabling of Save/Cut/Copy
+• Leave the view open when the user VK_ESCAPEs from renaming an item
+• Issue #15 Assume unicode if IsTextUnicode() returns TRUE regardless of flags
+• A few more places to hide \\?\ and \\?\UNC\ prefixes from user interface
+• Since 2011.002.027, empty files were unintentionally considered binary
+
+2011.002.047
+Changes since preceding release (not necessarily complete):
+• Fix menu text formatting when applying a patch targeted at multiple files
+• Issue #9 Drag and drop files\folders always overwrites Left selection
+• Issue #8 Portuguese (pt-PT) translation update by David Cunha
+• Issue #7 Multipe file compare windows option not working as designed
+• Work around heksedit not repainting its sibling after deletions
+• Fix numbers in status bar when stepping into archives from non-recursive view
+
+2011.002.027
+Changes since preceding release (not necessarily complete):
+• If OS is 64-bit, register both 32-bit and 64-bit shell extensions (Issue #3)
+• Merge https://bitbucket.org/sdottaka/winmerge-v2/changeset/3fe9539c763c
+• Cosmetic: Rearrange Compare Statistics dialog for better comprehensibility
+• Bypass UCS2 guesswork when there are no null bytes
+• Issue #5 WM_MOUSEWHEEL caused crash when content was too small to scroll
+
+2011.001.527
+Changes since preceding release (not necessarily complete):
+• Fix occasional out-of-bound array accesses after line deletions
+• ShellExtension got easily confused by leftovers from previous invocation
+• Fix F4 Navigation between line diffs for diff detail views
+• File/folder selection controls were at times showing a wrong icon
+• The menu bar was misaligning accelerator key underlines on Vista
+• Number of replacements reported by replace dialog could be off by 1
+• Fix issue #1: Can't expand Open File Dialog
+• A space in the directory path was breaking the build process
+• File transform scriptlet to add line numbers
+• Fix issue #2: Scrolling by mouse wheel stops in middle of file
+• Line revision numbers got lost when growing the undo stack
+• Fix wrap at EOF logic for find/replace with an RE that matches BOL or EOL
+• Undoing an insertion into a ghost line went wrong
+• Fix enabling of Compare command when comparing a folder to itself
+• LineDiffs logic was mistreating the line endings
+• Fix MRU list issues
+• Add a compiled help (CHM) file
+
+0.2011.001.497 beta
+Changes since preceding release (not necessarily complete):
+• File transform scriptlet to drive xdoc2txt (http://shortlinks.de/4u23)
+• Allow file transform scriptlets to show a config dialog prior to comparison
+• Add icons to file/folder selection controls (adapted from Takashi's fork)
+• Consolidate unicode detection in DetermineEncoding() (file unicoder.cpp)
+• Fine-tune UCS-2 detection (in particular, don't assume UCS-2 from BOM only)
+• Do text vs. binary classification uniformly for both quick and full compare
+• Fix System32 build configuration for stack frames going beyond 4096 bytes
+• Adjust width of some dropdown lists so as to prevent items from being clipped
+• Make setup ARP aware, and offer removal of files from previous installation
+• Feature Request #3422386 Allow editing path names when unknown
+• Support archive vs. folder compare
+
+0.2011.001.464 beta
+Changes since preceding release (not necessarily complete):
+• Bug #3408554 Incorrect directory diff (as per my understanding of the issue)
+• Make support for pathnames longer than 260 characters UNC-aware
+• Hide \\?\ and \\?\UNC\ prefixes from user interface (work in progress)
+• Remove an unwanted iframe border in printouts that has been noticed with IE8
+• Make setup.wsf aware of Win64's Sysnative pseudo directory
+
+0.2011.001.461 beta
+Changes since preceding release (not necessarily complete):
+• Compare As > Archive allows users to be more specific about how to open files
+• Extensible "Compare As" menu to allow for script driven file transforms
+• Make "Compare As" option available in Open dialog
+• Simple UI to help tweak the ClearCase Type Manager map file
+• Fix setup.hta for 64-bit (by disguising it as a .wsf)
+• Patch #3065275 Detect UCS-2 (both endiannesses) without BOM
+• Partial support for pathnames longer than 260 characters
+
+0.2011.001.437 beta
+Changes since preceding release (not necessarily complete):
+• View > Context allows for limiting context above and below differences
+• Tools > Compare Selection allows for comparing otherwise unaligned sections
+• No longer duplicate the editor's undo/redo stack
+• Fix broken repainting of editor margin area after invalidation
+• Open print preview in an unadorned window to avoid "almost-maximizedness"
+• Add file description to FileLocation structure to help fix side-effect coding
+• Attempt to speed up print page preparation, albeit with no noticeable success
+• Make WinMerge UI translation facility operable for print preview
+
+0.2011.001.415 beta
+Changes since preceding release (not necessarily complete):
+• Applying of patches through drag & drop
+• Dropping a single file onto the application window was causing a crash
+• Print preview based on Internet Explorer backend with a custom print template
+• Continued attempts to understand and fix comments filtering
+• A DocFrame that was opened through ClearCase was not closing on Esc key press
+• Handle absence of heksedit gracefully when user invokes Compare As > Binary
+
+0.2011.001.371 beta
+Changes since preceding release (not necessarily complete):
+• Patch #3287270 Accepting command lines with quotes in the middle
+• Patch #3066200 PatchDlg swap files (releated to bug #3043635)
+• Bug #3348933 Search for string containing & goes wrong
+• Continued attempts to understand and fix comments filtering
+• Experimental System32 build configuration to share OS-provided MSVCRT.DLL
+• Following mainstream code, DirView now shows local rather than UTC times
+• Update PCRE to version 8.13
+• Cleanups
+
+0.2011.001.362 alpha
+Shares most bugtures of mainstream code, except for (not necessarily complete):
+• Support for plugins other than Merge7z and heksedit is discontinued
+• A file with extension .flt~ no longer aborts scanning of Filters directory
+• FileFilterMgr no longer disregards regexps which are not followed by ##
+• DiffUtils and ByteCompare results are more consistent
+• LineFilters no longer degrade folder compare performance
+• Changing fonts for folder and file compare windows finally works as designed
+• Some unstable aspects of unicode support start stabilizing
+• Issue described in Patch #3281234 support of Alt+Down/Up in Diff Pane
+• Bug #3108489 FolderCmp object instantiation degrades DirScan performance
+• Bug #2010049 Memory leak from line filters (related to patch #3064882)
+• Patch #3065283 "Swap Panes" (Ctrl+U)
+• CMessageBoxDialog::CreateIconControl() was leaking bitmap handles

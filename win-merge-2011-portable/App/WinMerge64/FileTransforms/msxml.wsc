@@ -1,0 +1,38 @@
+<scriptlet>
+
+<implements type='automation'>
+	<method name='OpenTextFile'/>
+	<property name='ShowConsole'/>
+	<property name='ReadOnly'/>
+	<property name='TextType'/>
+	<property name='Arguments'/>
+</implements>
+
+<script language='vbs'>
+Option Explicit
+
+Const ShowConsole = 0
+Const ReadOnly = True
+Const TextType = "xml"
+
+Const MsxmlProgID = "Msxml2.DOMDocument.6.0"
+Const TidyCmdLine = """%WinMergeRoot%\tidy.exe"" -xml --char-encoding raw -indent --indent-attributes yes --tab-size 4 --indent-spaces 4 -wrap 0"
+
+Dim sh
+Set sh = CreateObject("WScript.Shell")
+
+Function OpenTextFile(path)
+	Dim doc, xslt, tidy, transform
+	Execute Arguments
+	Set doc = CreateObject(MsxmlProgID)
+	Set xslt = CreateObject(MsxmlProgID)
+	If xslt.load(transform) And doc.load(path) Then
+		Set tidy = sh.Exec(TidyCmdLine)
+		tidy.StdIn.Write doc.transformNode(xslt)
+	Else
+		Set tidy = sh.Exec(TidyCmdLine & " --sort-attributes alpha """ & path & """")
+	End If
+	Set OpenTextFile = tidy.StdOut
+End Function
+</script>
+</scriptlet>
