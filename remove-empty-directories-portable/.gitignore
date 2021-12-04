@@ -1,0 +1,9 @@
+*.suo
+RED2/bin/
+RED2/obj/
+RED2/publish/
+Installer/output/
+Installer/bin/
+.vs
+packages/
+Scripts/test-*

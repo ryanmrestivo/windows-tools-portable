@@ -1,0 +1,133 @@
+<#third#>
+
+<#windowsapps#>
+
+<#privacytelemetry#>
+	"EnableDiagTrackService",
+	"DefaultDiagnosticDataLevel",
+	"EnableErrorReporting",
+	"AutomaticallyFeedbackFrequency",
+	"EnableSigninInfo",
+	"EnableLanguageListAccess",
+	"EnableAdvertisingID",
+	"ShowWindowsWelcomeExperience",
+	"DisableWindowsTips",
+	"ShowSettingsSuggestedContent",
+	"EnableAppsSilentInstalling",
+	"EnableWhatsNewInWindows",
+	"EnableBingSearch"
+
+<#uiperson#>
+	"HideThisPC",
+	"DisableWindows10FileExplorer",
+	"EnableCheckBoxes",
+	"DisableHiddenItems",
+	"HideFileExtensions",
+	"HideMergeConflicts",
+	"QuickAccessOpenFileExplorerTo",
+	"EnableFileExplorerCompactMode",
+	"ShowOneDriveFileExplorerAd",
+	"EnableSnapAssist",
+	"EnableSnapAssistFlyout",
+	"CompactFileTransferDialog",
+	"DisableRecycleBinDeleteConfirmation",
+	"ShowQuickAccessRecentFiles",
+	"CenterTaskbarAlignment",
+	"ShowTaskbarSearch",
+	"ShowTaskViewButton",
+	"ShowTaskbarWidgets",
+	"ShowTaskbarChat",
+	"LightWindowsColorMode",
+	"LightAppColorMode",
+	"EnableFirstLogonAnimation",
+	"DefaultJPEGWallpapersQuality",
+	"CompactTaskManagerWindow",
+	"ShowRestartNotification",
+	"EnableShortcutsSuffix",
+	"DisablePrtScnSnippingTool",
+	"EnableAppsLanguageSwitch",
+	"EnableAeroShaking"
+
+<#onedrive#>
+
+<#system#>
+	"DisableStorageSense",
+	"EnableStorageSenseTempFiles",
+	"DefaultStorageSenseFrequency",
+	"EnableHibernation",
+	"EnableWin32LongPathLimit",
+	"DisableBSoDStopError",
+	"DefaultAdminApprovalMode",
+	"DisableMappedDrivesAppElevatedAccess",
+	"EnableDeliveryOptimization",
+	"DisableWaitNetworkStartup",
+	"EnableWindowsManageDefaultPrinter",
+	"DisableUpdateMicrosoftProducts",
+	"BalancedPowerPlan",
+	"DisableLatestInstalledNET",
+	"EnableNetworkAdaptersSavePower",
+	"DefaultInputMethod",
+	"DefaultWinPrtScrFolder",
+	"DefaultRecommendedTroubleshooting",
+	"DisableFoldersLaunchSeparateProcess",
+	"EnableReservedStorage",
+	"EnableF1HelpPage",
+	"DisableNumLock",
+	"EnableStickyShift",
+	"EnableAutoplay",
+	"EnableThumbnailCacheRemoval",
+	"DisableSaveRestartableApps",
+	"DisableNetworkDiscovery",
+	"ManuallyActiveHours",
+	"DisableDeviceRestartAfterUpdate",
+	"ConsoleHostDefaultTerminalApp"
+
+<#startmenu#>
+	"ShowRecentlyAddedApps",
+	"NonElevatedRunPowerShellShortcut"
+
+<#uwpapps#>
+	"EnableCortanaAutostart",
+	"EnableTeamsAutostart"
+
+<#gaming#>
+	"EnableXboxGameTips",
+	"DisableGPUScheduling"
+
+<#defendersecurity#>
+	"DisableNetworkProtection",
+	"DisablePUAppsDetection",
+	"DisableDefenderSandbox",
+	"DisableAuditProcess",
+	"DisableCommandLineProcessAudit",
+	"DisableEventViewerCustomView",
+	"DisablePowerShellModulesLogging",
+	"DisablePowerShellScriptsLogging",
+	"EnableAppsSmartScreen",
+	"EnableSaveZoneInformation",
+	"EnableWindowsScriptHost",
+	"EnableWindowsSandbox"
+
+<#contextmenu#>
+	"HideMSIExtractContext",
+	"HideCABInstallContext",
+	"HideRunAsDifferentUserContext",
+	"ShowCastToDeviceContext",
+	"ShowShareContext",
+	"ShowEditWithPhotosContext",
+	"ShowCreateANewVideoContext",
+	"ShowPrintCMDContext",
+	"ShowIncludeInLibraryContext",
+	"ShowSendToContext",
+	"ShowBitLockerContext",
+	"ShowCompressedFolderNewContext",
+	"DisableMultipleInvokeContext",
+	"ShowUseStoreOpenWith",
+	"ShowOpenWindowsTerminalContext"
+
+<#other#>
+	"LargeTaskbarSize",
+	"NeverCombineTaskbar",
+	"CategoryControlPanelView"
+
+<#end#>
