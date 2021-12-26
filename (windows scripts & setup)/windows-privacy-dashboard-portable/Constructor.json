@@ -1,0 +1,46 @@
+{
+	"switches": {
+		"switch1": {
+			"Type": "Gp",
+			"Header": "Custom switch: Windows Customer Experience Improvement Program",
+			"Description": "This policy setting turns off the Windows Customer Experience Improvement Program. The Windows Customer Experience Improvement Program collects information about your hardware configuration and how you use our software and services to identify trends and usage patterns.",
+			"Params": {
+				"Section": "Machine",
+				"Path": "SOFTWARE\\Policies\\Microsoft\\SQMClient\\Windows",
+				"Name": "CEIPEnable",
+				"ValueOff": "0"
+			}
+		},
+		
+		"switch2": {
+			"Type": "Service",
+			"Params": {
+				"Name": "WMPNetworkSvc",
+				"DefaultStartup": "3",
+				"DefaultRun" : "false"
+			}
+		},
+		
+		"switch3": {
+			"Type": "Scheduler",
+			"Header": "Custom switch: KernelCeipTask",
+			"Params": {
+				"Path": "Microsoft\\Windows\\Customer Experience Improvement Program",
+				"Name": "KernelCeipTask"
+			}
+		},
+		
+		"switch4": {
+			"Type": "Registry",
+			"Header": "Custom switch: Let Windows track app launches to improve Start and search results",
+			"Params": {
+				"Section": "User",
+				"Path": "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+				"Name": "Start_TrackProgs",
+				"ValueOn": "1",
+				"ValueOff": "0",
+				"ValueKind": "DWord"
+			}
+		}
+	}
+}

@@ -15,7 +15,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install discord.install
     choco install dotnetfx
     choco install emsisoft-emergency-kit
-    choco install etcher
+#    choco install etcher
     choco install firefox
     choco install flashplayerplugin
     choco install geforce-experience
@@ -33,7 +33,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install jre8
     choco install lockhunter
     choco install microsoft-edge
-    choco install microsoft-visual-cpp-build-tools
     choco install microsoft-windows-terminal
     choco install mortix
     choco install nmap
@@ -41,7 +40,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install nomacs
     choco install notepadplusplus.install
     choco install openjdk 
-    choco install openjdk.portable
     choco install openjdk11
     choco install openvpn
 	choco install osquery
@@ -53,7 +51,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install processhacker
     choco install procexp
     choco install procmon
-#    choco install protonvpn
+    choco install protonvpn
     choco install python2
     choco install python3
     choco install qbittorrent
@@ -64,14 +62,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install speccy
     choco install steam
     choco install sudo
-    choco install sysinternals
     choco install sysmon
     choco install teamviewer
     choco install tor-browser
 #    choco install veracrypt
-#    choco install visualstudio2019community
     choco install vlc
-    choco install vscode
     choco install wget
     choco install windirstat
     choco install winlogbeat
@@ -79,7 +74,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install zap
     choco install zoom
     choco install visualstudio-installer
-#    choco install visualstudio2019community
     choco install visualstudio2022community
     choco install visualstudio2017-powershelltools
     choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity
