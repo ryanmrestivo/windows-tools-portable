@@ -42,8 +42,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install openjdk 
     choco install openjdk11
     choco install openvpn
-	choco install osquery
-    choco install pip
+#	choco install osquery
+#    choco install pip
     choco install postman
     choco install powershell.portable 
     choco install powershell4
@@ -69,14 +69,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install vlc
     choco install wget
     choco install windirstat
-    choco install winlogbeat
+#    choco install winlogbeat
     choco install wireshark
     choco install zap
     choco install zoom
     choco install visualstudio-installer
     choco install visualstudio2022community
-    choco install visualstudio2017-powershelltools
-    choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity
+#    choco install visualstudio2017-powershelltools
+#    choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity
 
 # Windows Update
 #	choco Install PSWindowsUpdate
