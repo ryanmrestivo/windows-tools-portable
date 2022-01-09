@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Update
+Comment=
+Exec=/home/kali/Documents/upgrade.sh
+Icon=/home/kali/Documents/upgrade-icon.ico
+Path=
+Terminal=true
+StartupNotify=false
+Name[en_US.utf8]=Upgrade
