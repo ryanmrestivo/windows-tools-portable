@@ -6,15 +6,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 #https://chocolatey.org/install
     choco install 7zip.install
     choco install adobereader
-    choco install apimonitor
+#    choco install apimonitor
     choco install bleachbit.install
-    choco install chocolateygui
+#    choco install chocolateygui
     choco install chromium
     choco install cpu-z.install
-    choco install curl
+#    choco install curl
     choco install discord.install
     choco install dotnetfx
-    choco install emsisoft-emergency-kit
+#    choco install emsisoft-emergency-kit
 #    choco install etcher
     choco install firefox
     choco install flashplayerplugin
@@ -24,7 +24,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install github-desktop
     choco install git-lfs
     choco install googlechrome
-    choco install gpu-z
+#    choco install gpu-z
     choco install greenshot
     choco install hosts.editor
     choco install hwinfo.install
@@ -34,7 +34,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install lockhunter
     choco install microsoft-edge
     choco install microsoft-windows-terminal
-    choco install mortix
+#    choco install mortix
     choco install nmap
     choco install nodejs.install
     choco install nomacs
@@ -61,7 +61,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install rufus.install
     choco install speccy
     choco install steam
-    choco install sudo
+#    choco install sudo
     choco install sysmon
     choco install teamviewer
     choco install tor-browser
