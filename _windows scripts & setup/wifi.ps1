@@ -12,3 +12,5 @@ $Profiles | Foreach-Object -Process {
 		Password = $Password
 	}
 }
+
+pause
