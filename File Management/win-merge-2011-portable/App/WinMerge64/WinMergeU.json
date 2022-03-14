@@ -1,0 +1,21 @@
+﻿{
+	"Backup" : null,
+	"Custom Colors" : null,
+	"DefaultSyntaxColors" : null,
+	"Files" : null,
+	"Files\\Ext" : {
+		"Item_0" : "*.*"
+	},
+	"Files\\Left" : null,
+	"Files\\Right" : null,
+	"LineFilters" : null,
+	"Locale" : null,
+	"Merge7z" : null,
+	"Recent File List" : null,
+	"ScreenLayout" : {
+		"#202" : "577x241"
+	},
+	"Settings" : {
+		"MainWindowPlacement" : "1,-1,-1,-1,-1,279,165,1719,905"
+	}
+}
