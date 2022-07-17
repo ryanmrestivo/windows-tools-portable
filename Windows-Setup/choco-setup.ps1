@@ -7,7 +7,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install 7zip.install
     choco install adobereader
 #    choco install apimonitor
-    choco install bleachbit.install
+#    choco install bleachbit.install
 #    choco install chocolateygui
 #    choco install chromium
 #    choco install cpu-z.install
