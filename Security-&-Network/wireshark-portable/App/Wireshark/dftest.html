@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>dftest(1)</title>
+<link rel="stylesheet" href="./ws.css">
+</head>
+<body class="manpage">
+<div id="header">
+<h1>dftest(1) Manual Page</h1>
+<h2 id="_name">NAME</h2>
+<div class="sectionbody">
+<p>dftest - Shows display filter byte-code, for debugging dfilter routines.</p>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_synopsis">SYNOPSIS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="nowrap"><strong>dftest</strong></span>
+<span class="nowrap">[ &lt;filter&gt; ]</span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description">DESCRIPTION</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>dftest</strong> is a simple tool which compiles a display filter and shows its bytecode.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options">OPTIONS</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">filter</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>The display filter expression. If needed it has to be quoted.</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples">EXAMPLES</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Show how the IP protocol is filtered:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>dftest ip</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Shows how frame 150 is filtered:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>dftest "frame.number == 150"</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also">SEE ALSO</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="wireshark-filter.html">wireshark-filter</a>(4)</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2022-07-27 19:20:07 UTC
+</div>
+</div>
+</body>
+</html>
