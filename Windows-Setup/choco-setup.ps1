@@ -13,6 +13,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 #    choco install cpu-z.install
 #    choco install curl
     choco install discord.install
+	choco install docker-desktop
     choco install dotnetfx
 #    choco install emsisoft-emergency-kit
 #    choco install etcher
