@@ -72,6 +72,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install windirstat
 #    choco install winlogbeat
     choco install wireshark
+#	choco install winaero-tweaker
     choco install zap
     choco install zoom
     choco install visualstudio-installer
