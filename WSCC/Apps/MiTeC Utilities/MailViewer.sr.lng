@@ -1,0 +1,170 @@
+﻿[precision language file]
+languagename=Српски
+rtl=0
+description=
+fileversion=1.0
+author=Оzzii
+
+[Tdlg_mv_Files]
+bLoad.Caption=Поништи
+bOK.Caption=У реду
+Self.Caption=Базе података тренутних сесија
+Tree.Header.Columns[0].Text=Идентитет / Фасцикла
+Tree.Header.Columns[1].Text=Величина [Б]
+Tree.Header.Columns[2].Text=Време
+
+[Tdlg_mv_Save]
+Button1.Caption=Поништи
+Button2.Caption=У реду
+efn.Hint=Дво-клик да бисте отворили дијалог за чување датотеке
+Label1.Caption=Нова датотека
+sd.Filter=Имејлови|*.eml|Све датотеке|*.*
+Self.Caption=Сачувај имејл као
+
+[Tmdi_mv_Msg]
+AttPanel.Caption=Прилози
+bImages.Caption=Покажи слике
+Copy1.Caption=Копирај
+eSource.Text=извор
+Label1.Caption=Копија:
+Label2.Caption=Сакривено:
+Label8.Caption=Од:
+Label9.Caption=Време:
+Label10.Caption=Величина:
+Label11.Caption=За:
+Label12.Caption=Траг:
+Label13.Caption=Тема:
+mmPrint.Caption=Штампај...
+Open1.Caption=Отвори...
+pmFind.Caption=Наћи...
+pmFindnext.Caption=Наћи следеће
+Save1.Caption=Сачувај...
+Saveall1.Caption=Сачувај све...
+sd.Title=Сачувај прилог...
+SelectAll1.Caption=Одабери све
+Self.Caption=Mail Viewer
+tsBody.Caption=Тело
+tsHTML.Caption=HTML
+tsPlain.Caption=Обично
+tsSource.Caption=Извор
+
+[Tmdi_mv_Viewer]
+acAddr.Caption=Прикажи адресе датотека са порукама...
+acAddr.Hint=Прикажи адресе датотека са порукама...
+acCollect.Caption=Прикупи адресе имејлова...
+acCollect.Hint=Прикупи адресе имејлова...
+acFilter.Caption=Филтер
+acFilter.Hint=Пребаци филтер
+acView.Caption=Види поруку...
+acView.Hint=Види детаље поруке
+Attachmentsonly1.Caption=Само прилози...
+cbFilter.Items.Text=Од+Тема+За+Тело\nОд+Тема+За\nОд\nТема\nЗа\nТело\nИзвоз\n
+Email1.Caption=Имејл...
+extonly1.Caption=Само тело...
+HeaderPanel.Caption=Информација
+CheckAll1.Caption=Одабери све
+InvertSelection1.Caption=Обрни одабирање
+Label1.Caption=Филтер:
+mmMsg.Caption=Поруке
+mmSaveAll.Caption=Сачувај
+mmSaveAll.Hint=Сачувај одабране поруке
+Tree.Header.Columns[4].Text=Од
+Tree.Header.Columns[5].Text=Тема
+Tree.Header.Columns[6].Text=Уа
+Tree.Header.Columns[7].Text=Примљено
+Tree.Header.Columns[8].Text=Величина [Б]
+UncheckAll1.Caption=Скини одабирање
+
+[Twiz_mv_Open]
+bOE.Caption=Претражи тренутну OE базу
+bOK.Caption=У реду
+bTB.Caption=Претражи тренутну TB базу
+Button1.Caption=Откажи
+bWLM.Caption=Претражи тренутну Win/Live Mail базу
+cbxEAP.Caption=Процени присуство прилога
+feEML.Hint=Дво-клик за претрагу
+feOE.Hint=Дво-клик за претрагу
+feTB.Hint=Дво-клик за претрагу
+feWLM.Hint=Дво-клик за претрагу
+GroupBox1.Caption=[ Шта да се отвори? ]
+odEML.Filter=Имејлови|*.eml|Све датотеке|*.*
+odOE.Filter=Базе података Outlook Express поруке|*.dbx;*.mbx|Све датотеке|*.*
+odTB.Filter=Базе података Mozilla Thunderbird поруке|*.*|Све датотеке|*.*
+rbEML.Caption=Једна EML датотека
+rbOE.Caption=База података Outlook Express поруке
+rbTB.Caption=база података Mozilla Thunderbird поруке
+rbWLM.Caption=Фасцикла са имејл датотекама (EML)
+sbEML.Hint=Тражи
+sbOE.Hint=Тражи
+sbTB.Hint=Тражи
+sbWLM.Hint=Тражи
+Self.Caption=Отвори чаробњак
+
+[Twnd_mv_Main]
+acAbout.Caption=О...
+acAbout.Hint=О програму
+acCloseChild.Caption=Затвори
+acCloseChild.Hint=Затвори
+acExit.Caption=Излаз
+acExit.Hint=Излаз
+acCheckUpdate.Caption=Провери ажурирања
+acOpen.Caption=Отвори...
+acOpen.Hint=Отвори|Отвара постојећу датотеку
+acPersistent.Caption=Трајна подешавања
+acWinCascade.Caption=Водопад
+acWinCascade.Hint=Водопад
+acWinTileHorizontal.Caption=Постави хоризонтално
+acWinTileHorizontal.Hint=Постави хоризонтално
+acWinTileVertical.Caption=Постави вертикално
+acWinTileVertical.Hint=Постави вертикално
+File1.Caption=Датотека
+Help1.Caption=Помоћ
+mmEAP.Caption=Процени присуство прилога
+mmOpt.Caption=Опције
+pUpdate.Caption=Новија верзија је доступна. Кликните овде да бисте је преузели.
+Self.Caption=MiTeC Mail Viewer
+wacAutoSize.Caption=Аутоматска величина
+wacClose.Caption=Затвори
+wacCloseAll.Caption=Затвори све
+wacMaximize.Caption=Уваћај
+wacMinAll.Caption=Умањи све
+wacMinimize.Caption=Умањи
+wacRestore.Caption=Врати
+wacTitle.Caption=<без>
+Windows1.Caption=Прозоре
+
+[constants]
+lc_Atts=Прилози
+lc_AttSaved=%d прилога из %d порука сачувано у %s
+lc_Confirmation=Потврда
+lc_DownloadQuery=Да ли да се преузме?
+lc_EA=Имејл адресе
+lc_ElapsedTime=Протекло време: %1.2f с
+lc_Error=Грешка
+lc_FileNotExists=Датотека %s не постоји.
+lc_FileNotSupported=Датотека није у подржаном формату.
+lc_FileProps=Поставке датотеке
+lc_Filtering=Филтрирање...
+lc_FolderNotExists=Фасцикла %s не постоји.
+lc_Format=формат
+lc_Information=Информација
+lc_Lines=линија
+lc_LoadFailed=Погрешно учитавање
+lc_Loading=Учитавање...
+lc_Message=порука
+lc_MsgSaved=%d поруке сачуване у %s
+lc_NewVersionAvail=Новија веруија %s је доступна.
+lc_NoNewVersion=Нема новије верзије.
+lc_OpenAtt=Да се отвори овај прилог?
+lc_Overwrite=преписати постојећу датотеку %s?
+lc_Reading=Читање...
+lc_SaveProblem=Постоји проблем са чувањем датотека за имејл са темом "%s" од "%s". Унеси ново име датотеке.
+lc_Saving=Сачувавање порука...
+lc_Selected=Одабрано
+lc_SelectFolder=Одабери фасциклу
+lc_TextNotFound=Текст није нађен.
+lc_To=За
+lc_Total=Збир
+lc_Visible=Видљиво
+lc_Warning=Пазња
+

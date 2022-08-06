@@ -1,0 +1,73 @@
+WSCC - Windows System Control Center
+
+Copyright (C) 2007-2022 KirySoft S.R.L. All Rights Reserved.
+
+1. Introduction:
+
+WSCC is a Windows application, which allows you to install, update, execute and organize the utilities from various system utility suites. WSCC can install and update the supported utilities automatically. Alternatively, WSCC can use the http protocol to download and run the programs.
+
+This edition of WSCC supports the following utility suites:
+
+- Windows Sysinternals Suite (including support for "Sysinternals Live" service)
+- NirSoft Utilities
+- and more...
+
+Windows Sysinternals Suite download and Licensing FAQ website: http://www.sysinternals.com.
+Windows Sysinternals is property of Microsoft Corporation.
+
+NirSoft Utilities website: http://www.nirsoft.net.
+NirSoft Utilities is property of Nir Sofer.
+
+2. Quick start:
+
+2.1. System Requirements:
+
+Windows 11/10/8.1/8/7 32/64bit (all editions)
+Windows Server 2021/2019/2016/2012R2/2012/2008R2 32/64bit (all editions)
+
+2.2. Keyboard shortcuts:
+
+Main screen:
+
+<ALT>+S             - Search
+<ALT>+X             - Clear search
+<ALT>+N             - New console
+<ALT>+I             - Shows the Install dialog
+<ALT>+U             - Shows the Update Manager
+<ALT>+O             - Shows the Options dialog
+<ALT>+B             - Shows the About dialog
+<ALT>+1..<ALT>+9    - Selects a software collection (1..9)
+<ALT>+0             - Selects the "All Items" group  
+
+Software items view:
+
+<ENTER>             - Launch application
+<SHIFT>+<ENTER>     - Launch application (hide main screen)
+<CTRL>+<ENTER>      - Launch application (disable hide main screen)
+<ALT>+<ENTER>       - Show properties
+<SHIFT>             - hold SHIFT key while right-click an app icon to enable the "Re-Install" menu
+
+Options dialog:
+
+<CTRL>+<F2>         - Enable\Disable Advanced Options page
+
+Console keyboard shortcuts:
+
+<CTRL>+C            - Abort running command
+
+2.3. Command line parameters:
+
+ -minimized         - Start the application minimized (overrides options).
+ -updateapps        - Checks for app updates, downloads, installs the updates and exits. This paramater is useful for scheduling purposes.
+ -hideprogress      - Hides the progress bar when running from command line.
+
+3. License:
+
+See wscc.license.txt
+
+4. Contact:
+
+For more information about this program and/or comments / feedback use:
+
+email: contact@kls-soft.com
+web site: http://www.kls-soft.com/wscc
