@@ -1,4 +1,4 @@
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 # refreshenv
 	refreshenv
 
@@ -17,6 +17,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install dotnetfx
 #    choco install emsisoft-emergency-kit
 #    choco install etcher
+    choco install everything
     choco install firefox
     choco install flashplayerplugin
     choco install geforce-experience
@@ -32,6 +33,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     choco install javaruntime
     choco install jdk11
     choco install jre8
+    choco install languagetool
     choco install lockhunter
     choco install microsoft-edge
 #    choco install microsoft-windows-terminal
