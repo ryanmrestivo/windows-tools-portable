@@ -15,6 +15,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install discord.install
 	choco install docker-desktop
     choco install dotnetfx
+	choco install ecm
 #    choco install emsisoft-emergency-kit
 #    choco install etcher
     choco install everything
