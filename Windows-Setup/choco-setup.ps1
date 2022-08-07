@@ -20,7 +20,6 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install etcher
     choco install everything
     choco install firefox
-    choco install flashplayerplugin
     choco install geforce-experience
     choco install gh
     choco install git.install
@@ -60,10 +59,8 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install python3
     choco install qbittorrent
 #    choco install r.project
-    choco install recuva
     choco install rufus
     choco install rufus.install
-    choco install speccy
     choco install steam
 #    choco install sudo
 #    choco install sysmon
