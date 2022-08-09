@@ -1,0 +1,35 @@
+3fcc124b6e08ee0e9351f717dd136939 :: Hdaudbus.sys :: 5.10.01.5013 :: Windows (R) Server 2003 DDK provider :: 
+307d248f97835b6879bdd361086924fe :: HSF_CNXT.sys :: 7.62.00 :: Conexant Systems, Inc. :: 
+21c31273c6cc4826e74be8ae3b09d4a8 :: HSF_DPV.sys :: 7.62.00 :: Conexant Systems, Inc. :: 
+6a5c4732d6803f84e2987edd8e4359ce :: HSFHWAZL.sys :: 7.62.00 :: Conexant Systems, Inc. :: 
+448bb2fe30f1dde9eaa4f0e87b52b687 :: hwinterface.sys :: 5.00.2195.1620 :: Logix4u :: 
+2a013e7530beab6e569faa83f517e836 :: Hdaudio.sys :: 5.10.01.5013 :: Windows (R) Server 2003 DDK provider :: 
+11c62d1ce575b18e342f9f765c8206f2 :: iaStor.sys :: 7.0.0.1012 :: Intel Corporation :: 
+0cea2d0d3fa284b85ed5b68365114f76 :: mdmxsdk.sys :: 1.0.2.012 :: Conexant :: 
+6623e51595c0076755c29c00846c4eb2 :: npf.sys :: 4.0.0.1040 :: CACE Technologies :: 
+355aac141b214bef1dbc1483afd9bd50 :: rimmptsk.sys :: 1, 0, 0, 0 :: REDC :: 
+a4216c71dd4f60b26418ccfd99cd0815 :: rimsptsk.sys :: 6, 0, 0, 0 :: REDC :: 
+d231b577024aa324af13a42f3a807d10 :: rixdptsk.sys :: 6, 0, 0, 0 :: REDC :: 
+574c9b2f9406d28f8f7e5c7b46b470e6 :: RtkHDAud.sys :: 5.10.0.5490 :: Realtek Semiconductor Corp. :: 
+ef34aaaa03d7cc4579239fe6dabf1577 :: hypertrm.exe :: 5.1.2600.0 :: Hilgraeve, Inc. :: 
+b088085d01b3e80e2be0e9cd1838ba9b :: msacm32.dll :: 5.1.2600.2180 :: Microsoft Corporation :: 
+86f1895ae8c5e8b17d99ece768a70732 :: msvcr71.dll :: 7.10.3052.4 :: Microsoft Corporation :: 
+8256f0e39ad2b2d2c9a9db00242f594a :: mscoree.dll :: 2.0.50727.42 :: Microsoft Corporation :: 
+ccb3999327f38780474e515b1e690c3a :: wmaudsdk.dll :: 4.00.0.3845 :: Microsoft Corporation :: 
+dbe2e5a5f1f4d435119da166316b37c6 :: drmclien.dll :: 1.00.00.3845 :: Microsoft Corporation :: 
+6e4e50f98ca9344dd433ad9cc6670e8b :: strmdll.dll :: 4.00.0.3845 :: Microsoft Corporation :: 
+d928ffabce0ac9d69fef1f645c6c7b1d :: mscorwks.dll :: 1.1.4322.573 :: Microsoft Corporation :: 
+b8294afc55b31d835be038222f61230c :: fusion.dll :: 1.1.4322.573 :: Microsoft Corporation :: 
+4c2bb0e88229d59c276d7ea31951eb5b :: mscorsn.dll :: 1.1.4322.573 :: Microsoft Corporation :: 
+e9634a7e73a30f0bd17f9b0c19bd211a :: mscorjit.dll :: 1.1.4322.573 :: Microsoft Corporation :: 
+f5d57233fbaf9c3c682ec5c8d7c63b2b :: mscorwks.dll :: 2.0.50727.42 :: Microsoft Corporation :: 
+515585c65542a16d7b95edb4169af9c1 :: mscorjit.dll :: 2.0.50727.42 :: Microsoft Corporation :: 
+ad23bb6b329c7d5ee8a43b89e2fd4fd2 :: fusion.dll :: 2.0.50727.42 :: Microsoft Corporation :: 
+745035d863cdde58d125c2055d5f3d26 :: mscorsn.dll :: 2.0.50727.42 :: Microsoft Corporation :: 
+05e84eead6b27c958621a4e6d33859d1 :: msacm32.drv :: 5.1.2600.0 :: Microsoft Corporation :: 
+251036d01e9f512172fed3180e98e039 :: ieframe.dll :: 7.00.6000.16945 :: Microsoft Corporation :: 
+9780e72574c458c592fa4f9a60516c56 :: Erasext.dll :: 5.86.1 :: - :: 
+e4aeca15ff690be2d5a7efde2e89f1d1 :: Eraser.dll :: 5.86.1 :: - :: 
+074fae0b816fba78f667b116303d31eb :: RTHDCPL.EXE :: 2.1.6.2 :: Realtek Semiconductor Corp. :: 
+c010f2718c42a012b52f4998214c87ad :: ePower_DMC.exe :: 0.62 :: Acer Incorporated :: 
+e39574b471ef0b8719b13cc99aaff0b8 :: RtkBtMnt.exe :: 1.0.0.7 :: Realtek Semiconductor Corp. :: 
