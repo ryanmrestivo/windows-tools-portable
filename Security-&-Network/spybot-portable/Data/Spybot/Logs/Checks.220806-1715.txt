@@ -1,0 +1,337 @@
+Search results from Spybot - Search & Destroy
+
+8/6/2022 5:15:29 PM
+Scan took 00:26:40.
+24 items found.
+
+Log: [SBI $ASBRHIST]  Install: setupact.log (File, nothing done)
+  C:\Windows\setupact.log
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+  Properties.size=24970
+  Properties.md5=96A712A9A3B9EEBD24ED7476E1D1BFF3
+  Properties.filedate=1659783702
+  Properties.filedatetext=2022-08-06 11:01:41
+
+Log: [SBI $ASBRHIST]  Install: DtcInstall.log (File, nothing done)
+  C:\Windows\DtcInstall.log
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+  Properties.size=1947
+  Properties.md5=8541569A1BC7E436BAD89627AAE3CCFC
+  Properties.filedate=1659756948
+  Properties.filedatetext=2022-08-06 03:35:47
+
+7-Zip: [SBI $12C3A52C] Folder history (Registry Value, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\FolderHistory
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+7-Zip: [SBI $3D5692BD] Last used folder (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\PanelPath0
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $1E8157BE] Typed URL list (Registry Key, nothing done)
+  HKEY_USERS\S-1-5-19\Software\Microsoft\Internet Explorer\TypedURLs
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $1E8157BE] Typed URL list (Registry Key, nothing done)
+  HKEY_USERS\S-1-5-20\Software\Microsoft\Internet Explorer\TypedURLs
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $1E8157BE] Typed URL list (Registry Key, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Internet Explorer\TypedURLs
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $0BC7B918] User agent (Registry Change, nothing done)
+  HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $0BC7B918] User agent (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $0BC7B918] User agent (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $0BC7B918] User agent (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Internet Explorer: [SBI $0BC7B918] User agent (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+MS Media Player: [SBI $5C51E349] Client ID (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\MediaPlayer\Player\Settings\Client ID
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+MS DirectInput: [SBI $9A063C91] Most recent application (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\Name
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+MS DirectInput: [SBI $7B184199] Most recent application ID (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\Id
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+MS Regedit: [SBI $C3B62FC1] Recent open key (Registry Change, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\LastKey
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Windows Explorer: [SBI $7308A845] Run history (Registry Key, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Windows Explorer: [SBI $AA0766B5] Stream history (Registry Key, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Windows Explorer: [SBI $D20DA0AD] Recent file global history (Registry Key, nothing done)
+  HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+  Category=Tracks
+  ThreatLevel=2
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Cookie: [SBI $BCOOKIES] Browser: Cookie (3) (Browser: Cookie, nothing done)
+  
+  Category=Browser
+  ThreatLevel=1
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Cache: [SBI $BCACHE00] Browser: Cache (20) (Browser: Cache, nothing done)
+  
+  Category=Browser
+  ThreatLevel=1
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+History: [SBI $BHISTORY] Browser: History (5) (Browser: History, nothing done)
+  
+  Category=Browser
+  ThreatLevel=1
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+Cookie: [SBI $BCOOKIES] Browser: Cookie (1262) (Browser: Cookie, nothing done)
+  
+  Category=Browser
+  ThreatLevel=1
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+History: [SBI $BHISTORY] Browser: History (10) (Browser: History, nothing done)
+  
+  Category=Browser
+  ThreatLevel=1
+  Weblink=http://forums.spybot.info/forumdisplay.php?54
+
+
+--- Spybot - Search & Destroy version: 2.9.82.132  DLL (build: 20211105) ---
+
+2021-11-16 blindman.exe (2.9.82.152)
+2021-12-20 explorer.exe (2.9.82.195)
+2021-11-16 SDCleaner.exe (2.9.82.110)
+2021-11-16 SDDelFile.exe (2.9.82.0)
+2021-11-16 SDFiles.exe (2.9.82.138)
+2021-11-16 SDFileScanHelper.exe (2.9.82.8)
+2021-11-16 SDFilesCmd.exe (2.9.82.4)
+2021-11-16 SDFSSvc.exe (2.9.82.220)
+2021-11-16 SDHelp.exe (2.9.82.1)
+2021-11-05 SDHookHelper.exe (2.9.82.2)
+2018-02-06 SDHookInst32.exe (2.7.64.2)
+2021-11-23 SDImmunize.exe (2.9.82.133)
+2021-11-23 SDImmunizeCmd.exe (2.9.82.6)
+2021-11-20 SDLicense.exe (2.9.82.3)
+2021-12-10 SDListsCmd.exe (2.9.82.0)
+2021-11-16 SDLogReport.exe (2.9.82.107)
+2021-11-16 SDOnAccess.exe (2.9.82.16)
+2021-11-16 SDPRE.exe (2.9.82.22)
+2021-11-16 SDPrepPos.exe (2.9.82.16)
+2021-11-16 SDQuarantine.exe (2.9.82.103)
+2021-11-29 SDRootAlyzer.exe (2.9.82.117)
+2021-11-29 SDSBIEdit.exe (2.9.82.39)
+2021-12-20 SDScan.exe (2.9.82.195)
+2021-12-20 SDScanCmd.exe (2.9.82.11)
+2021-11-29 SDScript.exe (2.9.82.54)
+2021-11-23 SDSettings.exe (2.9.82.140)
+2021-11-16 SDShell.exe (2.9.82.2)
+2021-11-30 SDShred.exe (2.9.82.109)
+2021-12-20 SDSpybotLab.exe (2.9.82.0)
+2021-11-05 SDSysRepair.exe (2.9.82.102)
+2021-11-05 SDTools.exe (2.9.82.157)
+2021-11-16 SDTray.exe (2.9.82.129)
+2021-11-16 SDUpdate.exe (2.9.82.107)
+2021-11-16 SDUpdateCmd.exe (2.9.82.2)
+2021-11-16 SDUpdSvc.exe (2.9.82.83)
+2021-11-20 SDWelcome.exe (2.9.82.139)
+2019-09-04 SDWSCSvc.exe (2.8.66.0)
+2018-09-03 Spybot3.LicenseInstaller.exe
+2019-07-31 Spybot3ELAMSetupConsole.exe (3.4.0.0)
+2017-11-28 xcacls.exe
+2017-11-28 borlndmm.dll (10.0.2288.42451)
+2018-01-29 DelZip190.dll (1.9.0.119)
+2018-01-29 DelZip192.dll (1.9.2.136)
+2018-11-22 libeay32.dll (1.0.2.17)
+2017-11-28 libssl32.dll (1.0.0.4)
+2021-11-05 NotificationSpreader.dll (2.9.82.4)
+2021-11-16 SDAdvancedCheckLibrary.dll (2.9.82.98)
+2021-11-16 SDAV.dll (2.9.82.0)
+2021-12-21 SDECon32.dll (2.9.82.115)
+2021-11-05 SDEvents.dll (2.9.82.2)
+2021-11-16 SDFileScanLibrary.dll (2.9.82.27)
+2018-02-06 SDHook32.dll (2.7.64.2)
+2021-11-23 SDImmunizeLibrary.dll (2.9.82.6)
+2021-11-16 SDLicense.dll (2.9.82.3)
+2021-11-16 SDLists.dll (2.9.82.8)
+2021-11-16 SDResources.dll (2.9.82.10)
+2021-12-20 SDScanLibrary.dll (2.9.82.132)
+2021-11-17 SDTasks.dll (2.9.82.16)
+2021-11-05 SDWinLogon.dll (2.9.82.0)
+2021-06-19 sqlite3.dll (3.36.0.0)
+2018-11-22 ssleay32.dll (1.0.2.17)
+2021-11-05 Tools.dll (2.9.82.36)
+2021-11-03 Includes\Adware-000.sbi (*)
+2021-11-03 Includes\Adware-001.sbi (*)
+2018-09-24 Includes\Adware-002.sbi (*)
+2018-09-24 Includes\Adware-003.sbi (*)
+2022-08-03 Includes\Adware-C.sbi (*)
+2014-01-13 Includes\Adware.sbi (*)
+2014-01-13 Includes\AdwareC.sbi (*)
+2010-08-13 Includes\Cookies.sbi (*)
+2014-11-14 Includes\Dialer-000.sbi (*)
+2014-11-14 Includes\Dialer-001.sbi (*)
+2018-06-20 Includes\Dialer-C.sbi (*)
+2014-01-13 Includes\Dialer.sbi (*)
+2014-01-13 Includes\DialerC.sbi (*)
+2014-01-09 Includes\Fraud-000.sbi (*)
+2017-01-30 Includes\Fraud-001.sbi (*)
+2014-03-31 Includes\Fraud-002.sbi (*)
+2016-07-06 Includes\Fraud-003.sbi (*)
+2013-04-11 Includes\HeavyDuty.sbi (*)
+2014-11-14 Includes\Hijackers-000.sbi (*)
+2014-11-14 Includes\Hijackers-001.sbi (*)
+2018-04-04 Includes\Hijackers-C.sbi (*)
+2014-01-13 Includes\Hijackers.sbi (*)
+2014-01-13 Includes\HijackersC.sbi (*)
+2014-01-08 Includes\iPhone-000.sbi (*)
+2014-01-08 Includes\iPhone.sbi (*)
+2021-11-29 Includes\Keyloggers-000.sbi (*)
+2022-02-17 Includes\Keyloggers-C.sbi (*)
+2014-01-13 Includes\Keyloggers.sbi (*)
+2014-01-13 Includes\KeyloggersC.sbi (*)
+2004-11-29 Includes\LSP.sbi (*)
+2019-08-30 Includes\Malware-000.sbi (*)
+2019-05-08 Includes\Malware-001.sbi (*)
+2018-04-12 Includes\Malware-002.sbi (*)
+2019-11-20 Includes\Malware-003.sbi (*)
+2018-04-13 Includes\Malware-004.sbi (*)
+2018-08-16 Includes\Malware-005.sbi (*)
+2018-09-04 Includes\Malware-006.sbi (*)
+2018-12-10 Includes\Malware-007.sbi (*)
+2022-08-03 Includes\Malware-C.sbi (*)
+2014-01-13 Includes\Malware.sbi (*)
+2014-01-13 Includes\MalwareC.sbi (*)
+2018-05-02 Includes\PUPS-000.sbi (*)
+2020-12-07 Includes\PUPS-001.sbi (*)
+2018-05-02 Includes\PUPS-002.sbi (*)
+2018-05-02 Includes\PUPS-003.sbi (*)
+2018-05-02 Includes\PUPS-004.sbi (*)
+2021-11-23 Includes\PUPS-005.sbi (*)
+2022-07-27 Includes\PUPS-C.sbi (*)
+2014-01-13 Includes\PUPS.sbi (*)
+2014-01-13 Includes\PUPSC.sbi (*)
+2010-01-25 Includes\Revision.sbi (*)
+2014-01-08 Includes\Security-000.sbi (*)
+2018-08-01 Includes\Security-C.sbi (*)
+2014-01-21 Includes\Security.sbi (*)
+2014-01-21 Includes\SecurityC.sbi (*)
+2008-06-03 Includes\Spybots.sbi (*)
+2008-06-03 Includes\SpybotsC.sbi (*)
+2015-11-11 Includes\Spyware-000.sbi (*)
+2015-05-06 Includes\Spyware-001.sbi (*)
+2021-01-27 Includes\Spyware-C.sbi (*)
+2014-01-21 Includes\Spyware.sbi (*)
+2014-01-21 Includes\SpywareC.sbi (*)
+2011-06-07 Includes\Tracks.sbi (*)
+2012-11-19 Includes\Tracks.uti (*)
+2020-02-18 Includes\Trojans-000.sbi (*)
+2019-09-04 Includes\Trojans-001.sbi (*)
+2020-12-29 Includes\Trojans-002.sbi (*)
+2019-08-13 Includes\Trojans-003.sbi (*)
+2019-06-18 Includes\Trojans-004.sbi (*)
+2020-09-02 Includes\Trojans-005.sbi (*)
+2021-10-11 Includes\Trojans-006.sbi (*)
+2021-11-02 Includes\Trojans-007.sbi (*)
+2021-06-18 Includes\Trojans-008.sbi (*)
+2021-02-26 Includes\Trojans-009.sbi (*)
+2018-06-21 Includes\Trojans-010.sbi (*)
+2021-11-24 Includes\Trojans-011.sbi (*)
+2022-08-03 Includes\Trojans-C.sbi (*)
+2016-02-02 Includes\Trojans-OG-000.sbi (*)
+2018-11-21 Includes\Trojans-TD-000.sbi (*)
+2014-01-15 Includes\Trojans-VM-000.sbi (*)
+2014-01-15 Includes\Trojans-VM-001.sbi (*)
+2014-01-15 Includes\Trojans-VM-002.sbi (*)
+2021-11-24 Includes\Trojans-VM-003.sbi (*)
+2014-01-15 Includes\Trojans-VM-004.sbi (*)
+2014-01-15 Includes\Trojans-VM-005.sbi (*)
+2014-01-15 Includes\Trojans-VM-006.sbi (*)
+2014-01-15 Includes\Trojans-VM-007.sbi (*)
+2014-01-15 Includes\Trojans-VM-008.sbi (*)
+2018-11-20 Includes\Trojans-VM-009.sbi (*)
+2014-01-15 Includes\Trojans-VM-010.sbi (*)
+2014-01-15 Includes\Trojans-VM-011.sbi (*)
+2014-01-15 Includes\Trojans-VM-012.sbi (*)
+2014-01-15 Includes\Trojans-VM-013.sbi (*)
+2014-01-15 Includes\Trojans-VM-014.sbi (*)
+2014-01-15 Includes\Trojans-VM-015.sbi (*)
+2014-01-15 Includes\Trojans-VM-016.sbi (*)
+2014-01-15 Includes\Trojans-VM-017.sbi (*)
+2014-01-15 Includes\Trojans-VM-018.sbi (*)
+2014-01-15 Includes\Trojans-VM-019.sbi (*)
+2014-01-15 Includes\Trojans-VM-020.sbi (*)
+2014-01-15 Includes\Trojans-VM-021.sbi (*)
+2014-01-15 Includes\Trojans-VM-022.sbi (*)
+2014-01-15 Includes\Trojans-VM-023.sbi (*)
+2014-01-15 Includes\Trojans-VM-024.sbi (*)
+2015-11-09 Includes\Trojans-ZB-000.sbi (*)
+2021-07-09 Includes\Trojans-ZL-000.sbi (*)
+2014-01-09 Includes\Trojans.sbi (*)
+2014-01-16 Includes\TrojansC-01.sbi (*)
+2014-01-16 Includes\TrojansC-02.sbi (*)
+2014-01-16 Includes\TrojansC-03.sbi (*)
+2014-01-16 Includes\TrojansC-04.sbi (*)
+2014-01-16 Includes\TrojansC-05.sbi (*)
+2014-01-09 Includes\TrojansC.sbi (*)
+

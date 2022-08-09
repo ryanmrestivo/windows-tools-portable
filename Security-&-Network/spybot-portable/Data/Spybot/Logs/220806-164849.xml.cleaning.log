@@ -1,0 +1,73 @@
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	Log
+[+]	22-08-06 17:16:15	Moving into quarantine	C:\Windows\setupact.log
+[+]	22-08-06 17:16:15	Moving into quarantine	C:\Windows\DtcInstall.log
+[+]	22-08-06 17:16:15	Successfully cleaned	C:\Windows\setupact.log
+[+]	22-08-06 17:16:15	Successfully cleaned	C:\Windows\DtcInstall.log
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	7-Zip
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\FolderHistory
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\PanelPath0
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\FolderHistory
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\PanelPath0
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	Internet Explorer
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-19\Software\Microsoft\Internet Explorer\TypedURLs
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-20\Software\Microsoft\Internet Explorer\TypedURLs
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Internet Explorer\TypedURLs
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-19\Software\Microsoft\Internet Explorer\TypedURLs
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-20\Software\Microsoft\Internet Explorer\TypedURLs
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Internet Explorer\TypedURLs
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\User Agent
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	MS Media Player
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\MediaPlayer\Player\Settings\Client ID
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\MediaPlayer\Player\Settings\Client ID
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	MS DirectInput
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\Name
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\Id
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\Name
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\Id
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	MS Regedit
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\LastKey
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\LastKey
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	Windows Explorer
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU
+[+]	22-08-06 17:16:15	Moving into quarantine	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU
+[+]	22-08-06 17:16:15	Successfully cleaned	HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	Cookie
+[+]	22-08-06 17:16:15	Moving into quarantine	Internet Explorer (User) (admin)Cookies
+[+]	22-08-06 17:16:15	Moving into quarantine	Firefox (admin (default-release))Cookies
+[+]	22-08-06 17:16:15	Successfully cleaned	Internet Explorer (User) (admin)Cookies
+[+]	22-08-06 17:16:15	Successfully cleaned	Firefox (admin (default-release))Cookies
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	Cache
+[+]	22-08-06 17:16:15	Moving into quarantine	Internet Explorer (User) (admin)Cache
+[+]	22-08-06 17:16:15	Successfully cleaned	Internet Explorer (User) (admin)Cache
+[i]	22-08-06 17:16:15		
+[i]	22-08-06 17:16:15	Product	History
+[+]	22-08-06 17:16:15	Moving into quarantine	Internet Explorer (User) (admin)History
+[+]	22-08-06 17:16:15	Moving into quarantine	Microsoft Edge (Chrome based) (Default)History
+[+]	22-08-06 17:16:16	Successfully cleaned	Internet Explorer (User) (admin)History
+[+]	22-08-06 17:16:16	Successfully cleaned	Microsoft Edge (Chrome based) (Default)History
+[i]	22-08-06 17:16:16		
+[i]	22-08-06 17:16:16	Summary	
+[i]	22-08-06 17:16:16	Errors while cleaning	0
+[i]	22-08-06 17:16:16	Files moved into quarantine	24
+[i]	22-08-06 17:16:16	Files successfully cleaned	24

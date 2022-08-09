@@ -1,0 +1,48 @@
+:: Activity
+COM+.log
+SchedLgU.Txt
+imsins.log
+mmdet.log
+ModemDet.txt
+OEWABLog.txt
+Sti_Trace.log
+ntbtlog.txt
+:: Install
+Active Setup Log.txt
+comsetup.log
+Directx.log
+iis5.log
+ocgen.log
+ockodak.log
+setupact.log
+setupapi.log
+setuperr.log
+setuplog.txt
+svcpack.log
+wmsetup.log
+WMEncoder.log
+SP2SRP1.log
+DtcInstall.log
+:: IE
+brndlog.txt
+:: Shutdown
+System\wbem\logs\mofcomp.log
+System\wbem\logs\setup.log
+System\wbem\logs\wbemcore.log
+System\wbem\logs\wbemess.lo_
+System\wbem\logs\wbemess.log
+System\wbem\logs\wbemprox.log
+System\wbem\logs\wbemsnmp.log
+System\wbem\logs\winmgmt.log
+System\wbem\logs\wmiadap.log
+System\wbem\logs\wmiprov.log
+System32\wbem\logs\mofcomp.log
+System32\wbem\logs\setup.log
+System32\wbem\logs\wbemcore.log
+System32\wbem\logs\wbemess.lo_
+System32\wbem\logs\wbemess.log
+System32\wbem\logs\wbemprox.log
+System32\wbem\logs\wbemsnmp.log
+System32\wbem\logs\winmgmt.log
+System32\wbem\logs\wmiadap.log
+System32\wbem\logs\wmiprov.log

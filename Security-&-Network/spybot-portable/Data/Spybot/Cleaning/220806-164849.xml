@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cleaningInstructions source="SDScan" closeInternet="0" attempts="1" cleaned="1">
+  <product name="Log">
+    <file found="0" cleaned="1" error="0" tempItemIndex="0" path="C:\Windows\" item="setupact.log" action="delete" ruleId="ASBRHIST" antiVirus="FALSE" attempts="1" />
+    <file found="0" cleaned="1" error="0" tempItemIndex="1" path="C:\Windows\" item="DtcInstall.log" action="delete" ruleId="ASBRHIST" antiVirus="FALSE" attempts="1" />
+  </product>
+  <product name="7-Zip">
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="2" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\" item="FolderHistory" accessbits="32" action="delete" attempts="1" />
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="3" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\7-ZIP\FM\" item="PanelPath0" accessbits="32" newdata="" action="change" attempts="1" />
+  </product>
+  <product name="Internet Explorer">
+    <registrykey found="1" cleaned="1" error="0" tempItemIndex="4" path="HKEY_USERS\S-1-5-19\Software\Microsoft\Internet Explorer\TypedURLs" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-19\Software\Microsoft\Internet Explorer\TypedURLs" item="" accessbits="32" attempts="1" />
+    <registrykey found="1" cleaned="1" error="0" tempItemIndex="5" path="HKEY_USERS\S-1-5-20\Software\Microsoft\Internet Explorer\TypedURLs" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-20\Software\Microsoft\Internet Explorer\TypedURLs" item="" accessbits="32" attempts="1" />
+    <registrykey found="1" cleaned="1" error="0" tempItemIndex="6" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Internet Explorer\TypedURLs" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Internet Explorer\TypedURLs" item="" accessbits="32" attempts="1" />
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="7" path="HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" profilepath="" rootkey="HKEY_USERS" keypath="\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" item="User Agent" accessbits="32" newdata="Mozilla/4.0 (compatible; MSIE; Win32)" action="change" attempts="1" />
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="8" path="HKEY_USERS\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" item="User Agent" accessbits="32" newdata="Mozilla/4.0 (compatible; MSIE; Win32)" action="change" attempts="1" />
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="9" path="HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" item="User Agent" accessbits="32" newdata="Mozilla/4.0 (compatible; MSIE; Win32)" action="change" attempts="1" />
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="10" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" item="User Agent" accessbits="32" newdata="Mozilla/4.0 (compatible; MSIE; Win32)" action="change" attempts="1" />
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="11" path="HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\" item="User Agent" accessbits="32" newdata="Mozilla/4.0 (compatible; MSIE; Win32)" action="change" attempts="1" />
+  </product>
+  <product name="MS Media Player">
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="12" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\MediaPlayer\Player\Settings\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\MediaPlayer\Player\Settings\" item="Client ID" accessbits="32" newdata="" action="change" attempts="1" />
+  </product>
+  <product name="MS DirectInput">
+    <registryvalue found="0" cleaned="1" error="0" tempItemIndex="13" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\" item="Name" accessbits="32" newdata="" action="change" attempts="1" />
+    <registryvalue found="0" cleaned="1" error="0" tempItemIndex="14" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\DirectInput\MostRecentApplication\" item="Id" accessbits="32" newdata="" action="change" attempts="1" />
+  </product>
+  <product name="MS Regedit">
+    <registryvalue found="1" cleaned="1" error="0" tempItemIndex="15" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\" item="LastKey" accessbits="32" newdata="" action="change" attempts="1" />
+  </product>
+  <product name="Windows Explorer">
+    <registrykey found="1" cleaned="1" error="0" tempItemIndex="16" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" item="" accessbits="32" attempts="1" />
+    <registrykey found="1" cleaned="1" error="0" tempItemIndex="17" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" item="" accessbits="32" attempts="1" />
+    <registrykey found="1" cleaned="1" error="0" tempItemIndex="18" path="HKEY_USERS\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\" profilepath="" rootkey="HKEY_USERS" keypath="\S-1-5-21-3989498115-2146936130-3787604982-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\" item="RecentDocs" accessbits="32" attempts="1" />
+  </product>
+  <product name="Cookie">
+    <browsertracks found="1" cleaned="1" error="0" tempItemIndex="19" path="Internet Explorer (User) (admin)" item="Cookies" browser="Internet Explorer (User)" profile="admin" itemtype="cookies" profilepath="HKU\S-1-5-21-3989498115-2146936130-3787604982-1001\" profiledetail="" attempts="1" />
+    <browsertracks found="1" cleaned="1" error="0" tempItemIndex="22" path="Firefox (admin (default-release))" item="Cookies" browser="Firefox" profile="admin (default-release)" itemtype="cookies" profilepath="C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\" profiledetail="" attempts="1" />
+  </product>
+  <product name="Cache">
+    <browsertracks found="1" cleaned="1" error="0" tempItemIndex="20" path="Internet Explorer (User) (admin)" item="Cache" browser="Internet Explorer (User)" profile="admin" itemtype="cache" profilepath="HKU\S-1-5-21-3989498115-2146936130-3787604982-1001\" profiledetail="" attempts="1" />
+  </product>
+  <product name="History">
+    <browsertracks found="1" cleaned="1" error="0" tempItemIndex="21" path="Internet Explorer (User) (admin)" item="History" browser="Internet Explorer (User)" profile="admin" itemtype="history" profilepath="HKU\S-1-5-21-3989498115-2146936130-3787604982-1001\" profiledetail="" attempts="1" />
+    <browsertracks found="1" cleaned="1" error="0" tempItemIndex="23" path="Microsoft Edge (Chrome based) (Default)" item="History" browser="Microsoft Edge (Chrome based)" profile="Default" itemtype="history" profilepath="C:\Users\admin\AppData\Local\Microsoft\Edge\User Data\" profiledetail="" attempts="1" />
+  </product>
+</cleaningInstructions>

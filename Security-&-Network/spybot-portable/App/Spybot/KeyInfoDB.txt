@@ -1,0 +1,201 @@
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Taskman]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Names of executable files</i>, <b>Default value:</b> <i>Taskmgr.exe</i><br/>
+<b>Description</b><br/>
+Specifies the task manager that the system uses. You can add this entry to the registry to specify an alternate task manager.<br/>
+<b>Note</b><br/>
+Windows 2000 does not add this entry to the registry. You can add it by editing the registry or by using a program that edits the registry.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc957402.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\System]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Names of executable files</i>, <b>Default value:</b> <i>lsass.exe</i><br/>
+<b>Description</b><br/>
+Windows 2000 does not use this entry. The entry remains in the registry to support programs designed for Windows NT 4.0 or earlier.<br/>
+<b>Caution</b><br/>
+Do not delete this entry from the registry or change its value. These changes can cause serious, unexpected results.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc939857.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Names of executable files (filename extension not required)</i>, <b>Default value:</b> <i>userinit</i><br/>
+<b>Description</b><br/>
+Specifies the programs that Winlogon runs when a user logs on. By default, Winlogon runs Userinit.exe, which runs logon scripts, reestablishes network connections, and then starts Explorer.exe, the Windows user interface.<br/>
+You can change the value of this entry to add or remove programs. For example, to have a program run before the Windows Explorer user interface starts, substitute the name of that program for Userinit.exe in the value of this entry, then include instructions in that program to start Userinit.exe. You might also want to substitute Explorer.exe for Userinit.exe if you are working offline and are not using logon scripts.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc939862.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Names of executable files (filename extension not required)</i>, <b>Default value:</b> <i>Explorer.exe</i><br/>
+<b>Description</b><br/>
+Specifies the programs that provide the user interface to the operating system.<br/>
+By default, Winlogon starts the programs specified in the value of Userinit, including Userinit.exe. Userinit.exe starts the user interface program. However, if Winlogon cannot start the programs specified in the value of Userinit, Winlogon directly runs the programs specified in the value of this entry.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc939851.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\VmApplet]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Names of executable files (filename extension not required)</i>, <b>Default value:</b> <i>rundll32 shell32,Control_RunDLL "sysdm.cpl"</i><br/>
+<b>Description</b><br/>
+Specifies programs that Winlogon runs for the user so that the user can adjust the configuration of virtual memory when there is no paging file on the system volume.<br/>
+These programs run only when the system volume does not include a paging file.<br/>
+<b>Caution</b><br/>
+Do not change the value of this entry. If you do, you can damage the virtual memory configuration of Windows 2000.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc939863.aspx
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\BootExecute]
+<b>Data type:</b> <i>REG_BINARY</i>, <b>Range:</b> <i>Command or executable program</i>, <b>Default value:</b> <i>autocheck autochk *</i><br/>
+<b>Description</b><br/>
+Specifies the applications, services, and commands executed during startup.<br/>
+For example, if Convert.exe has been used to convert the file system on a hard disk drive, you can add the following command to BootExecute to convert the file system when Windows 2000 is restarted:<br/>
+BootExecute = autocheck autoconv \DosDevices\x: /FS:NTFS<br/>
+<b>Note</b><br/>
+Do not delete the default value, autocheck autochk *, from the value of BootExecute. To prevent Autochk.exe from running on specific volumes or from running at all, use Chkntfs.exe.<br/>
+<b>Tip</b><br/>
+For more information on Autochk, Chkntfs, and Convert, see the Microsoft Knowledge Base link on the Web Resources page. Search the Knowledge Base using the keywords Autochk, Chkntfs, and Convert.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc963230.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\GinaDLL]
+The GINA operates in the context of the Winlogon process and, as such, the GINA DLL is loaded very early in the boot process. The GINA DLL must follow rules so that the integrity of the system is maintained, particularly with respect to interaction with the user.<br/>
+The most common use of the GINA is to communicate with an external device such as a smart-card reader. It is essential to set the start parameter for the device driver to system (Winnt.h: SERVICE_SYSTEM_START) to ensure that the driver is loaded by the time the GINA is invoked.<br/>
+The purpose of a GINA DLL is to provide customizable user identification and authentication procedures. The default GINA does this by delegating SAS event monitoring to Winlogon, which receives and processes CTL+ALT+DEL secure attention sequences (SASs). A custom GINA is responsible for setting itself up to receive SAS events (other than the default CTRL+ALT+DEL SAS event) and notifying Winlogon when SAS events occur. Winlogon will evaluate its state to determine what is required to process the custom GINA's SAS. This processing usually includes calls to the GINA's SAS processing functions.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/windows/desktop/aa380543%28v=vs.85%29.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\]
+<b>Entry name:</b> <i>Program Name</i>, <b>Data type:</b> <i>REG_SZ</i>, <b>Value:</b> <i>File name</i><br/>
+<b>Description</b><br/>
+The Run subkey of HKEY_LOCAL_MACHINE\Software stores the names of programs that Windows 2000 runs for all users of the computer each time the system starts up.<br/>
+Each entry in the subkey represents a program. The value of the entry is the name of the executable file for the program.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/aa376977%28v=VS.85%29.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\]
+<b>Entry name:</b> <i>Program Name</i>, <b>Data type:</b> <i>REG_SZ</i>, <b>Value:</b> <i>File name</i><br/>
+<b>Description</b><br/>
+The RunOnce subkey stores the names of programs that Windows 2000 runs at startup, for all users of the computer, the next time the system starts. When these programs are run, their names are deleted from the RunOnce subkey so that they do not run again automatically.<br/>
+Each entry in the subkey represents a program. The value of the entry is the name of the executable file for the program.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/aa376977%28v=VS.85%29.aspx
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\load]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>[Path]File name(s)</i>, <b>Default value:</b> <i>(This entry has no default value.)</i><br/>
+<b>Description</b><br/>
+Specifies the programs that run when Windows 2000 starts. The programs are minimized (appears as a taskbar icon) while they are running.<br/>
+This entry stores a list of file names of programs or files associated with an application. Each file name must be separated from the others by a space. If the file is not located in the Systemroot directory, you must specify the path to the file.<br/>
+<b>Change method</b><br/>
+To load a program at startup, add the application to Systemroot\Documents and Settings\All Users\Start Menu\Programs\Startup. Right-click the icon, click Properties, click the Shortcut tab, and select Minimized from the Run drop-down menu. This will not actually change the value of the load entry, but it will emulate the behavior.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/ms815201.aspx
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\run]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>[Path]File name(s)</i>, <b>Default value:</b> <i>(This entry has no default value.)</i><br/>
+<b>Description</b><br/>
+Specifies the applications the user directs Windows 2000 to run at startup.<br/>
+This entry stores a list of file names of applications or documents associated with an application. Each file name must be separated from the others by a space. If the file is not located in the Systemroot directory, you must specify the path to the file.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/ms815201.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor\AutoRun]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>list of commands</i>, <b>Default value:</b> <i>(There is no default value for this entry.)</i><br/>
+<b>Description</b><br/>
+Contains commands that are run each time you start Cmd.exe.<br/>
+<b>Change method</b><br/>
+To change the value of this entry, use Command Processor (Cmd.exe).<br/>
+<b>Note</b><br/>
+AutoRun can appear in HKEY_LOCAL_MACHINE and HKEY_CURRENT_USER. If both appear in the registry, the value of the entry in HKEY_CURRENT_USER takes precedence over the value in HKEY_LOCAL_MACHINE.<br/>
+The command line switches take precedence over the registry settings.<br/>
+<b>Tip</b><br/>
+To disable AutoRun for one use of the command processor, at the command prompt, type CMD /D.<br/>
+For more information about the AutoRun feature, at the command prompt, type CMD /?.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/de-de/library/cc779439%28v=ws.10%29.aspx
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor\AutoRun]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>list of commands</i>, <b>Default value:</b> <i>(There is no default value for this entry.)</i><br/>
+<b>Description</b><br/>
+Contains commands that run each time you start Cmd.exe.<br/>
+To change the value of this entry, use Command Processor (Cmd.exe).<br/>
+<b>Note</b><br/>
+AutoRun can appear in HKEY_LOCAL_MACHINE and HKEY_CURRENT_USER. If both appear in the registry, the value of the entry in HKEY_CURRENT_USER takes precedence over the value in HKEY_LOCAL_MACHINE.<br/>
+The command-line switches take precedence over the registry settings.<br/>
+<b>Tip</b><br/>
+To disable AutoRun for one use of the command processor, at the command prompt, type CMD /D.<br/>
+For more information about the AutoRun feature, at the command prompt, type CMD /?.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/de-de/library/cc779439%28v=ws.10%29.aspx
+[HKEY_CURRENT_USER\Control Panel\Desktop\SCRNSAVE.EXE]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>File name</i>, <b>Default value:</b> <i>(There is no default value for this entry.)</i><br/>
+<b>Description</b><br/>
+Specifies the name of the screen saver executable file.<br/>
+<b>Change method</b><br/>
+To change the value of this entry, double-click Display in Control Panel. Click the Screen Saver tab, and then select a screen saver from the Screen saver list.<br/>
+<b>Note</b><br/>
+Windows 2000 adds this entry to the registry when you use Display in Control Panel to select a screen saver. If you disable all screen savers, by choosing (None) from the Screen Saver list, Windows 2000 deletes this entry from the registry.<br/>
+This entry can be superceded by a Group Policy included in Windows 2000. While the Screen saver executable name Group Policy is enabled, the system ignores this entry. The setting of the Screen saver executable name Group Policy is stored in the SCRNSAVE.EXE entry, which is in the Policies subkey.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/dd405477%28v=vs.85%29.aspx
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Control Panel\Desktop\SCRNSAVE.EXE]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Path and file name</i>, <b>Default value:</b> <i>(There is no default value for this entry.)</i><br/>
+<b>Description</b>
+Specifies the screen saver used, and prevents users from changing it.<br/>
+This entry stores the setting of the Screen saver executable name Group Policy. Group Policy adds this entry to the registry when you enable the policy. If you disable the policy or set it to Not configured, Group Policy deletes this entry from the registry.<br/>
+If this entry appears in the registry, the system uses the screen saver specified in the value of this entry. Also, the system disables the list of screen savers on the Screen Saver tab in Display in Control Panel, so users cannot change the screen saver.<br/>
+The value of this entry must include the executable name of a valid Windows screen saver file, including the .scr file name extension. If the screen saver file is not in the Systemroot\System32 directory, the value must include the fully qualified path to the file. If the specified screen saver is not installed on the computer, no screen saver runs.<br/>
+<b>Change method</b><br/>
+To change the value of this entry, use Group Policy. This entry corresponds to the Screen saver executable name Group Policy (User Configuration\Administrative Templates\Control Panel\Display).<br/>
+<b>Note</b><br/>
+The Screen saver executable name policy can be superceded by the No screen saver Group Policy (which corresponds to the ScreenSaveActive entry). If the value of the ScreenSaveActive entry is 0, then screen savers do not run on the computer, and the SCRNSAVE.EXE entry is ignored.<br/>
+This entry takes precedence over a user setting. When this entry appears in the registry, a policy is in effect, and the system ignores the value of the SCRNSAVE.EXE entry in the HKCU\Control Panel\Desktop subkey.<br/>
+<b>Tip</b><br/>
+For detailed information about particular Group Policy settings, see the Windows 2000 Resource Kit Group Policy Reference.<br/>
+For general information about Group Policy, see Windows 2000 Server Help or Windows 2000 Professional Help.<br/>
+To see a table associating policies with their corresponding registry entries, see the Group Policy Registry Table.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/ms815238.aspx
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Monitors\]
+<b>Description</b><br/>
+The Monitors subkey stores entries for print monitors installed on Windows 2000. The Monitors subkey contains a subkey for each port monitor that stores configuration data for the port monitor installed on the system.<br/>
+<b>Related Entries</b><br/>
+Monitors subkey for LanMan Print Services network printers<br/>
+<b>Info sources</b><br/>
+http://support.microsoft.com/kb/102966
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\AlternateShell]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Program name</i>, <b>Default value:</b> <i>cmd.exe</i><br/>
+<b>Description</b><br/>
+Lists the name of the alternative environment used when the Safe mode with Command Prompt option is selected.<br/>
+<b>Change method</b><br/>
+To start Windows 2000 in safe mode, restart the computer, and then press F8 when you see the message Please select the operating system to start.<br/>
+<b>Note</b><br/>
+For information about starting the computer in safe mode, see Windows 2000 Server Help or Windows 2000 Professional Help.<br/>
+<b>Caution</b><br/>
+Changing the value of this entry can prevent Windows 2000 from starting.<br/>
+<b>Info sources</b><br/>
+http://technet.microsoft.com/en-us/library/cc976124.aspx
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs]
+<b>Description</b><br/>
+The KnownDLLs subkey defines the set of dynamic-link libraries (DLLs) that are searched during system startup.<br/>
+In general, these are system DLLs that are loaded from disk into a section of memory and are then checked for integrity. These DLLs consume some resources, even if no application loads them.<br/>
+<b>Info sources</b><br/>
+http://support.microsoft.com/kb/102985
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Shell]
+<b>Data type:</b> <i>REG_SZ</i>, <b>Range:</b> <i>Path and file name</i>, <b>Default value:</b> <i>(There is no default value for this entry.)</i><br/>
+<b>Description</b><br/>
+Specifies an alternate user interface for Windows 2000.<br/>
+This entry stores the setting of the Custom user interface Group Policy. Group Policy adds this entry to the registry when you enable the policy. If you disable the policy or set it to Not configured, Group Policy deletes this entry from the registry.<br/>
+The Explorer program (Explorer.exe) creates the familiar Windows interface, but you can use this entry to specify an alternate interface. When this entry appears in the registry, the system starts the interface you specify instead of Explorer.exe.<br/>
+Value: (Not in registry), Meaning: Explorer.exe is used as the interface.<br/>
+Value: executable file name, Meaning: The specified program is used as the interface.<br/>
+The value of this entry must include the file name of the interface program, including the .exe file name extension. If the interface program file is not in a folder specified in the Path environment variable for the system, the entry must include the fully qualified path to the file.<br/>
+<b>Change method</b><br/>
+To change the value of this entry, use Group Policy. This entry corresponds to the Custom user interface Group Policy (User Configuration\Administrative Templates\System).<br/>
+<b>Tip</b><br/>
+To find the folders indicated by the Path environment variable, in Control Panel double-click System, click the Advanced tab, click the Environment Variables button, and then, in the System variables box, click Path.<br/>
+For detailed information about particular Group Policy settings, see the Windows 2000 Resource Kit Group Policy Reference.<br/>
+For general information about Group Policy, see Windows 2000 Server Help or Windows 2000 Professional Help.<br/>
+To see a table associating policies with their corresponding registry entries, see the Group Policy Registry Table.<br/>
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/ms815238.aspx
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\]
+<b>Info sources</b><br/>
+http://support.microsoft.com/kb/241344
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\]
+<b>Info sources</b><br/>
+http://support.microsoft.com/kb/241344
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\]
+<b>Info sources</b><br/>
+http://msdn.microsoft.com/en-us/library/windows/desktop/aa379402%28v=vs.85%29.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\exefile\shell\open\command\]
+<b>Info sources</b><br/>
+http://support.microsoft.com/?kbid=310585
+[HKEY_CURRENT_USER\SOFTWARE\Classes\exefile\shell\open\command\]
+<b>Info sources</b><br/>
+http://support.microsoft.com/?kbid=310585

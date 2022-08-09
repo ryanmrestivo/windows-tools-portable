@@ -1,0 +1,150 @@
+[ Mozilla Firefox & compatibles ]
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+. A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+. A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. Final AppData found: C:\Users\admin\AppData\Roaming\
+. Probing profile ini file file at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\profiles.ini...
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\u7htffey.default\.
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+i cookies.sqlite detected, assuming profile is Firefox 3.0 or equivalent.
++ Added Mozilla profile at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+[i] Browser detection took 00.125 seconds.
+
+[ Mozilla Firefox Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+
+[ Mozilla Firefox & compatibles ]
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+. A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+. A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. Final AppData found: C:\Users\admin\AppData\Roaming\
+. Probing profile ini file file at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\profiles.ini...
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\u7htffey.default\.
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+i cookies.sqlite detected, assuming profile is Firefox 3.0 or equivalent.
++ Added Mozilla profile at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+[i] Browser detection took 00.015 seconds.
+
+[ Mozilla Firefox Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+
+[ Mozilla Firefox & compatibles ]
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+. A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+. A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. Final AppData found: C:\Users\admin\AppData\Roaming\
+. Probing profile ini file file at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\profiles.ini...
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\u7htffey.default\.
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+i cookies.sqlite detected, assuming profile is Firefox 3.0 or equivalent.
++ Added Mozilla profile at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+[i] Browser detection took 00.016 seconds.
+
+[ Mozilla Firefox Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+
+[ Mozilla Firefox & compatibles ]
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+. A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+. A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+. G: No path updating needed.
+. G: No path updating needed.
+. G: No path updating needed.
+. Final AppData found: C:\Users\admin\AppData\Roaming\
+. Probing profile ini file file at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\profiles.ini...
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\u7htffey.default\.
+. Found profile reference to C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+i cookies.sqlite detected, assuming profile is Firefox 3.0 or equivalent.
++ Added Mozilla profile at C:\Users\admin\AppData\Roaming\Mozilla\Firefox\Profiles\vj4ll0oo.default-release\.
+[i] Browser detection took 00.015 seconds.
+
+[ Mozilla Firefox Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+
+[ Opera ]
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+[.] A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+[.] A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera7\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera75\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera80\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera90\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera95\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera96\profile\...
+[i] Browser detection took 00.000 seconds.
+
+[ Opera Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+
+[ Opera ]
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+[.] A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+[.] A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera7\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera75\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera80\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera90\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera95\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera96\profile\...
+[i] Browser detection took 00.000 seconds.
+
+[ Opera Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+
+[ Opera ]
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] a: User S-1-5-21-3989498115-2146936130-3787604982-1001 is not on a different drive
+[.] A: Found Shell Folder AppData registry information: C:\Users\admin\AppData\Roaming\
+[.] A: Found Shell Folder Local AppData registry information: C:\Users\admin\AppData\Local\
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] G: No path updating needed.
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera7\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera75\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera80\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera90\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera95\profile\...
+[.] Probing possible profile in C:\Program Files (x86)\Opera\Opera96\profile\...
+[i] Browser detection took 00.000 seconds.
+
+[ Opera Portable & compatibles ]
+[i] Browser detection took 00.000 seconds.
+

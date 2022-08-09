@@ -1,0 +1,4 @@
+{SDFSSvc.exe} > [method] Spybot.API.FileScan.TFileScanLibrary.Create
+{SDFSSvc.exe} < [method] Spybot.API.FileScan.TFileScanLibrary.Create
+{SDFSSvc.exe} > [method] sbsdFileScanThreadPool.TBitDefenderScannerPool.Create
+{SDFSSvc.exe} < [method] sbsdFileScanThreadPool.TBitDefenderScannerPool.Create

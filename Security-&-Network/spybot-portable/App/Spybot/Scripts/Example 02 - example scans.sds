@@ -1,0 +1,28 @@
+// Spybot 2.0.11.0. Copyright © 2000-2012 Safer-Networking Ltd. All rights reserved.
+// Sample script 0.01. All rights reserved.
+
+begin
+    // Temp-Check: find executable files in your Temp folders
+    sbiStatus('- Find executable files in your Temp folders -','');
+    sbiFile('"<$FILE_EXE>','<$WINDIR>\Temp\*','filetype=PE');
+    sbiFile('"<$FILE_EXE>','<$LOCALSETTINGS>\Temp\*','filetype=PE');
+    sbiStatus('',''); 
+                      
+    // Hidden-PE32: find hidden PE32 executable files in your System directory
+    sbiSetProduct('HiddenSystemExecutable');
+    sbiStatus('- Find hidden executable files in your System folder -','');
+    sbiFile('"<$FILE_EXE>','<$SYSDIR>\*.exe','attribs=H+,filetype=PE');
+    sbiStatus('','');
+   
+    // Set Programfiles folder as download directory with all subfolders 
+    // Try other path templates: <$SYSDRIVE>, <$DESKTOP>, <$LOCALAPPDATA>
+    sbiDownloadDir('<$PROGRAMFILES>','1','');
+    
+    // T-14: executable files installed in the last 14 days
+    sbiSetProduct('T-14');
+    sbiStatus('- T-14: executable files installed in the last 14 days -','');
+    sbiDownloadFile('*.exe','age[file]<=14,filetype=PE');
+       
+    // Show a dialog message   
+    ShowMessage('Press "Ok" button to start scan. This may take a while. The "Output" tab will be shown when finished.');
+end.

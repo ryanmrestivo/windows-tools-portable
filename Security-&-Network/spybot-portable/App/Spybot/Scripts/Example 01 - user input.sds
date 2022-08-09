@@ -1,0 +1,7 @@
+var sName, sFilename: String;
+begin
+   InputQuery('Username', 'Please enter your username', sName);
+   sFilename := 'C:\Users\' + sName + '\Desktop\desktop.ini';
+   sbiFile('test', sFilename, 'filesize>=10');
+   ShowMessage('Did look for ' + sFilename);
+end.

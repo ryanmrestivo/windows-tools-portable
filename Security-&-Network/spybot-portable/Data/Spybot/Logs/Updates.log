@@ -1,0 +1,121 @@
+[+]	22-08-06 16:47:07	THttpUpdateDaemon	Background Updating Service got started...
+[i]	22-08-06 16:47:07	THttpUpdateDaemon	Listening on port 21321
+[i]	22-08-06 16:47:07	THttpUpdateDaemon	Successfully started listening on port 21321.
+SDUpdate.exe [2022-08-06 16:47:07] Includes\Adware-000.sbi (version 20150731) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:07] Includes\Adware-001.sbi (version 20150805) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:07] Includes\Fraud-001.sbi (version 20141103) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:07] Includes\Fraud-003.sbi (version 20140109) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\Keyloggers-000.sbi (version 20141114) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\PUPS-000.sbi (version 20141114) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\PUPS-001.sbi (version 20140115) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\PUPS-002.sbi (version 20140115) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\Security.sbi (version 20140108) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\SecurityC.sbi (version 20140113) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\Spyware.sbi (version 20140113) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\Spyware-000.sbi (version 20150225) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\SpywareC.sbi (version 20140108) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\Trojans-C.sbi (version 20211124) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\TrojansC-02.sbi (version 20140109) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\TrojansC-03.sbi (version 20140109) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:08] Includes\TrojansC-05.sbi (version 20140109) needs to be updated.
+SDUpdate.exe [2022-08-06 16:47:21] [+] Updating Service is active.
+SDUpdate.exe [2022-08-06 16:47:21] [.] Trying to retrieve update info file from http://updates2.safer-networking.org/spybotsd2.uid...
+SDUpdate.exe [2022-08-06 16:47:21] [+] Retrieved update info file.
+SDUpdate.exe [2022-08-06 16:47:22] [.] Info file part done.
+SDUpdate.exe [2022-08-06 16:47:22] [.] Testing which updates apply to this version...
+SDUpdate.exe [2022-08-06 16:47:22] [+] TrojansC-05.sbi (version 20140109) needs to be updated (to version 20140116).
+SDUpdate.exe [2022-08-06 16:47:22] [+] TrojansC-03.sbi (version 20140109) needs to be updated (to version 20140116).
+SDUpdate.exe [2022-08-06 16:47:22] [+] TrojansC-02.sbi (version 20140109) needs to be updated (to version 20140116).
+SDUpdate.exe [2022-08-06 16:47:22] [+] Trojans-C.sbi (version 20211124) needs to be updated (to version 20220803).
+SDUpdate.exe [2022-08-06 16:47:22] [+] SpywareC.sbi (version 20140108) needs to be updated (to version 20140121).
+SDUpdate.exe [2022-08-06 16:47:22] [+] Spyware-000.sbi (version 20150225) needs to be updated (to version 20151111).
+SDUpdate.exe [2022-08-06 16:47:22] [+] Spyware.sbi (version 20140113) needs to be updated (to version 20140121).
+SDUpdate.exe [2022-08-06 16:47:22] [+] SecurityC.sbi (version 20140113) needs to be updated (to version 20140121).
+SDUpdate.exe [2022-08-06 16:47:22] [+] Security.sbi (version 20140108) needs to be updated (to version 20140121).
+SDUpdate.exe [2022-08-06 16:47:22] [+] PUPS-C.sbi (version 20211222) needs to be updated (to version 20220727).
+SDUpdate.exe [2022-08-06 16:47:22] [+] PUPS-002.sbi (version 20140115) needs to be updated (to version 20180502).
+SDUpdate.exe [2022-08-06 16:47:22] [+] PUPS-001.sbi (version 20140115) needs to be updated (to version 20201207).
+SDUpdate.exe [2022-08-06 16:47:22] [+] PUPS-000.sbi (version 20141114) needs to be updated (to version 20180502).
+SDUpdate.exe [2022-08-06 16:47:22] [+] Malware-C.sbi (version 20211222) needs to be updated (to version 20220803).
+SDUpdate.exe [2022-08-06 16:47:22] [+] Keyloggers-C.sbi (version 20211201) needs to be updated (to version 20220217).
+SDUpdate.exe [2022-08-06 16:47:23] [+] Keyloggers-000.sbi (version 20141114) needs to be updated (to version 20211129).
+SDUpdate.exe [2022-08-06 16:47:23] [+] Fraud-003.sbi (version 20140109) needs to be updated (to version 20160706).
+SDUpdate.exe [2022-08-06 16:47:23] [+] Fraud-001.sbi (version 20141103) needs to be updated (to version 20170130).
+SDUpdate.exe [2022-08-06 16:47:23] [+] Adware-C.sbi (version 20211222) needs to be updated (to version 20220803).
+SDUpdate.exe [2022-08-06 16:47:23] [+] Adware-001.sbi (version 20150805) needs to be updated (to version 20211103).
+SDUpdate.exe [2022-08-06 16:47:23] [+] Adware-000.sbi (version 20150731) needs to be updated (to version 20211103).
+SDUpdate.exe [2022-08-06 16:47:23] [.] Downloading updates...
+SDUpdate.exe [2022-08-06 16:47:23] [+] File "Adware-000.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:23] [+] Extracted "Adware-000.sbi-20211103.cab"!
+SDUpdate.exe [2022-08-06 16:47:23] [+] Installed "Adware-000.sbi".
+SDUpdate.exe [2022-08-06 16:47:23] [+] File "Adware-001.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:23] [+] Extracted "Adware-001.sbi-20211103.cab"!
+SDUpdate.exe [2022-08-06 16:47:23] [+] Installed "Adware-001.sbi".
+SDUpdate.exe [2022-08-06 16:47:23] [+] File "Adware-C.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:24] [+] Downloaded archive "Adware-C.sbi-20220803.cab" from http://updates3.safer-networking.org/spybot2/.
+SDUpdate.exe [2022-08-06 16:47:24] [+] Extracted "Adware-C.sbi-20220803.cab"!
+SDUpdate.exe [2022-08-06 16:47:24] [+] Installed "Adware-C.sbi".
+SDUpdate.exe [2022-08-06 16:47:24] [+] File "Fraud-001.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:24] [+] Extracted "Fraud-001.sbi-20170130.cab"!
+SDUpdate.exe [2022-08-06 16:47:24] [+] Installed "Fraud-001.sbi".
+SDUpdate.exe [2022-08-06 16:47:24] [+] File "Fraud-003.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:24] [+] Extracted "Fraud-003.sbi-20160706.cab"!
+SDUpdate.exe [2022-08-06 16:47:24] [+] Installed "Fraud-003.sbi".
+SDUpdate.exe [2022-08-06 16:47:24] [+] File "Keyloggers-000.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:24] [+] Extracted "Keyloggers-000.sbi-20211129.cab"!
+SDUpdate.exe [2022-08-06 16:47:24] [+] Installed "Keyloggers-000.sbi".
+SDUpdate.exe [2022-08-06 16:47:24] [+] File "Keyloggers-C.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:25] [+] Unable to download archive "Keyloggers-C.sbi-20220217.cab" from http://sbsd-dl-eu.com/spybot2/!
+SDUpdate.exe [2022-08-06 16:47:25] [+] Unable to download archive "Keyloggers-C.sbi-20220217.cab" from http://sbsd-dl-eu.com/spybot2/!
+SDUpdate.exe [2022-08-06 16:47:26] [+] Downloaded archive "Keyloggers-C.sbi-20220217.cab" from http://freewarearchiv.com/spybot2/.
+SDUpdate.exe [2022-08-06 16:47:26] [+] Extracted "Keyloggers-C.sbi-20220217.cab"!
+SDUpdate.exe [2022-08-06 16:47:26] [+] Installed "Keyloggers-C.sbi".
+SDUpdate.exe [2022-08-06 16:47:26] [+] File "Malware-C.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:27] [+] Downloaded archive "Malware-C.sbi-20220803.cab" from http://freewarearchiv.com/spybot2/.
+SDUpdate.exe [2022-08-06 16:47:27] [+] Extracted "Malware-C.sbi-20220803.cab"!
+SDUpdate.exe [2022-08-06 16:47:27] [+] Installed "Malware-C.sbi".
+SDUpdate.exe [2022-08-06 16:47:27] [+] File "PUPS-000.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:27] [+] Extracted "PUPS-000.sbi-20180502.cab"!
+SDUpdate.exe [2022-08-06 16:47:27] [+] Installed "PUPS-000.sbi".
+SDUpdate.exe [2022-08-06 16:47:27] [+] File "PUPS-001.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:27] [+] Extracted "PUPS-001.sbi-20201207.cab"!
+SDUpdate.exe [2022-08-06 16:47:27] [+] Installed "PUPS-001.sbi".
+SDUpdate.exe [2022-08-06 16:47:27] [+] File "PUPS-002.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:27] [+] Extracted "PUPS-002.sbi-20180502.cab"!
+SDUpdate.exe [2022-08-06 16:47:27] [+] Installed "PUPS-002.sbi".
+SDUpdate.exe [2022-08-06 16:47:27] [+] File "PUPS-C.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Downloaded archive "PUPS-C.sbi-20220727.cab" from http://updates3.safer-networking.org/spybot2/.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Extracted "PUPS-C.sbi-20220727.cab"!
+SDUpdate.exe [2022-08-06 16:47:28] [+] Installed "PUPS-C.sbi".
+SDUpdate.exe [2022-08-06 16:47:28] [+] File "Security.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Extracted "Security.sbi-20140121.cab"!
+SDUpdate.exe [2022-08-06 16:47:28] [+] Installed "Security.sbi".
+SDUpdate.exe [2022-08-06 16:47:28] [+] File "SecurityC.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Extracted "SecurityC.sbi-20140121.cab"!
+SDUpdate.exe [2022-08-06 16:47:28] [+] Installed "SecurityC.sbi".
+SDUpdate.exe [2022-08-06 16:47:28] [+] File "Spyware.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Extracted "Spyware.sbi-20140121.cab"!
+SDUpdate.exe [2022-08-06 16:47:28] [+] Installed "Spyware.sbi".
+SDUpdate.exe [2022-08-06 16:47:28] [+] File "Spyware-000.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Extracted "Spyware-000.sbi-20151111.cab"!
+SDUpdate.exe [2022-08-06 16:47:28] [+] Installed "Spyware-000.sbi".
+SDUpdate.exe [2022-08-06 16:47:28] [+] File "SpywareC.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:28] [+] Extracted "SpywareC.sbi-20140121.cab"!
+SDUpdate.exe [2022-08-06 16:47:28] [+] Installed "SpywareC.sbi".
+SDUpdate.exe [2022-08-06 16:47:28] [+] File "Trojans-C.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:29] [+] Unable to download archive "Trojans-C.sbi-20220803.cab" from http://sbsd-dl-eu.com/spybot2/!
+SDUpdate.exe [2022-08-06 16:47:29] [+] Downloaded archive "Trojans-C.sbi-20220803.cab" from http://updates3.safer-networking.org/spybot2/.
+SDUpdate.exe [2022-08-06 16:47:30] [+] Extracted "Trojans-C.sbi-20220803.cab"!
+SDUpdate.exe [2022-08-06 16:47:30] [+] Installed "Trojans-C.sbi".
+SDUpdate.exe [2022-08-06 16:47:30] [+] File "TrojansC-02.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:30] [+] Extracted "TrojansC-02.sbi-20140116.cab"!
+SDUpdate.exe [2022-08-06 16:47:30] [+] Installed "TrojansC-02.sbi".
+SDUpdate.exe [2022-08-06 16:47:30] [+] File "TrojansC-03.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:30] [+] Extracted "TrojansC-03.sbi-20140116.cab"!
+SDUpdate.exe [2022-08-06 16:47:30] [+] Installed "TrojansC-03.sbi".
+SDUpdate.exe [2022-08-06 16:47:30] [+] File "TrojansC-05.sbi" needs to be downloaded.
+SDUpdate.exe [2022-08-06 16:47:30] [+] Extracted "TrojansC-05.sbi-20140116.cab"!
+SDUpdate.exe [2022-08-06 16:47:30] [+] Installed "TrojansC-05.sbi".
+SDUpdate.exe [2022-08-06 16:47:30] [+] All files have been processed.
+SDUpdate.exe [2022-08-06 16:47:30] +++
+[i]	22-08-06 16:47:39	THttpUpdateDaemon	HTTP daemon on port 21321 closed.
