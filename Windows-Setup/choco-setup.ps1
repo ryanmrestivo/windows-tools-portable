@@ -1,3 +1,11 @@
+# If this script isn't working, you should:
+# Open PowerShell at this file location as admin
+# Set-ExecutionPolicy unrestricted
+# confirm
+# ./choco-setup.ps1
+
+# NOTE:  Run this script before doing any hardening or these installs will take substantially longer
+
 Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 # refreshenv
 	refreshenv
@@ -55,12 +63,12 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install procexp
 #    choco install procmon
     choco install protonvpn
-    choco install python2
-    choco install python3
+#    choco install python2
+#    choco install python3
     choco install qbittorrent
 #    choco install r.project
-    choco install rufus
-    choco install rufus.install
+#    choco install rufus
+#    choco install rufus.install
     choco install steam
 #    choco install sudo
 #    choco install sysmon
@@ -68,12 +76,12 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install tor-browser
 #    choco install veracrypt
     choco install vlc
-    choco install wget
+#    choco install wget
     choco install windirstat
 #    choco install winlogbeat
-    choco install wireshark
+#    choco install wireshark
 #	choco install winaero-tweaker
-    choco install zap
+#    choco install zap
     choco install zoom
     choco install visualstudio-installer
     choco install visualstudio2022community
