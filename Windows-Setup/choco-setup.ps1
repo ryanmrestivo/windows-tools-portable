@@ -41,7 +41,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install javaruntime
     choco install jdk11
     choco install jre8
-    choco install languagetool
+#    choco install languagetool
     choco install lockhunter
     choco install microsoft-edge
 #    choco install microsoft-windows-terminal
