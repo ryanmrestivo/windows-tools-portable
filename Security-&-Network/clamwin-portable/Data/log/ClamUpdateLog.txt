@@ -47,3 +47,45 @@ daily database available for download (remote version: 26618)
 WARNING: downloadFile: Unexpected response (403) from https://database.clamav.net/daily.cvd
 WARNING: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
 Trying again in 5 secs...
+--------------------------------------
+ClamAV update process started at Wed Oct 19 16:25:57 2022
+WARNING: Your ClamAV installation is OUTDATED!
+WARNING: Local version: 0.103.2 Recommended version: 0.103.7
+DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+daily database available for download (remote version: 26694)
+WARNING: Download failed (7) WARNING:  Message: Couldn't connect to server
+WARNING: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
+Trying again in 5 secs...
+daily database available for download (remote version: 26694)
+WARNING: downloadFile: Unexpected response (403) from https://database.clamav.net/daily.cvd
+WARNING: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
+Trying again in 5 secs...
+daily database available for download (remote version: 26694)
+ERROR: downloadFile: Unexpected response (403) from https://database.clamav.net/daily.cvd
+ERROR: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
+Giving up on https://database.clamav.net...
+ERROR: Update failed for database: daily
+WARNING: fc_update_databases: fc_update_database failed: HTTP GET failed (11)
+ERROR: Database update process failed: HTTP GET failed (11)
+ERROR: Update failed.
+--------------------------------------
+ClamAV update process started at Wed Oct 19 16:27:04 2022
+WARNING: Your ClamAV installation is OUTDATED!
+WARNING: Local version: 0.103.2 Recommended version: 0.103.7
+DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+daily database available for download (remote version: 26694)
+WARNING: downloadFile: Unexpected response (403) from https://database.clamav.net/daily.cvd
+WARNING: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
+Trying again in 5 secs...
+daily database available for download (remote version: 26694)
+WARNING: downloadFile: Unexpected response (403) from https://database.clamav.net/daily.cvd
+WARNING: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
+Trying again in 5 secs...
+daily database available for download (remote version: 26694)
+ERROR: downloadFile: Unexpected response (403) from https://database.clamav.net/daily.cvd
+ERROR: getcvd: Can't download daily.cvd from https://database.clamav.net/daily.cvd
+Giving up on https://database.clamav.net...
+ERROR: Update failed for database: daily
+WARNING: fc_update_databases: fc_update_database failed: HTTP GET failed (11)
+ERROR: Database update process failed: HTTP GET failed (11)
+ERROR: Update failed.
