@@ -67,6 +67,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install python3
     choco install qbittorrent
 #    choco install r.project
+	choco install rustdesk
 #    choco install rufus
 #    choco install rufus.install
 #    choco install steam
