@@ -47,7 +47,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install microsoft-windows-terminal
 #    choco install mortix
     choco install nmap
-    choco install nodejs.install
+#    choco install nodejs.install
     choco install nomacs
     choco install notepadplusplus.install
     choco install openjdk 
@@ -69,10 +69,10 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install r.project
 #    choco install rufus
 #    choco install rufus.install
-    choco install steam
+#    choco install steam
 #    choco install sudo
 #    choco install sysmon
-    choco install teamviewer
+#    choco install teamviewer
     choco install tor-browser
 #    choco install veracrypt
     choco install vlc
