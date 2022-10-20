@@ -1,0 +1,22 @@
+INFO: utils.go:172: Now we are hardening...
+INFO: explorer.go:129: Executing  assoc .hta=  failed
+INFO: utils.go:188: Error for operation File Associations: exit status 2
+INFO: main.go:93: WSH is now hardened
+INFO: main.go:93: Office OLE is now hardened
+INFO: main.go:93: Office Macros is now hardened
+INFO: main.go:93: Office ActiveX is now hardened
+INFO: main.go:93: Office DDE is now hardened
+INFO: main.go:93: Adobe JavaScript is now hardened
+INFO: main.go:93: Adobe Objects is now hardened
+INFO: main.go:93: Adobe Protected Mode is now hardened
+INFO: main.go:93: Adobe Protected View is now hardened
+INFO: main.go:93: Adobe Enhanced Security is now hardened
+INFO: main.go:93: Show File Ext is now hardened
+INFO: main.go:93: Autorun is now hardened
+INFO: main.go:97: Powershell is now NOT hardened
+INFO: main.go:97: Disable cmd.exe is now NOT hardened
+INFO: main.go:93: UAC is now hardened
+INFO: main.go:93: File Associations is now hardened
+INFO: main.go:93: Windows ASR rules is now hardened
+INFO: main.go:93: LSA is now hardened
+INFO: main.go:93: PUA Protection is now hardened
