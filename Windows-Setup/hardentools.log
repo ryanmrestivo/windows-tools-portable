@@ -1,6 +1,4 @@
 INFO: utils.go:172: Now we are hardening...
-INFO: explorer.go:129: Executing  assoc .hta=  failed
-INFO: utils.go:188: Error for operation File Associations: exit status 2
 INFO: main.go:93: WSH is now hardened
 INFO: main.go:93: Office OLE is now hardened
 INFO: main.go:93: Office Macros is now hardened
