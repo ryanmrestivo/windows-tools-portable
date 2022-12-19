@@ -15,17 +15,11 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install 7zip.install
     choco install adobereader
 #    choco install apimonitor
-#    choco install bleachbit.install
-#    choco install chocolateygui
-#    choco install chromium
-#    choco install cpu-z.install
-#    choco install curl
+    choco install curl
     choco install discord.install
 	choco install docker-desktop
     choco install dotnetfx
 	choco install ecm
-#    choco install emsisoft-emergency-kit
-#    choco install etcher
     choco install everything
     choco install firefox
     choco install geforce-experience
@@ -34,54 +28,42 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install github-desktop
     choco install git-lfs
     choco install googlechrome
-#    choco install gpu-z
     choco install greenshot
     choco install hosts.editor
-#    choco install hwinfo.install
     choco install javaruntime
     choco install jdk11
     choco install jre8
-#    choco install languagetool
     choco install lockhunter
     choco install microsoft-edge
-#    choco install microsoft-windows-terminal
-#    choco install mortix
     choco install nmap
-#    choco install nodejs.install
+    choco install nodejs.install
     choco install nomacs
     choco install notepadplusplus.install
+	choco install ntop.portable
     choco install openjdk 
     choco install openjdk11
-#    choco install openvpn
-#	 choco install osquery
-#    choco install pip
-#    choco install postman
-#    choco install powershell.portable 
-#    choco install powershell4
     choco install powershellhere-elevated 
     choco install processhacker
 #    choco install procexp
 #    choco install procmon
     choco install protonvpn
-#    choco install python2
-#    choco install python3
+    choco install python2
+    choco install python3
+	    choco install pip
     choco install qbittorrent
 #    choco install r.project
 	choco install rustdesk
-#    choco install rufus
-#    choco install rufus.install
-#    choco install steam
+    choco install rufus
+    choco install rufus.install
 #    choco install sudo
 #    choco install sysmon
-#    choco install teamviewer
     choco install tor-browser
 #    choco install veracrypt
     choco install vlc
-#    choco install wget
+    choco install wget
     choco install windirstat
 #    choco install winlogbeat
 #    choco install wireshark
-#	 choco install winaero-tweaker
 #    choco install zap
     choco install zoom
     choco install visualstudio-installer
