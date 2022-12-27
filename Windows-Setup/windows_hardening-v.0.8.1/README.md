@@ -1,7 +1,7 @@
 Import-Module .\Invoke-HardeningKitty.ps1
 Invoke-HardeningKitty -Mode Audit -Log -Report
 Invoke-HardeningKitty -Mode Config -Backup
-Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList .\lists\finding_list_0x6d69636b_machine.csv
+Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList "finding_list_home_machine.csv"
 
 How can i run HardeningKitty audit mode ?
 
