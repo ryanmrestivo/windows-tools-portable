@@ -3,6 +3,30 @@ Invoke-HardeningKitty -Mode Audit -Log -Report
 Invoke-HardeningKitty -Mode Config -Backup
 Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList .\lists\finding_list_0x6d69636b_machine.csv
 
+How can i run HardeningKitty audit mode ?
+
+    Download your CSV file configuration
+    Run this command :
+
+    Invoke-HardeningKitty -Mode Audit -FileFindingList <file.csv> 
+
+How can i keep my previous configuration ?
+
+    Download your CSV file configuration
+    Run this command :
+
+    Invoke-HardeningKitty -Mode Config -FileFindingList <file.csv> -Backup
+
+    This command will save your configuration in the "RecommendedValue" Column in order to apply this file if you want to backup your previous configuration after having applied the HailMary mode.
+
+How can i apply a configuration ?
+
+    Download your CSV file configuration
+    Run this command :
+
+    Invoke-HardeningKitty -Mode HailMary -FileFindingList <file.csv> 
+
+
 # HardeningKitty and Windows 10 Hardening
 
 ## Introduction
