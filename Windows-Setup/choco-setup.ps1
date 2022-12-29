@@ -40,6 +40,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install nomacs
     choco install notepadplusplus.install
 	choco install ntop.portable
+	choco install onionshare
     choco install openjdk 
     choco install openjdk11
     choco install powershellhere-elevated 
