@@ -43,7 +43,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 	choco install onionshare
     choco install openjdk 
     choco install openjdk11
-	choco install plasso
+#    choco install plasso
     choco install powershellhere-elevated 
     choco install processhacker
 #    choco install procexp
@@ -54,7 +54,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 	choco install pip
     choco install qbittorrent
 #    choco install r.project
-#	choco install rustdesk
+#	 choco install rustdesk
     choco install rufus
     choco install rufus.install
 #    choco install sudo
