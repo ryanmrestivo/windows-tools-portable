@@ -15,6 +15,8 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install 7zip.install
     choco install adobereader
 #    choco install apimonitor
+#	 choco install cmake
+	choco install cmder
     choco install curl
     choco install discord.install
 	choco install docker-desktop
@@ -27,6 +29,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install git.install
     choco install github-desktop
     choco install git-lfs
+#	 choco install golang
     choco install googlechrome
     choco install greenshot
     choco install hosts.editor
@@ -35,6 +38,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install jre8
     choco install lockhunter
     choco install microsoft-edge
+#	 choco install mingw
     choco install nmap
     choco install nodejs.install
     choco install nomacs

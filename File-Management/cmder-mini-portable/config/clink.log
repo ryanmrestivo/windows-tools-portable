@@ -1,0 +1,46 @@
+3ea4 start_logger              160 ---- 2022/12/31 09:59:34.250 -------------------------------------------------
+3ea4 start_logger              166 Host process is 'cmd.exe' (pid 16036)
+3ea4 start_logger              170 DLL path is 'C:\Users\admin\Desktop\New folder\vendor\clink'
+3ea4 start_logger              185 Windows version 10.0.19045 (x64)
+3ea4 start_logger              188 Clink version 1.4.4.7fe1ca (x64)
+3ea4 hook_setter::hook_setter  159 >>> Started hook transaction.
+3ea4 hook_setter::attach_iat   316 Attempting to hook SetEnvironmentVariableW in IAT for module 00007FF66A980000.
+3ea4 pe_info::iterate_imports  159 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+3ea4 find_iat                  124 Found import at 00007FF66A9B3860 (value is 00007FFEE7E5D790).
+3ea4 hook_setter::attach_iat   316 Attempting to hook WriteConsoleW in IAT for module 00007FF66A980000.
+3ea4 pe_info::iterate_imports  159 Found import in 'api-ms-win-core-console-l1-1-0.dll'
+3ea4 find_iat                  124 Found import at 00007FF66A9B34F8 (value is 00007FFEE7E07670).
+3ea4 hook_setter::attach_iat   316 Attempting to hook GetEnvironmentVariableW in IAT for module 00007FF66A980000.
+3ea4 pe_info::iterate_imports  159 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+3ea4 find_iat                  124 Found import at 00007FF66A9B3880 (value is 00007FFEE7E25240).
+3ea4 hook_setter::commit       207 <<< Hook transaction committed.
+3ea4 hook_setter::hook_setter  159 >>> Started hook transaction.
+3ea4 hook_setter::detach_iat   359 Attempting to unhook 00007FFEB1809710 from GetEnvironmentVariableW in IAT for module 00007FF66A980000.
+3ea4 pe_info::iterate_imports  159 Found import in 'api-ms-win-core-processenvironment-l1-1-0.dll'
+3ea4 find_iat                  124 Found import at 00007FF66A9B3880 (value is 00007FFEB1809710).
+3ea4 hook_setter::commit       207 <<< Hook transaction committed.
+3ea4 hook_setter::hook_setter  159 >>> Started hook transaction.
+3ea4 hook_setter::attach_iat   316 Attempting to hook ReadConsoleW in IAT for module 00007FF66A980000.
+3ea4 pe_info::iterate_imports  159 Found import in 'api-ms-win-core-console-l1-1-0.dll'
+3ea4 find_iat                  124 Found import at 00007FF66A9B34E0 (value is 00007FFEE7EF2FB0).
+3ea4 hook_setter::commit       207 <<< Hook transaction committed.
+3ea4 hook_setter::hook_setter  159 >>> Started hook transaction.
+3ea4 hook_setter::attach_iat   316 Attempting to hook SetConsoleTitleW in IAT for module 00007FF66A980000.
+3ea4 pe_info::iterate_imports  159 Found import in 'api-ms-win-core-console-l2-2-0.dll'
+3ea4 find_iat                  124 Found import at 00007FF66A9B3558 (value is 00007FFEE7E6F1B0).
+3ea4 hook_setter::commit       207 <<< Hook transaction committed.
+3ea4 win_screen_buffer::begin  228 Using native terminal support; found 'ConEmuHk64.dll'.
+3ea4 host_lua::load_scripts    158 Loaded 2 Lua scripts in 38 ms
+3ea4 =?                          0 Clink updater: updating because there is no record of having updated before.
+3ea4 extract_ctag              926 read 0 bytes
+3ea4 extract_ctag              926 read 0 bytes
+3ea4 history_db::initialise   1264 master bank ctag: |CTAG_1672498775_7054640_16036_0
+3ea4 history_db::compact      1526 History:  0 active, 0 deleted
+3ea4 =?                          0 Clink updater: latest release is v1.4.6.
+3ea4 =?                          0 Clink updater: downloading https://github.com/chrisant996/clink/releases/download/v1.4.6/clink.1.4.6.8b1dec.zip to C:\Users\admin\AppData\Local\Temp\clink\updater\v1.4.6.zip.
+3ea4 =?                          0 Clink updater: update in C:\Users\admin\AppData\Local\Temp\clink\updater\v1.4.6.zip is ready to be applied.
+3ea4 history_db::compact      1526 History:  1 active, 0 deleted
+3ea4 reset_handle              144 resetting mismatched stdout handle
+3ea4 history_db::compact      1526 History:  2 active, 0 deleted
+3ea4 history_db::compact      1526 History:  3 active, 0 deleted
+3ea4 history_db::compact      1526 History:  4 active, 0 deleted
