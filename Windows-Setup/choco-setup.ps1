@@ -78,6 +78,10 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install visualstudio2017-powershelltools
 #    choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity
 
+
+	pip install glances
+	pip install windows-curses
+
 # Windows Update
 #	choco Install PSWindowsUpdate
 #	Get-WindowsUpdate
