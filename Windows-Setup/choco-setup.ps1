@@ -43,6 +43,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 	choco install onionshare
     choco install openjdk 
     choco install openjdk11
+	choco install plasso
     choco install powershellhere-elevated 
     choco install processhacker
 #    choco install procexp
@@ -50,19 +51,20 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install protonvpn
     choco install python2
     choco install python3
-	    choco install pip
+	choco install pip
     choco install qbittorrent
 #    choco install r.project
-	choco install rustdesk
+#	choco install rustdesk
     choco install rufus
     choco install rufus.install
 #    choco install sudo
 #    choco install sysmon
+	choco install tailscale
     choco install tor-browser
 #    choco install veracrypt
     choco install vlc
     choco install wget
-    choco install windirstat
+#    choco install windirstat
 #    choco install winlogbeat
 #    choco install wireshark
 #    choco install zap
