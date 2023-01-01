@@ -80,7 +80,13 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 
 
 	pip install glances
+	pip install poetry
 	pip install windows-curses
+	
+#	 This currently isn't working as grapheneX only supports Python 3.7
+#	 https://github.com/grapheneX/grapheneX.git
+#	 poetry install
+#	 poetry run grapheneX
 
 # Windows Update
 #	choco Install PSWindowsUpdate
