@@ -1,6 +1,4 @@
-Author: BlueLife , Velociraptor
 www.sordum.org
-
 
 ############--Windows 11 Classic Context Menu v1.1 --############
 (Thursday, 11 November 2021)

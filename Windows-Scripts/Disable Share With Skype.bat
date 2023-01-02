@@ -1,1 +1,0 @@
-REG ADD “HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked” /v {776DBC8D-7347-478C-8D71-791E12EF49D8} /d Skype
