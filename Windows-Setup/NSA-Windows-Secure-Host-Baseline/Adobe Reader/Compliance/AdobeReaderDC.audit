@@ -1,0 +1,485 @@
+# DISA STIG: Adobe Acrobat Reader DC Continuous Track STIG Version 1 Release 2
+# Author: NSA Information Assurance
+# Source: https://github.com/iadgov/Secure-Host-Baseline/Adobe Reader/Compliance/AdobeReaderDC.audit
+
+<check_type : "Windows" version : "2">
+    <group_policy: "Adobe Reader DC Audit Policy">
+
+        <if>
+            <condition type: "or">
+                <custom_item> 
+                    type: FILE_CHECK 
+                    description: "Check if Adobe Reader DC is installed - "%programfiles% (x86)"
+                    value_type: POLICY_TEXT 
+                    value_data: "%programfiles% (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"
+                    file_option: MUST_EXIST
+                    severity: LOW
+                </custom_item>
+                <custom_item> 
+                    type: FILE_CHECK 
+                    description: "Check if Adobe Reader DC is installed - %programfiles%"
+                    value_type: POLICY_TEXT 
+                    value_data: "%programfiles%\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"
+                    file_option: MUST_EXIST
+                    severity: LOW
+                </custom_item>
+                <custom_item>
+                    type: REG_CHECK
+                    description: "Check if Adobe Reader DC is installed - WOW6432Node Registry Uninstall GUID"
+                    value_type: POLICY_TEXT
+                    value_data: "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{AC76BA86-7AD7-1033-7B44-AC0F074E4100}"
+                    reg_option: MUST_EXIST
+                    key_item: "DisplayName"
+                </custom_item>
+                <custom_item>
+                    type: REG_CHECK
+                    description: "Check if Adobe Reader DC is installed - Registry Uninstall GUID"
+                    value_type: POLICY_TEXT
+                    value_data: "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{AC76BA86-7AD7-1033-7B44-AC0F074E4100}"
+                    reg_option: MUST_EXIST
+                    key_item: "DisplayName"
+                </custom_item>
+            </condition>
+        <then>
+            # SECURITY SETTINGS
+
+            <custom_item>
+                type: REGISTRY_SETTING
+                description: "Adobe Reader DC must enable Enhanced Security in a Standalone Application"
+                info: "V-64919"
+                info: "ARDC-CN-000005"
+                info: "CAT II"
+                info: "Path: HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown Name: bEnhancedSecurityStandalone Type: DWORD Value: 1"
+                value_type: POLICY_DWORD
+                value_data: "1"
+                reg_key: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown"
+                reg_item: "bEnhancedSecurityStandalone"
+                severity: HIGH
+            </custom_item>
+
+            <custom_item>
+                type: REGISTRY_SETTING
+                description: "Adobe Reader DC must enable Enhanced Security in a Browser"
+                info: "V-64921"
+                info: "ARDC-CN-000010"
+                info: "CAT II"
+                info: "Path: HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown Name: bEnhancedSecurityInBrowser Type: DWORD Value: 1"
+                value_type: POLICY_DWORD
+                value_data: "1"
+                reg_key: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown"
+                reg_item: "bEnhancedSecurityInBrowser"
+                severity: HIGH
+            </custom_item>
+
+            <custom_item>
+                type: REGISTRY_SETTING
+                description: "Adobe Reader DC must enable Protected Mode"
+                info: "V-64923"
+                info: "ARDC-CN-000015"
+                info: "CAT II"
+                info: "Path: HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown Name: bProtectedMode Type: DWORD Value: 1"
+                value_type: POLICY_DWORD
+                value_data: "1"
+                reg_key: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown"
+                reg_item: "bProtectedMode"
+                severity: HIGH
+            </custom_item>
+
+            <custom_item>
+                type: REGISTRY_SETTING
+                description: "Adobe Reader DC must enable Protected View"
+                info: "V-64925"
+                info: "ARDC-CN-000020"
+                info: "CAT II" 
+                info: "Path: HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown Name: iProtectedView Type: DWORD Value:2"
+                value_type: POLICY_DWORD
+                value_data: "2"
+                reg_key: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown"
+                reg_item: "iProtectedView"
+                severity: HIGH
+            </custom_item>
+
+            <custom_item>
+                type: REGISTRY_SETTING
+                description: "Adobe Reader DC must Block Websites"
+                info: "V-64927"
+                info: "ARDC-CN-000025"
+                info: "CAT II"
+                info: "Path: HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms Name: iURLPerms Type: DWORD: Value:1"
+                value_type: POLICY_DWORD
+                value_data: "1"
+                reg_key: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms"
+                reg_item: "iURLPerms"
+                severity: HIGH
+            </custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "NO STIG ID: Enable Outlook Attachment ProtectView"
+ info               	: "Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\TrustManager\bEnableAlwaysOutlookAttachmentProtectView (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\TrustManager"
+ reg_item		: "bEnableAlwaysOutlookAttachmentProtectView"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000050: Prevent PDF Handler Switching"
+ info               	: "V-64935 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\bDisablePDFHandlerSwitching (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bDisablePDFHandlerSwitching"
+ severity		: HIGH
+</custom_item>
+
+# TRUSTED LOCATION SETTINGS
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000320: Disable trusting IE Trusted Sites"
+ info               	: "V-65669 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bDisableTrustedSites"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000310: Disable trusting OS Trusted Sites"
+ info               	: "V-65665 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bDisableOSTrustedSites"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000315: Disable trusting File and Folder Locations"
+ info               	: "V-65667 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bDisableTrustedFolders"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000325: Disable trusting Certified Documents"
+ info               	: "V-65671 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bEnableCertificateBasedTrust"
+ severity		: HIGH
+</custom_item>
+
+# CLOUD SETTINGS
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000100: Disable SharePoint Services"
+ info               	: "V-64951 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cSharePoint (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cSharePoint"
+ reg_item		: "bDisableSharePointFeatures"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "NO STIG ID: Disable Adobe File Store"
+ info               	: "Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cCloud (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cCloud"
+ reg_item		: "bDisableADCFileStore"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000090: Disable Adobe Webmail"
+ info               	: "V-64949 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWebmailProfiles (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWebmailProfiles"
+ reg_item		: "bDisableWebmail"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000060: Disable Document Services"
+ info               	: "V-64939 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices"
+ reg_item		: "bToggleAdobeDocumentServices"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000085: Disable Adobe Sign"
+ info               	: "V-64947 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices"
+ reg_item		: "bToggleAdobeSign"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000075: Disable Web Connectors"
+ info               	: "V-64945 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices"
+ reg_item		: "bToggleWebConnectors"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000055: Disable Send Plugin for Outlook"
+ info               	: "V-64937 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cCloud (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cCloud"
+ reg_item		: "bAdobeSendPluginToggle"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000065: Disable Cloud Synchronization"
+ info               	: "V-64941 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cServices"
+ reg_item		: "bTogglePrefsSync"
+ severity		: MEDIUM
+</custom_item>
+
+
+# EMBEDDED CONTENT SETTINGS
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000045: Prevent Flash"
+ info               	: "V-64933 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\bEnableFlash (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bEnableFlash"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "NO STIG ID: Prevent 3D"
+ info               	: "Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\bEnable3D (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bEnable3D"
+ severity		: HIGH
+</custom_item>
+
+
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000035: Prevent Unknown URLs"
+ info               	: "V-64929 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms\iUnknownURLPerms (DWORD:3)"
+ value_type		: POLICY_DWORD
+ value_data		: "3"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cDefaultLaunchURLPerms"
+ reg_item		: "iUnknownURLPerms"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000035: Prevent Attachments"
+ info               	: "V-64931 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\iFileAttachmentPerms (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "iFileAttachmentPerms"
+ severity		: HIGH
+</custom_item>
+
+
+# UPDATE SETTINGS
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000340: Enable Automatic Updates"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\bUpdater (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown"
+ reg_item		: "bUpdater"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000340: Enable Automatic Updates, Bypass EULA Check"
+ info               	: "HKLM\Software\Wow6432Node\Adobe\Adobe ARM\1.0\ARM\iDisableCheckEula (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Wow6432Node\Adobe\Adobe ARM\1.0\ARM"
+ reg_item		: "iDisableCheckEula"
+ severity		: HIGH
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000120: Prevent Service Updates"
+ info               	: "V-64955 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cServices\bUpdater (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cServices"
+ reg_item		: "bUpdater"
+ severity		: MEDIUM
+</custom_item>
+
+# OTHER SETTINGS
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "NO STIG ID: Disable Usage Statistics"
+ info               	: "Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\bUsageMeasurement (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown"
+ reg_item		: "bUsageMeasurement"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000070: Disable Adobe Repair Installation"
+ info               	: "V-64943 Severity: CAT II"
+ info               	: "HKLM\SOFTWARE\Wow6432Node\Adobe\Acrobat Reader\DC\Installer\DisableMaintenance (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\SOFTWARE\Wow6432Node\Adobe\Acrobat Reader\DC\Installer"
+ reg_item		: "DisableMaintenance"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000080: Disable Acrobat Upsell"
+ info               	: "V-66049 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\bAcroSuppressUpsell (DWORD:1)"
+ value_type		: POLICY_DWORD
+ value_data		: "1"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown"
+ reg_item		: "bAcroSuppressUpsell"
+ severity		: MEDIUM
+</custom_item>
+
+<custom_item>
+ type			: REGISTRY_SETTING
+ description	        : "ARDC-CN-000115: Disable the Adobe Welcome Screen"
+ info               	: "V-64953 Severity: CAT II"
+ info               	: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWelcomeScreen\bShowWelcomeScreen (DWORD:0)"
+ value_type		: POLICY_DWORD
+ value_data		: "0"
+ reg_key		: "HKLM\Software\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown\cWelcomeScreen"
+ reg_item		: "bShowWelcomeScreen"
+ severity		: MEDIUM
+</custom_item>
+
+# HKCU SETTINGS (3 manual checks)
+
+#<custom_item>
+# type			: REGISTRY_SETTING
+# description	        : "ARDC-CN-000330: Disable Updating of European Certificates"
+# info               	: "V-65673 Severity: CAT II"
+# info               	: "HKCU\Software\Adobe\Acrobat Reader\DC\Security\cDigSig\cEUTLDownload\bLoadSettingsFromURL (DWORD:0)"
+# value_type		: POLICY_DWORD
+# value_data		: "0"
+# reg_key		: "HKCU\Software\Adobe\Acrobat Reader\DC\Security\cDigSig\cEUTLDownload"
+# reg_item		: "bLoadSettingsFromURL"
+# severity		: MEDIUM
+#</custom_item>
+
+#<custom_item>
+# type			: REGISTRY_SETTING
+# description	        : "ARDC-CN-000335: Disable Updating of Adobe Certificates"
+# info               	: "V-65673 Severity: CAT II"
+# info               	: "HKCU\Software\Adobe\Acrobat Reader\DC\Security\cDigSig\cAdobeDownload\bLoadSettingsFromURL  (DWORD:0)"
+# value_type		: POLICY_DWORD
+# value_data		: "0"
+# reg_key		: "HKCU\Software\Adobe\Acrobat Reader\DC\Security\cDigSig\cAdobeDownload"
+# reg_item		: "bLoadSettingsFromURL"
+# severity		: MEDIUM
+#</custom_item>
+
+#<custom_item>
+# type			: REGISTRY_SETTING
+# description	        : "ARDC-CN-000345: Enable FIPS Mode"
+# info               	: "V-65679 Severity: CAT II"
+# info               	: "HKCU\Software\Adobe\Acrobat Reader\DC\AVGeneral\bFIPSMode  (DWORD:1)"
+# value_type		: POLICY_DWORD
+# value_data		: "0"
+# reg_key		: "HKCU\Software\Adobe\Acrobat Reader\DC\AVGeneral"
+# reg_item		: "bFIPSMode"
+# severity		: MEDIUM
+#</custom_item>
+
+        <custom_item> 
+            type: FILE_VERSION
+            description: "Adobe Reader DC must have the latest Security-related Software Updates installed"
+            info: "V-65677"
+            info: "ARDC-CN-000340"
+            value_type: POLICY_FILE_VERSION
+            value_data: "17.9.20044.25828"
+            file: "%programfiles% (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"
+            check_type: CHECK_GREATER_THAN_OR_EQUAL
+            severity: HIGH
+        </custom_item>
+            </then>
+            <else>
+		<report type: "PASSED">
+		    description: "Adobe Reader DC is not installed"
+		</report>
+            </else>
+        </if>
+    </group_policy>
+</check_type>

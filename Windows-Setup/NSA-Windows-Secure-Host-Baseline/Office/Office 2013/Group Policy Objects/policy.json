@@ -1,0 +1,18 @@
+{
+    "PolicyName":  "Office 2013",
+    "PolicyScopes":  [
+                         "Computer",
+                         "User"
+                     ],
+    "PolicyTypes":  [
+                        "Domain",
+                        "Local"
+                    ],
+    "PolicyModes":  [
+                        "Audit",
+                        "Enforced"
+                    ],
+    "PolicyTemplatePath":  ".\\..\\",
+    "PolicyTemplateType":  "Application",
+    "PolicyTemplateVersion":  "15.0.0.0"
+}

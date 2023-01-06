@@ -59,8 +59,8 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install qbittorrent
 #    choco install r.project
 #	 choco install rustdesk
-    choco install rufus
-    choco install rufus.install
+#    choco install rufus
+#    choco install rufus.install
 #    choco install sudo
 #    choco install sysmon
 	choco install tailscale
@@ -89,6 +89,9 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #	 poetry run grapheneX
 
 # Windows Update
-#	choco Install PSWindowsUpdate
-#	Get-WindowsUpdate
-#	Install-WindowsUpdate
+
+Install-Module -Name PSWindowsUpdate -Force
+Get-Package -Name PSWindowsUpdate
+get-command -module PSWindowsUpdate
+Get-WindowsUpdate
+Get-WindowsUpdate -AcceptAll -Install -AutoReboot

@@ -1,0 +1,17 @@
+{
+    "PolicyName":  "Windows",
+    "PolicyScopes":  [
+                         "User"
+                     ],
+    "PolicyTypes":  [
+                        "Domain",
+                        "Local"
+                    ],
+    "PolicyModes":  [
+                        "Audit",
+                        "Enforced"
+                    ],
+    "PolicyTemplatePath":  ".\\..\\..\\",
+    "PolicyTemplateType":  "OS",
+    "PolicyTemplateVersion":  "10.0.14393.0"
+}
