@@ -63,7 +63,7 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install rufus.install
 #    choco install sudo
 #    choco install sysmon
-	choco install tailscale
+#	choco install tailscale
     choco install tor-browser
 #    choco install veracrypt
     choco install vlc
