@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ALL_SETTINGS>
+  <SETTINGS>
+    <!--HARDWARE-->
+    <SETTINGS title="HWiNFO" value="true" />
+    <SETTINGS title="CPU-Z" value="true" />
+    <SETTINGS title="CrucialSS" value="true" />
+    <SETTINGS title="RAMExpert" value="true" />
+    <SETTINGS title="DiskInfo" value="true" />
+    <SETTINGS title="StressTest" value="true" />
+    <SETTINGS title="HWMonitor" value="true" />
+    <SETTINGS title="GPU-Z" value="true" />
+    <SETTINGS title="Furmark" value="true" />
+    <SETTINGS title="GSmartCtrl" value="true" />
+    <SETTINGS title="BatteryInfo" value="true" />
+    <!--BACKUP_RECOVERY-->
+    <SETTINGS title="FastCopy" value="true" />
+    <SETTINGS title="Back4Sure" value="true" />
+    <SETTINGS title="CloneApp" value="true" />
+    <SETTINGS title="Recuva" value="true" />
+    <SETTINGS title="LicCrawler" value="true" />
+    <SETTINGS title="DMDE" value="true" />
+    <!--USEFUL_TOOLS-->
+	<SETTINGS title="Procmon" value="true" />
+    <SETTINGS title="GrantPerms" value="true" />
+    <SETTINGS title="NirLauncher" value="true" />
+    <SETTINGS title="SDIOrigin" value="true" />
+    <SETTINGS title="DontSleep" value="true" />
+    <SETTINGS title="BlueScreen" value="true" />
+    <SETTINGS title="FirefoxPort" value="true" />
+    <SETTINGS title="WizTree" value="true" />
+    <SETTINGS title="Sysinternals" value="true" />
+    <SETTINGS title="Macrorit" value="true" />
+    <SETTINGS title="AppCrash" value="true" />
+    <!--REPAIRS-->
+    <SETTINGS title="CompIntRep" value="true" />
+    <SETTINGS title="WinRepairAIO" value="true" />
+    <SETTINGS title="AccountFixer" value="true" />
+    <SETTINGS title="SFCFix" value="true" />
+    <SETTINGS title="ProcExplorer" value="true" />
+    <SETTINGS title="FixPrintSpooler" value="true" />
+    <SETTINGS title="NetRepairAIO" value="true" />
+    <SETTINGS title="OfficeUninst" value="true" />
+    <SETTINGS title="FreeFixer" value="true" />
+    <SETTINGS title="Autoruns" value="true" />
+    <!--UNINSTALLERS-->
+    <SETTINGS title="Revo" value="true" />
+    <SETTINGS title="UltraSearch" value="true" />
+    <SETTINGS title="DDU" value="true" />
+    <SETTINGS title="AVRemoval" value="true" />
+    <SETTINGS title="RegSeeker" value="true" />
+    <SETTINGS title="JavaUninst" value="true" />
+    <!--MALWARE_REMOVAL-->
+    <SETTINGS title="RKill" value="true" />
+    <SETTINGS title="TDSSKiller" value="true" />
+    <SETTINGS title="Microsoft" value="true" />
+    <SETTINGS title="Emsisoft" value="true" />
+    <SETTINGS title="ESET" value="true" />
+    <SETTINGS title="Kaspersky" value="true" />
+    <SETTINGS title="HitmanPro" value="true" />
+    <SETTINGS title="RogueKiller" value="true" />
+    <SETTINGS title="ADWCleaner" value="true" />
+    <SETTINGS title="NortonPE" value="true" />
+    <SETTINGS title="Malwarebytes" value="true" />
+    <SETTINGS title="DrWeb" value="true" />
+    <!--MAINTENANCE_REPAIR-->
+    <SETTINGS title="Ccleaner" value="true" />
+    <SETTINGS title="DiskDefrag" value="true" />
+	<!--UPDATE-->
+	<SETTINGS title="PatchMyPC" value="true" />
+	<SETTINGS title="IntelDrivers" value="true" />
+    <!--FINAL_TESTS-->
+	<SETTINGS title="QuickCheck" value="true" />    
+    <!--NOTES-->
+    <SETTINGS title="ProduKey" value="true" />
+    <SETTINGS title="WebBrowserMailPassView" value="true" />
+    <SETTINGS title="WirelessKeyView" value="true" />
+    <!--LICENSE-->
+    <SETTINGS title="LicenseShown" value="false" />
+	<!--FAHRENHEIT-->
+    <SETTINGS title="ShowTempFahrenheit" value="false" />
+	<!--OTHER_SETTINGS-->
+    <SETTINGS title="AlwaysUpdateTools" value="false" />
+	<SETTINGS title="AlwaysStartInNormalMode" value="false" />
+	<SETTINGS title="AlwaysStartInMinimalMode" value="false" />
+	<!--EMAIL-->
+	<SETTINGS title="Email" value="example@gmail.com" />
+	<!--CUSTOM_PROGRAM_NAME-->
+    <SETTINGS title="CustomProgramName" value="Windows Repair Toolbox" />
+    <!--ABOUT_TAB-->
+    <SETTINGS title="ShowAboutTab" value="true" />     
+  </SETTINGS>
+</ALL_SETTINGS>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--INSTRUCIONS (start):
+
+1 - Use the "Eset Online Scanner" line as a model for you to copy & paste, while adapting it to your needs (check lines 22 and 23). 
+	To do that, in each new line you add, change what's in front of title=, link= and exe= . 
+	You can add as many tools as you'd like. 
+	
+	Attention: only direct download links will work (links that end with the name and extension of the file you want to download. Example: https://www.7-zip.org/a/7z1900.exe). 
+	If the tool you want to add doesn't have a direct download link, it's possible, for instance, for you to use your own server or, alternatively, a file hosting service that allows you to create direct download links.
+
+2 - Next to "title", add the name of the tool.
+    Next to "link", add the complete download link.
+    Next to "exe", add the name of the file including the extension (it's not mandatory to be an .exe file, it can be any other kind of file, like a .bat, .cmd, .zip, etc.)
+   
+3 - Save this file and close it. Don't change its name or extension (custom.xml). 
+
+INSTRUCTIONS (end)-->
+
+<CUSTOM>
+	<LINKS>	    
+		<LINKS title="ESET Online Scanner" link="https://download.eset.com/com/eset/tools/online_scanner/latest/esetonlinescanner_enu.exe" exe="esetonlinescanner_enu.exe"/>
+		<!--JUST KEEP ADDING YOUR TOOLS BELOW THIS LINE. COPY AND PASTE THE LINE ABOVE TO USE IT AS A MODEL. -->
+		
+	</LINKS>
+</CUSTOM>
