@@ -1,0 +1,671 @@
+﻿# ############################
+# Language file for eToolz 4.3
+# Updated 2016-06-10
+# ############################
+
+Language.Translator.Name=Åke Engelbrektson
+Language.Translator.Website=https://svenskasprakfiler.se
+Language.Translator.EMail=eson@svenskasprakfiler.se
+
+Language.FlagImageFile=Swedish.gif
+#Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+
+General.Font.Name=Tahoma
+General.Font.Size=8
+
+General.MsgLanguageChangeTitle=Språkval
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=Notera att viss text inte visas på svenska förrän programmet startats om.
+
+General.MsgNoDefaultBrowserTitle=Webbläsare kan inte hittas!
+General.MsgNoDefaultBrowserText=Webbläsaren kan inte startas!
+General.MsgNoStdMailerTitle=E-postklient kan inte hittas!
+General.MsgNoStdMailerText=E-postklienten kan inte startas!
+General.MsgNoHelpTitle=Hjälp
+General.MsgNoHelpText=Hjälpfilen "{0}" kan inte öppnas.
+
+General.Button.Ok=OK
+General.Button.Start=Start
+General.Button.Cancel=Avbryt
+General.Button.Close=Stäng
+General.Button.Help=Hjälp
+
+General.FileFilter.All=Alla filer (*.*)
+General.FileFilter.RTF=RTF-filer (*.rtf)
+General.FileFilter.TXT=Text-filer (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=Ping
+General.Tool.MultiPing=MultiPing
+General.Tool.Trace=Spåra
+General.Tool.Whois=Whois
+General.Tool.MailCheck=E-postkontroll
+General.Tool.MailHead=Sidhuvudanalys
+General.Tool.HttpHead=HTTP-sidhuvud
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.PageRank=Sidranking
+#General.Tool.MultiRank=Multiranking
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.Time=Tid
+General.Tool.ListInfo=Listor
+General.Tool.Local=Lokal värd
+
+General.Tool.MenuItem.Dns=&DNS
+General.Tool.MenuItem.Ping=&Ping
+# >>> CHANGED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MultiPing=&MultiPing
+# <<< CHANGED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.Trace=&Spåra
+General.Tool.MenuItem.Whois=&Whois
+General.Tool.MenuItem.MailCheck=&E-postkontroll
+General.Tool.MenuItem.HttpHead=&HTTP-sidhuvud
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.MenuItem.PageRank=Sid&ranking
+#General.Tool.MenuItem.MultiRank=M&ultiranking
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.ListInfo=&Listor
+
+General.Bool.Yes=Ja
+General.Bool.No=Nej
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title=Inställningar {0}
+
+Config.grpUserData=Användardata
+Config.lblUserDataDesc="Användardata" innehåller programinställningar och användarens personliga anpassningar. Dessa inställningar kan vara olika för varje användare.
+Config.rbUserDataAppData=AppData-mappen för aktuell användare (rekommenderas)
+Config.rbUserDataProgram=Programmappen för {0} (för t.ex extern USB-enhet)
+Config.rbUserDataUserDef=Användardefinierad plats:
+Config.btnUserDataUserDef=Välj en anpassad mapp
+
+Config.DlgFolderUserDefText=Välj lagringsplats för användardata.
+
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title=Om {0}
+
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+About.Description={0}
+About.Version=Version {0}
+
+#About.Link.Text.EMail=E-post
+About.Link.Title.EMail=Skicka e-post
+About.Link.Text.Website=Webbsida
+About.Link.Title.Website=Besök webbsidan
+
+About.Credits=Tack till
+About.Credits.Translation=Översättning
+About.Credits.Icons=Ikoner
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.lblDesc=De viktigaste verktygen för Internet
+#About.lblVersion=Version {0}
+#About.lblRights=All rights reserved.
+#About.grpAuthor=Utvecklare
+#About.lblWebsite=Webbsida:
+#About.lblEMail=E-post:
+#About.tabLang=Översättning
+#About.lblTranslator=Översättare:
+#About.tabReg=Registreringsinformation
+#About.txtRegDefault=Kostnadsfri version\w\w(Ingen giltig licensfil)
+#About.tabCredits=Tack till
+#About.rtfCredits.Icons=Ikoner
+#About.rtfCredits.Icons.FatCow=FatCow Web Hosting ({0})
+# <<< REMOVED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=Språk
+
+Main.mnuFile=&Arkiv
+Main.mnuFileExit=Avs&luta
+Main.mnuTools=&Verktyg
+Main.mnuToolsFlushDnsCache=Rensa Windows &DNS-cache
+Main.mnuExtras=E&xtra
+Main.mnuExtrasSettings=&Inställningar...
+Main.mnuHelp=&Hjälp
+Main.mnuHelpHelp=&Hjälp
+Main.mnuHelpWebsite=Besök programmets &webbsida
+Main.mnuHelpEMail=Skicka e-&post till utvecklaren
+Main.mnuHelpSupport=&Stöd {0}
+Main.mnuHelpAbout=&Om {0}
+
+# >>> ADDED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputUseSel=&Använd markerat
+# <<< ADDED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.0.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputCut=Klipp &ut
+Main.pmnuInputCopy=&Kopiera
+Main.pmnuInputPaste=Klistra &in
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputPasteFromFile=Klistra in från &fil...
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuInputSelectAll=Markera &alla
+# <<< ADDED 4.0.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.pmnuToolbarTitleShowHide.Show=&Visa titel för "{0}"
+Main.pmnuToolbarTitleShowHide.Hide=&Dölj titel för "{0}"
+Main.pmnuToolbarMultiline=Visa verktygsfält på &flera rader
+
+Main.pmnuRtfUseSel=&Skicka markerat till...
+Main.pmnuRtfCopy=&Kopiera
+Main.pmnuRtfSelectAll=Markera &alla
+Main.pmnuRtfSaveAs=&Spara...
+Main.pmnuRtfSaveSelAs=Spara &markerat...
+
+Main.lblDnsQuery=Domännamn, värdnamn eller IP-adress:
+Main.chkDnsHostInfo=Värdinformation (A och PTR)
+Main.chkDnsDomainInfo=Domäninformation (NS, MX, TXT och SOA)
+Main.chkDnsResolve=Matcha värdnamn
+Main.chkDnsVerify=Verifiera värdnamn / IP-adress
+Main.chkDnsQueryDirect=Direktförfrågan
+
+Main.lblPingQuery=Värdnamn eller IP-adress:
+Main.lblPingCount=Antal:
+Main.lblPingBytes=Byte:
+Main.lblPingTimeout=Timeout:
+Main.lblPingPause=Paus:
+
+Main.lblMultiPingQuery=IP-adressintervall:
+Main.lblMultiPingBytes=Byte:
+Main.lblMultiPingTimeout=Timeout:
+Main.chkMultiPingResolve=Matcha värdnamn
+
+Main.colMultiPingIP=IP-adress
+Main.colMultiPingStatus=Status
+Main.colMultiPingResponseIP=Respons från
+Main.colMultiPingResponseHost=Värdnamn
+Main.colMultiPingTime=Tid (ms)
+
+Main.lvMultiPing.Status.Timeout=Timeout
+Main.lvMultiPing.Status.Incomplete=Data ofullständig ({1} byte)
+Main.lvMultiPing.Status.Different=Datadifferens
+Main.lvMultiPing.Status.Correct=Klart
+Main.lvMultiPing.Status.Aborted=Avbruten
+Main.lvMultiPing.Status.SndRcvError=Sänd- eller mottagningsfel
+Main.lvMultiPing.Status.Error=Fel: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=&Använd ursprunglig IP-adress
+Main.pmnuMultiPingOrigIPCopy=Kopiera &ursprunglig IP-adress
+# >>> CHANGED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingIPUseSel=A&nvänd svarsadress
+Main.pmnuMultiPingIPCopy=Kopiera &svarsadress
+# <<< CHANGED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuMultiPingHostnameUseSel=Anv&änd värdnamn
+Main.pmnuMultiPingHostnameCopy=Kopiera &värdnamn
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingCopy=&Kopiera listposter
+Main.pmnuMultiPingSelectAll=&Markera alla
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lblTraceQuery=Värdnamn eller IP-adresser:
+Main.lblTraceMaxHops=Hopp:
+Main.lblTraceTimeout=Timeout:
+Main.lblTraceMaxRetries=Återförsök:
+Main.chkTraceResolve=Matcha värdnamn
+
+Main.lblWhoisQuery=Värdnamn eller IP-adress:
+Main.lblWhoisServer=Whois-server:
+Main.chkWhoisVerify=Verifiera värdnamn / IP-adress
+Main.chkWhoisRedirect=Omdirigera automatiskt
+Main.chkWhoisFormat=Formatera svar
+Main.chkWhoisQueryDirect=Direktförfrågan
+Main.chkWhoisQueryDomain=Domänförfrågan
+Main.chkWhoisQueryNetwork=Nätverksförfrågan
+Main.lblWhoisEncoding=Kodning:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=E-postadress:
+Main.lblMailCheckSender=Avsändaradress:
+Main.lblMailCheckServer=MX-server:
+Main.chkMailCheckSendVRFY=Sänd VRFY-kommando
+
+Main.lblMailHeadQuery=Sidhuvudrader:
+Main.chkMailHeadResolve=Matcha värdnamn
+
+Main.lblHttpHeadQuery=URL:
+Main.lblHttpHeadCommand=Kommando:
+Main.chkHttpHeadFullPage=Visa hela sidan
+Main.chkHttpHeadRedirect=Omdirigera automatiskt
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Main.lblPageRankQuery=URL:
+#Main.lblPageRankValueTitle=Google sidranking:
+#Main.lblPageRankValue.ConnectionError=Sidrankingen kan inte hämtas.
+#Main.lblPageRankValue.NoResult=Det finns ingen sidranking för denna URL.
+#Main.lblPageRankValue.InvalidResult=Resultatet kan inte bearbetas.
+#Main.lblMultiRankQuery=Webbadresser:
+#Main.lblMultiRankQueryNote=(en URL per rad)
+#Main.chkMultiRankResolve=Matcha IP-adresser
+#Main.colMultiRankURL=URL
+#Main.colMultiRankStatus=Status
+#Main.colMultiRankPageRank=Sidranking
+#Main.colMultiRankIP=IP-adress
+#Main.lvMultiRank.Status.ConnectionError=Anslutningsfel
+#Main.lvMultiRank.Status.Aborted=Avbruten
+#Main.lvMultiRank.Status.Timeout=Timeout
+#Main.lvMultiRank.Status.NoResult=Ej tillgänglig
+#Main.lvMultiRank.Status.InvalidResult=Ogiltigt resultat
+#Main.lvMultiRank.Status.Success=Klart
+#Main.pmnuMultiRankUseSel=&Använd markerat
+#Main.pmnuMultiRankCopy=&Kopiera
+#Main.pmnuMultiRankUrlUseSel=&Använd URL
+#Main.pmnuMultiRankUrlCopy=&Kopiera URL
+#Main.pmnuMultiRankIPUseSel=A&nvänd IP-adress
+#Main.pmnuMultiRankIPCopy=K&opiera IP-adress
+#Main.pmnuMultiRankCopy=&Kopiera listposter
+M#ain.pmnuMultiRankSelectAll=Markera &alla
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.btnTimeSetTime=Ange systemtid
+Main.lblTimeServer=NTP-server:
+Main.lblTimeSystemTitle=Systemtid:
+Main.lblTimeServerTitle=Tid från server:
+Main.lblTimeServerTitle.Server=Tid från server "{0}":
+Main.lblTimeDifferenceTitle=Tidsdifferens:
+Main.lblTimeServerUpdateTitle=Senaste serveruppdatering:
+Main.lblTimeServerUpdateTitle.Server=Senaste uppdatering för server "{0}":
+Main.lblTimeServerUpdate={0} ({1} sedan)
+Main.lblTimeServerLocal.SysTimeNotSet=Systemtiden kan inte anges.
+Main.lblTimeServerLocal.ServerNotReachable=Tidsservern "{0}" kan inte nås.
+Main.lblTimeServerLocal.ResponseError=Svaret från tidsservern "{0}" kan inte bearbetas.
+
+Main.lblListInfoQuery=Sökterm:
+Main.lblListInfoSource=Lista:
+Main.chkListInfoCaseSensitive=Skiftlägeskänslig
+Main.chkListInfoWholeColumns=Sök i hela kolumner
+
+Main.chkLocalResolve=Matcha värdnamn
+Main.chkLocalExternal=Ta emot extern värdinformation
+Main.chkLocalAdapterInfo=Visa nätverkskort
+Main.chkLocalIPv4Stat=Visa IPv4-statistik
+
+Main.MsgFlushDnsCache.Title=Rensa Windows DNS-cache
+Main.MsgFlushDnsCache.SrvNotRunning=Systemtjänsten "DNS Client" är inte startad.\w\wTjänsten måste vara igång för att rensa Windows DNS-cache.
+Main.MsgFlushDnsCache.ErrorMessage=Windows DNS-cache kan inte rensas.\w\wFel:\w{0}
+
+Main.DlgSave.Title=Spara
+Main.DlgSaveSelection.Title=Spara markerat
+Main.MsgSaveSelection.Error=Filen "{0}" kan inte sparas.
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.DlgPasteFromFile.Title=Klistra in från fil
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.MsgInvalidURL.Title=Ogiltig URL
+Main.MsgInvalidURL.Text=Webbadressen "{0}" har ett ogiltigt format.
+
+Main.MsgInvalidMailAddress.Title=Ogiltig e-postadress
+Main.MsgInvalidMailAddress.Text=E-postadress "{0}" har ett ogiltigt format.
+
+Main.MsgInvalidIPRange.Title=Ogiltigt IP-adressintervall
+Main.MsgInvalidIPRange.Text=Det angivna IP-adressintervallet har ett ogiltigt format.\w\wNotera att endast den sista bitenav adressen kan vara olika.\w\wGiltiga format:\w    x.x.x.Y - x.x.x.Z (e.g. 127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (e.g. 127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=Förfrågan avbruten av användaren.
+Main.Report.QueryFinished=Förfrågan slutförd.
+
+Main.Report.HostInfo.Title=Värdnformation för "{0}":
+Main.Report.HostInfo.NotAvailable=(ej tillgänglig)
+
+Main.Report.HostInfo.IPAddress =  IP-adress:   {END}
+Main.Report.HostInfo.Hostname  =  Värdnamn:    {END}
+Main.Report.HostInfo.Domainname=  Domännamn:  {END}
+Main.Report.HostInfo.TLD       =  Toppdomän:    {END}
+Main.Report.HostInfo.CountryIP =  Land (IP): {END}
+Main.Report.HostInfo.IPRange   =  IP-intervall:     {END}
+Main.Report.HostInfo.RIRData   =  RIR-data:     {END}
+Main.Report.HostInfo.RIRData.ValueDate=(tilldelad sedan {0})
+
+Main.Report.DNS.IPAddress       =IP-adresser (A):
+Main.Report.DNS.IPAddress.Title =  {0}. IP-adress:
+Main.Report.DNS.Hostname        =Värdnamn (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. Värdnamn:
+Main.Report.DNS.Nameserver      =Namnserver (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. Namnservrar:
+Main.Report.DNS.MXServer        =Mail Exchange-servrar (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. MX-server:
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.Report.DNS.MXServer.Pref   =, pref={0}
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.Report.DNS.Text            =Textposter (TXT):
+Main.Report.DNS.Text.Title      =  {0}. Textpost:
+
+Main.Report.DNS.SOA=Start of Authority (SOA):
+Main.Report.DNS.SOA.Server.Title =  Server:     {END}
+Main.Report.DNS.SOA.RName.Title  =  Kontakt:    {END}
+Main.Report.DNS.SOA.Serial.Title =  Serienr.: {END}
+Main.Report.DNS.SOA.Expire.Title =  Upphör:     {END}
+Main.Report.DNS.SOA.Refresh.Title=  Uppdatera:    {END}
+Main.Report.DNS.SOA.Retry.Title  =  Återförsök:      {END}
+Main.Report.DNS.SOA.MinTTL.Title =  Min. TTL:   {END}
+
+Main.Report.DNS.SOA.Expire.Value={0} sekunder ({1})
+Main.Report.DNS.SOA.Refresh.Value={0} sekunder ({1})
+Main.Report.DNS.SOA.Retry.Value={0} sekunder ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0} sekunder ({1})
+
+Main.Report.Ping.NoIPAvailable=IP-adressen kan inte bestämmas.
+Main.Report.Ping.Start=Sänder {1} ping(ar) med {2} byte till "{0}":
+Main.Report.Ping.Reply=  {0}. svar från {1}:
+Main.Report.Ping.Pause=      Paus ({0} ms)
+Main.Report.Ping.Reply.Error=Fel: {0}.
+Main.Report.Ping.Reply.SndRcvError=Fel vid sändning eller mottagning.
+Main.Report.Ping.Reply.Timeout=Timeout.
+Main.Report.Ping.Reply.Aborted=Avbruten av användaren.
+Main.Report.Ping.Reply.Incomplete={0} ms, ofullständig data (endast {1} byte mottaget).
+Main.Report.Ping.Reply.Different={0} ms, avvikande data.
+Main.Report.Ping.Reply.Correct={0} ms, korrekt data.
+Main.Report.Ping.Result={0} ping(ar) skickad(e) ({1} korrekt, {2} felaktig(a), {3} misslyckad(e)).
+Main.Report.Ping.ResultTime=Snabbast svar: {0} ms, långsammast svar: {1} ms, medel: {2} ms.
+
+Main.Report.Trace.Start=Spårningsrutt till "{0}" över max. {1} hopp:
+Main.Report.Trace.SndRcvError=Fel vid sändning eller mottagning.
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0} ms  {1}
+Main.Report.Trace.Reply.TimeIPHost={0} ms  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     Tidsgräns för begäran.
+Main.Report.Trace.HostReached=Målvärden "{0}" har nåtts.
+Main.Report.Trace.MaxHops=Maximalt antal hopp har tangerats.
+
+Main.Report.Whois.DirectQuery.Title=Direktförfrågan
+Main.Report.Whois.DirectQuery.Start=Förfrågan för "{0}" på "{1}":
+Main.Report.Whois.DirectQuery.Redir=Omdirigerad förfrågan för "{0}" på "{1}":
+
+Main.Report.Whois.DomainQuery.Title=Domänförfrågan
+Main.Report.Whois.DomainQuery.Start=Domänförfrågan för "{0}" på "{1}":
+Main.Report.Whois.DomainQuery.Redir=Omdirigerad domänförfrågan för "{0}" at "{1}":
+Main.Report.Whois.DomainQuery.NoDomainName=Det finns inget domännamn tillgängligt för domänförfrågan.
+Main.Report.Whois.DomainQuery.NoTLD=Det finns ingen toppdomän tillgänglig för domänförfrågan.
+Main.Report.Whois.DomainQuery.NoTLDInfo=Ingen information kan hittas för toppdomänen "{0}".
+
+Main.Report.Whois.NetworkQuery.Title=Nätverksförfrågan
+Main.Report.Whois.NetworkQuery.Start=Nätverksförfrågan för "{0}" på "{1}":
+Main.Report.Whois.NetworkQuery.Redir=Omdirigerad nätverksförfrågan för "{0}" på "{1}":
+Main.Report.Whois.NetzworkQuery.NoIPAddress=Det finns ingen IP-adress tillgänglig för nätverksförfrågan.
+
+Main.Report.Whois.ServerNotReachable=Whois-servern "{0}" kan inte nås.
+Main.Report.Whois.Redirection=Svaret från "{0}" pekar mot Whois-servern "{1}".
+Main.Report.Whois.NoWhoisServer=Ingen matchande whois-server har hittats.
+Main.Report.Whois.ServerNotInDB=Whois-servern för "{0}" kan inte hittas i databasen.
+Main.Report.Whois.WhoisLink.Title=Whois-länk:
+
+Main.Report.MailCheck.MailInfo.Title=E-postinformation:
+Main.Report.MailCheck.MailInfo.MailAddress=  E-postadress: {END}
+Main.Report.MailCheck.MailInfo.DomainName =  Domännamn:    {END}
+
+Main.Report.MailCheck.MXServer.Title=Exchange-server för "{0}":
+Main.Report.MailCheck.MXServer.Number=  {0}. MX-server:
+Main.Report.MailCheck.MXServer.ServerPref={0}, inställning={1}
+
+Main.Report.MailCheck.NoDomain=Ingen exchange-server finns tillgänglig för domänen "{0}".
+Main.Report.MailCheck.Start=Kontrollerar e-postadress "{0}" med the MX-server "{1}" (port {2}):
+Main.Report.MailCheck.NoConnect=Anslutning till MX-server "{0}" kan inte etableras.
+Main.Report.MailCheck.Connected=Ansluten till MX-server "{0}" på port {1}.
+Main.Report.MailCheck.Timeout=MX-servern svarar inte (timeout).
+Main.Report.MailCheck.SendError=Kommandot kan inte sändas.
+Main.Report.MailCheck.Disconnect=Anslutningen till MX-server "{0}" kopplades ifrån.
+
+Main.Report.MailCheck.Result.Title=Resultat:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  Resultatet av VRFY var positivt eller neutralt.
+Main.Report.MailCheck.Result.VrfyFail            =  Resultatet av VRFY var negativt.
+Main.Report.MailCheck.Result.SenderAccepted      =  Avsändaradressen <{0}> accepterades.
+Main.Report.MailCheck.Result.RecipientAccepted   =  Mottagaradressen <{0}> accepterades.
+Main.Report.MailCheck.Result.HostNotAccepted     =  Värden accepterades inte.
+Main.Report.MailCheck.Result.SenderNotAccepted   =  Avsändaradressen <{0}> accepterades inte.
+Main.Report.MailCheck.Result.RecipientNotAccepted=  Mottagaradressen <{0}> accepterades inte.
+
+Main.Report.MailHead.NotAvailable=(ej tillgänglig)
+
+Main.Report.MailHead.Header.Title=Sidhuvud:
+Main.Report.MailHead.Header.Formatted=formaterad
+Main.Report.MailHead.Header.Decoded=dekrypterad
+
+Main.Report.MailHead.RcvOverview.Title=Översikt:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. Post (rad {1}):
+Main.Report.MailHead.RcvOverview.SentFrom =      Sänt från:     {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      Mottaget från: {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      Mottaget: {END}
+Main.Report.MailHead.RcvOverview.Duration =      Varaktighet:      {END}
+
+Main.Report.MailHead.RcvDetail.Title=Mottagningsdetaljer:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. Post (rad {1}):
+Main.Report.MailHead.RcvDetail.Original        =      Originalrad: {END}
+Main.Report.MailHead.RcvDetail.Sender          =      Avsändare:        {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      Avsändare (IP):   {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      Avsändare (från): {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      Avsändare (HELO): {END}
+Main.Report.MailHead.RcvDetail.Received        =      Mottaget från: {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      Mottaget för:  {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      Mottaget: {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      Varaktighet:      {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(ej tillgänglig eller ogiltig)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      Analys:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        Den här posten lades till av mottagarens e-postserver.
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        Avsändarens IP-adress är inte någon publik IP-adress.
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        Avsändare och/eller mottagare verkar vara från ett icke publikt nätverk.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        Avsändarens IP-adress är möjligen förfalskad.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =          IP-adressen i "från" ({0}) matchar inte klient-IP ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        Avsändarens värdnamn är möjligen förfalskat.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=          Värdnamnet i "från" ({0}) matchar inte klientvärdnamnet ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        Värdnamnen matchar.
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        Domännamnen matchar.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        Värdnamnen matchar inte.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =          Mottagarvärd i den här posten ({0}) borde vara\w          avsändarvärd i nästa post ({1}).\w          Detta beror ofta på en IP-adressändring, såsom ett nätverks adressöversättning (NAT) från en privat IP-adress till en publik.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        Det finns inga värdnamn tillgängliga för jämförelse.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        Domännamnen matchar inte.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=          Mottagardomän i den här posten ({0}) borde vara\w          avsändarvärd i nästa post ({1}).\w          Detta beror ofta på en IP-adressändring, såsom ett nätverks adressöversättning (NAT) från en privat IP-adress till en publik.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        Det finns inga värd- eller domännamn tillgängliga för jämförelse
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        Leveranstiden avviker mer än 10 minuter eller ett datum är felaktigt.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        Leveranstiden avviker mer än 10 minuter eller ett datum är felaktigt.
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        Det finns inga fel eller analys är inte möjlig.
+
+Main.Report.HttpHead.RequestURL=Begärd URL:
+Main.Report.HttpHead.Start=Sänd webbadressen med metod "{0}" till värden "{1}" (port {2}):
+Main.Report.HttpHead.OriginalHeader=Originalsidhuvud:
+Main.Report.HttpHead.Page=Sida:
+
+Main.Report.HttpHead.HeadInfo.Title=Sidhuvudinformation:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  Svarstid: {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  Svarsadress:  {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  Statuskod:   {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  Cache-kontroll: {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  Från cache:    {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  Senast ändrad: {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  Servertid:   {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  Webbserver:     {END}
+Main.Report.HttpHead.HeadInfo.Software    =  Mjukvara:      {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0} ms
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=Fel: {0}.
+Main.Report.HttpHead.ErrorCode=Webbservern svarar med felkod {0} ({1}).
+Main.Report.HttpHead.NoConnect=Webbservern kan inte nås.
+Main.Report.HttpHead.SendError=Ett fel uppstod då data sändes.
+
+Main.Report.Local.LocalHost.Title=Lokal värd:
+Main.Report.Local.LocalHost.Hostname =  Värdnamn:   {END}
+Main.Report.Local.LocalHost.IPAddress=  IP-adress: {END}
+
+Main.Report.Local.OwnIPs.Title=Egna IP-adresser:
+Main.Report.Local.OwnIPs.Loopback=(loopback-adress)
+
+Main.Report.Local.External.Title=Extern värdinformation:
+Main.Report.Local.External.IPAddress=  IP-adress: {END}
+Main.Report.Local.External.Hostname =  Värdnamn:   {END}
+Main.Report.Local.External.NotAvailable=(Ej tillgänglig)
+
+Main.Report.Local.DNS.Title=DNS-server:
+Main.Report.Local.DNS.Number=  {0}. DNS-server:
+
+Main.Report.Local.Net.Title=Nätverksgränssnitt:
+Main.Report.Local.Net.Intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    Beskrivning: {END}
+Main.Report.Local.Net.MacAddress =    MAC-adress: {END}
+Main.Report.Local.Net.DnsSuffix  =    DNS-suffix:  {END}
+Main.Report.Local.Net.IPAddress  =    IP-adress:  {END}
+Main.Report.Local.Net.DhcpServer =    DHCP-server: {END}
+Main.Report.Local.Net.DnsServer  =    DNS-server:  {END}
+Main.Report.Local.Net.Gateway    =    Gateway:     {END}
+Main.Report.Local.Net.Anycast    =    Anycast:     {END}
+Main.Report.Local.Net.Multicast  =    Multicast:   {END}
+Main.Report.Local.Net.WinsServer =    WINS-server: {END}
+Main.Report.Local.Net.Stat.Title             =    Statistik:
+Main.Report.Local.Net.Stat.BytesReceived     =      Mottaget:    {END}
+Main.Report.Local.Net.Stat.BytesSent         =      Sänt:        {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      Inkommande paket:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        Kasserade: {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        Fel:    {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        Okänd:   {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =      Utgående paket:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        Kasserade: {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        Fel:    {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      Unicast-paket:
+Main.Report.Local.Net.Stat.UniPackReceived   =        Mottaget:  {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        Sänt:      {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      Icke unicast-paket:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        Mottaget:  {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        Sänt:      {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0} byte
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=Inställningar
+
+Settings.tnGeneral=Allmänt
+Settings.tnView=Visa / Utdata
+Settings.tnWebRequests=Webbförfrågning
+Settings.tnTools=Verktyg
+
+Settings.lblMS=ms
+Settings.lblBytes=byte
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.cmbListCopyFormat.Semicolon=Semikolonseparerad
+Settings.cmbListCopyFormat.Comma=Kommaseparerad
+Settings.cmbListCopyFormat.Tabulator=Tabulatorseparerad
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpGeneralGeneral=Allmänt
+Settings.lblGeneralMaxRecentItems=Max antal tidigare objekt i rullgardinslistor:
+Settings.grpGeneralDns=DNS-inställningar
+Settings.lblGeneralDnsServer=DNS-server:
+Settings.lblGeneralDnsTimeout=Timeout:
+
+Settings.grpViewGeneral=Allmänt
+Settings.chkViewShowTitleBar=Visa namnfält
+Settings.grpViewRtf=Text utdata
+Settings.chkViewRtfWordWrap=Radbrytning för långa rader
+Settings.lblViewRtfFontDefault=Standardteckensnitt:
+Settings.txtViewRtfFontDefault={0}, {1} pt
+Settings.btnViewRtfFontDefaultSel=Välj teckensnitt
+
+Settings.rbWebRequestsProxySystem=Använd systemets proxyinställningar (Internet Explorer)
+Settings.rbWebrequestsProxyUserDefined=Anpassade proxyinställningar:
+Settings.grpWebRequestsProxy=Proxy-server
+Settings.lblWebRequestsProxyServer=Server:
+Settings.chkWebRequestsProxyBypassOnLocal=Använd inte proxyserver för lokala adresser
+Settings.lblWebRequestsProxyUsername=Användarnamn:
+Settings.lblWebRequestsProxyPassword=Lösenord
+Settings.grpWebRequestsMisc=Diverse
+Settings.lblWebRequestsUserAgent=Användaragent:
+Settings.lblWebRequestsReferer=Referens:
+
+Settings.lblToolsNothing=Denna post innehåller inga alternativ.\wVälj en underrubrik.
+
+Settings.grpPingGeneral=Allmänt
+Settings.lblPingMaxTTL=Max TTL:
+
+Settings.grpMultiPingGeneral=Allmänt
+Settings.lblMultiPingMaxTTL=Max TTL:
+Settings.chkMultiPingShowGridlines=Visa stödlinjer
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiPingListCopy=Kopiera listposter
+Settings.lblMultiPingListCopyFormat=Listformat:
+Settings.chkMultiPingListCopyHeader=Lägg till kolumnrubriker
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTraceGeneral=Allmänt
+Settings.lblTraceBytes=Buffertstorlek:
+
+Settings.grpWhoisGeneral=Allmänt
+Settings.lblWhoisTimeout=Timeout:
+Settings.grpWhoisDomain=Domänförfrågningar
+Settings.lblWhoisMaxRedirectDom=Maximalt antal omdirigeringar:
+Settings.grpWhoisNetwork=Nätverksförfrågningar
+Settings.lblWhoisMaxRedirectDomainNet=Maximalt antal omdirigeringar:
+Settings.lblWhoisNetServer=Första Whois-server:
+Settings.chkWhoisNetServerFromDB=Använd Whois-server från databasen, om tillgänglig
+
+Settings.grpMailCheckGeneral=Allmänt
+Settings.lblMailCheckTimeout=Timeout:
+Settings.lblMailCheckHeloHost=Värdnamn för EHLO/HELO:
+Settings.chkMailCheckHeloHostGetExternal=Ta emot extern värdinformation
+Settings.lblMailCheckSenderDefault=Standardavsändaradress:
+
+Settings.grpHttpHeadGeneral=Allmänt
+Settings.lblHttpHeadTimeout=Timeout:
+Settings.chkHttpHeadUseProxy=Använd proxy-server
+Settings.chkHttpHeadShowOrigHeader=Visa originalsidhuvud
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Settings.grpPageRankGeneral=Allmänt
+#Settings.lblPageRankTimeout=Timeout:
+#Settings.chkPageRankUseProxy=Använd proxy-server
+#Settings.grpMultiRankGeneral=Allmänt
+#Settings.lblMultiRankTimeout=Timeout:
+#Settings.chkMultiRankUseProxy=Använd proxy-server
+#Settings.chkMultiRankShowGridlines=Visa stödlinjer
+#Settings.grpMultiRankListCopy=Kopiera listposter
+#Settings.lblMultiRankListCopyFormat=Listformat:
+#Settings.chkMultiRankListCopyHeader=Lägg till kolumnrubriker
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTimeGeneral=Allmänt
+Settings.lblTimeTimeout=Timeout:
+Settings.grpTimeServers=Tidsservrar
+Settings.lblTimeServers=Använd följande tidsservrar
+Settings.lblTimeServersNote=(en server per rad)
+
+Settings.grpListInfoGeneral=Allmänt
+Settings.chkListInfoShowGridlines=Visa stödlinjer
+
+Settings.grpLocalExternalHostInfo=Extern värdinformation
+Settings.lblLocalTimeout=Timeout:
+Settings.chkLocalUseProxy=Använd proxy-server
+Settings.lblLocalExternalHostInfo=Ta emot extern värdinformation från:
+
+

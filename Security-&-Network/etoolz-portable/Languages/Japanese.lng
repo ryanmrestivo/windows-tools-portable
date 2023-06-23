@@ -1,0 +1,720 @@
+﻿# ############################
+# Language file for eToolz 4.5
+# ############################
+
+Language.Translator.Name=INOUE Naoto
+Language.Translator.Website=http://multi.nadenade.com/leafy/
+Language.Translator.EMail=
+
+# >>> REMOVED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Language.FlagImageFile=Japanese.gif
+# <<< REMOVED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+#Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\Japanese.chm
+
+General.Font.Name=Yu Gothic UI
+General.Font.Size=9
+
+General.MsgLanguageChangeTitle=言語を変更
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=いくつかのテキストはアプリケーションを再起動するまで日本語で表示されません。
+
+# >>> CHANGED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# The string IDs ("General.Msg...") have been changed!
+General.Msg.Title.NoDefaultMailer=メールプログラムが見つかりません
+General.Msg.Text.NoDefaultMailer=既定のメールプログラムが見つかりませんでした。
+General.Msg.Title.NoDefaultBrowser=Webブラウザが見つかりません
+General.Msg.Text.NoDefaultBrowser=既定のWebブラウザが見つかりませんでした。
+General.Msg.Title.NoHelp=ヘルプは利用できません
+General.Msg.Text.NoHelp=ヘルプファイル"{0}"を開けませんでした。
+# <<< CHANGED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+General.Button.Ok=OK
+General.Button.Start=スタート
+General.Button.Cancel=キャンセル
+General.Button.Close=閉じる
+General.Button.Help=ヘルプ
+
+General.FileFilter.All=すべてのファイル (*.*)
+General.FileFilter.RTF=リッチテキストドキュメント (*.rtf)
+General.FileFilter.TXT=テキスト文書 (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=Ping
+General.Tool.MultiPing=MultiPing
+General.Tool.Trace=Trace
+General.Tool.Whois=Whois
+General.Tool.MailCheck=Mail-Check
+General.Tool.MailHead=Header Analyzer
+General.Tool.HttpHead=HTTP-Header
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.PageRank=PageRank
+#General.Tool.MultiRank=MultiRank
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.Time=Time
+General.Tool.ListInfo=Lists
+General.Tool.Local=Local Host
+
+General.Tool.MenuItem.Dns=&DNS
+General.Tool.MenuItem.Ping=&Ping
+# >>> CHANGED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MultiPing=&MultiPing
+# <<< CHANGED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.Trace=T&race
+General.Tool.MenuItem.Whois=&Whois
+General.Tool.MenuItem.MailCheck=Mail-&Check
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.MenuItem.PageRank=Page&Rank
+#General.Tool.MenuItem.MultiRank=M&ultiRank
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MailHead=Header &Analyzer
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.HttpHead=&HTTP-Header
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Time=&Time
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.ListInfo=&Lists
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Local=L&ocal Host
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+General.Bool.Yes=はい
+General.Bool.No=いいえ
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title={0}初期設定
+
+Config.grpUserData=ユーザーデータ
+Config.lblUserDataDesc="ユーザーデータ"には、アプリケーションの設定とユーザーインターフェイスのオプションが含まれます。これらの設定は、ユーザーごとに分けることができます。
+Config.rbUserDataAppData=現在のユーザーのアプリケーションデータフォルダ (推奨)
+Config.rbUserDataProgram={0}の実行ファイルがあるフォルダ (例:外部のUSBデバイス)
+Config.rbUserDataUserDef=ユーザー定義のフォルダ:
+Config.btnUserDataUserDef=ユーザー定義のフォルダを選択
+
+Config.DlgFolderUserDefText=ユーザーデータのフォルダを選択してください。
+
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title={0}について
+
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+About.Description={0}
+About.Version=バージョン {0}
+
+# >>> REMOVED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.Link.Text.EMail=メール
+#About.Link.Title.EMail=メールを送る
+#About.Link.Text.Website=ウェブサイト
+#About.Link.Title.Website=ウェブサイトを開く
+# <<< REMOVED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+About.Credits=クレジット
+About.Credits.Translation=翻訳
+About.Credits.Icons=アイコン
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.lblDesc=インターネットのための主要なツール
+#About.lblVersion=バージョン {0}
+#About.lblRights=All rights reserved.
+#About.grpAuthor=作者
+#About.lblWebsite=ウェブサイト:
+#About.lblEMail=メール:
+#About.tabLang=翻訳
+#About.lblTranslator=翻訳者:
+#About.tabReg=登録情報
+#About.txtRegDefault=ロイヤリティフリー版\w\w(有効なライセンスファイルなし)
+#About.tabCredits=クレジット
+#About.rtfCredits.Icons=アイコン
+#About.rtfCredits.Icons.FatCow=FatCow Web Hosting ({0})
+# <<< REMOVED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=言語
+
+Main.mnuFile=ファイル(&F)
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.mnuFilePrintPreview=印刷プレビュー(&V)...
+Main.mnuFilePrint=印刷(&P)...
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuFileExit=終了(&X)
+Main.mnuTools=ツール(&T)
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.mnuToolsNext=次のツール(&N)
+Main.mnuToolsPrevious=前のツール(&V)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuExtras=オプション(&X)
+# >>> CHANGED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# "Main.mnuToolsFlushDnsCache" changed to "Main.mnuExtrasFlushDnsCache"
+Main.mnuExtrasFlushDnsCache=WindowsのDNSキャッシュをクリア(&D)
+# <<< CHANGED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuExtrasSettings=設定(&S)...
+Main.mnuHelp=ヘルプ(&H)
+Main.mnuHelpHelp=ヘルプ(&H)
+Main.mnuHelpWebsite=製品のウェブサイト(&P)
+Main.mnuHelpEMail=作者へメールを送る(&M)
+Main.mnuHelpSupport={0}サポート(&S)
+Main.mnuHelpAbout={0}について(&A)
+
+# >>> ADDED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputUseSel=選択部分を使用する(&U)
+# <<< ADDED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.0.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputCut=切り取り(&U)
+Main.pmnuInputCopy=コピー(&C)
+Main.pmnuInputPaste=貼り付け(&P)
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputPasteFromFile=ファイルから貼り付け(&F)...
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuInputSelectAll=すべて選択(&A)
+# <<< ADDED 4.0.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.pmnuToolbarTitleShowHide.Show="{0}"の文字列を表示する(&S)
+Main.pmnuToolbarTitleShowHide.Hide="{0}"の文字列を隠す(&H)
+Main.pmnuToolbarMultiline=ツールバーを複数行表示にする(&M)
+
+Main.pmnuRtfUseSel=選択部分を使用する(&U)
+Main.pmnuRtfCopy=コピー(&C)
+Main.pmnuRtfSelectAll=すべて選択(&A)
+Main.pmnuRtfSaveAs=保存(&S)...
+Main.pmnuRtfSaveSelAs=選択部分を保存(&V)...
+
+Main.lblDnsQuery=ドメイン名、ホスト名またはIPアドレス:
+Main.chkDnsHostInfo=ホスト情報 (A, PTR)
+Main.chkDnsDomainInfo=ドメイン情報 (NS, MX, TXT, SOA)
+Main.chkDnsResolve=ホスト名を解決する
+Main.chkDnsVerify=ホスト名/IPアドレスを照合する
+Main.chkDnsQueryDirect=直接クエリ
+
+Main.lblPingQuery=ホスト名またはIPアドレス:
+Main.lblPingCount=回数:
+Main.lblPingBytes=バイト:
+Main.lblPingTimeout=タイムアウト:
+Main.lblPingPause=間隔:
+
+Main.lblMultiPingQuery=IPアドレス範囲:
+Main.lblMultiPingBytes=バイト:
+Main.lblMultiPingTimeout=タイムアウト:
+Main.chkMultiPingResolve=ホスト名を解決する
+
+Main.colMultiPingIP=IPアドレス
+Main.colMultiPingStatus=状態
+Main.colMultiPingResponseIP=応答元
+Main.colMultiPingResponseHost=ホスト名
+Main.colMultiPingTime=時間 (ms)
+
+Main.lvMultiPing.Status.Timeout=タイムアウト
+# >>> CHANGED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Placeholder "{1}" must be "{0}"
+Main.lvMultiPing.Status.Incomplete=データ不完全 ({0}バイト)
+# <<< CHANGED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.lvMultiPing.Status.Different=データ不一致
+Main.lvMultiPing.Status.Correct=成功
+Main.lvMultiPing.Status.Aborted=中止
+Main.lvMultiPing.Status.SndRcvError=送信または受信エラー
+Main.lvMultiPing.Status.Error=エラー: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=オリジナルのIPアドレスを使用する(&U)
+Main.pmnuMultiPingOrigIPCopy=オリジナルのIPアドレスをコピー(&O)
+# >>> CHANGED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingIPUseSel=応答IPアドレスを使用する(&S)
+Main.pmnuMultiPingIPCopy=応答IPアドレスをコピー(&R)
+# <<< CHANGED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuMultiPingHostnameUseSel=ホスト名を使用する(&E)
+Main.pmnuMultiPingHostnameCopy=ホスト名をコピー(&H)
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingCopy=リストエントリーをコピー(&C)
+Main.pmnuMultiPingSelectAll=すべて選択(&A)
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lblTraceQuery=ホスト名またはIPアドレス:
+Main.lblTraceMaxHops=ホップ:
+Main.lblTraceTimeout=タイムアウト:
+Main.lblTraceMaxRetries=リトライ:
+Main.chkTraceResolve=ホスト名を解決する
+
+Main.lblWhoisQuery=ホスト名またはIPアドレス:
+Main.lblWhoisServer=Whoisサーバ:
+Main.chkWhoisVerify=ホスト名/IPアドレスを照合する
+Main.chkWhoisRedirect=自動でリダイレクトする
+Main.chkWhoisFormat=応答を整形する
+Main.chkWhoisQueryDirect=直接クエリ
+Main.chkWhoisQueryDomain=ドメインクエリ
+Main.chkWhoisQueryNetwork=ネットワーククエリ
+Main.lblWhoisEncoding=文字コード:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=メールアドレス:
+Main.lblMailCheckSender=送信者メールアドレス:
+Main.lblMailCheckServer=MXサーバ:
+Main.chkMailCheckSendVRFY="VRFY"コマンドを送信する
+
+Main.lblMailHeadQuery=ヘッダ行:
+Main.chkMailHeadResolve=ホスト名を解決する
+
+Main.lblHttpHeadQuery=URL:
+Main.lblHttpHeadCommand=メソッド:
+Main.chkHttpHeadFullPage=ページ全体を表示する
+Main.chkHttpHeadRedirect=自動でリダイレクトする
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Main.lblPageRankQuery=URL:
+#Main.lblPageRankValueTitle=Googleページランク:
+#Main.lblPageRankValue.ConnectionError=ページランクを取得できません。
+#Main.lblPageRankValue.NoResult=このURLのページランクはありません。
+#Main.lblPageRankValue.InvalidResult=結果が処理できません。
+#Main.lblMultiRankQuery=URL:
+#Main.lblMultiRankQueryNote=(1行に1つのURL)
+#Main.chkMultiRankResolve=IPアドレスを解決する
+#Main.colMultiRankURL=URL
+#Main.colMultiRankStatus=ステータス
+#Main.colMultiRankPageRank=ページランク
+#Main.colMultiRankIP=IPアドレス
+#Main.lvMultiRank.Status.ConnectionError=接続エラー
+#Main.lvMultiRank.Status.Aborted=中止
+#Main.lvMultiRank.Status.Timeout=タイムアウト
+#Main.lvMultiRank.Status.NoResult=利用不可
+#Main.lvMultiRank.Status.InvalidResult=不正な結果
+#Main.lvMultiRank.Status.Success=成功
+#Main.pmnuMultiRankUseSel=選択部分を使用する(&U)
+#Main.pmnuMultiRankCopy=コピー(&C)
+#Main.pmnuMultiRankUrlUseSel=URLを使用する(&U)
+#Main.pmnuMultiRankUrlCopy=URLをコピー(&C)
+#Main.pmnuMultiRankIPUseSel=IPアドレスを使用する(&S)
+#Main.pmnuMultiRankIPCopy=IPアドレスをコピー(&O)
+#Main.pmnuMultiRankCopy=リストエントリーをコピー(&C)
+#Main.pmnuMultiRankSelectAll=すべて選択(&A)
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.btnTimeSetTime=システム時刻を同期
+Main.lblTimeServer=NTPサーバ:
+Main.lblTimeSystemTitle=システム時刻:
+Main.lblTimeServerTitle=サーバからの時刻:
+Main.lblTimeServerTitle.Server=サーバ"{0}"からの時刻:
+Main.lblTimeDifferenceTitle=誤差:
+Main.lblTimeServerUpdateTitle=最後にサーバと同期した時刻:
+Main.lblTimeServerUpdateTitle.Server=最後にサーバ"{0}"と同期した時刻:
+Main.lblTimeServerUpdate={0} ({1}前)
+Main.lblTimeServerLocal.SysTimeNotSet=システム時刻が設定できません。
+Main.lblTimeServerLocal.ServerNotReachable=時刻サーバ"{0}"に接続できません。
+Main.lblTimeServerLocal.ResponseError=時刻サーバ"{0}"の応答を処理できません。
+
+Main.lblListInfoQuery=検索語:
+Main.lblListInfoSource=リスト:
+Main.chkListInfoCaseSensitive=大文字と小文字を区別する
+Main.chkListInfoWholeColumns=カラム全体を検索する
+
+Main.chkLocalResolve=ホスト名を解決する
+Main.chkLocalExternal=外部のホスト情報を受信する
+Main.chkLocalAdapterInfo=ネットワークアダプタを表示する
+Main.chkLocalIPv4Stat=IPv4統計情報を表示する
+
+Main.MsgFlushDnsCache.Title=WindowsのDNSキャッシュクリア
+Main.MsgFlushDnsCache.SrvNotRunning=システムサービス"DNS Client"が起動していません。\w\wWindowsのDNSキャッシュをクリアするためには、このサービスが起動している必要があります。
+Main.MsgFlushDnsCache.ErrorMessage=WindowsのDNSキャッシュをクリアできません。\w\wエラー:\w{0}
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.MsgFlushDnsCache.Output=コマンド"ipconfig /flushdns"の結果:\w\w{0}
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.DlgSave.Title=保存
+Main.DlgSaveSelection.Title=選択部分を保存
+Main.MsgSaveSelection.Error=ファイル"{0}"を保存できません。
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.DlgPasteFromFile.Title=ファイルから貼り付け
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.MsgInvalidURL.Title=不正なURL
+Main.MsgInvalidURL.Text=URL"{0}"は不正な形式です。
+
+Main.MsgInvalidMailAddress.Title=不正なメールアドレス
+Main.MsgInvalidMailAddress.Text=メールアドレス"{0}"は不正な形式です。
+
+Main.MsgInvalidIPRange.Title=不正なIPアドレス範囲
+Main.MsgInvalidIPRange.Text=入力されたIPアドレス範囲は無効な形式です。\w\wIPアドレスの最後のバイトのみ異なることができます。\w\w有効な形式:\w    x.x.x.Y - x.x.x.Z (例:127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (例:127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=調査はユーザーにより中止されました。
+Main.Report.QueryFinished=調査が完了しました。
+
+Main.Report.HostInfo.Title="{0}"のホスト情報:
+Main.Report.HostInfo.NotAvailable=(利用できません)
+
+Main.Report.HostInfo.IPAddress =  IPアドレス:   {END}
+Main.Report.HostInfo.Hostname  =  ホスト名:     {END}
+Main.Report.HostInfo.Domainname=  ドメイン名:   {END}
+Main.Report.HostInfo.TLD       =  トップレベル: {END}
+Main.Report.HostInfo.CountryIP =  国名 (IP):    {END}
+Main.Report.HostInfo.IPRange   =  IP範囲:       {END}
+Main.Report.HostInfo.RIRData   =  RIRデータ:    {END}
+Main.Report.HostInfo.RIRData.ValueDate=({0}から割り当て)
+
+Main.Report.DNS.IPAddress       =IPアドレス (A):
+Main.Report.DNS.IPAddress.Title =  {0}. IPアドレス:
+Main.Report.DNS.Hostname        =逆引きホスト名 (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. 逆引きホスト名:
+Main.Report.DNS.Nameserver      =ネームサーバ (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. ネームサーバ:
+Main.Report.DNS.MXServer        =メール配送サーバ (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. メール配送サーバ:
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.Report.DNS.MXServer.Pref   =, プリファレンス値={0}
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.Report.DNS.Text            =テキスト情報 (TXT):
+Main.Report.DNS.Text.Title      =  {0}. テキスト情報:
+
+Main.Report.DNS.SOA=オーソリティ情報 (SOA):
+Main.Report.DNS.SOA.Server.Title =  サーバ:             {END}
+Main.Report.DNS.SOA.RName.Title  =  連絡先:             {END}
+Main.Report.DNS.SOA.Serial.Title =  シリアル番号:       {END}
+Main.Report.DNS.SOA.Expire.Title =  レコード有効時間:   {END}
+Main.Report.DNS.SOA.Refresh.Title=  更新間隔:           {END}
+Main.Report.DNS.SOA.Retry.Title  =  再試行時間:         {END}
+Main.Report.DNS.SOA.MinTTL.Title =  キャッシュ有効時間: {END}
+
+Main.Report.DNS.SOA.Expire.Value={0}秒 ({1})
+Main.Report.DNS.SOA.Refresh.Value={0}秒 ({1})
+Main.Report.DNS.SOA.Retry.Value={0}秒 ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0}秒 ({1})
+
+Main.Report.Ping.NoIPAvailable=IPアドレスが見つかりません。
+Main.Report.Ping.Start="{0}"へ{2}バイトのpingを{1}回送信:
+Main.Report.Ping.Reply=  {0}. {1}からの応答:
+Main.Report.Ping.Pause=      一時停止 ({0}ミリ秒)
+Main.Report.Ping.Reply.Error=エラー: {0}
+Main.Report.Ping.Reply.SndRcvError=送信または受信中にエラーが発生しました。
+Main.Report.Ping.Reply.Timeout=タイムアウトしました。
+Main.Report.Ping.Reply.Aborted=ユーザーにより中止されました。
+Main.Report.Ping.Reply.Incomplete={0}ミリ秒, 不完全データ ({1}バイトのみ受信)
+Main.Report.Ping.Reply.Different={0}ミリ秒, 不一致データ
+Main.Report.Ping.Reply.Correct={0}ミリ秒, 正常データ
+Main.Report.Ping.Result={0}回のping送信 (正常:{1}回, 異常:{2}回, 失敗:{3}回)
+Main.Report.Ping.ResultTime=最速応答:{0}ミリ秒, 最遅応答:{1}ミリ秒, 平均:{2}ミリ秒
+
+Main.Report.Trace.Start=最大{1}ホップで"{0}"までの経路調査:
+Main.Report.Trace.SndRcvError=送信または受信中にエラーが発生しました。
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0}ミリ秒  {1}
+Main.Report.Trace.Reply.TimeIPHost={0}ミリ秒  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     リクエストがタイムアウトしました。
+Main.Report.Trace.HostReached=対象ホスト"{0}"に到達しました。
+Main.Report.Trace.MaxHops=最大ホップ回数に到達しました。
+
+Main.Report.Whois.DirectQuery.Title=直接クエリ
+Main.Report.Whois.DirectQuery.Start="{0}"の"{1}"へのクエリ:
+Main.Report.Whois.DirectQuery.Redir="{0}"の"{1}"へリダイレクトされたクエリ:
+
+Main.Report.Whois.DomainQuery.Title=ドメインクエリ
+Main.Report.Whois.DomainQuery.Start="{0}"の"{1}"へのドメインクエリ:
+Main.Report.Whois.DomainQuery.Redir="{0}"の"{1}"へリダイレクトされたドメインクエリ:
+Main.Report.Whois.DomainQuery.NoDomainName=ドメイン名がありません。
+Main.Report.Whois.DomainQuery.NoTLD=トップレベルドメインがありません。
+Main.Report.Whois.DomainQuery.NoTLDInfo=トップレベルドメイン"{0}"の情報がありません。
+
+Main.Report.Whois.NetworkQuery.Title=ネットワーククエリ
+Main.Report.Whois.NetworkQuery.Start="{0}"の"{1}"へのネットワーククエリ:
+Main.Report.Whois.NetworkQuery.Redir="{0}"の"{1}"へリダイレクトされたネットワーククエリ:
+Main.Report.Whois.NetzworkQuery.NoIPAddress=IPアドレスがありません。
+
+Main.Report.Whois.ServerNotReachable=Whoisサーバ"{0}"に到達できません。
+Main.Report.Whois.Redirection="{0}"の応答はWhoisサーバ"{1}"を指しています。
+Main.Report.Whois.NoWhoisServer=一致するWhoisサーバが見つかりませんでした。
+Main.Report.Whois.ServerNotInDB="{0}"のWhoisサーバがデータベースにありません。
+Main.Report.Whois.WhoisLink.Title=Whoisリンク:
+
+Main.Report.MailCheck.MailInfo.Title=メール情報:
+Main.Report.MailCheck.MailInfo.MailAddress=  メールアドレス: {END}
+Main.Report.MailCheck.MailInfo.DomainName =  ドメイン名:     {END}
+
+Main.Report.MailCheck.MXServer.Title="{0}"のメール配送サーバ:
+Main.Report.MailCheck.MXServer.Number=  {0}. MXサーバ:
+Main.Report.MailCheck.MXServer.ServerPref={0}, 設定={1}
+
+Main.Report.MailCheck.NoDomain=ドメイン"{0}"の利用可能なメール配送サーバがありません。
+Main.Report.MailCheck.Start=MXサーバ"{1}" (ポート{2}) でメールアドレス"{0}"を確認:
+Main.Report.MailCheck.NoConnect=MXサーバ"{0}"への接続を確立できません。
+Main.Report.MailCheck.Connected=MXサーバ"{0}"へポート{1}で接続しました。
+Main.Report.MailCheck.Timeout=MXサーバが応答しません (タイムアウト)。
+Main.Report.MailCheck.SendError=コマンドが送信できません。
+Main.Report.MailCheck.Disconnect=MXサーバ"{0}"への接続が切断しました。
+
+Main.Report.MailCheck.Result.Title=結果:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  VRFYの結果はpositiveまたはneutralでした。
+Main.Report.MailCheck.Result.VrfyFail            =  VRFYの結果はnegativeでした。
+Main.Report.MailCheck.Result.SenderAccepted      =  送信者メールアドレス<{0}>は受け付けられました。
+Main.Report.MailCheck.Result.RecipientAccepted   =  受信者メールアドレス<{0}>は受け付けられました。
+Main.Report.MailCheck.Result.HostNotAccepted     =  ホストは受け付けられませんでした。
+Main.Report.MailCheck.Result.SenderNotAccepted   =  送信者メールアドレス<{0}>は受け付けられませんでした。
+Main.Report.MailCheck.Result.RecipientNotAccepted=  受信者メールアドレス<{0}>は受け付けられませんでした。
+
+Main.Report.MailHead.NotAvailable=(利用できません)
+
+Main.Report.MailHead.Header.Title=ヘッダ:
+Main.Report.MailHead.Header.Formatted=整形済み
+Main.Report.MailHead.Header.Decoded=デコード済み
+
+Main.Report.MailHead.RcvOverview.Title=Receivedフィールド概要:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. エントリー ({1}行目):
+Main.Report.MailHead.RcvOverview.SentFrom =      送信元:   {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      受信先:   {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      受信日時: {END}
+Main.Report.MailHead.RcvOverview.Duration =      間隔:     {END}
+
+Main.Report.MailHead.RcvDetail.Title=Receivedフィールド詳細:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. エントリー ({1}行目):
+Main.Report.MailHead.RcvDetail.Original        =      オリジナル行:       {END}
+Main.Report.MailHead.RcvDetail.Sender          =      送信ホスト:         {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      送信ホスト (IP):    {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      送信ホスト (from):  {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      送信ホスト (HELO):  {END}
+Main.Report.MailHead.RcvDetail.Received        =      受信先:             {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      宛先メールアドレス: {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      受信日時:           {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      間隔:               {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(利用できないか不正な形式)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      解析:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        このエントリーは受信メールサーバが付加しました。
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        送信メールサーバのIPアドレスはプライベートIPアドレスです。
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        送信メールサーバ (かつ/または) 受信メールサーバはプライベートネットワークにあるようです。
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        送信メールサーバのIPアドレスは偽装されている可能性があります。
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =          "from" ({0}) のIPアドレスはクライアントのIPアドレス ({1}) と一致しません。
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        送信メールサーバのホスト名は偽装されている可能性があります。
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=          "from" ({0}) のホスト名スはクライアントのホスト名 ({1}) と一致しません。
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        ホスト名は一致しています。
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        ドメイン名は一致しています。
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        ホスト名が一致していません。
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =          このエントリーの受信メールサーバのホスト名 ({0}) は\w          次のエントリーの送信メールサーバのホスト名 ({1}) であるべきです。\w          これは多くの場合プライベートIPアドレスからグローバルIPアドレスへの\w          ネットワークアドレス変換 (NAT) のようなIPアドレスの変換によるものです。
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        比較するホスト名がありません。
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        ドメイン名が一致しません。
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=          このエントリーの受信メールサーバのドメイン名 ({0}) は\w          次のエントリーの送信メールサーバのドメイン名 ({1}) であるべきです。\w          これは多くの場合プライベートIPアドレスからグローバルIPアドレスへの\w          ネットワークアドレス変換 (NAT) のようなIPアドレスの変換によるものです。
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        比較するホスト名またはドメイン名がありません。
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        配信時刻が10分以上異なっているか、日時が無効です。
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        配信時刻が10分以上異なっているか、日時が無効です。
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        エラーがないか解析ができません。
+
+Main.Report.HttpHead.RequestURL=リクエストURL:
+Main.Report.HttpHead.Start=ホスト"{1}" (ポート{2}) へメソッド"{0}"でURLを送信:
+Main.Report.HttpHead.OriginalHeader=オリジナルのヘッダ:
+Main.Report.HttpHead.Page=ページ:
+
+Main.Report.HttpHead.HeadInfo.Title=ヘッダ情報:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  応答時間:         {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  応答URL:          {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  ステータスコード: {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  キャッシュ制御:   {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  キャッシュから:   {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  最終更新:         {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  サーバ時刻:       {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  ウェブサーバ:     {END}
+Main.Report.HttpHead.HeadInfo.Software    =  ソフトウェア:     {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0}ミリ秒
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=エラー: {0}.
+Main.Report.HttpHead.ErrorCode=ウェブサーバはエラーコード{0} ({1}) で応答しました。
+Main.Report.HttpHead.NoConnect=ウェブサーバに到達できません。
+Main.Report.HttpHead.SendError=データ送信中にエラーが発生しました。
+
+Main.Report.Local.LocalHost.Title=ローカルホスト:
+Main.Report.Local.LocalHost.Hostname =  ホスト名:   {END}
+Main.Report.Local.LocalHost.IPAddress=  IPアドレス: {END}
+
+Main.Report.Local.OwnIPs.Title=自身のIPアドレス:
+Main.Report.Local.OwnIPs.Loopback=(ループバックアドレス)
+
+Main.Report.Local.External.Title=外部ホスト情報:
+Main.Report.Local.External.IPAddress=  IPアドレス: {END}
+Main.Report.Local.External.Hostname =  ホスト名:   {END}
+Main.Report.Local.External.NotAvailable=(利用できません)
+
+Main.Report.Local.DNS.Title=DNSサーバ:
+Main.Report.Local.DNS.Number=  {0}. DNSサーバ:
+
+Main.Report.Local.Net.Title=ネットワークインターフェイス:
+Main.Report.Local.Net.Intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    説明:            {END}
+Main.Report.Local.Net.MacAddress =    MACアドレス:     {END}
+Main.Report.Local.Net.DnsSuffix  =    DNSサフィックス: {END}
+Main.Report.Local.Net.IPAddress  =    IPアドレス:      {END}
+Main.Report.Local.Net.DhcpServer =    DHCPサーバ:      {END}
+Main.Report.Local.Net.DnsServer  =    DNSサーバ:       {END}
+Main.Report.Local.Net.Gateway    =    ゲートウェイ:    {END}
+Main.Report.Local.Net.Anycast    =    エニーキャスト:  {END}
+Main.Report.Local.Net.Multicast  =    マルチキャスト:  {END}
+Main.Report.Local.Net.WinsServer =    WINSサーバ:      {END}
+Main.Report.Local.Net.Stat.Title             =    統計:
+Main.Report.Local.Net.Stat.BytesReceived     =      受信:     {END}
+Main.Report.Local.Net.Stat.BytesSent         =      送信:     {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      受信パケット:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        破棄:   {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        エラー: {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        不明:   {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =      送信パケット:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        破棄:   {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        エラー: {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      ユニキャストパケット:
+Main.Report.Local.Net.Stat.UniPackReceived   =        受信:   {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        送信:   {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      非ユニキャストパケット:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        受信:   {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        送信:   {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0}バイト
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=設定
+
+Settings.tnGeneral=全般
+Settings.tnView=表示/出力
+Settings.tnWebRequests=ウェブリクエスト
+Settings.tnTools=ツール
+
+Settings.lblMS=ミリ秒
+Settings.lblBytes=バイト
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.cmbListCopyFormat.Semicolon=セミコロン区切り
+Settings.cmbListCopyFormat.Comma=カンマ区切り
+Settings.cmbListCopyFormat.Tabulator=タブ区切り
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpGeneralGeneral=全般
+Settings.lblGeneralMaxRecentItems=ドロップダウン欄の最大履歴数:
+Settings.grpGeneralDns=DNS設定
+Settings.lblGeneralDnsServer=DNSサーバ:
+Settings.lblGeneralDnsTimeout=タイムアウト:
+
+Settings.grpViewGeneral=全般
+Settings.chkViewShowTitleBar=タイトルバーを表示する
+Settings.grpViewRtf=テキスト出力
+Settings.chkViewRtfWordWrap=長い行を折り返す
+Settings.lblViewRtfFontDefault=デフォルトフォント:
+Settings.txtViewRtfFontDefault={0}, {1} pt
+Settings.btnViewRtfFontDefaultSel=デフォルトフォントを選択
+
+Settings.rbWebRequestsProxySystem=システムのプロキシ設定を使用する (Internet Explorer)
+Settings.rbWebrequestsProxyUserDefined=手動でプロキシを設定する:
+Settings.grpWebRequestsProxy=プロキシサーバ
+Settings.lblWebRequestsProxyServer=サーバ:
+Settings.chkWebRequestsProxyBypassOnLocal=ローカルアドレスにプロキシサーバを使用しない
+Settings.lblWebRequestsProxyUsername=ユーザー名:
+Settings.lblWebRequestsProxyPassword=パスワード
+Settings.grpWebRequestsMisc=その他
+Settings.lblWebRequestsUserAgent=ユーザーエージェント:
+Settings.lblWebRequestsReferer=リファラ:
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWebRequestsValidateCertificate=安全でないHTTPS接続を許可しない (SSL証明書を検証する)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.lblToolsNothing=このエントリーにオプションはありません。\wサブアイテムを選択してください。
+
+Settings.grpPingGeneral=全般
+Settings.lblPingMaxTTL=最大TTL:
+
+Settings.grpMultiPingGeneral=全般
+Settings.lblMultiPingMaxTTL=最大TTL:
+Settings.chkMultiPingShowGridlines=罫線を表示する
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiPingListCopy=リストエントリーをコピーする
+Settings.lblMultiPingListCopyFormat=リスト形式:
+Settings.chkMultiPingListCopyHeader=カラムヘッダーを追加する
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTraceGeneral=全般
+Settings.lblTraceBytes=バッファサイズ:
+
+Settings.grpWhoisGeneral=全般
+Settings.lblWhoisTimeout=タイムアウト:
+Settings.grpWhoisDomain=ドメインクエリ
+Settings.lblWhoisMaxRedirectDom=リダイレクトの上限値:
+# >>> ADDED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWhoisShowIanaDomainOutput=ドメインに関するIANAからの出力を表示する
+# <<< ADDED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Settings.grpWhoisNetwork=ネットワーククエリ
+Settings.lblWhoisMaxRedirectDomainNet=リダイレクトの上限値:
+Settings.lblWhoisNetServer=最初のWhoisサーバ:
+Settings.chkWhoisNetServerFromDB=利用可能であればデータベースからWhoisサーバを使用する
+# >>> ADDED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWhoisShowIanaNetworkOutput=ネットワークに関するIANAからの出力を表示する
+# <<< ADDED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpMailCheckGeneral=全般
+Settings.lblMailCheckTimeout=タイムアウト:
+Settings.lblMailCheckHeloHost=EHLO/HELOで使用するホスト名:
+Settings.chkMailCheckHeloHostGetExternal=外部ホスト情報を取得する
+Settings.lblMailCheckSenderDefault=デフォルト送信者メールアドレス:
+
+Settings.grpHttpHeadGeneral=全般
+Settings.lblHttpHeadTimeout=タイムアウト:
+Settings.chkHttpHeadUseProxy=プロキシサーバを使用する
+# >>> CHANGED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkHttpHeadShowOrigHeader=サーバから受信したままのオリジナルのヘッダーを表示する
+# <<< CHANGED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkHttpHeadShowCertificate=SSL証明書の情報を表示する
+Settings.chkHttpHeadValidateCertificate=安全でないHTTPS接続を許可しない (SSL証明書を検証する)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Settings.grpPageRankGeneral=全般
+#Settings.lblPageRankTimeout=タイムアウト:
+#Settings.chkPageRankUseProxy=プロキシサーバを使用する
+#Settings.grpMultiRankGeneral=全般
+#Settings.lblMultiRankTimeout=タイムアウト:
+#Settings.chkMultiRankUseProxy=プロキシサーバを使用する
+#Settings.chkMultiRankShowGridlines=罫線を表示する
+#Settings.grpMultiRankListCopy=リストエントリーをコピーする
+#Settings.lblMultiRankListCopyFormat=リスト形式:
+#Settings.chkMultiRankListCopyHeader=カラムヘッダーを追加する
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTimeGeneral=全般
+Settings.lblTimeTimeout=タイムアウト:
+Settings.grpTimeServers=NTPサーバ
+Settings.lblTimeServers=以下のNTPサーバを使用する
+Settings.lblTimeServersNote=(1行に1つのサーバ)
+
+Settings.grpListInfoGeneral=全般
+Settings.chkListInfoShowGridlines=罫線を表示する
+
+Settings.grpLocalExternalHostInfo=外部ホスト情報
+Settings.lblLocalTimeout=タイムアウト:
+Settings.chkLocalUseProxy=プロキシサーバを使用する
+Settings.lblLocalExternalHostInfo=外部ホスト情報を以下から取得する:
+
+

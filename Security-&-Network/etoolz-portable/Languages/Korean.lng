@@ -1,0 +1,718 @@
+﻿# ############################
+# Language file for eToolz 4.5.1
+# ############################
+
+Language.Translator.Name=Jaehyung Lee
+Language.Translator.Website=www.kolanp.com
+Language.Translator.EMail=kolanp@gmail.com
+
+Language.FlagImageFile=Korean.gif
+#Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+# <<< REMOVED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+General.Font.Name=맑은 고딕
+General.Font.Size=9
+
+General.MsgLanguageChangeTitle=언어 변경
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=응용 프로그램을 재시작하기 전 까지 일부 텍스트는 한국어로 표시되지 않습니다.
+
+# >>> CHANGED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# The string IDs ("General.Msg...") have been changed!
+General.Msg.Title.NoDefaultMailer=기본 웹 브라우저를 찾을 수 없습니다.
+General.Msg.Text.NoDefaultMailer=기본 웹 브라우저를 시작할 수 없습니다.
+General.Msg.Title.NoDefaultBrowser=기본 메일 클라이언트를 찾을 수 없습니다.
+General.Msg.Text.NoDefaultBrowser=기본 메일 클라이언트를 시작할 수 없습니다.
+General.Msg.Title.NoHelp=도움말
+General.Msg.Text.NoHelp="{0}" 도움말 파일을 열 수 없습니다.
+# <<< CHANGED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+General.Button.Ok=확인
+General.Button.Start=시작
+General.Button.Cancel=취소
+General.Button.Close=닫기
+General.Button.Help=도움말
+
+General.FileFilter.All=모든 파일 (*.*)
+General.FileFilter.RTF=RTF 파일 (*.rtf)
+General.FileFilter.TXT=텍스트 파일 (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=핑
+General.Tool.MultiPing=다중 핑
+General.Tool.Trace=경로 추적
+General.Tool.Whois=도메인 조회
+General.Tool.MailCheck=메일-검사
+General.Tool.MailHead=헤더 분석기
+General.Tool.HttpHead=HTTP-헤더
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.PageRank=페이지 순위
+#General.Tool.MultiRank=다중 순위
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.Time=시간
+General.Tool.ListInfo=목록
+General.Tool.Local=로컬 호스트
+
+General.Tool.MenuItem.Dns=&DNS
+General.Tool.MenuItem.Ping=&핑(Ping)
+# >>> CHANGED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Ping=&다중 핑(Ping)
+# <<< CHANGED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.Trace=&경로 추적
+General.Tool.MenuItem.Whois=&도메인 조회
+General.Tool.MenuItem.MailCheck=메일-&검사
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.PageRank=페이지 &순위
+General.Tool.MenuItem.MultiRank=&다중 순위
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MailHead=헤더 &분석기
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.HttpHead=&HTTP-헤더
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Time=&시간
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.ListInfo=&목록
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Local=&로컬 호스트
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+General.Bool.Yes=예
+General.Bool.No=아니오
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title={0} 설정
+
+Config.grpUserData=사용자 데이터
+Config.lblUserDataDesc="사용자 데이터"는 응용 프로그램 설정과 사용자 인터페이스 옵션을 포함합니다. 이러한 설정은 각 사용자별로 다를 수 있습니다.
+Config.rbUserDataAppData=현재 사용자의 응용 프로그램 데이터를 위한 폴더 (권장)
+Config.rbUserDataProgram={0}의 응용 프로그램 디렉터리 (예: 외부 USB 장치)
+Config.rbUserDataUserDef=사용자 지정 디렉터리:
+Config.btnUserDataUserDef=사용자 지정 디렉터리 선택
+
+Config.DlgFolderUserDefText=사용자 데이터에 대한 디렉터리를 선택하세요.
+
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title={0} 정보
+
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+About.Description={0}
+About.Version={0} 버전
+
+# >>> REMOVED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.Link.Text.EMail=이메일
+About.Link.Title.EMail=이메일 전송
+About.Link.Text.Website=웹사이트
+About.Link.Title.Website=웹사이트 방문
+# <<< REMOVED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+About.Credits=크레디트
+About.Credits.Translation=번역
+About.Credits.Icons=아이콘
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.lblDesc=인터넷에서 가장 중요한 도구
+#About.lblVersion={0} 버전
+#About.lblRights=모든 권리 소유.
+#About.grpAuthor=제작사
+#About.lblWebsite=웹사이트:
+#About.lblEMail=이메일:
+#About.tabLang=번역
+#About.lblTranslator=번역자:
+#About.tabReg=등록 정보
+#About.txtRegDefault=로열티 프리 버전\w\w(유효한 라이센스 파일 없음)
+#About.tabCredits=크레디트
+#About.rtfCredits.Icons=아이콘
+#About.rtfCredits.Icons.FatCow=FatCow 웹 호스팅 ({0})
+# <<< REMOVED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=한국어
+
+Main.mnuFile=&파일
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.mnuFilePrintPreview=인쇄 미리&보기...
+Main.mnuFilePrint=&인쇄...
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuFileExit=&끝내기
+Main.mnuTools=&도구
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.mnuToolsNext=&다음 도구
+Main.mnuToolsPrevious=&이전 도구
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuExtras=&기타
+# >>> CHANGED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# "Main.mnuToolsFlushDnsCache" changed to "Main.mnuExtrasFlushDnsCache"
+Main.mnuExtrasFlushDnsCache=Windows &DNS 캐시 플러시
+# <<< CHANGED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuExtrasSettings=&설정...
+Main.mnuHelp=&도움말
+Main.mnuHelpHelp=&도움말
+Main.mnuHelpWebsite=&제품 웹사이트 방문
+Main.mnuHelpEMail=저작자에게 &메일 보내기
+Main.mnuHelpSupport={0} &지원
+Main.mnuHelpAbout={0} &정보
+
+# >>> ADDED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputUseSel=&선택 사용
+# <<< ADDED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.0.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputCut=&잘라내기
+Main.pmnuInputCopy=&복사
+Main.pmnuInputPaste=&붙여넣기
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputPasteFromFile=&파일에서 붙여넣기...
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuInputSelectAll=&모두 선택
+# <<< ADDED 4.0.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.pmnuToolbarTitleShowHide.Show=&"{0}"의 제목 표시
+Main.pmnuToolbarTitleShowHide.Hide=&"{0}"의 제목 숨김
+Main.pmnuToolbarMultiline=&다중 라인에 도구 모음 표시
+
+Main.pmnuRtfUseSel=&선택 사용
+Main.pmnuRtfCopy=&복사
+Main.pmnuRtfSelectAll=&모두 선택
+Main.pmnuRtfSaveAs=&저장...
+Main.pmnuRtfSaveSelAs=선택 &저장...
+
+Main.lblDnsQuery=도메인명, 호스트명 또는 IP 주소:
+Main.chkDnsHostInfo=호스트 정보 (A 및 PTR)
+Main.chkDnsDomainInfo=도메인 정보 (NS, MX, TXT 및 SOA)
+Main.chkDnsResolve=호스트명 확인
+Main.chkDnsVerify=호스트명 / IP 주소 확인
+Main.chkDnsQueryDirect=직접 조회
+
+Main.lblPingQuery=호스트명 또는 IP 주소:
+Main.lblPingCount=횟수:
+Main.lblPingBytes=Bytes:
+Main.lblPingTimeout=시간 초과:
+Main.lblPingPause=일시 중지:
+
+Main.lblMultiPingQuery=IP 주소 범위:
+Main.lblMultiPingBytes=Bytes:
+Main.lblMultiPingTimeout=시간 초과:
+Main.chkMultiPingResolve=호스트명 확인
+
+Main.colMultiPingIP=IP 주소
+Main.colMultiPingStatus=상태
+Main.colMultiPingResponseIP=응답:
+Main.colMultiPingResponseHost=호스트명
+Main.colMultiPingTime=시간 (ms)
+
+Main.lvMultiPing.Status.Timeout=시간 초과
+# >>> CHANGED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Placeholder "{1}" must be "{0}"
+Main.lvMultiPing.Status.Incomplete=데이터 불완전 ({0} byte)
+# <<< CHANGED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.lvMultiPing.Status.Different=데이터 차이
+Main.lvMultiPing.Status.Correct=성공
+Main.lvMultiPing.Status.Aborted=취소됨
+Main.lvMultiPing.Status.SndRcvError=전송 또는 수신 오류
+Main.lvMultiPing.Status.Error=오류: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=&원래 IP 주소 사용
+Main.pmnuMultiPingOrigIPCopy=Copy &원래 IP 주소 복사
+# >>> CHANGED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingIPUseSel=응답 IP 주소 &사용
+Main.pmnuMultiPingIPCopy=&응답 IP 주소 복사
+# <<< CHANGED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuMultiPingHostnameUseSel=호스트명 &사용
+Main.pmnuMultiPingHostnameCopy=&호스트명 복사
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingCopy=&목록 항목 복사
+Main.pmnuMultiPingSelectAll=&모두 선택
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lblTraceQuery=호스트명 또는 IP 주소:
+Main.lblTraceMaxHops=홉:
+Main.lblTraceTimeout=시간 초과:
+Main.lblTraceMaxRetries=재시도:
+Main.chkTraceResolve=호스트명 확인
+
+Main.lblWhoisQuery=호스트명 또는 IP 주소:
+Main.lblWhoisServer=도메인 조회 서버:
+Main.chkWhoisVerify=호스트명 / IP 주소 확인
+Main.chkWhoisRedirect=자동 재연결
+Main.chkWhoisFormat=형식 응답
+Main.chkWhoisQueryDirect=직접 조회
+Main.chkWhoisQueryDomain=도메인 조회
+Main.chkWhoisQueryNetwork=네트워크 조회
+Main.lblWhoisEncoding=인코딩:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=이메일 주소:
+Main.lblMailCheckSender=전송자 주소:
+Main.lblMailCheckServer=MX 서버:
+Main.chkMailCheckSendVRFY="VRFY" 명령 전송
+
+Main.lblMailHeadQuery=헤더 줄:
+Main.chkMailHeadResolve=호스트명 확인
+
+Main.lblHttpHeadQuery=URL:
+Main.lblHttpHeadCommand=명령:
+Main.chkHttpHeadFullPage=전체 페이지 표시
+Main.chkHttpHeadRedirect=자동 재연결
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Main.lblPageRankQuery=URL:
+#Main.lblPageRankValueTitle=구글 페이지 순위:
+#Main.lblPageRankValue.ConnectionError=페이지 순위를 검색할 수 없습니다.
+#Main.lblPageRankValue.NoResult=이 URL에 대한 사용 가능한 페이지 순위가 없습니다.
+#Main.lblPageRankValue.InvalidResult=결과를 처리할 수 없습니다.
+#Main.lblMultiRankQuery=URL:
+#Main.lblMultiRankQueryNote=(줄당 한 개의 URL)
+#Main.chkMultiRankResolve=IP 주소 확인
+#Main.colMultiRankURL=URL
+#Main.colMultiRankStatus=상태
+#Main.colMultiRankPageRank=페이지 순위
+#Main.colMultiRankIP=IP 주소
+#Main.lvMultiRank.Status.ConnectionError=연결 오류
+#Main.lvMultiRank.Status.Aborted=중단됨
+#Main.lvMultiRank.Status.Timeout=시간 초과
+#Main.lvMultiRank.Status.NoResult=이용 불가
+#Main.lvMultiRank.Status.InvalidResult=무효한 결과
+#Main.lvMultiRank.Status.Success=성공
+#Main.pmnuMultiRankUseSel=&선택 사용
+#Main.pmnuMultiRankCopy=&복사
+#Main.pmnuMultiRankUrlUseSel=&URL 사용
+#Main.pmnuMultiRankUrlCopy=&URL 복사
+#Main.pmnuMultiRankIPUseSel=IP 주소 &사용
+#Main.pmnuMultiRankIPCopy=IP 주소 &복사
+#Main.pmnuMultiRankCopy=&목록 항목 복사
+#Main.pmnuMultiRankSelectAll=&모두 선택
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.btnTimeSetTime=시스템 시간 설정
+Main.lblTimeServer=NTP 서버:
+Main.lblTimeSystemTitle=시스템 시간:
+Main.lblTimeServerTitle=서버의 시간:
+Main.lblTimeServerTitle.Server="{0}" 서버의 시간:
+Main.lblTimeDifferenceTitle=시간 차이:
+Main.lblTimeServerUpdateTitle=마지막 타임 서버 업데이트:
+Main.lblTimeServerUpdateTitle.Server="{0}" 서버의 마지막 시간 업데이트:
+Main.lblTimeServerUpdate={0} ({1} 전)
+Main.lblTimeServerLocal.SysTimeNotSet=시스템 시간을 설정할 수 없습니다.
+Main.lblTimeServerLocal.ServerNotReachable="{0}" 타임 서버에 연결할 수 없습니다.
+Main.lblTimeServerLocal.ResponseError="{0}" 타임 서버의 응답을 처리할 수 없습니다.
+
+Main.lblListInfoQuery=검색 항목:
+Main.lblListInfoSource=목록:
+Main.chkListInfoCaseSensitive=대소문자 구분
+Main.chkListInfoWholeColumns=전체 열 검색
+
+Main.chkLocalResolve=호스트명 확인
+Main.chkLocalExternal=외부 호스트 정보 수신
+Main.chkLocalAdapterInfo=네트워크 어댑터 표시
+Main.chkLocalIPv4Stat=IPv4 통계 표시
+
+Main.MsgFlushDnsCache.Title=Windows DNS 캐시 플러시
+Main.MsgFlushDnsCache.SrvNotRunning="DNS 클라이언트" 시스템 서비스가 시작되지 않았습니다.\w\w이 서비스는 Windows DNS 캐시를 플러시하기 위해 반드시 시작되어야 합니다.
+Main.MsgFlushDnsCache.ErrorMessage=Windows DNS 캐시를 플러시할 수 없습니다.\w\w오류:\w{0}
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.MsgFlushDnsCache.Output="ipconfig /flushdns" 명령의 출력:\w\w{0}
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.DlgSave.Title=저장
+Main.DlgSaveSelection.Title=선택 저장
+Main.MsgSaveSelection.Error="{0}" 파일을 저장할 수 없습니다.
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.DlgPasteFromFile.Title=파일로부터 붙여넣기
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.MsgInvalidURL.Title=잘못된 URL
+Main.MsgInvalidURL.Text="{0}" URL이 잘못된 형식입니다.
+
+Main.MsgInvalidMailAddress.Title=잘못된 메일 주소
+Main.MsgInvalidMailAddress.Text="{0}" 메일 주소가 잘못된 형식입니다.
+
+Main.MsgInvalidIPRange.Title=잘못된 IP 주소 범위
+Main.MsgInvalidIPRange.Text=입력한 IP 주소 범위가 잘못된 형식입니다.\w\w주소의 마지막 바이트만 다를 수 있다는 점에 유의하세요.\w\w유효한 형식:\w    x.x.x.Y - x.x.x.Z (보기. 127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (보기. 127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=사용자에 의해 조회가 취소되었습니다.
+Main.Report.QueryFinished=조회 마침.
+
+Main.Report.HostInfo.Title="{0}"의 호스트 정보:
+Main.Report.HostInfo.NotAvailable=(이용 불가)
+
+Main.Report.HostInfo.IPAddress =  IP 주소:   {END}
+Main.Report.HostInfo.Hostname  =  호스트명:    {END}
+Main.Report.HostInfo.Domainname=  도메인명:  {END}
+Main.Report.HostInfo.TLD       =  상위 레벨:    {END}
+Main.Report.HostInfo.CountryIP =  국가 (IP): {END}
+Main.Report.HostInfo.IPRange   =  IP 범위:     {END}
+Main.Report.HostInfo.RIRData   =  RIR 데이터:     {END}
+Main.Report.HostInfo.RIRData.ValueDate=({0} 이후 할당됨)
+
+Main.Report.DNS.IPAddress       =IP 주소 (A):
+Main.Report.DNS.IPAddress.Title =  {0}. IP 주소:
+Main.Report.DNS.Hostname        =호스트명 (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. 호스트명:
+Main.Report.DNS.Nameserver      =네임서버 (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. 네임서버:
+Main.Report.DNS.MXServer        =메일 교환 서버 (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. MX 서버:
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.Report.DNS.MXServer.Pref   =, pref={0}
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#Main.Report.DNS.Text            =텍스트 항목 (TXT):
+#Main.Report.DNS.Text.Title      =  {0}. 텍스트 항목:
+
+Main.Report.DNS.SOA=권한 개시 정보 (SOA):
+Main.Report.DNS.SOA.Server.Title =  서버:     {END}
+Main.Report.DNS.SOA.RName.Title  =  연락처:    {END}
+Main.Report.DNS.SOA.Serial.Title =  시리얼 번호: {END}
+Main.Report.DNS.SOA.Expire.Title =  만료:     {END}
+Main.Report.DNS.SOA.Refresh.Title=  갱신:    {END}
+Main.Report.DNS.SOA.Retry.Title  =  재시도:      {END}
+Main.Report.DNS.SOA.MinTTL.Title =  최소 TTL:   {END}
+
+Main.Report.DNS.SOA.Expire.Value={0} 초 ({1})
+Main.Report.DNS.SOA.Refresh.Value={0} 초 ({1})
+Main.Report.DNS.SOA.Retry.Value={0} 초 ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0} 초 ({1})
+
+Main.Report.Ping.NoIPAvailable=IP 주소를 확정할 수 없습니다.
+Main.Report.Ping.Start="{0}"에 {2} byte로 {1} 핑 전송 중:
+Main.Report.Ping.Reply=  {0}. {1}로부터 응답:
+Main.Report.Ping.Pause=      일시 중지 ({0} ms)
+Main.Report.Ping.Reply.Error=오류: {0}.
+Main.Report.Ping.Reply.SndRcvError=전송 또는 수신 중 오류가 발생했습니다.
+Main.Report.Ping.Reply.Timeout=시간 초과.
+Main.Report.Ping.Reply.Aborted=사용자에 의해 취소되었습니다.
+Main.Report.Ping.Reply.Incomplete={0} ms, 불완전한 데이터 (불과 {1} byte만 수신됨).
+Main.Report.Ping.Reply.Different={0} ms, 다른 데이터.
+Main.Report.Ping.Reply.Correct={0} ms, 정확한 데이터.
+Main.Report.Ping.Result={0} 핑 전송됨 ({1} 정확, {2} 부정확, {3} 실패됨).
+Main.Report.Ping.ResultTime=가장 빠른 응답: {0} ms, 가장 느린 응답: {1} ms, 평균: {2} ms.
+
+Main.Report.Trace.Start=최대 {1} 홉 이상으로 "{0}"(으)로 경로 추적 중:
+Main.Report.Trace.SndRcvError=전송 또는 수신 중에 오류가 발생했습니다.
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0} ms  {1}
+Main.Report.Trace.Reply.TimeIPHost={0} ms  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     요청 시간 초과.
+Main.Report.Trace.HostReached="{0}" 대상 호스트에 도달했습니다.
+Main.Report.Trace.MaxHops=홉의 최대 수에 도달했습니다.
+
+Main.Report.Whois.DirectQuery.Title=직접 조회
+Main.Report.Whois.DirectQuery.Start="{1}"에서 "{0}"에 대한 조회:
+Main.Report.Whois.DirectQuery.Redir="{1}"에서 "{0}"에 대한 재연결된 조회:
+
+Main.Report.Whois.DomainQuery.Title=도메인 조회
+Main.Report.Whois.DomainQuery.Start="{1}"에서 "{0}"에 대한 도메인 조회:
+Main.Report.Whois.DomainQuery.Redir="{1}"에서 "{0}"에 대해 재연결된 도메인 조회:
+Main.Report.Whois.DomainQuery.NoDomainName=도메인 조회에 대해 이용 가능한 도메인이 없습니다.
+Main.Report.Whois.DomainQuery.NoTLD=도메인 조회에 대한 이용 가능한 상위-레벨 도메인이 없습니다.
+Main.Report.Whois.DomainQuery.NoTLDInfo=상위-레벨 도메인 "{0}"에 대해 발견된 정보가 없습니다.
+
+Main.Report.Whois.NetworkQuery.Title=네트워크 조회
+Main.Report.Whois.NetworkQuery.Start="{1}"에서 "{0}"에 대한 네트워크 조회:
+Main.Report.Whois.NetworkQuery.Redir="{1}"에서 "{0}"에 대해 재연결된 네트워크 조회:
+Main.Report.Whois.NetzworkQuery.NoIPAddress=네트워크 조회에 대해 이용 가능한 IP 주소가 없습니다.
+
+Main.Report.Whois.ServerNotReachable=Whois 서버 "{0}"에 연결할 수 없습니다.
+Main.Report.Whois.Redirection="{0}"의 응답이 "{1}" Whois 서버를 가르킵니다.
+Main.Report.Whois.NoWhoisServer=일치하는 Whois 서버가 없습니다.
+Main.Report.Whois.ServerNotInDB=데이터베이스에서 "{0}"에 대한 Whois 서버를 찾을 수 없습니다.
+Main.Report.Whois.WhoisLink.Title=Whois 링크:
+
+Main.Report.MailCheck.MailInfo.Title=메일 정보:
+Main.Report.MailCheck.MailInfo.MailAddress=  이메일 주소: {END}
+Main.Report.MailCheck.MailInfo.DomainName =  도메인 이름:    {END}
+
+Main.Report.MailCheck.MXServer.Title="{0}"에 대한 메일 교환 서버:
+Main.Report.MailCheck.MXServer.Number=  {0}. MX 서버:
+Main.Report.MailCheck.MXServer.ServerPref={0}, 우선={1}
+
+Main.Report.MailCheck.NoDomain="{0}" 도메인에 대해 이용 가능한 메일 교환 서버가 없습니다.
+Main.Report.MailCheck.Start="{1}" MX 서버로 "{0}" 메일 주소 확인 중 (포트 {2}):
+Main.Report.MailCheck.NoConnect="{0}" MX 서버로 연결을 수립할 수 없습니다.
+Main.Report.MailCheck.Connected={1} 포트에서 "{0}" MX 서버로 연결됨.
+Main.Report.MailCheck.Timeout=MX 서버가 응답하지 않습니다. (시간 초과).
+Main.Report.MailCheck.SendError=명령을 전송할 수 없습니다.
+Main.Report.MailCheck.Disconnect="{0}" MX 서버와 연결이 끊겼습니다.
+
+Main.Report.MailCheck.Result.Title=결과:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  VRFY의 결과가 긍적적이거나 중립적입니다.
+Main.Report.MailCheck.Result.VrfyFail            =  VRFY의 결과가 부정적입니다.
+Main.Report.MailCheck.Result.SenderAccepted      =  <{0}> 전송자 주소가 수락되었습니다.
+Main.Report.MailCheck.Result.RecipientAccepted   =  <{0}> 수신자 주소가 수락되었습니다.
+Main.Report.MailCheck.Result.HostNotAccepted     =  호스트가 수락되지 않았습니다.
+Main.Report.MailCheck.Result.SenderNotAccepted   =  <{0}> 전송자 주소가 수락되지 않았습니다.
+Main.Report.MailCheck.Result.RecipientNotAccepted=  <{0}> 수신자 주소가 수락되지 않았습니다.
+
+Main.Report.MailHead.NotAvailable=(이용 불가)
+
+Main.Report.MailHead.Header.Title=헤더:
+Main.Report.MailHead.Header.Formatted=형식화됨
+Main.Report.MailHead.Header.Decoded=디코딩됨
+
+Main.Report.MailHead.RcvOverview.Title=수신 요약:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. 항목 (라인 {1}):
+Main.Report.MailHead.RcvOverview.SentFrom =      전송지:     {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      수신지: {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      수신 시간: {END}
+Main.Report.MailHead.RcvOverview.Duration =      경과 시간:      {END}
+
+Main.Report.MailHead.RcvDetail.Title=수신 상세 정보:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. 항목 (줄 {1}):
+Main.Report.MailHead.RcvDetail.Original        =      원본 줄: {END}
+Main.Report.MailHead.RcvDetail.Sender          =      전송자:        {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      전송자 (IP):   {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      전송자 (from): {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      전송자 (HELO): {END}
+Main.Report.MailHead.RcvDetail.Received        =      수신지: {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      수신됨:  {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      수신 시간: {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      경과 시간:      {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(이용 불가 또는 무효함)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      분석:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        이 항목은 수신자 메일 서버에 의해 추가되었습니다.
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        전송자의 IP 주소가 공인 IP 주소가 아닙니다.
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        전송자 및/또는 수신자가 비-공개 네트워크인 듯합니다.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        전송자 IP 주소가 위조되었을 수 있습니다.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =          "전송자"의 IP 주소({0})가 클라이언트 IP 주소({1})와 일치하지 않습니다.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        전송자 호스트명이 위조되었을 수 있습니다.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=          "전송자"의 호스트명({0})이 수신자 호스트명({1})과 일치하지 않습니다.
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        호스트명이 일치합니다.
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        도메인명이 일치하지 않습니다.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        호스트명이 일치하지 않습니다.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =          이 항목({0})의 수신자 호스트명은\w          다음 항목({1})의 전송자 호스트명이라야 합니다.\w          이것은 종종 사설 IP 주소의 공인 IP 주소로 네트워크 주소 변환(NAT)과 같은 IP 주소 변경이 원인이 됩니다.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        비교할 이용 가능한 호스트명이 없습니다.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        도메인명이 일치하지 않습니다.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=          이 항목({0})의 수신자 도메인은\w          다음 항목({1})의 전송자 도메인이라야 합니다.\w          이것은 종종 사설 IP 주소의 공인 IP 주소로 네트워크 주소 변환(NAT)과 같은 IP 주소 변경이 원인이 됩니다.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        배교할 이용 가능한 호스트 또는 도메인명이 없습니다.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        전달 시간이 10 분 이상 차이 나거나 날짜가 잘못되었습니다.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        전달 시간이 10 분 이상 차이 나거나 날짜가 잘못되었습니다.
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        오류가 없거나 분석이 불가능합니다.
+
+Main.Report.HttpHead.RequestURL=요청된 URL:
+Main.Report.HttpHead.Start="{1}" 호스트(포트 {2})에 "{0}" 방식으로 URL 전송:
+Main.Report.HttpHead.OriginalHeader=원본 헤더:
+Main.Report.HttpHead.Page=페이지:
+
+Main.Report.HttpHead.HeadInfo.Title=헤더 정보:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  응답 시간: {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  응답 URL:  {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  상태 코드:   {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  캐시 제어: {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  캐시로부터:    {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  마지막 수정: {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  서버 시간:   {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  웹 서버:     {END}
+Main.Report.HttpHead.HeadInfo.Software    =  소프트웨어:      {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0} ms
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=오류: {0}.
+Main.Report.HttpHead.ErrorCode=웹 서버가 {0} 오류 코드를 응답합니다. ({1}).
+Main.Report.HttpHead.NoConnect=웹 서버에 연결할 수 없습니다.
+Main.Report.HttpHead.SendError=데이터를 전송하는 동안에 오류가 발생했습니다.
+
+Main.Report.Local.LocalHost.Title=로컬 호스트:
+Main.Report.Local.LocalHost.Hostname =  호스트명:   {END}
+Main.Report.Local.LocalHost.IPAddress=  IP 주소: {END}
+
+Main.Report.Local.OwnIPs.Title=자신의 IP 주소:
+Main.Report.Local.OwnIPs.Loopback=(루프백 주소)
+
+Main.Report.Local.External.Title=외부 호스트 정보:
+Main.Report.Local.External.IPAddress=  IP-주소: {END}
+Main.Report.Local.External.Hostname =  호스트명:   {END}
+Main.Report.Local.External.NotAvailable=(이용 불가)
+
+Main.Report.Local.DNS.Title=DNS 서버:
+Main.Report.Local.DNS.Number=  {0}. DNS 서버:
+
+Main.Report.Local.Net.Title=네트워크 인터페이스:
+Main.Report.Local.Net.Intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    설명: {END}
+Main.Report.Local.Net.MacAddress =    MAC 주소: {END}
+Main.Report.Local.Net.DnsSuffix  =    DNS 서픽스:  {END}
+Main.Report.Local.Net.IPAddress  =    IP 주소:  {END}
+Main.Report.Local.Net.DhcpServer =    DHCP 서버: {END}
+Main.Report.Local.Net.DnsServer  =    DNS 서버:  {END}
+Main.Report.Local.Net.Gateway    =    게이트웨이:     {END}
+Main.Report.Local.Net.Anycast    =    애니캐스트:     {END}
+Main.Report.Local.Net.Multicast  =    멀티캐스트:   {END}
+Main.Report.Local.Net.WinsServer =    WINS 서버: {END}
+Main.Report.Local.Net.Stat.Title             =    통계:
+Main.Report.Local.Net.Stat.BytesReceived     =      수신됨:    {END}
+Main.Report.Local.Net.Stat.BytesSent         =      전송됨:        {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      수신 패킷:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        폐기됨: {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        오류:    {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        미상:   {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =        송출 패킷:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        폐기됨: {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        오류:    {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      유티캐스트 패킷:
+Main.Report.Local.Net.Stat.UniPackReceived   =        수신됨:  {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        전송됨:      {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      비-유니캐스트 패킷:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        수신됨:  {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        전송됨:      {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0} bytes
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=설정
+
+Settings.tnGeneral=일반
+Settings.tnView=보기 / 출력
+Settings.tnWebRequests=웹 요청
+Settings.tnTools=도구
+
+Settings.lblMS=ms
+Settings.lblBytes=byte
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.cmbListCopyFormat.Semicolon=세미콜론(;) 구분
+Settings.cmbListCopyFormat.Comma=콤마(,) 구분
+Settings.cmbListCopyFormat.Tabulator=도표 작성자 구분
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpGeneralGeneral=일반
+Settings.lblGeneralMaxRecentItems=드롭-다운 필드의 최근 항목의 최대 수
+Settings.grpGeneralDns=DNS 설정
+Settings.lblGeneralDnsServer=DNS 서버:
+Settings.lblGeneralDnsTimeout=시간 초과:
+
+Settings.grpViewGeneral=일반
+Settings.chkViewShowTitleBar=제목 표시줄 표시
+Settings.grpViewRtf=텍스트 출력
+Settings.chkViewRtfWordWrap=긴 줄 줄바꿈
+Settings.lblViewRtfFontDefault=기본 글꼴:
+Settings.txtViewRtfFontDefault={0}, {1} pt
+Settings.btnViewRtfFontDefaultSel=기본 글꼴 선택
+
+Settings.rbWebRequestsProxySystem=시스템 프록시 설정 사용 (IE)
+Settings.rbWebrequestsProxyUserDefined=사용자 지정 프록시 설정:
+Settings.grpWebRequestsProxy=프록시 서버
+Settings.lblWebRequestsProxyServer=서버:
+Settings.chkWebRequestsProxyBypassOnLocal=로컬 주소에 대해 프록시 서버 사용 안함
+Settings.lblWebRequestsProxyUsername=사용자명:
+Settings.lblWebRequestsProxyPassword=비밀번호
+Settings.grpWebRequestsMisc=기타 설정
+Settings.lblWebRequestsUserAgent=사용자-에이전트:
+Settings.lblWebRequestsReferer=참조:
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWebRequestsValidateCertificate=안전하지 않은 HTTPS 연결 허용 안 함(SSL 인증서 검증)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.lblToolsNothing=이 항목은 옵션을 포함하지 않습니다.\w하위 항목을 선택해주세요.
+
+Settings.grpPingGeneral=일반
+Settings.lblPingMaxTTL=최대 TTL:
+
+Settings.grpMultiPingGeneral=일반
+Settings.lblMultiPingMaxTTL=최대 TTL:
+Settings.chkMultiPingShowGridlines=격자선 표시
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiPingListCopy=목록 항목 복사
+Settings.lblMultiPingListCopyFormat=목록 형식:
+Settings.chkMultiPingListCopyHeader=열 헤더 추가
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTraceGeneral=일반
+Settings.lblTraceBytes=버퍼 크기:
+
+Settings.grpWhoisGeneral=일반
+Settings.lblWhoisTimeout=시간 초과:
+Settings.grpWhoisDomain=도메인 조회
+Settings.lblWhoisMaxRedirectDom=재연결 최대 수:
+# >>> ADDED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWhoisShowIanaDomainOutput=도메인에 대한 IANA의 출력 표시
+# <<< ADDED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Settings.grpWhoisNetwork=네트워크 조회
+Settings.lblWhoisMaxRedirectDomainNet=재연결 최대 수:
+Settings.lblWhoisNetServer=첫 번째 도메인 조회 서버:
+Settings.chkWhoisNetServerFromDB=이용 가능한 경우, 데이터베이스의 Whois 서버 사용
+# >>> ADDED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWhoisShowIanaNetworkOutput=네트워크에 대한 IANA 출력 표시
+# <<< ADDED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpMailCheckGeneral=일반
+Settings.lblMailCheckTimeout=시간 초과:
+Settings.lblMailCheckHeloHost=EHLO/HELO에 대한 호스트명:
+Settings.chkMailCheckHeloHostGetExternal=외부 호스트 정보 검색
+Settings.lblMailCheckSenderDefault=기본 전송자 주소:
+
+Settings.grpHttpHeadGeneral=일반
+Settings.lblHttpHeadTimeout=시간 초과:
+Settings.chkHttpHeadUseProxy=프록시 서버 사용
+# >>> CHANGED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkHttpHeadShowOrigHeader=서버에서 받은 원래 헤더 표시
+# <<< CHANGED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkHttpHeadShowCertificate=SSL 인증서 정보 표시
+Settings.chkHttpHeadValidateCertificate=안전하지 않은 HTTPS 연결 허용 안 함(SSL 인증서 검증)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Settings.grpPageRankGeneral=일반
+#Settings.lblPageRankTimeout=시간 초과:
+#Settings.chkPageRankUseProxy=프록시 서버 사용
+#Settings.grpMultiRankGeneral=일반
+#Settings.lblMultiRankTimeout=시간 초과:
+#Settings.chkMultiRankUseProxy=프록시 서버 사용
+#Settings.chkMultiRankShowGridlines=격자선 표시
+#Settings.grpMultiRankListCopy=목록 항목 복사
+#Settings.lblMultiRankListCopyFormat=목록 형식:
+#Settings.chkMultiRankListCopyHeader=열 헤더 추가
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTimeGeneral=일반
+Settings.lblTimeTimeout=시간 초과:
+Settings.grpTimeServers=타임 서버
+Settings.lblTimeServers=다음의 타임 서버 사용
+Settings.lblTimeServersNote=(줄 당 한 개의 서버)
+
+Settings.grpListInfoGeneral=일반
+Settings.chkListInfoShowGridlines=격자선 표시
+
+Settings.grpLocalExternalHostInfo=외부 호스트 정보
+Settings.lblLocalTimeout=시간 초과:
+Settings.chkLocalUseProxy=프록시 서버 사용
+Settings.lblLocalExternalHostInfo=외부 호스트 정보 검색:
+
+

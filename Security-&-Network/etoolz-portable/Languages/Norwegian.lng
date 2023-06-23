@@ -1,0 +1,606 @@
+﻿# ############################
+# Language file for eToolz 4.0
+# Updated 2012-10-28
+# ############################
+
+Language.Translator.Name=Svein Are Karlsen
+Language.Translator.Website=none
+Language.Translator.EMail=sveinarek@gmail.com
+
+Language.FlagImageFile=Norwegian.gif
+#Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+
+General.Font.Name=Tahoma
+General.Font.Size=8
+
+General.MsgLanguageChangeTitle=Språkvalg
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=Husk at ikke all tekst vil vises på norsk før programmet avsluttes og startes på nytt.
+
+General.MsgNoDefaultBrowserTitle=Finner ikke nettleseren!
+General.MsgNoDefaultBrowserText=Kan ikke starte nettleseren!
+General.MsgNoStdMailerTitle=Finner ikke e-postklient!
+General.MsgNoStdMailerText=Kan ikke starte e-postklienten!
+General.MsgNoHelpTitle=Hjelp
+General.MsgNoHelpText=Hjelpefilen "{0}" kan ikke åpnes.
+
+General.Button.Ok=OK
+General.Button.Start=Start
+General.Button.Cancel=Avbryt
+General.Button.Close=Lukk
+General.Button.Help=Hjelp
+
+General.FileFilter.All=Alle filer (*.*)
+General.FileFilter.RTF=RTF-filer (*.rtf)
+General.FileFilter.TXT=Tekst-filer (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=Ping
+General.Tool.MultiPing=MultiPing
+General.Tool.Trace=Spore
+General.Tool.Whois=Whois
+General.Tool.MailCheck=E-postkontroll
+General.Tool.MailHead=Mailhodeanalyse
+General.Tool.HttpHead=HTTP-hode
+General.Tool.PageRank=Siderangering
+General.Tool.MultiRank=Multirangering
+General.Tool.Time=Tid
+General.Tool.ListInfo=Lister
+General.Tool.Local=Lokal vert
+
+General.Tool.MenuItem.Dns=&DNS
+General.Tool.MenuItem.Ping=&Ping
+General.Tool.MenuItem.Ping=&MultiPing
+General.Tool.MenuItem.Trace=&Spore
+General.Tool.MenuItem.Whois=&Whois
+General.Tool.MenuItem.MailCheck=&E-postkontroll
+General.Tool.MenuItem.HttpHead=&HTTP-Hode
+General.Tool.MenuItem.PageRank=Side&rangering
+General.Tool.MenuItem.MultiRank=M&ultirangering
+General.Tool.MenuItem.ListInfo=&Lister
+
+General.Bool.Yes=Ja
+General.Bool.No=Nei
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title=Innstillinger {0}
+
+Config.grpUserData=Brukerdata
+Config.lblUserDataDesc="Brukerdata" inneholder programinnstilnnger og brukerens personlige tilpassinger. Disse innstilingene kan være forskjellige for hver bruker.
+Config.rbUserDataAppData=AppData-mappen til innlogget bruker (anbefales)
+Config.rbUserDataProgram={0}'s programmappe (for f.eks på en ekstern USB-enhet)
+Config.rbUserDataUserDef=Brukerdefinert mappe:
+Config.btnUserDataUserDef=Velg en brukerdefinert mappe
+
+Config.DlgFolderUserDefText=Velg mappe for lagring av brukerdata.
+
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title=Om {0}
+
+About.lblDesc=De viktigste verktøyene for internet
+About.lblVersion=Version {0}
+About.lblRights=All rights reserved.
+
+About.grpAuthor=Utvikler
+About.lblWebsite=Nettside:
+About.lblEMail=E-post:
+
+About.tabLang=Oversetting
+About.lblTranslator=Oversetter:
+
+About.tabReg=Registreringsinformasjon
+About.txtRegDefault=Gratisversjon\w\w(Ingen gyldig lisensfil)
+
+About.tabCredits=Takk til
+About.rtfCredits.Icons=Ikoner
+About.rtfCredits.Icons.FatCow=FatCow Web Hosting ({0})
+
+
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=Språk
+
+Main.mnuFile=&Fil
+Main.mnuFileExit=Avs&lutt
+Main.mnuTools=&Verktøy
+Main.mnuToolsFlushDnsCache=Tøm Windows &DNS-cache
+Main.mnuExtras=E&kstra
+Main.mnuExtrasSettings=&Innstillinger...
+Main.mnuHelp=&Hjelp
+Main.mnuHelpHelp=&Hjelp
+Main.mnuHelpWebsite=Besøk programmets &nettside
+Main.mnuHelpEMail=Send e-&post til utvikleren
+Main.mnuHelpSupport=&Støtte {0}
+Main.mnuHelpAbout=&Om {0}
+
+Main.pmnuToolbarTitleShowHide.Show=&Vis tittel for "{0}"
+Main.pmnuToolbarTitleShowHide.Hide=&Skjul tittel for "{0}"
+Main.pmnuToolbarMultiline=Vis verktøysfeilt på &flere rader
+
+Main.pmnuRtfUseSel=&Send markerte til...
+Main.pmnuRtfCopy=&Kopier
+Main.pmnuRtfSelectAll=Marker &alle
+Main.pmnuRtfSaveAs=&Lagre...
+Main.pmnuRtfSaveSelAs=Lagre &markerte...
+
+Main.lblDnsQuery=Domenenavn, vertsnavn eller IP-adresse:
+Main.chkDnsHostInfo=Vertsinformasjon (A og PTR)
+Main.chkDnsDomainInfo=Domeneinformasjon (NS, MX, TXT og SOA)
+Main.chkDnsResolve=Oppløse vertsnavn
+Main.chkDnsVerify=Verifisere vertsnavn / IP-adresse
+Main.chkDnsQueryDirect=Direkteforespørsel
+
+Main.lblPingQuery=Vertsnavn eller IP-adresse:
+Main.lblPingCount=Antall:
+Main.lblPingBytes=Byte:
+Main.lblPingTimeout=Timeout:
+Main.lblPingPause=Pause:
+
+Main.lblMultiPingQuery=IP-adresseintervall:
+Main.lblMultiPingBytes=Byte:
+Main.lblMultiPingTimeout=Timeout:
+Main.chkMultiPingResolve=Vertsoppløsning
+
+Main.colMultiPingIP=IP-adresse
+Main.colMultiPingStatus=Status
+Main.colMultiPingResponseIP=Svar fra
+Main.colMultiPingResponseHost=Vertsnavn
+Main.colMultiPingTime=Tid (ms)
+
+Main.lvMultiPing.Status.Timeout=Timeout
+Main.lvMultiPing.Status.Incomplete=Ufullstendig data ({1} byte)
+Main.lvMultiPing.Status.Different=Datadifferanse
+Main.lvMultiPing.Status.Correct=Korrekt
+Main.lvMultiPing.Status.Aborted=Avbrutt
+Main.lvMultiPing.Status.SndRcvError=Overførings- eller mottaksfeil
+Main.lvMultiPing.Status.Error=Feil: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=&Bruk opprinnelig IP-adresse
+Main.pmnuMultiPingOrigIPCopy=Kopier &opprinnelig IP-adresse
+Main.pmnuMultiPingIPAddressUseSel=B&ruk svaradresse
+Main.pmnuMultiPingIPAddressCopy=Kopier &svaradresse
+Main.pmnuMultiPingHostnameUseSel=Br&uk vertsnavn
+Main.pmnuMultiPingHostnameCopy=Kopier &vertsnavn
+
+Main.lblTraceQuery=Vertsnavn eller IP-adresse:
+Main.lblTraceMaxHops=Hopp:
+Main.lblTraceTimeout=Timeout:
+Main.lblTraceMaxRetries=Forsøk:
+Main.chkTraceResolve=Oppløse vertsnavn
+
+Main.lblWhoisQuery=Vertsnavn eller IP-adresse:
+Main.lblWhoisServer=Whois-server:
+Main.chkWhoisVerify=Verifiser vertsnavn / IP-adresse
+Main.chkWhoisRedirect=Automatisk omdirigering
+Main.chkWhoisFormat=Formater svar
+Main.chkWhoisQueryDirect=Direkteforespørsel
+Main.chkWhoisQueryDomain=Domeneforespørsel
+Main.chkWhoisQueryNetwork=Nettverksforespørsel
+Main.lblWhoisEncoding=Koding:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=E-postadresse:
+Main.lblMailCheckSender=Avsenderadresse:
+Main.lblMailCheckServer=MX-server:
+Main.chkMailCheckSendVRFY=Send VRFY-kommando
+
+Main.lblMailHeadQuery=Hode linjer:
+Main.chkMailHeadResolve=Oppløs vertsnavn
+
+Main.lblHttpHeadQuery=URL:
+Main.lblHttpHeadCommand=Kommando:
+Main.chkHttpHeadFullPage=Vis hele siden
+Main.chkHttpHeadRedirect=Automatisk omdirigering
+
+Main.lblPageRankQuery=URL:
+Main.lblPageRankValueTitle=Google siderangering:
+
+Main.lblPageRankValue.ConnectionError=Siderangeringen kan ikke hentes.
+Main.lblPageRankValue.NoResult=Det finnes ingen siderangering for denna URL.
+Main.lblPageRankValue.InvalidResult=Resultatet kan ikke bearbeides.
+
+Main.lblMultiRankQuery=Web-adresser:
+Main.lblMultiRankQueryNote=(en URL pr. rad)
+
+Main.colMultiRankURL=URL
+Main.colMultiRankStatus=Status
+Main.colMultiRankPageRank=siderangering
+
+Main.lvMultiRank.Status.ConnectionError=Tilkoblingsfeil
+Main.lvMultiRank.Status.Aborted=Avbrutt
+Main.lvMultiRank.Status.Timeout=Timeout
+Main.lvMultiRank.Status.NoResult=Utilgjengelig
+Main.lvMultiRank.Status.InvalidResult=Ugyldig resultat
+Main.lvMultiRank.Status.Success=Suksess
+
+Main.pmnuMultiRankUseSel=Send &markert til...
+Main.pmnuMultiRankCopy=&Kopier
+
+Main.btnTimeSetTime=Angi systemtid
+Main.lblTimeServer=NTP-server:
+Main.lblTimeSystemTitle=Systemtid:
+Main.lblTimeServerTitle=Tid fra server:
+Main.lblTimeServerTitle.Server=Tid fra server "{0}":
+Main.lblTimeDifferenceTitle=Tidsdifferanse:
+Main.lblTimeServerUpdateTitle=Siste serveroppdatering:
+Main.lblTimeServerUpdateTitle.Server=Siste oppdatering for server "{0}":
+Main.lblTimeServerUpdate={0} ({1} siden)
+Main.lblTimeServerLocal.SysTimeNotSet=Systemtiden kan ikke angis.
+Main.lblTimeServerLocal.ServerNotReachable=Tidsserveren "{0}" kan ikke nås.
+Main.lblTimeServerLocal.ResponseError=Svaret fra tidsserveren "{0}" kan ikke bearbeides.
+
+Main.lblListInfoQuery=Søkeord:
+Main.lblListInfoSource=Liste:
+Main.chkListInfoCaseSensitive=Hensyn til små og store bokstaver
+Main.chkListInfoWholeColumns=Søk i hele kolonner
+
+Main.chkLocalResolve=Oppløs vertsnavn
+Main.chkLocalExternal=Ta imot ekstern vertsinformasjon
+Main.chkLocalAdapterInfo=Vis nettverkskort
+Main.chkLocalIPv4Stat=Vis IPv4-statistik
+
+Main.MsgFlushDnsCache.Title=Tøm Windows DNS-cache
+Main.MsgFlushDnsCache.SrvNotRunning=Systemtjenesten "DNS Client" Kjører ikke.\w\wTjenesten må kjøre for å tømme Windows DNS-cache.
+Main.MsgFlushDnsCache.ErrorMessage=Windows DNS-cache kan ikke tømmes.\w\wFeil:\w{0}
+
+Main.DlgSave.Title=Lagre
+Main.DlgSaveSelection.Title=Lagre markert
+Main.MsgSaveSelection.Error=Filen "{0}" kan ikke lagres.
+
+Main.MsgInvalidURL.Title=Ugyldig URL
+Main.MsgInvalidURL.Text=Web-adressens format "{0}" er ugyldig.
+
+Main.MsgInvalidMailAddress.Title=Ugyldig E-postadresse
+Main.MsgInvalidMailAddress.Text=E-postadressens format "{0}" er ugyldig.
+
+Main.MsgInvalidIPRange.Title=Ugyldig IP-adresseintervall
+Main.MsgInvalidIPRange.Text=Det angitte IP-adresseintervallets format er ugyldig.\w\wHusk at kun den siste delen av adressen kan være ulik.\w\wGyldige format:\w    x.x.x.Y - x.x.x.Z (e.g. 127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (e.g. 127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=Forespørsel avbrutt av brukeren.
+Main.Report.QueryFinished=Forespørsel fullført.
+
+Main.Report.HostInfo.Title=Vertsinformasjon for "{0}":
+Main.Report.HostInfo.NotAvailable=(ikke tilgjengelig)
+
+Main.Report.HostInfo.IPAddress =  IP-adresse:   {END}
+Main.Report.HostInfo.Hostname  =  Vertsnavn:    {END}
+Main.Report.HostInfo.Domainname=  Domenenavn:  {END}
+Main.Report.HostInfo.TLD       =  Toppdomene:    {END}
+Main.Report.HostInfo.CountryIP =  Land (IP): {END}
+Main.Report.HostInfo.IPRange   =  IP-intervall:     {END}
+Main.Report.HostInfo.RIRData   =  RIR-data:     {END}
+Main.Report.HostInfo.RIRData.ValueDate=(tildelt siden {0})
+
+Main.Report.DNS.IPAddress       =IP-adresser (A):
+Main.Report.DNS.IPAddress.Title =  {0}. IP-adresse:
+Main.Report.DNS.Hostname        =vertsnavn (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. vertsnavn:
+Main.Report.DNS.Nameserver      =Navneserver (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. Navneservere:
+Main.Report.DNS.MXServer        =Mail Exchange-servere (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. MX-server:
+Main.Report.DNS.Text            =Tekstposter (TXT):
+Main.Report.DNS.Text.Title      =  {0}. Tekstpost:
+
+Main.Report.DNS.SOA=Start of Authority (SOA):
+Main.Report.DNS.SOA.Server.Title =  Server:     {END}
+Main.Report.DNS.SOA.RName.Title  =  Kontakt:    {END}
+Main.Report.DNS.SOA.Serial.Title =  Serienr.: {END}
+Main.Report.DNS.SOA.Expire.Title =  Opphører:     {END}
+Main.Report.DNS.SOA.Refresh.Title=  Oppdatere:    {END}
+Main.Report.DNS.SOA.Retry.Title  =  Forsøk:      {END}
+Main.Report.DNS.SOA.MinTTL.Title =  Min. TTL:   {END}
+
+Main.Report.DNS.SOA.Expire.Value={0} sekunder ({1})
+Main.Report.DNS.SOA.Refresh.Value={0} sekunder ({1})
+Main.Report.DNS.SOA.Retry.Value={0} sekunder ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0} sekunder ({1})
+
+Main.Report.Ping.NoIPAvailable=IP-adressen kan ikke fastsettes.
+Main.Report.Ping.Start=Sender {1} ping(ar) med {2} byte til "{0}":
+Main.Report.Ping.Reply=  {0}. svar fra {1}:
+Main.Report.Ping.Pause=      Pause ({0} ms)
+Main.Report.Ping.Reply.Error=Feil: {0}.
+Main.Report.Ping.Reply.SndRcvError=Feil ved sending eller mottak.
+Main.Report.Ping.Reply.Timeout=Timeout.
+Main.Report.Ping.Reply.Aborted=Avbrutt av brukeren.
+Main.Report.Ping.Reply.Incomplete={0} ms, ufullstendig data (kun {1} byte mottatt).
+Main.Report.Ping.Reply.Different={0} ms, avvikende data.
+Main.Report.Ping.Reply.Correct={0} ms, korrekt data.
+Main.Report.Ping.Result={0} ping(ar) Sendd(e) ({1} korrekt, {2} feilaktig(a), {3} mislykket(e)).
+Main.Report.Ping.ResultTime=Raskeste svar: {0} ms, tregeste svar: {1} ms, gjennomsnitt: {2} ms.
+
+Main.Report.Trace.Start=Sporing til "{0}" over maks. {1} hopp:
+Main.Report.Trace.SndRcvError=Feil ved sending eller mottak.
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0} ms  {1}
+Main.Report.Trace.Reply.TimeIPHost={0} ms  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     Tidsgrense for svar.
+Main.Report.Trace.HostReached=Målverdien "{0}" er nådd.
+Main.Report.Trace.MaxHops=Maksimalt antall hopp er passert.
+
+Main.Report.Whois.DirectQuery.Title=Direkteforespørsel
+Main.Report.Whois.DirectQuery.Start=Forespørsel for "{0}" på "{1}":
+Main.Report.Whois.DirectQuery.Redir=Omdirigert forespørsel for "{0}" på "{1}":
+
+Main.Report.Whois.DomainQuery.Title=Domeneforespørsel
+Main.Report.Whois.DomainQuery.Start=Domeneforespørsel for "{0}" på "{1}":
+Main.Report.Whois.DomainQuery.Redir=Omdirigert Domeneforespørsel for "{0}" at "{1}":
+Main.Report.Whois.DomainQuery.NoDomainName=Ingen domenenavn tilgjengelig for Domeneforespørsel.
+Main.Report.Whois.DomainQuery.NoTLD=Ingen toppdomener tilgjengelig for Domeneforespørsel.
+Main.Report.Whois.DomainQuery.NoTLDInfo=Finner ingen informasjon for toppdomenet "{0}".
+
+Main.Report.Whois.NetworkQuery.Title=Nettverksforespørsel
+Main.Report.Whois.NetworkQuery.Start=Nettverksforespørsel for "{0}" på "{1}":
+Main.Report.Whois.NetworkQuery.Redir=Omdirigert Nettverksforespørsel for "{0}" på "{1}":
+Main.Report.Whois.NetzworkQuery.NoIPAddress=Ingen IP-adresse tilgjengelig for Nettverksforespørsel.
+
+Main.Report.Whois.ServerNotReachable=Whois-serveren "{0}" kan ikke nås.
+Main.Report.Whois.Redirection=Svaret fra "{0}" peker mot Whois-serveren "{1}".
+Main.Report.Whois.NoWhoisServer=Ingen passende whois-server er funnet.
+Main.Report.Whois.ServerNotInDB=Whois-serveren for "{0}" finnes ikke i databasen.
+Main.Report.Whois.WhoisLink.Title=Whois-lenke:
+
+Main.Report.MailCheck.MailInfo.Title=E-postinformasjon:
+Main.Report.MailCheck.MailInfo.MailAddress=  E-postadresse: {END}
+Main.Report.MailCheck.MailInfo.DomainName =  Domenenavn:    {END}
+
+Main.Report.MailCheck.MXServer.Title=Exchange-server for "{0}":
+Main.Report.MailCheck.MXServer.Number=  {0}. MX-server:
+Main.Report.MailCheck.MXServer.ServerPref={0}, innstilling={1}
+
+Main.Report.MailCheck.NoDomain=Ingen exchange-server finnes tilgjengelig for domenet "{0}".
+Main.Report.MailCheck.Start=Sjekker E-postadresse "{0}" med MX-serveren "{1}" (port {2}):
+Main.Report.MailCheck.NoConnect=Tilkobling til MX-server "{0}" kan ikke opprettes.
+Main.Report.MailCheck.Connected=Tilkoblet til MX-server "{0}" på port {1}.
+Main.Report.MailCheck.Timeout=MX-serveren svarer ikke (timeout).
+Main.Report.MailCheck.SendError=Kommandoen kan ikke sendes.
+Main.Report.MailCheck.Disconnect=Tilkoblingen til MX-server "{0}" ble frakoblet.
+
+Main.Report.MailCheck.Result.Title=Resultat:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  Resultatet av VRFY var positivt eller nøytralt.
+Main.Report.MailCheck.Result.VrfyFail            =  Resultatet av VRFY var negativt.
+Main.Report.MailCheck.Result.SenderAccepted      =  Avsenderadresseen <{0}> ble godtatt.
+Main.Report.MailCheck.Result.RecipientAccepted   =  Mottagaradressen <{0}> ble godtatt.
+Main.Report.MailCheck.Result.HostNotAccepted     =  Verten ble ikke godtatt.
+Main.Report.MailCheck.Result.SenderNotAccepted   =  Avsenderadresseen <{0}> ble ikke godtatt.
+Main.Report.MailCheck.Result.RecipientNotAccepted=  Mottagaradressen <{0}> ble ikke godtatt.
+
+Main.Report.MailHead.NotAvailable=(ikke tilgjengelig)
+
+Main.Report.MailHead.Header.Title=Hode:
+Main.Report.MailHead.Header.Formatted=formatert
+Main.Report.MailHead.Header.Decoded=dekryptert
+
+Main.Report.MailHead.RcvOverview.Title=Oversikt:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. Post (rad {1}):
+Main.Report.MailHead.RcvOverview.SentFrom =      Sendt fra:     {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      Mottatt fra: {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      Mottatt: {END}
+Main.Report.MailHead.RcvOverview.Duration =      Varighet:      {END}
+
+Main.Report.MailHead.RcvDetail.Title=Mottaksdetaljer:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. Post (rad {1}):
+Main.Report.MailHead.RcvDetail.Original        =      Originalrad: {END}
+Main.Report.MailHead.RcvDetail.Sender          =      Avsender:        {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      Avsender (IP):   {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      Avsender (fra): {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      Avsender (HELO): {END}
+Main.Report.MailHead.RcvDetail.Received        =      Mottatt fra: {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      Mottatt for:  {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      Mottatt: {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      Varighet:      {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(utilgjengelig eller ugyldig)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      Analyse:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        Dete punktet ble lagt til av mottakerens e-postserver.
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        Avsenderens IP-adresse er ikke en offentlig IP-adresse.
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        Avsender og/eller mottaker antas å være fra et ikke-offentlig nettverk.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        Avsenders IP-adresse er muligens forfalsket.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =          IP-adressen i "fra" ({0}) stemmer ikke med klient-IP ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        Avsenders vertsnavn er muligens forfalsket.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=          vertsnavnet i "fra" ({0}) stemmer ikke med klientvertsnavnet ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        vertsnavnene stemmer overens.
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        Domenenavnene stemmer overens.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        vertsnavnene stemmer ikke overens.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =          Mottakervert i dette punktet ({0}) burde være\w          avsendervert i neste punkt ({1}).\w          Dette skyldes ofte en IP-adresse endring, foreksempel en nettverksadresseoversetting (NAT) fra en privat IP-adresse til en offentlig.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        Det finnes ingwn vertsnavn tilgjengelig for sammenlikning.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        Domenenavnene stemmer ikke overens.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=          Mottakerdomenet i dette punket ({0}) burde væra\w          avsendervert i neste punkt ({1}).\w          Dette skyldes ofte en IP-adresse endring, foreksempel en nettverksadresseoversetting (NAT) fra en privat IP-adresse til en offentlig.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        Det finnes ingen verts- eller domenenavn tilgjengelige for sammenlikning
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        Leveransetiden avviker mer enn 10 minutter, eller en dato er feil.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        Leveransetiden avviker mer enn 10 minutter, eller en dato er feil
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        Finner ingen feil, eller analyse er ikke mulig.
+
+Main.Report.HttpHead.RequestURL=Forespurt URL:
+Main.Report.HttpHead.Start=Send web-adressen med metode "{0}" til verten "{1}" (port {2}):
+Main.Report.HttpHead.OriginalHeader=Originalhode:
+Main.Report.HttpHead.Page=Side:
+
+Main.Report.HttpHead.HeadInfo.Title=Hodeinformasjon:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  Responstid: {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  Svaradresse:  {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  Statuskode:   {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  Cache-kontroll: {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  Fra cache:    {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  Sist Endret: {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  Servertid:   {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  Webbserver:     {END}
+Main.Report.HttpHead.HeadInfo.Software    =  Programvare:      {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0} ms
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=Feil: {0}.
+Main.Report.HttpHead.ErrorCode=Webbserveren svarer med feilkode {0} ({1}).
+Main.Report.HttpHead.NoConnect=Webbserveren kan ikke nås.
+Main.Report.HttpHead.SendError=En feil oppstod ved datasending.
+
+Main.Report.Local.LocalHost.Title=Lokal vert:
+Main.Report.Local.LocalHost.Hostname =  Vertsnavn:   {END}
+Main.Report.Local.LocalHost.IPAddress=  IP-adresse: {END}
+
+Main.Report.Local.OwnIPs.Title=Egne IP-adresser:
+Main.Report.Local.OwnIPs.Loopback=(loopback-adress)
+
+Main.Report.Local.External.Title=Ekstern vertsinformasjon:
+Main.Report.Local.External.IPAddress=  IP-adresse: {END}
+Main.Report.Local.External.Hostname =  Vertsnavn:   {END}
+Main.Report.Local.External.NotAvailable=(Utilgjengelig)
+
+Main.Report.Local.DNS.Title=DNS-server:
+Main.Report.Local.DNS.Number=  {0}. DNS-server:
+
+Main.Report.Local.Net.Title=Nettverksgrensesnitt:
+Main.Report.Local.Net.intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    Beskrivelse: {END}
+Main.Report.Local.Net.MacAddress =    MAC-adresse: {END}
+Main.Report.Local.Net.DnsSuffix  =    DNS-suffix:  {END}
+Main.Report.Local.Net.IPAddress  =    IP-adresse:  {END}
+Main.Report.Local.Net.DhcpServer =    DHCP-server: {END}
+Main.Report.Local.Net.DnsServer  =    DNS-server:  {END}
+Main.Report.Local.Net.Gateway    =    Gateway:     {END}
+Main.Report.Local.Net.Anycast    =    Anycast:     {END}
+Main.Report.Local.Net.Multicast  =    Multicast:   {END}
+Main.Report.Local.Net.WinsServer =    WINS-server: {END}
+Main.Report.Local.Net.Stat.Title             =    Statistikk:
+Main.Report.Local.Net.Stat.BytesReceived     =      Mottatt:    {END}
+Main.Report.Local.Net.Stat.BytesSent         =      Sendt:        {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      Innkommende pakker:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        Forkastede: {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        Feil:    {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        Ukjent:   {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =      Utgående pakker:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        Forkastede: {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        Feil:    {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      Unicast-pakker:
+Main.Report.Local.Net.Stat.UniPackReceived   =        Mottatt:  {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        Sendt:      {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      Ikke unicast-pakker:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        Mottatt:  {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        Sendt:      {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0} byte
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=Innstillinger
+
+Settings.tnGeneral=Generelt
+Settings.tnView=Vis / Utdata
+Settings.tnWebRequests=Web-forespørsler
+Settings.tnTools=Verktøy
+
+Settings.lblMS=ms
+Settings.lblBytes=byte
+
+Settings.grpGeneralGeneral=Generelt
+Settings.lblGeneralMaxRecentItems=Maks antall tidigere objekter i rullgardinslister:
+Settings.grpGeneralDns=DNS-innstillinger
+Settings.lblGeneralDnsServer=DNS-server:
+Settings.lblGeneralDnsTimeout=Timeout:
+
+Settings.grpViewGeneral=Generelt
+Settings.chkViewShowTitleBar=Vis tittellinje
+Settings.grpViewRtf=Tekst utdata
+Settings.chkViewRtfWordWrap=Tekstbryting
+Settings.lblViewRtfFontDefault=Standard Skrifttype:
+Settings.txtViewRtfFontDefault={0}, {1} pt
+Settings.btnViewRtfFontDefaultSel=Velg Skrifttype
+
+Settings.rbWebRequestsProxySystem=Bruk systemets proxyinnstillinger (Internet Explorer)
+Settings.rbWebrequestsProxyUserDefined=Brukerdefinerte proxyinnstillinger:
+Settings.grpWebRequestsProxy=Proxy-server
+Settings.lblWebRequestsProxyServer=Server:
+Settings.chkWebRequestsProxyBypassOnLocal=Ikke bruk proxyserver for lokale adresser
+Settings.lblWebRequestsProxyUsername=Brukernavn:
+Settings.lblWebRequestsProxyPassword=Passord
+Settings.grpWebRequestsMisc=Diverse
+Settings.lblWebRequestsUserAgent=Brukeragent:
+Settings.lblWebRequestsReferer=Referanse:
+
+Settings.lblToolsNothing=Denne oppføringen har ingen innstillingsalternativ.\wVelg en under-kategori.
+
+Settings.grpPingGeneral=Generelt
+Settings.lblPingMaxTTL=Max TTL:
+
+Settings.grpMultiPingGeneral=Generelt
+Settings.lblMultiPingMaxTTL=Max TTL:
+Settings.chkMultiPingShowGridlines=Vis støttelinjer
+
+Settings.grpTraceGeneral=Generelt
+Settings.lblTraceBytes=Bufferstørrelse:
+
+Settings.grpWhoisGeneral=Generelt
+Settings.lblWhoisTimeout=Timeout:
+Settings.grpWhoisDomain=Domeneforespørsler
+Settings.lblWhoisMaxRedirectDom=Maksimalt antall omdirigeringer:
+Settings.grpWhoisNetwork=Nettverksforespørsler
+Settings.lblWhoisMaxRedirectDomainNet=Maksimalt antall omdirigeringer:
+Settings.lblWhoisNetServer=Første Whois-server:
+Settings.chkWhoisNetServerFromDB=Bruk Whois-server fra databasen, dersom tilgjengelig
+
+Settings.grpMailCheckGeneral=Generelt
+Settings.lblMailCheckTimeout=Timeout:
+Settings.lblMailCheckHeloHost=Vertsnavn for EHLO/HELO:
+Settings.chkMailCheckHeloHostGetExternal=Ta imot ekstern vertsinformasjon
+Settings.lblMailCheckSenderDefault=Standard Avsenderadresse:
+
+Settings.grpHttpHeadGeneral=Generelt
+Settings.lblHttpHeadTimeout=Timeout:
+Settings.chkHttpHeadUseProxy=Bruk proxy-server
+Settings.chkHttpHeadShowOrigHeader=Vis originalhode
+
+Settings.grpPageRankGeneral=Generelt
+Settings.lblPageRankTimeout=Timeout:
+Settings.chkPageRankUseProxy=Bruk proxy-server
+
+Settings.grpMultiRankGeneral=Generelt
+Settings.lblMultiRankTimeout=Timeout:
+Settings.chkMultiRankUseProxy=Bruk proxy-server
+Settings.chkMultiRankShowGridlines=Vis støttelinjer
+
+Settings.grpTimeGeneral=Generelt
+Settings.lblTimeTimeout=Timeout:
+Settings.grpTimeServers=Tidsservere
+Settings.lblTimeServers=Bruk følgende tidsservere
+Settings.lblTimeServersNote=(en server pr. rad)
+
+Settings.grpListInfoGeneral=Generelt
+Settings.chkListInfoShowGridlines=Vis støttelinjer
+
+Settings.grpLocalExternalHostInfo=Ekstern vertsinformasjon
+Settings.lblLocalTimeout=Timeout:
+Settings.chkLocalUseProxy=Bruk proxy-server
+Settings.lblLocalExternalHostInfo=Ta imot ekstern vertsinformasjon fra:
+

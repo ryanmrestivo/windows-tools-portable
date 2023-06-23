@@ -1,0 +1,97 @@
+﻿##############################################################################
+IMPORTANT NOTES FOR TRANSLATORS
+##############################################################################
+
+To start a translation, you can use the English language file as a starting
+point. To do so, copy the English.lng file and rename it to the language you
+want to translate into. PLEASE USE ONLY ENGLISH LANGUAGE NAMES!
+
+
+LANGUAGE FILE FORMAT
+
+  Language files have to be saved as UTF-8, including the UTF-8 BOM (Byte Order
+  Mask). You can do this for example with the Windows Editor by saving the file
+  with the encoding "UTF-8" in the save dialog.
+
+
+COMMENTS
+
+  Comments must start with a sharp character ("#") in a new line.
+
+  Syntax:
+    # Comment
+
+
+STRINGS
+
+  Each string starts with an identifier, followed by an equal sign ("=") and a
+  text. Only the first equal sign is used as delimiter, so there is no problem,
+  if there is an other one in the text.
+
+  Syntax:
+    Identifier=Text
+
+  IMPORTANT: DO NOT CHANGE ANYTHING IN FRONT OF THE EQUAL SIGN!
+
+
+FONT
+
+  The font used for the user interface can be changed by editing the strings
+  "General.Font.Name" and "General.Font.Size".
+
+  IMPORTANT: CHANGE THIS ONLY IF IT'S REQUIRED TO DISPLAY THE LANGUAGE
+             CORRECTLY. DO NOT "TRANSLATE" THE FONT NAME!
+
+
+PLACEHOLDERS
+
+  Placeholders are numbers, enclosed with curly brackets ("{" and "}").
+  In the text can be one or more placeholders.
+  These placeholders will be replaced by the application with a variable text.
+
+  Example:
+    Example.String=This is step {0} out of a total of {1}
+
+  Example output:
+    This is step 3 out of a total of 6
+
+  The placeholder "{0}" will be replaced with the current step number and the
+  placeholder "{1}" with the total count. The grammar of a language can be
+  different, so the text can be written in an other order too, like the
+  following alternative:
+    Example.String=Total steps: {1}, current step: {0}
+
+  IMPORTANT: PLACEHOLDERS MUST NOT BE CHANGED!
+
+
+ESCAPE CHARACTERS
+
+  Some applications print a text in multiple lines or use a tabulator character.
+  To print control characters or special characters, a escape character is used.
+
+  Supported escape characters:
+    \s   Space
+    \r   Carriage Return
+    \n   New Line
+    \t   Tabulator
+    \w   Windows line break (it's equal to "\r\n")
+
+  The text "Headline:\r\n\tContent" prints the text "Headline:" in the first
+  line. After a Windows line break follows a tabulator and then the text
+  "Content".
+
+
+SPACE CHARACTERS
+
+  Spaces in front of a text (after the equal sign) will not be trimmed.
+  Spaces at the end of a text will be trimmed.
+  To avoid trimming the space characters at the end of a text, the placeholder
+  "{END}" can be used.
+  The text "Spaces follows   {END}" will result in "Spaces follows   ".
+  Escape characters can be used too, like: "Spaces follows\s\s\s".
+
+
+PLEASE USE PLACEHOLDERS, ESCAPE CHARACTERS AND SPACE CHARACTERS ONLY IF THEY
+ARE USED IN THE ORIGINAL TEXT OF THE ENGLISH LANGUAGE FILE TOO.
+
+##############################################################################

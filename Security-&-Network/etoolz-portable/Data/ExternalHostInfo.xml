@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalHostInfo>
+
+	<Item>
+		<Title>skittel.de (IP + Hostname)</Title>
+		<URL>http://www.script.skittel.de/common/ip_hostname.php</URL>
+		<IPAddress>
+			<RegEx>^(\d+\.\d+\.\d+\.\d+):</RegEx>
+			<SubPattern>1</SubPattern>
+		</IPAddress>
+		<Hostname>
+			<RegEx>:(.+)$</RegEx>
+			<SubPattern>1</SubPattern>
+		</Hostname>
+	</Item>
+
+	<Item>
+		<Title>dyndns.org (IP)</Title>
+		<URL>http://checkip.dyndns.org/</URL>
+		<IPAddress>
+			<RegEx>Current IP Address: (\d+\.\d+\.\d+\.\d+)</RegEx>
+			<SubPattern>1</SubPattern>
+		</IPAddress>
+	</Item>
+
+	<Item>
+		<Title>jan-welker.de (IP)</Title>
+		<URL>http://service.jan-welker.de/myip.ashx</URL>
+		<IPAddress>
+			<RegEx>^(\d+\.\d+\.\d+\.\d+)</RegEx>
+			<SubPattern>1</SubPattern>
+		</IPAddress>
+	</Item>
+
+	<Item>
+		<Title>whatismyip.com (IP)</Title>
+		<URL>http://automation.whatismyip.com/n09230945.asp</URL>
+		<IPAddress>
+			<RegEx>^(\d+\.\d+\.\d+\.\d+)</RegEx>
+			<SubPattern>1</SubPattern>
+		</IPAddress>
+	</Item>
+
+</ExternalHostInfo>

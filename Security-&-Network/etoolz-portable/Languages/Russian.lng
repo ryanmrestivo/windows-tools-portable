@@ -1,0 +1,719 @@
+﻿# ############################
+# Language file for eToolz 4.5
+# ############################
+
+Language.Translator.Name=Valerij Romanovskij & Dmitry Yerokhin
+Language.Translator.Website=https://www.gaijin.at/en/
+Language.Translator.EMail=erodim@mail.ru
+
+# >>> REMOVED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Language.FlagImageFile=Russian.gif
+# <<< REMOVED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+
+General.Font.Name=Tahoma
+General.Font.Size=8
+
+General.MsgLanguageChangeTitle=Изменение языка
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=Внимание, некоторые тексты появятся на русском языке только после перезапуска приложения.
+
+# >>> CHANGED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# The string IDs ("General.Msg...") have been changed!
+General.Msg.Title.NoDefaultMailer=Почтовый клиент по не найден
+General.Msg.Text.NoDefaultMailer=Не удалось обнаружить почтовый клиент по умолчанию.
+General.Msg.Title.NoDefaultBrowser=Веб-браузер не найден
+General.Msg.Text.NoDefaultBrowser=Не удалось обнаружить веб-браузер по умолчанию.
+General.Msg.Title.NoHelp=Справка недоступна
+General.Msg.Text.NoHelp=Невозможно открыть файл Справки "{0}".
+# <<< CHANGED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+General.Button.Ok=OK
+General.Button.Start=Старт
+General.Button.Cancel=Отмена
+General.Button.Close=Закрыть
+General.Button.Help=Справка
+
+General.FileFilter.All=Все файлы (*.*)
+General.FileFilter.RTF=Файлы RTF (*.rtf)
+General.FileFilter.TXT=Текстовые файлы (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=Пинг
+General.Tool.MultiPing=Мульти-пинг
+General.Tool.Trace=Трассировка
+General.Tool.Whois=Whois
+General.Tool.MailCheck=Проверка почты
+General.Tool.MailHead=Анализ заголовков
+General.Tool.HttpHead=HTTP-заголовок
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.PageRank=PageRank
+#General.Tool.MultiRank=MultiRank
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.Time=Время
+General.Tool.ListInfo=Списки
+General.Tool.Local=Локальный хост
+
+General.Tool.MenuItem.Dns=&DNS
+General.Tool.MenuItem.Ping=&Пинг
+# >>> CHANGED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MultiPing=&Мульти-пинг
+# <<< CHANGED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.Trace=&Трассировка
+General.Tool.MenuItem.Whois=&Whois
+General.Tool.MenuItem.MailCheck=Проверка по&чты
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#General.Tool.MenuItem.PageRank=Page&Rank
+#General.Tool.MenuItem.MultiRank=M&ultiRank
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MailHead=&Анализатор заголовков
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.HttpHead=HTTP-&заголовок
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Time=&Время
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.ListInfo=Сп&иски
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.Local=&Локальный хост
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+General.Bool.Yes=Да
+General.Bool.No=Нет
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title=Установка {0}
+
+Config.grpUserData=Данные пользователя
+Config.lblUserDataDesc=Данные пользователя содержат параметры приложения и опции интерфейса. Эти параметры могут быть разными для каждого пользователя.
+Config.rbUserDataAppData=Папка для данных приложения текущего пользователя (рекомендуется)
+Config.rbUserDataProgram=Папка приложения {0} (например для внешних USB-устройств)
+Config.rbUserDataUserDef=Заданная пользователем папка:
+Config.btnUserDataUserDef=Выберите папку
+
+Config.DlgFolderUserDefText=Выберите папку для данных пользователя.
+
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title=О программе {0}
+
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+About.Description={0}
+About.Version=Версия {0}
+
+# >>> REMOVED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.Link.Text.EMail=E-mail
+#About.Link.Title.EMail=Отправить письмо
+#About.Link.Text.Website=Сайт
+#About.Link.Title.Website=Открыть сайт
+# <<< REMOVED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+About.Credits=Благодарности
+About.Credits.Translation=Перевод
+About.Credits.Icons=Значки
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.lblDesc=Наиболее важные утилиты для Интернета
+#About.lblVersion=Версия {0}
+#About.lblRights=Все права защищены.
+#About.grpAuthor=Автор
+#About.lblWebsite=Сайт:
+#About.lblEMail=Почта:
+#About.tabLang=Перевод
+#About.lblTranslator=Переводчик:
+#About.tabReg=Информация о регистрации
+#About.txtRegDefault=Бесплатная версия (без файла лицензии)
+#About.tabCredits=Благодарности
+#About.rtfCredits.Icons=Значки
+#About.rtfCredits.Icons.FatCow=FatCow веб-хостинг ({0})
+# <<< REMOVED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=Язык
+
+Main.mnuFile=&Файл
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.mnuFilePrintPreview=&Предпросмотр печати...
+Main.mnuFilePrint=Пе&чать...
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuFileExit=В&ыход
+Main.mnuTools=Серв&ис
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.mnuToolsNext=&Следующий инструмент
+Main.mnuToolsPrevious=&Предыдущий инструмент
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuExtras=&Дополнительно
+# >>> CHANGED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# "Main.mnuToolsFlushDnsCache" changed to "Main.mnuExtrasFlushDnsCache"
+Main.mnuExtrasFlushDnsCache=&Очистить DNS-кэш Windows
+# <<< CHANGED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.mnuExtrasSettings=&Настройки
+Main.mnuHelp=&Справка
+Main.mnuHelpHelp=&Справка
+Main.mnuHelpWebsite=&Посетить сайт программы
+Main.mnuHelpEMail=&Отправить письмо автору
+Main.mnuHelpSupport=Подд&ержка {0}
+Main.mnuHelpAbout=&О программе {0}
+
+# >>> ADDED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputUseSel=&Использовать выбранное
+# <<< ADDED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.0.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputCut=В&ырезать
+Main.pmnuInputCopy=С&копировать
+Main.pmnuInputPaste=&Вставить
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputPasteFromFile=Вставить из &файла...
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuInputSelectAll=Вы&брать все
+# <<< ADDED 4.0.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.pmnuToolbarTitleShowHide.Show=&Показывать заголовок для "{0}"
+Main.pmnuToolbarTitleShowHide.Hide=&Скрывать заголовок для "{0}"
+Main.pmnuToolbarMultiline=&Показывать панель инструментов в несколько строк
+
+Main.pmnuRtfUseSel=&Использовать выбранное
+Main.pmnuRtfCopy=С&копировать
+Main.pmnuRtfSelectAll=&Выбрать все
+Main.pmnuRtfSaveAs=&Сохранить...
+Main.pmnuRtfSaveSelAs=С&охранить выбранное...
+
+Main.lblDnsQuery=Имя домена, хоста или IP-адрес:
+Main.chkDnsHostInfo=Информация о хосте (A и PTR)
+Main.chkDnsDomainInfo=Информация о домене (NS, MX, TXT и SOA)
+Main.chkDnsResolve=Сопоставлять имена хостов с IP-адресами
+Main.chkDnsVerify=Проверять имя хоста/IP-адрес
+Main.chkDnsQueryDirect=Прямой запрос
+
+Main.lblPingQuery=Имя хоста или IP-адрес:
+Main.lblPingCount=Попытки:
+Main.lblPingBytes=Байты:
+Main.lblPingTimeout=Таймаут:
+Main.lblPingPause=Пауза:
+
+Main.lblMultiPingQuery=Диапазон IP-адресов:
+Main.lblMultiPingBytes=Байты:
+Main.lblMultiPingTimeout=Таймаут:
+Main.chkMultiPingResolve=Сопоставлять имена хостов с IP-адресами
+
+Main.colMultiPingIP=IP-адрес
+Main.colMultiPingStatus=Статус
+Main.colMultiPingResponseIP=Ответ от
+Main.colMultiPingResponseHost=Имя хоста
+Main.colMultiPingTime=Время (мс)
+
+Main.lvMultiPing.Status.Timeout=Таймаут
+# >>> CHANGED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Placeholder "{1}" must be "{0}"
+Main.lvMultiPing.Status.Incomplete=Неполные данные ({0} байт)
+# <<< CHANGED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.lvMultiPing.Status.Different=Данные различаются
+Main.lvMultiPing.Status.Correct=Успешно
+Main.lvMultiPing.Status.Aborted=Прервано
+Main.lvMultiPing.Status.SndRcvError=Ошибка отправки или получения
+Main.lvMultiPing.Status.Error=Ошибка: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=&Использовать оригинальный IP-адрес
+Main.pmnuMultiPingOrigIPCopy=С&копировать оригинальный IP-адрес
+# >>> CHANGED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingIPUseSel=&Использовать откликающийся IP-адрес
+Main.pmnuMultiPingIPCopy=С&копировать откликающийся IP-адрес
+# <<< CHANGED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuMultiPingHostnameUseSel=&Использовать имя хоста
+Main.pmnuMultiPingHostnameCopy=С&копировать имя хоста
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingCopy=С&копировать элементы списка
+Main.pmnuMultiPingSelectAll=&Выбрать все
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lblTraceQuery=Имя хоста или IP-адрес:
+Main.lblTraceMaxHops=Прыжки:
+Main.lblTraceTimeout=Таймаут:
+Main.lblTraceMaxRetries=Повторы:
+Main.chkTraceResolve=Сопоставлять имена хостов с IP-адресами
+
+Main.lblWhoisQuery=Имя хоста или IP-адрес:
+Main.lblWhoisServer=WHOIS-сервер:
+Main.chkWhoisVerify=Проверять имя хоста/IP-адрес
+Main.chkWhoisRedirect=Автоматическое перенаправление
+Main.chkWhoisFormat=Формат ответа
+Main.chkWhoisQueryDirect=Прямой запрос
+Main.chkWhoisQueryDomain=Запрос к домену
+Main.chkWhoisQueryNetwork=Сетевой запрос
+Main.lblWhoisEncoding=Кодировка:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=Адрес email:
+Main.lblMailCheckSender=Адрес отправителя:
+Main.lblMailCheckServer=MX-сервер:
+Main.chkMailCheckSendVRFY=Отправить команду "VRFY"
+
+Main.lblMailHeadQuery=Строки заголовка:
+Main.chkMailHeadResolve=Сопоставлять имена хостов с IP-адресами
+
+Main.lblHttpHeadQuery=URL-адрес:
+Main.lblHttpHeadCommand=Команда:
+Main.chkHttpHeadFullPage=Показать страницу целиком
+Main.chkHttpHeadRedirect=Автоматическое перенаправление
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Main.lblPageRankQuery=URL-адрес:
+#Main.lblPageRankValueTitle=Google PageRank:
+#Main.lblPageRankValue.ConnectionError=The PageRank can not be retrieved.
+#Main.lblPageRankValue.NoResult=There is no PageRank available for this URL.
+#Main.lblPageRankValue.InvalidResult=The result can not be processed.
+#Main.lblMultiRankQuery=URL-адреса:
+#Main.lblMultiRankQueryNote=(один URL-адрес в строке)
+#Main.chkMultiRankResolve=Сопоставлять IP-адреса с именами хостов
+#Main.colMultiRankURL=URL-адрес
+#Main.colMultiRankStatus=Статус
+#Main.colMultiRankPageRank=PageRank
+#Main.colMultiRankIP=IP-адрес
+#Main.lvMultiRank.Status.ConnectionError=Ошибка соединения
+#Main.lvMultiRank.Status.Aborted=Прервано
+#Main.lvMultiRank.Status.Timeout=Тайм-аут
+#Main.lvMultiRank.Status.NoResult=Не доступно
+#Main.lvMultiRank.Status.InvalidResult=Неверный результат
+#Main.lvMultiRank.Status.Success=Успешно
+##Main.pmnuMultiRankUseSel=&Использовать выбранное
+#Main.pmnuMultiRankCopy=&Копировать
+#Main.pmnuMultiRankUrlUseSel=&Использовать URL
+#Main.pmnuMultiRankUrlCopy=&Копировать URL
+#Main.pmnuMultiRankIPUseSel=&Использовать IP-адрес
+#Main.pmnuMultiRankIPCopy=&Копировать IP-адрес
+#Main.pmnuMultiRankCopy=&Копировать записи списка
+#Main.pmnuMultiRankSelectAll=&Выбрать все
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.btnTimeSetTime=Установить время системы
+Main.lblTimeServer=NTP-сервер времени:
+Main.lblTimeSystemTitle=Время системы:
+Main.lblTimeServerTitle=Время с сервера:
+Main.lblTimeServerTitle.Server=Время с сервера "{0}":
+Main.lblTimeDifferenceTitle=Разница во времени:
+Main.lblTimeServerUpdateTitle=Последнее обновление с сервера времени:
+Main.lblTimeServerUpdateTitle.Server=Последнее обновление времени с сервера "{0}":
+Main.lblTimeServerUpdate={0} ({1} назад)
+Main.lblTimeServerLocal.SysTimeNotSet=Невозможно установить время системы.
+Main.lblTimeServerLocal.ServerNotReachable=Сервер времени "{0}" недоступен.
+Main.lblTimeServerLocal.ResponseError=Невозможно обработать ответ сервера времени "{0}".
+
+Main.lblListInfoQuery=Что искать:
+Main.lblListInfoSource=Список:
+Main.chkListInfoCaseSensitive=С учётом регистра
+Main.chkListInfoWholeColumns=Поиск по всем колонкам
+
+Main.chkLocalResolve=Сопоставлять имена хостов с IP-адресами
+Main.chkLocalExternal=Получить информацию внешнего хоста
+Main.chkLocalAdapterInfo=Показать сетевые адаптеры
+Main.chkLocalIPv4Stat=Показать статистику IPv4
+
+Main.MsgFlushDnsCache.Title=Очистить DNS-кэш Windows
+Main.MsgFlushDnsCache.SrvNotRunning=Служба DNS-клиента не запущена.\w\wЧтобы очистить DNS-кэш Windows, нужно, чтобы эта служба была запущена.
+Main.MsgFlushDnsCache.ErrorMessage=Невозможно очистить DNS-кэш Windows.\w\wОшибка:\w{0}
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.MsgFlushDnsCache.Output=Вывод команды "ipconfig /flushdns":\w\w{0}
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.DlgSave.Title=Сохранить
+Main.DlgSaveSelection.Title=Сохранить выбранное
+Main.MsgSaveSelection.Error=Невозможно сохранить файл "{0}".
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.DlgPasteFromFile.Title=Вставить из файла
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.MsgInvalidURL.Title=Недопустимый URL-адрес
+Main.MsgInvalidURL.Text=Недопустимый формат URL-адреса "{0}".
+
+Main.MsgInvalidMailAddress.Title=Недопустимый почтовый адрес
+Main.MsgInvalidMailAddress.Text=Недопустимый формат почтового адреса "{0}".
+
+Main.MsgInvalidIPRange.Title=Недействительный диапазон IP-адресов
+Main.MsgInvalidIPRange.Text=Неверный формат указанного диапазона IP-адресов.\w\wМожет быть другим только последний байт адреса.\w\wДопустимые форматы:\w    x.x.x.Y - x.x.x.Z (например 127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (например 127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=Запрос прерван пользователем.
+Main.Report.QueryFinished=Запрос завершён.
+
+Main.Report.HostInfo.Title=Информация хоста для "{0}":
+Main.Report.HostInfo.NotAvailable=(недоступно)
+
+Main.Report.HostInfo.IPAddress =  IP-адрес:   {END}
+Main.Report.HostInfo.Hostname  =  Имя хоста:    {END}
+Main.Report.HostInfo.Domainname=  Имя домена:  {END}
+Main.Report.HostInfo.TLD       =  Высший уровень:    {END}
+Main.Report.HostInfo.CountryIP =  Страна (IP): {END}
+Main.Report.HostInfo.IPRange   =  Диапазон IP-адресов:     {END}
+Main.Report.HostInfo.RIRData   =  RIR-данные:     {END}
+Main.Report.HostInfo.RIRData.ValueDate=(присвоено с {0})
+
+Main.Report.DNS.IPAddress       =IP-адреса (A):
+Main.Report.DNS.IPAddress.Title =  {0}. IP-адрес:
+Main.Report.DNS.Hostname        =Имена хостов (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. Имя хоста:
+Main.Report.DNS.Nameserver      =Сервер имён (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. Серверы имён:
+Main.Report.DNS.MXServer        =Сервера Mail Exchange (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. MX-сервер:
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.Report.DNS.MXServer.Pref   =, pref={0}
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.Report.DNS.Text            =Текстовые записи (TXT):
+Main.Report.DNS.Text.Title      =  {0}. Текстовая запись:
+
+Main.Report.DNS.SOA=Запись Start of Authority (SOA):
+Main.Report.DNS.SOA.Server.Title =  Сервер:     {END}
+Main.Report.DNS.SOA.RName.Title  =  Контакты:    {END}
+Main.Report.DNS.SOA.Serial.Title =  Серийный №: {END}
+Main.Report.DNS.SOA.Expire.Title =  Истекает:     {END}
+Main.Report.DNS.SOA.Refresh.Title=  Обновлено:    {END}
+Main.Report.DNS.SOA.Retry.Title  =  Повтор:      {END}
+Main.Report.DNS.SOA.MinTTL.Title =  Мин. TTL:   {END}
+
+Main.Report.DNS.SOA.Expire.Value={0} сек ({1})
+Main.Report.DNS.SOA.Refresh.Value={0} сек ({1})
+Main.Report.DNS.SOA.Retry.Value={0} сек ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0} сек ({1})
+
+Main.Report.Ping.NoIPAvailable=Невозможно определить IP-адрес.
+Main.Report.Ping.Start=Отправлено пакетов: {1},  {2} байт на "{0}":
+Main.Report.Ping.Reply=  {0}. ответ от {1}:
+Main.Report.Ping.Pause=      Пауза ({0} мс)
+Main.Report.Ping.Reply.Error=Ошибка: {0}.
+Main.Report.Ping.Reply.SndRcvError=Ошибка при отправке или получении.
+Main.Report.Ping.Reply.Timeout=Таймаут.
+Main.Report.Ping.Reply.Aborted=Прервано пользователем.
+Main.Report.Ping.Reply.Incomplete={0} мс, неполные данные (только {1} байт получено).
+Main.Report.Ping.Reply.Different={0} мс, различающиеся данные.
+Main.Report.Ping.Reply.Correct={0} мс, правильные данные.
+Main.Report.Ping.Result=Отправлено пингов: {0} (корректно: {1}, некорректно: {2}, ошибок: {3}).
+Main.Report.Ping.ResultTime=Быстрый ответ: {0} мс, медленный ответ: {1} мс, средний: {2} мс.
+
+Main.Report.Trace.Start=Трассировка маршрута к "{0}" через максимум {1} прыжков:
+Main.Report.Trace.SndRcvError=Ошибка при отправке или получении.
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0} мс  {1}
+Main.Report.Trace.Reply.TimeIPHost={0} мс  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     Время отклика истекло.
+Main.Report.Trace.HostReached=Целевой хост "{0}" достигнут.
+Main.Report.Trace.MaxHops=Достигнуто максимальное число прыжков.
+
+Main.Report.Whois.DirectQuery.Title=Прямой запрос
+Main.Report.Whois.DirectQuery.Start=Запрос для "{0}" на "{1}":
+Main.Report.Whois.DirectQuery.Redir=Перенаправленный запрос для "{0}" на "{1}":
+
+Main.Report.Whois.DomainQuery.Title=Запрос к домену
+Main.Report.Whois.DomainQuery.Start=Запрос к домену для "{0}" на "{1}":
+Main.Report.Whois.DomainQuery.Redir=Перенаправленный запрос к домену для "{0}" на "{1}":
+Main.Report.Whois.DomainQuery.NoDomainName=Нет имени домена для запроса.
+Main.Report.Whois.DomainQuery.NoTLD=Нет домена верхнего уровня для запроса.
+Main.Report.Whois.DomainQuery.NoTLDInfo=Не обнаружено информации для домена верхнего уровня "{0}".
+
+Main.Report.Whois.NetworkQuery.Title=Сетевой запрос
+Main.Report.Whois.NetworkQuery.Start=Сетевой запрос для "{0}" на "{1}":
+Main.Report.Whois.NetworkQuery.Redir=Перенаправленный сетевой запрос для "{0}" на "{1}":
+Main.Report.Whois.NetzworkQuery.NoIPAddress=Нет IP-адреса для сетевого запроса.
+
+Main.Report.Whois.ServerNotReachable=Whois-сервер "{0}" не отвечает.
+Main.Report.Whois.Redirection=Ответ "{0}" указывает на Whois-сервер "{1}".
+Main.Report.Whois.NoWhoisServer=Не найден подходящий Whois-сервер.
+Main.Report.Whois.ServerNotInDB=Не удалось найти в базе данных Whois-сервер для "{0}".
+Main.Report.Whois.WhoisLink.Title=Whois-ссылка:
+
+Main.Report.MailCheck.MailInfo.Title=Информация о почте:
+Main.Report.MailCheck.MailInfo.MailAddress=  Адрес email: {END}
+Main.Report.MailCheck.MailInfo.DomainName =  Имя домена:  {END}
+
+Main.Report.MailCheck.MXServer.Title=Почтовый сервер Exchange для "{0}":
+Main.Report.MailCheck.MXServer.Number=  {0}. MX-сервер:
+Main.Report.MailCheck.MXServer.ServerPref={0}, preference={1}
+
+Main.Report.MailCheck.NoDomain=Нет почтового сервера для домена "{0}".
+Main.Report.MailCheck.Start=Проверка почтового адреса "{0}" через MX-сервер "{1}" (порт {2}):
+Main.Report.MailCheck.NoConnect=Невозможно подключиться к MX-серверу "{0}".
+Main.Report.MailCheck.Connected=Подключено к MX-серверу "{0}" на порт {1}.
+Main.Report.MailCheck.Timeout=MX-сервер не отвечает (время истекло).
+Main.Report.MailCheck.SendError=Невозможно отправить команду.
+Main.Report.MailCheck.Disconnect=Подключение к MX-серверу "{0}" прервано.
+
+Main.Report.MailCheck.Result.Title=Результат:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  Результат VRFY положительный или нейтральный.
+Main.Report.MailCheck.Result.VrfyFail            =  Результат VRFY отрицательный.
+Main.Report.MailCheck.Result.SenderAccepted      =  Адрес отправителя <{0}> принят.
+Main.Report.MailCheck.Result.RecipientAccepted   =  Адрес получателя <{0}> принят.
+Main.Report.MailCheck.Result.HostNotAccepted     =  Хост не принят.
+Main.Report.MailCheck.Result.SenderNotAccepted   =  Адрес отправителя <{0}> не принят.
+Main.Report.MailCheck.Result.RecipientNotAccepted=  Адрес получателя <{0}> не принят.
+
+Main.Report.MailHead.NotAvailable=(недоступно)
+
+Main.Report.MailHead.Header.Title=Заголовок:
+Main.Report.MailHead.Header.Formatted=форматированный
+Main.Report.MailHead.Header.Decoded=декодированный
+
+Main.Report.MailHead.RcvOverview.Title=Итоговые сведения:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. Запись (строка {1}):
+Main.Report.MailHead.RcvOverview.SentFrom =      Отправлено от:     {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      Получено от: {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      Время получения: {END}
+Main.Report.MailHead.RcvOverview.Duration =      Длительность:      {END}
+
+Main.Report.MailHead.RcvDetail.Title=Подробности:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. Запись (строка {1}):
+Main.Report.MailHead.RcvDetail.Original        =      Исходная строка: {END}
+Main.Report.MailHead.RcvDetail.Sender          =      Отправитель:        {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      Отправитель (IP):   {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      Отправитель (от): {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      Отправитель (HELO): {END}
+Main.Report.MailHead.RcvDetail.Received        =      Получено от: {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      Получено для:  {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      Время получения: {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      Длительность:      {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(недоступно или некорректно)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      Анализ:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        Эта запись была добавлена получателями почтового сервера.
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        IP-адрес отправителя не является публичным.
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        Похоже, отправитель и/или получатель - из не публичной сети.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        Возможно, IP-адрес отправителя подделан.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =        IP-адрес в поле "от" ({0}) не совпадает с клиентским IP-адресом ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        Возможно, имя хоста отправителя подделано.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=        Имя хоста в поле "от" ({0}) не совпадает с клиентским именем хоста ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        Имена хостов совпадают.
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        Имена доменов совпадают.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        Имена хостов не совпадают.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =        Имя хоста получателя этой записи ({0}) должно быть\w именем хоста следующей записи ({1}).\w Это часто бывает из-за смены IP-адреса, например, при преобразовании сетевых адресов (NAT) из частного IP-адреса в общедоступный.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        Нет имён хостов для сравнения.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        Имена домена не совпадают.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=        Имя домена получателя этой записи ({0}) должно быть\w доменом отправителя следующей записи ({1}).\w Это часто бывает из-за смены IP-адреса, например, при преобразовании сетевых адресов (NAT) из частного IP-адреса в общедоступный.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        Нет имён хостов или доменов для сравнения.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        Время доставки отличается больше чем на 10 мин, либо неверно установлена дата.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        Время доставки отличается больше чем на 10 мин, либо неверно установлена дата.
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        Нет ошибок, либо анализ невозможен.
+
+Main.Report.HttpHead.RequestURL=Запрошенный URL-адрес:
+Main.Report.HttpHead.Start=Отправить URL-адрес методом "{0}" на хост "{1}" (порт {2}):
+Main.Report.HttpHead.OriginalHeader=Исходный заголовок:
+Main.Report.HttpHead.Page=Страница:
+
+Main.Report.HttpHead.HeadInfo.Title=Информация заголовка:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  Время отклика: {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  URL отклика:  {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  Код состояния:   {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  Управление кэшем: {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  Из кэша:    {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  Изменено: {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  Время сервера:   {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  Веб-сервер:     {END}
+Main.Report.HttpHead.HeadInfo.Software    =  ПО:      {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0} мс
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=Ошибка: {0}.
+Main.Report.HttpHead.ErrorCode=Ответ веб-сервера с кодом ошибки {0} ({1}).
+Main.Report.HttpHead.NoConnect=Веб-сервер не отвечает.
+Main.Report.HttpHead.SendError=Ошибка при отправке данных.
+
+Main.Report.Local.LocalHost.Title=Локальный хост:
+Main.Report.Local.LocalHost.Hostname =  Имя хоста:   {END}
+Main.Report.Local.LocalHost.IPAddress=  IP-адрес: {END}
+
+Main.Report.Local.OwnIPs.Title=Собственные IP-адреса:
+Main.Report.Local.OwnIPs.Loopback=(loopback-адрес)
+
+Main.Report.Local.External.Title=Информация внешнего хоста:
+Main.Report.Local.External.IPAddress=  IP-адрес: {END}
+Main.Report.Local.External.Hostname =  Имя хоста:   {END}
+Main.Report.Local.External.NotAvailable=(недоступно)
+
+Main.Report.Local.DNS.Title=DNS-сервер:
+Main.Report.Local.DNS.Number=  {0}. DNS-сервер:
+
+Main.Report.Local.Net.Title=Сетевые интерфейсы:
+Main.Report.Local.Net.Intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    Описание: {END}
+Main.Report.Local.Net.MacAddress =    MAC-адрес: {END}
+Main.Report.Local.Net.DnsSuffix  =    DNS-суффикс:  {END}
+Main.Report.Local.Net.IPAddress  =    IP-адрес:  {END}
+Main.Report.Local.Net.DhcpServer =    DHCP-сервер: {END}
+Main.Report.Local.Net.DnsServer  =    DNS-сервер:  {END}
+Main.Report.Local.Net.Gateway    =    Шлюз:     {END}
+Main.Report.Local.Net.Anycast    =    Anycast:     {END}
+Main.Report.Local.Net.Multicast  =    Multicast:   {END}
+Main.Report.Local.Net.WinsServer =    WINS-сервер: {END}
+Main.Report.Local.Net.Stat.Title             =    Статистика:
+Main.Report.Local.Net.Stat.BytesReceived     =      Получено:    {END}
+Main.Report.Local.Net.Stat.BytesSent         =      Отправлено:        {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      Входящих пакетов:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        Отклонено: {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        Ошибки:    {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        Неизвестно:   {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =      Исходящих пакетов:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        Отклонено: {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        Ошибки:    {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      Пакетов Unicast:
+Main.Report.Local.Net.Stat.UniPackReceived   =        Получено:  {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        Отправлено:      {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      Пакетов не-Unicast:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        Получено:  {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        Отправлено:      {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0} байт
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=Настройки
+
+Settings.tnGeneral=Общие
+Settings.tnView=Вид / Вывод
+Settings.tnWebRequests=Веб-запросы
+Settings.tnTools=Сервис
+
+Settings.lblMS=мс
+Settings.lblBytes=байт
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.cmbListCopyFormat.Semicolon=Разделитель - точка с запятой
+Settings.cmbListCopyFormat.Comma=Разделитель - запятая
+Settings.cmbListCopyFormat.Tabulator=Разделитель - табуляция
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpGeneralGeneral=Общие
+Settings.lblGeneralMaxRecentItems=Максимум недавних элементов в выпадающих списках:
+Settings.grpGeneralDns=Параметры DNS
+Settings.lblGeneralDnsServer=DNS-сервер:
+Settings.lblGeneralDnsTimeout=Таймаут:
+
+Settings.grpViewGeneral=Общие
+Settings.chkViewShowTitleBar=Показывать строку заголовков
+Settings.grpViewRtf=Вывод текста
+Settings.chkViewRtfWordWrap=Переносить слова в длинных строках
+Settings.lblViewRtfFontDefault=Шрифт по умолчанию:
+Settings.txtViewRtfFontDefault={0}, {1} тчк
+Settings.btnViewRtfFontDefaultSel=Выбрать шрифт по умолчанию
+
+Settings.rbWebRequestsProxySystem=Системные настройки прокси (Internet Explorer)
+Settings.rbWebrequestsProxyUserDefined=Настройки прокси, заданные пользователем:
+Settings.grpWebRequestsProxy=Прокси-сервер
+Settings.lblWebRequestsProxyServer=Сервер:
+Settings.chkWebRequestsProxyBypassOnLocal=Не использовать прокси-сервер для локальных адресов
+Settings.lblWebRequestsProxyUsername=Логин:
+Settings.lblWebRequestsProxyPassword=Пароль
+Settings.grpWebRequestsMisc=Прочее
+Settings.lblWebRequestsUserAgent=Агент:
+Settings.lblWebRequestsReferer=Реферер:
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWebRequestsValidateCertificate=Не разрешать небезопасные соединения HTTPS (проверять SSL-сертификаты)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.lblToolsNothing=Этот элемент не содержит настроек.\wВыберите подпункт.
+
+Settings.grpPingGeneral=Общие
+Settings.lblPingMaxTTL=Максимум TTL:
+
+Settings.grpMultiPingGeneral=Общие
+Settings.lblMultiPingMaxTTL=Максимум TTL:
+Settings.chkMultiPingShowGridlines=Показывать сетку
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiPingListCopy=Копировать записи списка
+Settings.lblMultiPingListCopyFormat=Формат списка:
+Settings.chkMultiPingListCopyHeader=Добавлять заголовки колонок
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTraceGeneral=Общие
+Settings.lblTraceBytes=Размер буфера:
+
+Settings.grpWhoisGeneral=Общие
+Settings.lblWhoisTimeout=Таймаут:
+Settings.grpWhoisDomain=Запросы к домену
+Settings.lblWhoisMaxRedirectDom=Максимум перенаправлений:
+# >>> ADDED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWhoisShowIanaDomainOutput=Показывать вывод от IANA для доменов
+# <<< ADDED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Settings.grpWhoisNetwork=Сетевые запросы
+Settings.lblWhoisMaxRedirectDomainNet=Максимум перенаправлений:
+Settings.lblWhoisNetServer=Первый Whois-сервер:
+Settings.chkWhoisNetServerFromDB=Использовать Whois-сервер из базы данных, если доступно
+# >>> ADDED 4.4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkWhoisShowIanaNetworkOutput=Показывать вывод от IANA для сетей
+# <<< ADDED 4.4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpMailCheckGeneral=Общие
+Settings.lblMailCheckTimeout=Таймаут:
+Settings.lblMailCheckHeloHost=Имя хоста для EHLO/HELO:
+Settings.chkMailCheckHeloHostGetExternal=Получать информацию из внешнего хоста
+Settings.lblMailCheckSenderDefault=Адрес отправителя по умолчанию:
+
+Settings.grpHttpHeadGeneral=Общие
+Settings.lblHttpHeadTimeout=Таймаут:
+Settings.chkHttpHeadUseProxy=Использовать прокси-сервер
+# >>> CHANGED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkHttpHeadShowOrigHeader=Показывать исходные заголовки как полученные от сервера
+# <<< CHANGED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>> ADDED 4.5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.chkHttpHeadShowCertificate=Показывать информацию SSL-сертификата
+Settings.chkHttpHeadValidateCertificate=Не разрешать небезопасные соединения HTTPS (проверять SSL-сертификаты)
+# <<< ADDED 4.5 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Settings.grpPageRankGeneral=Общие
+#Settings.lblPageRankTimeout=Таймаут:
+#Settings.chkPageRankUseProxy=Использовать прокси-сервер
+#Settings.grpMultiRankGeneral=Общие
+#Settings.lblMultiRankTimeout=Таймаут:
+#Settings.chkMultiRankUseProxy=Использовать прокси-сервер
+#Settings.chkMultiRankShowGridlines=Показывать сетку
+#Settings.grpMultiRankListCopy=Копировать записи списка
+#Settings.lblMultiRankListCopyFormat=Формат списка:
+#Settings.chkMultiRankListCopyHeader=Добавлять заголовки колонок
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTimeGeneral=Общие
+Settings.lblTimeTimeout=Таймаут:
+Settings.grpTimeServers=Серверы времени
+Settings.lblTimeServers=Использовать следующие серверы времени:
+Settings.lblTimeServersNote=(по одному серверу на строку)
+
+Settings.grpListInfoGeneral=Общие
+Settings.chkListInfoShowGridlines=Показывать сетку
+
+Settings.grpLocalExternalHostInfo=Информация внешнего хоста
+Settings.lblLocalTimeout=Таймаут:
+Settings.chkLocalUseProxy=Использовать прокси-сервер
+Settings.lblLocalExternalHostInfo=Получать информацию внешнего хоста от:
+
+

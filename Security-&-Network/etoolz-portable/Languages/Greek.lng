@@ -1,0 +1,668 @@
+﻿# ############################
+# Language file for eToolz 4.3
+# ############################
+
+Language.Translator.Name=geogeo.gr
+Language.Translator.Website=https://www.geogeo.gr
+Language.Translator.EMail=geogeo.gr@gmail.com
+
+Language.FlagImageFile=Greek.gif
+Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+
+General.Font.Name=Tahoma
+General.Font.Size=8
+
+General.MsgLanguageChangeTitle=Αλλαγή γλώσσας
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=Παρακαλώ σημειώστε ότι κάποια κείμενα δεν θα εμφανίζονται στα Ελληνικά μέχρι να γίνει επανεκκίνηση της εφαρμογής.
+
+General.MsgNoDefaultBrowserTitle=Το προεπιλεγμένο πρόγραμμα περιήγησης ιστού δεν βρέθηκε
+General.MsgNoDefaultBrowserText=Το προεπιλεγμένο πρόγραμμα περιήγησης ιστού δεν μπόρεσε να ξεκινήσει!
+General.MsgNoStdMailerTitle=Το προεπιλεγμένο πρόγραμμα-πελάτης αλληλογραφίας δεν βρέθηκε
+General.MsgNoStdMailerText=Το προεπιλεγμένο πρόγραμμα-πελάτης αλληλογραφίας δεν μπόρεσε να ξεκινήσει!
+General.MsgNoHelpTitle=Βοήθεια
+General.MsgNoHelpText=Δεν ήταν δυνατό το άνοιγμα του αρχείου βοήθειας "{0}".
+
+General.Button.Ok=Εντάξει
+General.Button.Start=Έναρξη
+General.Button.Cancel=Άκυρο
+General.Button.Close=Κλείσιμο
+General.Button.Help=Βοήθεια
+
+General.FileFilter.All=Όλα τα αρχεία (*.*)
+General.FileFilter.RTF=Αρχεία RTF (*.rtf)
+General.FileFilter.TXT=Αρχεία κειμένου (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=Ping
+General.Tool.MultiPing=MultiPing
+General.Tool.Trace=Ανίχνευση
+General.Tool.Whois=Whois
+General.Tool.MailCheck=Έλεγχος email
+General.Tool.MailHead=Ανάλυση κεφαλίδας
+General.Tool.HttpHead=Κεφαλίδα ΗΤΤΡ
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.PageRank=PageRank
+General.Tool.MultiRank=MultiRank
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.Time=Χρόνος
+General.Tool.ListInfo=Λίστες
+General.Tool.Local=Τοπικός κεντρ. υπολογιστής
+
+General.Tool.MenuItem.Dns=D&ΝS
+General.Tool.MenuItem.Ping=&Ρing
+# >>> CHANGED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.MultiPing=&ΜultiPing
+# <<< CHANGED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+General.Tool.MenuItem.Trace=&Ανίχνευση
+General.Tool.MenuItem.Whois=Wh&οis
+General.Tool.MenuItem.MailCheck=Έλε&γχος email
+General.Tool.MenuItem.HttpHead=Κεφαλίδα &ΗΤΤΡ
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.PageRank=Page&Rank
+General.Tool.MenuItem.MultiRank=M&ultiRank
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+General.Tool.MenuItem.ListInfo=&Λίστες
+
+General.Bool.Yes=Ναι
+General.Bool.No=Όχι
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title=Διαμόρφωση του {0}
+
+Config.grpUserData=Δεδομένα χρήστη
+Config.lblUserDataDesc=Τα «δεδομένα χρήστη» περιέχουν τις ρυθμίσεις της εφαρμογής και τις επιλογές περιβάλλοντος χρήστη. Αυτές οι ρυθμίσεις μπορεί να είναι διαφορετικές για κάθε χρήστη.
+Config.rbUserDataAppData=Φάκελος για δεδομένα εφαρμογής του τρέχοντος χρήστη (συνιστάται)
+Config.rbUserDataProgram=Κατάλογος εφαρμογής του {0} (π.χ. για εξωτερικές συσκευές USB)
+Config.rbUserDataUserDef=Κατάλογος ορισμένος από χρήστη:
+Config.btnUserDataUserDef=Επιλέξτε τον ορισμένο από τον χρήστη κατάλογο
+
+Config.DlgFolderUserDefText=Παρακαλώ επιλέξτε τον κατάλογο για τα δεδομένα χρήστη.
+
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title=Περί {0}
+
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+About.Description={0}
+About.Version=Έκδοση {0}
+
+#About.Link.Text.EMail=E-mail
+About.Link.Title.EMail=Αποστολή e-mail
+About.Link.Text.Website=Ιστοσελίδα
+About.Link.Title.Website=Επίσκεψη ιστοσελίδας
+
+About.Credits=Συντελεστές
+About.Credits.Translation=Μετάφραση
+About.Credits.Icons=Εικονίδια
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# >>> REMOVED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#About.lblDesc=The most important tools for the Internet
+#About.lblVersion=Version {0}
+#About.lblRights=All rights reserved.
+#About.grpAuthor=Author
+#About.lblWebsite=Website:
+#About.lblEMail=E-mail:
+#About.tabLang=Translation
+#About.lblTranslator=Translator:
+#About.tabReg=Registration information
+#About.txtRegDefault=Royalty free version\w\w(No valid license file)
+#About.tabCredits=Credits
+#About.rtfCredits.Icons=Icons
+#About.rtfCredits.Icons.FatCow=FatCow Web Hosting ({0})
+# <<< REMOVED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=Γλώσσα
+
+Main.mnuFile=&Αρχείο
+Main.mnuFileExit=Έ&ξοδος
+Main.mnuTools=&Εργαλεία
+Main.mnuToolsFlushDnsCache=Εκκαθάριση &μνήμης cache DNS των Windows
+Main.mnuExtras=Επι&λογές
+Main.mnuExtrasSettings=&Ρυθμίσεις...
+Main.mnuHelp=&Βοήθεια
+Main.mnuHelpHelp=&Βοήθεια
+Main.mnuHelpWebsite=Επίσκεψη στην &ιστοσελίδα του προϊόντος
+Main.mnuHelpEMail=&Αποστολή e-mail στο δημιουργό
+Main.mnuHelpSupport=&Υποστηρίξτε το {0}
+Main.mnuHelpAbout=&Περί {0}
+
+# >>> ADDED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputUseSel=&Χρήση επιλογής
+# <<< ADDED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>> ADDED 4.0.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputCut=Αποκ&οπή
+Main.pmnuInputCopy=Αντι&γραφή
+Main.pmnuInputPaste=Επ&ικόλληση
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputPasteFromFile=Επικόλληση από &αρχείο...
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuInputSelectAll=Επιλ&ογή όλων
+# <<< ADDED 4.0.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.pmnuToolbarTitleShowHide.Show=&Εμφάνιση τίτλου για "{0}"
+Main.pmnuToolbarTitleShowHide.Hide=&Απόκρυψη τίτλου για "{0}"
+Main.pmnuToolbarMultiline=Εμφάνιση εργαλειοθήκης σε &πολλές γραμμές
+
+Main.pmnuRtfUseSel=&Χρήση επιλογής
+Main.pmnuRtfCopy=Αντι&γραφή
+Main.pmnuRtfSelectAll=Επιλ&ογή όλων
+Main.pmnuRtfSaveAs=&Αποθήκευση...
+Main.pmnuRtfSaveSelAs=Απο&θήκευση επιλογής...
+
+Main.lblDnsQuery=Όνομα τομέα, κεντρ. υπολογιστή ή διεύθ. ΙΡ:
+Main.chkDnsHostInfo=Πληροφορίες κεντρικού υπολογιστή (A και PTR)
+Main.chkDnsDomainInfo=Πληροφορίες τομέα (NS, MX, TXT και SOA)
+Main.chkDnsResolve=Επίλυση ονομάτων κεντρικών υπολογιστών
+Main.chkDnsVerify=Επαλήθευση ονόματος κεντρ. υπολογ./διεύθ.IP
+Main.chkDnsQueryDirect=Άμεσο ερώτημα
+
+Main.lblPingQuery=Όνομα κεντρ. υπολογιστή ή Διεύθυνση ΙΡ:
+Main.lblPingCount=Πλήθος:
+Main.lblPingBytes=Bytes:
+Main.lblPingTimeout=Χρονικό όριο:
+Main.lblPingPause=Παύση:
+
+Main.lblMultiPingQuery=Εύρος διευθύνσεων ΙΡ:
+Main.lblMultiPingBytes=Bytes:
+Main.lblMultiPingTimeout=Χρονικό όριο:
+Main.chkMultiPingResolve=Επίλυση ονομάτων κεντρικών υπολογιστών
+
+Main.colMultiPingIP=Διεύθυνση IP
+Main.colMultiPingStatus=Κατάσταση
+Main.colMultiPingResponseIP=Απόκριση από
+Main.colMultiPingResponseHost=Όνομα κεντρικού υπολογιστή
+Main.colMultiPingTime=Χρόνος (ms)
+
+Main.lvMultiPing.Status.Timeout=Χρονικό όριο
+Main.lvMultiPing.Status.Incomplete=Ελλιπή δεδομένα ({1} byte)
+Main.lvMultiPing.Status.Different=Διαφορετικά δεδομένα
+Main.lvMultiPing.Status.Correct=Επιτυχία
+Main.lvMultiPing.Status.Aborted=Ματαιώθηκε
+Main.lvMultiPing.Status.SndRcvError=Σφάλμα αποστολής ή λήψης
+Main.lvMultiPing.Status.Error=Σφάλμα: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=&Χρήση αρχικής διεύθυνσης ΙΡ
+Main.pmnuMultiPingOrigIPCopy=Αντιγραφή &αρχικής διεύθυνσης ΙΡ
+# >>> CHANGED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingIPUseSel=Χ&ρήση διεύθυνσης ΙΡ απόκρισης
+Main.pmnuMultiPingIPCopy=Αντιγραφή &διεύθυνσης ΙΡ απόκρισης
+# <<< CHANGED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuMultiPingHostnameUseSel=Χρή&ση ονόματος κεντρ. υπολογιστή
+Main.pmnuMultiPingHostnameCopy=Αντι&γραφή ονόματος κεντρ. υπολογιστή
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingCopy=Αντιγραφή &λίστας καταχωρήσεων
+Main.pmnuMultiPingSelectAll=Επιλ&ογή όλων
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lblTraceQuery=Όνομα κεντρ. υπολογιστή ή Διεύθυνση ΙΡ:
+Main.lblTraceMaxHops=Άλματα:
+Main.lblTraceTimeout=Χρονικό όριο:
+Main.lblTraceMaxRetries=Επαναλήψεις:
+Main.chkTraceResolve=Επίλυση ονομάτων κεντρικών υπολογιστών
+
+Main.lblWhoisQuery=Όνομα κεντρ. υπολογιστή ή Διεύθυνση ΙΡ:
+Main.lblWhoisServer=Διακομιστής Whois:
+Main.chkWhoisVerify=Επαλήθευση ονόματος host / διεύθυνσης IP
+Main.chkWhoisRedirect=Αυτόματη ανακατεύθυνση
+Main.chkWhoisFormat=Μορφή απόκρισης
+Main.chkWhoisQueryDirect=Άμεσο ερώτημα
+Main.chkWhoisQueryDomain=Ερώτημα τομέα
+Main.chkWhoisQueryNetwork=Ερώτημα δικτύου
+Main.lblWhoisEncoding=Κωδικοποίηση:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=Διεύθυνση E-mail:
+Main.lblMailCheckSender=Διεύθυνση αποστολέα:
+Main.lblMailCheckServer=Διακομιστής MX:
+Main.chkMailCheckSendVRFY=Αποστολή εντολής "VRFY"
+
+Main.lblMailHeadQuery=Γραμμές κεφαλίδας:
+Main.chkMailHeadResolve=Επίλυση ονομάτων κεντρικών υπολογιστών
+
+Main.lblHttpHeadQuery=Διεύθυνση URL:
+Main.lblHttpHeadCommand=Εντολή:
+Main.chkHttpHeadFullPage=Εμφάνιση ολόκληρης της σελίδας
+Main.chkHttpHeadRedirect=Αυτόματη ανακατεύθυνση
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Main.lblPageRankQuery=URL:
+#Main.lblPageRankValueTitle=Google PageRank:
+#Main.lblPageRankValue.ConnectionError=The PageRank can not be retrieved.
+#Main.lblPageRankValue.NoResult=There is no PageRank available for this URL.
+#Main.lblPageRankValue.InvalidResult=The result can not be processed.
+#Main.lblMultiRankQuery=URLs:
+#Main.lblMultiRankQueryNote=(one URL per line)
+#Main.chkMultiRankResolve=Επίλυση διευθύνσεων ΙΡ
+#Main.colMultiRankURL=URL
+#Main.colMultiRankStatus=Κατάσταση
+#Main.colMultiRankPageRank=PageRank
+#Main.colMultiRankIP=Διεύθυνση IP
+#Main.lvMultiRank.Status.ConnectionError=Σφάλμα σύνδεσης
+#Main.lvMultiRank.Status.Aborted=Ματαιώθηκε
+#Main.lvMultiRank.Status.Timeout=Χρονικό όριο
+#Main.lvMultiRank.Status.NoResult=Δεν είναι διαθέσιμη
+#Main.lvMultiRank.Status.InvalidResult=Μη έγκυρο αποτέλεσμα
+#Main.lvMultiRank.Status.Success=Επιτυχία
+#Main.pmnuMultiRankUseSel=&Use selection
+#Main.pmnuMultiRankCopy=&Copy
+#Main.pmnuMultiRankUrlUseSel=&Use URL
+#Main.pmnuMultiRankUrlCopy=&Copy URL
+#Main.pmnuMultiRankIPUseSel=&Χρήση διεύθυνσης ΙΡ
+#Main.pmnuMultiRankIPCopy=Αντιγραφή &διεύθυνσης ΙΡ
+#Main.pmnuMultiRankCopy=Αντιγραφή &λίστας καταχωρήσεων
+#Main.pmnuMultiRankSelectAll=Επιλ&ογή όλων
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.btnTimeSetTime=Ρύθμιση ώρας συστήματος
+Main.lblTimeServer=Διακομιστής NTP:
+Main.lblTimeSystemTitle=Χρόνος συστήματος:
+Main.lblTimeServerTitle=Χρόνος από διακομιστή:
+Main.lblTimeServerTitle.Server=Χρόνος από διακομιστή «{0}»:
+Main.lblTimeDifferenceTitle=Διαφορά ώρας:
+Main.lblTimeServerUpdateTitle=Τελευταία ενημέρωση διακομιστή ώρας:
+Main.lblTimeServerUpdateTitle.Server=Τελευταία ενημέρωση χρόνου για τον διακομιστή «{0}»:
+Main.lblTimeServerUpdate={0} ({1} πριν)
+Main.lblTimeServerLocal.SysTimeNotSet=Δεν μπορεί να ρυθμιστεί η ώρα συστήματος.
+Main.lblTimeServerLocal.ServerNotReachable=Η πρόσβαση στο διακομιστή ώρας «{0}» δεν μπορεί να επιτευχθεί.
+Main.lblTimeServerLocal.ResponseError=Η απάντηση από το διακομιστή ώρας «{0}» δεν μπορεί να επεξεργαστεί.
+
+Main.lblListInfoQuery=Όρος αναζήτησης:
+Main.lblListInfoSource=Λίστα:
+Main.chkListInfoCaseSensitive=Διάκριση πεζών-κεφαλαίων
+Main.chkListInfoWholeColumns=Αναζήτηση σε ολόκληρες στήλες
+
+Main.chkLocalResolve=Επίλυση ονομάτων κεντρικών υπολογιστών
+Main.chkLocalExternal=Λήψη πληροφοριών εξωτερ. κεντρ. υπολογιστή
+Main.chkLocalAdapterInfo=Εμφάνιση προσαρμογέων δικτύου
+Main.chkLocalIPv4Stat=Εμφάνιση στατιστικών IPv4
+
+Main.MsgFlushDnsCache.Title=Εκκαθάριση μνήμης cache DNS των Windows
+Main.MsgFlushDnsCache.SrvNotRunning=Η υπηρεσία συστήματος "Πελάτης DNS" δεν ξεκίνησε.\w\wΑυτή η υπηρεσία πρέπει να ξεκινήσει για να γίνει εκκαθάριση της μνήμης Cache DNS των Windows.
+Main.MsgFlushDnsCache.ErrorMessage=Δεν ήταν δυνατή η εκκαθάριση της μνήμης cache DNS των Windows.\w\wΣφάλμα:\w{0}
+
+Main.DlgSave.Title=Αποθήκευση
+Main.DlgSaveSelection.Title=Αποθήκευση επιλεγμένων
+Main.MsgSaveSelection.Error=Δεν ήταν δυνατή η αποθήκευση του αρχείου "{0}".
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.DlgPasteFromFile.Title=Επικόλληση από αρχείο
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.MsgInvalidURL.Title=Μη έγκυρη διεύθυνση URL
+Main.MsgInvalidURL.Text=Η διεύθυνση URL "{0}" δεν έχει έγκυρη μορφή.
+
+Main.MsgInvalidMailAddress.Title=Μη έγκυρη διεύθυνση email
+Main.MsgInvalidMailAddress.Text=Η διεύθυνση email "{0}" δεν έχει έγκυρη μορφή.
+
+Main.MsgInvalidIPRange.Title=Μη έγκυρο εύρος διευθύνσεων IP
+Main.MsgInvalidIPRange.Text=Το εύρος διευθύνσεων IP που έχει εισαχθεί, δεν έχει έγκυρη μορφή.\w\wΣημειώστε ότι μόνο το τελευταίο byte της διεύθυνσης μπορεί να διαφέρει.\w\wΈγκυρες μορφές:\w    x.x.x.Y - x.x.x.Z (π.χ. 127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (π.χ. 127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=Το ερώτημα διακόπηκε από το χρήστη.
+Main.Report.QueryFinished=Το ερώτημα ολοκληρώθηκε.
+
+Main.Report.HostInfo.Title=Πληροφορίες κεντρικού υπολογιστή για "{0}":
+Main.Report.HostInfo.NotAvailable=(δεν είναι διαθέσιμο)
+
+Main.Report.HostInfo.IPAddress =  Διεύθυνση ΙΡ:            {END}
+Main.Report.HostInfo.Hostname  =  Όνομα κεντρ. υπολογιστή: {END}
+Main.Report.HostInfo.Domainname=  Όνομα τομέα:             {END}
+Main.Report.HostInfo.TLD       =  Ανώτατο επίπεδο:         {END}
+Main.Report.HostInfo.CountryIP =  Χώρα (ΙΡ):               {END}
+Main.Report.HostInfo.IPRange   =  Εύρος ΙΡ:                {END}
+Main.Report.HostInfo.RIRData   =  Δεδομένα RIR:            {END}
+Main.Report.HostInfo.RIRData.ValueDate=(εκχωρήθηκε από {0})
+
+Main.Report.DNS.IPAddress       =Διευθύνσεις ΙΡ (A):
+Main.Report.DNS.IPAddress.Title =  {0}. Διεύθυνση ΙΡ:
+Main.Report.DNS.Hostname        =Ονόματα κεντρικών υπολογιστών (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. Όνομα κεντρ. υπολογιστή:
+Main.Report.DNS.Nameserver      =Διακομιστές ονομάτων (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. Διακομιστής ονομάτων:
+Main.Report.DNS.MXServer        =Διακομιστές ανταλαγής email (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. Διακομιστής email:
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.Report.DNS.MXServer.Pref   =, Προτίμηση={0}
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.Report.DNS.Text            =Καταχωρήσεις κειμένου (TXT):
+Main.Report.DNS.Text.Title      =  {0}. Καταχώρηση κειμένου:
+
+Main.Report.DNS.SOA=Αρχή έκδοσης πιστοποιητικών (SOA):
+Main.Report.DNS.SOA.Server.Title =  Διακομιστής:       {END}
+Main.Report.DNS.SOA.RName.Title  =  Επικοινωνία:       {END}
+Main.Report.DNS.SOA.Serial.Title =  Σειριακός αριθμός: {END}
+Main.Report.DNS.SOA.Expire.Title =  Λήξη:         {END}
+Main.Report.DNS.SOA.Refresh.Title=  Ανανέωση:     {END}
+Main.Report.DNS.SOA.Retry.Title  =  Επανάληψη:    {END}
+Main.Report.DNS.SOA.MinTTL.Title =  Ελάχιστο TTL: {END}
+
+Main.Report.DNS.SOA.Expire.Value={0} δευτερόλεπτα ({1})
+Main.Report.DNS.SOA.Refresh.Value={0} δευτερόλεπτα ({1})
+Main.Report.DNS.SOA.Retry.Value={0} δευτερόλεπτα ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0} δευτερόλεπτα ({1})
+
+Main.Report.Ping.NoIPAvailable=Η διεύθυνση IP δεν μπορεί να προσδιοριστεί.
+Main.Report.Ping.Start=Αποστολή {1} ping(s) με {2} byte σε "{0}":
+Main.Report.Ping.Reply=  {0}. απάντηση από {1}:
+Main.Report.Ping.Pause=      Παύση ({0} ms)
+Main.Report.Ping.Reply.Error=Σφάλμα: {0}.
+Main.Report.Ping.Reply.SndRcvError=Σφάλμα κατά την αποστολή ή λήψη.
+Main.Report.Ping.Reply.Timeout=Λήξη χρόνου.
+Main.Report.Ping.Reply.Aborted=Διακόπηκε από το χρήστη
+Main.Report.Ping.Reply.Incomplete={0} ms. Ελλιπή δεδομένα (μόνο {1} byte έχει ληφθεί).
+Main.Report.Ping.Reply.Different={0} ms. Διαφορετικά δεδομένα.
+Main.Report.Ping.Reply.Correct={0} ms, Σωστά δεδομένα.
+Main.Report.Ping.Result=Στάλθηκαν {0} ping(s) ({1} σωστά, {2} εσφαλμένα, {3} αποτυχημένα).
+Main.Report.Ping.ResultTime=Ταχύτερη απάντηση: {0} ms. Βραδύτερη απάντηση: {1} ms. Μέση: {2} ms.
+
+Main.Report.Trace.Start=Ανίχνευση διαδρομής για "{0}" μέσω {1} αλμάτων το μέγιστο:
+Main.Report.Trace.SndRcvError=Σφάλμα κατά την αποστολή ή λήψη.
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0} ms  {1}
+Main.Report.Trace.Reply.TimeIPHost={0} ms  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     Εξαντλήθηκε το χρονικό όριο της αίτησης.
+Main.Report.Trace.HostReached=Ο στόχος του κεντρικού υπολογιστή "{0}" έχει επιτευχθεί.
+Main.Report.Trace.MaxHops=Ο μέγιστος αριθμός αλμάτων έχει επιτευχθεί.
+
+Main.Report.Whois.DirectQuery.Title=Άμεσο ερώτημα
+Main.Report.Whois.DirectQuery.Start=Ερώτημα για "{0}" στο "{1}":
+Main.Report.Whois.DirectQuery.Redir=Ανακατευθυνόμενο ερώτημα για "{0}" στο "{1}":
+
+Main.Report.Whois.DomainQuery.Title=Ερώτημα Τομέα
+Main.Report.Whois.DomainQuery.Start=Ερώτημα τομέα για "{0}" στο "{1}":
+Main.Report.Whois.DomainQuery.Redir=Ανακατευθυνόμενο ερώτημα τομέα για "{0}" στο "{1}":
+Main.Report.Whois.DomainQuery.NoDomainName=Δεν υπάρχει κανένα όνομα τομέα διαθέσιμο για το ερώτημα τομέα.
+Main.Report.Whois.DomainQuery.NoTLD=Δεν υπάρχει κανένας τομέας ανώτατου επιπέδου διαθέσιμος για το ερώτημα τομέα
+Main.Report.Whois.DomainQuery.NoTLDInfo=Δεν έχουν βρεθεί πληροφορίες για τον τομέα ανωτάτου επιπέδου "{0}".
+
+Main.Report.Whois.NetworkQuery.Title=Ερώτημα δικτύου
+Main.Report.Whois.NetworkQuery.Start=Ερώτημα δικτύου για "{0}" στο "{1}":
+Main.Report.Whois.NetworkQuery.Redir=Ανακατευθυνόμενο ερώτημα δικτύου για "{0}" στο "{1}":
+Main.Report.Whois.NetzworkQuery.NoIPAddress=Δεν υπάρχει διεύθυνση ΙΡ διαθέσιμη για το ερώτημα δικτύου.
+
+Main.Report.Whois.ServerNotReachable=Ο διακομιστής Whois "{0}" δεν μπορεί να επιτευχθεί.
+Main.Report.Whois.Redirection=Η απάντηση των σημείων "{0}" στο διακομιστή Whois "{1}".
+Main.Report.Whois.NoWhoisServer=Δεν βρέθηκε αντιστοιχία διακομιστή whois.
+Main.Report.Whois.ServerNotInDB=Ο διακομιστής Whois για "{0}" δεν βρέθηκε στη βάση δεδομένων.
+Main.Report.Whois.WhoisLink.Title=Σύνδεσμος Whois:
+
+Main.Report.MailCheck.MailInfo.Title=Πληροφορίες ηλεκτρονικού ταχυδρομείου:
+Main.Report.MailCheck.MailInfo.MailAddress=  Διεύθυνση E-Mail: {END}
+Main.Report.MailCheck.MailInfo.DomainName =  Όνομα τομέα:      {END}
+
+Main.Report.MailCheck.MXServer.Title=Διακομιστής ανταλλαγής αλληλογραφίας για "{0}":
+Main.Report.MailCheck.MXServer.Number=  {0}. Διακομιστής ΜΧ:
+Main.Report.MailCheck.MXServer.ServerPref={0}, Προτίμηση={1}
+
+Main.Report.MailCheck.NoDomain=Δεν υπάρχει διαθέσιμος διακομιστής ανταλλαγής αλληλογραφίας για τον τομέα "{0}".
+Main.Report.MailCheck.Start=Έλεγχος της διεύθυνσης email "{0}" με τον διακομιστή ΜΧ "{1}" (θύρα {2}):
+Main.Report.MailCheck.NoConnect=Η σύνδεση με το διακομιστή MX "{0}" δεν μπορεί να πραγματοποιηθεί.
+Main.Report.MailCheck.Connected=Συνδέθηκε στο διακομιστή ΜΧ "{0}" στη θύρα {1}.
+Main.Report.MailCheck.Timeout=Ο διακομιστής MX δεν αποκρίνεται (λήξη χρονικού ορίου).
+Main.Report.MailCheck.SendError=Δεν είναι δυνατή η αποστολή της εντολής.
+Main.Report.MailCheck.Disconnect=Η σύνδεση με το διακομιστή MX "{0}" διακόπηκε.
+
+Main.Report.MailCheck.Result.Title=Αποτέλεσμα:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  Το αποτέλεσμα της VRFY ήταν θετικό ή ουδέτερο.
+Main.Report.MailCheck.Result.VrfyFail            =  Το αποτέλεσμα της VRFY ήταν αρνητικό.
+Main.Report.MailCheck.Result.SenderAccepted      =  Η διεύθυνση αποστολέα <{0}> έγινε δεκτή.
+Main.Report.MailCheck.Result.RecipientAccepted   =  Η διεύθυνση παραλήπτη <{0}> έγινε δεκτή.
+Main.Report.MailCheck.Result.HostNotAccepted     =  Ο κεντρικός υπολογιστής δεν έγινε δεκτός.
+Main.Report.MailCheck.Result.SenderNotAccepted   =  Η διεύθυνση αποστολέα <{0}> δεν έγινε δεκτή.
+Main.Report.MailCheck.Result.RecipientNotAccepted=  Η διεύθυνση παραλήπτη <{0}> δεν έγινε δεκτή.
+
+Main.Report.MailHead.NotAvailable=(δεν είναι διαθέσιμο)
+
+Main.Report.MailHead.Header.Title=Κεφαλίδα:
+Main.Report.MailHead.Header.Formatted=μορφοποιημένη
+Main.Report.MailHead.Header.Decoded=αποκωδικοποιημένη
+
+Main.Report.MailHead.RcvOverview.Title=Επισκόπηση ληφθέντων:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. Καταχώρηση (γραμμή {1}):
+Main.Report.MailHead.RcvOverview.SentFrom =      Εστάλη από:        {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      Ελήφθη από:        {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      Χρόνος λήψης:      {END}
+Main.Report.MailHead.RcvOverview.Duration =      Διάρκεια:          {END}
+
+Main.Report.MailHead.RcvDetail.Title=Λεπτομέρειες ληφθέντων:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. Καταχώρηση (γραμμή {1}):
+Main.Report.MailHead.RcvDetail.Original        =      Αρχική γραμμή:     {END}
+Main.Report.MailHead.RcvDetail.Sender          =      Αποστολέας:        {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      Αποστολέας (IP):   {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      Αποστολέας (από):  {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      Αποστολέας (HELO): {END}
+Main.Report.MailHead.RcvDetail.Received        =      Ελήφθη από:        {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      Ελήφθη για:        {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      Χρόνος λήψης:      {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      Διάρκεια:          {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(μη διαθέσιμο ή μη έγκυρο)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      Ανάλυση:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        Αυτή η καταχώρηση προστέθηκε από το διακομιστή αλληλογραφίας παραληπτών.
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        Η διεύθυνση IP του αποστολέα δεν είναι δημόσια διεύθυνση IP.
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        Ο αποστολέας και/ή ο παραλήπτης φαίνεται να είναι από μη δημόσιο δίκτυο.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        Η διεύθυνση IP του αποστολέα είναι πιθανόν πλαστή.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =          Η διεύθυνση IP στο "από" ({0}) δεν συμφωνεί με τη διεύθυνση IP του προγράμματος-πελάτη ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        Το όνομα κεντρικού υπολογιστή του αποστολέα είναι πιθανόν πλαστό.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=          Το όνομα κεντρικού υπολογιστή στο "από" ({0}) δεν συμφωνεί με το όνομα κεντρικού υπολογιστή του προγράμματος-πελάτη ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        Τα ονόματα των κεντρικών υπολογιστών συμφωνούν.
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        Τα ονόματα τομέα συμφωνούν.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        Τα ονόματα των κεντρικών υπολογιστών δεν συμφωνούν.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =          Το όνομα κεντρικού υπολογιστή παραλήπτη αυτής της\w          καταχώρησης ({0}) θα πρέπει να είναι το όνομα κεντρικού\w          υπολογιστή αποστολέα στην επόμενη καταχώρηση ({1}).\w          Αυτό οφείλεται συχνά σε μια αλλαγή διεύθυνσης IP, όπως η μετάφραση διεύθυνσης δικτύου (NAT) μιας ιδιωτικής διεύθυνσης IP σε μια δημόσια διεύθυνση.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        Δεν υπάρχουν διαθέσιμα ονόματα κεντρικού υπολογιστή για σύγκριση.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        Τα ονόματα τομέα δεν συμφωνούν.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=          Ο τομέας του παραλήπτη αυτής της καταχώρησης ({0}) πρέπει\w          να είναι ο τομέας αποστολέα στην επόμενη καταχώρηση ({1}).\w          Αυτό οφείλεται συχνά σε μια αλλαγή διεύθυνσης IP, όπως η μετάφραση διεύθυνσης δικτύου (NAT) μιας ιδιωτικής διεύθυνσης IP σε μια δημόσια διεύθυνση.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        Δεν υπάρχουν διαθέσιμα ονόματα κεντρικού υπολογιστή ή τομέα για σύγκριση.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        Ο χρόνος παράδοσης διαφέρει για περισσότερο από 10 λεπτά ή μια ημερομηνία είναι εσφαλμένη.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        Ο χρόνος παράδοσης διαφέρει για περισσότερο από 10 λεπτά ή μια ημερομηνία είναι εσφαλμένη.
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        Δεν υπάρχουν σφάλματα ή δεν είναι δυνατή η ανάλυση.
+
+Main.Report.HttpHead.RequestURL=Ζητούμενη διεύθυνση URL:
+Main.Report.HttpHead.Start=Αποστολή URL με τη μέθοδο "{0}" στον κεντρ. υπολογιστή "{1}" (θύρα {2}):
+Main.Report.HttpHead.OriginalHeader=Αρχική κεφαλίδα:
+Main.Report.HttpHead.Page=Σελίδα:
+
+Main.Report.HttpHead.HeadInfo.Title=Πληροφορίες κεφαλίδας:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  Χρόνος απόκρισης:          {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  URL απόκρισης:             {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  Κωδικός κατάστασης:        {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  Έλεγχος προσωρινής μνήμης: {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  Από προσωρινή μνήμη:       {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  Τελευταία τροποποίηση:     {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  Χρόνος διακομιστή:         {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  Διακομιστής Web:           {END}
+Main.Report.HttpHead.HeadInfo.Software    =  Λογισμικό:                 {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0} ms
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=Σφάλμα: {0}.
+Main.Report.HttpHead.ErrorCode=Ο διακομιστής web αποκρίθηκε με τον κωδικό σφάλματος {0} ({1}).
+Main.Report.HttpHead.NoConnect=Δεν ήταν δυνατή η προσέγγιση του διακομιστή web.
+Main.Report.HttpHead.SendError=Παρουσιάστηκε σφάλμα κατά την αποστολή των δεδομένων.
+
+Main.Report.Local.LocalHost.Title=Τοπικός κεντρ. υπολογιστής:
+Main.Report.Local.LocalHost.Hostname =  Όνομα κεντρ. υπολογιστή: {END}
+Main.Report.Local.LocalHost.IPAddress=  Διεύθυνση ΙΡ:            {END}
+
+Main.Report.Local.OwnIPs.Title=Δικές σας διευθύνσεις ΙΡ:
+Main.Report.Local.OwnIPs.Loopback=(διεύθυνση βρόχου επιστροφής)
+
+Main.Report.Local.External.Title=Εξωτερικές πληροφορίες κεντρικού υπολογιστή:
+Main.Report.Local.External.IPAddress=  Διεύθυνση ΙΡ:            {END}
+Main.Report.Local.External.Hostname =  Όνομα κεντρ. υπολογιστή: {END}
+Main.Report.Local.External.NotAvailable=(Δεν είναι διαθέσιμο)
+
+Main.Report.Local.DNS.Title=Διακομιστής DNS:
+Main.Report.Local.DNS.Number=  {0}. Διακομιστής DNS:
+
+Main.Report.Local.Net.Title=Διασυνδέσεις δικτύου:
+Main.Report.Local.Net.Intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    Περιγραφή:        {END}
+Main.Report.Local.Net.MacAddress =    Διεύθυνση MAC:    {END}
+Main.Report.Local.Net.DnsSuffix  =    Επίθημα DNS:      {END}
+Main.Report.Local.Net.IPAddress  =    Διεύθυνση ΙΡ:     {END}
+Main.Report.Local.Net.DhcpServer =    Διακομιστής DHCP: {END}
+Main.Report.Local.Net.DnsServer  =    Διακομιστής DNS:  {END}
+Main.Report.Local.Net.Gateway    =    Πύλη:             {END}
+Main.Report.Local.Net.Anycast    =    Όποια διανομή:    {END}
+Main.Report.Local.Net.Multicast  =    Πολλαπλή διανομή: {END}
+Main.Report.Local.Net.WinsServer =    Διακομιστής WINS: {END}
+Main.Report.Local.Net.Stat.Title             =    Στατιστικά:
+Main.Report.Local.Net.Stat.BytesReceived     =      Ληφθέντα:       {END}
+Main.Report.Local.Net.Stat.BytesSent         =      Απεσταλμένα:    {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      Εισερχόμενα πακέτα:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        Απορριφθέντα: {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        Σφάλματα:     {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        Άγνωστα:      {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =      Εξερχόμενα πακέτα:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        Απορριφθέντα: {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        Σφάλματα:     {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      Πακέτα μοναδικής διανομής:
+Main.Report.Local.Net.Stat.UniPackReceived   =        Ληφθέντα:     {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        Απεσταλμένα:  {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      Πακέτα μη μοναδικής διανομής:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        Ληφθέντα:     {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        Απεσταλμένα:  {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0} bytes
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=Ρυθμίσεις
+
+Settings.tnGeneral=Γενικά
+Settings.tnView=Προβολή / Έξοδος
+Settings.tnWebRequests=Αιτήσεις web
+Settings.tnTools=Εργαλεία
+
+Settings.lblMS=ms
+Settings.lblBytes=byte
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.cmbListCopyFormat.Semicolon=Διαχωρισμένη με ερωτηματικά
+Settings.cmbListCopyFormat.Comma=Διαχωρισμένη με κόμματα
+Settings.cmbListCopyFormat.Tabulator=Διαχωρισμένη με στηλοθέτες
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpGeneralGeneral=Γενικά
+Settings.lblGeneralMaxRecentItems=Μέγιστος αριθμός πρόσφατων στοιχείων στα πτυσσόμενα πεδία:
+Settings.grpGeneralDns=Ρυθμίσεις DNS
+Settings.lblGeneralDnsServer=Διακομιστής DNS:
+Settings.lblGeneralDnsTimeout=Χρονικό όριο:
+
+Settings.grpViewGeneral=Γενικά
+Settings.chkViewShowTitleBar=Εμφάνιση γραμμής τίτλου
+Settings.grpViewRtf=Κείμενο εξόδου
+Settings.chkViewRtfWordWrap=Αναδίπλωση κειμένου σε μακρές γραμμές
+Settings.lblViewRtfFontDefault=Προεπιλεγμένη γραμματοσειρά:
+Settings.txtViewRtfFontDefault={0}, {1} pt
+Settings.btnViewRtfFontDefaultSel=Επιλέξτε την προεπιλεγμένη γραμματοσειρά
+
+Settings.rbWebRequestsProxySystem=Χρήση ρυθμίσεων μεσολάβησης του συστήματος (Internet Explorer)
+Settings.rbWebrequestsProxyUserDefined=Ρυθμίσεις μεσολάβησης ορισμένες από το χρήστη:
+Settings.grpWebRequestsProxy=Διακομιστής μεσολάβησης
+Settings.lblWebRequestsProxyServer=Διακομιστής:
+Settings.chkWebRequestsProxyBypassOnLocal=Να μη χρησιμοποιείται ο διακομιστής μεσολάβησης για τοπικές διευθύνσεις
+Settings.lblWebRequestsProxyUsername=Όνομα χρήστη:
+Settings.lblWebRequestsProxyPassword=Κωδικός
+Settings.grpWebRequestsMisc=Διάφορα
+Settings.lblWebRequestsUserAgent=Παράγοντας χρήστη:
+Settings.lblWebRequestsReferer=Αναφορά:
+
+Settings.lblToolsNothing=Αυτή η καταχώρηση δεν περιέχει επιλογές.\wΠαρακαλώ επιλέξτε ένα δευτερεύον στοιχείο.
+
+Settings.grpPingGeneral=Γενικά
+Settings.lblPingMaxTTL=Μέγιστο TTL:
+
+Settings.grpMultiPingGeneral=Γενικά
+Settings.lblMultiPingMaxTTL=Μέγιστο TTL:
+Settings.chkMultiPingShowGridlines=Εμφάνιση γραμμών πλέγματος
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiPingListCopy=Αντιγραφή λίστας καταχωρήσεων
+Settings.lblMultiPingListCopyFormat=Μορφή λίστας:
+Settings.chkMultiPingListCopyHeader=Προσθήκη επικεφαλίδων στηλών
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTraceGeneral=Γενικά
+Settings.lblTraceBytes=Μέγεθος προσ. αποθήκευσης:
+
+Settings.grpWhoisGeneral=Γενικά
+Settings.lblWhoisTimeout=Χρονικό όριο:
+Settings.grpWhoisDomain=Ερωτήματα τομέα
+Settings.lblWhoisMaxRedirectDom=Μέγιστη αριθμός ανακατευθύνσεων:
+Settings.grpWhoisNetwork=Ερωτήματα δικτύου
+Settings.lblWhoisMaxRedirectDomainNet=Μέγιστη αριθμός ανακατευθύνσεων:
+Settings.lblWhoisNetServer=Πρώτος διακομιστής Whois:
+Settings.chkWhoisNetServerFromDB=Χρήση διακομιστή Whois από βάση δεδομένων, εάν είναι διαθέσιμη
+
+Settings.grpMailCheckGeneral=Γενικά
+Settings.lblMailCheckTimeout=Χρονικό όριο:
+Settings.lblMailCheckHeloHost=Όνομα κεντρ. υπολ/στή για EHLO/HELO:
+Settings.chkMailCheckHeloHostGetExternal=Ανάκτηση εξωτερικών πληροφοριών κεντρικού υπολογιστή
+Settings.lblMailCheckSenderDefault=Προεπιλεγμένη διεύθυνση αποστολέα:
+
+Settings.grpHttpHeadGeneral=Γενικά
+Settings.lblHttpHeadTimeout=Χρονικό όριο:
+Settings.chkHttpHeadUseProxy=Χρήση διακομιστή μεσολάβησης
+Settings.chkHttpHeadShowOrigHeader=Εμφάνιση αρχικής κεφαλίδας
+
+# >>> REMOVED 4.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#Settings.grpPageRankGeneral=Γενικά
+#Settings.lblPageRankTimeout=Χρονικό όριο:
+#Settings.chkPageRankUseProxy=Χρήση διακομιστή μεσολάβησης
+#Settings.grpMultiRankGeneral=Γενικά
+#Settings.lblMultiRankTimeout=Χρονικό όριο:
+#Settings.chkMultiRankUseProxy=Χρήση διακομιστή μεσολάβησης
+#Settings.chkMultiRankShowGridlines=Εμφάνιση γραμμών πλέγματος
+#Settings.grpMultiRankListCopy=Αντιγραφή λίστας καταχωρήσεων
+#Settings.lblMultiRankListCopyFormat=Μορφή λίστας:
+#Settings.chkMultiRankListCopyHeader=Προσθήκη επικεφαλίδων στηλών
+# <<< REMOVED 4.3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTimeGeneral=Γενικά
+Settings.lblTimeTimeout=Χρονικό όριο:
+Settings.grpTimeServers=Διακομιστές ώρας
+Settings.lblTimeServers=Χρήση των παρακάτω διακομιστών ώρας
+Settings.lblTimeServersNote=(ένας διακομιστής ανά γραμμή)
+
+Settings.grpListInfoGeneral=Γενικά
+Settings.chkListInfoShowGridlines=Εμφάνιση γραμμών πλέγματος
+
+Settings.grpLocalExternalHostInfo=Εξωτερικές πληροφορίες κεντρικού υπολογιστή
+Settings.lblLocalTimeout=Χρονικό όριο:
+Settings.chkLocalUseProxy=Χρήση διακομιστή μεσολάβησης
+Settings.lblLocalExternalHostInfo=Ανάκτηση εξωτερικών πληροφοριών κεντρικού υπολογιστή από:

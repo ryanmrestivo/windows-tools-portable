@@ -1,0 +1,648 @@
+﻿# ##############################
+# Language file for eToolz 4.0.1
+# ##############################
+
+Language.Translator.Name=Yvan Charles Béard (mis à jour et corrigé par freMea)
+Language.Translator.Website=
+Language.Translator.EMail=
+
+Language.FlagImageFile=French.gif
+#Language.HelpFile=%ETOOLZ_LANGUAGEDIR%\English.chm
+
+General.Font.Name=Tahoma
+General.Font.Size=8
+
+General.MsgLanguageChangeTitle=Changer de Langue
+# The language name ("English") in the next line stands for this language file,
+# so you have to replace "English" to your language name.
+General.MsgLanguageChangeText=L'application doit être relancée pour que certains textes puissent apparaître.
+
+General.MsgNoDefaultBrowserTitle=Navigateur par défaut non trouvé
+General.MsgNoDefaultBrowserText=Le navigateur par défaut ne peut pas être lancé.
+General.MsgNoStdMailerTitle=Client mail par défaut non trouvé
+General.MsgNoStdMailerText=Le Client mail par défaut ne peut pas être lancé.
+General.MsgNoHelpTitle=Aide
+General.MsgNoHelpText=Le fichier d'aide "{0}" ne peut pas être ouvert.
+
+General.Button.Ok=Ok
+General.Button.Start=Démarrer
+General.Button.Cancel=Annuler
+General.Button.Close=Fermer
+General.Button.Help=Aide
+
+General.FileFilter.All=Tous les fichiers (*.*)
+General.FileFilter.RTF=Fichiers RTF (*.rtf)
+General.FileFilter.TXT=Fichiers Texte (*.txt)
+
+General.Tool.Dns=DNS
+General.Tool.Ping=Ping
+General.Tool.MultiPing=MultiPing
+General.Tool.Trace=Trace
+General.Tool.Whois=Whois
+General.Tool.MailCheck=Test Mail
+General.Tool.MailHead=Analyseur d'en-tête
+General.Tool.HttpHead=En-tête HTTP
+General.Tool.PageRank=PageRank
+General.Tool.MultiRank=MultiRank
+General.Tool.Time=Date et Heure
+General.Tool.ListInfo=Listes
+General.Tool.Local=Local Host
+
+General.Tool.MenuItem.Dns=&DNS
+General.Tool.MenuItem.Ping=&Ping
+General.Tool.MenuItem.MultiPing=&MultiPing
+General.Tool.MenuItem.Trace=&Trace
+General.Tool.MenuItem.Whois=&Whois
+General.Tool.MenuItem.MailCheck=T&est Mail
+General.Tool.MenuItem.HttpHead=En-tête &HTTP
+General.Tool.MenuItem.PageRank=Page&Rank
+General.Tool.MenuItem.MultiRank=M&ultiRank
+General.Tool.MenuItem.ListInfo=&Listes
+
+General.Bool.Yes=Oui
+General.Bool.No=Non
+
+
+
+# ###############################
+# ##   C O N F I G   F O R M   ##
+# ###############################
+
+Config.Form.Title=Setup {0}
+
+Config.grpUserData=Paramètres utilisateur
+Config.lblUserDataDesc=Choisissez où conserver les paramètres de l'application et les options de l'interface utilisateur. Ces réglages peuvent être différents pour chaque utilisateur.
+Config.rbUserDataAppData=Dans votre profil utilisateur Windows (par défaut)
+Config.rbUserDataProgram=Dans le dossier de l'application, c'est à dire dans {0} (idéal pour une utilisation portable)
+Config.rbUserDataUserDef=Dans un autre dossier défini:
+Config.btnUserDataUserDef=Choix du répertoire de l'utilisateur défini
+
+Config.DlgFolderUserDefText=Choix du répertoire des données de l'utilisateur.
+
+
+# #############################
+# ##   A B O U T   F O R M   ##
+# #############################
+
+About.Form.Title=A propos de {0}
+
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+About.Description={0}
+About.Version=Version {0}
+
+#About.Link.Text.EMail=E-mail
+About.Link.Title.EMail=Envoyer un e-mail
+About.Link.Text.Website=Site Web
+About.Link.Title.Website=Visiter le site web
+
+About.Credits=Contributions
+About.Credits.Translation=Traduction
+About.Credits.Icons=Icônes
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# ###########################
+# ##   M A I N   F O R M   ##
+# ###########################
+
+# This text is displayed as "[Language] / Language", except for the (English) text "Language"
+# (e.g. "Main.mnuLanguage=Sprache" is displayed as "Sprache / Language").
+Main.mnuLanguage=Langue
+
+Main.mnuFile=&Fichier
+Main.mnuFileExit=&Quitter
+Main.mnuTools=&Outils
+Main.mnuToolsFlushDnsCache=Vider et réinitialiser le cache &DNS Windows
+Main.mnuExtras=E&xtras
+Main.mnuExtrasSettings=&Paramètres...
+Main.mnuHelp=&Aide
+Main.mnuHelpHelp=&Aide
+Main.mnuHelpWebsite=Visiter le site web du &produit
+Main.mnuHelpEMail=Envoyer un &mail à l'auteur
+Main.mnuHelpSupport=&Support {0}
+Main.mnuHelpAbout=&A propos de {0}
+
+# >>> ADDED 4.0.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputCut=C&ouper
+Main.pmnuInputCopy=&Copier
+Main.pmnuInputPaste=Co&ller
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuInputPasteFromFile=Coller depuis un &fichier…
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuInputSelectAll=&Tout sélectionner
+# <<< ADDED 4.0.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.pmnuToolbarTitleShowHide.Show=&Montrer titre pour "{0}"
+Main.pmnuToolbarTitleShowHide.Hide=Cac&her titre pour "{0}"
+Main.pmnuToolbarMultiline=Montrer la barre d'outils en &lignes multiples
+
+Main.pmnuRtfUseSel=&Utiliser la sélection
+Main.pmnuRtfCopy=&Copier
+Main.pmnuRtfSelectAll=&Tout sélectionner
+Main.pmnuRtfSaveAs=&Sauver...
+Main.pmnuRtfSaveSelAs=Sau&ver la sélection...
+
+Main.lblDnsQuery=Nom de domaine, nom d'hôte ou adresse IP:
+Main.chkDnsHostInfo=Informations Hôte (A et PTR)
+Main.chkDnsDomainInfo=informations Domaine (NS, MX, TXT et SOA)
+Main.chkDnsResolve=Résoudre les noms d'hôtes
+Main.chkDnsVerify=Vérifier nom d'hôte / adresse IP
+Main.chkDnsQueryDirect=Requête directe
+
+Main.lblPingQuery=Nom d'hôte ou adresse IP:
+Main.lblPingCount=Compte:
+Main.lblPingBytes=Octets:
+Main.lblPingTimeout=Délai:
+Main.lblPingPause=Pause:
+
+Main.lblMultiPingQuery=Plage d'adresse IP:
+Main.lblMultiPingBytes=Octets:
+Main.lblMultiPingTimeout=Délai:
+Main.chkMultiPingResolve=Résoudre les noms d'hôtes
+
+Main.colMultiPingIP=Adresse IP 
+Main.colMultiPingStatus=État
+Main.colMultiPingResponseIP=Réponse de
+Main.colMultiPingResponseHost=Nom d'hôte
+Main.colMultiPingTime=Durée (ms)
+
+Main.lvMultiPing.Status.Timeout=Délai
+Main.lvMultiPing.Status.Incomplete=Donnée incomplète ({1} octet)
+Main.lvMultiPing.Status.Different=Donnée différente
+Main.lvMultiPing.Status.Correct=Succès
+Main.lvMultiPing.Status.Aborted=Annulé
+Main.lvMultiPing.Status.SndRcvError=Envoi ou réception d'erreur
+Main.lvMultiPing.Status.Error=Erreur: {0}
+
+Main.pmnuMultiPingOrigIPUseSel=&Utiliser l'adresse IP originale
+Main.pmnuMultiPingOrigIPCopy=Copier l'adresse IP &originale
+# >>> CHANGED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingIPUseSel=&Utiliser l'adresse IP renvoyée
+Main.pmnuMultiPingIPCopy=&Copier l'adresse IP renvoyée
+# <<< CHANGED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.pmnuMultiPingHostnameUseSel=&Utiliser le nom d'hôte
+Main.pmnuMultiPingHostnameCopy=&Copier le nom d'hôte
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.pmnuMultiPingCopy=&Copier la liste des entrées
+Main.pmnuMultiPingSelectAll=Sélectionner &tout
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lblTraceQuery=Nom d'hôte ou adresse IP:
+Main.lblTraceMaxHops=Hops:
+Main.lblTraceTimeout=Délai:
+Main.lblTraceMaxRetries=Tentatives:
+Main.chkTraceResolve=Résoudre les noms d'hôtes
+
+Main.lblWhoisQuery=Nom d'hôte ou adresse IP:
+Main.lblWhoisServer=Serveur Whois:
+Main.chkWhoisVerify=Vérifier nom d'hôte / adresse IP
+Main.chkWhoisRedirect=Rediriger automatiquement
+Main.chkWhoisFormat=Format réponse
+Main.chkWhoisQueryDirect=Requête directe
+Main.chkWhoisQueryDomain=Requête Domaine
+Main.chkWhoisQueryNetwork=Requête réseau
+Main.lblWhoisEncoding=Encodage:
+Main.cmbWhoisEncoding.ASCII=ASCII
+Main.cmbWhoisEncoding.ANSI=ANSI
+Main.cmbWhoisEncoding.UTF8=UTF-8
+Main.cmbWhoisEncoding.UTF7=UTF-7
+Main.cmbWhoisEncoding.UniLE=Unicode LE
+Main.cmbWhoisEncoding.UniBE=Unicode BE
+
+Main.lblMailCheckQuery=Adresse mail:
+Main.lblMailCheckSender=Adresse expéditeur:
+Main.lblMailCheckServer=Serveur MX:
+Main.chkMailCheckSendVRFY=Envoyer une commande "VRFY"
+
+Main.lblMailHeadQuery=Lignes d'en-tête:
+Main.chkMailHeadResolve=Résoudre les noms d'hôtes
+
+Main.lblHttpHeadQuery=URL:
+Main.lblHttpHeadCommand=Commande:
+Main.chkHttpHeadFullPage=Monter la page entière
+Main.chkHttpHeadRedirect=Rediriger automatiquement
+
+Main.lblPageRankQuery=URL:
+Main.lblPageRankValueTitle=Google PageRank:
+
+Main.lblPageRankValue.ConnectionError=Le PageRank ne peut être retrouvé.
+Main.lblPageRankValue.NoResult=Il n'y a pas de PageRank de disponible pour cette URL.
+Main.lblPageRankValue.InvalidResult=Le résultat ne peut pas être traité.
+
+Main.lblMultiRankQuery=URLs:
+Main.lblMultiRankQueryNote=(une URL par ligne)
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.chkMultiRankResolve=Résoudre adresse IP
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.colMultiRankURL=URL
+Main.colMultiRankStatus=Etat
+Main.colMultiRankPageRank=PageRank
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.colMultiRankIP=Adresse IP
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.lvMultiRank.Status.ConnectionError=Erreur de connexion
+Main.lvMultiRank.Status.Aborted=Annulé
+Main.lvMultiRank.Status.Timeout=Délai
+Main.lvMultiRank.Status.NoResult=Non disponible
+Main.lvMultiRank.Status.InvalidResult=Résultat invalide
+Main.lvMultiRank.Status.Success=Succès
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>YY>>>>>>>>>>>>>>>>
+Main.pmnuMultiRankUrlUseSel=&Utiliser URL
+Main.pmnuMultiRankUrlCopy=&Copier URL
+Main.pmnuMultiRankIPUseSel=Uti&liser adresse IP
+Main.pmnuMultiRankIPCopy=C&opier adresse IP
+Main.pmnuMultiRankCopy=&Copier les entrées de la liste
+Main.pmnuMultiRankSelectAll=Sélectionner &tout
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.btnTimeSetTime=Régler la date et l'heure du système
+Main.lblTimeServer=Serveur NTP:
+Main.lblTimeSystemTitle=Date et heure Système:
+Main.lblTimeServerTitle=Date et heure selon le serveur:
+Main.lblTimeServerTitle.Server=Date et heure selon le serveur "{0}":
+Main.lblTimeDifferenceTitle=Différence temporelle:
+Main.lblTimeServerUpdateTitle=Dernière mise à jour par le serveur:
+Main.lblTimeServerUpdateTitle.Server=Dernière mise à jour par le serveur "{0}":
+Main.lblTimeServerUpdate={0} (il y a {1})
+Main.lblTimeServerLocal.SysTimeNotSet=La date et l'heure du système ne peuvent pas être réglées.
+Main.lblTimeServerLocal.ServerNotReachable=Le serveur de temps "{0}" ne peut pas être atteint.
+Main.lblTimeServerLocal.ResponseError=La réponse du serveur de temps "{0}" ne peut pas être traitée.
+
+Main.lblListInfoQuery=Chercher:
+Main.lblListInfoSource=Liste:
+Main.chkListInfoCaseSensitive=Sensible à la casse
+Main.chkListInfoWholeColumns=Chercher dans toutes les colonnes
+
+Main.chkLocalResolve=Résoudre les noms d'hôtes
+Main.chkLocalExternal=Recevoir les informations de l'hôte externe 
+Main.chkLocalAdapterInfo=Montrer les interfaces réseau
+Main.chkLocalIPv4Stat=Montrer les statistiques IPv4
+
+Main.MsgFlushDnsCache.Title=Vider le cache &DNS Windows
+Main.MsgFlushDnsCache.SrvNotRunning=Le service système "Client DNS" n'est pas démarré.\w\wCe service doit être lancé pour réinitialiser le cache DNS Windows.
+Main.MsgFlushDnsCache.ErrorMessage=Le cache DNS Windows ne peut pas être vidé ou réinitialisé.\w\wErreur:\w{0}
+
+Main.DlgSave.Title=Sauvegarder
+Main.DlgSaveSelection.Title=Sauver la Sélection
+Main.MsgSaveSelection.Error=Le fichier "{0}" ne peut pas être sauvegarder.
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.DlgPasteFromFile.Title=Coller depuis fichier
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Main.MsgInvalidURL.Title=URL invalide
+Main.MsgInvalidURL.Text=L'URL "{0}" a un format invalide.
+
+Main.MsgInvalidMailAddress.Title=Adresse Mail invalide
+Main.MsgInvalidMailAddress.Text=L'adressse Mail "{0}" a un format invalide.
+
+Main.MsgInvalidIPRange.Title=Plage d'adresses IP invalide
+Main.MsgInvalidIPRange.Text=La plage d'addresses IP entrée a un format invalid .\w\wNoter que seul le dernier octect de l'adresse peut être différent.\w\wFormats valides :\w    x.x.x.Y - x.x.x.Z (c.à.d. 127.0.0.1 - 127.0.0.254)\w    x.x.x.Y - Z (c.à.d. 127.0.0.1 - 254)
+
+
+
+# NOTICE:
+# Do not remove space chars after the equal sign, these are indents for text output.
+# The space chars in front of the equal sign is just for aligning the string.
+
+Main.Report.QueryAbortedByUser=Requête annulée par l'utilisateur.
+Main.Report.QueryFinished=Requête terminée.
+
+Main.Report.HostInfo.Title=Information Hôte pour "{0}":
+Main.Report.HostInfo.NotAvailable=(non disponible)
+
+Main.Report.HostInfo.IPAddress =  Adresse IP:     {END}
+Main.Report.HostInfo.Hostname  =  Nom d'hôte:     {END}
+Main.Report.HostInfo.Domainname=  Nom de domaine: {END}
+Main.Report.HostInfo.TLD       =  Niveau sup.:    {END}
+Main.Report.HostInfo.CountryIP =  Pays (IP):      {END}
+Main.Report.HostInfo.IPRange   =  Plage IP:       {END}
+Main.Report.HostInfo.RIRData   =  Donnée RIR:     {END}
+Main.Report.HostInfo.RIRData.ValueDate=(assignée depuis {0})
+
+Main.Report.DNS.IPAddress       =Adresses IP (A):
+Main.Report.DNS.IPAddress.Title =  {0}. adresse IP:
+Main.Report.DNS.Hostname        =Noms d'hôte (PTR):
+Main.Report.DNS.Hostname.Title  =  {0}. Noms d'hôte:
+Main.Report.DNS.Nameserver      =Noms de serveur (NS):
+Main.Report.DNS.Nameserver.Title=  {0}. Noms de serveur:
+Main.Report.DNS.MXServer        =Serveurs Mail Exchange (MX):
+Main.Report.DNS.MXServer.Title  =  {0}. Serveur MX:
+# >>> ADDED 4.2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Main.Report.DNS.MXServer.Pref   =, pref={0}
+# <<< ADDED 4.2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Main.Report.DNS.Text            =Entrées Texte (TXT):
+Main.Report.DNS.Text.Title      =  {0}. Entrée Texte:
+
+Main.Report.DNS.SOA=Start of Authority (SOA):
+Main.Report.DNS.SOA.Server.Title =  Serveur:     {END}
+Main.Report.DNS.SOA.RName.Title  =  Contact:     {END}
+Main.Report.DNS.SOA.Serial.Title =  N° de série: {END}
+Main.Report.DNS.SOA.Expire.Title =  Expiration:      {END}
+Main.Report.DNS.SOA.Refresh.Title=  Rafraichissement:   {END}
+Main.Report.DNS.SOA.Retry.Title  =  Tentative:   {END}
+Main.Report.DNS.SOA.MinTTL.Title =  Min. TTL:    {END}
+
+Main.Report.DNS.SOA.Expire.Value={0} secondes ({1})
+Main.Report.DNS.SOA.Refresh.Value={0} secondes ({1})
+Main.Report.DNS.SOA.Retry.Value={0} secondes ({1})
+Main.Report.DNS.SOA.MinTTL.Value={0} secondes ({1})
+
+Main.Report.Ping.NoIPAvailable=L'adresse IP ne peut pas être déterminée.
+Main.Report.Ping.Start=Envoi de {1} ping(s) avec {2} octet à "{0}":
+Main.Report.Ping.Reply=  {0}. réponse depuis {1}:
+Main.Report.Ping.Pause=      Pause ({0} ms)
+Main.Report.Ping.Reply.Error=Erreur: {0}.
+Main.Report.Ping.Reply.SndRcvError=Erreur à l'envoi ou à la réception.
+Main.Report.Ping.Reply.Timeout=Délai.
+Main.Report.Ping.Reply.Aborted=Annulé par l'utilisateur.
+Main.Report.Ping.Reply.Incomplete={0} ms, donnée incomplète (seulement {1} octet reçu).
+Main.Report.Ping.Reply.Different={0} ms, donnée différente.
+Main.Report.Ping.Reply.Correct={0} ms, donnée correcte.
+Main.Report.Ping.Result={0} ping(s) envoyé ({1} correct, {2} incorrecte, {3} échoué).
+Main.Report.Ping.ResultTime=Réponse la plus rapide: {0} ms, réponse la plus lente: {1} ms, moyenne: {2} ms.
+
+Main.Report.Trace.Start=Tracer la route à "{0}" avec un maximum de {1} hops:
+Main.Report.Trace.SndRcvError=Erreur à l'envoi ou à la réception.
+Main.Report.Trace.Reply.Number=  {0}:
+Main.Report.Trace.Reply.TimeIP={0} ms  {1}
+Main.Report.Trace.Reply.TimeIPHost={0} ms  {1} ({2})
+Main.Report.Trace.Reply.Timeout=    *     Requête trôp longue.
+Main.Report.Trace.HostReached=L'hôte cible "{0}" a été atteint.
+Main.Report.Trace.MaxHops=Le compte maximum de hops a été atteint.
+
+Main.Report.Whois.DirectQuery.Title=Requête directe
+Main.Report.Whois.DirectQuery.Start=Requête pour "{0}" à "{1}":
+Main.Report.Whois.DirectQuery.Redir=Requête redirigée pour "{0}" à "{1}":
+
+Main.Report.Whois.DomainQuery.Title=Requête Domaine
+Main.Report.Whois.DomainQuery.Start=Requête Domaine pour "{0}" à "{1}":
+Main.Report.Whois.DomainQuery.Redir=Requête Domaine redirigée pour "{0}" à "{1}":
+Main.Report.Whois.DomainQuery.NoDomainName=Il n'y a pas de nom de domaine disponible pour la requête.
+Main.Report.Whois.DomainQuery.NoTLD=Il n'y a pas de domaine de niveau supérieur pour la requête.
+Main.Report.Whois.DomainQuery.NoTLDInfo=Aucune information n'a été trouvée pour le domaine de niveau supérieur "{0}".
+
+Main.Report.Whois.NetworkQuery.Title=Requête Réseau
+Main.Report.Whois.NetworkQuery.Start=Requête Réseau pour "{0}" à "{1}":
+Main.Report.Whois.NetworkQuery.Redir=Requête Réseau redirigée pour "{0}" à "{1}":
+Main.Report.Whois.NetzworkQuery.NoIPAddress=Il n'y a pas d'adresse IP disponible pour la requête.
+
+Main.Report.Whois.ServerNotReachable=Le serveur Whois "{0}" ne peut pas être atteint.
+Main.Report.Whois.Redirection=Le réponse de "{0}" pointe sur le serveur Whois "{1}".
+Main.Report.Whois.NoWhoisServer=Aucune correspondance de serveur Whois n' a été trouvée.
+Main.Report.Whois.ServerNotInDB=Le serveur Whois pour "{0}" n'a pas pu être trouvé dans la base de données.
+Main.Report.Whois.WhoisLink.Title=Lien Whois:
+
+Main.Report.MailCheck.MailInfo.Title=Information Mail:
+Main.Report.MailCheck.MailInfo.MailAddress=  Address Mail:   {END}
+Main.Report.MailCheck.MailInfo.DomainName =  Nom de Domaine: {END}
+
+Main.Report.MailCheck.MXServer.Title=Serveur Mail Exchange pour "{0}":
+Main.Report.MailCheck.MXServer.Number=  {0}. Serveur MX:
+Main.Report.MailCheck.MXServer.ServerPref={0}, préférence = {1}
+
+Main.Report.MailCheck.NoDomain=Aucun serveur mail exchange n'est diponible dans le domaine "{0}".
+Main.Report.MailCheck.Start=Vérification de l'adresse "{0}" avec le serveur MX "{1}" (port {2}):
+Main.Report.MailCheck.NoConnect=La connexion avec le serveur MX "{0}" n'a pas pu être établie.
+Main.Report.MailCheck.Connected=Connecté au serveur MX "{0}" sur le port {1}.
+Main.Report.MailCheck.Timeout=Le serveur MX ne répond pas (délai dépassé).
+Main.Report.MailCheck.SendError=La commande ne peut pas être envoyée.
+Main.Report.MailCheck.Disconnect=Connexion au serveur MX "{0}" fermée.
+
+Main.Report.MailCheck.Result.Title=Résultat:
+Main.Report.MailCheck.Result.VrfyOkNeutral       =  Le résultat de VRFY est positif ou neutre.
+Main.Report.MailCheck.Result.VrfyFail            =  Le resultat de VRFY est négatif.
+Main.Report.MailCheck.Result.SenderAccepted      =  L'adresse de l'expéditeur <{0}> a été acceptée.
+Main.Report.MailCheck.Result.RecipientAccepted   =  L'adresse du destinataire <{0}> a été acceptée.
+Main.Report.MailCheck.Result.HostNotAccepted     =  L'hôte n'a pas été accepté.
+Main.Report.MailCheck.Result.SenderNotAccepted   =  L'adresse de l'expéditeur <{0}> a été refusée.
+Main.Report.MailCheck.Result.RecipientNotAccepted=  L'adresse du destinataire <{0}> a été refusée.
+
+Main.Report.MailHead.NotAvailable=(non disponible)
+
+Main.Report.MailHead.Header.Title=En-tête:
+Main.Report.MailHead.Header.Formatted=formaté
+Main.Report.MailHead.Header.Decoded=décodé
+
+Main.Report.MailHead.RcvOverview.Title=Vue d'ensemble:
+Main.Report.MailHead.RcvOverview.Number  =  {0}. Entrée (ligne {1}):
+Main.Report.MailHead.RcvOverview.SentFrom =      Envoyé depuis: {END}
+Main.Report.MailHead.RcvOverview.RcvFrom  =      Reçu depuis:  {END}
+Main.Report.MailHead.RcvOverview.RcvTime  =      Temps Reçu:   {END}
+Main.Report.MailHead.RcvOverview.Duration =      Durée:        {END}
+
+Main.Report.MailHead.RcvDetail.Title=Détails:
+Main.Report.MailHead.RcvDetail.Number         =  {0}. Entrée (ligne {1}):
+Main.Report.MailHead.RcvDetail.Original        =      Ligne originale:     {END}
+Main.Report.MailHead.RcvDetail.Sender          =      Expéditeur:          {END}
+Main.Report.MailHead.RcvDetail.SenderIP        =      Expéditeur (IP):     {END}
+Main.Report.MailHead.RcvDetail.SenderFrom      =      Expéditeur (depuis): {END}
+Main.Report.MailHead.RcvDetail.SenderHelo      =      Expéditeur (HELO):    {END}
+Main.Report.MailHead.RcvDetail.Received        =      Reçu depuis:         {END}
+Main.Report.MailHead.RcvDetail.ReceivedFor     =      Reçu pour:           {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime    =      Date/heure:          {END}
+Main.Report.MailHead.RcvDetail.ReceivedDuration=      Durée:               {END}
+Main.Report.MailHead.RcvDetail.ReceivedTime.Invalid=(non disponible ou invalide)
+
+Main.Report.MailHead.RcvDetail.Analysis.Title              =      Analyse:
+Main.Report.MailHead.RcvDetail.Analysis.Provider           =        Cette entrée a été ajoutée par le serveur mail destinataire.
+Main.Report.MailHead.RcvDetail.Analysis.LocalIP            =        L'adresse IP de l'expéditeur n'est pas une adresse IP publique.
+Main.Report.MailHead.RcvDetail.Analysis.PrivNet            =        L'expéditeur et/ou le destianatire semble être sur un réseau privé.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged       =        Il est possible que l'adresse IP de l'expéditeur soit contrefaite.
+Main.Report.MailHead.RcvDetail.Analysis.FromIPForged.Info  =          L'adresse IP  in "de" ({0}) ne correspond pas à l'adresse IP cliente ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged     =        Il est possible que le nom d'hôte de l'expéditeur soit contrefait.
+Main.Report.MailHead.RcvDetail.Analysis.FromHostForged.Info=          Le nom d'hôte dans "de" ({0}) ne correspond pas au nom d'hôte client ({1}).
+Main.Report.MailHead.RcvDetail.Analysis.HostMatch          =        Les noms d'hôtes ne correspondent pas.
+Main.Report.MailHead.RcvDetail.Analysis.DomainMatch        =        Les noms de domaines ne correspondent pas.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch       =        Les noms d'hôtes ne correspondent pas.
+Main.Report.MailHead.RcvDetail.Analysis.HostNotMatch.Info  =          Le nom d'hôte destinataire de l'entrée ({0}) devrait être\w          le nom d'hôte expéditeur de  l'entrée suivante ({1}).\w          Ceçi est souvent du au changement de l'adresse IP par une traduction d'adresse réseau (NAT) d'une adresse IP privée en une adresse publique.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostAvailable    =        Il n'y a aucun noms d'hôte de disponibles pour une comparaison.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch     =        Le nom de domaine ne correspond pas.
+Main.Report.MailHead.RcvDetail.Analysis.DomainNotMatch.Info=          Le nom de domaine destinataire de l'entée ({0}) devrait être\w          le nom de domaine expéditeur de l'entrée suivante ({1}).\w          Ceçi est souvent du au changement de l'adresse IP par une traduction d'adresse réseau (NAT) d'une adresse IP privée en une adresse publique.
+Main.Report.MailHead.RcvDetail.Analysis.NoHostDomainAvail  =        Il n'y a pas de noms d'hôte ou de domaine de disponible pour une comparaison.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongPos    =        Le temps de délivrance diffère de plus de 10 minutes ou une date est incorrecte.
+Main.Report.MailHead.RcvDetail.Analysis.DurationLongNeg    =        Le temps de délivrance diffère de plus de 10 minutes ou une date est incorrecte.
+Main.Report.MailHead.RcvDetail.Analysis.NoMessage          =        Il n'y a pas d'erreurs ou l'analyse n'est pas possible.
+
+Main.Report.HttpHead.RequestURL=URL recherchée:
+Main.Report.HttpHead.Start=Envoi de l'URL avec la méthode "{0}" à l'hôte "{1}" (port {2}):
+Main.Report.HttpHead.OriginalHeader=En-tête Original:
+Main.Report.HttpHead.Page=Page:
+
+Main.Report.HttpHead.HeadInfo.Title=Information de l'En-tête:
+Main.Report.HttpHead.HeadInfo.ResponseTime=  Temps de réponse: {END}
+Main.Report.HttpHead.HeadInfo.ResponseURL =  Réponse de l'URL:  {END}
+Main.Report.HttpHead.HeadInfo.StatusCode  =  Code d'état:       {END}
+Main.Report.HttpHead.HeadInfo.CacheControl=  Contrôle du Cache: {END}
+Main.Report.HttpHead.HeadInfo.FromCache   =  Depuis le cache:   {END}
+Main.Report.HttpHead.HeadInfo.LastModified=  Dernière modification:   {END}
+Main.Report.HttpHead.HeadInfo.ServerTime  =  Temps Serveur:     {END}
+Main.Report.HttpHead.HeadInfo.Webserver   =  Serveur Web:       {END}
+Main.Report.HttpHead.HeadInfo.Software    =  Logiciel:          {END}
+Main.Report.HttpHead.HeadInfo.ResponseTime.Value={0} ms
+Main.Report.HttpHead.HeadInfo.StatusCode.Value={0} ({1})
+Main.Report.HttpHead.HeadInfo.ValueUTC={0} (UTC)
+
+Main.Report.HttpHead.Error=Erreur: {0}.
+Main.Report.HttpHead.ErrorCode=Le serveur web retourne le code erreur {0} ({1}).
+Main.Report.HttpHead.NoConnect=Le server web ne peut pas être atteint.
+Main.Report.HttpHead.SendError=Une erreur s'est produite pendant l'envoi des données.
+
+Main.Report.Local.LocalHost.Title=Hôte local:
+Main.Report.Local.LocalHost.Hostname =  Nom d'hôte: {END}
+Main.Report.Local.LocalHost.IPAddress=  Adresse IP: {END}
+
+Main.Report.Local.OwnIPs.Title=Adresses IP propres:
+Main.Report.Local.OwnIPs.Loopback=(adresse de rebouclage)
+
+Main.Report.Local.External.Title=Information de l'hôte externe:
+Main.Report.Local.External.IPAddress=  Adresse IP: {END}
+Main.Report.Local.External.Hostname =  Nom d'hôte: {END}
+Main.Report.Local.External.NotAvailable=(Non disponible)
+
+Main.Report.Local.DNS.Title=Serveur DNS:
+Main.Report.Local.DNS.Number=  {0}. Serveur DNS:
+
+Main.Report.Local.Net.Title=Interfaces Réseau:
+Main.Report.Local.Net.Intereface =  {0} "{1}":
+Main.Report.Local.Net.Description=    Description:  {END}
+Main.Report.Local.Net.MacAddress =    Adresse MAC:  {END}
+Main.Report.Local.Net.DnsSuffix  =    Suffixe DNS:  {END}
+Main.Report.Local.Net.IPAddress  =    Adresse IP:   {END}
+Main.Report.Local.Net.DhcpServer =    Serveur DHCP: {END}
+Main.Report.Local.Net.DnsServer  =    Serveur DNS:  {END}
+Main.Report.Local.Net.Gateway    =    Passerelle:   {END}
+Main.Report.Local.Net.Anycast    =    Anycast:       {END}
+Main.Report.Local.Net.Multicast  =    Multicast:     {END}
+Main.Report.Local.Net.WinsServer =    Serveur WINS: {END}
+Main.Report.Local.Net.Stat.Title             =    Statistiques:
+Main.Report.Local.Net.Stat.BytesReceived     =      Reçus:      {END}
+Main.Report.Local.Net.Stat.BytesSent         =      Envoyés:    {END}
+Main.Report.Local.Net.Stat.IncomingPakets    =      Paquets entrant:
+Main.Report.Local.Net.Stat.InPackDiscarded   =        Ecartés:  {END}
+Main.Report.Local.Net.Stat.InPackWithErrors  =        Erreurs:   {END}
+Main.Report.Local.Net.Stat.InPackUnknProtocol=        Inconnus: {END}
+Main.Report.Local.Net.Stat.OutgoingPackets   =      Paquets sortant:
+Main.Report.Local.Net.Stat.OutPackDiscarded  =        Ecartés:  {END}
+Main.Report.Local.Net.Stat.OutPackWithErrors =        Erreurs:  {END}
+Main.Report.Local.Net.Stat.UnicastPackets    =      Paquets Unicast:
+Main.Report.Local.Net.Stat.UniPackReceived   =        Reçus:    {END}
+Main.Report.Local.Net.Stat.UniPackSent       =        Envoyés:  {END}
+Main.Report.Local.Net.Stat.NonUnicastPackets =      Paquets Non-Unicast:
+Main.Report.Local.Net.Stat.NonUniPackReceived=        Reçus:    {END}
+Main.Report.Local.Net.Stat.NonUniPackSent    =        Envoyés:  {END}
+Main.Report.Local.Net.Stat.Value.Bytes={0} octets
+
+
+
+# ###################################
+# ##   S E T T I N G S   F O R M   ##
+# ###################################
+
+Settings.Form.Title=Réglages
+
+Settings.tnGeneral=Général
+Settings.tnView=Affichage
+Settings.tnWebRequests=Requêtes web
+Settings.tnTools=Outils
+
+Settings.lblMS=ms
+Settings.lblBytes=octet
+
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.cmbListCopyFormat.Semicolon=Séparé par ";"
+Settings.cmbListCopyFormat.Comma=Séparé par ","
+Settings.cmbListCopyFormat.Tabulator=Séparé par une tabulation
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpGeneralGeneral=Général
+Settings.lblGeneralMaxRecentItems=Nombre max. d'éléments récents dans les champs déroulants:
+Settings.grpGeneralDns=Réglages DNS
+Settings.lblGeneralDnsServer=Serveur DNS:
+Settings.lblGeneralDnsTimeout=Délai:
+
+Settings.grpViewGeneral=Général
+Settings.chkViewShowTitleBar=Montrer la barre de titre
+Settings.grpViewRtf=Sortie Texte
+Settings.chkViewRtfWordWrap=Renvoi à la ligne des lignes trôp longues
+Settings.lblViewRtfFontDefault=Police par défaut:
+Settings.txtViewRtfFontDefault={0}, {1} pt
+Settings.btnViewRtfFontDefaultSel=Sélectionner la police par défaut
+
+Settings.rbWebRequestsProxySystem=Utiliser les réglages du proxy système (Internet Explorer)
+Settings.rbWebrequestsProxyUserDefined=Réglages proxy définis par l'utilisateur:
+Settings.grpWebRequestsProxy=Serveur Proxy
+Settings.lblWebRequestsProxyServer=Serveur:
+Settings.chkWebRequestsProxyBypassOnLocal=Ne pas utiliser le serveur pour les adresses locales
+Settings.lblWebRequestsProxyUsername=Identifiant:
+Settings.lblWebRequestsProxyPassword=Mot de passe
+Settings.grpWebRequestsMisc=Divers
+Settings.lblWebRequestsUserAgent=Agent-Utilisateur:
+Settings.lblWebRequestsReferer=Référenceur:
+
+Settings.lblToolsNothing=Cette entrée ne contient pas d'options.\wSélectionner au niveau subordonné.
+
+Settings.grpPingGeneral=Général
+Settings.lblPingMaxTTL=TTL maximum:
+
+Settings.grpMultiPingGeneral=Général
+Settings.lblMultiPingMaxTTL=TTL maximum:
+Settings.chkMultiPingShowGridlines=Montrer le quadrillage
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiPingListCopy=Copier les entrées de la liste
+Settings.lblMultiPingListCopyFormat=Format de la liste:
+Settings.chkMultiPingListCopyHeader=Ajouter en-tête aux colonnes
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTraceGeneral=Général
+Settings.lblTraceBytes=Taille du buffer:
+
+Settings.grpWhoisGeneral=Général
+Settings.lblWhoisTimeout=Délai:
+Settings.grpWhoisDomain=Requêtes de domaine
+Settings.lblWhoisMaxRedirectDom=Nombre maximum de redirections:
+Settings.grpWhoisNetwork=Requêtes Réseau
+Settings.lblWhoisMaxRedirectDomainNet=Nombre maximum de redirections:
+Settings.lblWhoisNetServer=Premier Serveur Whois:
+Settings.chkWhoisNetServerFromDB=Utiliser serveur Whois depuis la base de données si disponible
+
+Settings.grpMailCheckGeneral=Général
+Settings.lblMailCheckTimeout=Délai:
+Settings.lblMailCheckHeloHost=Nom d'hôte pour EHLO/HELO:
+Settings.chkMailCheckHeloHostGetExternal=Retrouver l'information des hôtes externes
+Settings.lblMailCheckSenderDefault=Adresse expéditeur par défaut:
+
+Settings.grpHttpHeadGeneral=Général
+Settings.lblHttpHeadTimeout=Délai:
+Settings.chkHttpHeadUseProxy=Utiliser le serveur Proxy
+Settings.chkHttpHeadShowOrigHeader=Montrer l'ent-tête original
+
+Settings.grpPageRankGeneral=Général
+Settings.lblPageRankTimeout=Délai:
+Settings.chkPageRankUseProxy=Utiliser le serveur Proxy
+
+Settings.grpMultiRankGeneral=Général
+Settings.lblMultiRankTimeout=Délai:
+Settings.chkMultiRankUseProxy=Utiliser le serveur Proxy
+Settings.chkMultiRankShowGridlines=Montrer le quadrillage
+# >>> ADDED 4.1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Settings.grpMultiRankListCopy=Copier les entrées de la liste
+Settings.lblMultiRankListCopyFormat=Format de la liste:
+Settings.chkMultiRankListCopyHeader=Ajouter en-tête aux colonnes
+# <<< ADDED 4.1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Settings.grpTimeGeneral=Général
+Settings.lblTimeTimeout=Délai:
+Settings.grpTimeServers=Serveurs de Temps
+Settings.lblTimeServers=Utiliser les serveurs de temps suivants
+Settings.lblTimeServersNote=(un serveur par ligne)
+
+Settings.grpListInfoGeneral=Général
+Settings.chkListInfoShowGridlines=Montrer le quadrillage
+
+Settings.grpLocalExternalHostInfo=Information Hôte Externe
+Settings.lblLocalTimeout=Délai:
+Settings.chkLocalUseProxy=Utiliser le serveur Proxy
+Settings.lblLocalExternalHostInfo=Retrouver l' information hôte externe depuis:
