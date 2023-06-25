@@ -14,7 +14,6 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #https://chocolatey.org/install
     choco install 7zip.install
     choco install adobereader
-#    choco install apimonitor
 #	 choco install cmake
 	choco install cmder
     choco install curl
@@ -43,33 +42,28 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
     choco install nodejs.install
     choco install nomacs
     choco install notepadplusplus.install
-	choco install ntop.portable
+#	choco install ntop.portable
 	choco install onionshare
     choco install openjdk 
     choco install openjdk11
 #    choco install plasso
     choco install powershellhere-elevated 
     choco install processhacker
-#    choco install procexp
-#    choco install procmon
     choco install protonvpn
-    choco install python2
-    choco install python3
+	choco install python
+#    choco install python2
+#    choco install python3
 	choco install pip
     choco install qbittorrent
 #    choco install r.project
-#	 choco install rustdesk
-#    choco install rufus
-#    choco install rufus.install
+	 choco install rustdesk
 #    choco install sudo
-#    choco install sysmon
 #	choco install tailscale
     choco install tor-browser
 #    choco install veracrypt
     choco install vlc
     choco install wget
-#    choco install windirstat
-#    choco install winlogbeat
+	choco install winget
 #    choco install wireshark
 #    choco install zap
     choco install zoom
@@ -78,15 +72,13 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install visualstudio2017-powershelltools
 #    choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity
 
-
 	pip install glances
 	pip install poetry
 	pip install windows-curses
 	
-#	 This currently isn't working as grapheneX only supports Python 3.7
-#	 https://github.com/grapheneX/grapheneX.git
-#	 poetry install
-#	 poetry run grapheneX
+	winget install JanDeDobbeleer.OhMyPosh -s winget
+	
+	oh-my-posh init pwsh --config 'C:\Users\admin\AppData\Local\Programs\oh-my-posh\themes\montys.omp.json' | Invoke-Expression
 
 # Windows Update
 
