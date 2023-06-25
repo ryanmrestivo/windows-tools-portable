@@ -9,7 +9,15 @@
 Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 # refreshenv
 	refreshenv
-
+	
+# winget
+	choco install winget
+	
+	winget install JanDeDobbeleer.OhMyPosh -s winget
+	
+	oh-my-posh init pwsh --config 'C:\Users\admin\AppData\Local\Programs\oh-my-posh\themes\montys.omp.json' | Invoke-Expression
+	New-Item -Path $PROFILE -Type File -Force
+	
 #Choco Applications
 #https://chocolatey.org/install
     choco install 7zip.install
@@ -63,7 +71,6 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install veracrypt
     choco install vlc
     choco install wget
-	choco install winget
 #    choco install wireshark
 #    choco install zap
     choco install zoom
@@ -72,13 +79,9 @@ Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePoint
 #    choco install visualstudio2017-powershelltools
 #    choco install vscode-ruby vscodium vscode-ansible vscode-python chocolatey-vscode vscode-prettier vscode-java vscode-yaml vscode-haskell vscode-mongo vscode-beautify vscode-intellicode vscode-pull-request-github vscode-kubernetes-tools vscode-autofilename vscode-codespellchecker vscode-icons vscode-csharp dsc.powershellcommunity
 
-	pip install glances
 	pip install poetry
 	pip install windows-curses
-	
-	winget install JanDeDobbeleer.OhMyPosh -s winget
-	
-	oh-my-posh init pwsh --config 'C:\Users\admin\AppData\Local\Programs\oh-my-posh\themes\montys.omp.json' | Invoke-Expression
+	pip install glances
 
 # Windows Update
 
