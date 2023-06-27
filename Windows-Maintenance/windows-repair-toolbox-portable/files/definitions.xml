@@ -2,28 +2,28 @@
 <ALL_LINKS>
 	<LINKS>
 	    <!--VERSION-->
-		<LINKS title="VERSION" number="1.7.9.5"/>
+		<LINKS title="VERSION" number="1.8.0.4"/>
 	    <!--HARDWARE-->
 		<LINKS title="HWinfo_x32" link="https://www.hwinfo.com/files/hwi_746.zip" exe="HWiNFO32.exe" zip=""/>
 		<LINKS title="HWinfo_x64" link="https://www.hwinfo.com/files/hwi_746.zip" exe="HWiNFO64.exe" zip=""/>
-		<LINKS title="cpuz_x32" link="https://download.cpuid.com/cpu-z/cpu-z_2.05-en.zip" exe="cpuz_x32.exe" zip=""/>
-		<LINKS title="cpuz_x64" link="https://download.cpuid.com/cpu-z/cpu-z_2.05-en.zip" exe="cpuz_x64.exe" zip=""/>
+		<LINKS title="cpuz_x32" link="https://download.cpuid.com/cpu-z/cpu-z_2.06-en.zip" exe="cpuz_x32.exe" zip=""/>
+		<LINKS title="cpuz_x64" link="https://download.cpuid.com/cpu-z/cpu-z_2.06-en.zip" exe="cpuz_x64.exe" zip=""/>
 		<LINKS title="CrucialSS" link="https://www.crucial.com/content/dam/crucial/support/scan/downloads/CrucialScan.exe" exe="" zip=""/>
 		<LINKS title="RAMExpert" link="https://www.kcsoftwares.com/files/ramexpert.zip" exe="RAMExpert.exe" zip=""/>
 		<LINKS title="DiskInfo_x32" link="https://www.majorgeeks.com/mg/getmirror/crystaldiskinfo_portable,1.html" exe="DiskInfo32.exe" zip=""/>
 		<LINKS title="DiskInfo_x64" link="https://www.majorgeeks.com/mg/getmirror/crystaldiskinfo_portable,1.html" exe="DiskInfo64.exe" zip=""/>
 		<LINKS title="StressTest_x32" link="http://windows-repair-toolbox.com/host/HeavyLoad-x86.zip" exe="" zip=""/>
 		<LINKS title="StressTest_x64" link="https://downloads.jam-software.de/heavyload/HeavyLoad-x64.zip" exe="" zip=""/>
-		<LINKS title="HWMonitor_x32" link="https://download.cpuid.com/hwmonitor/hwmonitor_1.50.zip" exe="HWMonitor_x32.exe" zip=""/>
-		<LINKS title="HWMonitor_x64" link="https://download.cpuid.com/hwmonitor/hwmonitor_1.50.zip" exe="HWMonitor_x64.exe" zip=""/>								
-		<LINKS title="gpuZ" link="https://www.snapfiles.com/directdl/GPU-Z.2.53.0.exe" exe="" zip=""/>										
-		<LINKS title="Furmark" link="https://geeks3d.com/downloads/2023p/FurMark_1.34.0.0_Setup.exe" exe="" zip=""/>		
+		<LINKS title="HWMonitor_x32" link="https://download.cpuid.com/hwmonitor/hwmonitor_1.51.zip" exe="HWMonitor_x32.exe" zip=""/>
+		<LINKS title="HWMonitor_x64" link="https://download.cpuid.com/hwmonitor/hwmonitor_1.51.zip" exe="HWMonitor_x64.exe" zip=""/>								
+		<LINKS title="gpuZ" link="https://www.snapfiles.com/directdl/GPU-Z.2.54.0.exe" exe="" zip=""/>										
+		<LINKS title="Furmark" link="https://gpumagick.com/downloads/files/2023/abba3e5ee274a0a5a8755e83accae5e2f36671e967ea36d0f445151a0b7cc1fe/FurMark_1.35.0.0_Setup.exe" exe="" zip=""/>		
 		<LINKS title="GSmartCtrl_x32" link="https://github.com/ashaduri/gsmartcontrol/releases/download/v1.1.4/gsmartcontrol-1.1.4-win32.zip" exe="" zip=""/>		
 		<LINKS title="GSmartCtrl_x64" link="https://github.com/ashaduri/gsmartcontrol/releases/download/v1.1.4/gsmartcontrol-1.1.4-win64.zip" exe="" zip=""/>		
 		<LINKS title="BatteryInfoView" link="https://www.nirsoft.net/utils/batteryinfoview.zip" exe="BatteryInfoView.exe" zip=""/>												
 		<!--BACKUP_RECOVERY-->		
-		<LINKS title="FastCopy_x32" link="https://raw.githubusercontent.com/FastCopyLab/FastCopyDist2/main/FastCopy5.0.5_installer.exe" exe="" zip=""/>		
-		<LINKS title="FastCopy_x64" link="https://raw.githubusercontent.com/FastCopyLab/FastCopyDist2/main/FastCopy5.0.5_installer.exe" exe="" zip=""/>		
+		<LINKS title="FastCopy_x32" link="https://raw.githubusercontent.com/FastCopyLab/FastCopyDist2/main/FastCopy5.1.1_installer.exe" exe="" zip=""/>		
+		<LINKS title="FastCopy_x64" link="https://raw.githubusercontent.com/FastCopyLab/FastCopyDist2/main/FastCopy5.1.1_installer.exe" exe="" zip=""/>		
 		<LINKS title="Back4Sure_x32" link="https://www.ukrebs-software.de/download/back4sure/Back4Sure_Portable.zip" exe="" zip=""/>
 		<LINKS title="Back4Sure_x64" link="https://www.ukrebs-software.de/download/back4sure/Back4Sure64_Portable.zip" exe="" zip=""/>
 		<LINKS title="CloneApp" link="https://www.majorgeeks.com/mg/getmirror/cloneapp,1.html" exe="CloneApp.exe" zip=""/>
@@ -37,13 +37,13 @@
 		<LINKS title="GrantPerms_x32" link="https://www.bleepingcomputer.com/download/grantperms/dl/79/" exe="GrantPerms.exe" zip=""/>
 		<LINKS title="GrantPerms_x64" link="https://www.bleepingcomputer.com/download/grantperms/dl/80/" exe="GrantPerms64.exe" zip=""/>		
 		<LINKS title="NirLauncher" link="https://www.majorgeeks.com/mg/getmirror/nirlauncher,1.html" exe="NirLauncher.exe" zip=""/>		
-		<LINKS title="Snappy_Driver_Installer_x32" link="https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.12.753.zip" exe="" zip=""/>
-		<LINKS title="Snappy_Driver_Installer_x64" link="https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.12.753.zip" exe="" zip=""/>		
+		<LINKS title="Snappy_Driver_Installer_x32" link="https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.13.754.zip" exe="" zip=""/>
+		<LINKS title="Snappy_Driver_Installer_x64" link="https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.13.754.zip" exe="" zip=""/>		
 		<LINKS title="BlueScreenView_x32" link="https://www.nirsoft.net/utils/bluescreenview.zip" exe="" zip=""/>
 		<LINKS title="BlueScreenView_x64" link="https://www.nirsoft.net/utils/bluescreenview-x64.zip" exe="" zip=""/>
-		<LINKS title="Firefox" link="https://download2.portableapps.com/portableapps/FirefoxPortable/FirefoxPortable_113.0.2_English.paf.exe" exe="" zip=""/>			
-		<LINKS title="WizTree_x32" link="https://antibodysoftware-17031.kxcdn.com/files/20230315/wiztree_4_13_portable.zip" exe="WizTree.exe" zip=""/>
-		<LINKS title="WizTree_x64" link="https://antibodysoftware-17031.kxcdn.com/files/20230315/wiztree_4_13_portable.zip" exe="WizTree64.exe" zip=""/>									
+		<LINKS title="Firefox" link="https://download2.portableapps.com/portableapps/FirefoxPortable/FirefoxPortable_114.0.2_English.paf.exe" exe="" zip=""/>			
+		<LINKS title="WizTree_x32" link="https://antibodysoftware-17031.kxcdn.com/files/wiztree_4_14_portable.zip" exe="WizTree.exe" zip=""/>
+		<LINKS title="WizTree_x64" link="https://antibodysoftware-17031.kxcdn.com/files/wiztree_4_14_portable.zip" exe="WizTree64.exe" zip=""/>									
 		<LINKS title="Sysinternals" link="https://download.sysinternals.com/files/SysinternalsSuite.zip" exe="Winobj.exe" zip=""/>
 		<LINKS title="Macrorit" link="https://disk-tool.com/download/mde/mde-free-portable.zip" exe="dm.exe" zip=""/>											
 		<LINKS title="AppCrashView" link="https://www.nirsoft.net/utils/appcrashview.zip" exe="AppCrashView.exe" zip=""/>		
@@ -91,8 +91,8 @@
 		<LINKS title="DrWeb" link="https://free.drweb.ru/download+cureit/gr/?lng=ru" exe="" zip=""/>
 		<LINKS title="NoMoreRansom" link="https://www.nomoreransom.org" exe="" zip=""/>
 		<!--OPTIMIZE-->
-		<LINKS title="Ccleaner_x32" link="https://download.ccleaner.com/portable/ccsetup612.zip" exe="CCleaner.exe" zip="Ccleaner.zip" processName="CCleaner"/>				
-		<LINKS title="Ccleaner_x64" link="https://download.ccleaner.com/portable/ccsetup612.zip" exe="CCleaner64.exe" zip="CCleaner.zip" processName="CCleaner64"/>
+		<LINKS title="Ccleaner_x32" link="https://download.ccleaner.com/portable/ccsetup613.zip" exe="CCleaner.exe" zip="Ccleaner.zip" processName="CCleaner"/>				
+		<LINKS title="Ccleaner_x64" link="https://download.ccleaner.com/portable/ccsetup613.zip" exe="CCleaner64.exe" zip="CCleaner.zip" processName="CCleaner64"/>
 		<LINKS title="Auslogics" link="http://www.windows-repair-toolbox.com/host/ausdiskdefragportable.exe" exe="ausdiskdefragportable.exe" zip=""/>
 		<LINKS title="Autoruns_x32" link="https://download.sysinternals.com/files/Autoruns.zip" exe="Autoruns.exe" zip=""/>
 		<LINKS title="Autoruns_x64" link="https://download.sysinternals.com/files/Autoruns.zip" exe="Autoruns64.exe" zip=""/>		
