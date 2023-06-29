@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "WUView/0.5.10": {
+      "WUView/0.5.14": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.2.0",
           "GitVersion.MsBuild": "5.12.0",
           "MaterialDesignThemes": "4.9.0",
-          "NLog": "5.1.4",
-          "Octokit": "6.0.0"
+          "NLog": "5.2.0",
+          "Octokit": "6.1.0"
         },
         "runtime": {
           "WUView.dll": {}
@@ -55,26 +55,26 @@
           }
         }
       },
-      "NLog/5.1.4": {
+      "NLog/5.2.0": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.4.1703"
+            "fileVersion": "5.2.0.1813"
           }
         }
       },
-      "Octokit/6.0.0": {
+      "Octokit/6.1.0": {
         "runtime": {
           "lib/netstandard2.0/Octokit.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.0.0"
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "WUView/0.5.10": {
+    "WUView/0.5.14": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -114,19 +114,19 @@
       "path": "microsoft.xaml.behaviors.wpf/1.1.39",
       "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
     },
-    "NLog/5.1.4": {
+    "NLog/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ki0XThITEd//RrQ21yi1HB/Uid4pzTRE5YLvEpk91d0vDXp3OPtVCvWgrYsqqcpTwiipFSOLSsU1RblaexrFiA==",
-      "path": "nlog/5.1.4",
-      "hashPath": "nlog.5.1.4.nupkg.sha512"
+      "sha512": "sha512-uYBgseY0m/9lQUbZYGsQsTBFOWrfs3iaekzzYMH6vFmpoOAvV8/bp1XxG/suZkwB5h8nAiTJAp7VENWRDKtKPA==",
+      "path": "nlog/5.2.0",
+      "hashPath": "nlog.5.2.0.nupkg.sha512"
     },
-    "Octokit/6.0.0": {
+    "Octokit/6.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uvaQRay+9ASmkA+tAjNq3bw1h/92OiBM0i4DdccM2NwMR2MI33b+CGIY2VlMh57DgkWg5boFP/Q3qfAnBvXc2g==",
-      "path": "octokit/6.0.0",
-      "hashPath": "octokit.6.0.0.nupkg.sha512"
+      "sha512": "sha512-ZGXknnmO+PaKkw9BU/ysSjuDnvIFpzQjIdUQy62k7nllmqh3sxkkU8XHgfThav3UuPKW7sEMsVJqRWYfYU3dUw==",
+      "path": "octokit/6.1.0",
+      "hashPath": "octokit.6.1.0.nupkg.sha512"
     }
   }
 }
