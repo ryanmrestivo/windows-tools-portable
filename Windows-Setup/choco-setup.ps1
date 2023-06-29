@@ -52,11 +52,31 @@ Install-ChocoPackage -packageName "winget"
 
 # Install Oh-My-Posh using winget and setup the configuration
 try {
+    # Install Oh My Posh
+    Write-Host "Installing Oh My Posh..."
     winget install JanDeDobbeleer.OhMyPosh -s winget
-    oh-my-posh init pwsh --config 'C:\Users\admin\AppData\Local\Programs\oh-my-posh\themes\montys.omp.json' | Invoke-Expression
-    New-Item -Path $PROFILE -Type File -Force
+
+    # Oh My Posh initialization command
+    $initCommand = 'oh-my-posh init pwsh --config ''C:\Users\admin\AppData\Local\Programs\oh-my-posh\themes\montys.omp.json'' | Invoke-Expression'
+
+    # Ensure the profile file exists
+    Write-Host "Checking for PowerShell profile file..."
+    if (-not (Test-Path $PROFILE)) {
+        Write-Host "Creating PowerShell profile file..."
+        New-Item -Path $PROFILE -Type File -Force
+    }
+
+    # Add the initialization command to the PowerShell profile
+    Write-Host "Adding Oh My Posh initialization command to PowerShell profile..."
+    Add-Content $PROFILE $initCommand
+
+    # Execute the initialization command for the current session
+    Write-Host "Initializing Oh My Posh for the current session..."
+    Invoke-Expression $initCommand
+
+    Write-Host "Oh My Posh successfully installed and configured."
 } catch {
-    Write-Host "Error occurred while installing Oh-My-Posh."
+    Write-Host "Error occurred during the installation or configuration of Oh My Posh: $_"
 }
 
 # List of Chocolatey packages to install
@@ -105,6 +125,20 @@ $chocoPackages = @(
     'visualstudio-installer',
     'visualstudio2022community'
 )
+
+# List of apps currently not in use
+#    'cmake',
+#    'golang',
+#    'mingw',
+#    'ntop.portable',
+#    'plasso',
+#    'r.project',
+#    'sudo',
+#    'tailscale',
+#    'veracrypt',
+#    'wireshark',
+#    'zap',
+
 
 # Install each Chocolatey package from the list
 foreach ($package in $chocoPackages) {
