@@ -120,7 +120,7 @@
         $FileFindingList,
 
         # Choose mode, read system config, audit system config, harden system config
-        [ValidateSet("Audit", "Config", "HailMary")]
+        [ValidateSet("Audit", "Config", "HailMary", "GPO")]
         [String]
         $Mode = "Audit",
 
@@ -170,7 +170,11 @@
 
         # Use PowerShell ScriptBlock syntax to filter the finding list
         [scriptblock]
-        $Filter
+        $Filter,
+
+         # Define name of the GPO name
+        [String]
+        $GPOname
     )
 
     Function Write-ProtocolEntry {
@@ -545,7 +549,7 @@
         )
 
         $Script:StatsError++
-        $Message = "ID " + $FindingID + ", " + $FindingName + ", Method " + $FindingMethod + " requires admin priviliges. Test skipped."
+        $Message = "ID " + $FindingID + ", " + $FindingName + ", Method " + $FindingMethod + " requires admin privileges. Test skipped."
         Write-ProtocolEntry -Text $Message -LogLevel "Error"
     }
 
@@ -566,6 +570,30 @@
         Write-ProtocolEntry -Text $Message -LogLevel "Error"
     }
 
+    function ConvertToInt {
+        [CmdletBinding()]
+        Param (
+
+            [String]
+            $string
+        )
+        $int64 = $null
+        $int32 = $null
+
+        # Attempt to parse the string as an Int32
+        if ([Int32]::TryParse($string, [ref]$int32)) {
+            return $int32
+        }
+
+        # Attempt to parse the string as an Int64
+        if ([Int64]::TryParse($string, [ref]$int64)) {
+            return $int64
+        }
+
+        # If the string cannot be parsed as either an Int32 or an Int64, throw an error
+        throw "Cannot convert string '$string' to an integer."
+    }
+
     #
     # Binary Locations
     #
@@ -577,7 +605,7 @@
     #
     # Start Main
     #
-    $HardeningKittyVersion = "0.9.0-1670934249"
+    $HardeningKittyVersion = "0.9.1-1682943550"
 
     #
     # Log, report and backup file
@@ -795,11 +823,27 @@
 
                     try {
                         $Result = Get-ItemPropertyValue -Path $Finding.RegistryPath -Name $Finding.RegistryItem
+                        # Join the result with ";" character if result is an array
+                        if ($Result -is [system.array] -and ($Finding.RegistryItem -eq "Machine" -Or $Finding.RegistryItem -eq "EccCurves" -Or $Finding.RegistryItem -eq "NullSessionPipes")){
+                            $Result = $Result -join ";"
+                        }
                     } catch {
-                        $Result = $Finding.DefaultValue
+                        If ($Backup) {
+                            # If an error occurs and the backup mode is enabled, we consider that this policy does not exist
+                            # and put "-NODATA-" as result to identify it as non-existing policy
+                            $Result = "-NODATA-"
+                        } Else {
+                            $Result = $Finding.DefaultValue
+                        }
                     }
                 } Else {
-                    $Result = $Finding.DefaultValue
+                    If ($Backup) {
+                        # If this policy does not exist and the backup mode is enabled, we
+                        # put "-NODATA-" as result to identify it as non-existing policy
+                        $Result = "-NODATA-"
+                    } Else {
+                        $Result = $Finding.DefaultValue
+                    }
                 }
             }
 
@@ -862,14 +906,20 @@
                         If ($ResultList | Where-Object { $_ -like "*" + $Finding.RegistryItem + "*" }) {
                             $Result = $Finding.RegistryItem
                         } Else {
-                            $Result = "Not found"
+                            $Result = "-NODATA-"
                         }
 
                     } catch {
                         $Result = $Finding.DefaultValue
                     }
                 } Else {
-                    $Result = $Finding.DefaultValue
+                    If ($Backup) {
+                        # If this policy does not exist and the backup mode is enabled, we
+                        # put "-NODATA-" as result to identify it as non-existing policy
+                        $Result = "-NODATA-"
+                    } Else {
+                        $Result = $Finding.DefaultValue
+                    }
                 }
             }
 
@@ -1124,6 +1174,24 @@
 
                     $ResultOutput = $ExecutionContext.SessionState.LanguageMode
                     $Result = $ResultOutput
+
+                } catch {
+                    $Result = $Finding.DefaultValue
+                }
+            }
+
+            #
+            # Microsoft Defender Status
+            # The values are saved from a PowerShell function into an object.
+            # The desired arguments can be accessed directly.
+            #
+            ElseIf ($Finding.Method -eq 'MpComputerStatus') {
+
+                try {
+
+                    $ResultOutput = Get-MpComputerStatus
+                    $ResultArgument = $Finding.MethodArgument
+                    $Result = $ResultOutput.$ResultArgument
 
                 } catch {
                     $Result = $Finding.DefaultValue
@@ -1393,15 +1461,19 @@
                 #
                 If ($Finding.Method -eq 'Registry' -and $Finding.RegistryItem -eq "ASRRules") {
 
-                    $ResultAsr = $Result.Split("|")
-                    ForEach ($AsrRow in $ResultAsr) {
-                        $AsrRule = $AsrRow.Split("=")
-                        If ($AsrRule[0] -eq $Finding.MethodArgument) {
-                            $Result = $AsrRule[1]
-                            Break
-                        } Else {
+                    try {
+                        $ResultAsr = $Result.Split("|")
+                        ForEach ($AsrRow in $ResultAsr) {
+                            $AsrRule = $AsrRow.Split("=")
+                            If ($AsrRule[0] -eq $Finding.MethodArgument) {
+                                $Result = $AsrRule[1]
+                                Break
+                            } Else {
                             $Result = $Finding.DefaultValue
+                            }
                         }
+                    } catch {
+                        $Result = $Finding.DefaultValue
                     }
                 }
 
@@ -1412,7 +1484,7 @@
                     "<=" { try { If ([int]$Result -le [int]$Finding.RecommendedValue) { $ResultPassed = $true } } catch { $ResultPassed = $false }; Break }
                     "<=!0" { try { If ([int]$Result -le [int]$Finding.RecommendedValue -and [int]$Result -ne 0) { $ResultPassed = $true } } catch { $ResultPassed = $false }; Break }
                     ">=" { try { If ([int]$Result -ge [int]$Finding.RecommendedValue) { $ResultPassed = $true } } catch { $ResultPassed = $false }; Break }
-                    "contains" { If ($Result.Contains($Finding.RecommendedValue)) { $ResultPassed = $true }; Break }
+                    "contains" { If ($Result.ToString().Contains($Finding.RecommendedValue)) { $ResultPassed = $true }; Break }
                     "!="  { If ([string] $Result -ne $Finding.RecommendedValue) { $ResultPassed = $true }; Break }
                     "=|0" { try { If ([string]$Result -eq $Finding.RecommendedValue -or $Result.Length -eq 0) { $ResultPassed = $true } } catch { $ResultPassed = $false }; Break }
                 }
@@ -1505,9 +1577,9 @@
                     }
                 }
 
-                #
-                # Only return received value
-                #
+            #
+            # Only return received value
+            #
             } Elseif ($Mode -eq "Config") {
 
                 $Message = "ID " + $Finding.ID + "; " + $Finding.Name + "; Result=$Result"
@@ -1530,6 +1602,12 @@
                     $ReportAllResults += $ReportResult
                 }
                 If ($Backup) {
+
+                    # Do not save Firewall rules in the backup file, if they are not set
+                    If ( $Finding.Method -eq "FirewallRule" -and !$Result ) {
+                        Continue
+                    }
+
                     $BackupResult = [ordered] @{
                         ID = $Finding.ID
                         Category = $Finding.Category
@@ -1563,8 +1641,12 @@
         # A CSV finding list is imported
         If ($FileFindingList.Length -eq 0) {
 
-            $CurrentLocation = $PSScriptRoot
-            $DefaultList = "$CurrentLocation\lists\finding_list_0x6d69636b_machine.csv"
+            # No fallback to a default list anymore, just show an error message
+            # $CurrentLocation = $PSScriptRoot
+            # $DefaultList = "$CurrentLocation\lists\finding_list_0x6d69636b_machine.csv"
+            $Message = "No finding list has been specified - I'm sorry Dave, I'm afraid I can't do that. Please select a suitable list and specify it with the FileFindingList parameter. Select the finding list wisely and check beforehand whether the settings can affect the stability or the function of your system."
+            Write-ProtocolEntry -Text $Message -LogLevel "Error"
+            Continue
 
             If (Test-Path -Path $DefaultList) {
                 $FileFindingList = $DefaultList
@@ -1597,6 +1679,7 @@
             }
 
             Try {
+                Enable-ComputerRestore -Drive $Env:SystemDrive
                 Checkpoint-Computer -Description 'HardeningKitty' -RestorePointType 'MODIFY_SETTINGS' -ErrorAction Stop -WarningAction Stop
             } catch {
 
@@ -1640,6 +1723,36 @@
                     Continue
                 }
 
+                #
+                # Do not set/configure certain registry
+                # ASR rules configured with Intune (ASRRules, ASROnlyExclusions)
+                # Defender expections configured with Intune (ExcludedExtensions, ExcludedPaths, ExcludedProcesses)
+                #
+                If ($Finding.RegistryItem -eq "ASRRules" -Or $Finding.RegistryItem -eq "ASROnlyExclusions" -Or $Finding.RegistryItem -eq "ExcludedExtensions" -Or $Finding.RegistryItem -eq "ExcludedPaths" -Or $Finding.RegistryItem -eq "ExcludedProcesses") {
+                    $ResultText = "This setting is not configured by HardeningKitty"
+                    $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                    $MessageSeverity = "Passed"
+                    $TestResult = "Passed"
+                    Write-ResultEntry -Text $Message -SeverityLevel $MessageSeverity
+                    If ($Log) {
+                        Add-MessageToFile -Text $Message -File $LogFile
+                    }
+                    If ($Report) {
+                        $ReportResult = [ordered] @{
+                            ID = $Finding.ID
+                            Category = $Finding.Category
+                            Name = $Finding.Name
+                            Severity = $MessageSeverity
+                            Result = $ResultText
+                            Recommended = ""
+                            TestResult = $TestResult
+                            SeverityFinding = ""
+                        }
+                        $ReportAllResults += $ReportResult
+                    }
+                    Continue
+                }
+
                 $RegType = "String"
 
                 #
@@ -1657,20 +1770,20 @@
                 #
                 If ($Finding.RegistryItem -eq "MitigationOptions_FontBocking" -Or $Finding.RegistryItem -eq "Retention" -Or $Finding.RegistryItem -eq "AllocateDASD" -Or $Finding.RegistryItem -eq "ScRemoveOption" -Or $Finding.RegistryItem -eq "AutoAdminLogon") {
                     $RegType = "String"
-                } ElseIf ($Finding.RegistryItem -eq "Machine") {
+                } ElseIf ($Finding.RegistryItem -eq "Machine" -Or $Finding.RegistryItem -eq "EccCurves" -Or $Finding.RegistryItem -eq "NullSessionPipes") {
                     $RegType = "MultiString"
                     $Finding.RecommendedValue = $Finding.RecommendedValue -split ";"
                 } ElseIf ($Finding.RecommendedValue -match "^\d+$") {
                     $RegType = "DWord"
                 }
 
-                if (!(Test-Path $Finding.RegistryPath)) {
+                If (!(Test-Path $Finding.RegistryPath)) {
 
                     $Result = New-Item $Finding.RegistryPath -Force;
 
                     If ($Result) {
                         $ResultText = "Registry key created"
-                        $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $ResultText
+                        $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
                         $MessageSeverity = "Passed"
                         $TestResult = "Passed"
                         Write-ResultEntry -Text $Message -SeverityLevel $MessageSeverity
@@ -1690,10 +1803,9 @@
                             }
                             $ReportAllResults += $ReportResult
                         }
-
                     } Else {
                         $ResultText = "Failed to create registry key"
-                        $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $ResultText
+                        $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
                         $MessageSeverity = "High"
                         $TestResult = "Failed"
                         Write-ResultEntry -Text $Message -SeverityLevel $MessageSeverity
@@ -1723,14 +1835,15 @@
                 # other values are already there in order to set the next higher value and not overwrite existing keys.
                 #
                 If ($Finding.Method -eq 'RegistryList') {
-
+                    $RegistryItemFound = $false
+                    $ListPolicies = $Finding.RegistryPath
                     $ResultList = Get-ItemProperty -Path $Finding.RegistryPath
                     $ResultListCounter = 0
                     If ($ResultList | Where-Object { $_ -like "*" + $Finding.RegistryItem + "*" }) {
                         $ResultList.PSObject.Properties | ForEach-Object {
-                            If ( $_.Value -eq $Finding.RegistryItem ) {
-                                $Finding.RegistryItem = $_.Value.Name
-                                Continue
+                            If ($_.Value -eq $Finding.RegistryItem) {
+                                $Finding.RegistryItem = $_.Name
+                                $RegistryItemFound = $true
                             }
                         }
                     } Else {
@@ -1738,25 +1851,86 @@
                             $ResultListCounter++
                         }
                     }
-                    If ($ResultListCounter -eq 0) {
-                        $Finding.RegistryItem = 1
-                    } Else {
-                        $Finding.RegistryItem = $ResultListCounter - 4
+                    # Check if registryItem (key name) has been found or not
+                    If ($RegistryItemFound -eq $false) {
+                        If ($ResultListCounter -eq 0) {
+                            $Finding.RegistryItem = 1
+                        } Else {
+                            # Check if key is already used and can be used
+                            $KeyAlreadyExists = $true
+                            $Finding.RegistryItem = 1
+                            while ($KeyAlreadyExists){
+                                try {
+                                    # This key exists and should be incremented
+                                    $Result = Get-ItemPropertyValue -Path $Finding.RegistryPath -Name $Finding.RegistryItem
+                                    $Finding.RegistryItem=$Finding.RegistryItem+1
+                                    $KeyAlreadyExists = $true;
+                                } catch {
+                                    # This key does not exist and it can be used
+                                    $KeyAlreadyExists = $false;
+                                }
+                            }
+                        }
                     }
                 }
+                $ResultText = ""
+                # Remove this policy if it should not exists
+                If ($Finding.RecommendedValue -eq '-NODATA-') {
 
-                $Result = Set-ItemProperty -PassThru -Path $Finding.RegistryPath -Name $Finding.RegistryItem -Type $RegType -Value $Finding.RecommendedValue
+                    # Check if the key (item) already exists
+                    $keyExists = $true;
+                    try {
+                        # This key exists
+                        $Result = Get-ItemPropertyValue -Path $Finding.RegistryPath -Name $Finding.RegistryItem
+                    } catch {
+                        # This key does not exist
+                        $keyExists = $false;
+                    }
 
-                if ($Result) {
-                    $ResultText = "Registry value created/modified"
-                    $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
-                    $MessageSeverity = "Passed"
-                    $TestResult = "Passed"
-                } else {
-                    $ResultText = "Failed to create registry value"
-                    $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
-                    $MessageSeverity = "High"
-                    $TestResult = "Failed"
+                    If ($keyExists) {
+                        # key exists
+                        try {
+                            Remove-ItemProperty -Path $Finding.RegistryPath -Name $Finding.RegistryItem
+                            $ResultText = "Registry key removed"
+                            $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                            $MessageSeverity = "Passed"
+                            $TestResult = "Passed"
+                        } catch {
+                            $ResultText = "Failed to remove registry key"
+                            $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                            $MessageSeverity = "High"
+                            $TestResult = "Failed"
+                        }
+                    } Else {
+                        # key does not exists
+
+                        If ($Finding.Method -eq 'RegistryList') {
+                            # Don't show incorrect item
+                            $ResultText = "This value does not already exists in list policy"
+                            $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $ResultText
+                        } Else {
+                            $ResultText = "This key policy does not already exists"
+                            $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                        }
+                        $MessageSeverity = "Low"
+                        $TestResult = "Passed"
+                    }
+
+
+                } Else {
+                    $Result = Set-ItemProperty -PassThru -Path $Finding.RegistryPath -Name $Finding.RegistryItem -Type $RegType -Value $Finding.RecommendedValue
+
+                    if ($Result) {
+                        $ResultText = "Registry value created/modified"
+                        $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                        $MessageSeverity = "Passed"
+                        $TestResult = "Passed"
+                    } else {
+                        $ResultText = "Failed to create registry value"
+                        $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                        $MessageSeverity = "High"
+                        $TestResult = "Failed"
+                    }
                 }
 
                 Write-ResultEntry -Text $Message -SeverityLevel $MessageSeverity
@@ -2854,6 +3028,103 @@
             }
         }
     }
+
+
+    #
+    # Start GPO mode
+    # HardeningKitty configures all settings in a finding list file.
+    # Even though HardeningKitty works very carefully.
+    # The GPO mode create a GPO containing every registry method remediation.
+    #
+    Elseif ($Mode -eq "GPO") {
+         Write-Output "`n"
+         If ($GPOname.Length -eq 0) {
+             # Control if a GPO name is given
+             $Message = "The GPO Name $GPOname was not found."
+             Write-ProtocolEntry -Text $Message -LogLevel "Error"
+             Break
+         }
+         If ($FileFindingList.Length -eq 0) {
+             # Control if a Finding list is given
+             $CurrentLocation = $PSScriptRoot
+             $DefaultList = "$CurrentLocation\lists\finding_list_0x6d69636b_machine.csv"
+
+             If (Test-Path -Path $DefaultList) {
+                 $FileFindingList = $DefaultList
+             } Else {
+                 $Message = "The finding list $DefaultList was not found."
+                 Write-ProtocolEntry -Text $Message -LogLevel "Error"
+                 Break
+             }
+         }
+
+         # Should check if user is domain admin
+
+         Try
+         {
+             New-GPO -Name $GPOname -ErrorAction Stop | Out-Null
+         }
+         Catch [System.ArgumentException] {
+             # Control if the Name of the GPO is ok
+             Write-ProtocolEntry -Text $_.Exception.Message -LogLevel "Error"
+             Break
+         }
+
+         # Iterrate over finding list
+         $FindingList = Import-Csv -Path $FileFindingList -Delimiter ","
+         ForEach ($Finding in $FindingList) {
+             #
+             # Only Registry Method Policies
+             #
+             If ($Finding.Method -eq "Registry") {
+                 $RegType = "String"
+
+                 #
+                 # Basically this is true, but there is an exception for the finding "MitigationOptions_FontBocking",
+                 # the value "10000000000" is written to the registry as a string...
+                 #
+                 # ... and more exceptions are added over time:
+                 #
+                 # MitigationOptions_FontBocking => Mitigation Options: Untrusted Font Blocking
+                 # Machine => Network access: Remotely accessible registry paths
+                 # Retention => Event Log Service: *: Control Event Log behavior when the log file reaches its maximum size
+                 # AllocateDASD => Devices: Allowed to format and eject removable media
+                 # ScRemoveOption => Interactive logon: Smart card removal behavior
+                 # AutoAdminLogon => MSS: (AutoAdminLogon) Enable Automatic Logon (not recommended)
+                 #
+                 If ($Finding.RegistryItem -eq "MitigationOptions_FontBocking" -Or $Finding.RegistryItem -eq "Retention" -Or $Finding.RegistryItem -eq "AllocateDASD" -Or $Finding.RegistryItem -eq "ScRemoveOption" -Or $Finding.RegistryItem -eq "AutoAdminLogon") {
+                     $RegType = "String"
+                 } ElseIf ($Finding.RegistryItem -eq "Machine") {
+                     $RegType = "MultiString"
+                     $Finding.RecommendedValue = $Finding.RecommendedValue -split ";"
+                 } ElseIf ($Finding.RecommendedValue -match "^\d+$") {
+                     $RegType = "DWord"
+                     $Finding.RecommendedValue = ConvertToInt -string $Finding.RecommendedValue
+                 }
+                 $RegPath = $Finding.RegistryPath.Replace(":","")
+                 $RegItem = $Finding.RegistryItem
+
+                 try{
+                     Set-GPRegistryValue -Name $GPOname -Key $RegPath -ValueName $RegItem -Type $RegType -Value $Finding.RecommendedValue | Out-Null
+                     $ResultText = "Registry value added successfully"
+                     $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $Finding.RegistryItem + ", " + $ResultText
+                     $MessageSeverity = "Passed"
+                     $TestResult = "Passed"
+                 } catch {
+                     $ResultText = "Failed to add registry key"
+                     $Message = "ID " + $Finding.ID + ", " + $Finding.RegistryPath + ", " + $ResultText
+                     $MessageSeverity = "High"
+                     $TestResult = "Failed"
+
+                 } finally {
+                     Write-ResultEntry -Text $Message -SeverityLevel $MessageSeverity
+                     If ($Log) {
+                         Add-MessageToFile -Text $Message -File $LogFile
+                     }
+                 }
+             }
+         }
+     }
 
     Write-Output "`n"
     Write-ProtocolEntry -Text "HardeningKitty is done" -LogLevel "Info"

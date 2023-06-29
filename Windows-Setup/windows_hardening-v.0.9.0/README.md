@@ -79,12 +79,34 @@ First create the directory *HardeningKitty* and for every version a sub director
 Copy the module *HardeningKitty.psm1*, *HardeningKitty.psd1*, and the *lists* directory to this new directory.
 
 ```powershell
-PS C:\tmp> $Version = "0.9.0"
+PS C:\tmp> $Version = "v.0.9.0"
 PS C:\tmp> New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version -ItemType Directory
 PS C:\tmp> Copy-Item -Path .\HardeningKitty.psd1,.\HardeningKitty.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\ -Recurse
 ```
 
 For more information see Microsoft's article [Installing a PowerShell Module](https://docs.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module).
+
+### How to Automatically Download and Install the Latest Release
+
+You can use the script below to download and install the latest release of *HardeningKitty*.
+
+```powershell
+Function InstallHardeningKitty() {
+    $Version = ((Invoke-WebRequest "https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).Name
+    $HardeningKittyLatestVersionDownloadLink = ((Invoke-WebRequest "https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).zipball_url
+    $ProgressPreference = 'SilentlyContinue'
+    Invoke-WebRequest $HardeningKittyLatestVersionDownloadLink -Out HardeningKitty$Version.zip
+    Expand-Archive -Path ".\HardeningKitty$Version.zip" -Destination ".\HardeningKitty$Version" -Force
+    $Folder = Get-ChildItem .\HardeningKitty$Version | Select-Object Name -ExpandProperty Name
+    Move-Item ".\HardeningKitty$Version\$Folder\*" ".\HardeningKitty$Version\"
+    Remove-Item ".\HardeningKitty$Version\$Folder\"
+    New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version -ItemType Directory
+    Set-Location .\HardeningKitty$Version
+    Copy-Item -Path .\HardeningKitty.psd1,.\HardeningKitty.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\ -Recurse
+    Import-Module "$Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\HardeningKitty.psm1"
+}
+InstallHardeningKitty
+```
 
 ### Examples
 
@@ -118,7 +140,11 @@ Invoke-HardeningKitty -Filter { $_.Severity -eq "Medium" }
 
 #### Backup
 
-Backups are important. Really important. Therefore, HardeningKitty also has a function to retrieve the current configuration and save it in a form that can be easily restored. The _Backup_ switch specifies that the file is written in form of a finding list and can thus be used for the _HailMary_ mode. The name and path of the backup can be specified with the parameter _BackupFile_.
+Backups are important. Really important. Therefore, HardeningKitty also has a function to retrieve the current configuration and save it in a form that can be partially restored.
+
+**Disclaimer:** HardeningKitty tries to restore the original configuration. This works quite well with registry keys and Hardening Kitty really tries its best. But the backup function is not a snapshot and does not replace a real system backup. It is not possible to restore the system 1:1 with HardeningKitty alone after HailMary. If this is a requirement, create an image or system backup and restore it.
+
+The _Backup_ switch specifies that the file is written in form of a finding list and can thus be used for the _HailMary_ mode. The name and path of the backup can be specified with the parameter _BackupFile_.
 
 ```powershell
 Invoke-HardeningKitty -Mode Config -Backup
@@ -126,12 +152,38 @@ Invoke-HardeningKitty -Mode Config -Backup
 
 Please test this function to see if it really works properly on the target system before making any serious changes. A Schrödinger's backup is dangerous.
 
+##### Non-Default Finding List
+
+Note that if _-FileFindingList_ is not specified, the backup is referred to the default finding list. Before deploying a _specific_ list in _HailMary_ mode, always create a backup _referred to that specific list_.
+
+```powershell
+Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\myBackup.csv" -FileFindingList ".\list\{list}.csv"
+```
+
+##### Restoring a Backup
+
+The _Backup_ switch creates a file in form of a finding list, to restore the backup load it in _HailMary_ mode like any find list:
+
+```powershell
+Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList ".\myBackup.csv"
+```
+
 #### HailMary
 
 The _HailMary_ method is very powerful. It can be used to deploy a finding list on a system. All findings are set on this system as recommended in the list. With power comes responsibility. Please use this mode only if you know what you are doing. Be sure to have a backup of the system.
 
 ```powershell
 Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList .\lists\finding_list_0x6d69636b_machine.csv
+```
+
+Before HailMary is run, a finding list must be picked. It is important to check whether the settings have an influence on the stability and functionality of the system. Before running HailMary, a backup should be made.
+
+#### Create a Group Policy (experimental)
+
+Thanks to [@gderybel](https://github.com/gderybel), HardeningKitty can convert a finding list into a group policy. At the moment only registry settings can be converted and not everything has been tested yet. A new policy is created, as long as it is not assigned to an object, no change is made to the system. Use it with care.
+
+```powershell
+Invoke-HardeningKitty -Mode GPO -FileFindingList .\lists\finding_list_0x6d69636b_machine.csv -GPOName HardeningKitty-Machine-01
 ```
 
 ### HardeningKitty Score
@@ -153,7 +205,7 @@ The formula for the HardeningKitty Score is _(Points achieved / Maximum points) 
 
 ### HardeningKitty Interface
 
-[ataumo](https://github.com/ataumo) build a web based interface for HardeningKitty. The tool can be used to create your own lists and provides additional information on the hardening settings. The [source code](https://github.com/ataumo/policies_hardening_interface) is under AGPL license and there is a [demo site](https://phi.cryptonit.fr/policies_hardening_interface/).
+[@ataumo](https://github.com/ataumo) build a web based interface for HardeningKitty. The tool can be used to create your own lists and provides additional information on the hardening settings. The [source code](https://github.com/ataumo/policies_hardening_interface) is under AGPL license and there is a [demo site](https://phi.cryptonit.fr/policies_hardening_interface/).
 
 ### Last Update
 
@@ -161,8 +213,8 @@ HardeningKitty can be used to audit systems against the following baselines / be
 
 | Name | System Version    | Version  |
 | :--- | :---------------- | :------  |
-| 0x6d69636b (Machine) | 20H2, 21H1 | |
-| 0x6d69636b (User) | 20H2, 21H1 | |
+| 0x6d69636b Windows 10 (Machine) | 22H2 | |
+| 0x6d69636b Windows 10 (User) | 22H2 | |
 | BSI SiSyPHuS Windows 10 hoher Schutzbedarf Domänenmitglied (Machine) | 1809 | 1.0 |
 | BSI SiSyPHuS Windows 10 hoher Schutzbedarf Domänenmitglied (User) | 1809| 1.0
 | BSI SiSyPHuS Windows 10 normaler Schutzbedarf Domänenmitglied (Machine) | 1809| 1.0 |
@@ -183,20 +235,32 @@ HardeningKitty can be used to audit systems against the following baselines / be
 | CIS Microsoft Windows 10 Enterprise (User) | 21H1 | 1.11.0 |
 | CIS Microsoft Windows 10 Enterprise (Machine) | 21H2 | 1.12.0 |
 | CIS Microsoft Windows 10 Enterprise (User) | 21H2 | 1.12.0 |
+| CIS Microsoft Windows 10 Enterprise (Machine) | 22H2 | 2.0.0 |
+| CIS Microsoft Windows 10 Enterprise (User) | 22H2 | 2.0.0 |
 | CIS Microsoft Windows 11 Enterprise (Machine) | 21H2 | 1.0.0 |
 | CIS Microsoft Windows 11 Enterprise (User) | 21H2 | 1.0.0 |
+| CIS Microsoft Windows 11 Enterprise (Machine) | 22H2 | 2.0.0 |
+| CIS Microsoft Windows 11 Enterprise (User) | 22H2 | 2.0.0 |
 | CIS Microsoft Windows Server 2012 R2 (Machine) | R2 | 2.4.0 |
 | CIS Microsoft Windows Server 2012 R2 (User) | R2 | 2.4.0 |
+| CIS Microsoft Windows Server 2012 R2 (Machine) | R2 | 2.6.0 |
+| CIS Microsoft Windows Server 2012 R2 (User) | R2 | 2.6.0 |
 | CIS Microsoft Windows Server 2016 (Machine) | 1607 | 1.2.0 |
 | CIS Microsoft Windows Server 2016 (User) | 1607 | 1.2.0 |
 | CIS Microsoft Windows Server 2016 (Machine) | 1607 | 1.3.0 |
 | CIS Microsoft Windows Server 2016 (User) | 1607 | 1.3.0 |
+| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 2.0.0 |
+| CIS Microsoft Windows Server 2016 (User) | 1607 | 2.0.0 |
 | CIS Microsoft Windows Server 2019 (Machine) | 1809 | 1.1.0 |
 | CIS Microsoft Windows Server 2019 (User) | 1809 | 1.1.0 |
 | CIS Microsoft Windows Server 2019 (Machine) | 1809 | 1.2.1 |
 | CIS Microsoft Windows Server 2019 (User) | 1809 | 1.2.1 |
+| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 2.0.0 |
+| CIS Microsoft Windows Server 2019 (User) | 1809 | 2.0.0 |
 | CIS Microsoft Windows Server 2022 (Machine) | 21H2 | 1.0.0 |
 | CIS Microsoft Windows Server 2022 (User) | 21H2 | 1.0.0 |
+| CIS Microsoft Windows Server 2022 (Machine) | 22H2 | 2.0.0 |
+| CIS Microsoft Windows Server 2022 (User) | 22H2 | 2.0.0 |
 | DoD Microsoft Windows 10 STIG (Machine) | 20H2 | v2r1 |
 | DoD Microsoft Windows 10 STIG (User) | 20H2 | v2r1 |
 | DoD Windows Server 2019 Domain Controller STIG (Machine) | 20H2 | v2r1 |
@@ -213,7 +277,9 @@ HardeningKitty can be used to audit systems against the following baselines / be
 | Microsoft Security baseline for Microsoft Edge | 96 | Final |
 | Microsoft Security baseline for Microsoft Edge | 97 | Final |
 | Microsoft Security baseline for Microsoft Edge | 98, 99, 100, 101, 102, 103, 104, 105, 106 | Final |
-| Microsoft Security baseline for Microsoft Edge | 107, 108 | Final |
+| Microsoft Security baseline for Microsoft Edge | 107, 108, 109, 110, 111 | Final |
+| Microsoft Security baseline for Microsoft Edge | 112, 113 | Final |
+| Microsoft Security baseline for Microsoft Edge | 114 | Final |
 | Microsoft Security baseline for Windows 10 | 2004 | Final |
 | Microsoft Security baseline for Windows 10 | 20H2, 21H1 | Final |
 | Microsoft Security baseline for Windows 10 | 21H2 | Final |
@@ -286,6 +352,12 @@ HardeningKitty can be used to audit systems against the following baselines / be
 * [Security baseline for Microsoft Edge v106](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-106/ba-p/3643958)
 * [Security baseline for Microsoft Edge v107](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v107/ba-p/3678903)
 * [Security baseline for Microsoft Edge v108](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-108/ba-p/3691250)
+* [Security baseline for Microsoft Edge v109](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-109/ba-p/3713981)
+* [Security baseline for Microsoft Edge v110](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-110/ba-p/3740900)
+* [Security baseline for Microsoft Edge v111](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-111/ba-p/3767483)
+* [Security baseline for Microsoft Edge v112](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-112/ba-p/3789975)
+* [Security baseline for Microsoft Edge v113](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-113/ba-p/3814398)
+* [Security baseline for Microsoft Edge v114](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-114/ba-p/3839728)
 * [Microsoft Edge - Policies](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies)
 * [A hint for Office 365 Telemetry](https://twitter.com/milenkowski/status/1326865844215934979)
 * [BSI: Microsoft Office Telemetry Analysis report](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Studien/Office_Telemetrie/Office_Telemetrie.pdf?__blob=publicationFile&v=5)
@@ -300,3 +372,5 @@ HardeningKitty can be used to audit systems against the following baselines / be
 * [Windows Defender Antivirus can now run in a sandbox](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/)
 * [KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates](https://support.microsoft.com/en-us/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7)
 * [admx.help - Group Policy Administrative Templates Catalog](https://admx.help/)
+* [How to Defend Users from Interception Attacks via SMB Client Defense](https://techcommunity.microsoft.com/t5/itops-talk-blog/how-to-defend-users-from-interception-attacks-via-smb-client/ba-p/1494995)
+* [Migrating from Windows PowerShell 5.1 to PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7)
