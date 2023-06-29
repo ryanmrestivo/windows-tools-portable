@@ -38,3 +38,17 @@ Enable automatic logging of all run PowerShell commands and output on a computer
 C:\powershell
 
 After updating GPO settings on the computer, a separate text log file will be created for each running powershell.exe process and all PS commands and their outputs will be logged.
+
+# PowerShell automated script WIP
+# Set the path to the transcription directory
+# $transcriptionPath = "C:\powershell"
+
+# Create the transcription directory if it doesn't exist
+# if (-not (Test-Path $transcriptionPath)) {
+#    New-Item -ItemType Directory -Path $transcriptionPath
+# }
+
+# Set the PowerShell transcription settings
+# Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription" -Name "EnableTranscripting" -Value 1
+# Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription" -Name "OutputDirectory" -Value $transcriptionPath
+# Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription" -Name "EnableInvocationHeader" -Value 1
