@@ -1,5 +1,32 @@
 Using the Group Policy option Turn on PowerShell Transcription (Computer Configuration)
 
+1. Press `Windows Key + R`, type `gpedit.msc`, and press Enter to open the Local Group Policy Editor.
+
+2. In the Local Group Policy Editor, navigate to:
+   ```
+   Computer Configuration
+   -> Administrative Templates
+   -> Windows Components
+   -> Windows PowerShell
+   ```
+
+3. In the right pane, double-click on `Turn on PowerShell Transcription`.
+
+4. Select the `Enabled` option.
+
+5. In the Options section, you can specify the output directory for the transcription files. Set `OutputDirectory` to the desired directory (e.g., `C:\powershell`).
+
+6. Click `Apply` and then `OK`.
+
+7. Close the Local Group Policy Editor.
+
+8. Open a Command Prompt as an administrator and type `gpupdate /force` to force the Group Policy to update.
+
+9. Now, when PowerShell commands are executed, transcripts will be saved in the directory you specified.
+
+This Group Policy setting is very useful for auditing and can be especially helpful if you are executing automated scripts and want a record of their actions.
+
+Note: The Group Policy Editor is not available in some editions of Windows, such as Windows Home editions. In such cases, you might have to use alternative methods such as editing the registry or using PowerShell scripts for configuration.
 Local Computer Policy
 	Computer Configuration
 		Administrative Templates
