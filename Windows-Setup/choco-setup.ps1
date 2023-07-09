@@ -79,6 +79,9 @@ try {
     Write-Host "Error occurred during the installation or configuration of Oh My Posh: $_"
 }
 
+#Fix Oh-My-Posh key Error
+Install-Module PsReadLine -Force
+
 # List of Chocolatey packages to install
 $chocoPackages = @(
     '7zip.install',
