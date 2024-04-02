@@ -1,0 +1,120 @@
+
+
+
+IdenSwitch v1.01
+Copyright (c) 2004 Nir Sofer
+Web site: http://nirsoft.mirrorz.com
+
+
+
+Introduction
+============
+
+Starting from version 5.0, Outlook Express allows you to create multiple
+identities, where every identity has a separate address book, inbox and
+other folders. However, in order to switch to other identity, you have to
+open Outlook Express with the current identity, select 'Switch Identity'
+from the File menu, and then select the desired identity.
+
+This utility allows you to instantly open Outlook Express with the
+desired identity, without opening Outlook Express at first.
+It provides 2 methods to do that:
+1. You can simply select the desired identity from the main window of
+   IdenSwitch, and then click the 'Switch' button.
+2. You can create special shortcuts on your desktop that will
+   instantly open Outlook Express with the desired identity.
+
+Notice: From some reason, IdenSwitch bypasses the poor security system of
+Outlook Express Identities. So even if your identities are protected by
+password, you won't be asked for a password when you switch to them
+through IdenSwitch utility.
+
+
+
+Versions History
+================
+
+
+* Version 1.01: Small bug fixed.
+* Version 1.00: First release.
+
+
+
+Using IdenSwitch
+================
+
+IdenSwitch is a standalone executable, so it doesn't require any
+installation process or additional DLLs. Just copy the executable
+(idenswitch.exe) to any folder you like, and run it.
+You can also use ZipInstaller utility to install IdenSwitch as any other
+software. If you use ZipInstaller to install IdenSwitch, it'll
+automatically be added to 'Add/Remove Software' list, and shortcuts to
+this software will be added to your start menu and to your desktop.
+
+The main window of IdenSwitch displays the list of all your Outlook
+Express identities. You can select one identity, and then click the
+'Switch To' button in order to open Outlook Express with the selected
+identity.
+Alternatively, you can select one or more identities, and then click the
+'shortcuts' button.
+In the Shortcuts window:
+1. Select the folder for saving the shortcuts. (the default is your
+   desktop folder)
+2. Select the template string that will be used for creating the
+   shortcut name. The '*' character represents the identity name. For
+   example: if the template string is 'Mail For *', and the identity name
+   is 'Mike', the shortcut name will be 'Mail For Mike'.
+3. Click the 'Create Shortcuts' button to create the shortcuts.
+Notice about the 'Set the identity to default' option: If this option is
+checked, the default identity will be changed each time that you activate
+the shortcut. If this option is cleared, the default identity won't be
+changed, but the shortcut won't open the right identity in the first time
+that you open Outlook Express after reboot.
+
+
+
+The Default Identity
+====================
+
+When Outlook Express is opened in the first time after rebooting your
+system, it always opens your default identity. You can set the default
+identity by selecting it in IdenSwitch window and then clicking the
+'Default' button, or in the identities manager of Outlook Express - by
+selecting the desired identity under the 'User this identity...'
+check-box.
+By default, when you switch to another identity in IdenSwitch, it also
+automatically changes the default identity to the selected identity. If
+you don't want that the default identity will be changed each time that
+you switch to another identity, you can avoid it by clearing the 'Set to
+default on identity switch' option. However, if you do so, the 'Switch
+To' operation won't work in the first time after reboot.
+
+License
+=======
+
+This utility is released as freeware for personal and non-commercial use.
+You are allowed to freely distribute this utility via floppy disk,
+CD-ROM, Internet, or in any other way, as long as you don't charge
+anything for this. If you distribute this utility, you must include all
+files in the distribution package, without any modification !
+
+
+
+Disclaimer
+==========
+
+The software is provided "AS IS" without any warranty, either expressed
+or implied, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose. The author will not
+be liable for any special, incidental, consequential or indirect damages
+due to loss of data or any other reason.
+
+
+
+Feedback
+========
+
+If you have any problem, suggestion, comment, or you found a bug in my
+utility, you can send a message to nirsofer@yahoo.com
+
+

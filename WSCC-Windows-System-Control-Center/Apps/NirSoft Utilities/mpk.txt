@@ -1,0 +1,409 @@
+
+
+
+MyPopupKiller v1.26
+Copyright (c) 2003 - 2005 Nir Sofer
+
+
+
+Description
+===========
+
+The MyPopupKiller utility displays the list of all opened windows of your
+Web browser, and closes unwanted popup and advertising windows. In
+addition, it can automatically hide the internal ads of Kazaa Media
+Desktop, Download Accelerator (DAP), and Opera browser.
+
+The MyPopupKiller utility can operate in 3 different modes:
+
+* Manual Mode: In this mode, MyPopupKiller displays the list of opened
+  windows, and allows you to easily select and close the unwanted popup
+  windows. The popup and ad windows are automatically selected, so you
+  can close all of them in a press of a button.
+* Automatic Mode: In this mode, MyPopupKiller automatically closes
+  popup and advertising windows, according to what you select in the
+  configuration screen. You can temporarily enable the popups simply by
+  holding Alt (the default), Ctrl, or Shift key (according to the
+  configuration screen)
+* Aggressive Mode: In this mode, MyPopupKiller automatically closes all
+  new browser windows, even if they are not recognized as popup or ad. In
+  this mode, you cannot open new browser windows, unless you hold the Alt
+  key.
+
+This utility has 2 methods to recognize unwanted ads windows:
+
+1. It can distinguish between normal windows and popup windows. most
+   popup windows contains advertising or other unwanted content. However,
+   if choose to automatically close all popup windows, some "good" popup
+   windows may also be closed. In such case, you can hold the Alt key in
+   order to temporarily enable the popups. You can also avoid closing
+   good popups by adding them to the "Allowed Windows" list. You can add
+   a window by its Web address, or by the window title.
+2. It can recognize an advertising window if its title or Web address
+   is found in the banned windows list. If you get an advertising window
+   that MyPopupKiller doesn't recognize, you can add it to the ban list,
+   and avoid that ad in the future.
+
+MyPopupKiller supports the following Web browsers:
+
+* Internet Explorer: version 5.x and 6.x
+* Netscape: version 6.x and 7.x.
+* Mozilla
+* MSN Explorer (version 7.x)
+* Opera (partly support): version 7.x (although it not really needed
+  because Opera browser has build-in support against popups)
+
+
+
+
+System Requirements
+===================
+
+
+* Windows operating system: Windows 95/98/ME, Windows NT, Windows 2000
+  or Windows XP.
+
+
+Versions History
+================
+
+
+
+
+
+1.26
+
+* Fixed problem with Firefox v1.5
+
+
+03/03/2004
+1.25
+
+* Automatically hide the internal ads of DAP: Added Support for DAP 7.x
+
+
+07/10/2003
+1.24
+
+* Automatically hide the internal ads of Opera: Now it also works on
+  version 7.20
+
+
+14/09/2003
+1.23
+
+* New option in the config screen: the dialog popup windows are now
+  closed only if the appropriate option is selected.
+
+
+20/08/2003
+1.22
+
+* Added support for dialog popup windows
+* The enable/disable flash menu added to the tray menu.
+
+
+10/06/2003
+1.21
+
+* You can change the position of a column by dragging the column header
+  into a new location.
+* The settings of the main window (size, position, columns width) are
+  automatically saved, and loaded in the next time that you run
+  MyPopupKiller.
+
+
+23/05/2003
+1.20
+
+* Added support for MSN Explorer.
+* Added an option to disable the messenger service.
+* Added an option to disable and enable the Macromedia Flash component.
+
+
+03/05/2003
+1.11
+
+* New option in configuration screen: Automatically run this utility at
+  startup.
+* Fixed bug from previous version: In some circumstances, the
+  configuration was not saved correctly after reboot.
+
+
+21/04/2003
+1.10
+
+* Added icon in the system tray
+* Web address column in the main window (Not for Opera)
+* Add a window to the ban list by its Web address. (Not for Opera)
+* Save the information about the opened windows to file, or copy it to
+  the clipboard.
+* Option to automatically hide the internal ads of the following
+  applications: Kazaa Media Desktop, Download Accelerator (DAP), and
+  Opera browser
+* Allowed Windows List (Only for IE)
+
+
+12/04/2003
+1.00
+First Release.
+
+
+
+License
+=======
+
+This utility is released as freeware. You can freely use and distribute
+it. If you distribute this utility, you must include all files in the
+distribution package including the readme.txt, without any modification !
+
+
+
+Disclaimer
+==========
+
+The software is provided "AS IS" without any warranty, either expressed
+or implied, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose. The author will not
+be liable for any special, incidental, consequential or indirect damages
+due to loss of data or any other reason.
+
+
+
+Installing MyPopupKiller utility
+================================
+
+This utility is a standalone executable. It doesn't require any
+installation process or additional DLLs. In order to start using it, just
+extract all files to a new folder, and run the executable (mpk.exe). If
+you want to automatically add shortcuts for MyPopupKiller in the Start
+Menu, you can install MyPopupKiller with ZipInstaller.
+
+
+
+Removing the MyPopupKiller utility
+==================================
+
+
+1. Before removing MyPopupKiller from your computer, you have to
+   verify that it's not running in the background. If you see the icon of
+   MyPopupKiller on the right side of the system tray, click on it with
+   right mouse button, and then in the appeared menu, select "Exit". If
+   you don't see the icon of MyPopupKiller in the system tray, it means
+   that it's currently not running in the background, so you can continue
+   to the next step.
+2. If you have installed MyPopupKiller with ZipInstaller , you can
+   easily remove it by using the "Add/Remove Programs" module in Control
+   Panel. Otherwise, you should manually remove it by deleting the files
+   of MyPopupKiller: mpk.exe, mpk.chm, readme.txt, ban.txt and allow.txt.
+
+
+
+Using the MyPopupKiller utility
+===============================
+
+The main screen of MyPopupKiller displays all opened windows of your
+browser. You can select one or more windows (by using the check-box near
+each line) and close them, or add them to the banned windows list or to
+the allowed windows list. The "Type" column indicates whether
+MyPopupKiller recognizes the window as popup, as advertisement window
+defined in the banned windows list, or as "good" window defined in the
+allowed windows list. If the hot key is enabled in the configuration
+screen, you can minimize and restore the main window simply by pressing
+ALT+CTRL+K or another key combination you select.
+
+
+
+Working in manual mode
+======================
+
+In manual mode, MyPopupKiller doesn't close automatically any browser
+window, but it allows you to easily kill multiple popups when you need.
+When multiple popup windows appears on your screen, press the hot-key
+combination (the default is Alt+Ctrl+K, you can change it to another key
+combination in the configuration screen), and the main window will
+appear. You can also activate the main window by double-clicking on the
+tray icon. The popups and ad windows will be automatically selected. You
+can select and deselect windows as you wish, and then press the 'Delete'
+key in order immediately close all selected windows. If you want to add
+the windows you delete to the banned windows list, press Ctrl+Delete (for
+adding the windows by their title) or Shift+Delete (For adding the
+windows by their Web address). After you finish to delete the windows you
+want, you can close the main window and continue surfing the Web.
+
+
+
+Working in automatic mode
+=========================
+
+In automatic mode, MyPopupKiller automatically closes popup and ad
+windows, according to what you select in the configuration screen. You
+can temporarily disable the automatic windows closing simply by holding
+the Alt key (You can change the key to Alt or Shift in the configuration
+screen)
+
+MyPopupKiller uses the following options to determine which windows will
+be closed:
+
+* Automatically close all popup windows.
+  If you select this option, all popup windows will be automatically
+  closed, even if they are not recognized as advertisement. You can
+  temporarily allow popup windows by holding the Ctrl/Alt/Shift key. You
+  can also allow specific popups by adding them to the Allowed Windows
+  List. In order to easily add the Web address of a window to the Allowed
+  Windows List, select the window in the main screen and press Ctrl+L.
+* Automatically close all advertising windows, according to the banned
+  windows list.
+  If you select this option, MyPopupKiller will automatically close only
+  the popup windows that their title or address exists in the banned
+  windows list. If you get an ad window that MyPopupKiller doesn't
+  recognize, you can add it to the banned windows list, so in the next
+  time MyPopupKiller will recognize it and close it immediately.
+* Close advertising windows even if they appear in regular window.
+  (This options is available only if you select the previous one) If you
+  select this option, MyPopupKiller will close all windows that their
+  title exists in the banned windows list, even if they are appear in
+  regular window. (not popup window)
+
+
+
+Working in aggressive mode
+==========================
+
+in aggressive mode, all new browser windows are immediately closed by
+MyPopupKiller, even if they are not recognized as ad or popup. You cannot
+open new browser windows in this mode, unless you hold the Alt key.
+
+
+
+The banned windows list
+=======================
+
+The banned windows list contains window titles and Web addresses of known
+advertising windows. MyPopupKiller uses this list to recognize
+advertising windows. When you see an advertisement that MyPopupKiller
+cannot recognize, you can easily add by selecting the problematic window
+and pressing Ctrl+Del (For adding the window title) or Shift+Del (For
+adding the Web address). You can also edit the list in the "Banned
+Windows List" dialog-box.
+
+For each item, you should select the appropriate "match mode":
+
+* Window Title: Whole text - MyPopupKiller will recognize a window as
+  ad only if its title matches completely to the title in the ban list.
+* Window Title: Start of text - MyPopupKiller will recognize a window
+  as ad if its title string starts with the text you write in the ban
+  list. For example: If you add to the ban list the string "Special
+  Offer!", all the windows that their title starts with "Special Offer!"
+  will be recognized as advertising windows.
+* Window Title: Any part of text - MyPopupKiller will recognize a
+  window as ad if its title string contains the text you write in the ban
+  list.
+* Web Address: Start of address - MyPopupKiller will recognize a window
+  as ad if its Web address (http://) corresponds to the address you write
+  in the ban list.
+
+The banned windows list is saved in a simple text file, so you can edit
+it in simple text editor, like Notepad. This file - ban.txt is located in
+the same folder of the executable.
+
+Be aware that the first character of each line represents the match mode:
+$ for "Whole Text"
+@ for "Start of text"
+! for "Any part of text"
+# for "Web Address"
+
+
+
+The allowed windows list
+========================
+
+The windows that you add to this list won't be closed by MyPopupKiller,
+even if they are recognized as popup or advertising windows. As in the
+banned windows list, you can add a window by its window title or by its
+Web address (http://...).
+
+The allowed windows list is saved in a simple text file, so you can edit
+it in simple text editor, like Notepad. This file - allow.txt is located
+in the same folder of the executable. As in the banned windows list, the
+first character of each line represents the match mode.
+
+Notice: This feature currently works properly only for Internet Explorer.
+
+
+
+Hiding the ads of other applications
+====================================
+
+This utility allows you to automatically hide the internal ads of the
+following adware applications:
+* Kazaa Media Desktop (versions 1.x, 2.x)
+* Download Accelerator (version 5.x and 7.x)
+* Opera browser (version 7.x)
+You can activate this feature from the configuration screen (there is one
+check-box for each application). Be aware that this feature is not
+affected by the closing mode, and the ads will be hidden even if you are
+in manual mode.
+
+
+
+Messenger Service popups
+========================
+
+The "Messenger Service" is a standard service in Windows NT, Windows 2000
+and Windows XP that allows to administrators to send messages to users on
+a network. Unfortunately, some users and companies exploit this system
+service for sending annoying ads popups to innocent users.
+If sometimes you receive popup windows with "Messenger Service" title,
+you can stop these unwanted popups by disabling the Messenger Service in
+your machine. It's possible to disable the "Messenger Service" directly
+from the "Services" module of your operating system. However, if you
+don't know how to disable a service in your operating system, you can
+simply disable it from this utility: From the 'Options' menu, select
+"Messenger Service Popups", and click the "Disable Messenger Service"
+button.
+
+
+
+Disbale and enable the Macromedia Flash Player
+==============================================
+
+Many Web sites today use the Macromedia Flash component for creating
+animated ads. These ads consumes additional bandwidth and sometimes even
+slow down your computer. Unfortunately, Internet Explorer and other Web
+browsers don't provide a simple way to disable and enable the Flash
+component.
+This utility allows you to disable and enable the Flash component in the
+following browsers:
+* Internet Explorer (Version 5.x, and 6.x)
+* Netscape browser (Version 6.x and 7.x)
+* Mozilla browser
+* Opera browser (Version 7.x)
+You can enable/disable the Flash component for a single browser, or
+enable/disable it in all browsers at once.
+However, there are some limitations that you should be aware of:
+
+* In Internet Explorer: When you enable/disable the Flash component,
+  the current opened windows are not affected by the change. you have to
+  open a new browser window in order to see the effect of
+  enabling/disabling the Flash component. Also, be aware that when you
+  disable/enable Flash in Internet Explorer, other "IE based" browsers,
+  like MyIE and MSN Explorer are also affected by this change.
+* In Netscape/Mozilla browsers: under Windows 98 and Windows ME, you
+  have to close all browser windows before enabling/disabling the Flash
+  component. Also, if more than one version of the browser is installed
+  on your computer, only the latest installed version of the browser will
+  be affected.
+* In Opera browser: You have to completely close the Opera browser and
+  then open it again in order to see the effect of enabling/disabling the
+  Flash component.
+
+
+
+Feedback
+========
+
+If you have any problem, suggestion, comment, or you found a bug in my
+utility, you can send a message to nirsofer@yahoo.com
+
+

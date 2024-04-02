@@ -1,0 +1,291 @@
+
+
+
+MZCookiesView v1.60
+Copyright (c) 2004 - 2022 Nir Sofer
+Web site: http://www.nirsoft.net
+
+
+
+Description
+===========
+
+MZCookiesView is an alternative to the standard 'Cookie Manager' provided
+by Firefox and Mozilla browsers. It displays the details of all cookies
+stored inside the cookies file (cookies.txt or cookies.sqlite) in one
+table, and allows you to save the cookies list into text, HTML or XML
+file, delete unwanted cookies, and backup/restore the cookies file.
+
+
+
+Notice:
+=======
+
+The name of this tool was changed from MozillaCookiesView to
+MZCookiesView due to the obsession of Mozilla Foundation people with
+their registered trademark. I have received a threatening letter from the
+attorney of Mozilla Foundation saying that using the 'Mozilla' word
+inside the name of my software infringes their trademark rights and
+demanding that I'll change the name of this tool.
+In order to avoid from any trouble in the future, I decided to change the
+name of this tool to MZCookiesView.
+
+
+
+System Requirement
+==================
+
+MZCookiesView works properly in all versions of Windows, including
+Windows 10. If you have 64-bit version of Firefox, you should use the
+64-bit version of MZCookiesView, because MZCookiesView uses the SQLite
+library of Firefox installation to read the cookies SQLite database
+(cookies.sqlite).
+
+
+
+Versions History
+================
+
+
+* Version 1.60:
+  o Updated to keep the scroll position after refresh and after
+    deleting cookies. Updated to keep the scroll position after refresh
+    and after deleting cookies. </ul
+  o Version 1.58:
+    - Fixed bug: -profilesfolder command-line option failed to load
+      the correct profile folder. Fixed bug: -profilesfolder command-line
+      option failed to load the correct profile folder. </ul
+    - Version 1.57:
+      = Added 'Add Remark Line To cookies.txt' option. When it's
+        turned on, '# Netscape HTTP Cookie File' header line is added to
+        cookies.txt file format.
+
+    - Version 1.56:
+      = Added 'Auto Size Columns+Headers'.
+      = Added 64-bit version for using with Firefox 64-bit.
+
+    - Version 1.55:
+      = Added option to save in cookies.txt format (In File ->
+        Save Selected Items option)
+      = Added /scookiestxt command-line option to save in
+        cookies.txt format.
+
+    - Version 1.51:
+      = Fixed the DLL loading problem on Windows XP/2003.
+
+    - Version 1.50:
+      = Added secondary sorting support: You can now get a
+        secondary sorting, by holding down the shift key while clicking
+        the column header. Be aware that you only have to hold down the
+        shift key when clicking the second/third/fourth column. To sort
+        the first column you should not hold down the Shift key.
+      = Fixed to display date/time values according to daylight
+        saving time settings.
+      = Fixed a crash problem occurred in some systems.
+
+    - Version 1.45:
+      = Added option to copy the selected cookies in Netscape
+        cookies.txt format (Ctrl+N)
+
+    - Version 1.41:
+      = Fixed to work with Firefox 22.
+
+    - Version 1.40:
+      = Added new columns: 'Last Accessed' and 'Created Time'.
+
+    - Version 1.36:
+      = Non-English or special characters in the cookie
+        name/value are now displayed properly instead of %xx format.
+
+    - Version 1.35:
+      = Fixed the memory leak problem that occurred on every
+        refresh.
+      = Fixed to work with Firefox 4.0 Beta.
+
+    - Version 1.30:
+      = Firefox 3.x: MozillaCookiesView now allows you to view
+        the cookies when Firefox is opened.
+
+    - Version 1.27:
+      = Added sorting options from command-line
+
+    - Version 1.26:
+      = Improved the Firefox 3 detection.
+
+    - Version 1.25:
+      = Added AutoComplete feature in cookies file selection
+        dialog-box
+      = Dialog-boxes are now resizable.
+
+    - Version 1.22:
+      = Fixed bug: MozillaCookiesView failed to work with Firefox
+        3.0.1
+      = Fixed bug: MozillaCookiesView crashed in some systems.
+
+    - Version 1.21:
+      = Fixed bug: The dates displayed in system locale format,
+        instead of user locale.
+
+    - Version 1.20:
+      = Added support for Firefox 3 (cookies.sqlite)
+
+    - Version 1.12:
+      = The configuration is now saved to a file, instead of the
+        Registry.
+
+    - Version 1.11:
+      = Updated to work with the latest version of Mozilla Firefox
+
+    - Version 1.10:
+      = Select by Domain.
+      = Select/Deselect highlighed items.
+      = Ability to translate to other languages.
+      = Automatically locate the cookies file of Mozilla Firefox
+        browser.
+      = Allows you to select profiles folder other then the
+        default one.
+      = Allows you to select the desired cookies file and
+        profiles folder through command-line parameters.
+      = Saves the cookies list to text/HTML/XML file by using
+        command-line options.
+
+    - Version 1.00: First Release.
+
+
+
+    Using MZCookiesView
+    ===================
+
+    MZCookiesView doesn't require any installation process or additional
+    DLLs. In order to start using it, just copy the executable (mzcv.exe)
+    to any folder you like, and run it.
+    If you have an advanced version of Mozilla or Netscape browsers,
+    MZCookiesView automatically locates your cookies file and displays
+    the list of all cookies stored in there. If you have more than one
+    profile in your browser, you can view the cookies of other profiles
+    by using the 'Select User Profile' option. If MZCookiesView fails to
+    automatically find your cookies file, you can still select the
+    cookies file manually, by using the 'Select Cookies File / Folder'
+    option.
+
+    In the main window of MZCookiesView, you can easily select one or
+    more cookies, and then delete them, copy the cookies information to
+    the clipboard, or save them to text, HTML, or XML file.
+
+
+
+    Command-Line Options
+    ====================
+
+
+
+    -cookiesfile <Filename>
+    Opens MZCookiesView with the specified cookies filename.
+
+    -profilesfolder <Folder>
+    Opens MZCookiesView with the specified profiles folder.
+
+    /stext <Filename>
+    Save the cookies list into a regular text file.
+
+    /stab <Filename>
+    Save the cookies list into a tab-delimited text file.
+
+    /stabular <Filename>
+    Save the cookies list into a tabular text file.
+
+    /shtml <Filename>
+    Save the cookies list into HTML file (Horizontal).
+
+    /sverhtml <Filename>
+    Save the cookies list into HTML file (Vertical).
+
+    /sxml <Filename>
+    Save the cookies list to XML file.
+
+    /scookiestxt <Filename>
+    Save the cookies list in cookies.txt format.
+
+    /sort <column>
+    This command-line option can be used with other save options for
+    sorting by the desired column. If you don't specify this option, the
+    list is sorted according to the last sort that you made from the user
+    interface. The <column> parameter can specify the column index (0 for
+    the first column, 1 for the second column, and so on) or the name of
+    the column, like "Value" and "Name". You can specify the '~' prefix
+    character (e.g: "~Name") if you want to sort in descending order. You
+    can put multiple /sort in the command-line if you want to sort by
+    multiple columns.
+
+    Examples:
+    mzcv.exe /shtml "f:\temp\cookies.html" /sort 2 /sort ~1
+    mzcv.exe /shtml "f:\temp\cookies.html" /sort "Domain/Host" /sort
+    "Name"
+
+    /nosort
+    When you specify this command-line option, the list will be saved
+    without any sorting.
+
+    Examples:
+    mzcv.exe -cookiesfile "C:\Documents and
+    Settings\Administrator\Application
+    Data\Mozilla\Profiles\default\1ac13dos.slt\cookies.txt"
+    mzcv.exe -profilesfolder "C:\Documents and Settings\User1\Application
+    Data\Phoenix\Profiles"
+    mzcv.exe /shtml "c:\temp\cookies-list.html" -cookiesfile
+    "c:\netscape\cookies.txt"
+
+
+
+    Translating MZCookiesView To Another Language
+    =============================================
+
+    MZCookiesView allows you to easily translate all menus, dialog-boxes,
+    and other strings to other languages.
+    In order to do that, follow the instructions below:
+    1. Run MZCookiesView with /savelangfile parameter:
+       mzcv.exe /savelangfile
+       A file named mzcv_lng.ini will be created in the folder of
+       MZCookiesView utility.
+    2. Open the created language file in Notepad or in any other
+       text editor.
+    3. Translate all menus, dialog-boxes, and string entries to
+       the desired language.
+    4. After you finish the translation, Run MZCookiesView, and
+       all translated strings will be loaded from the language file. If
+       you want to run MZCookiesView without the translation, simply
+       rename the language file, or move it to another folder.
+
+
+
+    License
+    =======
+
+    This utility is released as freeware for personal and non-commercial
+    use. You are allowed to freely distribute this utility via floppy
+    disk, CD-ROM, Internet, or in any other way, as long as you don't
+    charge anything for this. If you distribute this utility, you must
+    include all files in the distribution package, without any
+    modification !
+
+
+
+    Disclaimer
+    ==========
+
+    The software is provided "AS IS" without any warranty, either
+    expressed or implied, including, but not limited to, the implied
+    warranties of merchantability and fitness for a particular purpose.
+    The author will not be liable for any special, incidental,
+    consequential or indirect damages due to loss of data or any other
+    reason.
+
+
+
+    Feedback
+    ========
+
+    If you have any problem, suggestion, comment, or you found a bug in
+    my utility, you can send a message to nirsofer@yahoo.com
+
+

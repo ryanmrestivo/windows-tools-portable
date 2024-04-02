@@ -1,0 +1,423 @@
+
+
+
+MetarWeather v1.78
+Copyright (c) 2003 - 2024 Nir Sofer
+Web Site: http://www.nirsoft.net
+
+
+
+Description
+===========
+
+The MetarWeather utility decodes METAR weather reports from around the
+world, and displays them in a simple weather report table. You can save
+the weather report into text, HTML or XML files. MetarWeather can decode
+METAR reports from a text file, or download the latest reports directly
+from the Internet.
+
+
+
+What's New
+==========
+
+
+* In version 1.78:
+  o Updated the links under the Links menu.
+
+* In version 1.77:
+  o Updated the Aviation Digital Data Service data source to work
+    with the new URL (The old URL stopped working).
+
+* In version 1.76:
+  o Fixed crash problem with ADDS data source.
+
+* In version 1.75:
+  o The properties window now allows you to view more than 3 lines
+    for 'Sky Condition' and 'Remarks' fields.
+
+* In version 1.74:
+  o Updated the address of 'NOAA: METAR Text Files' data source.
+  o Be aware that the 'NOAA: METAR Data Access Web Site' data source
+    stopped working and I don't know if there is a new server for this
+    service or NOAA decided to remove it completely.
+
+* In version 1.73:
+  o Fixed to display the visibility properly when it begins with 'M'
+    prefix.
+
+* In version 1.72:
+  o Added 'Auto Size Columns+Headers' option.
+
+* In version 1.71:
+  o Fixed the ADDS data source to work with their server changes.
+
+* In version 1.70:
+  o Fixed the crash problem with ADDS download source. Also, be aware
+    that starting from this version, MetarWeather is compiled with a
+    newer compiler, so if you encounter any new problem, please report.
+
+* In version 1.68:
+  o Fixed bug: MetarWeather displayed wrong date/time when the METAR
+    report was taken from the end of previous month.
+
+* In version 1.67:
+  o Fixed the NOAA data source to work with their server changes.
+
+* In version 1.66:
+  o Added drag & drop support: You can now open a METAR file simply
+    by dragging it into the main widnow of MetarWeather
+
+* In version 1.65:
+  o Added support for Google Earth Temperature file (*.kml), which is
+    very similar to .kml file added in previous versions. But instead of
+    displaying the station 4-digit code, the new file displays the
+    temperature on the map of Google Earth.
+
+* In version 1.64:
+  o MetarWeather can now detect a METAR line even if there is
+    non-METAR header in the beginning of the line.
+
+* In version 1.63:
+  o Fixed bug: invalid value inside visibility field of the METAR
+    line caused a crash in MetarWeather.
+
+* In version 1.62:
+  o Fixed bug in previous release: Serbia And Montenegro stations
+    were missing.
+
+* In version 1.61:
+  o Fixed MetarWeather to work again with ADDS download (they made a
+    small change in their servers)
+  o Stations list update (From 3800 stations to 4623 stations)
+
+* In version 1.60:
+  o Added support for saving in KML format of Google Earth. You can
+    now select the desired METAR reports, go to 'Save Selected Items'
+    (Ctrl+S), choose the KML in the file type combo-box, and save the
+    file. After that, you can open this .kml file in Google Earth, and
+    watch the METAR reports on earth map.
+  o The configuration of MetarWeather is now saved to .cfg file
+    instead of the Registry.
+
+* In version 1.56:
+  o Fixed bug: The 'Elevation' column displayed 'N/A' for negative
+    values.
+
+* In version 1.55:
+  o Fixed bug: When the wind speed was 0 (calm), MetarWeather
+    displayed wrong wind chill values.
+
+* In version 1.54:
+  o Fixed bug: The main window lost the focus when the user switched
+    to another application and then returned back to MetarWeather.
+
+* In version 1.53:
+  o Fixed bug: MetarWeather failed to display a METAR line if the
+    station ICAO contained numeric characters.
+
+* In version 1.52:
+  o Added calculated 'Wind Chill' column.
+
+* In version 1.51:
+  o Fixed the crash problems under Vista.
+
+* In version 1.50:
+  o New column: METAR - Displays the original METAR line. (This
+    column is hidden by default)
+  o New option: Refresh the METAR report every xx minutes.
+  o METAR stations update.
+
+* In version 1.44:
+  o Fixed bug with columns order.
+
+* In version 1.43:
+  o New update to the internal stations list of MetarWeather - 360
+    new stations.
+
+* In version 1.42:
+  o Fixed bug: Crash on invalid METARs.
+
+* In version 1.41:
+  o MetarWeather now can handle METARs created by software of home
+    weather stations
+  o Full date/time format: You can now display the time column in
+    full date/time format (including year and month). The month and year
+    values are taken from the current date of your computer.
+
+* In version 1.40:
+  o University of Wyoming data source: Now you get METAR reports from
+    the last 30 days.
+  o Separated units change for Visibility, elevation and clouds
+    height.
+  o Location unit: Degrees/Minutes or Decimal Degrees.
+  o New command line option: -downloadhide - allows you to download
+    METAR reports without displaying the main window.
+  o New command line options: /sinchtml and /sincverhtml - saves to
+    HTML for including in other HTML pages (without html/head/body tags)
+  o Few bugs/issues fixed.
+
+* In version 1.32:
+  o New calculated column: Heat Index.
+
+* In version 1.31:
+  o Improvements in METAR decoding: MetarWeather now also decodes
+    visivility in meter and wind speed in meters per seconds.
+
+
+* In version 1.30:
+  o Save and load the entire MetarWeather configuration (Including
+    the stations list, columns order, and units config) to file.
+  o Choose another font to display the weather reports.
+  o New update to the internal stations list of MetarWeather - 393
+    new stations.
+  o "Save Settings" button in the stations selection dialog-box.
+  o Some user interface changes.
+
+* In version 1.22:
+  o ADDS Data Source - Fixed due to changes in their Web site.
+
+* In version 1.21:
+  o New option: Hide units.
+  o Fixed some problems in HTML report.
+
+* In version 1.20:
+  o New data source to automatically load METARs from the net:
+    Aviation Digital Data Service
+  o View temperatures in both Celcius and Fahrenheit together.
+  o Allows to sort the stations list in the METAR download dialog-box.
+  o New option in units menu: 'Wind Speed First'
+  o Fixed small bugs in METAR decoding.
+  o New option in command-line: -download
+
+* In version 1.10:
+  o Save decoded weather reports to XML file.
+  o Text and HTML files are now saved according to the columns order
+    you choose to display.
+
+
+
+
+About METAR Reports
+===================
+
+METAR ("Aviation Routine Weather Report") is an international standard
+for reporting the weather conditions in thousands of airports about the
+world. The METAR weather reports are usually issued once per hour, but
+when there are significant changes in weather, the METAR reports are
+issued more frequently.
+Each METAR report contains essential information about the current
+weather conditions: Temperature, Dew Point, Barometric Pressure, Wind
+Speed and Direction, Visibility, Clouds Cover, Current Weather (Rain,
+Thunderstorms, Hail, Snow and so on...), and more...
+Here's an example for a single METAR report:
+KMCO 290853Z 10006KT 8SM TSRA FEW029CB BKN110 OVC300 22/21 A3012 RMK AO2 TSB30 
+SLP198 P0005 60017 T02170211 58003
+For most people, this line looks like an unmeaningful characters
+sequence, but actually it contains a lots of information about the
+weather conditions. If you feed the above METAR line into the
+MetarWeather utility, you'll see the details of the weather information
+that this METAR represents. Click Here to watch this METAR weather report
+after decoding it with MetarWeather.
+
+
+
+Getting METAR Reports From The Internet
+=======================================
+
+The following Web sites provides free access to METAR data.
+* METAR Data Access - at NOAA Web site
+* Aviation Digital Data Service
+* Surface Observations - at weather.uwyo.edu
+* Texas A&amp;M Weather Page
+* Aviation Weather Brief
+You can use the above sites to obtain METAR lines and decode them with
+MetarWeather utility. However, you can also view the latest weather
+reports without using the above Web sites, because the MetarWeather
+utility automatically obtains the METAR data from NOAA web site and
+immediately displays the decoded weather information in a table.
+
+
+
+Using MetarWeather
+==================
+
+This utility is a standalone executable. You don't have to install
+anything, just run the executable file (mweather.exe) and start using it.
+
+After your run it, you have 3 options to view the latest METAR reports:
+* Load METARs From The Net: In this option, you can view the latest
+  METAR reports of the stations that you select. The METAR lines are
+  automatically obtained from the Internet and decoded to a readable
+  format.
+  You can find the station you need by selecting the desired country, or
+  by typing the station name in the top text-box. In order to select a
+  station, click the check-box beside the station information.
+
+  Currently, There are 3 different sources to download the latest METAR
+  reports:
+  o NOAA: METAR Data Access Web Site - This is the default download
+    source, and also the most effective. MetarWeather submits all
+    selected stations, in one request, to the METAR Data Access Web Site,
+    and extracts the METAR reports from the returned Web page.
+  o NOAA: METAR Text Files - If you select this data source, a single
+    HTTP request is sent to NOAA server for each METAR station that you
+    select. This download source is quite ineffective, especially if you
+    want to download METAR reports from multiple stations. It's provided
+    only as a backup to the first NOAA download source.
+  o University of Wyoming: Last 24-Hour METAR Reports - As opposed to
+    the previous 2 download sources, This download source retrieves all
+    METAR weather reports from the last 24 hours, not only the latest
+    available METAR report.
+
+  Notice: The stations list in this utility is based on the stations list
+  maintained by Greg Thompson. It contains the most active METAR
+  stations, but not all of them. If you know about an active METAR
+  station that doesn't appear in the list, you can still view its weather
+  report by typing the ICAO code of the station. After you select all the
+  station you need, click the "Get METAR Reports" button, and wait a few
+  seconds to download the METAR reports of the selected stations.
+* Load METARs From File: If you have a text file that contains raw
+  METAR reports, you can select this file, and view the weather reports
+  in readable format.
+  You can also use this option to view the current weather conditions in
+  all over the world:
+  1. Download the latest cycle file from
+     http://tgftp.nws.noaa.gov/data/observations/metar/cycles/ This file
+     contains the latest METARs of all stations around the world.
+  2. Select the downloaded file, and wait a few seconds until all
+     METAR reports are loaded. Be aware that these cycle files contains
+     thousands of reports, and when you load them, they consume a fair
+     amount of memory and system resources.
+
+
+* Type METAR Lines: This option simply allows you to type raw METAR
+  lines into a text box (or paste them from the clipboard), and view the
+  these METAR reports in readable format.
+You can use this option to get a nice report of particular weather event:
+1. Go to one of the Web sites that provides METAR reports, and obtain
+   a sequence of METAR reports of the desired station.
+2. Copy the METAR sequence from the Web site, and paste it to the
+   text-box of MetarWeather.
+   Click here to see a sample report that created in this way.
+
+
+
+Command-Line Options
+====================
+
+Syntax: mweather [/Action] ["Destination File"] -Option ["METAR Source"]
+
+[/Action] can be one of the following options:
+
+
+/stext
+Save the decoded METAR reports into a text file specified in
+["Destination File"] parameter.
+
+/stab
+Save the decoded METAR reports into tab delimited text file specified in
+["Destination File"] parameter.
+
+/shtml
+Save the decoded METAR reports into horizontal HTML file specified in
+["Destination File"] parameter.
+
+/sinchtml
+Similar to /shtml, but without including the html/head/body tags. You can
+use it if you want to include a report created by MetarWeather in other
+HTML pages.
+
+/sverhtml
+Save the decoded METAR reports into vertical HTML file specified in
+["Destination File"] parameter.
+
+/sincverhtml
+Similar to /sverhtml, but without including the html/head/body tags. You
+can use it if you want to include a report created by MetarWeather in
+other HTML pages.
+
+/sxml
+Save the decoded METAR reports into XML file specified in ["Destination
+File"] parameter.
+
+/skml
+Save the decoded METAR reports into KML file specified in ["Destination
+File"] parameter.
+
+/skmltemp
+Save the decoded METAR reports into KML file (With temperature display)
+specified in ["Destination File"] parameter.
+
+-Option can be one of the following values:
+
+
+-metar
+Decodes the METAR line inside ["METAR Source"]
+
+-file
+Decodes the METARs lines inside a text file specified in ["METAR Source"]
+
+-download
+Opens the main window of MetarWeather, downloads the latest METARs from
+the Internet, according to the last stations list that you selected in
+the METAR download dialog-box, saves the decoded METARS to the specified
+file, and then exits from MetarWeather. You can also specify another
+configuration file inside the ["METAR Source"] parameter. If you do so,
+the entire configuration, including the stations list and units
+definition will be loaded from the specified file.
+
+-downloadhide
+The same as -download, but without displaying the main window.
+
+Examples:
+mweather.exe /shtml "c:\temp\metar1.html" -file
+"F:\Weather\METAR\kmco2.txt"
+mweather.exe /sverhtml "c:\temp\metar2.html" -metar "LFPO 100900Z VRB03KT
+CAVOK 27/16 Q1020 NOSIG"
+mweather.exe /shtml "c:\temp\latest.html" -download
+mweather.exe /shtml "c:\temp\latest.html" -download "c:\temp\myconfig.cfg"
+
+If you want to start MetarWeather with the latest METAR reports of the
+selected stations, you can use the /loadmetars parameter:
+mweather.exe /loadmetars
+
+System Requirements
+===================
+
+This utility can work in all 32-bit Windows operating systems: Windows
+9x/ME, Windows NT, Windows 2000, and Windows XP. On very old systems
+(Windows 95 or Windows NT), version 3.0 (or above) of Internet Explorer
+must be installed.
+
+
+
+License
+=======
+
+This utility is released as freeware. You are allowed to freely
+distribute this utility via floppy disk, CD-ROM, Internet, or in any
+other way, as long as you don't charge anything for this. If you
+distribute this utility, you must include all files in the distribution
+package, without any modification !
+
+
+
+Disclaimer
+==========
+
+The software is provided "AS IS" without any warranty, either expressed
+or implied, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose. The author will not
+be liable for any special, incidental, consequential or indirect damages
+due to loss of data or any other reason.
+
+
+
+Feedback
+========
+
+If you have any problem, suggestion, comment, or you found a bug in my
+utility, you can send a message to nirsofer@yahoo.com
+
+

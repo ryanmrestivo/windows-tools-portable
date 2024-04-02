@@ -1,0 +1,466 @@
+
+
+
+ZipInstaller v1.21
+Copyright (c) 2003 - 2004 Nir Sofer
+
+
+Description
+===========
+
+The ZipInstaller utility installs and uninstalls applications and
+utilities that do not provide an internal installation program. It
+automatically extracts all files from the Zip file, copies them to the
+destination folder you select, creates shortcuts in the start menu and in
+your desktop, and adds an uninstall module to allow you to automatically
+remove the software in the future.
+
+This utility was originally developed to install the utilities in NirSoft
+Web site, but you can use it for installing utilities and applications
+from other sources, like the utilities provided in SysInternal Web site,
+Funduc Software, and many others.
+Generally, this utility can install properly almost any software
+compressed in Zip files that doesn't provide an install/uninstall module.
+
+
+
+Versions History
+================
+
+
+
+
+20/07/04
+1.21
+
+* Ability to create self-install executables. (/selfexe command-line
+  parameter)
+* The 'Start In' field in all shortcuts created by ZipInstaller is now
+  filled with the appropriate folder.
+* Uninstall improvement: if a file is locked and cannot be deleted,
+  ZipInstaller will try to move it into the temp folder, instead of
+  displaying error message. (This trick works only on Windows 2000/XP)
+* Fixed bug: In previous version, the configuration file inside the zip
+  file was copied to the installation folder with all other files,
+  although it's not really needed.
+* New option: copy the uninstaller module to the installation folder,
+  instead of Windows folder (UninstallInDestFolder value)
+
+
+07/06/04
+1.20
+
+* Ability to translate to other languages.
+* New option: Add uninstall shortcut under the programs folder. (If
+  this option is unchecked, uninstall shortcut won't be added)
+* New option: Remember the above settings for future installations. If
+  this options is checked, the current install settings will be saved in
+  the Registry, and they'll be loaded as default in future installations.
+* ZipInstaller Configuration File (.zic file) - Allows you to control
+  the installation settings, like changing the default installation
+  folder, the 'Install For' setting (For current user or for all users),
+  the product info (product name, compant, and so on), and more...
+* With ZipInstaller Configuration File, you are allowed to install a
+  software without any user interaction.
+* Extra information about the installed software is now added under the
+  uninstall Registry key: company name, product version, install folder,
+  and description.
+
+
+27/06/03
+1.11
+Fixed bug with the ZipInstaller context menu: In version 1.10, there was
+an error if the Zip filename contained one or more space characters.
+
+22/06/03
+1.10
+
+* Added support for more special files - readme.html, readme.htm,
+  readme.doc, manual.txt, manual.html, and so on...
+* New option: Allows you to add ZipInstaller to the context menu of Zip
+  files, so you can easily start the installation process directly from
+  Explorer window.
+* Starting from this version: If ZipInstaller is failed to delete a
+  file during uninstall, it allows you to try again, skip the problematic
+  file, or cancel the uninstall.
+* If there is only one EXE file inside the Zip file, and it doesn't
+  contain any software information, the EXE is probably an internal
+  installation software, so ZipInstaller asks you whether you want to run
+  it.
+
+
+08/05/03
+1.00
+First Release
+
+
+
+License
+=======
+
+This utility is released as freeware. You are allowed to freely
+distribute this utility via floppy disk, CD-ROM, Internet, or in any
+other way, as long as you don't charge anything for this.
+
+
+
+Disclaimer
+==========
+
+The software is provided "AS IS" without any warranty, either expressed
+or implied, including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose. The author will not
+be liable for any special, incidental, consequential or indirect damages
+due to loss of data or any other reason.
+
+
+
+Using ZipInstaller
+==================
+
+This utility is a small standalone executable. You don't have to install
+it, and it doesn't require any additional DLLs. Simply run the executable
+(zipinst.exe) and start using it.
+In the first dialog you get immediately after you run this utility, you
+have to select the Zip filename that contains the software you want to
+install. After you select the desired Zip file and press the continue
+button, ZipInstaller analyzes the Zip file:
+* If it finds an internal installer inside the Zip file (setup.exe or
+  install.exe) it'll ask you if you want to run the installer software.
+* For each executable (.EXE file) in the Zip file, ZipInstaller
+  inspects the version resource information (company name, product name)
+  in order to use it during the installation process.
+
+After the analysis process is finished, the next dialog-box is appeared.
+The product information (company, product name, version) is displayed on
+the screen if it's found inside the Zip file during the analysis process.
+Before you start to install, you can change the following installation
+options:
+* Destination Folder: ZipInstaller will copy all program files to this
+  folder. You can select one of the default folders from the combo-box,
+  or select any other folder by clicking the 'Browse' button.
+* Install for: This option is available only under Windows NT, Windows
+  2000 and Windows XP. If you choose to install for the current logged on
+  user (the default option), the shortcuts to the installed software will
+  be added only to the desktop and the start menu of the current logged
+  on user. If you choose to install for all users, the shortcuts will be
+  added to the desktop and start menu of all users.
+* Add shortcuts to the programs folder: If this options is checked, a
+  folders containing essential shortcuts will be added to the programs
+  folder under the start menu. You can select one of the default folder
+  names or type any other folder name you want.
+  In this programs folder, ZipInstaller automatically adds shortcuts to
+  the following files:
+  o Executable files (*.exe)
+  o Help file (*.chm, *.hlp)
+  o readme file (readme.txt, readme.htm, readme.html or readme.doc)
+  o manual file (manual.txt, manual.htm, manual.html or manual.doc)
+  o Uninstall program (If the uninstall option is selected)
+
+* Add a shortcut to the program on the desktop: If this option is
+  checked, a shortcut to the executable file of the installed software is
+  added to the your desktop folder. If the Zip file contains more than
+  one executable file, a shortcut to the program folders will be added to
+  the desktop.
+* Add uninstall module: If this option is checked, the uninstall module
+  will be added with the installed software, and you'll be able to
+  automatically uninstall it in the future.
+* Add uninstall shortcut under the programs folder: If this option is
+  checked, a shortcut that runs the uninstall module will be added to the
+  programs folder. Otherwise, the uninstall shortcut won't be added.
+* Remember the above settings for future installations: If this option
+  is checked, the current installation settings will be saved in the
+  Registry, and they will be used as default settings in the next time
+  that you use ZipInstaller.
+
+
+After you click the "Install" button, ZipInstaller copies all files from
+the zip file into the destination folder, and creates shortcuts in the
+desktop and/or in the start menu according to your selection.
+After the installation process is finished, you'll see a new programs
+folder with shortcuts to the installed software, like the following
+example:
+
+
+
+The uninstall module
+====================
+
+If you select the add the uninstall module during installation, the
+executable file of ZipInstaller (zipinst.exe) is copied to your Windows
+directory. In addition, a file named "uninst1~.nsu" is created in the
+destination folder. Do not delete or modify this file. It contains
+essential information for removing the installed application in the
+future.
+
+Whenever you want to remove the software you have installed with
+ZipInstaller, you can simply start the uninstall process by choosing the
+uninstall option from the shortcut created in programs folder. You can
+also remove the installed software directly from the "Add/Remove
+programs" module in the Control Panel.
+
+
+
+ZipInstaller Configuration File (*.zic)
+=======================================
+
+Starting from v1.20, ZipInstaller allows you to easily change the default
+installation settings by using a simple configuration file. with
+ZipInstaller configuration file, you can set the default installation
+folder, the default programs folder for creating the shortcuts, the
+product information (product name, product version , and so on...), and
+more.
+
+There are 3 different methods to use the configuration file.
+1. Load it from command-line by using /cfg parameter. For Example:
+   zipinst.exe /cfg c:\temp\myconfig.zic
+
+2. Put the configuration file inside the Zip file that contains the
+   program you want to install. You must add the configuration file as
+   "~zipinst~.zic", so ZipInstaller will recognize it and use it for
+   configuring the installation.
+3. Some of the ZipInstaller settings (but not all of them !) are also
+   loaded from the Registry, under
+   HKEY_CURRENT_USER\Software\NirSoft\ZipInstaller as the default
+   settings for all installations.
+
+The zic file is simply a standard INI file, and all its values are stored
+under [install] section.
+For example:
+
+
+
+[install]
+ZipFile=f:\temp\strun.zip
+AddUninstall=1
+AddUninstallShortcut=1
+DesktopShortcut=1
+InstallTo=2
+StartMenuShortcut=1
+ProgramFilesFolder=D:\Program Files
+NoUserInteraction=1
+InstallFolder=%zi.ProgramFiles%\%zi.ProductName%
+StartMenuFolder=%zi.CompanyName%\%zi.ProductName%
+ProductName=StartupRun
+ProductVersion=1.20
+CompanyName=NirSoft
+Description=StartupRun
+UninstallRegKey=StartupRun1
+NoExtraUninstallInfo=0
+NoSuccessMessage=1
+
+
+
+The following table describes all settings that you can use in
+ZipInstaller config files. Some of these settings are also loaded from
+the Registry (Under HKEY_CURRENT_USER\Software\NirSoft\ZipInstaller) as
+the default settings of ZipInstaller.
+For example: If you want that ZipInstaller will use your customized
+"Program Files" folder instead of using the standard "Program Files"
+folder of Windows, add a new string value named "ProgramFilesFolder"
+under the above Registry key.
+
+
+
+
+ZipFile
+ 
+Specifies the Zip file to load. if this value is not specified,
+ZipInstall will ask to select a Zip file. This value should not be used
+if the config file is stored inside the Zip file itself.
+
+InstallTo
+
+Set this value to 1 in order to install for all users, or 2 in order to
+install only for the current logged-on user.
+
+DesktopShortcut
+
+If you set this value to 1, ZipInstaller will add shortcuts to the
+desktop.
+If you set this value to 0, shortcuts won't be added to the desktop.
+
+StartMenuShortcut
+
+If you set this value to 1, ZipInstaller will add shortcuts under Start
+Menu-Programs folder.
+If you set this value to 0, the shortcuts won't be added.
+
+AddUninstall
+
+If you set this value to 1, ZipInstaller will add an uninstall entry to
+the Add/Remove module.
+If you set this value to 0, the uninstall entry won't be added (the
+default value is 1)
+
+AddUninstallShortcut
+
+Specifies whether ZipInstall should add a shortcut to the uninstall
+module under the Start Menu-programs folder. The default value is 1.
+
+ProgramFilesFolder
+
+Specifies the "Program Files" folder that ZipInstaller should use. If
+this value is not specified, the default "Program Files" folder of
+Windows is used.
+
+InstallFolder
+
+Specifies the default folder to install the software. You can put in this
+string all Windows environment variables, as well as special variables
+provided by ZipInstaller.
+For Example:
+
+%zi.ProgramFiles%\%zi.CompanyName%\%zi.ProductName%
+D:\My Software\%zi.ProductName%
+
+StartMenuFolder
+
+Specifies the default programs group created under the Start
+Menu-Programs folder. You can put in this string all Windows environment
+variables, as well as special variables provided by ZipInstaller.
+For Example:
+
+%zi.CompanyName%\%zi.ProductName%
+My Software\%zi.ProductName%
+
+NoExtraUninstallInfo
+
+By default, extra information about the installed software is added the
+the uninstall Registry key. If from some reason you don't want that the
+extra information will be added, set this value to 1.
+
+NoSuccessMessage
+
+By default, ZipInstaller displays success message when the installation
+is completed. You can avoid this message by setting this value to 1.
+
+NoUserInteraction
+ 
+If you set this value to 1, ZipInstaller will start the installation
+process immediately, without asking the user to confirm the desired
+installation options.
+
+
+UninstallRegKey
+ 
+By default, ZipInstaller uses the product name as the uninstall key under
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall.
+If you want to use another key, put it in this value.
+
+ProductName
+ProductVersion
+CompanyName
+Description
+ 
+Use these values if you want to modify the product information extracted
+from the executables in the Zip file by ZipInstaller. ZipInstaller
+displays the product information on the installation options window, as
+well as it uses it to suggest the default install folders and program
+groups.
+
+UninstallInDestFolder
+
+By default, the ZipInstaller executable (zipinst.exe) is copied to the
+Windows directory, for using it during the uninstall process. If from
+some reason you want that the ZipInstaller executable will be copied into
+the program installation folder (instead of Windows folder), set this
+value to 1.
+
+The following special environment variables are provided by ZipInstaller.
+You can use these variables to customize the default installation folder
+("InstallFolder" value) and the default programs group under start menu
+("StartMenuFolder" value).
+
+
+%zi.ProgramFiles%
+The default Program Files folder of ZipInstaller.
+
+%zi.CompanyName%
+The company name.
+
+%zi.ProductName%
+The product name.
+
+%zi.ProductVersion%
+The product version.
+
+%zi.ZipName%
+The name of the zip file excluding the .zip extension.
+
+
+
+Command-Line Options
+====================
+
+
+
+/selfexe
+/selfexe <Zip Filename> <Executable Filename> <Translation File
+(Optional)>
+
+Creates a self-install executable from a ZIP file. The translation file
+parameter is optional. If you specify it, ZipInstaller will use it during
+the installation process.
+
+Examples:
+zipinst.exe /selfexe c:\temp\volumouse.zip c:\temp\volumouse-setup.exe
+zipinst.exe /selfexe c:\temp\wul.zip c:\temp\wul-setup.exe
+c:\temp\zipinst_lng.ini
+
+/i
+/i <Zip Filename>
+
+Start the ZipInstaller utility with specific Zip file.
+
+/cfg
+/cfg <ZipInstaller Configuration File>
+
+Starts ZipInstaller with the specified configuration file.
+
+/uninst
+/uninst <uninstall filename (uninst1~.nsu) >
+
+Uninstall software according to the information inside the uninstall
+filename. This options is internally used by ZipInstaller. You don't have
+to directly use this command-line option.
+
+Notice: Under Windows NT, Windows 2000 and Windows XP, you can use the
+ZipInstaller utility only if you are logged on with administrator
+privileges. Otherwise, the install/uninstall process will be failed.
+
+
+
+Translating ZipInstaller to other languages
+===========================================
+
+ZipInstaller allows you to easily translate all dialog-boxes and strings
+to other language.
+In order to do that, follow the instructions below:
+1. Run ZipInstaller with /savelangfile parameter:
+   zipinst.exe /savelangfile
+   A file named zipinst_lng.ini will be created in the folder of
+   ZipInstaller utility.
+2. Open the created language file in Notepad or in any other text
+   editor.
+3. Translate all menus, dialog-boxes, and string entries to the
+   desired language.
+4. After you finish the translation, Run ZipInstaller, and all
+   translated strings will be loaded from the language file.
+   If you want to run ZipInstaller without the translation, simply rename
+   the language file, or move it to another folder.
+Notice: When you install a software with ZipInstaller, the translation
+file (zipinst_lng.ini) is copied to the Windows directory together with
+the ZipInstaller executable (zipinst.exe), so when you uninstall the
+software, ZipInstaller will also load the translation file for using
+during the uninstall process.
+
+
+
+Feedback
+========
+
+If you have any problem, suggestion, comment, or you found a bug in my
+utility, you can send a message to nirsofer@yahoo.com
+
+
