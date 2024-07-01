@@ -85,7 +85,6 @@ Install-Module PsReadLine -Force
 # List of Chocolatey packages to install
 $chocoPackages = @(
     '7zip.install',
-    'adobereader',
     'cmder',
     'curl',
     'discord.install',
@@ -130,6 +129,7 @@ $chocoPackages = @(
 )
 
 # List of apps currently not in use
+#    'adobereader',
 #    'cmake',
 #    'golang',
 #    'mingw',
