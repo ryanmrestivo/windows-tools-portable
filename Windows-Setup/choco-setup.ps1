@@ -152,7 +152,7 @@ foreach ($package in $chocoPackages) {
 try {
     pip install poetry
     pip install windows-curses
-    pip install glances
+    pip install glances[all]
 } catch {
     Write-Host "Error occurred while installing Python packages."
 }
