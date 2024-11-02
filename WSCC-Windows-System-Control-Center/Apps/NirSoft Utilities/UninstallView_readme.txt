@@ -1,8 +1,8 @@
 
 
 
-UninstallView v1.50
-Copyright (c) 2017 - 2023 Nir Sofer
+UninstallView v1.51
+Copyright (c) 2017 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -42,6 +42,15 @@ up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.51:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
+  o Added 'Full Screen' mode (View -> Full Screen or F11 key).
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 1.50:
   o Added 'Sort By' toolbar button.

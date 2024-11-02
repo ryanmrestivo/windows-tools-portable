@@ -1,7 +1,7 @@
 
 
 
-WebBrowserBookmarksView v1.12
+WebBrowserBookmarksView v1.13
 Copyright (c) 2021 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/web_browser_bookmarks_view.html
 
@@ -54,6 +54,12 @@ browser.
 Version History
 ===============
 
+
+* Version 1.13:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
+  o Added 'Full Screen' mode (View -> Full Screen or F11 key).
 
 * Version 1.12:
   o Updated the database reader to read properly the latest versions

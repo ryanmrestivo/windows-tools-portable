@@ -1,7 +1,7 @@
 
 
 
-NetworkOpenedFiles v1.62
+NetworkOpenedFiles v1.63
 Copyright (c) 2016 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -33,6 +33,10 @@ opened the files ('Computer' column)
 Versions History
 ================
 
+
+* Version 1.63:
+  o The tooltip of the tray icon now displays the current number of
+    opened files.
 
 * Version 1.62:
   o Added 'Sort By' toolbar button

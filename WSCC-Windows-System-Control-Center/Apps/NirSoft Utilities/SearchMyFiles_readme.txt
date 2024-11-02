@@ -1,7 +1,7 @@
 
 
 
-SearchMyFiles v3.24
+SearchMyFiles v3.30
 Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -36,6 +36,16 @@ and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 3.30:
+  o Added option to find files according the file owner. You can
+    specify multiple owner names to include or exclude (comma-delimited
+    list). You can also use wildcard (e.g: admin*)
+  o You can access this feature from the 'More Options' button.
+
+* Version 3.25:
+  o Fixed to save the configuration file (SearchMyFiles.cfg) as
+    Unicode, so it'll save and load any non-English character correctly.
 
 * Version 3.24:
   o Fixed bug: Under some conditions, SearchMyFiles displayed

@@ -1,6 +1,6 @@
 WSCC - Windows System Control Center
 
-Copyright (C) 2007-2023 KirySoft S.R.L. All Rights Reserved.
+Copyright (C) 2007-2024 KirySoft S.R.L. All Rights Reserved.
 
 1. Introduction:
 

@@ -1,8 +1,8 @@
 
 
 
-TCPConnectProblemView v1.05
-Copyright (c) 2021 - 2022 Nir Sofer
+TCPConnectProblemView v1.07
+Copyright (c) 2021 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/tcp_connect_problem_view.html
 
 
@@ -35,6 +35,14 @@ up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Version History
 ===============
 
+
+* Version 1.07:
+  o Added 'Save All Items' option (Shift+Ctrl+S).
+
+* Version 1.06:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.05:
   o Added 'Always On Top' option.

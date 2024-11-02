@@ -1,7 +1,7 @@
 
 
 
-SimpleCodeGenerator v1.13
+SimpleCodeGenerator v1.16
 Copyright (c) 2021 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/qr_code_generator.html
 
@@ -36,6 +36,19 @@ System Requirements
 Versions History
 ================
 
+
+* Version 1.16
+  o Added /ShowFromFile and /SaveFromFile command-line options, which
+    allow you to load the QR Code from a file.
+
+* Version 1.15
+  o Fixed bug: The QR Code settings section disappeared when pressing
+    the Esc key.
+
+* Version 1.14
+  o You can now specify a double quote character from command-line by
+    using a sequence of 2 double quote characters, for example:
+    SimpleCodeGenerator.exe /Show """Hello World"""
 
 * Version 1.13
   o Added CopyImageScaling and SaveImageScaling entries to the
@@ -148,6 +161,17 @@ SimpleCodeGenerator.exe /Show
 Sofer\r\nTITLE:Programmer\r\nEMAIL;TYPE=INTERNET;TYPE=WORK;TYPE=PREF:suppor
 t@nirsoft.net\r\nURL;TYPE=Homepage:https://www.nirsoft.net\r\nEND:VCARD"
 
+/ShowFromFile <QR Code Filename>
+This command generates the QR Code for the string stored in the specified
+filename, and displays it on the main window of SimpleCodeGenerator.
+SimpleCodeGenerator can read files with the following character encoding:
+ANSI/ASCII, UTF-8 With BOM, UTF-16 With BOM.
+
+Examples:
+SimpleCodeGenerator.exe /ShowFromFile "c:\temp\qrcode1.txt"
+SimpleCodeGenerator.exe /ErrorCorrection 2 /MinVersion 10 /MaxVersion 40
+/ShowFromFile "c:\temp\qrcode2.txt"
+
 /Save <QR Code String> <Image Filename> {Image Scaling}
 This command generates the QR Code for the specified string, and then
 exports it to the specified image filename (.png , .gif , .jpg , .tiff,
@@ -173,6 +197,24 @@ SimpleCodeGenerator.exe /ErrorCorrection 2 /MinVersion 10 /MaxVersion 40
 "c:\temp\qrcode1.png" 10
 SimpleCodeGenerator.exe /Save "WIFI:T:WPA;S:MyWifi;P:WifiPass1234;;"
 "c:\temp\qrcode2.gif"
+
+/SaveFromFile <QR Code Filename> <Image Filename> {Image Scaling}
+This command generates the QR Code for the string stored in the specified
+filename, and then exports it to the specified image filename (.png ,
+.gif , .jpg , .tiff, or .bmp file).
+SimpleCodeGenerator can read files with the following character encoding:
+ANSI/ASCII, UTF-8 With BOM, UTF-16 With BOM.
+{Image Scaling} is an optional parameter that specifies the number of
+pixels to create in the image file for every pixel in the QR Code. For
+example: if you specify "10" - for every pixel in the QR Code, you will
+get 10x10 pixels in the image file. If you don't specify the {Image
+Scaling} value, the default scaling is 5.
+
+Examples:
+SimpleCodeGenerator.exe /SaveFromFile "c:\temp\qrcode1.txt"
+"c:\temp\qrcode1.png" 10
+SimpleCodeGenerator.exe /ErrorCorrection 2 /MinVersion 10 /MaxVersion 40
+/SaveFromFile "c:\temp\qrcode1.txt" "c:\temp\qrcode1.png" 10
 
 /Clipboard <QR Code String> {Image Scaling}
 This command generates the QR Code for the specified string, and then put

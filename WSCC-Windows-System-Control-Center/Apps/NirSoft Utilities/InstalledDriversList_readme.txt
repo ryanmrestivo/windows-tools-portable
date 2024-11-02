@@ -1,9 +1,9 @@
 
 
 
-InstalledDriversList v1.05
-Copyright (c) 2014 - 2015 Nir Sofer
-Web site: http://www.nirsoft.net
+InstalledDriversList v1.06
+Copyright (c) 2014 - 2024 Nir Sofer
+Web site: https://www.nirsoft.net
 
 
 
@@ -26,7 +26,7 @@ System Requirements
 ===================
 
 This utility works on any version of Windows, starting from Windows 2000
-and up to Windows 8. On 64-bit systems, you must use the 64-bit version
+and up to Windows 11. On 64-bit systems, you must use the 64-bit version
 of InstalledDriversList.
 
 
@@ -34,6 +34,9 @@ of InstalledDriversList.
 Versions History
 ================
 
+
+* Version 1.06:
+  o Updated to work properly on Windows 11 Version 24H2.
 
 * Version 1.05:
   o Added 'Open In RegEdit' option, which opens the Registry key of

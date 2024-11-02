@@ -1,8 +1,8 @@
 
 
 
-FBCacheView v1.22
-Copyright (c) 2013 - 2022 Nir Sofer
+FBCacheView v1.23
+Copyright (c) 2013 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -26,7 +26,7 @@ System Requirements And Limitations
 
 
 * This utility works in any version of Windows, starting from Windows
-  XP and up to Windows 10. Both 32-bit and 64-bit systems are supported.
+  XP and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 * The following Web browsers are supported: Internet Explorer, Mozilla
   Firefox, SeaMonkey, and Google Chrome. Opera is not supported because
   it stores the JPEG images in Webp format.
@@ -40,6 +40,9 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.23:
+  o Updated to read the cache files of the latest Chrome version.
 
 * Version 1.22:
   o Updated to read the Cache_Data subfolder in the new version of

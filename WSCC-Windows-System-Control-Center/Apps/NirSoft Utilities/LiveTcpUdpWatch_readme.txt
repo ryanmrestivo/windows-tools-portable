@@ -1,8 +1,8 @@
 
 
 
-LiveTcpUdpWatch v1.51
-Copyright (c) 2018 - 2023 Nir Sofer
+LiveTcpUdpWatch v1.55
+Copyright (c) 2018 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -57,6 +57,16 @@ Administrator (elevation).
 Versions History
 ================
 
+
+* Version 1.55:
+  o Custom context menu: You can now add your own menu items to the
+    right-click context menu of the upper pane, by editing the
+    configuration file (LiveTcpUdpWatch.cfg)
+  o See the 'Custom Context Menu' section for more information.
+  o Added new columns: Remote IP, Remote Host Name.
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 1.51:
   o Added 'Black Background' option (Under the View menu). When it's
@@ -335,6 +345,78 @@ example:
 LiveTcpUdpWatch.exe /Columns
 ""ProcessName,ProcessID,Protocol,RemotePort,RemoteAddress,ReceivedBytes,Sen
 tBytes"
+
+
+
+Custom Context Menu
+===================
+
+Starting from version 1.55, you can add your own custom menu items into
+the upper pane context menu of LiveTcpUdpWatch.
+In order to do this, you have to exit completely from LiveTcpUdpWatch and
+then edit the LiveTcpUdpWatch.cfg file, located in the same folder of
+LiveTcpUdpWatch.exe. You can edit LiveTcpUdpWatch.cfg with notepad or any
+other text editor.
+
+The structure of the custom menu configuration is very simple, and looks
+like this:
+
+
+[CustomMenu]
+Caption0=Menu Caption
+Command0=Menu Command
+Caption1=Menu Caption
+Command1=Menu Command
+Caption2=Menu Caption
+Command2=Menu Command
+.
+.
+.
+
+
+
+You can create up to 10 different menu items (from 0 to 9). The command
+string is an executable file with parameters that provide the information
+about the selected items.
+For example, the following menu item will ping the remote IP address of
+the selected item in a command-prompt window:
+
+
+[CustomMenu]
+Caption0=Ping This IP address
+Command0=cmd.exe /K ping %RemoteIP%
+
+
+LiveTcpUdpWatch will replace the %RemoteIP%variable with the remote IP
+address of the selected item. You can use the following variables for the
+custom menu command (They are identical to the column names, but without
+the space characters): %ProcessID% %ProcessName% %Protocol% %LocalPort%
+%LocalAddress% %RemotePort% %RemotePortName% %RemoteAddress%
+%ReceivedBytes% %SentBytes% %ReceivedPackets% %SentPackets%
+%ReceiveSpeed% %SendSpeed% %ConnectTime% %DisconnectTime% %AcceptTime%
+%ConnectionsCount% %DisconnectCount% %ProcessPath% %RemoteIPCountry%
+%ASN% %Organization% %RemoteIP% %RemoteHostName%
+
+Finally, here's an example for full custom menu items. Notice that
+Caption2 and Caption5 are actually a menu separator.
+
+[CustomMenu]
+Caption0=Ping Remote IP Address
+Command0=cmd.exe /K ping %RemoteIP%
+Caption1=Ping Remote Host Name
+Command1=cmd.exe /K ping %RemoteHostName%
+Caption2=-
+Caption3=Open IP Address In Chrome
+Command3=chrome.exe %RemoteIP%
+Caption4=Open IP Address In Firefox
+Command4=Firefox.exe %RemoteIP%
+Caption5=-
+Caption6=Google Search Remote IP
+Command6=Firefox.exe https://www.google.com/search?q=%RemoteIP%
+
+
+The custom menu of the above example looks like this:
+
 
 
 

@@ -1,8 +1,8 @@
 
 
 
-BrowsingHistoryView v2.57
-Copyright (c) 2012 - 2023 Nir Sofer
+BrowsingHistoryView v2.59
+Copyright (c) 2012 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -27,6 +27,15 @@ any user interface.
 Versions History
 ================
 
+
+* Version 2.59:
+  o Fixed bug: BrowsingHistoryView crashed when trying to read the IE
+    database (WebCacheV01.dat) on Windows 11 24H2.
+
+* Version 2.58:
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 2.57:
   o Updated to read the history file of the latest Opera versions.

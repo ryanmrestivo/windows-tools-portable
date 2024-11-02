@@ -1,8 +1,8 @@
 
 
 
-NTFSLinksView v1.33
-Copyright (c) 2009 - 2022 Nir Sofer
+NTFSLinksView v1.35
+Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -41,6 +41,10 @@ and choose Infinite subfolder depth.
 Versions History
 ================
 
+
+* Version 1.35:
+  o Added 'Open Item Folder' option, which opens the folder where the
+    symbolic link or junction point is located.
 
 * Version 1.33:
   o Updated to stop the file system scan when you press the Esc key.

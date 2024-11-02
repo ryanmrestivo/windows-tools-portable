@@ -1,7 +1,7 @@
 
 
 
-Clipboardic v1.17
+Clipboardic v1.19
 Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -31,6 +31,14 @@ Clipboardic works on any version of Windows, from Windows 2000 to Windows
 Versions History
 ================
 
+
+* Version 1.19:
+  o Added toolbar buttons for 'Clear All My Clipboard Files' and
+    'Clipboardic Is Active' options.
+
+* Version 1.18:
+  o Added option to choose another font (name and size) to display in
+    the main window.
 
 * Version 1.17:
   o Added the 'Clipboardic Is Active' menu item to the tray

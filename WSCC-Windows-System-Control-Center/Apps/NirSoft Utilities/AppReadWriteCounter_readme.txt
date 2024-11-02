@@ -1,8 +1,8 @@
 
 
 
-AppReadWriteCounter v1.41
-Copyright (c) 2018 - 2023 Nir Sofer
+AppReadWriteCounter v1.42
+Copyright (c) 2018 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -43,6 +43,11 @@ Known Issues
 Versions History
 ================
 
+
+* Version 1.42:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.41:
   o Added 'Sort By' button to the toolbar.

@@ -1,8 +1,8 @@
 
 
 
-DNSDataView v1.71
-Copyright (c) 2008 - 2023 Nir Sofer
+DNSDataView v1.75
+Copyright (c) 2008 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -31,6 +31,11 @@ Older versions of Windows are not supported.
 Versions History
 ================
 
+
+* Version 1.75:
+  o Added 'Load domains from file' option, which allows you to load
+    the domains list from a text file, instead of pasting the domains
+    into the text-box.
 
 * Version 1.71:
   o Fixed the refresh option to work properly when using the 'Load

@@ -1,7 +1,7 @@
 
 
 
-BrowserAddonsView v1.29
+BrowserAddonsView v1.30
 Copyright (c) 2016 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -39,6 +39,11 @@ Known Issues
 Versions History
 ================
 
+
+* Version 1.30:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.29:
   o Added 'Sort By' toolbar button.

@@ -1,8 +1,8 @@
 
 
 
-ESEDatabaseView v1.74
-Copyright (c) 2013 - 2023 Nir Sofer
+ESEDatabaseView v1.75
+Copyright (c) 2013 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -36,6 +36,11 @@ read the database.
 Versions History
 ================
 
+
+* Version 1.75:
+  o Fixed bug: ESEDatabaseView crashed when trying to read
+    WebCacheV01.dat, SRUDB.dat, and other database files created by
+    Windows 11 24H2.
 
 * Version 1.74:
   o Fixed issue: When copying data to the clipboard or exporting to
@@ -314,6 +319,8 @@ Here's some examples for .edb files used by Microsoft products:
   (Stored under
   %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\Microsof
   tEdge\User\Default\DataStore\Data\nouser1\120712-0049)
+* SRUDB database on Windows 11 and Windows 10 (Located under
+  C:\Windows\System32\sru\SRUDB.dat)
 
 
 

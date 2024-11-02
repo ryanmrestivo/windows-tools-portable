@@ -1,7 +1,7 @@
 
 
 
-OutlookAttachView v3.52
+OutlookAttachView v3.53
 Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -44,6 +44,11 @@ System Requirements
 Versions History
 ================
 
+
+* Version 3.53
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 3.52
   o Added 'Align Numeric Columns To Right' option.

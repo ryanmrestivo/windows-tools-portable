@@ -1,7 +1,7 @@
 
 
 
-ImageCacheViewer v1.31
+ImageCacheViewer v1.33
 Copyright (c) 2014 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -25,6 +25,17 @@ clipboard by pressing Ctrl+M.
 Versions History
 ================
 
+
+* Version 1.33:
+  o You can now use any variable inside the .cfg file as command-line
+    option in order to change the configuration from command-line, for
+    example:
+    ImageCacheViewer.exe /Chrome.ScanMode 1
+  o Added /cfg command-line option to start ImageCacheViewer with the
+    specified config file.
+
+* Version 1.32:
+  o Updated to read the cache files of the latest Chrome version.
 
 * Version 1.31:
   o Fixed to read the cache of Chrome Web browser while it's opened.
@@ -131,6 +142,10 @@ Command-Line Options
 ====================
 
 
+
+/cfg <Filename>
+Start ImageCacheViewer with the specified configuration file. For example:
+ImageCacheViewer.exe /cfg "c:\config\icv.cfg"
 
 /stext <Filename>
 Save the cached images list into a simple text file.

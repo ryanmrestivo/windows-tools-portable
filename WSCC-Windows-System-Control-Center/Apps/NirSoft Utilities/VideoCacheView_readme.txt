@@ -1,8 +1,8 @@
 
 
 
-VideoCacheView v3.09
-Copyright (c) 2007 - 2022 Nir Sofer
+VideoCacheView v3.10
+Copyright (c) 2007 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -28,6 +28,10 @@ directly from your browser's cache.
 Versions History
 ================
 
+
+* Version 3.10
+  o Updated to read the modified cache structure in the new versions
+    of Chrome.
 
 * Version 3.09
   o Updated to read the Cache_Data subfolder in the new version of

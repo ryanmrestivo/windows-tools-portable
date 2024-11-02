@@ -1,8 +1,8 @@
 
 
 
-WifiDiagnosticsView v1.05
-Copyright (c) 2022 - 2023 Nir Sofer
+WifiDiagnosticsView v1.06
+Copyright (c) 2022 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/wifi_diagnostics_view.html
 
 
@@ -35,6 +35,10 @@ System Requirements
 Version History
 ===============
 
+
+* Version 1.06:
+  o The current number of items in the main window is now displayed
+    in the tray icon tooltip.
 
 * Version 1.05:
   o Added 'Black Background' option (Under the View menu). When it's

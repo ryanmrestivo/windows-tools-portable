@@ -1,8 +1,8 @@
 
 
 
-InstalledAppView v1.07
-Copyright (c) 2019 - 2023 Nir Sofer
+InstalledAppView v1.09
+Copyright (c) 2019 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/installed_app_view.html
 
 
@@ -35,6 +35,14 @@ This tool works on Windows 11, Windows 10, and Windows 8. Both 32-bit and
 Versions History
 ================
 
+
+* Version 1.09
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main window is displayed in black background and white
+    text, instead of default system colors.
+
+* Version 1.08
+  o Fixed a bug with saving the installed apps list from command-line.
 
 * Version 1.07
   o Fixed a few high DPI mode issues.

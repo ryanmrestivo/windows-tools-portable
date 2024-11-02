@@ -1,8 +1,8 @@
 
 
 
-MonitorInfoView v1.22
-Copyright (c) 2006 - 2020 Nir Sofer
+MonitorInfoView v1.25
+Copyright (c) 2006 - 2024 Nir Sofer
 Web Site: https://www.nirsoft.net
 
 
@@ -43,7 +43,7 @@ due to loss of data or any other reason.
 System Requirement
 ==================
 
-This utility works on Windows 2000/XP/2003/7/8. Windows 98/ME is not
+This utility works on Windows 11/10/8/7/Vista/XP. Windows 98/ME is not
 supported.
 
 
@@ -51,6 +51,13 @@ supported.
 Versions History
 ================
 
+
+* Version 1.25:
+  o Added 'Add Header Line To CSV/Tab-Delimited File' option (Turned
+    on by default).
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 1.22:
   o Fixed bug in the generated xml file.

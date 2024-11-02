@@ -1,8 +1,8 @@
 
 
 
-QuickSetDNS v1.35
-Copyright (c) 2013 - 2023 Nir Sofer
+QuickSetDNS v1.36
+Copyright (c) 2013 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -29,6 +29,9 @@ and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.36:
+  o The active DNS item is now displayed in the tray icon tooltip.
 
 * Version 1.35:
   o Updated to work properly in high DPI mode.

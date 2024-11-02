@@ -1,8 +1,8 @@
 
 
 
-OutlookAddressBookView v2.43
-Copyright (c) 2012 - 2023 Nir Sofer
+OutlookAddressBookView v2.44
+Copyright (c) 2012 - 2024 Nir Sofer
 
 
 
@@ -47,6 +47,11 @@ System Requirements
 Versions History
 ================
 
+
+* Version 2.44
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 2.43
   o Added 'Full Screen' mode (View -> Full Screen or F11 key).

@@ -1,9 +1,9 @@
 
 
 
-SmartSniff v2.29
-Copyright (c) 2004 - 2018 Nir Sofer
-Web site: http://www.nirsoft.net
+SmartSniff v2.30
+Copyright (c) 2004 - 2024 Nir Sofer
+Web site: https://www.nirsoft.net
 
 
 
@@ -57,7 +57,7 @@ System Requirements
 ===================
 
 SmartSniff can capture TCP/IP packets on any version of Windows operating
-system (Windows 98/ME/NT/2000/XP/2003/2008/Vista/7/8/10) as long as
+system (Windows 98/ME/NT/2000/XP/2003/2008/Vista/7/8/10/11) as long as
 WinPcap capture driver is installed and works properly with your network
 adapter.
 You can also use SmartSniff with the capture driver of Microsoft Network
@@ -83,6 +83,14 @@ problems:
 Versions History
 ================
 
+
+* Version 2.30:
+  * Added support for using the country/city IP-Location files from
+    https://github.com/sapics/ip-location-db for viewing country/city
+    information of local/remote IP addresses.
+  * In order to use these IP-Location files, simply download the
+    desired files and put them in the same folder of cports.exe with
+    their original filename (For example: asn-country-ipv4.csv )
 
 * Version 2.29:
   * Fixed bug from version 2.28: SmartSniff crashed when selecting

@@ -1,7 +1,7 @@
 
 
 
-ChromeCacheView v2.47
+ChromeCacheView v2.51
 Copyright (c) 2008 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -65,6 +65,15 @@ press F8).
 Versions History
 ================
 
+
+* Version 2.51:
+  o Added 'Record Created Time' column.
+
+* Version 2.50:
+  o Updated to read the modified cache structure in the new versions
+    of Chrome.
+  o Fixed to display missing date/time value as empty instead of
+    01/01/1601 in previous versions.
 
 * Version 2.47:
   o You can now send the data to stdout by specifying empty string as

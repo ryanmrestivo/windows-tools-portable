@@ -1,8 +1,8 @@
 
 
 
-WinUpdatesView v1.17 - Windows Updates History Viewer
-Copyright (c) 2019 - 2022 Nir Sofer
+WinUpdatesView v1.18 - Windows Updates History Viewer
+Copyright (c) 2019 - 2024 Nir Sofer
 Web site:
 https://www.nirsoft.net/utils/windows_updates_history_viewer.html
 
@@ -37,6 +37,9 @@ up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.18
+  o Added 'Sort By' toolbar button.
 
 * Version 1.17
   o Added 'Add Header Line To CSV/Tab-Delimited File' option (Turned

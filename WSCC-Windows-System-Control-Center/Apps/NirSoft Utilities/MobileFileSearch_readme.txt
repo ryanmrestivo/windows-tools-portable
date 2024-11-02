@@ -1,7 +1,7 @@
 
 
 
-MobileFileSearch v1.48
+MobileFileSearch v1.49
 Copyright (c) 2019 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/mobile_device_file_search.html
 
@@ -43,6 +43,9 @@ System Requirements
 Versions History
 ================
 
+
+* Version 1.49
+  o Added 'Export All Items' option (Shift+Ctrl+S).
 
 * Version 1.48
   o Fixed issue: When copying data to the clipboard or exporting to

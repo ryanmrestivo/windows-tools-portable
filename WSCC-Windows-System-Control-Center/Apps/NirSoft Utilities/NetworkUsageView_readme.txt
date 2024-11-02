@@ -1,7 +1,7 @@
 
 
 
-NetworkUsageView v1.31
+NetworkUsageView v1.32
 Copyright (c) 2017 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -32,6 +32,10 @@ doesn't collect the network usage information.
 Versions History
 ================
 
+
+* Version 1.32:
+  o Fixed bug: NetworkUsageView crashed when trying to read the
+    network usage database created by Windows 11 24H2.
 
 * Version 1.31:
   o Added 'Sort By' toolbar button.

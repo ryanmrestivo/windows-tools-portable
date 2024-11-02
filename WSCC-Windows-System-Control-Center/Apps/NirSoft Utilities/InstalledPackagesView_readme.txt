@@ -1,9 +1,9 @@
 
 
 
-InstalledPackagesView v1.05
-Copyright (c) 2017 - 2019 Nir Sofer
-Web site: http://www.nirsoft.net
+InstalledPackagesView v1.10
+Copyright (c) 2017 - 2024 Nir Sofer
+Web site: https://www.nirsoft.net
 
 
 
@@ -37,13 +37,21 @@ System Requirements
 ===================
 
 This utility works on any version of Windows, starting from Windows XP
-and up to Windows 10. Both 32-bit and 64-bit systems are supported.
+and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 
 
 
 Versions History
 ================
 
+
+* Version 1.10:
+  o Updated to work properly in high DPI mode.
+  o Added 'Select All' and 'Deselect All' to the 'Column Settings'
+    window.
+  o Added option to change the sorting column from the menu (View ->
+    Sort By).
+  o Added 'Sort By' toolbar buttons.
 
 * Version 1.05:
   o Added /cfg command-line option to start InstalledPackagesView

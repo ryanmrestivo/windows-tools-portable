@@ -1,8 +1,8 @@
 
 
 
-ProcessTCPSummary v1.18
-Copyright (c) 2018 - 2023 Nir Sofer
+ProcessTCPSummary v1.22
+Copyright (c) 2018 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -36,6 +36,17 @@ information , you have to run ProcessTCPSummary as Administrator.
 Versions History
 ================
 
+
+* Version 1.22:
+  o Fixed bug with the 'Mark Odd/Even Rows' option.
+
+* Version 1.21:
+  o Added 'Save All Items' option (Shift+Ctrl+S).
+
+* Version 1.20:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.18:
   o Added 'Sort By' toolbar button.

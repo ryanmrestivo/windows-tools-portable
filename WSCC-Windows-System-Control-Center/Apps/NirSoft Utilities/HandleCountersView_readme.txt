@@ -1,8 +1,8 @@
 
 
 
-HandleCountersView v1.17
-Copyright (c) 2018 - 2023 Nir Sofer
+HandleCountersView v1.19
+Copyright (c) 2018 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -30,6 +30,18 @@ of system processes , you have to run HandleCountersView as Administrator.
 Versions History
 ================
 
+
+* Version 1.19:
+  o Added 'Save All Items' option (Shift+Ctrl+S).
+
+* Version 1.18:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
+  o Added 'Full Screen' mode (View -> Full Screen or F11 key).
 
 * Version 1.17:
   o Added 'Sort By' toolbar button.

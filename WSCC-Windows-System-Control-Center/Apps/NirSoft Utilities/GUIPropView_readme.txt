@@ -1,8 +1,8 @@
 
 
 
-GUIPropView v1.26
-Copyright (c) 2016 - 2023 Nir Sofer
+GUIPropView v1.30
+Copyright (c) 2016 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -33,6 +33,22 @@ and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.30:
+  o Added 'FocusKeyText' action to the /Action command, which sets
+    the keybaord focus to the specified window and then sends keystrokes
+    to this window according to the specfied text.
+  o For example: this command sends 'RegEdit.exe' keystrokes to the
+    Explorer 'Run' dialog-box:
+    GUIPropView.exe /Action FocusKeyText "RegEdit.exe"
+    Process:Explorer.exe Class:#32770 Title:Run Child.ID:1001
+  o Added 'FocusKeyPress' action to the /Action command, which sets
+    the keybaord focus to the specified window and then sends the
+    specified key combination to this window.
+  o For example: this command sends Ctrl+A (Select All) and Ctrl+C
+    (Copy to the clipboard) to the opened window of Notepad:
+    GUIPropView.exe /Action FocusKeyPress "Ctrl+A Ctrl+C"
+    Process:notepad.exe Visible:Yes
 
 * Version 1.26:
   o Added 'WindowCount' action to the /Action command, which returns
@@ -305,6 +321,24 @@ The following actions are available:
   for font strings you can specify in SetFont: "Segoe Print,10,400"
   "Arial,12,700,Italic" "Arial,12,400,Underline" (The font string must be
   in quotes !)
+* FocusKeyText [Keyboard Text] - Set the keyboard focus to the
+  specified window and then send keystrokes to this window according to
+  the specfied text.
+* FocusKeyPress [Key Combination] - Set the keybaord focus to the
+  specified window and then sends the specified key combination to this
+  window. You can use multiple key combinations in one command ,
+  delimited by space character (but the entire key combination string
+  must be in quotes !), for exmaple: "Alt+Ctrl+P Ctrl+S" , "Ctrl+Shift+A
+  X Y Z".
+  You can use the following keys in the Key Combination string:
+  0-9,A-Z,F1-F24,shift,leftshift,rightshift,ctrl,leftctrl,rightctrl,alt,lef
+  tmenu,rightmenu,enter,esc,spc,down,up,left,right,home,end,
+  insert,delete,plus,comma,minus,period,lwin,rwin,apps,pageup,pagedown,tab,
+  multiply,add,subtract,seperator,divide,cancel,backspace,pause,capslock,nu
+  mlock,scroll,printscreen.
+  Alternatively, you can also specify the virtual key code instead of key
+  name, as decimal number or hexadecimal number, for example: "Ctrl+65" ,
+  "Ctrl+0x41"
 
 The Property:Value section specifies the properties of the windows to
 find for doing the desired action. For example, if you want to do
@@ -424,6 +458,13 @@ Here's some examples for using the /Action command:
 * Get the number of visible Firefox windows (The value is returned in
   %errorlevel% variable)
   GUIPropView.exe /Action WindowCount Process:firefox.exe Visible:Yes
+* Send 'RegEdit.exe' keystrokes to the Explorer 'Run' dialog-box:
+  GUIPropView.exe /Action FocusKeyText "RegEdit.exe" Process:Explorer.exe
+  Class:#32770 Title:Run Child.ID:1001
+* Send Ctrl+A (Select All) and Ctrl+C (Copy to the clipboard) to the
+  opened window of Notepad:
+  GUIPropView.exe /Action FocusKeyPress "Ctrl+A Ctrl+C"
+  Process:notepad.exe Visible:Yes
 
 
 

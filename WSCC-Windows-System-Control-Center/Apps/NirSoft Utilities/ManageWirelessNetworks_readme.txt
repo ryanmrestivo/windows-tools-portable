@@ -1,7 +1,7 @@
 
 
 
-ManageWirelessNetworks v1.13
+ManageWirelessNetworks v1.14
 Copyright (c) 2021 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/manage_wireless_networks.html
 
@@ -43,6 +43,9 @@ System Requirements
 Version History
 ===============
 
+
+* Version 1.14:
+  o Added 'Set Connection Mode' toolbar dropdown.
 
 * Version 1.13:
   o Fixed issue: When copying data to the clipboard or exporting to

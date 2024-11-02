@@ -1,8 +1,8 @@
 
 
 
-DriverView v1.50
-Copyright (c) 2003 - 2020 Nir Sofer
+DriverView v1.51
+Copyright (c) 2003 - 2024 Nir Sofer
 
 
 
@@ -20,16 +20,23 @@ System Requirement
 ==================
 
 This utility works under Windows 2000, Windows NT, Windows XP, Windows
-Vista, Windows 7, Windows Server 2003/2008, Windows 8, and Windows 10.
-Windows 98 and Windows ME are not supported. If you want to run this
-utility on Windows NT, you should download the 'psapi.dll' and place it
-in your system32 directory.
+Vista, Windows 7, Windows Server 2003/2008, Windows 8, Windows 10, and
+Windows 11. Windows 98 and Windows ME are not supported. If you want to
+run this utility on Windows NT, you should download the 'psapi.dll' and
+place it in your system32 directory.
 
 
 
 Versions History
 ================
 
+
+* Version 1.51:
+  o Updated to work on Windows 11 Version 24H2 (You also have to run
+    it as Administrator)
+  o Added 'Run As Administrator' option (Ctrl+F11), which allows you
+    to easily run DriverView as Administrator on Windows 11 24H2 and
+    later.
 
 * Version 1.50:
   o Fixed bug: On 64-bit systems, DriverView always displayed zero in

@@ -1,8 +1,8 @@
 
 
 
-WirelessConnectionInfo v1.17
-Copyright (c) 2015 - 2022 Nir Sofer
+WirelessConnectionInfo v1.20
+Copyright (c) 2015 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -29,6 +29,16 @@ Older versions of Windows are not supported.
 Versions History
 ================
 
+
+* Version 1.20:
+  o Added new connection information fields: IP Address, Subnet Mask,
+    Name Servers, DHCP Server, Default Gateway, Connection Name,
+    Interface Name, Interface GUID, Connection Speed, IPv6 Address, IPv6
+    DNS Server.
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
+  o Updated to work properly in high DPI mode.
 
 * Version 1.17:
   o Added 'Add Header Line To CSV/Tab-Delimited File' option (Turned

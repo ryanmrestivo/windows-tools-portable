@@ -1,7 +1,7 @@
 
 
 
-WifiInfoView v2.93
+WifiInfoView v2.94
 Copyright (c) 2012 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -46,6 +46,11 @@ System Requirements
 Versions History
 ================
 
+
+* Version 2.94:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main window is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 2.93:
   o Updated to detect 802.11be access points.

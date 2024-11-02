@@ -1,8 +1,8 @@
 
 
 
-BulkFileChanger v1.72
-Copyright (c) 2010 - 2021 Nir Sofer
+BulkFileChanger v1.73
+Copyright (c) 2010 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -42,6 +42,11 @@ System Requirements & Limitations
 Versions History
 ================
 
+
+* Version 1.73:
+  o Fixed issue: When choosing to set only time or only date, the
+    actual date was the day after or the day before the selected date,
+    depending on the time zone.
 
 * Version 1.72:
   o Added 'Photo - Date Taken' option to set the date/time when the

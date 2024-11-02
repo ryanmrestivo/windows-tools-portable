@@ -1,8 +1,8 @@
 
 
 
-USBDriveLog v1.12
-Copyright (c) 2021 - 2023 Nir Sofer
+USBDriveLog v1.13
+Copyright (c) 2021 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/usb_drive_log.html
 
 
@@ -40,6 +40,11 @@ System Requirements
 Versions History
 ================
 
+
+* Version 1.13:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.12:
   o Added 'Sort By' toolbar button.

@@ -1,8 +1,8 @@
 
 
 
-DNSLookupView v1.12
-Copyright (c) 2020 - 2023 Nir Sofer
+DNSLookupView v1.15
+Copyright (c) 2020 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/dns_lookup_view.html
 
 
@@ -43,6 +43,13 @@ Client service of Windows.
 Version History
 ===============
 
+
+* Version 1.15:
+  o Added 'Error Description' column, which displays the error
+    description when the Query Status shows an error code.
+
+* Version 1.13:
+  o Added 'Sort By' toolbar button.
 
 * Version 1.12:
   o Added 'Black Background' option (Under the View menu). When it's

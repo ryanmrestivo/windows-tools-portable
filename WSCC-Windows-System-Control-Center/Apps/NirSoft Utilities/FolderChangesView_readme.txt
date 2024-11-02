@@ -1,8 +1,8 @@
 
 
 
-FolderChangesView v2.35
-Copyright (c) 2012 - 2023 Nir Sofer
+FolderChangesView v2.37
+Copyright (c) 2012 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -30,6 +30,13 @@ System Requirements
 Versions History
 ================
 
+
+* Version 2.37:
+  o The number of items in the main windows is now displayed in the
+    tooltip of the tray icon.
+
+* Version 2.36:
+  o Added 'Save All Items' option (Shift+Ctrl+S).
 
 * Version 2.35:
   o Added 'Black Background' option (Under the View menu). When it's

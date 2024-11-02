@@ -1,9 +1,9 @@
 
 
 
-BluetoothView v1.66
-Copyright (c) 2008 - 2013 Nir Sofer
-Web site: http://www.nirsoft.net
+BluetoothView v1.70
+Copyright (c) 2008 - 2024 Nir Sofer
+Web site: https://www.nirsoft.net
 
 
 
@@ -24,6 +24,11 @@ beep sound.
 Versions History
 ================
 
+
+* Version 1.70:
+  o Added 'Class Of Device' column (Raw value)
+  o Added 'Service Classes' column.
+  o Updated the major/minor device type list.
 
 * Version 1.66:
   o Added 'Mark Odd/Even Rows' option, under the View menu. When it's
@@ -115,10 +120,10 @@ System Requirements
 
 
 * Bluetooth Dongle and device driver that works with the standard
-  Bluetooth module of Windows XP/Vista/Windows 7.
-* Windows XP/SP2, Windows Vista, or Windows 7. Other versions of
-  Windows don't provide a build-in support for Bluetooth, and thus
-  BluetoothView cannot work with them.
+  Bluetooth module of Windows XP/Vista/Windows 11 / 10 / 8 / 7.
+* Windows XP/SP2, Windows Vista, or Windows 11 / 10 / 8 / 7. Other
+  versions of Windows don't provide a build-in support for Bluetooth, and
+  thus BluetoothView cannot work with them.
 
 
 
@@ -141,7 +146,7 @@ name of each BluetoothView device. The company name is determined
 according to the Bluetooth address. However, in order to get this
 feature, you must download the following external file, and put in the
 same folder of BluetoothView.exe:
-http://standards.ieee.org/develop/regauth/oui/oui.txt
+https://standards-oui.ieee.org/oui/oui.txt
 Be aware that you must save it as 'oui.txt'
 
 

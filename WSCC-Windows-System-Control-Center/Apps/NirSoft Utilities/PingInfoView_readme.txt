@@ -1,8 +1,8 @@
 
 
 
-PingInfoView v3.01
-Copyright (c) 2008 - 2023 Nir Sofer
+PingInfoView v3.15
+Copyright (c) 2008 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -34,6 +34,24 @@ of Windows are not supported.
 Versions History
 ================
 
+
+* Version 3.15
+  o Fixed bug from version 3.10 that caused improper parsing of IPv6
+    addresses.
+  o Custom context menu: You can now add your own menu items to the
+    right-click context menu of the upper pane, by editing the
+    configuration file (PingInfoView.cfg)
+  o See the 'Custom Context Menu' section for more information.
+
+* Version 3.10
+  o Added support for IPv6 TCP pings. You can specify host name (For
+    example: www.google.com:80), or IPv6 address in the following format:
+    [IPv6 Address]:Port.
+
+* Version 3.05
+  o Added 'Source IPv4 Address' option. You can use this option if
+    you have multiple network adapters and you want to send the ping from
+    specific adapter.
 
 * Version 3.01
   o Fixed bug: when disabling one or more items, the ping interval
@@ -473,6 +491,83 @@ Ping Options window. (0 - No, 1 - Yes)
 
 You can use any variable inside the configuration file (PingInfoView.cfg)
 as command-line option to set the desired option from command-line.
+
+
+
+Custom Context Menu
+===================
+
+Starting from version 3.15, you can add your own custom menu items into
+the upper pane context menu of PingInfoView.
+In order to do this, you have to exit completely from PingInfoView and
+then edit the PingInfoView.cfg file, located in the same folder of
+PingInfoView.exe. You can edit PingInfoView.cfg with notepad or any other
+text editor.
+
+The structure of the custom menu configuration is very simple, and looks
+like this:
+
+
+[CustomMenu]
+Caption0=Menu Caption
+Command0=Menu Command
+Caption1=Menu Caption
+Command1=Menu Command
+Caption2=Menu Caption
+Command2=Menu Command
+.
+.
+.
+
+
+
+You can create up to 10 different menu items (from 0 to 9). The command
+string is an executable file with parameters that provide the information
+about the selected items.
+For example, the following menu item will ping the selected IP address in
+a command-prompt window:
+
+
+[CustomMenu]
+Caption0=Ping This IP address
+Command0=cmd.exe /K ping %IPAddress%
+
+
+PingInfoView will replace the %IPAddress% variable with the IP address of
+the selected item. You can use the following variables for the custom
+menu command (They are identical to the column names, but without the
+space characters): %HostName% %IPAddress% %ReplyIPAddress% %SucceedCount%
+%FailedCount% %ConsecutiveFailedCount% %MaxConsecutiveFailedCount%
+%MaxConsecutiveFailedTime% %PercentFailed% %TotalSentPings%
+%LastPingStatus% %LastPingTime% %LastPingTTL% %AveragePingTime%
+%Description% %LastSucceedOn% %LastFailedOn% %MinimumPingTime%
+%MaximumPingTime% %Order% %Disabled%
+
+Finally, here's an example for full custom menu items. Notice that
+Caption3 and Caption6 are actually a menu separator. Also, Command7 is a
+'ShellExecute' command, which means that instead of specifying .exe file,
+you specify a file, URL, or network resource to open (In this case it's
+Admin share of the remote computer).
+
+[CustomMenu]
+Caption0=Ping IP address
+Command0=cmd.exe /K ping %IPAddress%
+Caption1=Ping Host Name
+Command1=cmd.exe /K ping %HostName%
+Caption2=Check IP Address With Nbtstat
+Command2=cmd.exe /K nbtstat.exe -A %IPAddress%
+Caption3=-
+Caption4=Open IP Address In Chrome
+Command4=chrome.exe %IPAddress%
+Caption5=Open IP Address In Firefox
+Command5=Firefox.exe %IPAddress%
+Caption6=-
+Caption7=Open Admin Share
+Command7=ShellExecute:\\%IPAddress%\Admin$
+
+
+The custom menu of the above example looks like this:
+
 
 
 

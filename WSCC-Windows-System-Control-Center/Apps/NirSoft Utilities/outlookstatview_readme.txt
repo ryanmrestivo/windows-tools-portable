@@ -1,8 +1,8 @@
 
 
 
-OutlookStatView v2.28
-Copyright (c) 2009 - 2022 Nir Sofer
+OutlookStatView v2.30
+Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -41,6 +41,12 @@ System Requirements
 Versions History
 ================
 
+
+* Version 2.30
+  o Added 'Sort By' toolbar button.
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 2.28
   o Updated to stop the Outlook mailbox scan when you press the Esc

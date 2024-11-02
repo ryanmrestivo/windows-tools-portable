@@ -1,8 +1,8 @@
 
 
 
-BrowserDownloadsView v1.45
-Copyright (c) 2019 - 2023 Nir Sofer
+BrowserDownloadsView v1.50
+Copyright (c) 2019 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/web_browser_downloads_view.html
 
 
@@ -41,6 +41,21 @@ saved to the database.
 Versions History
 ================
 
+
+* Version 1.50
+  o Added 'Display QR Code' option (Under the View menu). When it's
+    turned on, the lower pane displays QR Code for the selected item in
+    the upper pane.
+  o You can choose which URL to display as QR Code from Options -> QR
+    Code URL : Web Page URL, Download URL 1, Download URL 2, Download URL
+    3.
+  o Added 'Copy QR Code' option (Under the Edit menu), which allows
+    you to copy the displayed QR Code to the clipboard.
+
+* Version 1.46
+  o Fixed issue: When copying data to the clipboard or exporting to
+    tab-delimited file, every line contained an empty field in the end of
+    the line.
 
 * Version 1.45
   o Added 'Black Background' option (Under the View menu). When it's

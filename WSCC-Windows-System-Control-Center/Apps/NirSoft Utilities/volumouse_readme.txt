@@ -1,8 +1,8 @@
 
 
 
-Volumouse v2.10
-Copyright (c) 2004 - 2022 Nir Sofer
+Volumouse v2.15
+Copyright (c) 2004 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -49,6 +49,15 @@ Known Issues
 Versions History
 ================
 
+
+* Version 2.15:
+  o Added option to change the monitor brightness/contrast using
+    DDC/CI.
+  o Be aware that this feature works properly only if your monitor
+    supports it.
+  o If you have multiple monitors, you can select the desired monitor
+    in the 'Advanced Rule Options' window. By default, the primary
+    monitor is selected.
 
 * Version 2.10:
   o Volumouse now uses completely different method to hook the mouse

@@ -1,8 +1,8 @@
 
 
 
-WebCacheImageInfo v1.34
-Copyright (c) 2013 - 2022 Nir Sofer
+WebCacheImageInfo v1.35
+Copyright (c) 2013 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -43,6 +43,9 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.35:
+  o Updated to read the cache files of the latest Chrome version.
 
 * Version 1.34:
   o Updated to read the Cache_Data subfolder in the new version of

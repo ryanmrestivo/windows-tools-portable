@@ -1,8 +1,8 @@
 
 
 
-MultiMonitorTool v2.10
-Copyright (c) 2012 - 2023 Nir Sofer
+MultiMonitorTool v2.15
+Copyright (c) 2012 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -42,6 +42,35 @@ System Requirements and Limitations
 Versions History
 ================
 
+
+* Version 2.15
+  o Added a workaround for the new problems appeared in Windows 11
+    24H2 update. The workaround is applied in the following features: Set
+    as primary monitor, Load monitors configuration, /SetMonitors
+    command, /SetPrimary command, /LoadConfig command.
+  o Notice for Windows 11 24H2: If you are in situation that every
+    action you try in MultiMonitorTool fails completely, you should go to
+    the monitors settings of Windows and change something, or unplug and
+    plug one of the monitors, and then go back to MultiMonitorTool and
+    try again.
+  o When loading a monitor configuration, MultiMonitorTool now
+    applies the monitors configuration multiple times, because on complex
+    monitors systems it's needed to set all monitors properly. Added
+    MonitorsConfigNumOfCalls value to MultiMonitorTool.cfg to control the
+    number of times that the monitors configuration is set. The default
+    is 5 times.
+  o The resolution and position information of disabled monitors is
+    now taken directly from the Registry, which is more reliable data
+    source. This information is also used to enable back the monitor.
+  o Added /EnableAtPosition command, which allows you to enable a
+    monitor in the specified position, for example:
+    MultiMonitorTool.exe /EnableAtPosition "\\.\DISPLAY1" 1920 0
+
+* Version 2.11
+  o Fixed issue: On some systems, when a monitor was disconnected,
+    MultiMonitorTool displayed incorrect monitor id and other incorrect
+    monitor information. From this version the monitor information fields
+    will be empty if the monitor information is not available.
 
 * Version 2.10
   o Added 'Short Monitor ID' column. You can use the value displayed
@@ -415,6 +444,13 @@ Examples:
 MultiMonitorTool.exe /enable 3
 MultiMonitorTool.exe /enable \\.\DISPLAY1
 MultiMonitorTool.exe /enable 3 2
+
+/EnableAtPosition <Monitor> <X Position> <Y Position>
+Enables the specified monitor at the specified position. If the /Enable
+command doesn't work properly for you, you should try to enable the
+monitor at the desired position.
+Example:
+MultiMonitorTool.exe /EnableAtPosition "\\.\DISPLAY2" 1920 0
 
 /switch <Monitors>
 Switches the specified monitors between enabled and disabled state.
