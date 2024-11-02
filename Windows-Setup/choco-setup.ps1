@@ -3,11 +3,12 @@
 # Set-ExecutionPolicy unrestricted
 # confirm
 # ./choco-setup.ps1
+# Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 
 # NOTE:  Run this script before doing any hardening or these installs will take substantially longer
 
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-Set-ExecutionPolicy unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 # refreshenv
 	refreshenv
 
