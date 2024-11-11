@@ -1,0 +1,28 @@
+{
+  "runtimeOptions": {
+    "configProperties": {
+      "CSWINRT_ENABLE_DEFAULT_CUSTOM_TYPE_MAPPINGS": true,
+      "CSWINRT_ENABLE_DYNAMIC_OBJECTS_SUPPORT": true,
+      "CSWINRT_ENABLE_ICUSTOMPROPERTYPROVIDER_SUPPORT": true,
+      "CSWINRT_ENABLE_IDYNAMICINTERFACECASTABLE": true,
+      "CSWINRT_ENABLE_IREFERENCE_SUPPORT": true,
+      "CSWINRT_USE_EXCEPTION_RESOURCE_KEYS": false,
+      "NetBeautyLibsDir": ".;./lib;./lib/runtimes/win-x64/native",
+      "NetBeautySharedRuntimeMode": "no",
+      "STARTUP_HOOKS": "nbloader",
+      "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true
+    },
+    "frameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "8.0.0"
+      },
+      {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "8.0.0"
+      }
+    ],
+    "tfm": "net8.0"
+  }
+}
