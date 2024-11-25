@@ -1,7 +1,7 @@
 
 
 
-WifiInfoView v2.94
+WifiInfoView v2.95
 Copyright (c) 2012 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -40,12 +40,27 @@ System Requirements
   adapter" error will be displayed.
 * In order to watch 5GHz wireless networks, you have to use a wireless
   network adapter that supports 5 GHz channels.
+* Windows 11 24H2 Update - Starting from this Windows update, you must
+  enable location access (Windows Settings > Privacy & security >
+  Location) in order to allow the WifiInfoView tool to access wi-fi
+  information. You have to enable the following options: 'Location
+  services', 'Let apps access your location', 'Let desktop apps access
+  your location'. If location access is not enabled properly, you'll see
+  'Error 5: Access is denied' message in the bottom status bar.
 
 
 
 Versions History
 ================
 
+
+* Version 2.95:
+  o When there is an error while trying to scan the wireless
+    networks, WifiInfoView displays error code and error message in the
+    bottom status bar (in red color).
+  o If you get 'Error 5: Access is denied' message on Windows 11
+    24H2, you must enable the location services properly, see the 'System
+    Requirements' section for more information.
 
 * Version 2.94:
   o Added 'Black Background' option (Under the View menu). When it's

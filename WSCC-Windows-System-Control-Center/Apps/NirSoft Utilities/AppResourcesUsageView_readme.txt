@@ -1,8 +1,8 @@
 
 
 
-AppResourcesUsageView v1.05
-Copyright (c) 2022 - 2023 Nir Sofer
+AppResourcesUsageView v1.06
+Copyright (c) 2022 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/app_resources_usage_view.html
 
 
@@ -46,6 +46,10 @@ The following table contains the application resources usage data:
 Version History
 ===============
 
+
+* Version 1.06:
+  o Fixed bug: AppResourcesUsageView crashed when trying to read the
+    resources usage database created by Windows 11 24H2.
 
 * Version 1.05:
   o Added option to change the sorting column from the menu (View ->

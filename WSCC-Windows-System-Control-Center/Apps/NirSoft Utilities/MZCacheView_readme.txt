@@ -1,8 +1,8 @@
 
 
 
-MZCacheView v2.21
-Copyright (c) 2007 - 2022 Nir Sofer
+MZCacheView v2.22
+Copyright (c) 2007 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -49,6 +49,12 @@ inspect.
 Versions History
 ================
 
+
+* Version 2.22:
+  o You can now use any variable inside the .cfg file as command-line
+    option in order to change the configuration from command-line, for
+    example - this command turns on the 'Add Header Line To
+    CSV/Tab-Delimited File' option: MZCacheView.exe /AddExportHeaderLine 1
 
 * Version 2.21:
   o Added 'Show Milliseconds In Time' option (For 'Last Modified' and
@@ -368,7 +374,7 @@ To' option (F4).
 Notice...
 =========
 
-In order to watch the latest cache files, you must close all Windows of
+In order to watch the latest cache files, you must close all windows of
 Firefox, because only when you do that, Firefox saves the cache index
 files into the disk.
 

@@ -1,7 +1,7 @@
 
 
 
-InsideClipboard v1.26
+InsideClipboard v1.27
 Copyright (c) 2007 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -32,6 +32,9 @@ This utility works on any version of Windows, from Windows XP to Windows
 Versions History
 ================
 
+
+* Version 1.27:
+  o Added 'Always On Top' option.
 
 * Version 1.26:
   o Added option to choose another font (name and size) to display in

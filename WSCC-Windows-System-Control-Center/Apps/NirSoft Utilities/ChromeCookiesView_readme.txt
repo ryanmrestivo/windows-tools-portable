@@ -1,7 +1,7 @@
 
 
 
-ChromeCookiesView v1.76
+ChromeCookiesView v1.80
 Copyright (c) 2011 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -33,6 +33,21 @@ System Requirements
 System Requirements
 ===================
 
+
+* Version 1.80:
+  o Added support for decrypting cookies encrypted with app-bound
+    encryption on new versions of Chrome. This feature only works when
+    you run ChromeCookiesView as Administrator.
+  o Added 'System Protect Folder' and 'Registry Hives Folder' fields
+    to the external drive feature. You must fill these fields if the
+    cookies are encrypted with the new app-bound encryption.
+  o Added 'Encryption Type' column. (for app-bound encryption, this
+    column displays 'v20', for previous encryption method, this column
+    displays 'v10' )
+  o Added 'Run As Administrator' option (Ctrl+F11) under the help
+    menu.
+  o Added /RunAsAdmin command-line option for running
+    ChromeCookiesView as administrator.
 
 * Version 1.76:
   o Added 'Sort By' toolbar button.
@@ -238,6 +253,9 @@ Command-Line Options
 ====================
 
 
+
+/RunAsAdmin
+Runs ChromeCookiesView as administrator.
 
 /DeleteCookies <Host> {Cookie Name}
 Deletes cookies from command-line. If you specify only the host name, all
