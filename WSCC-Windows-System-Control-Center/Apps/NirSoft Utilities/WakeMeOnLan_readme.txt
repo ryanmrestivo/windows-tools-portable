@@ -1,8 +1,8 @@
 
 
 
-WakeMeOnLan v1.91
-Copyright (c) 2011 - 2023 Nir Sofer
+WakeMeOnLan v1.92
+Copyright (c) 2011 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -52,6 +52,9 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.92
+  o Updated the internal MAC addresses database.
 
 * Version 1.91
   o Updated the internal MAC addresses database.

@@ -1,8 +1,8 @@
 
 
 
-BatteryHistoryView v1.05
-Copyright (c) 2022 - 2023 Nir Sofer
+BatteryHistoryView v1.06
+Copyright (c) 2022 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/battery_history_view.html
 
 
@@ -46,6 +46,13 @@ The following tables contain the battery history information:
 Version History
 ===============
 
+
+* Version 1.06:
+  o Fixed issue: BatteryHistoryView crashed while reading the
+    SRUDB.dat database created by Windows 11 24H2.
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.05:
   o Added option to change the sorting column from the menu (View ->

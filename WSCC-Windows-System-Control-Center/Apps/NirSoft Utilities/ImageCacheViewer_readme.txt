@@ -1,8 +1,8 @@
 
 
 
-ImageCacheViewer v1.33
-Copyright (c) 2014 - 2024 Nir Sofer
+ImageCacheViewer v1.34
+Copyright (c) 2014 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -25,6 +25,12 @@ clipboard by pressing Ctrl+M.
 Versions History
 ================
 
+
+* Version 1.34:
+  o Updated to read the HTTP headers properly in the latest versions
+    of Chrome (Version 132).
+  o Fixed a crash problem when reading the old IE11 cache file
+    (WebCacheV01.dat) on Windows 11 24H2.
 
 * Version 1.33:
   o You can now use any variable inside the .cfg file as command-line

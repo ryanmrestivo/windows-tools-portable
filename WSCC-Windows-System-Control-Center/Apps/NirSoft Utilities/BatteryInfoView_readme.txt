@@ -1,8 +1,8 @@
 
 
 
-BatteryInfoView v1.25
-Copyright (c) 2011 - 2021 Nir Sofer
+BatteryInfoView v1.26
+Copyright (c) 2011 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -27,7 +27,7 @@ System Requirements And Limitations
 
 
 * This utility works on any version of Windows, starting from windows
-  2000 and up to Windows 10.
+  2000 and up to Windows 11.
 * Some information, like serial number and manufacture date is only
   displayed if the battery provides this information.
 
@@ -36,6 +36,12 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.26:
+  o Added 'Sort Log On Every Update' option. When it's turned on,
+    BatteryInfoView sorts the battery log every time that a new item is
+    added.
+  o Added 64-bit version.
 
 * Version 1.25:
   o Updated the tray icon tooltip to display information of multiple

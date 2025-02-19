@@ -1,8 +1,8 @@
 
 
 
-ChromeCacheView v2.51
-Copyright (c) 2008 - 2024 Nir Sofer
+ChromeCacheView v2.52
+Copyright (c) 2008 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -65,6 +65,10 @@ press F8).
 Versions History
 ================
 
+
+* Version 2.52:
+  o Updated to read the HTTP headers properly in the latest versions
+    of Chrome (Version 132).
 
 * Version 2.51:
   o Added 'Record Created Time' column.

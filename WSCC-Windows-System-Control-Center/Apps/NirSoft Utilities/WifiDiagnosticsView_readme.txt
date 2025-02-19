@@ -1,7 +1,7 @@
 
 
 
-WifiDiagnosticsView v1.06
+WifiDiagnosticsView v1.07
 Copyright (c) 2022 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/wifi_diagnostics_view.html
 
@@ -35,6 +35,9 @@ System Requirements
 Version History
 ===============
 
+
+* Version 1.07:
+  o Added 'Always On Top' option.
 
 * Version 1.06:
   o The current number of items in the main window is now displayed

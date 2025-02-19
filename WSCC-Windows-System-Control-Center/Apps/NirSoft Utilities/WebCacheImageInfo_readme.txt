@@ -1,8 +1,8 @@
 
 
 
-WebCacheImageInfo v1.35
-Copyright (c) 2013 - 2024 Nir Sofer
+WebCacheImageInfo v1.36
+Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -43,6 +43,12 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.36:
+  o Updated to read the cache files of the latest Chrome version
+    (Version 132).
+  o Fixed a crash problem when reading the old IE11 cache file
+    (WebCacheV01.dat) on Windows 11 24H2.
 
 * Version 1.35:
   o Updated to read the cache files of the latest Chrome version.

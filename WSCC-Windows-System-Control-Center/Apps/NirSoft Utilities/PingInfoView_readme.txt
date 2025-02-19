@@ -1,8 +1,8 @@
 
 
 
-PingInfoView v3.15
-Copyright (c) 2008 - 2024 Nir Sofer
+PingInfoView v3.20
+Copyright (c) 2008 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -34,6 +34,12 @@ of Windows are not supported.
 Versions History
 ================
 
+
+* Version 3.20
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main tables are displayed in black background and
+    white text, instead of default system colors.
+  o Added 'Mark Odd/Even Rows' option.
 
 * Version 3.15
   o Fixed bug from version 3.10 that caused improper parsing of IPv6

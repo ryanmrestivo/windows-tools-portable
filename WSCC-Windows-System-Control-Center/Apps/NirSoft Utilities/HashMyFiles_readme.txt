@@ -1,8 +1,8 @@
 
 
 
-HashMyFiles v2.44
-Copyright (c) 2007 - 2023 Nir Sofer
+HashMyFiles v2.50
+Copyright (c) 2007 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -10,12 +10,12 @@ Web site: https://www.nirsoft.net
 Description
 ===========
 
-HashMyFiles is small utility that allows you to calculate the MD5 and
-SHA1 hashes of one or more files in your system. You can easily copy the
-MD5/SHA1 hashes list into the clipboard, or save them into text/html/xml
-file.
+HashMyFiles is small utility that allows you to calculate the hashes
+(MD5, SHA1, CRC32, SHA-256, SHA-512, SHA-384) of one or more files in
+your system. You can easily copy the hashes list into the clipboard, or
+save them into text/html/xml file.
 HashMyFiles can also be launched from the context menu of Windows
-Explorer, and display the MD5/SHA1 hashes of the selected file or folder.
+Explorer, and display the hashes of the selected file or folder.
 
 
 
@@ -23,13 +23,20 @@ System Requirements
 ===================
 
 This utility works on Windows 2000/XP/2003/Vista/Windows 7/Windows
-8/Windows 10. Older versions of Windows are not supported.
+8/Windows 10/Windows 11. Older versions of Windows are not supported.
 
 
 
 Versions History
 ================
 
+
+* Version 2.50:
+  o Added 'Live Hashes Display' option. When it's turned on,
+    HashMyFiles displays the hashes of every file immediately after they
+    are calculated, instead of waiting until all files are processed.
+  o Added new columns: 'Hash Start Time', 'Hash End Time', 'Hashing
+    Duration'.
 
 * Version 2.44:
   o You can now send the hash data to stdout by specifying empty

@@ -1,7 +1,7 @@
 
 
 
-WinUpdatesView v1.18 - Windows Updates History Viewer
+WinUpdatesView v1.20 - Windows Updates History Viewer
 Copyright (c) 2019 - 2024 Nir Sofer
 Web site:
 https://www.nirsoft.net/utils/windows_updates_history_viewer.html
@@ -37,6 +37,15 @@ up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.20
+  o Fixed bug: When reading the updates history database directly,
+    the description of 'Windows Malicious Software Removal Tool' items
+    displayed gibberish characters.
+
+* Version 1.19
+  o Fixed bug: WinUpdatesView crashed when reading the Windows
+    Updates database created by Windows 11 24H2.
 
 * Version 1.18
   o Added 'Sort By' toolbar button.

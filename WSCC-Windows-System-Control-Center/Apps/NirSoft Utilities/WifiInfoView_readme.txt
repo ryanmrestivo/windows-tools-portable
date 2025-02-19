@@ -1,8 +1,8 @@
 
 
 
-WifiInfoView v2.95
-Copyright (c) 2012 - 2024 Nir Sofer
+WifiInfoView v2.96
+Copyright (c) 2012 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -53,6 +53,9 @@ System Requirements
 Versions History
 ================
 
+
+* Version 2.96:
+  o Updated the internal MAC addresses file.
 
 * Version 2.95:
   o When there is an error while trying to scan the wireless

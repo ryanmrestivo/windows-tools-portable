@@ -1,8 +1,8 @@
 
 
 
-ESEDatabaseView v1.75
-Copyright (c) 2013 - 2024 Nir Sofer
+ESEDatabaseView v1.76
+Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -36,6 +36,14 @@ read the database.
 Versions History
 ================
 
+
+* Version 1.76:
+  o Fixed bug: In some strings, ESEDatabaseView displayed compressed
+    string without decomrpessing it.
+  o Fixed bug: In some circumstances, ESEDatabaseView failed to
+    extract the correct string from the database.
+  o Fixed bug: When 'Auto Detect 64-bit Date/Time Value' option was
+    turned on, ESEDatabaseView displayed some strings as date/time values.
 
 * Version 1.75:
   o Fixed bug: ESEDatabaseView crashed when trying to read

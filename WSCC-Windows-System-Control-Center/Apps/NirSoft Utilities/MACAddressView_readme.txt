@@ -1,8 +1,8 @@
 
 
 
-MACAddressView v1.48
-Copyright (c) 2009 - 2023 Nir Sofer
+MACAddressView v1.50
+Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -35,6 +35,10 @@ up to Windows 11.
 Versions History
 ================
 
+
+* Version 1.50:
+  o Added 'Save All Items' option (Shift+Ctrl+S).
+  o Updated the internal MAC Addresses database.
 
 * Version 1.48:
   o Updated the internal MAC Addresses database.

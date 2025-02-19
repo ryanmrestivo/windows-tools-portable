@@ -1,8 +1,8 @@
 
 
 
-Wireless Network Watcher v2.41
-Copyright (c) 2011 - 2024 Nir Sofer
+Wireless Network Watcher v2.42
+Copyright (c) 2011 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -43,6 +43,9 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 2.42
+  o Updated the internal MAC addresses database.
 
 * Version 2.41
   o Added 'Scan IPv6 Addresses' option. You can turn it off if you

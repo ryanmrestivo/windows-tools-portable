@@ -1,8 +1,8 @@
 
 
 
-PropertySystemView v1.20
-Copyright (c) 2019 - 2022 Nir Sofer
+PropertySystemView v1.21
+Copyright (c) 2019 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net/utils/windows_property_system_view.html
 
 
@@ -56,6 +56,9 @@ system of Windows operating system.
 Versions History
 ================
 
+
+* Version 1.21
+  o Added 'Always On Top' option.
 
 * Version 1.20
   o Added /CopyProperty command-line option, which allows you to copy

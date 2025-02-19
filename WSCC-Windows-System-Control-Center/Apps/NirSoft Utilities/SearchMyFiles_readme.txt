@@ -1,7 +1,7 @@
 
 
 
-SearchMyFiles v3.30
+SearchMyFiles v3.31
 Copyright (c) 2009 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -36,6 +36,10 @@ and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 3.31:
+  o Fixed bug: SearchMyFiles crashed when it failed to retrieve the
+    file owner properly.
 
 * Version 3.30:
   o Added option to find files according the file owner. You can

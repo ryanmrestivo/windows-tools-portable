@@ -1,8 +1,8 @@
 
 
 
-DNSDataView v1.75
-Copyright (c) 2008 - 2024 Nir Sofer
+DNSDataView v1.76
+Copyright (c) 2008 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -31,6 +31,11 @@ Older versions of Windows are not supported.
 Versions History
 ================
 
+
+* Version 1.76:
+  o Added new option to the 'DNS Record Types' section: DMARC. When
+    you select this option, DNSDataView automatically adds the correct
+    host name to the domain ( _dmarc) in order to get this record.
 
 * Version 1.75:
   o Added 'Load domains from file' option, which allows you to load

@@ -1,8 +1,8 @@
 
 
 
-NetworkLatencyView v1.75
-Copyright (c) 2013 - 2023 Nir Sofer
+NetworkLatencyView v1.76
+Copyright (c) 2013 - 2024 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -48,6 +48,13 @@ System Requirements
 Versions History
 ================
 
+
+* Version 1.76:
+  o Updated to work with the IPv6 location files from
+    https://github.com/sapics/ip-location-db.
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.75:
   o Added support for using the IP-Location files from
