@@ -1,8 +1,8 @@
 
 
 
-MultiMonitorTool v2.15
-Copyright (c) 2012 - 2024 Nir Sofer
+MultiMonitorTool v2.21
+Copyright (c) 2012 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -42,6 +42,18 @@ System Requirements and Limitations
 Versions History
 ================
 
+
+* Version 2.21
+  o Fixed bitmap objects leak occurred when using the monitor preview
+    window with the 'Draw Cursor In Monitor Preview' option. This bug
+    caused the monitor preview to stop working after a while.
+
+* Version 2.20
+  o Added /SetScale command-line option to set the display scaling on
+    Windows 11/10, for example:
+    MultiMonitorTool.exe /SetScale "\\.\DISPLAY1" 150
+  o Added new display scaling columns: 'Current Scale' and 'Maximum
+    Scale'.
 
 * Version 2.15
   o Added a workaround for the new problems appeared in Windows 11
@@ -485,6 +497,20 @@ running this command will set the second monitor as the primary. running
 this command again will set the third monitor as the primary. And...
 running this command again will set (again) the first monitor as the
 primary.
+
+/SetScale <Monitor> <Scale Value>
+Set the display scaling on Windows 11/10. The <Scale Value> is the
+absolute scale value in percent, for example: 100,125,150,175,200,225,
+and so on...
+You can also specify a relative value. In this case - you have to specify
+'0' to set the recommended display scaling, a positive number (1, 2, 3,
+...) to set display scaling larger than recommended, or a negative number
+(-1, -2, -3, ...) to set display scaling smaller than recommended.
+
+Example:
+MultiMonitorTool.exe /SetScale "\\.\DISPLAY1" 125
+MultiMonitorTool.exe /SetScale "Primary" 150
+MultiMonitorTool.exe /SetScale "\\.\DISPLAY2" -1
 
 /TurnOff <Monitors>
 Turns off the specified monitors. This feature works only if you have

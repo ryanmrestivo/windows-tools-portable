@@ -1,8 +1,8 @@
 
 
 
-SimpleWMIView v1.55
-Copyright (c) 2015 - 2023 Nir Sofer
+SimpleWMIView v1.56
+Copyright (c) 2015 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -31,6 +31,11 @@ and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.56:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.55:
   o Fixed issue: When copying data to the clipboard or exporting to

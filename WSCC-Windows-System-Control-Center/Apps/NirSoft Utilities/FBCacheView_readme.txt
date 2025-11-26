@@ -1,8 +1,8 @@
 
 
 
-FBCacheView v1.23
-Copyright (c) 2013 - 2024 Nir Sofer
+FBCacheView v1.24
+Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -40,6 +40,12 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.24:
+  o Updated to read the cache files of the latest Chrome version
+    (Version 132).
+  o Fixed a crash problem when reading the old IE11 cache file
+    (WebCacheV01.dat) on Windows 11 24H2.
 
 * Version 1.23:
   o Updated to read the cache files of the latest Chrome version.

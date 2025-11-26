@@ -1,8 +1,8 @@
 
 
 
-OutlookStatView v2.30
-Copyright (c) 2009 - 2024 Nir Sofer
+OutlookStatView v2.31
+Copyright (c) 2009 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -34,13 +34,18 @@ System Requirements
 
 
 * Windows 2000/XP/Vista/2003/2008/7/8/10/11.
-* Any version of Microsoft Outlook, including Outlook 2019/2016.
+* Any version of Microsoft Outlook, including Outlook 2024.
 
 
 
 Versions History
 ================
 
+
+* Version 2.31
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 2.30
   o Added 'Sort By' toolbar button.

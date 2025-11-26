@@ -1,8 +1,8 @@
 
 
 
-Clipboardic v1.19
-Copyright (c) 2009 - 2024 Nir Sofer
+Clipboardic v1.20
+Copyright (c) 2009 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -31,6 +31,9 @@ Clipboardic works on any version of Windows, from Windows 2000 to Windows
 Versions History
 ================
 
+
+* Version 1.20:
+  o Added 'Image Dimensions' column (For clipboard bitmaps).
 
 * Version 1.19:
   o Added toolbar buttons for 'Clear All My Clipboard Files' and

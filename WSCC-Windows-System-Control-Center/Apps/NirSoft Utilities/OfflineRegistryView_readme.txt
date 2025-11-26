@@ -1,8 +1,8 @@
 
 
 
-OfflineRegistryView v1.03
-Copyright (c) 2018 - 2019 Nir Sofer
+OfflineRegistryView v1.05
+Copyright (c) 2018 - 2025 Nir Sofer
 Web site: http://www.nirsoft.net
 
 
@@ -20,13 +20,16 @@ System Requirements
 ===================
 
 This utility works with any version of Windows, starting from Windows XP
-and up to Windows 10. Both 32-bit and 64-bit systems are supported.
+and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 
 
 
 Versions History
 ================
 
+
+* Version 1.05:
+  o Fixed a few high DPI mode issues.
 
 * Version 1.03:
   o Fixed bug: OfflineRegistryView failed to handle properly large

@@ -1,8 +1,8 @@
 
 
 
-Volumouse v2.15
-Copyright (c) 2004 - 2024 Nir Sofer
+Volumouse v2.20
+Copyright (c) 2004 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -49,6 +49,10 @@ Known Issues
 Versions History
 ================
 
+
+* Version 2.20:
+  o Added 'Laptop Brightness' option to control the brightness of
+    laptop screen.
 
 * Version 2.15:
   o Added option to change the monitor brightness/contrast using

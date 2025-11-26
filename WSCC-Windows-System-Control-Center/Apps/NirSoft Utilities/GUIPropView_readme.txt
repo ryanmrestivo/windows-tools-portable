@@ -1,8 +1,8 @@
 
 
 
-GUIPropView v1.30
-Copyright (c) 2016 - 2024 Nir Sofer
+GUIPropView v1.31
+Copyright (c) 2016 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -33,6 +33,11 @@ and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 Versions History
 ================
 
+
+* Version 1.31:
+  o Added 'Unicode' column, which specifies whether the window is
+    Unicode (Yes) or ANSI (No).
+  o Added 'Process User' and 'Process Elevated' columns.
 
 * Version 1.30:
   o Added 'FocusKeyText' action to the /Action command, which sets
@@ -186,6 +191,9 @@ Columns of Top Level Windows
 * Thread ID:ID of the thread that created this window.
 * Parent Handle:Handle of the parent window.
 * Process Filename:Procoss filename according to the process ID.
+* Process User:The user name of the process that created the window.
+* Process Elevated:Displays 'Yes' if the process is elevated ('Run As
+  Administrator')
 * Instance Filename:Instance Filename according to the instance handle
   of this window.
 * Class Module Filename:Class module filename according to the class
@@ -198,6 +206,7 @@ Columns of Top Level Windows
 * Class Atom
 * Font Name
 * Monitor
+* Unicode
 
 
 
@@ -230,6 +239,7 @@ Columns of Child Windows
 * Z-order:Numeric value that represents the Z-order of the child
   windows.
 * Font Name
+* Unicode
 
 
 

@@ -1,7 +1,7 @@
 
 
 
-ESEDatabaseView v1.76
+ESEDatabaseView v1.79
 Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -36,6 +36,20 @@ read the database.
 Versions History
 ================
 
+
+* Version 1.79:
+  o Added 'Case Sensitive' option to the quick filter window.
+
+* Version 1.78:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
+
+* Version 1.77:
+  o Updated the 'Open SoftwareDistribution Database' option to read
+    the database when it's locked, by temporary stopping the Windows
+    Updates service. This feature only works when you run this tool as
+    Administrator (Ctrl+F11).
 
 * Version 1.76:
   o Fixed bug: In some strings, ESEDatabaseView displayed compressed

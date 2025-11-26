@@ -1,8 +1,8 @@
 
 
 
-WifiHistoryView v1.65
-Copyright (c) 2016 - 2024 Nir Sofer
+WifiHistoryView v1.66
+Copyright (c) 2016 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -46,6 +46,11 @@ nal.evtx
 Versions History
 ================
 
+
+* Version 1.66:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.65:
   o Added 'Connect Duration' column, which displays the total time

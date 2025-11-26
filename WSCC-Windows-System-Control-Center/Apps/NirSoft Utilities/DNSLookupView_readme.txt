@@ -1,8 +1,8 @@
 
 
 
-DNSLookupView v1.15
-Copyright (c) 2020 - 2024 Nir Sofer
+DNSLookupView v1.18
+Copyright (c) 2020 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net/utils/dns_lookup_view.html
 
 
@@ -43,6 +43,17 @@ Client service of Windows.
 Version History
 ===============
 
+
+* Version 1.18:
+  o You can now choose the desired encoding (ANSI, UTF-8, UTF-16) to
+    save the csv/xml/text/html files. (Options -> Save File Encoding )
+
+* Version 1.17:
+  o Added 'Clear All' toolbar button.
+
+* Version 1.16:
+  o Fixed issue: In some circumstances, DNSLookupView displayed wrong
+    process information, taken from process information cache.
 
 * Version 1.15:
   o Added 'Error Description' column, which displays the error

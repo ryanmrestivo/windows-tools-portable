@@ -1,8 +1,8 @@
 
 
 
-OutlookAddressBookView v2.44
-Copyright (c) 2012 - 2024 Nir Sofer
+OutlookAddressBookView v2.45
+Copyright (c) 2012 - 2025 Nir Sofer
 
 
 
@@ -36,9 +36,8 @@ System Requirements
 
 
 * Windows 2000/XP/2003/2008/Vista/7/8/10/11.
-* Microsoft Outlook 2003, Microsoft Outlook 2007, Microsoft Outlook
-  2010, Microsoft Outlook 2013 or Microsoft Outlook 2016. For the 64-bit
-  version of Outlook 2010/2013, you should use the x64 version of
+* Microsoft Outlook - Any version from Outlook 2003 to Outlook 2024.
+  For the 64-bit version of Outlook, you should use the x64 version of
   OutlookAddressBookView. For all other versions, you must use the 32-bit
   of OutlookAddressBookView.
 
@@ -47,6 +46,11 @@ System Requirements
 Versions History
 ================
 
+
+* Version 2.45
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 2.44
   o Fixed issue: When copying data to the clipboard or exporting to

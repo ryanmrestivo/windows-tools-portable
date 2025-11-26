@@ -1,8 +1,8 @@
 
 
 
-MyLastSearch v1.65
-Copyright (c) 2007 - 2017 Nir Sofer
+MyLastSearch v1.66
+Copyright (c) 2007 - 2025 Nir Sofer
 Web site: http://www.nirsoft.net
 
 
@@ -26,6 +26,12 @@ clipboard or save them into text/html/xml file.
 Versions History
 ================
 
+
+* Version 1.66:
+  o Updated to read the cache files of the latest Chrome version
+    (Version 132).
+  o Fixed a crash problem when reading the old IE11 cache file
+    (WebCacheV01.dat) on Windows 11 24H2.
 
 * Version 1.65:
   o Added support for Yandex and DuckDuckGo search engines.

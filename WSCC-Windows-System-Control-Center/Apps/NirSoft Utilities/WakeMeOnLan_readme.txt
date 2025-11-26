@@ -1,7 +1,7 @@
 
 
 
-WakeMeOnLan v1.92
+WakeMeOnLan v1.95
 Copyright (c) 2011 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
@@ -52,6 +52,22 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.95
+  o Added 5 extra columns that allows you to fill any information you
+    need for every device. By default these columns are hidden, but you
+    can make them visible from View -> Choose Columns.
+  o You can edit the content of these extra columns from the
+    Properties window.
+  o You can also change the caption of the extra columns by editing
+    the WakeMeOnLan.cfg directly while WakeMeOnLan is closed. You have to
+    put the desired captions in the following variables: ExtraName1,
+    ExtraName2, ExtraName3, ExtraName4, ExtraName5
+
+* Version 1.93
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.92
   o Updated the internal MAC addresses database.

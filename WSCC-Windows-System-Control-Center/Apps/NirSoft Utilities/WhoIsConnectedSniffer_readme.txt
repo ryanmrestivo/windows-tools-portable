@@ -1,8 +1,8 @@
 
 
 
-WhoIsConnectedSniffer v1.28
-Copyright (c) 2013 - 2022 Nir Sofer
+WhoIsConnectedSniffer v1.30
+Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -65,6 +65,14 @@ System Requirements And Limitations
 Versions History
 ================
 
+
+* Version 1.30:
+  o Updated to detect Android and Windows operating systems from DHCP
+    requests.
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
+  o Updated the internal MAC addresses file.
 
 * Version 1.28:
   o Fixed bug: WhoIsConnectedSniffer displayed random external IP

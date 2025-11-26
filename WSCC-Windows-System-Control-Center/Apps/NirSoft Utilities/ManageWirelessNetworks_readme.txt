@@ -1,8 +1,8 @@
 
 
 
-ManageWirelessNetworks v1.14
-Copyright (c) 2021 - 2024 Nir Sofer
+ManageWirelessNetworks v1.17
+Copyright (c) 2021 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net/utils/manage_wireless_networks.html
 
 
@@ -43,6 +43,18 @@ System Requirements
 Version History
 ===============
 
+
+* Version 1.17:
+  o You can now choose the desired encoding (ANSI, UTF-8, UTF-16) to
+    save the csv/xml/text/html files. (Options -> Save File Encoding )
+
+* Version 1.16:
+  o Added 'Save All Items' option.
+
+* Version 1.15:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.14:
   o Added 'Set Connection Mode' toolbar dropdown.

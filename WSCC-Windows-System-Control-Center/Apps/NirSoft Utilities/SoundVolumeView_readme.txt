@@ -1,8 +1,8 @@
 
 
 
-SoundVolumeView v2.46
-Copyright (c) 2013 - 2024 Nir Sofer
+SoundVolumeView v2.48
+Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -36,6 +36,12 @@ Windows XP and older systems are not supported.
 Versions History
 ================
 
+
+* Version 2.48:
+  o Updated the /SetSpatial command to work on Windows 11 25H2.
+
+* Version 2.47:
+  o Added 'Default Format' column.
 
 * Version 2.46:
   o Added /SetBooleanFxProperty command-line option, which allows you

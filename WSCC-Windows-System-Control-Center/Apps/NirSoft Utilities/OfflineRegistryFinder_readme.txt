@@ -1,8 +1,8 @@
 
 
 
-OfflineRegistryFinder v1.11
-Copyright (c) 2018 - 2020 Nir Sofer
+OfflineRegistryFinder v1.12
+Copyright (c) 2018 - 2025 Nir Sofer
 Web site: http://www.nirsoft.net
 
 
@@ -29,13 +29,19 @@ System Requirements
 ===================
 
 This utility works with any version of Windows, starting from Windows XP
-and up to Windows 10. Both 32-bit and 64-bit systems are supported.
+and up to Windows 11. Both 32-bit and 64-bit systems are supported.
 
 
 
 Versions History
 ================
 
+
+* Version 1.12:
+  o Fixed a few high DPI mode issues.
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.11:
   o Added option to create a snapshot with the HKEY_CURRENT_USER hive

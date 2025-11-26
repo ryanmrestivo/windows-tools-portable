@@ -1,8 +1,8 @@
 
 
 
-NetworkConnectLog v1.16
-Copyright (c) 2013 - 2023 Nir Sofer
+NetworkConnectLog v1.17
+Copyright (c) 2013 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -42,6 +42,13 @@ Known Issues
 Versions History
 ================
 
+
+* Version 1.17:
+  o Added 'Save All Items' option (Shift+Ctrl+S).
+  o Updated the internal MAC addresses database.
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 1.16:
   o Fixed to display a check mark when the 'Put Icon On Tray' option

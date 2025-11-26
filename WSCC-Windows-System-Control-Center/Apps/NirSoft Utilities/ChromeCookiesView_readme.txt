@@ -1,8 +1,8 @@
 
 
 
-ChromeCookiesView v1.80
-Copyright (c) 2011 - 2024 Nir Sofer
+ChromeCookiesView v1.85
+Copyright (c) 2011 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -26,13 +26,44 @@ System Requirements
 
 
 * This utility works on any version of Windows, starting from Windows
-  2000 and up to Windows 11, and with any version of Google Chrome.
+  XP and up to Windows 11, and with any version of Google Chrome.
 
 
 
-System Requirements
-===================
+Versions History
+================
 
+
+* Version 1.85:
+  o Updated the external drive feature to decrypt the version 3 of
+    Chrome App-Bound Encryption. There is a new field you have to fill:
+    CNG System Keys Folder (For example:
+    K:\ProgramData\Microsoft\Crypto\SystemKeys ).
+
+* Version 1.84:
+  o Added support for decrypting cookies encrypted with app-bound
+    encryption on new versions of Chrome (Version 3 of Chrome App-Bound
+    Encryption)
+  o Be aware: The new app-bound encryption (version 3) uses the Next
+    Generation Cryptography API (CNG) to encrypt and decrypt the
+    encryption key. Currently, the external drive feature cannot decrypt
+    the CNG key and thus it fails to recover the cookies if you have the
+    version 3 of Chrome app-bound encryption.
+
+* Version 1.83:
+  o Updated to decrypt the cookies properly when the app-bound
+    encryption feature is disabled (ApplicationBoundEncryptionEnabled
+    Registry value set to 0).
+
+* Version 1.82:
+  o Fixed problem from version 1.81: On some systems, the following
+    error was displayed when trying to run the .exe file: "This
+    application failed to start because side-by-side configuration is
+    incorrect".
+
+* Version 1.81:
+  o Updated to decrypt the new app-bound encryption key (Chrome
+    version 134).
 
 * Version 1.80:
   o Added support for decrypting cookies encrypted with app-bound

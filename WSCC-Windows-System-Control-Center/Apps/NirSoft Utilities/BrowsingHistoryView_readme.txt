@@ -1,8 +1,8 @@
 
 
 
-BrowsingHistoryView v2.59
-Copyright (c) 2012 - 2024 Nir Sofer
+BrowsingHistoryView v2.60
+Copyright (c) 2012 - 2025 Nir Sofer
 Web site: https://www.nirsoft.net
 
 
@@ -27,6 +27,11 @@ any user interface.
 Versions History
 ================
 
+
+* Version 2.60:
+  o Added 'Black Background' option (Under the View menu). When it's
+    turned on, the main table is displayed in black background and white
+    text, instead of default system colors.
 
 * Version 2.59:
   o Fixed bug: BrowsingHistoryView crashed when trying to read the IE
