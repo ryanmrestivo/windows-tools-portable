@@ -1,0 +1,44 @@
+[Version]
+signature   = "$Windows NT$"
+Class        = ActivityMonitor
+ClassGuid    = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = "xanasoft.com"
+DriverVer   = 05/02/2026,4.0.1.0
+CatalogFile = KTaskExplorer.cat
+PnpLockdown = 1
+
+
+[DestinationDirs]
+DefaultDestDir      = 12
+KTaskExplorer.DriverFiles  = 12            ;%windir%\system32\drivers
+
+[KTaskExplorer.DriverFiles]
+KTaskExplorer.sys
+kte.dll
+
+[SourceDisksFiles]
+KTaskExplorer.sys = 1,,
+kte.dll = 1,,
+
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+[DefaultInstall.NTx86]
+OptionDesc          = %ServiceDescription%
+CopyFiles           = KTaskExplorer.DriverFiles
+
+[DefaultInstall.NTx86.Services]
+AddService          = KTaskExplorer,,KTaskExplorer.Service
+
+[KTaskExplorer.Service]
+DisplayName      = %ServiceDescription%
+Description      = %ServiceDescription%
+ServiceBinary    = %12%\KTaskExplorer.sys        ;%windir%\system32\drivers\
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+
+[Strings]
+ServiceDescription      = "KTaskExplorer driver"
+DiskId1                 = "KTaskExplorer Device Installation Disk"
+
